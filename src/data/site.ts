@@ -4,7 +4,7 @@ export { events, getCommunityEvents } from './events';
 export type { CommunityEvent } from './events';
 
 export const site = {
-  name: 'Globulation 2',
+  name: 'Globulation 2 Online',
   tagline: 'A free, open-source real-time strategy game where you assign tasks and your globs get to work.',
   url: 'https://glob2online.com',
   appUrl: 'https://app.glob2online.com/play/',

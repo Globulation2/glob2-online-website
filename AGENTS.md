@@ -1,4 +1,4 @@
-# Globulation 2 website
+# Globulation 2 Online
 
 This repository owns the public static site. The game, account system and multiplayer services live in Globulation2/glob2 and deploy independently.
 

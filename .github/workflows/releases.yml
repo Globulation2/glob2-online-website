@@ -26,8 +26,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/release-metadata.json; then exit 0; fi
-          git config user.name 'glob2-website-bot'
-          git config user.email 'glob2-website-bot@users.noreply.github.com'
+          git config user.name 'glob2-online-bot'
+          git config user.email 'glob2-online-bot@users.noreply.github.com'
           git checkout -B codex/download-metadata
           git add src/data/release-metadata.json
           git commit -m 'Update verified game downloads'

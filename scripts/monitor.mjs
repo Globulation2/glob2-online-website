@@ -33,7 +33,7 @@ export async function request(url, fetcher = fetch) {
   if (new URL(url).protocol !== 'https:') throw new Error('Monitoring requires HTTPS');
   const response = await fetcher(url, {
     redirect: 'error', signal: AbortSignal.timeout(15_000),
-    headers: { 'Cache-Control': 'no-cache', 'User-Agent': 'glob2-website-availability/1' },
+    headers: { 'Cache-Control': 'no-cache', 'User-Agent': 'glob2-online-availability/1' },
   });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const reader = response.body.getReader();

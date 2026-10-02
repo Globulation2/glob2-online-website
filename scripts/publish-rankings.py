@@ -129,7 +129,7 @@ def main():
     parser.add_argument('--backend-revision', required=True)
     parser.add_argument('--bucket', required=True)
     parser.add_argument('--object', default='rankings/v1.json')
-    parser.add_argument('--lock', default='/tmp/glob2-website-rankings.lock')
+    parser.add_argument('--lock', default='/tmp/glob2-online-rankings.lock')
     args = parser.parse_args()
     origin = urllib.parse.urlsplit(args.api_origin)
     require(origin.scheme == 'https' and origin.hostname and not origin.username and not origin.password and origin.path in ('', '/') and not origin.query and not origin.fragment, 'API origin must be an HTTPS origin')

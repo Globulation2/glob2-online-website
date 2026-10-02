@@ -1,6 +1,6 @@
-# Globulation 2 website
+# Globulation 2 Online
 
-The public, static Astro website for Globulation2. The game and online platform are maintained independently in [Globulation2/glob2](https://github.com/Globulation2/glob2).
+The public, static Astro website for Globulation 2 Online. The game and online platform are maintained independently in [Globulation2/glob2](https://github.com/Globulation2/glob2).
 
 - Public website: https://glob2online.com
 - Online hub: https://app.glob2online.com

@@ -2,6 +2,8 @@
 
 ## Resources and boundaries
 
+The source repository is `Globulation2/glob2-online`. Repository renames require updating the WIF providers’ allowed `workflow_ref` paths; the repository ID remains the identity anchor. Hosting, bucket, and service-account IDs are stable deployment identifiers with the original `glob2-website` prefix.
+
 GCP project pharaoh-418820 contains the dedicated Firebase Hosting site glob2-website-pharaoh-418820 and public bucket glob2-website-public-pharaoh-418820. Firebase serves only the static Astro build. Multiplayer remains on its existing VM and database; website CI has no VM, database or backend-artifact permissions.
 
 The website identity glob2-website-deploy uses project metadata-read permissions and a site-update IAM binding restricted to the dedicated Hosting site's resource name. The separate glob2-website-feeds identity writes only the public feed bucket. Both use the github-actions WIF pool, with separate glob2-website and glob2-website-feeds providers, restricted to this repository and hosted GitHub runners. No service-account key or long-lived Firebase token is used. Restrict feed deployment environment to main; forks never receive credentials.

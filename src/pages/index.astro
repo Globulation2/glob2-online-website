@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import Home from '../components/Home.astro';
+import {site} from '../data/site';
 ---
-<Base title="Small globs. Big plans."><Home concept="colony"/></Base>
+<Base title={site.name}><Home concept="colony"/></Base>
