@@ -2,6 +2,6 @@
 import Base from '../layouts/Base.astro';
 import PageHeading from '../components/PageHeading.astro';
 ---
-<Base title="Search"><div class="page-shell"><PageHeading title="Find your next idea." eyebrow="Search the field guide" description="Search current guides, project pages, and the historical archive. Use the type filter to choose current or historical content."/><div id="search"></div><noscript><p>Search requires JavaScript. You can browse <a href="/learn/">all player guides</a> and the <a href="/archive/">legacy archive</a> directly.</p></noscript></div></Base>
+<Base title="Search"><div class="page-shell"><PageHeading title="Find your next idea." eyebrow="Search the field guide" description="Search current guides, project pages, and the historical archive. Use the type filter to choose current or historical content."/><label class="search-label" for="site-search" hidden>Search guides, news and the archive</label><div id="search"></div><noscript><p>Search requires JavaScript. You can browse <a href="/learn/">all player guides</a> and the <a href="/archive/">legacy archive</a> directly.</p></noscript></div></Base>
 <script src="/search.js" is:inline></script>
 <link rel="stylesheet" href="/pagefind/pagefind-ui.css"/>
