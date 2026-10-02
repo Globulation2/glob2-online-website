@@ -18,7 +18,21 @@
     ],
     "redirects": [
       { "source": "/signin", "destination": "https://app.glob2online.com/signin", "type": 302 },
-      { "source": "/play", "destination": "https://app.glob2online.com/play/", "type": 302 }
+      { "source": "/play", "destination": "https://app.glob2online.com/play/", "type": 302 },
+      { "source": "/play/:path*", "destination": "https://app.glob2online.com/play/:path*", "type": 302 },
+      { "source": "/signin/:path*", "destination": "https://app.glob2online.com/signin/:path*", "type": 301 },
+      { "source": "/auth/:path*", "destination": "https://app.glob2online.com/auth/:path*", "type": 301 },
+      { "source": "/api/:path*", "destination": "https://app.glob2online.com/api/:path*", "type": 301 },
+      { "source": "/j/:code", "destination": "https://app.glob2online.com/j/:code", "type": 301 },
+      { "source": "/matches", "destination": "https://app.glob2online.com/matches", "type": 301 },
+      { "source": "/matches/:path*", "destination": "https://app.glob2online.com/matches/:path*", "type": 301 },
+      { "source": "/players/:path*", "destination": "https://app.glob2online.com/players/:path*", "type": 301 },
+      { "source": "/leaderboard", "destination": "https://app.glob2online.com/leaderboard", "type": 301 },
+      { "source": "/leaderboard/:path*", "destination": "https://app.glob2online.com/leaderboard/:path*", "type": 301 },
+      { "source": "/maps", "destination": "https://app.glob2online.com/maps", "type": 301 },
+      { "source": "/maps/:path*", "destination": "https://app.glob2online.com/maps/:path*", "type": 301 },
+      { "source": "/admin", "destination": "https://app.glob2online.com/admin", "type": 301 },
+      { "source": "/admin/:path*", "destination": "https://app.glob2online.com/admin/:path*", "type": 301 }
     ]
   }
 }
