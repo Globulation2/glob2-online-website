@@ -4,9 +4,9 @@
 
 GCP project pharaoh-418820 contains the dedicated Firebase Hosting site glob2-website-pharaoh-418820 and public bucket glob2-website-public-pharaoh-418820. Firebase serves only the static Astro build. Multiplayer remains on its existing VM and database; website CI has no VM, database or backend-artifact permissions.
 
-The website identity glob2-website-deploy uses project metadata-read permissions and a site-update IAM binding restricted to the dedicated Hosting site's resource name. The separate glob2-website-feeds identity writes only the public feed bucket. Both use the github-actions WIF pool and glob2-website provider, restricted to this repository and hosted GitHub runners. No service-account key or long-lived Firebase token is used. Restrict feed deployment environment to main; forks never receive credentials.
+The website identity glob2-website-deploy uses project metadata-read permissions and a site-update IAM binding restricted to the dedicated Hosting site's resource name. The separate glob2-website-feeds identity writes only the public feed bucket. Both use the github-actions WIF pool, with separate glob2-website and glob2-website-feeds providers, restricted to this repository and hosted GitHub runners. No service-account key or long-lived Firebase token is used. Restrict feed deployment environment to main; forks never receive credentials.
 
-Repo variables WIF_PROVIDER, DEPLOY_SERVICE_ACCOUNT, FEED_SERVICE_ACCOUNT, API_ORIGIN and BACKEND_REVISION configure workflows. BACKEND_REVISION must identify the deployed API commit, not the website source. Update it alongside backend releases. Initial app hostname migration changes API_ORIGIN from the old apex to https://app.glob2online.com.
+Repo variables WIF_PROVIDER, DEPLOY_SERVICE_ACCOUNT, FEED_WIF_PROVIDER, FEED_SERVICE_ACCOUNT, API_ORIGIN and BACKEND_REVISION configure workflows. BACKEND_REVISION must identify the deployed API commit, not the website source. Update it alongside backend releases. API_ORIGIN is https://app.glob2online.com.
 
 Firebase headers enforce CSP, nosniff and a referrer policy. The narrowly allowed wasm-unsafe-eval directive enables Pagefind's local search engine; it does not load the game. The game-specific COOP/COEP headers belong only on the app's /play/ path. There is no SPA fallback: missing public URLs return404.
 
@@ -43,3 +43,11 @@ Create app.glob2online.com on the existing multiplayer host before moving the ap
 Prepare Firebase custom-domain ownership and ACME DNS records, verify certificate readiness, then switch apex/WWW DNS only after the selected design and app tests pass. Keep old-domain path migration separate from the legacy wiki, whose domain is not administered here.
 
 Availability checks, scheduled feed freshness verification and project billing alerts cover operations. Inspect GitHub failure notifications when publication fails, and check GCP budgets without changing budgets for unrelated project services.
+
+## Operational checks
+
+Website availability runs every 15 minutes, offset from the ratings publisher. It checks the public homepage/CSP, app instance's canonical HTTPS/WSS origin, browser isolation headers and the public snapshot's schema/timestamp. An empty current ladder is healthy; a snapshot older than 15 minutes fails. Requests have 15-second deadlines, bounded response bodies and no redirects. This workflow has no cloud credentials, creates no accounts, and never starts a game.
+
+Run `node --test scripts/test_monitor.mjs` to verify its failure handling, then `node scripts/monitor.mjs` to check production. A failed Website availability run is the operational alert; maintainers should enable GitHub Actions failure notifications. GitHub schedules are best effort, so this is not an exact 15-minute detection guarantee. Inspect Publish player ratings first for a stale snapshot; restore website versions for static regressions and use the independent backend deployment process for app failures. No monitoring credential or external notification service is required.
+
+The existing Pharaoh prod monthly budget covers project pharaoh-418820 at CAD50/month, with actual spend thresholds at50%,90%,100% and forecast threshold80%. Billing administrators receive its default notifications. Website setup preserves this project-wide budget.

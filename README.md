@@ -17,12 +17,13 @@ npm run dev
 npm run check
 npm run build
 node scripts/check-links.mjs
+node --test scripts/test_monitor.mjs
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
 npx playwright install --with-deps chromium firefox webkit
 npm test
 ```
 
-`npm run preview` serves the compiled pages with Pagefind search. Development mode does not build the search index.
+`npm run preview` serves the compiled pages with Pagefind search. Development mode does not build the search index. Browser tests serve the compiled site with Firebase security headers on port4322 to exercise the production CSP.
 
 The site uses Astro content collections for guides, news, history and source-linked archive entries. `src/data/events.json` contains validated, reviewed human-community events; an empty collection is intentional until organizers announce something. `src/data/site.ts` holds community URLs. Configure only verified Discord invitations. `src/data/release-metadata.json` records real release assets; `scripts/sync-releases.mjs` obtains public, non-prerelease metadata.
 

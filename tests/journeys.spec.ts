@@ -39,7 +39,7 @@ test('static search can find current and historical content',async({page})=>{
 });
 test('content remains browsable without JavaScript',async({browser})=>{
  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();
- for(const route of ['/','/learn/','/history/','/archive/']){await page.goto((process.env.SITE_URL??'http://127.0.0.1:4321')+route);await expect(page.locator('h1')).toBeVisible();await expect(page.getByRole('navigation',{name:'Main navigation'})).toBeVisible();}
+ for(const route of ['/','/learn/','/history/','/archive/']){await page.goto((process.env.SITE_URL??'http://127.0.0.1:4322')+route);await expect(page.locator('h1')).toBeVisible();await expect(page.getByRole('navigation',{name:'Main navigation'})).toBeVisible();}
  await context.close();
 });
 const base={schemaVersion:1,generatedAt:new Date().toISOString(),backendRevision:'6dbb6bfb',ratingPolicy:'openskill-plackett-luce-v1',ladder:'ranked-1v1',hasMore:false};
