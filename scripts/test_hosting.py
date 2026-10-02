@@ -58,7 +58,43 @@ class HostingSafetyTests(unittest.TestCase):
             result=promotion.promote(channel='candidate')
             self.assertEqual(result['version'],version)
             self.assertEqual(result['previousVersion'],old)
+            self.assertFalse(result['unchanged'])
             self.assertEqual(request.call_args.args,(f'sites/{hosting.SITE}/releases?versionName={version}',{}))
+
+    def test_repeated_promotion_preserves_prior_release_for_rollback_without_post(self):
+        version=f'sites/{hosting.SITE}/versions/tested123'
+        old=f'sites/{hosting.SITE}/versions/old456'
+        release=f'sites/{hosting.SITE}/releases/current123'
+        for channel in (None, 'candidate'):
+            responses=([{'release': {'version': {'name': version}}}] if channel else [])
+            responses += [{'status': 'FINALIZED'},
+                          {'releases': [{'name': release, 'version': {'name': version}},
+                                        {'name': 'earlier456', 'version': {'name': old}}]}]
+            with self.subTest(channel=channel), patch.object(promotion.hosting, 'request', side_effect=responses) as request:
+                result=promotion.promote(channel=channel, version=None if channel else version)
+                self.assertEqual(result, {'version': version, 'release': release,
+                                         'previousVersion': old, 'unchanged': True})
+                self.assertEqual(request.call_count, len(responses))
+                self.assertEqual(request.call_args.args, (f'sites/{hosting.SITE}/releases?pageSize=2',))
+                self.assertTrue(all(len(call.args) == 1 for call in request.call_args_list))
+
+    def test_retry_first_active_release_has_no_rollback_pointer(self):
+        version=f'sites/{hosting.SITE}/versions/first123'
+        with patch.object(promotion.hosting, 'request', side_effect=[
+                {'status': 'FINALIZED'},
+                {'releases': [{'name': 'release123', 'version': {'name': version}}]}]) as request:
+            result=promotion.promote(version=version)
+            self.assertIsNone(result['previousVersion'])
+            self.assertTrue(result['unchanged'])
+            self.assertEqual(request.call_count, 2)
+
+    def test_first_promotion_records_no_previous_version(self):
+        version=f'sites/{hosting.SITE}/versions/first123'
+        with patch.object(promotion.hosting, 'request', side_effect=[
+                {'status': 'FINALIZED'}, {'releases': []}, {'name': 'release123'}]):
+            result=promotion.promote(version=version)
+            self.assertIsNone(result['previousVersion'])
+            self.assertFalse(result['unchanged'])
 
     def test_failed_upload_cannot_finalize_or_release(self):
         with tempfile.TemporaryDirectory() as directory:

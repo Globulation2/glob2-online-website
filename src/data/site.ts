@@ -25,10 +25,10 @@ export interface ReleaseLink {
   version?: string;
   url: string;
   platform: string;
-  status: 'source' | 'published';
+  status: 'source' | 'published' | 'release-index';
 }
 const releaseFallbacks: ReleaseLink[] = [
-  { title: 'Release downloads', url: 'https://github.com/Globulation2/glob2/releases', platform: 'Published packages', status: 'published' },
+  { title: 'Release downloads', url: 'https://github.com/Globulation2/glob2/releases', platform: 'Desktop releases', status: 'release-index' },
   { title: 'Build from source', url: 'https://github.com/Globulation2/glob2', platform: 'Windows · macOS · Linux', status: 'source' },
   { title: 'Browser development guide', url: 'https://github.com/Globulation2/glob2/blob/master/browser/README.md', platform: 'Browser', status: 'source' },
 ];

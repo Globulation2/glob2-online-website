@@ -24,10 +24,18 @@ def promote(*, channel=None, version=None):
     metadata = hosting.request(version)
     if metadata['status'] != 'FINALIZED':
         raise ValueError('Only finalized versions can be promoted')
-    previous = hosting.request(f'sites/{hosting.SITE}/releases?pageSize=1').get('releases', [])
+    previous = hosting.request(f'sites/{hosting.SITE}/releases?pageSize=2').get('releases', [])
+    current = previous[0] if previous else None
+    previous_version = current.get('version', {}).get('name') if current else None
+    if previous_version == version:
+        # Firebase rejects releasing an already-current version. Keep its release
+        # identity intact so a retry records success without mutating production.
+        rollback_version = previous[1].get('version', {}).get('name') if len(previous) > 1 else None
+        return {'version': version, 'release': current['name'],
+                'previousVersion': rollback_version, 'unchanged': True}
     release = hosting.request(f'sites/{hosting.SITE}/releases?versionName={version}', {})
     return {'version': version, 'release': release['name'],
-            'previousVersion': previous[0].get('version', {}).get('name') if previous else None}
+            'previousVersion': previous_version, 'unchanged': False}
 
 
 if __name__ == '__main__':
