@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 const routes=['/','/game/','/learn/','/community/','/competition/','/news/','/downloads/','/history/','/archive/','/search/'];
-for(const route of routes) test(`usable and accessible ${route}`,async({page})=>{
+for(const scheme of ['light','dark'] as const) for(const route of routes) test(`usable and accessible ${route} (${scheme})`,async({page})=>{
+ await page.emulateMedia({colorScheme:scheme});
  await page.goto(route);
+ if(route==='/search/') await expect(page.locator('#site-search')).toBeVisible();
  await expect(page.locator('h1')).toHaveCount(1);
  const issues=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
  expect(issues.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
@@ -11,7 +13,11 @@ test('homepage is lightweight and handoff explicit',async({page})=>{
  const requests:string[]=[];page.on('request',r=>requests.push(r.url()));
  await page.goto('/'); await expect(page.getByText(/free, open-source real-time strategy game/i).first()).toBeVisible();
  await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
- await expect(page.getByRole('link',{name:/Multiplayer login/})).toHaveAttribute('href','https://app.glob2online.com/signin');
+ await expect(page.getByRole('link',{name:/Sign in to play online/})).toHaveAttribute('href','https://app.glob2online.com/signin');
+ const bar=page.getByRole('navigation',{name:'Globulation 2 Online app'});
+ await expect(bar.getByRole('link',{name:'Leaderboards'})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
+ await expect(bar.getByRole('link',{name:'Maps'})).toHaveAttribute('href','https://app.glob2online.com/maps');
+ await expect(bar.getByRole('link',{name:'Play in browser'})).toHaveAttribute('href','https://app.glob2online.com/play/');
  expect(requests.some(url=>/\.wasm|\/realtime|\/yog|\/router/.test(url))).toBe(false);
 });
 test('mobile and zoom reflow',async({page})=>{
@@ -55,4 +61,23 @@ for(const scenario of ['fresh','stale','empty','invalid','unavailable','unsafe']
  if(scenario==='unavailable'||scenario==='invalid')await expect(page.locator('.ranking-status')).toContainText('temporarily unavailable');
  else if(scenario==='empty')await expect(page.locator('.ranking-status')).toContainText('No public player');
  else {await expect(page.locator('.ranking-table')).toBeVisible();await expect(page.locator('tbody')).toContainText(scenario==='unsafe'?'<img src=x onerror=alert(1)>':'Player');expect(await page.locator('tbody img').count()).toBe(0);if(scenario==='stale')await expect(page.locator('.ranking-status')).toContainText('15 minutes');}
+});
+test('dark mode follows the system and keeps the game look',async({page})=>{
+ await page.emulateMedia({colorScheme:'dark'});await page.goto('/');
+ const bg=await page.evaluate(()=>getComputedStyle(document.body).backgroundColor);
+ expect(bg).toBe('rgb(27, 18, 41)');
+ const font=await page.evaluate(()=>getComputedStyle(document.querySelector('h1')!).fontFamily);
+ expect(font).toContain('Glob2 Sans');
+ await page.emulateMedia({colorScheme:'light'});
+ expect(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor)).toBe('rgb(241, 241, 225)');
+});
+test('search box has a visible label',async({page})=>{
+ await page.goto('/search/');
+ await expect(page.getByLabel('Search guides, news and the archive')).toBeVisible();
+});
+test('phone navigation targets are thumb-sized',async({page})=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('/');
+ for(const link of await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link').all()){
+  const box=await link.boundingBox();expect(box!.height).toBeGreaterThanOrEqual(44);
+ }
 });
