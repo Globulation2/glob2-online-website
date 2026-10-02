@@ -1,0 +1,42 @@
+{
+  "errors": [],
+  "responses": [
+    {
+      "path": "/api/v1/auth/guest",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/rooms",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/instance",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/rooms",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/leaderboards/ranked-1v1",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    },
+    {
+      "path": "/api/v1/players/TEST_ACCOUNT/matches",
+      "origin": "https://app.glob2online.com",
+      "status": 200
+    }
+  ],
+  "sockets": [
+    "wss://app.glob2online.com/realtime"
+  ],
+  "frameTypes": [
+    "response"
+  ],
+  "crossOriginIsolated": true
+}

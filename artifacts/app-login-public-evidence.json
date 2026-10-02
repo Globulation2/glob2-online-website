@@ -1,0 +1,43 @@
+{
+  "origin": "https://app.glob2online.com",
+  "checks": [
+    {
+      "name": "native form account creation",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "name": "host-only secure HTTP-only browser session",
+      "ok": true,
+      "cookies": [
+        {
+          "name": "__Host-glob2_session",
+          "domain": "app.glob2online.com",
+          "httpOnly": true,
+          "secure": true,
+          "sameSite": "Lax"
+        }
+      ]
+    },
+    {
+      "name": "authenticated app homepage",
+      "ok": true,
+      "url": "https://app.glob2online.com/"
+    },
+    {
+      "name": "native form existing-account login",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "name": "cross-origin native form blocked",
+      "ok": true,
+      "status": 403
+    },
+    {
+      "name": "browser session logout",
+      "ok": true,
+      "status": 204
+    }
+  ]
+}
