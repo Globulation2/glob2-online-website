@@ -1,0 +1,93 @@
+name: Website
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24.14.0
+          cache: npm
+      - run: npm ci
+      - run: npm run check && npm run build && node scripts/check-links.mjs
+      - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm test
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: website-dist
+          path: dist
+          retention-days: 7
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        if: always()
+        with:
+          name: browser-evidence
+          path: |
+            playwright-report
+            test-results
+          retention-days: 7
+  publish:
+    needs: verify
+    if: github.ref == 'refs/heads/main' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    environment: website
+    concurrency:
+      group: ${{ github.event_name == 'pull_request' && format('website-pr-{0}', github.event.number) || 'website-production' }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7
+        with:
+          name: website-dist
+          path: dist
+      - uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+        with:
+          workload_identity_provider: ${{ vars.WIF_PROVIDER }}
+          service_account: ${{ vars.DEPLOY_SERVICE_ACCOUNT }}
+          project_id: pharaoh-418820
+      - uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db # v3
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.14.0
+      - name: Publish immutable preview
+        env:
+          CHANNEL: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || 'candidate' }}
+        run: |
+          python3 scripts/deploy-static.py --channel "$CHANNEL" > release.json
+          cat release.json
+          python3 - "$CHANNEL" >> "$GITHUB_ENV" <<'PY'
+          import importlib.util,sys
+          spec=importlib.util.spec_from_file_location('hosting','scripts/deploy-static.py'); h=importlib.util.module_from_spec(spec); spec.loader.exec_module(h)
+          print('PREVIEW_URL='+h.request(f'sites/{h.SITE}/channels/{sys.argv[1]}')['url'])
+          PY
+      - run: node scripts/smoke.mjs "$PREVIEW_URL"
+      - name: Promote tested version
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          VERSION=$(python3 -c "import json; print(json.load(open('release.json'))['version'])")
+          python3 scripts/promote-static.py --version "$VERSION" > promotion.json
+          node scripts/smoke.mjs https://glob2-website-pharaoh-418820.web.app
+      - run: echo "Preview [website]($PREVIEW_URL)" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: always()
+        with:
+          name: hosting-release
+          path: |
+            release.json
+            promotion.json
+          retention-days: 90

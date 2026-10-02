@@ -1,0 +1,7 @@
+---
+import {getCollection} from 'astro:content';
+const {collection,path}=Astro.props;
+const entries=await getCollection(collection as 'guides');
+entries.sort((a,b)=>a.data.order-b.data.order);
+---
+<div class="two-grid">{entries.map(entry=><a class="card" href={`/${path}/${entry.id}/`}><span class="eyebrow">{entry.data.tags?.[0]??collection}</span><h2>{entry.data.title}</h2><p>{entry.data.description}</p><span class="text-link">Read more →</span></a>)}</div>

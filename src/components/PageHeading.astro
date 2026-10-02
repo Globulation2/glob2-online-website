@@ -1,0 +1,4 @@
+---
+const {eyebrow,title,description}=Astro.props;
+---
+<div class="page-heading">{eyebrow&&<p class="eyebrow">{eyebrow}</p>}<h1>{title}</h1>{description&&<p>{description}</p>}</div>

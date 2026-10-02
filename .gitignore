@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.astro/
+.firebase/
+artifacts/
+playwright-report/
+test-results/
+.env*
+!.env.example
+*-credentials.json
+__pycache__/
+*.pyc
+.DS_Store
+release.json
+promotion.json

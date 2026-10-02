@@ -1,0 +1,1 @@
+import('/pagefind/pagefind-ui.js').then(()=>{new window.PagefindUI({element:'#search',showSubResults:true,showImages:false});}).catch(()=>{document.getElementById('search').textContent='Search is temporarily unavailable. Browse the guides and archive using the navigation.';});

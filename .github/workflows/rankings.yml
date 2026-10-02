@@ -1,0 +1,30 @@
+name: Publish player ratings
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-rankings
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    environment: website-feeds
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093
+        with:
+          workload_identity_provider: ${{ vars.FEED_WIF_PROVIDER }}
+          service_account: ${{ vars.FEED_SERVICE_ACCOUNT }}
+          project_id: pharaoh-418820
+      - uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db
+      - env:
+          API_ORIGIN: ${{ vars.API_ORIGIN }}
+          BACKEND_REVISION: ${{ vars.BACKEND_REVISION }}
+        run: python3 scripts/publish-rankings.py --api-origin "$API_ORIGIN" --ladder ranked-1v1 --backend-revision "$BACKEND_REVISION" --bucket glob2-website-public-pharaoh-418820 --object rankings/v1.json

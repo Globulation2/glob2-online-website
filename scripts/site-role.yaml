@@ -1,0 +1,6 @@
+title: Glob2 website site releases
+description: Read and update the dedicated Glob2 Hosting site under a resource condition.
+stage: GA
+includedPermissions:
+- firebasehosting.sites.get
+- firebasehosting.sites.update

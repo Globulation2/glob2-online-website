@@ -1,0 +1,37 @@
+name: Check download metadata
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7 * * *'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  metadata:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.14.0
+      - env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/sync-releases.mjs
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: reviewed-download-metadata
+          path: src/data/release-metadata.json
+      - name: Propose reviewed metadata update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data/release-metadata.json; then exit 0; fi
+          git config user.name 'glob2-website-bot'
+          git config user.email 'glob2-website-bot@users.noreply.github.com'
+          git checkout -B codex/download-metadata
+          git add src/data/release-metadata.json
+          git commit -m 'Update verified game downloads'
+          git push --force-with-lease origin codex/download-metadata
+          if ! gh pr view codex/download-metadata >/dev/null 2>&1; then
+            gh pr create --base main --head codex/download-metadata --title 'Update verified game downloads' --body 'Refresh published, non-prerelease game assets. Review platform labels before merging. Generated from the public game release API.'
+          fi

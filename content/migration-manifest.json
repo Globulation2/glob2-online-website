@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "access": "public-only",
+  "policy": "Retain sources and attribution. Current guides use original prose grounded in current code; link to original diagrams until reuse rights are confirmed. Never silently update dates on historical announcements.",
+  "entries": [
+    {
+      "sourceUrl": "https://globulation2.org/wiki/User_Manual",
+      "revision": 10173,
+      "permanentUrl": "https://globulation2.org/index.php?title=User_Manual&oldid=10173",
+      "sourceLastEdited": "2017-08-15",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=User_Manual&action=history",
+      "language": "en",
+      "destination": "/learn/getting-started/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "original-current-guide-and-link",
+      "currentGameplayVerification": "Current original guides cross-checked against referenced engine implementation; historical exact balance claims not carried over"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/Farming",
+      "revision": 5673,
+      "permanentUrl": "https://globulation2.org/index.php?title=Farming&oldid=5673",
+      "sourceLastEdited": "2009-11-28",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=Farming&action=history",
+      "language": "en",
+      "destination": "/learn/sustainable-food/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "original-current-guide-and-link",
+      "currentGameplayVerification": "Current original guides cross-checked against referenced engine implementation; historical exact balance claims not carried over"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/Fruit_and_conversion",
+      "revision": 5682,
+      "permanentUrl": "https://globulation2.org/index.php?title=Fruit_and_conversion&oldid=5682",
+      "sourceLastEdited": "2009-11-30",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=Fruit_and_conversion&action=history",
+      "language": "en",
+      "destination": "/learn/fruit-and-conversion/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "original-current-guide-and-link",
+      "currentGameplayVerification": "Current original guides cross-checked against referenced engine implementation; historical exact balance claims not carried over"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/Combat",
+      "revision": 6209,
+      "permanentUrl": "https://globulation2.org/index.php?title=Combat&oldid=6209",
+      "sourceLastEdited": "2010-11-15",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=Combat&action=history",
+      "language": "en",
+      "destination": "/learn/defending-your-colony/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "original-current-guide-and-link",
+      "currentGameplayVerification": "Current original guides cross-checked against referenced engine implementation; historical exact balance claims not carried over"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/News_Archive",
+      "revision": 10165,
+      "permanentUrl": "https://globulation2.org/index.php?title=News_Archive&oldid=10165",
+      "sourceLastEdited": "2017-08-15",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=News_Archive&action=history",
+      "language": "en",
+      "destination": "/history/project-history/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "historical-facts-and-link",
+      "currentGameplayVerification": "Current original guides cross-checked against referenced engine implementation; historical exact balance claims not carried over"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/Fr:User_Manual",
+      "revision": 10024,
+      "permanentUrl": "https://globulation2.org/index.php?title=Fr:User_Manual&oldid=10024",
+      "sourceLastEdited": "2014-02-03",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=Fr:User_Manual&action=history",
+      "language": "fr",
+      "destination": "/archive/legacy-translations/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "link-only",
+      "currentGameplayVerification": "Historical translation only; not verified for current gameplay"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/De:User_Manual",
+      "revision": 4904,
+      "permanentUrl": "https://globulation2.org/index.php?title=De:User_Manual&oldid=4904",
+      "sourceLastEdited": "2009-02-15",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=De:User_Manual&action=history",
+      "language": "de",
+      "destination": "/archive/legacy-translations/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "link-only",
+      "currentGameplayVerification": "Historical translation only; not verified for current gameplay"
+    },
+    {
+      "sourceUrl": "https://globulation2.org/wiki/Es:User_Manual",
+      "revision": 5017,
+      "permanentUrl": "https://globulation2.org/index.php?title=Es:User_Manual&oldid=5017",
+      "sourceLastEdited": "2009-05-14",
+      "attribution": "Globulation2 wiki contributors; individual authors retained in source page history",
+      "authorHistoryUrl": "https://globulation2.org/index.php?title=Es:User_Manual&action=history",
+      "language": "es",
+      "destination": "/archive/legacy-translations/",
+      "reuseRights": "Unconfirmed for wiki prose and media; no text or images republished",
+      "verificationStatus": "link-only",
+      "currentGameplayVerification": "Historical translation only; not verified for current gameplay"
+    }
+  ],
+  "additionalTranslations": {
+    "sourceIndex": "https://globulation2.org/wiki/User_Manual",
+    "languages": [
+      "it",
+      "cs",
+      "ro",
+      "ru",
+      "ca",
+      "fi",
+      "ja",
+      "zh"
+    ],
+    "status": "Linked through original index; pages not individually audited"
+  }
+}
