@@ -23,6 +23,19 @@ function matches(source, pathname) {
   if (source.includes('*')) throw new Error(`Unsupported Firebase test header pattern: ${source}`);
   return pathname === source;
 }
+// Firebase redirect sources with segments like /j/:code and /play/:path*.
+function redirectTo(rule, pathname) {
+  const names = [];
+  const pattern = rule.source.split('/').map(segment => {
+    const param = /^:(\w+)(\*)?$/.exec(segment);
+    if (!param) return segment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    names.push(param[1]);
+    return param[2] ? '(.*)' : '([^/]+)';
+  }).join('/');
+  const match = new RegExp(`^${pattern}$`).exec(pathname);
+  if (!match) return null;
+  return names.reduce((to, name, i) => to.replace(`:${name}`, match[i + 1]), rule.destination);
+}
 async function fileAt(pathname) {
   const candidate = resolve(root, `.${pathname}`);
   if (!candidate.startsWith(root + sep) && candidate !== root) return null;
@@ -50,9 +63,9 @@ const server = createServer(async (request, response) => {
       response.setHeader('Allow', 'GET, HEAD');
       response.writeHead(405).end(); return;
     }
-    const redirect = hosting.redirects?.find(rule => matches(rule.source, pathname));
-    if (redirect) {
-      response.writeHead(redirect.type, { Location: redirect.destination }).end(); return;
+    for (const rule of hosting.redirects ?? []) {
+      const location = redirectTo(rule, pathname);
+      if (location !== null) { response.writeHead(rule.type, { Location: location }).end(); return; }
     }
     // Hidden files are excluded by Firebase's hosting.ignore configuration.
     const hidden = pathname.split('/').some(segment => segment.startsWith('.'));

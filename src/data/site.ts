@@ -10,6 +10,9 @@ export const site = {
   appUrl: 'https://app.glob2online.com/play/',
   hubUrl: 'https://app.glob2online.com/',
   loginUrl: 'https://app.glob2online.com/signin',
+  leaderboardUrl: 'https://app.glob2online.com/leaderboard',
+  matchesUrl: 'https://app.glob2online.com/matches',
+  mapsUrl: 'https://app.glob2online.com/maps',
   sourceUrl: 'https://github.com/Globulation2/glob2',
   discordUrl: null as string | null,
 };

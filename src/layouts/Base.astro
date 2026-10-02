@@ -5,9 +5,88 @@ interface Props {title:string; description?:string; category?:string; noindex?:b
 const {title,description=site.tagline,category,noindex=false}=Astro.props;
 const pageTitle=title===site.name?site.name:`${title} · ${site.name}`;
 const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/'],['Competition','/competition/'],['News','/news/']];
+// The multiplayer app (app.glob2online.com) shows the same strip pointing back here.
+const appLinks=[['Play in browser',site.appUrl],['Leaderboards',site.leaderboardUrl],['Matches',site.matchesUrl],['Maps',site.mapsUrl],['Sign in',site.loginUrl]];
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>{pageTitle}</title><meta name="description" content={description}/><link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/><meta property="og:title" content={pageTitle}/><meta property="og:site_name" content={site.name}/><meta property="og:description" content={description}/><meta property="og:image" content="https://glob2online.com/images/globulation2-match.png"/><meta name="theme-color" content="#214c38"/>{noindex&&<meta name="robots" content="noindex"/>}</head><body>
-<a class="skip" href="#main" tabindex="0">Skip to content</a><header class="site-header" data-pagefind-ignore><a class="brand" href="/" aria-label={`${site.name} home`}><img src="/favicon.svg" width="36" height="36" alt=""/><span class="brand-wordmark"><span>Globulation<span class="brand-two"> 2</span></span><span class="brand-online">Online</span></span></a><nav aria-label="Main navigation">{nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname.startsWith(url)?'page':undefined}>{label}</a>)}<a href="/search/" aria-label="Search the website">Search</a></nav><a class="header-play" href={site.appUrl}>Play ↗</a></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="color-scheme" content="light dark"/>
+<title>{pageTitle}</title>
+<meta name="description" content={description}/>
+<link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="preload" href="/brand/glob2-sans.woff2" as="font" type="font/woff2" crossorigin/>
+<meta property="og:title" content={pageTitle}/>
+<meta property="og:site_name" content={site.name}/>
+<meta property="og:description" content={description}/>
+<meta property="og:image" content="https://glob2online.com/images/globulation2-match.png"/>
+<meta name="theme-color" content="#2f6526" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#1b1229" media="(prefers-color-scheme: dark)"/>
+{noindex&&<meta name="robots" content="noindex"/>}
+</head>
+<body>
+<a class="skip" href="#main" tabindex="0">Skip to content</a>
+<div class="world-band" aria-hidden="true"></div>
+<nav class="site-bar" aria-label="Globulation 2 Online app" data-pagefind-ignore>
+  <div class="wrap">
+    <span class="site-bar-label">Online:</span>
+    {appLinks.map(([label,url])=><a href={url}>{label}</a>)}
+  </div>
+</nav>
+<header class="site-header" data-pagefind-ignore>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label={`${site.name} home`}>
+      <img src="/brand/glob-64.png" width="34" height="34" alt=""/>
+      <span class="wordmark" aria-hidden="true"></span>
+      <span class="brand-online" aria-hidden="true">Online</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      {nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname.startsWith(url)?'page':undefined}>{label}</a>)}
+      <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>Search</a>
+    </nav>
+    <a class="header-play button primary" href={site.appUrl}>Play <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
 <main id="main" tabindex="-1" data-pagefind-body={!noindex?true:undefined} data-pagefind-ignore={noindex?true:undefined}>{category&&<span hidden data-pagefind-filter="type">{category}</span>}<slot/></main>
-<footer class="site-footer" data-pagefind-ignore><div><a class="brand" href="/" aria-label={`${site.name} home`}><span class="brand-wordmark"><span>Globulation<span class="brand-two"> 2</span></span><span class="brand-online">Online</span></span></a><p>A little less clicking.<br/>A lot more strategy.</p></div><div><strong>Explore</strong><a href="/downloads/">Downloads</a><a href="/learn/">Player guides</a><a href="/history/">Our history</a><a href="/archive/">Legacy archive</a><a href="/privacy/">Privacy</a></div><div><strong>Get involved</strong><a href={site.sourceUrl}>Source & contributions ↗</a><a href="/community/">Community</a><a href={site.loginUrl}>Multiplayer login ↗</a></div><p class="footer-note">Free software. Built by a community.<br/>Website artwork comes from the Globulation 2 project. <a href="/credits/">Credits & sources</a></p></footer>
-</body></html>
+<footer class="site-footer" data-pagefind-ignore>
+  <div class="decor" aria-hidden="true"><img src="/brand/wood.webp" width="56" height="56" alt=""/><img src="/brand/fruit.webp" width="40" height="40" alt=""/><img src="/brand/wood.webp" width="44" height="44" alt=""/></div>
+  <div class="wrap">
+    <div>
+      <a class="brand-plain" href="/" aria-label={`${site.name} home`}><span class="wordmark" aria-hidden="true"></span></a>
+      <p>A little less clicking.<br/>A lot more strategy.</p>
+    </div>
+    <nav aria-label="Explore">
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="/downloads/">Downloads</a></li>
+        <li><a href="/learn/">Player guides</a></li>
+        <li><a href="/history/">Our history</a></li>
+        <li><a href="/archive/">Legacy archive</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Play online">
+      <h2>Play online</h2>
+      <ul>
+        <li><a href={site.appUrl}>Play in browser ↗</a></li>
+        <li><a href={site.leaderboardUrl}>Leaderboards ↗</a></li>
+        <li><a href={site.mapsUrl}>Maps ↗</a></li>
+        <li><a href={site.loginUrl}>Sign in to play online ↗</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Get involved">
+      <h2>Get involved</h2>
+      <ul>
+        <li><a href={site.sourceUrl}>Source &amp; contributions ↗</a></li>
+        <li><a href="/community/">Community</a></li>
+        <li><a href="/credits/">Credits &amp; sources</a></li>
+      </ul>
+    </nav>
+    <p class="footer-note">Free software, built by a community. The pictures, fonts and logo come from the Globulation 2 game itself (GPL&nbsp;3; fonts: DejaVu-based Glob2 Sans and Nunito, SIL OFL).</p>
+  </div>
+</footer>
+</body>
+</html>
