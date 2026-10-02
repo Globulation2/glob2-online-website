@@ -10,6 +10,8 @@ The website identity glob2-website-deploy uses project metadata-read permissions
 
 Repo variables WIF_PROVIDER, DEPLOY_SERVICE_ACCOUNT, FEED_WIF_PROVIDER, FEED_SERVICE_ACCOUNT, API_ORIGIN and BACKEND_REVISION configure workflows. BACKEND_REVISION must identify the deployed API commit, not the website source. Update it alongside backend releases. API_ORIGIN is https://app.glob2online.com.
 
+The apex used to serve the multiplayer app, so firebase.json redirects its old app paths to https://app.glob2online.com with path and query kept: /j/*, /matches*, /players/*, /leaderboard*, /maps*, /admin*, /api/*, /auth/* and /signin/* permanently (301), /play and /signin temporarily (302). scripts/smoke.mjs checks them on every preview. The website calls no app API from browsers, so the app needs no CORS entry for it.
+
 Firebase headers enforce CSP, nosniff and a referrer policy. The narrowly allowed wasm-unsafe-eval directive enables Pagefind's local search engine; it does not load the game. The game-specific COOP/COEP headers belong only on the app's /play/ path. There is no SPA fallback: missing public URLs return404.
 
 ## Website releases
