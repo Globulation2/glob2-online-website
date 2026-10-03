@@ -236,6 +236,8 @@ code { font-size: 0.92em; background: var(--surface-2); padding: 1px 6px; border
 }
 .site-bar a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
 .site-bar a:focus-visible { outline-color: var(--accent); outline-offset: -3px; }
+/* Finger-sized strip links on touch screens, like the app's (44 px). */
+@media (pointer: coarse) { .site-bar a { min-height: var(--target); } }
 
 .site-header { position: relative; z-index: 5; padding: var(--sp-3) 0; }
 .site-header .wrap { display: flex; align-items: center; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); }
@@ -580,3 +582,6 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Pagefind's Clear button is 40 px wide; keep it a full touch target. */
+.pagefind-ui .pagefind-ui__search-clear { min-width: var(--target); }
