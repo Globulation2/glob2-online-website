@@ -18,6 +18,8 @@ Firebase headers enforce CSP, nosniff and a referrer policy. The narrowly allowe
 
 The Website workflow validates content/types, builds, checks internal links, runs publisher tests and browser journeys, and uploads a checked dist artifact. Trusted same-repository PRs receive seven-day previews. Fork PRs only run checks. Main publishes a candidate, smoke-tests its routes/headers, and promotes exactly that finalized version to live.
 
+Superseded runs are cancelled: a newer push to the same PR or non-main branch cancels the older Website run. Main runs deploy, so they finish once started; GitHub replaces a pending main run with a newer one, so only the newest queued main commit deploys. Rollback, rankings, availability and metadata workflows never cancel in progress. scripts/test_workflows.py enforces this.
+
 The Firebase CLI is available for standard operations using ADC. The checked-in scripts/deploy-static.py offers the same static version/upload/release flow using gcloud's ephemeral identity token; scripts/promote-static.py promotes an existing immutable version. Both are restricted to this site. Release artifacts record the version and previous version for rollback.
 
 For manual deploy, run the standard checks/build first:
