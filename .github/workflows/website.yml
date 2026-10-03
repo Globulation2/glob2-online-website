@@ -6,9 +6,12 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+# A newer revision of the same PR or non-main branch cancels the older run.
+# Main runs deploy production and are never cancelled once started; a newer
+# pending main run replaces an older pending one. See docs/hosting.md.
 concurrency:
   group: website-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' || (github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) }}
 jobs:
   verify:
     runs-on: ubuntu-24.04
