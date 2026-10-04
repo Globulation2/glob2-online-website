@@ -14,11 +14,21 @@ test('homepage is lightweight and handoff explicit',async({page})=>{
  await page.goto('/'); await expect(page.getByText(/free, open-source real-time strategy game/i).first()).toBeVisible();
  await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
  await expect(page.getByRole('link',{name:/Sign in to play online/})).toHaveAttribute('href','https://app.glob2online.com/signin');
- const bar=page.getByRole('navigation',{name:'Globulation 2 Online app'});
- await expect(bar.getByRole('link',{name:'Leaderboards'})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
- await expect(bar.getByRole('link',{name:'Maps'})).toHaveAttribute('href','https://app.glob2online.com/maps');
- await expect(bar.getByRole('link',{name:'Play in browser'})).toHaveAttribute('href','https://app.glob2online.com/play/');
+ await expect(page.getByRole('navigation',{name:'Globulation 2 Online app'})).toHaveCount(0);
+ const header=page.locator('header.site-header');
+ await expect(header.getByRole('link',{name:'Sign in',exact:true})).toHaveAttribute('href','https://app.glob2online.com/signin');
+ await expect(header.getByRole('link',{name:/^Play/})).toHaveAttribute('href','https://app.glob2online.com/play/');
+ const online=page.getByRole('navigation',{name:'Play online'});
+ await expect(online.getByRole('link',{name:/^Leaderboards/})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
+ await expect(online.getByRole('link',{name:/^Matches/})).toHaveAttribute('href','https://app.glob2online.com/matches');
+ await expect(online.getByRole('link',{name:/^Maps/})).toHaveAttribute('href','https://app.glob2online.com/maps');
  expect(requests.some(url=>/\.wasm|\/realtime|\/yog|\/router/.test(url))).toBe(false);
+});
+test('live data pages hand off to the app',async({page})=>{
+ await page.goto('/competition/');
+ await expect(page.getByRole('link',{name:/See live leaderboards/})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
+ await page.goto('/community/');
+ await expect(page.getByRole('link',{name:/Share and play maps/})).toHaveAttribute('href','https://app.glob2online.com/maps');
 });
 test('mobile and zoom reflow',async({page})=>{
  for(const width of [360,768,1440]){
@@ -77,7 +87,7 @@ test('search box has a visible label',async({page})=>{
 });
 test('phone navigation targets are thumb-sized',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/');
- for(const link of await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link').all()){
+ for(const link of [...await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link').all(),...await page.locator('.header-end a').all()]){
   const box=await link.boundingBox();expect(box!.height).toBeGreaterThanOrEqual(44);
  }
 });

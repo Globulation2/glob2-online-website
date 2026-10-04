@@ -5,8 +5,6 @@ interface Props {title:string; description?:string; category?:string; noindex?:b
 const {title,description=site.tagline,category,noindex=false}=Astro.props;
 const pageTitle=title===site.name?site.name:`${title} · ${site.name}`;
 const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/'],['Competition','/competition/'],['News','/news/']];
-// The multiplayer app (app.glob2online.com) shows the same strip pointing back here.
-const appLinks=[['Play in browser',site.appUrl],['Leaderboards',site.leaderboardUrl],['Matches',site.matchesUrl],['Maps',site.mapsUrl],['Sign in',site.loginUrl]];
 ---
 <!doctype html>
 <html lang="en">
@@ -30,12 +28,6 @@ const appLinks=[['Play in browser',site.appUrl],['Leaderboards',site.leaderboard
 <body>
 <a class="skip" href="#main" tabindex="0">Skip to content</a>
 <div class="world-band" aria-hidden="true"></div>
-<nav class="site-bar" aria-label="Globulation 2 Online app" data-pagefind-ignore>
-  <div class="wrap">
-    <span class="site-bar-label">Online:</span>
-    {appLinks.map(([label,url])=><a href={url}>{label}</a>)}
-  </div>
-</nav>
 <header class="site-header" data-pagefind-ignore>
   <div class="wrap">
     <a class="brand" href="/" aria-label={`${site.name} home`}>
@@ -47,7 +39,10 @@ const appLinks=[['Play in browser',site.appUrl],['Leaderboards',site.leaderboard
       {nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname.startsWith(url)?'page':undefined}>{label}</a>)}
       <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>Search</a>
     </nav>
-    <a class="header-play button primary" href={site.appUrl}>Play <span aria-hidden="true">↗</span></a>
+    <div class="header-end">
+      <a class="header-signin" href={site.loginUrl}>Sign in</a>
+      <a class="header-play button primary" href={site.appUrl}>Play <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </header>
 <main id="main" tabindex="-1" data-pagefind-body={!noindex?true:undefined} data-pagefind-ignore={noindex?true:undefined}>{category&&<span hidden data-pagefind-filter="type">{category}</span>}<slot/></main>
@@ -73,6 +68,7 @@ const appLinks=[['Play in browser',site.appUrl],['Leaderboards',site.leaderboard
       <ul>
         <li><a href={site.appUrl}>Play in browser ↗</a></li>
         <li><a href={site.leaderboardUrl}>Leaderboards ↗</a></li>
+        <li><a href={site.matchesUrl}>Matches ↗</a></li>
         <li><a href={site.mapsUrl}>Maps ↗</a></li>
         <li><a href={site.loginUrl}>Sign in to play online ↗</a></li>
       </ul>
