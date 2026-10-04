@@ -1,6 +1,7 @@
 import { pathToFileURL } from 'node:url';
 
-export const MAX_FEED_AGE_MS = 15 * 60 * 1000;
+// GitHub runs the 5-minute ratings schedule only every few hours (gaps of 3.5–6.2 h seen), so allow 8 h.
+export const MAX_FEED_AGE_MS = 8 * 60 * 60 * 1000;
 const MAX_BODY_BYTES = 1024 * 1024;
 
 export function validateFreshness(feed, now = Date.now()) {
@@ -17,7 +18,7 @@ export function validateFreshness(feed, now = Date.now()) {
   const age = now - generated;
   if (age < -60_000) throw new Error('Ratings feed timestamp is more than one minute in the future');
   if (age > MAX_FEED_AGE_MS) {
-    throw new Error(`Ratings feed is stale (${Math.floor(age / 60_000)} minutes old; maximum 15). Inspect Publish player ratings runs.`);
+    throw new Error(`Ratings feed is stale (${Math.floor(age / 60_000)} minutes old; maximum ${MAX_FEED_AGE_MS / 60_000}). Inspect Publish player ratings runs.`);
   }
   return Math.max(0, age);
 }

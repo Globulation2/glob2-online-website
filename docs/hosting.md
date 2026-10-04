@@ -52,7 +52,7 @@ Availability checks, scheduled feed freshness verification and project billing a
 
 ## Operational checks
 
-Website availability runs every 15 minutes, offset from the ratings publisher. It checks the public homepage/CSP, app instance's canonical HTTPS/WSS origin, browser isolation headers and the public snapshot's schema/timestamp. An empty current ladder is healthy; a snapshot older than 15 minutes fails. Requests have 15-second deadlines, bounded response bodies and no redirects. This workflow has no cloud credentials, creates no accounts, and never starts a game.
+Website availability runs every 15 minutes, offset from the ratings publisher. It checks the public homepage/CSP, app instance's canonical HTTPS/WSS origin, browser isolation headers and the public snapshot's schema/timestamp. An empty current ladder is healthy; a snapshot older than 8 hours fails, because GitHub runs the 5-minute ratings schedule only every few hours. Requests have 15-second deadlines, bounded response bodies and no redirects. This workflow has no cloud credentials, creates no accounts, and never starts a game.
 
 Run `node --test scripts/test_monitor.mjs` to verify its failure handling, then `node scripts/monitor.mjs` to check production. A failed Website availability run is the operational alert; maintainers should enable GitHub Actions failure notifications. GitHub schedules are best effort, so this is not an exact 15-minute detection guarantee. Inspect Publish player ratings first for a stale snapshot; restore website versions for static regressions and use the independent backend deployment process for app failures. No monitoring credential or external notification service is required.
 
