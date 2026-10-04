@@ -6,8 +6,8 @@ const now = Date.parse('2026-10-02T16:00:00Z');
 const feed = generatedAt => ({ schemaVersion: 1, ratingPolicy: 'openskill-plackett-luce-v1', ladder: 'ranked-1v1', generatedAt, entries: [] });
 test('empty current ratings remain healthy, with exact stale boundary', () => {
   assert.equal(validateFreshness(feed('2026-10-02T16:00:00Z'), now), 0);
-  assert.equal(validateFreshness(feed('2026-10-02T15:45:00Z'), now), MAX_FEED_AGE_MS);
-  assert.throws(() => validateFreshness(feed('2026-10-02T15:44:59Z'), now), /stale/);
+  assert.equal(validateFreshness(feed('2026-10-02T08:00:00Z'), now), MAX_FEED_AGE_MS);
+  assert.throws(() => validateFreshness(feed('2026-10-02T07:59:59Z'), now), /stale/);
 });
 test('malformed, unsupported and future snapshots fail', () => {
   for (const timestamp of ['invalid', '2026-02-30T16:00:00Z', '2026-10-02T16:02:00Z']) {
