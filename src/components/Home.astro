@@ -46,7 +46,13 @@ const news=(await getCollection('news')).sort((a,b)=>(b.data.published?.getTime(
       if (paused || !visible || reduced.matches || document.hidden) video.pause();
       else {
         if (!video.src) video.src = video.dataset.src!;
-        void video.play().catch(() => { video.classList.remove('playing'); button.hidden = true; });
+        void video.play().catch((error: unknown) => {
+          // WebKit can cancel a pending play promise when the viewer pauses.
+          // That cancellation must preserve the frozen frame and resume button.
+          if (error instanceof DOMException && error.name === 'AbortError') return;
+          video.classList.remove('playing');
+          button.hidden = true;
+        });
       }
     };
     video.addEventListener('playing', () => { video.classList.add('playing'); button.hidden = reduced.matches; });
