@@ -98,7 +98,7 @@ const server = createServer(async (request, response) => {
       response.setHeader('Content-Range', `bytes ${start}-${end}/${size}`);
       response.setHeader('Content-Length', end - start + 1);
     }
-    const stream = createReadStream(file, { start, end });
+    const stream = createReadStream(file, response.statusCode === 206 ? { start, end } : undefined);
     stream.on('error', () => response.destroy());
     response.on('close', () => stream.destroy());
     stream.pipe(response);
