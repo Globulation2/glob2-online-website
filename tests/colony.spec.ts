@@ -1,5 +1,21 @@
 import { test, expect } from '@playwright/test';
 
+test('colony video supports byte ranges used by media playback', async ({ request }) => {
+  const url = '/brand/colony-loop.mp4';
+  const head = await request.head(url);
+  const size = Number(head.headers()['content-length']);
+  expect(head.headers()['accept-ranges']).toBe('bytes');
+  for (const [range, start, end] of [['bytes=0-31', 0, 31], ['bytes=-32', size - 32, size - 1]]) {
+    const response = await request.get(url, { headers: { Range: String(range) } });
+    expect(response.status()).toBe(206);
+    expect(response.headers()['content-range']).toBe(`bytes ${start}-${end}/${size}`);
+    expect((await response.body()).length).toBe(32);
+  }
+  const invalid = await request.get(url, { headers: { Range: `bytes=${size}-` } });
+  expect(invalid.status()).toBe(416);
+  expect(invalid.headers()['content-range']).toBe(`bytes */${size}`);
+});
+
 test('real colony video pauses and respects reduced motion', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.goto('/');
