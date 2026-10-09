@@ -25,7 +25,7 @@ npm test
 
 `npm run preview` serves the compiled pages with Pagefind search. Development mode does not build the search index. Browser tests serve the compiled site with Firebase security headers on port4322 to exercise the production CSP.
 
-The site uses Astro content collections for guides, news, history and source-linked archive entries. `src/data/events.json` contains validated, reviewed human-community events; an empty collection is intentional until organizers announce something. `src/data/site.ts` holds community URLs. Configure only verified Discord invitations. `src/data/release-metadata.json` records real release assets; `scripts/sync-releases.mjs` obtains public, non-prerelease metadata.
+The site uses Astro content collections for guides, news, history and source-linked archive entries. `src/data/events.json` contains validated, reviewed human-community events; an empty collection is intentional until organizers announce something. `src/data/site.ts` holds community URLs. Configure only verified Discord invitations. `src/data/release-metadata.json` records a qualified all-platform manifest; `scripts/sync-releases.mjs` verifies immutable public release assets and production store links. Node 24.14+ is required for the shared TypeScript schema.
 
 The selected design is Colony. `/design/colony/` and `/design/field-guide/` remain noindexed review references. Search distinguishes current guidance from history. The legacy migration manifest records sources, revisions, attribution, language, rights and verification status. Original wiki prose and media remain source-linked where republication rights are unverified.
 
