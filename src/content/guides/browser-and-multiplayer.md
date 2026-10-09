@@ -4,19 +4,21 @@ description: "Prepare for a match and keep a safe copy of your local progress."
 locale: "en"
 tags: ["beginner", "multiplayer", "troubleshooting"]
 order: 6
-sources: [{"title": "Browser controls, storage, multiplayer, and renderer support", "url": "https://github.com/Globulation2/glob2/blob/604510c37baa1bef86f1641fc5bb2f8d8a26f72f/browser/README.md"}, {"title": "Storage guide", "url": "https://github.com/Globulation2/glob2/blob/604510c37baa1bef86f1641fc5bb2f8d8a26f72f/docs/browser/storage.md"}, {"title": "Online accounts and guest play", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/identity.md"}, {"title": "Online hub and connection handling", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/client.md"}, {"title": "Ratings and verification", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/ratings-and-matchmaking.md"}]
+sources: [{"title": "Browser controls, storage, multiplayer, and renderer support", "url": "https://github.com/Globulation2/glob2/blob/604510c37baa1bef86f1641fc5bb2f8d8a26f72f/browser/README.md"}, {"title": "Storage guide", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/docs/browser/storage.md"}, {"title": "Online accounts and guest play", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/identity.md"}, {"title": "Online hub and connection handling", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/client.md"}, {"title": "Ratings and verification", "url": "https://github.com/Globulation2/glob2/blob/6dbb6bfbbf0615d63bec120c704e707a8d2e9798/docs/multiplayer/ratings-and-matchmaking.md"}]
 reviewedAgainst: "6dbb6bfbbf0615d63bec120c704e707a8d2e9798"
 ---
 
 ## Start locally
 
-The browser client offers Tutorial, Campaign, Custom Game, and Editor. Use a mouse and keyboard. Click the game canvas to focus keyboard input and enable music.
+Start with **Tutorial** in the browser game before entering multiplayer. On a computer, click the game canvas to focus keyboard input and enable music. The [first-session guide](/learn/getting-started/) walks through the observed tutorial entry and the colony’s first jobs.
 
 Your browser saves belong to that browser profile and website address. Clearing site data removes them. Use the in-game import and export controls to keep backups; another browser does not automatically share those saves.
 
 ## Finish a save before closing
 
-Use the game’s **Quit** control and wait for storage to finish. If a write fails, the game offers a retry or a way to leave without confirming a save. Refreshing or closing the tab cannot wait for those pending writes.
+To continue a match later, open the game menu and choose **Save game**. Complete that save before leaving; quitting alone does not save an ongoing match for later play.
+
+Then use the game’s **Quit** control and wait for storage to finish. If a write fails, the game offers a retry or a way to leave without confirming a save. Refreshing or closing the tab cannot wait for those pending writes.
 
 ## Play online
 
