@@ -265,6 +265,115 @@
       "caption": "Detail: Working is staffing; Priority chooses hiring preference; Food and the three production bars report separate functions.",
       "alt": "Selected swarm sidebar showing Working 1/1, low/medium/high priority, Food 4/20, and Worker, Explorer and Warrior production bars.",
       "kind": "image"
+    },
+    {
+      "id": "hauling-delivery",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-delivery.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-delivery.webp",
+      "sha256": "768a0e27a4bf55534af9588a5a023e8b0e9e18d93aad776187cd35580d160551",
+      "bytes": 123806,
+      "width": 1440,
+      "height": 900,
+      "caption": "Workers carry wheat to a completed inn. Food 2/10 is stored food; Inside 2/4 records globs eating.",
+      "alt": "Selected inn near wheat; two workers carry loads and the sidebar shows Food 2/10, Working 2/2 and Inside 2/4.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-construction",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-construction.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-construction.webp",
+      "sha256": "3445e0fdf81e3fd66cebbfd87babea717916b6100bfd46103a75ff0417ce49cd",
+      "bytes": 119324,
+      "width": 1440,
+      "height": 900,
+      "caption": "The inn is still a construction site: two of three wood have arrived, with one worker attached to a request for three.",
+      "alt": "Inn foundation next to wheat, selected panel showing Wood 2/3, Working 1/3 and construction health 135/200.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-construction-detail",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-construction-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-construction-detail.webp",
+      "sha256": "f9930e6f96f63acc5be853be66c361610ca54ff0eead49099e7e64747cdd34b6",
+      "bytes": 5264,
+      "width": 163,
+      "height": 206,
+      "caption": "Detail: wood deliveries build the inn before its food service can begin.",
+      "alt": "Construction panel crop with Wood 2/3 and Working 1/3.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-route-comparison",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-route-comparison.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-route-comparison.webp",
+      "sha256": "eabd9e6f957cf84415148e6054cacb32bdff612a292c83646ba49beef5a344f0",
+      "bytes": 137148,
+      "width": 1440,
+      "height": 900,
+      "caption": "Both inns are completed. The lower inn is farther from the revealed wheat; its first food deliveries are still on their way.",
+      "alt": "Two completed inns, the lower selected with Food 0/10, two attached workers carrying wheat across the colony.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-working-detail",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-working-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-working-detail.webp",
+      "sha256": "c49cdb295429d7f63341e7327113e6fbd8cae71c009cc95dd3e4f9ef3f0c1823",
+      "bytes": 6336,
+      "width": 163,
+      "height": 274,
+      "caption": "Detail: the farther inn now holds Food 2/10 and has two workers attached to its request for two.",
+      "alt": "Completed inn panel crop showing Food 2/10, Inside 0/4 and Working 2/2.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-near-detail",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-near-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-near-detail.webp",
+      "sha256": "c2b793e3aee356429e87fd4733ee41d7a48ecdccb153cc76fa8cb46f37b82740",
+      "bytes": 8030,
+      "width": 163,
+      "height": 288,
+      "caption": "A full food stock does not require every requested worker to remain attached; read the stock and diagnostic messages together.",
+      "alt": "Near inn panel crop with Food 10/10, Inside 2/4, Working 0/3 and fruit access messages.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-delivered",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-delivered.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-delivered.webp",
+      "sha256": "266c9935481db758032e735b1e86c4287633361eddc9d2d00b8d928acad9fb0c",
+      "bytes": 141396,
+      "width": 1440,
+      "height": 900,
+      "caption": "After more travel time, food has arrived at the farther inn. Compare the delivery route, not just the building count.",
+      "alt": "Selected farther inn with Food 2/10 and two food-hauling workers, nearby hospital and nearer inn visible.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-delivery-poster",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-delivery-poster.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-delivery-poster.webp",
+      "sha256": "eabd9e6f957cf84415148e6054cacb32bdff612a292c83646ba49beef5a344f0",
+      "bytes": 137148,
+      "width": 1440,
+      "height": 900,
+      "caption": "Workers bring wheat to the newly completed farther inn.",
+      "alt": "Two workers carrying wheat toward the selected farther inn.",
+      "kind": "image"
+    },
+    {
+      "id": "hauling-delivery-clip",
+      "path": "/guide-media/v1/resources-and-hauling/hauling-delivery-clip.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/resources-and-hauling/hauling-delivery-clip.mp4",
+      "sha256": "68633dc1d7e9de1cf933cfc10c115f7d95c7a9adc4f9950a598bbdabf7d124a7",
+      "bytes": 1605177,
+      "width": 1440,
+      "height": 900,
+      "caption": "Workers carry food along the longer route to the lower inn. The selected Food count changes as deliveries arrive. This 15-second clip has no audio.",
+      "alt": "Workers walk from the wheat at the upper right to the farther lower inn while its selected food stock changes.",
+      "kind": "video",
+      "poster": "hauling-delivery-poster"
     }
   ]
 }
