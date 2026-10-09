@@ -51,7 +51,7 @@ test('guides history and events are honest',async({page})=>{
 });
 test('static search can find current and historical content',async({page})=>{
  await page.goto('/search/');const input=page.locator('#search input[type="text"]');await input.fill('food');await expect(page.locator('.pagefind-ui__result').first()).toBeVisible();
- await expect(page.locator('#search')).toContainText('Current guides');
+ await expect(page.locator('#search')).toContainText('Player handbook');
 });
 test('content remains browsable without JavaScript',async({browser})=>{
  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();

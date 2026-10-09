@@ -24,7 +24,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm run build && node scripts/check-links.mjs
-      - run: node --test scripts/test_monitor.mjs
+      - run: node --test scripts/test_monitor.mjs scripts/test_guide_media.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test
@@ -32,6 +32,12 @@ jobs:
         with:
           name: website-dist
           path: dist
+          retention-days: 7
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: guide-media
+          path: dist/guide-media
+          if-no-files-found: ignore
           retention-days: 7
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         if: always()

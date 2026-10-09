@@ -17,3 +17,7 @@ The Check download metadata workflow fetches published game releases. Review ass
 ## Review
 
 Substantial changes require two rendered rounds: factual/editorial review and usability/accessibility/integration review. Test newcomer play/download journeys, strategy discovery, original-source attribution, responsive navigation and community actions. Keep reports/screenshots in ignored artifacts; durable conclusions belong here or in the relevant guide.
+
+## Player handbook
+
+See [handbook production](handbook-production.md) for research ownership, gameplay capture, independent review, media storage and article publication.

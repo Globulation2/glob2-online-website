@@ -1,0 +1,8 @@
+---
+import {mediaHTML} from '../data/guide-media';
+import {insertGuideMedia} from '../lib/guide-media';
+interface Props {id?:string}
+const {id}=Astro.props;
+const html=id?mediaHTML(id):insertGuideMedia(await Astro.slots.render('default'));
+---
+<Fragment set:html={html}/>
