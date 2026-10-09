@@ -1,0 +1,40 @@
+name: Publish approved guide media
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Same-repository Actions run containing the approved guide-media artifact'
+        required: true
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: guide-media-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment: website-media
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: 24.14.0
+      - uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131
+        with:
+          name: guide-media
+          path: artifacts/handbook/approved/guide-media
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093
+        with:
+          workload_identity_provider: projects/485653453075/locations/global/workloadIdentityPools/github-actions/providers/glob2-website-media
+          service_account: glob2-website-media@pharaoh-418820.iam.gserviceaccount.com
+          project_id: pharaoh-418820
+      - uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db
+      - run: python3 scripts/upload-guide-media.py --workload-identity --source-dir artifacts/handbook/approved

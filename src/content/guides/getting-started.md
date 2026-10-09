@@ -1,90 +1,132 @@
 ---
 title: "Your first colony"
-description: "Start the tutorial, give a building workers, and learn what to check when the colony waits."
+description: "Play the first tutorial: build and supply an inn, give workers jobs, add a hospital, and send explorers into the unknown."
 locale: "en"
-tags: ["beginner", "basics"]
+tags: ["beginner", "basics", "walkthrough"]
 order: 1
-sources: [{"title": "Tutorial campaign sequence", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/campaigns/Tutorial_Campaign.txt"}, {"title": "Building worker controls", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/src/hud/input/GameGUIInputMenuClickBuilding.cpp"}, {"title": "Construction and resource delivery", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/src/building/Construction.cpp"}, {"title": "Unit work, hunger and medical needs", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/src/unit/UnitActivity.cpp"}, {"title": "Building meals", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/src/building/Misc.cpp"}, {"title": "Browser play and saving", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/browser/README.md"}, {"title": "Working panel current and requested workers", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/src/hud/draw/GameGUIDrawBuildingHelpers.cpp"}, {"title": "Completed save operations and shutdown storage", "url": "https://github.com/Globulation2/glob2/blob/880e3d2bec02c3ec71b7757aea9f1094d42e4b98/docs/browser/storage.md"}]
-reviewedAgainst: "880e3d2bec02c3ec71b7757aea9f1094d42e4b98"
+group: "start"
+prerequisites: []
+sources: [{"title": "First tutorial scenario", "url": "https://github.com/Globulation2/glob2/blob/012d57694f790788f3fe3c5e2a08196d236b949a/scripts/tutorial_part1.sgsl"}, {"title": "Building staffing and production controls", "url": "https://github.com/Globulation2/glob2/blob/012d57694f790788f3fe3c5e2a08196d236b949a/src/hud/input/GameGUIInputMenuClickBuilding.cpp"}, {"title": "Unit activity and meals", "url": "https://github.com/Globulation2/glob2/blob/012d57694f790788f3fe3c5e2a08196d236b949a/src/unit/UnitActivity.cpp"}]
+reviewedAgainst: "012d57694f790788f3fe3c5e2a08196d236b949a"
 ---
 
-Start by learning how one building works. Open the [browser game](https://app.glob2online.com/play/), choose **Tutorial**, then select **Introduction and Basics** in **Tutorial Campaign** and choose **Start Mission**. The tutorial is a local game mode; it does not require entering a multiplayer queue.
+Your first goal is a working colony: an **inn with food**, a **swarm producing the units you want**, and workers keeping both supplied. The first tutorial lets you learn this without an opponent interrupting you.
 
-The first mission begins with a red swarm and a worker. Follow its on-screen prompts: press **Space** to continue when asked, then click the globule when the lesson requests it. Later lessons introduce more buildings, training and flags.
+This walkthrough uses the desktop browser controls. Open [the browser game](https://app.glob2online.com/play/), choose **Tutorial**, select **Introduction and Basics** in **Tutorial Campaign**, and choose **Start Mission**. Read each message before pressing **Space** to continue. Press **H** to revisit earlier messages. If you need time to inspect something, press **P** to pause, then press it again to resume. Resume before advancing the next tutorial message.
 
-This guide explains the work and food decisions you will encounter. Custom rules can change those systems, so use the tutorial before experimenting with a custom game.
+[[media:pilot-menu]]
 
-## 1. Inspect a building before changing it
+## 1. Read your starting colony
 
-Select one of your buildings. Its information shows what it needs and how many workers it requests. An **inn** feeds globs; a **swarm** produces new ones. They have different jobs, even though both rely on deliveries.
+The tall red structure is your **Swarm**. It produces new globs. The small moving red glob is a **worker**. Watch it walk to the wheat, harvest, and bring food back to the swarm. Wheat appears as small yellow and orange dots on the grass; follow the worker's route if you cannot immediately find the patch.
 
-**What to watch:** globs travel between the buildings and nearby resources. A glob leaving a job to eat is meeting a need, rather than ignoring your order.
+[[media:pilot-start]]
 
-**If nothing is selected:** select the building itself, rather than a nearby glob or an empty tile. On a computer, click inside the game to give it keyboard focus.
+You organize jobs for the colony. The globs choose their routes and interrupt work when they need food or medical care. Selecting a glob lets you inspect it; it does not turn that glob into a unit you steer around the map.
 
-## 2. Give one job workers
+Left-click the moving worker when the tutorial asks. Its information appears in the right sidebar. The blue bar under the glob shows its nutrition, which falls over time. **The swarm's food is for creating units. Existing globs need an inn to eat.** Right-click to clear the selection when you are ready to build.
 
-When the tutorial asks for an inn, click the **Inn** icon below the minimap and choose clear ground near wheat. Right-click to leave placement mode, then select the inn. Its panel identifies it as **Inn Level 1**.
+## 2. Build an inn beside the food supply
 
-Use the **Working** slider in that panel to change the worker request. Changing the request from two to three asks for another worker; **3/3** means all three requested workers are currently working. Keep workers available for other buildings too.
+Advance to the tutorial's inn instruction. Open the construction panel with the icon under the minimap, then choose **Inn**. With the default keyboard bindings, you can also press **B**, then **I**.
 
-<figure class="guide-figure">
-<a href="/images/glob2-tutorial.webp" aria-label="View the tutorial inn and its worker panel at full size">
-<img src="/images/glob2-tutorial.webp" width="1280" height="720" alt="Selected inn to the left of a red swarm. The inn panel on the right shows Working 0/3 and Food 10/10." loading="lazy" />
-</a>
-<figcaption>The inn is on the left, beside the red swarm. Here, Working 0/3 means three workers are requested and none are currently working there. Food 10/10 shows a full wheat supply. Requested workers and current workers can differ as globs meet their needs. <a href="/images/glob2-tutorial.webp">View the full-size screenshot</a>.</figcaption>
-</figure>
+1. Find empty grass near the wheat your worker visits.
+2. Move the building preview over that grass. Leave the wheat intact and leave room to walk around the inn and swarm.
+3. Left-click once to place the site.
+4. Right-click to leave placement mode, so another click does not place a second inn.
+5. Select the site and watch its resource and **Working** information.
 
-**What to watch:** available workers respond by travelling to the job and bringing the materials it needs. A worker request is demand, not a promise that all requested workers arrive immediately.
+[[media:pilot-foundation]]
 
-**If construction waits:** check three things before raising demand again: whether materials are available, whether workers are free, and whether they can reach the site. Workers eating or receiving care cannot supply the site at the same time.
+A construction site is a job awaiting materials. In this tutorial, workers collect wood for the inn. You should see the wood count rise, the construction progress increase, and finally the foundation become the completed building. Keep the game running while workers travel; a long trip is not instant construction.
 
-## 3. Check food before producing more globs
+Once finished, the inn's workers fetch wheat instead. Select the completed inn and look for its labeled **Food** count. Watch a glob enter to eat: the **Inside** count can rise while the glob disappears into the building, then it comes out again.
 
-Select your inn and inspect **Food** in its panel alongside **Working**. In the pictured example, **Food 10/10** means the inn has a full wheat supply. Workers collect and deliver wheat to replenish the supply after meals.
+[[media:pilot-inn]]
 
-Workers must collect reachable wheat for the inn to serve meals. Watch arrivals and deliveries before increasing population production at a swarm.
+The important checkpoint is **food arriving and globs eating**, not simply having placed a building. A completed but empty inn cannot feed the colony.
 
-**What to watch:** food supply must keep up as the colony grows. A field near your settlement is not enough if the inn has no workers or its deliveries cannot get through.
+## 3. Understand the Working request
 
-**If hunger rises:** give the existing food supply time and workers to recover. Reduce competing worker requests or population production before opening more projects. Check the route to wheat as well as the amount left on the map.
+Click the swarm. The **Working** row has arrows at either end. The number after the slash is the requested staffing; the number before it is how many workers are currently attached. For example, **Working 1/3** means one worker is attached to a request for three. Asking for more does not create more workers.
 
-## 4. Follow the tutorial through flags
+[[media:pilot-swarm]]
 
-Continue the remaining lessons rather than starting a fight immediately. They introduce other buildings and training before flags and attacking.
+[[media:pilot-working-detail]]
 
-An exploration flag requests explorers at a location. A war flag requests warriors. A clearing flag requests workers. These requests use different unit roles; assigning a flag does not turn an ordinary worker into a warrior.
+The tutorial asks you to reduce the swarm's request to zero, then do the same at the inn. Use the left arrow on **Working** until the requested count reaches zero. This releases the workers from those jobs. They still need meals, and the inn's stored food will run down. Check both buildings: the number after the slash should now be zero.
 
-**What to watch:** the requested units travel toward the flag. Their route, training and other needs affect what happens next.
+[[media:pilot-idle-detail]]
 
-**If a flag has no response:** check that your colony has the relevant unit type and that the flag requests units. Inspect the route and whether those units are occupied before placing more flags.
+**Keep this a brief demonstration.** Continue into the hospital task promptly. If you stop to read or take a break, pause the game. In an ordinary match, removing all food haulers for a long time is a way to starve the colony.
 
-## 5. Try one experiment in a custom game
+An inn can also temporarily show fewer workers than requested because its food stock is full or workers are taking meals. Read the food count and any messages below it before treating a low Working count as a problem.
 
-After the tutorial, choose **Custom game**. Its setup has **Map**, **Players & Teams** and **Game Rules** tabs. Check the map, which colony you control, the computer opponents and the rules, then choose **Play this map**.
+## 4. Add a hospital and restore food hauling
 
-First, practise the inn’s worker request: change it, wait, and compare its deliveries with the other jobs in your colony. Then try an exploration flag:
+When the tutorial enables **Hospital**, place one on clear ground near your colony. Use the construction panel or **B**, then **H**. Right-click out of placement and select the foundation.
 
-1. Open the flag tab: the second round icon beneath the minimap.
-2. Choose the first triangular icon. Its tooltip reads **Exploration Flag** and **Attracts explorers**.
-3. Place it on clear terrain, right-click to leave placement mode, then select the flag.
-4. Inspect **On the way**, **Here**, **Working** and **Range** in its panel. These tell you whether units are responding and what the flag requests.
+Set the hospital's requested **Working** count to **two**, as the tutorial asks. Compare the request with the workers who actually arrive, then wait for construction to finish. A hospital provides healing; it does not replace the inn's food supply. In the foundation detail below, **Working 1/2** means one attached worker out of two requested; **Wood 2/3** means one delivery is still needed.
 
-<figure class="guide-figure">
-<a href="/images/glob2-exploration-flag.webp" aria-label="View the exploration flag and its response counters at full size">
-<img src="/images/glob2-exploration-flag.webp" width="1280" height="720" alt="Selected exploration flag beside a red swarm and a revealed lake, with a panel showing On the way 0, Here 2, Working 2/2 and Range 10." loading="lazy" />
-</a>
-<figcaption>After the swarm produces explorers, two respond to the flag: Working 2/2 and Here 2. They reveal terrain around the lake. On the way 0 means neither is still travelling to the flag. <a href="/images/glob2-exploration-flag.webp">View the full-size screenshot</a>.</figcaption>
-</figure>
+[[media:pilot-hospital-working]]
 
-**If nobody arrives:** check whether your colony has explorers. A flag requesting two explorers shows **Working 0/2** if none are assigned. If the colony has zero explorers, that request cannot be filled. Select a swarm to find its **Worker**, **Explorer** and **Warrior** production controls. Increase the **Explorer** production weight and keep workers supplying the swarm; a worker request of three gives deliveries a share of the workforce. Wait for new explorers to be produced, then select the flag again to watch **On the way** and **Here** change. These controls produce new units; they do not turn existing workers into explorers.
+[[media:pilot-hospital]]
 
-In the pictured example, **Working 2/2** and **Here 2** show that two explorers have arrived. The map now reveals terrain around the lake. Producing explorers supplied the units the flag needed.
+Before spending time on exploration, return to the inn and request **one worker**. This restores its food delivery. Later tutorial messages remind you to do this too. Check that the food stock can recover after meals, rather than relying on the food left from earlier.
 
-Keep this a small experiment. When you can explain why one building or flag is working or waiting, try a second service. Next, read [jobs and flags](/learn/jobs-and-flags/) and [keeping the colony fed](/learn/sustainable-food/).
+## 5. Produce two explorers
 
-## Leave with a saved copy
+The black surrounding area is undiscovered terrain. Workers uncover land along their routes, but **explorers** fly around and reveal much more of the map.
 
-To continue a match later, open the game menu using the small round icon at the upper-left of the minimap. Choose **Save game** and finish the save before leaving.
+Select the swarm. Beneath its food display are three production bars: **Worker**, **Explorer**, and **Warrior**. These are separate from the Working bar above them.
 
-Then use the game’s **Quit** control and wait for storage to finish before closing the browser tab. Quit flushes stored files; it does not replace saving the match. Browser saves belong to the current browser profile and website address. Export a backup before clearing site data or moving browsers. See [browser play and saves](/learn/browser-and-multiplayer/) for the details.
+1. Increase the Explorer bar to **one notch** with its right arrow.
+2. Reduce the Worker bar to **zero** with its left arrow. Leave Warrior at zero.
+3. Request **one worker** on the swarm's Working bar, so someone brings food for production.
+4. Confirm that the inn still requests one worker.
+5. Let the game run and watch the swarm produce an explorer. Continue the tutorial messages and wait for a second explorer.
+
+[[media:pilot-production]]
+
+[[media:pilot-production-detail]]
+
+Production bars set the **relative mix of future births**. They do not convert your existing workers into explorers. Setting only Explorer above zero makes future production explorers while food and a usable exit are available. Leaving both Worker and Explorer above zero shares production between them; it is not a guaranteed alternating queue.
+
+[[media:pilot-exploration-clip]]
+
+Watch the revealed land expand and compare the minimap with the small starting clearing. After the second explorer, restore **Worker to one notch** and **Explorer to zero**, as the tutorial instructs. You now know how to change the colony's direction without directly commanding each glob.
+
+[[media:pilot-two-explorers]]
+
+[[media:pilot-restored-detail]]
+
+Continue the last message to finish the tutorial. Its completion dialog offers **Continue playing** if you want to inspect your colony a little longer.
+
+## 6. Save before leaving
+
+Open the in-game menu with **Escape** or the menu icon beside the minimap. Choose **Save game**, enter a recognizable name, and confirm. Use a new name when you want to keep an earlier milestone as well.
+
+[[media:pilot-save]]
+
+Browser saves belong to this browser's local storage. Keep an exported copy of saves you care about before clearing site data or switching browsers: from the main menu, open **Load**, select the save, and choose **Export**. A platform account is not a substitute for that local backup. After saving, use the in-game **Quit** control and wait for storage to finish before closing the tab. Quit finishes storage work; it does not replace saving the match.
+
+## Fix the first problems you encounter
+
+| What you see | What to check | First correction |
+| --- | --- | --- |
+| An inn site stays unfinished | Wood requirement, Working request, and paths to the site and trees | Release workers from competing jobs and keep the routes open. |
+| The inn is complete but food stays at zero | Its staffing request and reachable wheat | Request a worker at the inn; keep production modest while food recovers. |
+| Working is lower than the request | Current stock, workers eating or healing, and the messages in the sidebar | Read the reason before raising the request again. |
+| The swarm produces nothing | Food, Working request, nonzero production bars, and space at the exit | Restore food hauling and a production mix; remove obstructions at the exit. |
+| A glob's health drops after going hungry | Whether it can reach a stocked inn and then a hospital | Restore food first, keep healing available, and delay extra construction. |
+| A shortcut does something unexpected | Current selection, placement mode, and tutorial message | Right-click out of placement, inspect the sidebar, and use the visible controls. |
+
+## Try the same loop against an AI
+
+Return to the main menu and choose **Custom Game**. For a first practice match, use **Random map** and set **Colonies** to **two** on the Map tab. On **Players & Teams**, check that your colony says **You** and the other says **AI**. Choose **Numbi – Easy** for that opponent. On **Game Rules**, keep **Standard** so food, construction, and other ordinary needs still matter.
+
+[[media:pilot-practice]]
+
+Choose **Play this map** once the preview is ready. Your exercise is to establish a supplied inn, keep the swarm supplied, and produce a few explorers before taking on more projects. The landscape will differ from the tutorial: inspect the food, wood, and walking routes before placing the inn. Numbi is still an opponent, so this practice is less forgiving than the tutorial.
+
+Next, learn how to [organize jobs and flags](/learn/jobs-and-flags/), then [keep a growing colony fed](/learn/sustainable-food/).

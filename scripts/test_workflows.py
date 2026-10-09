@@ -11,7 +11,7 @@ STANDARD_CANCEL = ("${{ github.event_name == 'pull_request' || (github.event_nam
                    "startsWith(github.ref, 'refs/heads/') && "
                    "github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) }}")
 # Scheduled publishing, monitoring and manual operations: never cancelled in progress.
-OPERATIONS = {'monitor.yml', 'rankings.yml', 'releases.yml', 'rollback.yml'}
+OPERATIONS = {'monitor.yml', 'rankings.yml', 'releases.yml', 'rollback.yml', 'guide-media.yml'}
 
 
 def block(text, key):

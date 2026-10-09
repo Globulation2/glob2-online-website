@@ -32,11 +32,11 @@ test('live data pages hand off to the app',async({page})=>{
 });
 test('mobile and zoom reflow',async({page})=>{
  for(const width of [360,768,1440]){
-  await page.setViewportSize({width,height:900});await page.goto('/');
+  await page.setViewportSize({width,height:900});await page.goto('/',{waitUntil:'domcontentloaded'});await page.evaluate(()=>document.fonts.ready);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toBeVisible();
  }
- await page.setViewportSize({width:720,height:900});await page.goto('/learn/');await page.evaluate(()=>document.documentElement.style.fontSize='200%');
+ await page.setViewportSize({width:720,height:900});await page.goto('/learn/',{waitUntil:'domcontentloaded'});await page.evaluate(()=>document.fonts.ready);await page.evaluate(()=>document.documentElement.style.fontSize='200%');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 test('keyboard skip link and reduced motion',async({page})=>{
@@ -51,7 +51,7 @@ test('guides history and events are honest',async({page})=>{
 });
 test('static search can find current and historical content',async({page})=>{
  await page.goto('/search/');const input=page.locator('#search input[type="text"]');await input.fill('food');await expect(page.locator('.pagefind-ui__result').first()).toBeVisible();
- await expect(page.locator('#search')).toContainText('Current guides');
+ await expect(page.locator('#search')).toContainText('Player handbook');
 });
 test('content remains browsable without JavaScript',async({browser})=>{
  const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();

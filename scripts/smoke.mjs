@@ -1,3 +1,5 @@
+import {readFile} from 'node:fs/promises';
+import {validateManifest, verifyAsset} from './stage-guide-media.mjs';
 const base=process.argv[2];if(!base?.startsWith('https://'))throw Error('HTTPS website URL required');
 for(const route of ['/','/game/','/learn/','/community/','/competition/','/events/','/news/','/downloads/','/history/','/archive/','/search/']) {
  const response=await fetch(new URL(route,base),{signal:AbortSignal.timeout(15000)});
@@ -15,3 +17,21 @@ for(const [route,codes] of [['/j/ABCDEFGH',[301]],['/matches/00000000-0000-4000-
 }
 console.log('Old app paths redirect to the app host.');
 console.log('Static routes, security headers and404 validated.');
+
+// Check the actual immutable release: chapter routes and every approved media byte.
+const handbook=await (await fetch(new URL('/learn/',base))).text();
+const chapters=[...new Set([...handbook.matchAll(/href="(\/learn\/[a-z0-9-]+\/)"/g)].map(match=>match[1]))];
+for(const route of chapters) {
+ const response=await fetch(new URL(route,base),{signal:AbortSignal.timeout(15000)});
+ const html=await response.text();
+ if(!response.ok||!html.includes('<article')||html.includes('[[media:')||!html.includes('On this page'))throw Error(`${route}: invalid handbook chapter`);
+}
+const assets=validateManifest(JSON.parse(await readFile('src/data/guide-media.json','utf8')));
+for(let offset=0;offset<assets.length;offset+=4)await Promise.all(assets.slice(offset,offset+4).map(async asset=>{
+ const response=await fetch(new URL(asset.path,base),{redirect:'error',signal:AbortSignal.timeout(60000)});
+ if(!response.ok)throw Error(`${asset.id}: missing deployed media (${response.status})`);
+ const chunks=[];let length=0;
+ for await(const chunk of response.body){length+=chunk.length;if(length>asset.bytes)throw Error(`${asset.id}: oversized deployed media`);chunks.push(chunk);}
+ verifyAsset(asset,Buffer.concat(chunks));
+}));
+console.log(`Validated ${chapters.length} handbook chapters and ${assets.length} immutable media assets.`);

@@ -1,0 +1,924 @@
+{
+  "schemaVersion": 1,
+  "baseline": "012d57694f790788f3fe3c5e2a08196d236b949a",
+  "concepts": [
+    {
+      "id": "getting-started-1",
+      "concept": "Autonomous colony management",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "getting-started-2",
+      "concept": "First inn construction",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "getting-started-3",
+      "concept": "First food supply",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "getting-started-4",
+      "concept": "Requested versus available workers",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "getting-started-5",
+      "concept": "Safe practice entry",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "getting-started-6",
+      "concept": "Save a first colony",
+      "article": "getting-started",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-1",
+      "concept": "Selection and deselection",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-2",
+      "concept": "Camera and minimap",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-3",
+      "concept": "Pause and editable shortcuts",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-4",
+      "concept": "Unit nutrition health and training panels",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-5",
+      "concept": "Building stocks and occupancy",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-6",
+      "concept": "Statistics and overlays",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "controls-and-hud-7",
+      "concept": "Event history",
+      "article": "controls-and-hud",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-1",
+      "concept": "Labor requests and priorities",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-2",
+      "concept": "Medical interruptions",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-3",
+      "concept": "Clearing flags and destructive clearing",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-4",
+      "concept": "Exploration flags",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-5",
+      "concept": "War flags and radius",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-6",
+      "concept": "Forbidden areas",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-7",
+      "concept": "Guard areas",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "jobs-and-flags-8",
+      "concept": "Clearing areas",
+      "article": "jobs-and-flags",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-1",
+      "concept": "Local building stocks",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-2",
+      "concept": "Carried materials and delivery routes",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-3",
+      "concept": "Construction versus replenishment",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-4",
+      "concept": "Eight standard resources",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-5",
+      "concept": "Renewable vegetation",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-6",
+      "concept": "Persistent stone deposits",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-7",
+      "concept": "Fruit discovery before harvesting",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-8",
+      "concept": "Resource access and congestion",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "resources-and-hauling-9",
+      "concept": "Standard market limitations",
+      "article": "resources-and-hauling",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-1",
+      "concept": "Wheat regrowth and growing space",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-2",
+      "concept": "Inn capacity versus food stock",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-3",
+      "concept": "Hunger and starvation",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-4",
+      "concept": "Harvest preservation",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-5",
+      "concept": "No-regrowth rule differences",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "sustainable-food-6",
+      "concept": "Food delivery distance",
+      "article": "sustainable-food",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-1",
+      "concept": "Swarm food cost",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-2",
+      "concept": "Relative production mix",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-3",
+      "concept": "Stopping births",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-4",
+      "concept": "Worker explorer warrior roles",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-5",
+      "concept": "Blocked spawn exits",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "population-and-production-6",
+      "concept": "Population and food demand",
+      "article": "population-and-production",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-1",
+      "concept": "Building placement footprints",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-2",
+      "concept": "Inn food services",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-3",
+      "concept": "Hospital healing",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-4",
+      "concept": "Training facility capacities",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-5",
+      "concept": "Repair and demolition",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-6",
+      "concept": "Service interruption during upgrades",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "buildings-and-services-7",
+      "concept": "Walls and defense tower role",
+      "article": "buildings-and-services",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-1",
+      "concept": "Individual automatic training",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-2",
+      "concept": "Idle time and training eligibility",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-3",
+      "concept": "Construction qualification",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-4",
+      "concept": "School progression",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-5",
+      "concept": "Walking and swimming training",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-6",
+      "concept": "Warrior training",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-7",
+      "concept": "Space for larger upgrade footprints",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "training-and-upgrades-8",
+      "concept": "Unit upgrade rule differences",
+      "article": "training-and-upgrades",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-1",
+      "concept": "Distinct fruit meal varieties",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-2",
+      "concept": "Food advertisement and visibility",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-3",
+      "concept": "Rival inn reachability and available service",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-4",
+      "concept": "Own equal-quality food protects loyalty",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-5",
+      "concept": "Ownership changes",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "fruit-and-conversion-6",
+      "concept": "Fruit armor penalty",
+      "article": "fruit-and-conversion",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-1",
+      "concept": "Fog and live vision",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-2",
+      "concept": "Ground flying and swimming movement",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-3",
+      "concept": "Wraparound maps",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-4",
+      "concept": "Water-gated access",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-5",
+      "concept": "Route obstacles and congestion",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "exploration-and-movement-6",
+      "concept": "Player perspective versus spectator information",
+      "article": "exploration-and-movement",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-1",
+      "concept": "Scouting approach routes",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-2",
+      "concept": "Guard positions",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-3",
+      "concept": "Tower ammunition and resupply",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-4",
+      "concept": "Walls with access gaps",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-5",
+      "concept": "Wounded retreat",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-6",
+      "concept": "Food and hospital recovery",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "defending-your-colony-7",
+      "concept": "Strength speed armor and experience",
+      "article": "defending-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-1",
+      "concept": "Warrior production and training",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-2",
+      "concept": "War flag recruitment",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-3",
+      "concept": "Army concentration",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-4",
+      "concept": "Forward food and healing",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-5",
+      "concept": "Reinforcement routes",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-6",
+      "concept": "Changing or ending attack requests",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-7",
+      "concept": "Explorer air and ground magic",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "organizing-an-attack-8",
+      "concept": "Magic does not damage buildings",
+      "article": "organizing-an-attack",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-1",
+      "concept": "Elimination",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-2",
+      "concept": "Alliances and shared vision",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-3",
+      "concept": "Global prestige trigger and highest-score winner",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-4",
+      "concept": "School prestige",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-5",
+      "concept": "Scenario objectives",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-6",
+      "concept": "Presets and custom rules",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-7",
+      "concept": "Time limits and probability victory",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "victory-and-rules-8",
+      "concept": "Experiment availability",
+      "article": "victory-and-rules",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-1",
+      "concept": "Browser-profile persistence",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-2",
+      "concept": "Save load import export",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-3",
+      "concept": "Quit and pending writes",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-4",
+      "concept": "Replay saving and compatibility",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-5",
+      "concept": "Renderer troubleshooting",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-6",
+      "concept": "Guest and account play",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-7",
+      "concept": "Rooms and matchmaking",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-8",
+      "concept": "Verified ranked results and OpenSkill",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "browser-and-multiplayer-9",
+      "concept": "Connection loss and rejoining",
+      "article": "browser-and-multiplayer",
+      "status": "included"
+    },
+    {
+      "id": "economy-and-expansion-1",
+      "concept": "Expansion versus upgrades",
+      "article": "economy-and-expansion",
+      "status": "included"
+    },
+    {
+      "id": "economy-and-expansion-2",
+      "concept": "Competing labor demands",
+      "article": "economy-and-expansion",
+      "status": "included"
+    },
+    {
+      "id": "economy-and-expansion-3",
+      "concept": "Service placement and route length",
+      "article": "economy-and-expansion",
+      "status": "included"
+    },
+    {
+      "id": "economy-and-expansion-4",
+      "concept": "Timing training and population",
+      "article": "economy-and-expansion",
+      "status": "included"
+    },
+    {
+      "id": "economy-and-expansion-5",
+      "concept": "Reading supply before committing",
+      "article": "economy-and-expansion",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-1",
+      "concept": "Starvation recovery",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-2",
+      "concept": "Missing materials",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-3",
+      "concept": "Unqualified builders",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-4",
+      "concept": "Unreachable services",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-5",
+      "concept": "Exhausted fields",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-6",
+      "concept": "Blocked exits",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "recovering-your-colony-7",
+      "concept": "Recovery after failed attack",
+      "article": "recovering-your-colony",
+      "status": "included"
+    },
+    {
+      "id": "choosing-an-ai-1",
+      "concept": "Eight native opponents",
+      "article": "choosing-an-ai",
+      "status": "included"
+    },
+    {
+      "id": "choosing-an-ai-2",
+      "concept": "Inactive controller",
+      "article": "choosing-an-ai",
+      "status": "included"
+    },
+    {
+      "id": "choosing-an-ai-3",
+      "concept": "Difficulty labels versus live rankings",
+      "article": "choosing-an-ai",
+      "status": "included"
+    },
+    {
+      "id": "choosing-an-ai-4",
+      "concept": "Resolved strategy variants",
+      "article": "choosing-an-ai",
+      "status": "included"
+    },
+    {
+      "id": "choosing-an-ai-5",
+      "concept": "Using installed custom opponents without programming",
+      "article": "choosing-an-ai",
+      "status": "included"
+    },
+    {
+      "id": "reference-buildings-1",
+      "concept": "Building functions and upgrade prerequisites",
+      "article": "reference-buildings",
+      "status": "included"
+    },
+    {
+      "id": "reference-units-1",
+      "concept": "Unit roles abilities and training facilities",
+      "article": "reference-units",
+      "status": "included"
+    },
+    {
+      "id": "reference-resources-1",
+      "concept": "Resource yields renewability and uses",
+      "article": "reference-resources",
+      "status": "included"
+    },
+    {
+      "id": "reference-controls-1",
+      "concept": "Controls and diagnostic symptoms",
+      "article": "reference-controls",
+      "status": "included"
+    },
+    {
+      "id": "ai-numbi-1",
+      "concept": "Numbi opening and development",
+      "article": "ai-numbi",
+      "status": "included"
+    },
+    {
+      "id": "ai-numbi-2",
+      "concept": "Numbi attack or economic pressure",
+      "article": "ai-numbi",
+      "status": "included"
+    },
+    {
+      "id": "ai-numbi-3",
+      "concept": "Numbi configuration and player decisions",
+      "article": "ai-numbi",
+      "status": "included"
+    },
+    {
+      "id": "ai-castor-1",
+      "concept": "Castor opening and development",
+      "article": "ai-castor",
+      "status": "included"
+    },
+    {
+      "id": "ai-castor-2",
+      "concept": "Castor attack or economic pressure",
+      "article": "ai-castor",
+      "status": "included"
+    },
+    {
+      "id": "ai-castor-3",
+      "concept": "Castor configuration and player decisions",
+      "article": "ai-castor",
+      "status": "included"
+    },
+    {
+      "id": "ai-econo-1",
+      "concept": "Econo opening and development",
+      "article": "ai-econo",
+      "status": "included"
+    },
+    {
+      "id": "ai-econo-2",
+      "concept": "Econo attack or economic pressure",
+      "article": "ai-econo",
+      "status": "included"
+    },
+    {
+      "id": "ai-econo-3",
+      "concept": "Econo configuration and player decisions",
+      "article": "ai-econo",
+      "status": "included"
+    },
+    {
+      "id": "ai-warrush-1",
+      "concept": "Warrush opening and development",
+      "article": "ai-warrush",
+      "status": "included"
+    },
+    {
+      "id": "ai-warrush-2",
+      "concept": "Warrush attack or economic pressure",
+      "article": "ai-warrush",
+      "status": "included"
+    },
+    {
+      "id": "ai-warrush-3",
+      "concept": "Warrush configuration and player decisions",
+      "article": "ai-warrush",
+      "status": "included"
+    },
+    {
+      "id": "ai-cortex-1",
+      "concept": "Cortex opening and development",
+      "article": "ai-cortex",
+      "status": "included"
+    },
+    {
+      "id": "ai-cortex-2",
+      "concept": "Cortex attack or economic pressure",
+      "article": "ai-cortex",
+      "status": "included"
+    },
+    {
+      "id": "ai-cortex-3",
+      "concept": "Cortex configuration and player decisions",
+      "article": "ai-cortex",
+      "status": "included"
+    },
+    {
+      "id": "ai-nicowar-1",
+      "concept": "Nicowar opening and development",
+      "article": "ai-nicowar",
+      "status": "included"
+    },
+    {
+      "id": "ai-nicowar-2",
+      "concept": "Nicowar attack or economic pressure",
+      "article": "ai-nicowar",
+      "status": "included"
+    },
+    {
+      "id": "ai-nicowar-3",
+      "concept": "Nicowar configuration and player decisions",
+      "article": "ai-nicowar",
+      "status": "included"
+    },
+    {
+      "id": "ai-cabino-1",
+      "concept": "Cabino opening and development",
+      "article": "ai-cabino",
+      "status": "included"
+    },
+    {
+      "id": "ai-cabino-2",
+      "concept": "Cabino attack or economic pressure",
+      "article": "ai-cabino",
+      "status": "included"
+    },
+    {
+      "id": "ai-cabino-3",
+      "concept": "Cabino configuration and player decisions",
+      "article": "ai-cabino",
+      "status": "included"
+    },
+    {
+      "id": "ai-maxima-1",
+      "concept": "Maxima opening and development",
+      "article": "ai-maxima",
+      "status": "included"
+    },
+    {
+      "id": "ai-maxima-2",
+      "concept": "Maxima attack or economic pressure",
+      "article": "ai-maxima",
+      "status": "included"
+    },
+    {
+      "id": "ai-maxima-3",
+      "concept": "Maxima configuration and player decisions",
+      "article": "ai-maxima",
+      "status": "included"
+    },
+    {
+      "id": "farm-areas",
+      "concept": "Painted farming experiment",
+      "status": "deferred",
+      "reason": "Recognize the setting in custom rules; dedicated experimental walkthrough excluded from standard food lesson.",
+      "article": "victory-and-rules"
+    },
+    {
+      "id": "markets-v2",
+      "concept": "Shared market stock experiment",
+      "status": "deferred",
+      "reason": "Recognize the setting; general warehouses are not standard gameplay.",
+      "article": "victory-and-rules"
+    },
+    {
+      "id": "alternate-terrain",
+      "concept": "Experimental resource and terrain catalogs",
+      "status": "deferred",
+      "reason": "Explain availability in rules; reference covers ordinary public stock gameplay.",
+      "article": "victory-and-rules"
+    },
+    {
+      "id": "map-editing",
+      "concept": "Map authoring and editor tutorials",
+      "status": "excluded",
+      "reason": "User selected playing-only scope.",
+      "article": null
+    },
+    {
+      "id": "ai-programming",
+      "concept": "AI code creation and scripting",
+      "status": "excluded",
+      "reason": "User selected playing-only scope.",
+      "article": null
+    },
+    {
+      "id": "legacy-text-copying",
+      "concept": "Republication of legacy wiki prose and images",
+      "status": "excluded",
+      "reason": "Reuse rights unresolved; original guides link to historical sources.",
+      "article": null
+    }
+  ]
+}

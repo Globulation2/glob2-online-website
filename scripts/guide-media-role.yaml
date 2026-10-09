@@ -1,0 +1,6 @@
+title: Glob2 guide media publisher
+description: Create and verify immutable guide media; cannot replace or delete objects.
+stage: GA
+includedPermissions:
+- storage.objects.create
+- storage.objects.get
