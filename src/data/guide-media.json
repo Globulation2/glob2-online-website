@@ -1434,6 +1434,127 @@
       "poster": "fruit-conversion",
       "caption": "After food was advertised, the native joining message appears while the colony continues operating. The written counts above establish the ownership change.",
       "alt": "Silent actual gameplay with a native Econo unit-joining message and conversion HUD."
+    },
+    {
+      "id": "expansion-old-food-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-old-food-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-old-food-detail.webp",
+      "sha256": "f1da3a0c97904667cf37f003fade0c97afa7da21684111cc145c87f314e161b1",
+      "bytes": 6942,
+      "width": 153,
+      "height": 257,
+      "kind": "image",
+      "caption": "Before expansion, the home inn has Food 7/10, Inside 4/4 and Working 2/2.",
+      "alt": "Original inn service panel showing supplied food and all four places occupied."
+    },
+    {
+      "id": "expansion-growth-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-growth-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-growth-detail.webp",
+      "sha256": "872334c59c3afcb2103f69f9104be116199d808c22c034dfc258a9d4b5934147",
+      "bytes": 6724,
+      "width": 153,
+      "height": 272,
+      "kind": "image",
+      "caption": "The practice checkpoint already has zero birth weights. Read the swarm before funding more growth.",
+      "alt": "Swarm panel with zero Worker, Explorer and Warrior production weights."
+    },
+    {
+      "id": "expansion-site",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-site.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-site.webp",
+      "sha256": "73aa0b8899a176363c6061aab22daf19a1c1b6c8d615b595e7cae14a8b1656de",
+      "bytes": 141262,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "A second inn foundation sits north of the wheat pond; the original inn remains open.",
+      "alt": "Inn foundation north of wheat pond, original inn west of pond and swarm farther west."
+    },
+    {
+      "id": "expansion-site-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-site-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-site-detail.webp",
+      "sha256": "f7afebfc585a5e53539d7e525aea47849598d5a5a34890877f5acf8376307e6e",
+      "bytes": 5326,
+      "width": 153,
+      "height": 203,
+      "kind": "image",
+      "caption": "The request has been reduced to two. Wood 0/3 must arrive before the site can serve meals.",
+      "alt": "Inn construction panel HP1/200, Working0/2, Wood0/3."
+    },
+    {
+      "id": "expansion-completed",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-completed.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-completed.webp",
+      "sha256": "325b3242777933f25ab001138bc5bb600f36239e65b7b798e8e1c0a3441f1aad",
+      "bytes": 148920,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "The second inn has completed and begun collecting ordinary food.",
+      "alt": "Finished second inn north of the pond alongside retained original inn."
+    },
+    {
+      "id": "expansion-completed-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-completed-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-completed-detail.webp",
+      "sha256": "c4d2884e0680331824c449bb86261dd1c537ec32da5a112bb442469f8f873aca",
+      "bytes": 6666,
+      "width": 153,
+      "height": 255,
+      "kind": "image",
+      "caption": "Completion is followed by supply: HP 200/200, Working 2/2 and Food 2/10.",
+      "alt": "Completed inn panel HP200/200, Inside0/4, Working2/2, Food2/10."
+    },
+    {
+      "id": "expansion-new-result-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-new-result-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-new-result-detail.webp",
+      "sha256": "f6413237cfef867156e4de746427974fe832d616e97e093ac95f7b9eaf3a4f3d",
+      "bytes": 9432,
+      "width": 153,
+      "height": 282,
+      "kind": "image",
+      "caption": "Later, the new inn has Food 9/10 and one occupant. Its fruit-access warning is separate from its working wheat meals.",
+      "alt": "New inn panel Food9/10, Inside1/4, Working1/2 and fruit access warning."
+    },
+    {
+      "id": "expansion-old-result-detail",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-old-result-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-old-result-detail.webp",
+      "sha256": "3189ec6211ef510beca9406dc1a36d99feb870dda0e60f80c3c6037813e538c9",
+      "bytes": 9572,
+      "width": 153,
+      "height": 282,
+      "kind": "image",
+      "caption": "The original inn remains full and serves two occupants even with Working 0/2 at this instant.",
+      "alt": "Old inn panel Food10/10, Cherries23/40, Inside2/4 and Working0/2."
+    },
+    {
+      "id": "expansion-supply-poster",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-supply-poster.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-supply-poster.webp",
+      "sha256": "325b3242777933f25ab001138bc5bb600f36239e65b7b798e8e1c0a3441f1aad",
+      "bytes": 148920,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Two completed inns remain near reachable wheat while globs move between their work and services.",
+      "alt": "Two completed inns, swarm and workers around the wheat pond."
+    },
+    {
+      "id": "expansion-supply-clip",
+      "path": "/guide-media/v1/economy-and-expansion/expansion-supply-clip.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/economy-and-expansion/expansion-supply-clip.mp4",
+      "sha256": "f269466701dc801fff318556c0579ae75ed2e20aab1279ef7fce0bc0551c2ea6",
+      "bytes": 1396224,
+      "width": 1440,
+      "height": 900,
+      "kind": "video",
+      "poster": "expansion-supply-poster",
+      "caption": "The completed second inn continues stocking while workers circulate through the existing colony. Compare both service panels afterward.",
+      "alt": "Silent actual gameplay of a completed second inn and workers around the wheat pond."
     }
   ]
 }
