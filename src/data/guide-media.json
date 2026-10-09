@@ -891,6 +891,30 @@
       "alt": "Two explorers fly toward the exploration flag while its selected panel reports their attachment.",
       "kind": "video",
       "poster": "scout-clip-poster"
+    },
+    {
+      "id": "reference-settings",
+      "path": "/guide-media/v1/reference-controls/reference-settings.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/reference-controls/reference-settings.webp",
+      "sha256": "fdb2e548d662dd384f81bcd0ba8968391fa60f54831bf2ded3e4078d4aa1f7a5",
+      "bytes": 215974,
+      "width": 1440,
+      "height": 900,
+      "caption": "Settings \u2192 Controls separates game bindings from map-editor bindings; select Game for this handbook.",
+      "alt": "Controls settings with Keyboard shortcuts, Game selected, Restore default shortcuts and individual binding rows.",
+      "kind": "image"
+    },
+    {
+      "id": "reference-settings-detail",
+      "path": "/guide-media/v1/reference-controls/reference-settings-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/reference-controls/reference-settings-detail.webp",
+      "sha256": "d4d2a497a519edda801881489fd4f329f8794ab465b9d26e39ea12dd89e834ad",
+      "bytes": 6684,
+      "width": 716,
+      "height": 135,
+      "caption": "The Game tab and Restore default shortcuts control sit above the individual bindings.",
+      "alt": "Keyboard shortcuts section showing Game, Map editor and Restore default shortcuts.",
+      "kind": "image"
     }
   ]
 }

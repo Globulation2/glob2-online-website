@@ -919,6 +919,13 @@
       "status": "excluded",
       "reason": "Reuse rights unresolved; original guides link to historical sources.",
       "article": null
+    },
+    {
+      "id": "controls-and-hud-touch",
+      "concept": "Touch-specific gameplay gestures",
+      "article": "controls-and-hud",
+      "status": "deferred",
+      "reason": "The illustrated interaction lessons use desktop keyboard and mouse. Public c26 changed touch selection and radial controls; gesture instructions need a dedicated mobile gameplay capture and independent review before publication."
     }
   ]
 }
