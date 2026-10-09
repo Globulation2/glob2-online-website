@@ -614,6 +614,90 @@
       "caption": "After running with births stopped, the totals remain eight workers and one explorer.",
       "alt": "Top bar crop with eight workers and one explorer after an interval with production weights zero.",
       "kind": "image"
+    },
+    {
+      "id": "services-foundation",
+      "path": "/guide-media/v1/buildings-and-services/services-foundation.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-foundation.webp",
+      "sha256": "d506f9f7b25f0e7652ae813f6e519d2081f402571d06c3a34c1147f73f33a26e",
+      "bytes": 133758,
+      "width": 1440,
+      "height": 900,
+      "caption": "A school foundation needs both wood and algae before it can train anyone.",
+      "alt": "Selected school construction site near inn, swarm and wheat.",
+      "kind": "image"
+    },
+    {
+      "id": "services-stalled-school",
+      "path": "/guide-media/v1/buildings-and-services/services-stalled-school.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-stalled-school.webp",
+      "sha256": "93701e64c37e8e23fdb43a9aa703dd54eeb4898305180e06a7e2593e1d742b35",
+      "bytes": 7770,
+      "width": 163,
+      "height": 237,
+      "caption": "Wood 7/7 has arrived, but Algae remains 0/2 and the resource-distance message explains the stall.",
+      "alt": "School construction panel showing full wood requirement, no algae and distance-related warning.",
+      "kind": "image"
+    },
+    {
+      "id": "services-active",
+      "path": "/guide-media/v1/buildings-and-services/services-active.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-active.webp",
+      "sha256": "58d8a6389ba485911ef67bf62dc0c9f525178ac8c481fa4a58a8397e224b7e76",
+      "bytes": 140578,
+      "width": 1440,
+      "height": 900,
+      "caption": "The hospital is completed, with two healing places available and no patients inside yet.",
+      "alt": "Selected finished hospital beside an unfinished school and supplied inn, Inside 0/2.",
+      "kind": "image"
+    },
+    {
+      "id": "services-active-detail",
+      "path": "/guide-media/v1/buildings-and-services/services-active-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-active-detail.webp",
+      "sha256": "222fe63e2a43cf5807f145abac04b74b6da18e7392445ca168820a7b1e8ca6bc",
+      "bytes": 3344,
+      "width": 163,
+      "height": 129,
+      "caption": "A basic finished hospital shows patients in Inside; it does not need a food-hauling request.",
+      "alt": "Hospital panel with HP 260/260, Inside 0/2 and armor 5.",
+      "kind": "image"
+    },
+    {
+      "id": "services-healing",
+      "path": "/guide-media/v1/buildings-and-services/services-healing.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-healing.webp",
+      "sha256": "534f1b27dfa2ca7c128b693c86f01754b46e232b09f07782fc6eed71ff7c281e",
+      "bytes": 140964,
+      "width": 1440,
+      "height": 900,
+      "caption": "After clearing work, two globs are using the hospital. The inn remains a separate meal service.",
+      "alt": "Selected hospital Inside 2/2 near clearing flag and inn; surrounding tree patch has been cleared.",
+      "kind": "image"
+    },
+    {
+      "id": "services-healing-detail",
+      "path": "/guide-media/v1/buildings-and-services/services-healing-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-healing-detail.webp",
+      "sha256": "565a1fe09ed631da0ccfc3aa21704c3b716c17968620d8cdc5a4d34d075676bd",
+      "bytes": 3458,
+      "width": 163,
+      "height": 129,
+      "caption": "Both healing places are occupied: Inside 2/2.",
+      "alt": "Hospital panel crop showing Inside 2/2 and service progress.",
+      "kind": "image"
+    },
+    {
+      "id": "services-healing-result",
+      "path": "/guide-media/v1/buildings-and-services/services-healing-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/buildings-and-services/services-healing-result.webp",
+      "sha256": "222fe63e2a43cf5807f145abac04b74b6da18e7392445ca168820a7b1e8ca6bc",
+      "bytes": 3344,
+      "width": 163,
+      "height": 129,
+      "caption": "After releasing the clearing job and letting services run, the hospital is empty again.",
+      "alt": "Hospital panel showing Inside 0/2 after the healing observation interval.",
+      "kind": "image"
     }
   ]
 }
