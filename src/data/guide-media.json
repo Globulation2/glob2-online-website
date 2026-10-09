@@ -830,6 +830,67 @@
       "caption": "The finished inn has seven meal places and capacity for thirty food. Read its new Working request after completion.",
       "alt": "Inn Level 2 panel with HP 500/500, Inside 0/7, Working 3/3 and Food 14/30.",
       "kind": "image"
+    },
+    {
+      "id": "scout-start",
+      "path": "/guide-media/v1/exploration-and-movement/scout-start.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/exploration-and-movement/scout-start.webp",
+      "sha256": "07cc3619a8ac8c583249bf6e9756c9cecdcf0b1853010b1a50caa098088f399d",
+      "bytes": 188764,
+      "width": 1440,
+      "height": 900,
+      "caption": "An exploration flag asks scouts to inspect the chosen region; the blue circle shows its work radius.",
+      "alt": "Exploration flag east of the colony with a large blue radius; two explorers visible around base.",
+      "kind": "image"
+    },
+    {
+      "id": "scout-result",
+      "path": "/guide-media/v1/exploration-and-movement/scout-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/exploration-and-movement/scout-result.webp",
+      "sha256": "023eab1f5b734673752af6ff1ca46e19a4c42df34e4f54617e2fa5ab9a116242",
+      "bytes": 213836,
+      "width": 1440,
+      "height": 900,
+      "caption": "After play resumes, both explorers are attached to the flag and more ground around its destination is visible.",
+      "alt": "Selected exploration flag with Working 2/2 and Here 2; two explorers inside the radius and nearby resources revealed.",
+      "kind": "image"
+    },
+    {
+      "id": "scout-detail",
+      "path": "/guide-media/v1/exploration-and-movement/scout-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/exploration-and-movement/scout-detail.webp",
+      "sha256": "148d89e3ea27ea0e5d30ec62df8afa8825f86a1a12114b131ce213711edce667",
+      "bytes": 7958,
+      "width": 150,
+      "height": 265,
+      "caption": "Detail: this flag accepts any explorer, requests two, and uses Range 10.",
+      "alt": "Exploration flag panel with Working 2/2, Here 2, Range 10 and any explorer selected.",
+      "kind": "image"
+    },
+    {
+      "id": "scout-clip-poster",
+      "path": "/guide-media/v1/exploration-and-movement/scout-clip-poster.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/exploration-and-movement/scout-clip-poster.webp",
+      "sha256": "07cc3619a8ac8c583249bf6e9756c9cecdcf0b1853010b1a50caa098088f399d",
+      "bytes": 188764,
+      "width": 1440,
+      "height": 900,
+      "caption": "Watch the scouts move into their assigned region.",
+      "alt": "Exploration flag radius beside the colony, before the scouts move.",
+      "kind": "image"
+    },
+    {
+      "id": "scout-flag-clip",
+      "path": "/guide-media/v1/exploration-and-movement/scout-flag-clip.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/exploration-and-movement/scout-flag-clip.mp4",
+      "sha256": "7a8c3ca2b262b69244a9ce0201cb6e80b36a6a82ae237f9d1a5d7fd7151d8d81",
+      "bytes": 1136176,
+      "width": 1440,
+      "height": 900,
+      "caption": "The explorers travel through the flag radius and reveal nearby terrain. This 10-second clip has no audio.",
+      "alt": "Two explorers fly toward the exploration flag while its selected panel reports their attachment.",
+      "kind": "video",
+      "poster": "scout-clip-poster"
     }
   ]
 }
