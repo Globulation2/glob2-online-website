@@ -205,6 +205,66 @@
       "alt": "An explorer flies around the tutorial colony and reveals nearby terrain; workers carry food to the inn and swarm.",
       "kind": "video",
       "poster": "pilot-exploration-poster"
+    },
+    {
+      "id": "controls-overview",
+      "path": "/guide-media/v1/controls-and-hud/controls-overview.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/controls-and-hud/controls-overview.webp",
+      "sha256": "a6a06c382f0d7aefdda8d6e3b1d49451795f1b17be1d979945d373710a984c02",
+      "bytes": 40884,
+      "width": 1440,
+      "height": 900,
+      "caption": "Pause local practice to inspect the minimap, construction panel, and top counters.",
+      "alt": "Paused practice colony with a swarm, four workers, top counters, minimap and construction sidebar.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-building",
+      "path": "/guide-media/v1/controls-and-hud/controls-building.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/controls-and-hud/controls-building.webp",
+      "sha256": "b44ecbccd902ef91052cf4788bdacac10a49b7e47861535d6e5affb7cff4fe06",
+      "bytes": 57110,
+      "width": 1440,
+      "height": 900,
+      "caption": "A selected swarm exposes Working, priority, food, and future-production controls.",
+      "alt": "Selected tutorial swarm with Working 1/1, food stock and three unit production ratio bars.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-statistics",
+      "path": "/guide-media/v1/controls-and-hud/controls-statistics.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/controls-and-hud/controls-statistics.webp",
+      "sha256": "1d739ca585eb922c749c8cdfab5375d06c285d44057a256b3f34688feb1b957c",
+      "bytes": 46036,
+      "width": 1440,
+      "height": 900,
+      "caption": "The text statistics view summarizes the colony; click its page heading to inspect other measurement groups.",
+      "alt": "Practice colony with text statistics showing four workers, three free workers and no hungry or wounded units.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-statistics-detail",
+      "path": "/guide-media/v1/controls-and-hud/controls-statistics-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/controls-and-hud/controls-statistics-detail.webp",
+      "sha256": "c988aaac1e832c95d207452d62524ced920180e7d66f3e7152c167bbf6ee07fe",
+      "bytes": 11190,
+      "width": 160,
+      "height": 310,
+      "caption": "Detail: the Colony page separates worker availability, health, and training counts.",
+      "alt": "Colony statistics sidebar showing four workers, three free, zero hungry, zero starving and zero wounded.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-building-detail",
+      "path": "/guide-media/v1/controls-and-hud/controls-building-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/controls-and-hud/controls-building-detail.webp",
+      "sha256": "f0453abaaff6db76a1c3cc3ce6d1ddf1f0435d518e12f5ce2722f693b73e691d",
+      "bytes": 6796,
+      "width": 160,
+      "height": 275,
+      "caption": "Detail: Working is staffing; Priority chooses hiring preference; Food and the three production bars report separate functions.",
+      "alt": "Selected swarm sidebar showing Working 1/1, low/medium/high priority, Food 4/20, and Worker, Explorer and Warrior production bars.",
+      "kind": "image"
     }
   ]
 }
