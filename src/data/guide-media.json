@@ -1240,6 +1240,54 @@
       "alt": "Actual gameplay of red warriors moving into Econo\u2019s cyan colony, attacking the exposed inn and adjacent swarm, and leaving both sites empty.",
       "kind": "video",
       "poster": "attack-contact-poster"
+    },
+    {
+      "id": "browser-load",
+      "path": "/guide-media/v1/browser-and-multiplayer/browser-load.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/browser-and-multiplayer/browser-load.webp",
+      "sha256": "937c699c22416f10e2888acb9539c56ff1eb71e2c4beb86dea43c99c99d8c0a5",
+      "bytes": 259842,
+      "width": 1440,
+      "height": 900,
+      "caption": "Select a compatible imported save in Load game, then use Ok to play or Export file to keep a backup.",
+      "alt": "Choose a game dialog with Handbook pilot explorers selected and Import, Export file, Replays, Delete, Ok and Cancel buttons.",
+      "kind": "image"
+    },
+    {
+      "id": "browser-file-detail",
+      "path": "/guide-media/v1/browser-and-multiplayer/browser-file-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/browser-and-multiplayer/browser-file-detail.webp",
+      "sha256": "edbcf426fa671cead23f8bbd658c0988e1110ce55007ccf2293010325f269b91",
+      "bytes": 2484,
+      "width": 310,
+      "height": 80,
+      "caption": "Detail: Import brings a file into this browser profile; Export file downloads a backup.",
+      "alt": "Load game buttons Replays, Import, Export file and Delete.",
+      "kind": "image"
+    },
+    {
+      "id": "browser-recording",
+      "path": "/guide-media/v1/browser-and-multiplayer/browser-recording.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/browser-and-multiplayer/browser-recording.webp",
+      "sha256": "37ffa67f1d5b5178eb496800d556341d733937368a2922934d9ec6d5e533a4f1",
+      "bytes": 197832,
+      "width": 1440,
+      "height": 900,
+      "caption": "Settings \u2192 Recording provides Start recording, Recordings, and the hotkey shortcut.",
+      "alt": "Recording settings page with Start recording, Recordings and Change the hotkey buttons.",
+      "kind": "image"
+    },
+    {
+      "id": "browser-recording-detail",
+      "path": "/guide-media/v1/browser-and-multiplayer/browser-recording-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/browser-and-multiplayer/browser-recording-detail.webp",
+      "sha256": "f5dadc17bffb4bb851cbb4a6ee8a71629cd97304218aa2a2a03f317fefdb3452",
+      "bytes": 1730,
+      "width": 390,
+      "height": 84,
+      "caption": "Detail: start a recording and open finished recordings from the dedicated controls.",
+      "alt": "Start recording and Recordings buttons from the Recording settings page.",
+      "kind": "image"
     }
   ]
 }
