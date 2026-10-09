@@ -76,10 +76,31 @@ const server = createServer(async (request, response) => {
     }
     if (!file) { response.end('Not found'); return; }
     response.setHeader('Content-Type', types[extname(file)] ?? 'application/octet-stream');
-    response.setHeader('Content-Length', (await stat(file)).size);
+    const size = (await stat(file)).size;
+    response.setHeader('Content-Length', size);
+    response.setHeader('Accept-Ranges', 'bytes');
     if (request.method === 'HEAD') { response.end(); return; }
-    const stream = createReadStream(file);
+    let start = 0;
+    let end = size - 1;
+    if (request.headers.range && response.statusCode === 200) {
+      const range = /^bytes=(\d*)-(\d*)$/.exec(request.headers.range);
+      if (range && (range[1] || range[2])) {
+        start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]));
+        end = range[1] && range[2] ? Math.min(size - 1, Number(range[2])) : size - 1;
+      }
+      if (!range || !(range[1] || range[2]) || !Number.isSafeInteger(start) ||
+          !Number.isSafeInteger(end) || start > end || start >= size) {
+        response.setHeader('Content-Range', `bytes */${size}`);
+        response.setHeader('Content-Length', 0);
+        response.writeHead(416).end(); return;
+      }
+      response.statusCode = 206;
+      response.setHeader('Content-Range', `bytes ${start}-${end}/${size}`);
+      response.setHeader('Content-Length', end - start + 1);
+    }
+    const stream = createReadStream(file, response.statusCode === 206 ? { start, end } : undefined);
     stream.on('error', () => response.destroy());
+    response.on('close', () => stream.destroy());
     stream.pipe(response);
   } catch {
     if (!response.headersSent) response.writeHead(400);
