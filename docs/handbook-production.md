@@ -24,6 +24,8 @@ node scripts/capture-guide.mjs artifacts/handbook/scenarios/lesson.mjs artifacts
 
 Keep the fixed capture viewport, renderer, game revision, package checksum, map/start save, seed where known, rules and resolved AI strategy in the private capture package. Save initial and useful milestone states using the game controls. Retain original screenshots, full footage, action notes, exported saves/replays and observed ticks. Replay compatibility depends on the matching game build. Do not promise exact-tick seeking.
 
+The capture harness closes the live game page before waiting for recording finalization. Export required native saves and recordings before returning from the scenario; retain any cleanup limits in its private record.
+
 Use the game's recorder when available or browser video recording, then select short explanatory MP4 clips and WebP screenshots. Capture the initial situation, relevant action/panel and resulting change. A screenshot quota does not replace coverage of the actual lesson.
 
 ## Media storage and reproducible builds

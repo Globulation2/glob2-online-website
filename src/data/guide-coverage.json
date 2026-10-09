@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseline": "012d57694f790788f3fe3c5e2a08196d236b949a",
+  "baseline": "c26a0a02aeef4993a7478c3651d6117b49dbc56c",
   "concepts": [
     {
       "id": "getting-started-1",
@@ -166,7 +166,7 @@
     },
     {
       "id": "resources-and-hauling-7",
-      "concept": "Fruit discovery before harvesting",
+      "concept": "Current visibility of fruit before harvesting",
       "article": "resources-and-hauling",
       "status": "included"
     },
@@ -310,7 +310,7 @@
     },
     {
       "id": "training-and-upgrades-3",
-      "concept": "Construction qualification",
+      "concept": "Construction qualification and upgrade action availability",
       "article": "training-and-upgrades",
       "status": "included"
     },

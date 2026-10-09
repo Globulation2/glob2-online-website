@@ -45,8 +45,17 @@ export async function captureGuide({ scenario, output, url = 'https://app.glob2o
     await note('ready');
     await scenario({ page, context, control, key, screenshot, state, note, waitTicks: async count => { const start=(await state()).tick;await page.waitForFunction(target=>glob2Diagnostics.snapshot().tick>=target,start+count,{timeout:120000});await note(`waitTicks:${count}`); } });
   } finally {
-    await writeFile(path.join(output, 'capture.json'), JSON.stringify({ baseline, packages, delivered, url, viewport: { width: 1440, height: 900 }, failures, events }, null, 2));
-    await context.close(); await browser.close();
+    try {
+      await writeFile(path.join(output, 'capture.json'), JSON.stringify({ baseline, packages, delivered, url, viewport: { width: 1440, height: 900 }, failures, events }, null, 2));
+    } finally {
+      try {
+        // Stop the live canvas before waiting for its recording to finalize.
+        if (!page.isClosed()) await page.close();
+      } finally {
+        try { await context.close(); }
+        finally { await browser.close(); }
+      }
+    }
   }
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
