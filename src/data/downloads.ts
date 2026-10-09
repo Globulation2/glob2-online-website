@@ -1,0 +1,9 @@
+// Reviewed platform installation guidance and package labels.
+export const downloadPlatforms = [
+  {id: 'windows', title: 'Windows', description: 'Choose the installer for a regular installation, or the portable ZIP to extract and run.', help: 'Run the installer, then open Globulation 2. For the portable edition, extract the entire ZIP before launching glob2.exe.', formats: ['exe', 'zip']},
+  {id: 'macos', title: 'macOS', description: 'Choose the build for your Mac. Check Apple menu → About This Mac for its chip or processor.', help: 'Open the DMG, drag Glob2 to Applications, then open it from Applications.', formats: ['dmg']},
+  {id: 'linux', title: 'Linux', description: 'Flatpak is the first choice across distributions. Other packages list their own requirements.', help: 'For the Flatpak bundle, install the listed runtime dependencies, then use flatpak install ./glob2.flatpak. For a downloaded Snap, install snapd, then run sudo snap install --dangerous ./PACKAGE.snap with the downloaded filename. Tarballs include INSTALL.txt with installation steps and system-library requirements; use your distribution’s package manager for RPMs.', formats: ['flatpak', 'snap', 'tar.gz', 'rpm']},
+  {id: 'android', title: 'Android', description: 'Install from Google Play, or choose an APK that matches your device.', help: 'For an APK, allow installation from your browser or file manager when Android asks. Back up or export saves before switching between Google Play, F-Droid and sideload editions: different signing keys require uninstalling the previous edition.', formats: ['apk']},
+];
+export const downloadArchitectures: Record<string, string> = {x86_64: 'Intel / AMD 64-bit', arm64: 'ARM64', armv7: 'ARM 32-bit'};
+export const downloadFormats: Record<string, string> = {exe: 'Installer', zip: 'Portable ZIP', dmg: 'DMG', flatpak: 'Flatpak bundle', snap: 'Snap package', 'tar.gz': 'Installation tarball', rpm: 'RPM', apk: 'APK'};

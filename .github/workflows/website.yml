@@ -24,10 +24,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check && npm run build && node scripts/check-links.mjs
-      - run: node --test scripts/test_monitor.mjs scripts/test_guide_media.mjs
+      - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test
+      - run: node scripts/test_downloads_render.mjs
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: website-dist
@@ -46,6 +47,7 @@ jobs:
           path: |
             playwright-report
             test-results
+            artifacts/downloads/*.png
           retention-days: 7
   publish:
     needs: verify

@@ -1,6 +1,11 @@
 name: Check download metadata
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: Optional published release tag or refresh reason
+        required: false
+        type: string
   schedule:
     - cron: '17 7 * * *'
 permissions:
@@ -33,5 +38,5 @@ jobs:
           git commit -m 'Update verified game downloads'
           git push --force-with-lease origin codex/download-metadata
           if ! gh pr view codex/download-metadata >/dev/null 2>&1; then
-            gh pr create --base main --head codex/download-metadata --title 'Update verified game downloads' --body 'Refresh published, non-prerelease game assets. Review platform labels before merging. Generated from the public game release API.'
+            gh pr create --base main --head codex/download-metadata --title 'Update verified game downloads' --body 'Refresh published, non-prerelease game assets. Review the qualified manifest, platform requirements and production store links before merging. Verified against the exact public tag and final asset digests.'
           fi
