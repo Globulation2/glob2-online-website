@@ -1,0 +1,36 @@
+✔ complete platform matrix and sources validate (3.430167ms)
+✔ rejects missing package (0.555875ms)
+✔ rejects duplicate identity (0.210167ms)
+✔ rejects mixed source (0.1645ms)
+✔ rejects wrong version (0.200458ms)
+✔ rejects expiring CI URL (0.165167ms)
+✔ rejects wrong extension (0.145458ms)
+✔ rejects beta store (0.236792ms)
+✔ rejects unsafe store (0.234584ms)
+✔ rejects wrong Android app (0.214958ms)
+✔ rejects non-archive source (0.151125ms)
+✔ rejects store URL credentials (0.146542ms)
+✔ rejects duplicate Android app query (0.137375ms)
+✔ rejects unsafe filename (0.206875ms)
+✔ paginates past 200 evidence releases (10.220291ms)
+✔ ignores stable releases without qualified manifest and drafts (0.110375ms)
+✔ rejects immutable tag revision mismatch (0.462ms)
+✔ verifies older assets by streaming final bytes (0.88175ms)
+✔ rejects mismatched GitHub digest (0.078833ms)
+✔ rejects missing and wrong-sized release assets (0.083125ms)
+✔ atomically updates once and preserves snapshot on every failure (9.471916ms)
+✔ editorial channels require a release binding and production app identities (0.44975ms)
+✔ oversized metadata is bounded before parsing (1.703417ms)
+✔ streamed package corruption is rejected (0.134917ms)
+✔ empty current ratings remain healthy, with exact stale boundary (1.327667ms)
+✔ malformed, unsupported and future snapshots fail (0.110875ms)
+✔ canonical app metadata detects a hostname regression (0.105042ms)
+✔ HTTP failures, redirects and bounded requests are enforced (12.815084ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.185958

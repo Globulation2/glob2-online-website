@@ -1,0 +1,10 @@
+test_never_commits_wrong_or_reused_bundle (test_play_release.PlayReleaseTests.test_never_commits_wrong_or_reused_bundle) ... ok
+test_production_requires_explicit_track_and_validated_bundle (test_play_release.PlayReleaseTests.test_production_requires_explicit_track_and_validated_bundle) ... ok
+test_publishes_only_internal_track_after_validation (test_play_release.PlayReleaseTests.test_publishes_only_internal_track_after_validation) ... ok
+test_rejects_changed_build_before_creating_edit (test_play_release.PlayReleaseTests.test_rejects_changed_build_before_creating_edit) ... ok
+test_version_codes_are_monotonic_seconds_within_play_limit (test_play_release.PlayReleaseTests.test_version_codes_are_monotonic_seconds_within_play_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

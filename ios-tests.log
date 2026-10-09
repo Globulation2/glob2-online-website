@@ -1,0 +1,15 @@
+test_client_rejects_pagination_to_other_origin_before_sending_token (test_ios_store_release.IOSStoreTests.test_client_rejects_pagination_to_other_origin_before_sending_token) ... ok
+test_concrete_listing_metadata_complete_and_missing_gates (test_ios_store_release.IOSStoreTests.test_concrete_listing_metadata_complete_and_missing_gates) ... ok
+test_invalid_internal_or_unprocessed_apple_build_is_rejected_before_writes (test_ios_store_release.IOSStoreTests.test_invalid_internal_or_unprocessed_apple_build_is_rejected_before_writes) ... ok
+test_missing_metadata_blocks_submission_writes (test_ios_store_release.IOSStoreTests.test_missing_metadata_blocks_submission_writes) ... ok
+test_prepare_creates_manual_version_with_exact_uploaded_build_without_submitting (test_ios_store_release.IOSStoreTests.test_prepare_creates_manual_version_with_exact_uploaded_build_without_submitting) ... ok
+test_provenance_requires_exact_public_source_and_eligible_successful_upload (test_ios_store_release.IOSStoreTests.test_provenance_requires_exact_public_source_and_eligible_successful_upload) ... ok
+test_publish_requires_approved_manual_version_and_exact_build (test_ios_store_release.IOSStoreTests.test_publish_requires_approved_manual_version_and_exact_build) ... ok
+test_submission_retry_reuses_only_exact_review_item_relationship (test_ios_store_release.IOSStoreTests.test_submission_retry_reuses_only_exact_review_item_relationship) ... ok
+test_submit_checks_metadata_then_creates_review_without_publishing (test_ios_store_release.IOSStoreTests.test_submit_checks_metadata_then_creates_review_without_publishing) ... ok
+test_version_mapping_preserves_fourth_component_without_collisions (test_ios_store_release.IOSStoreTests.test_version_mapping_preserves_fourth_component_without_collisions) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

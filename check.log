@@ -1,0 +1,14 @@
+
+> glob2-online-website@0.1.0 check
+> astro check
+
+12:34:42 [vite] Re-optimizing dependencies because vite config has changed
+12:34:42 [content] Syncing content
+12:34:42 [content] Synced content
+12:34:42 [types] Generated 236ms
+12:34:42 [check] Getting diagnostics for Astro files in /Users/bradley/.codex/worktrees/7bc6/glob2-online-website...
+Result (51 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

@@ -1,0 +1,94 @@
+12:35:22 [vite] Re-optimizing dependencies because vite config has changed
+12:35:22 [content] Syncing content
+12:35:22 [content] Synced content
+12:35:22 [types] Generated 247ms
+12:35:22 [build] output: "static"
+12:35:22 [build] mode: "static"
+12:35:22 [build] directory: /Users/bradley/.codex/worktrees/7bc6/glob2-online-website/artifacts/downloads/populated-vss3At/dist/
+12:35:22 [build] Collecting build info...
+12:35:22 [build] ✓ Completed in 256ms.
+12:35:22 [build] Building static entrypoints...
+12:35:22 [vite] ✓ built in 83ms
+12:35:22 [vite] ✓ built in 28ms
+12:35:22 [build] Rearranging server assets...
+
+ generating static routes 
+12:35:22   ├─ /404.html (+4ms) 
+12:35:22   ├─ /archive/index.html (+1ms) 
+12:35:22   ├─ /archive/legacy-strategy/index.html (+1ms) 
+12:35:22   ├─ /archive/legacy-translations/index.html (+1ms) 
+12:35:22   ├─ /community/index.html (+2ms) 
+12:35:22   ├─ /competition/index.html (+1ms) 
+12:35:22   ├─ /credits/index.html (+1ms) 
+12:35:22   ├─ /design/colony/index.html (+1ms) 
+12:35:22   ├─ /design/field-guide/index.html (+1ms) 
+12:35:22   ├─ /downloads/index.html (+2ms) 
+12:35:22   ├─ /events/index.html (+1ms) 
+12:35:22   ├─ /game/index.html (+1ms) 
+12:35:22   ├─ /history/index.html (+1ms) 
+12:35:22   ├─ /history/project-history/index.html (+1ms) 
+12:35:22   ├─ /learn/index.html (+1ms) 
+12:35:22   ├─ /learn/browser-and-multiplayer/index.html (+0ms) 
+12:35:22   ├─ /learn/defending-your-colony/index.html (+0ms) 
+12:35:22   ├─ /learn/fruit-and-conversion/index.html (+0ms) 
+12:35:22   ├─ /learn/getting-started/index.html (+0ms) 
+12:35:22   ├─ /learn/jobs-and-flags/index.html (+0ms) 
+12:35:22   ├─ /learn/sustainable-food/index.html (+0ms) 
+12:35:22   ├─ /news/index.html (+1ms) 
+12:35:22   ├─ /news/browser-development/index.html (+0ms) 
+12:35:22   ├─ /privacy/index.html (+1ms) 
+12:35:22   ├─ /search/index.html (+6ms) 
+12:35:22   ├─ /index.html (+1ms) 
+12:35:22 ✓ Completed in 44ms.
+
+12:35:22 [build] ✓ Completed in 169ms.
+12:35:22 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+12:35:22 [build] 26 page(s) built in 431ms
+12:35:22 [build] Complete!
+12:35:37 [content] Syncing content
+12:35:37 [content] Synced content
+12:35:37 [types] Generated 221ms
+12:35:37 [build] output: "static"
+12:35:37 [build] mode: "static"
+12:35:37 [build] directory: /Users/bradley/.codex/worktrees/7bc6/glob2-online-website/artifacts/downloads/populated-vss3At/dist/
+12:35:37 [build] Collecting build info...
+12:35:37 [build] ✓ Completed in 230ms.
+12:35:37 [build] Building static entrypoints...
+12:35:37 [vite] ✓ built in 87ms
+12:35:37 [vite] ✓ built in 16ms
+12:35:37 [build] Rearranging server assets...
+
+ generating static routes 
+12:35:37   ├─ /404.html (+4ms) 
+12:35:37   ├─ /archive/index.html (+1ms) 
+12:35:37   ├─ /archive/legacy-strategy/index.html (+1ms) 
+12:35:37   ├─ /archive/legacy-translations/index.html (+1ms) 
+12:35:37   ├─ /community/index.html (+1ms) 
+12:35:37   ├─ /competition/index.html (+1ms) 
+12:35:37   ├─ /credits/index.html (+1ms) 
+12:35:37   ├─ /design/colony/index.html (+1ms) 
+12:35:37   ├─ /design/field-guide/index.html (+1ms) 
+12:35:37   ├─ /downloads/index.html (+2ms) 
+12:35:37   ├─ /events/index.html (+1ms) 
+12:35:37   ├─ /game/index.html (+1ms) 
+12:35:37   ├─ /history/index.html (+1ms) 
+12:35:37   ├─ /history/project-history/index.html (+0ms) 
+12:35:37   ├─ /learn/index.html (+1ms) 
+12:35:37   ├─ /learn/browser-and-multiplayer/index.html (+0ms) 
+12:35:37   ├─ /learn/defending-your-colony/index.html (+0ms) 
+12:35:37   ├─ /learn/fruit-and-conversion/index.html (+0ms) 
+12:35:37   ├─ /learn/getting-started/index.html (+1ms) 
+12:35:37   ├─ /learn/jobs-and-flags/index.html (+0ms) 
+12:35:37   ├─ /learn/sustainable-food/index.html (+0ms) 
+12:35:37   ├─ /news/index.html (+1ms) 
+12:35:37   ├─ /news/browser-development/index.html (+0ms) 
+12:35:37   ├─ /privacy/index.html (+1ms) 
+12:35:37   ├─ /search/index.html (+1ms) 
+12:35:37   ├─ /index.html (+1ms) 
+12:35:37 ✓ Completed in 35ms.
+
+12:35:37 [build] ✓ Completed in 152ms.
+12:35:37 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+12:35:37 [build] 26 page(s) built in 399ms
+12:35:37 [build] Complete!
+Populated downloads: 18 browser/theme/viewport checks passed; fixture: /Users/bradley/.codex/worktrees/7bc6/glob2-online-website/artifacts/downloads/populated-vss3At
