@@ -13,7 +13,7 @@ test('homepage is lightweight and handoff explicit',async({page})=>{
  const requests:string[]=[];page.on('request',r=>requests.push(r.url()));
  await page.goto('/'); await expect(page.getByText(/free, open-source real-time strategy game/i).first()).toBeVisible();
  await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
- await expect(page.getByRole('link',{name:/Sign in to play online/})).toHaveAttribute('href','https://app.glob2online.com/signin');
+ await expect(page.getByRole('link',{name:/Sign in for ranked play/})).toHaveAttribute('href','https://app.glob2online.com/signin');
  await expect(page.getByRole('navigation',{name:'Globulation 2 Online app'})).toHaveCount(0);
  const header=page.locator('header.site-header');
  await expect(header.getByRole('link',{name:'Sign in',exact:true})).toHaveAttribute('href','https://app.glob2online.com/signin');
@@ -28,7 +28,7 @@ test('live data pages hand off to the app',async({page})=>{
  await page.goto('/competition/');
  await expect(page.getByRole('link',{name:/See live leaderboards/})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
  await page.goto('/community/');
- await expect(page.getByRole('link',{name:/Share and play maps/})).toHaveAttribute('href','https://app.glob2online.com/maps');
+ await expect(page.getByRole('link',{name:/Browse maps in the online app/})).toHaveAttribute('href','https://app.glob2online.com/maps');
 });
 test('mobile and zoom reflow',async({page})=>{
  for(const width of [360,768,1440]){
@@ -90,4 +90,25 @@ test('phone navigation targets are thumb-sized',async({page})=>{
  for(const link of [...await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link').all(),...await page.locator('.header-end a').all()]){
   const box=await link.boundingBox();expect(box!.height).toBeGreaterThanOrEqual(44);
  }
+});
+
+test('new player can understand the game and reach a practical first session',async({page})=>{
+ await page.goto('/');
+ const navigation=page.getByRole('navigation',{name:'Main navigation'});
+ await expect(navigation.getByRole('link')).toHaveText(['The game','Learn','Community','Search']);
+ await expect(page.getByRole('heading',{name:'Three decisions you will make'})).toBeVisible();
+ await expect(page.locator('.mechanics-list > li')).toHaveCount(3);
+ await expect(page.locator('.gameplay-image img')).toHaveAttribute('src','/images/glob2-first-colony.webp');
+ await expect.poll(()=>page.locator('.gameplay-image img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>=1280)).toBe(true);
+ await expect(page.getByRole('heading',{name:'News & notes'})).toHaveCount(0);
+ await page.getByRole('link',{name:'Read the first-session guide',exact:false}).click();
+ await expect(page.locator('article')).toContainText('Tutorial');
+ await expect(page.locator('article')).toContainText(/worker|wheat/i);
+ await expect(page.locator('article a[href="https://app.glob2online.com/play/"]').first()).toBeVisible();
+ await page.goto('/game/');
+ await expect(page.getByRole('heading',{name:'Three kinds of glob'})).toBeVisible();
+ for(const role of ['Workers','Explorers','Warriors']) await expect(page.getByRole('heading',{name:role,exact:true})).toBeVisible();
+ await page.goto('/downloads/');
+ await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
+ await expect(page.getByRole('link',{name:'Check releases',exact:false})).toHaveAttribute('href','https://github.com/Globulation2/glob2/releases');
 });

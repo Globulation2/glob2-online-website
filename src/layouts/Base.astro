@@ -4,7 +4,7 @@ import {site} from '../data/site';
 interface Props {title:string; description?:string; category?:string; noindex?:boolean}
 const {title,description=site.tagline,category,noindex=false}=Astro.props;
 const pageTitle=title===site.name?site.name:`${title} · ${site.name}`;
-const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/'],['Competition','/competition/'],['News','/news/']];
+const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']];
 ---
 <!doctype html>
 <html lang="en">
@@ -51,13 +51,15 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
   <div class="wrap">
     <div>
       <a class="brand-plain" href="/" aria-label={`${site.name} home`}><span class="wordmark" aria-hidden="true"></span></a>
-      <p>A little less clicking.<br/>A lot more strategy.</p>
+      <p>A free, open-source<br/>real-time strategy game.</p>
     </div>
     <nav aria-label="Explore">
       <h2>Explore</h2>
       <ul>
         <li><a href="/downloads/">Downloads</a></li>
         <li><a href="/learn/">Player guides</a></li>
+        <li><a href="/competition/">Competition</a></li>
+        <li><a href="/news/">News</a></li>
         <li><a href="/history/">Our history</a></li>
         <li><a href="/archive/">Legacy archive</a></li>
         <li><a href="/privacy/">Privacy</a></li>
@@ -70,7 +72,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
         <li><a href={site.leaderboardUrl}>Leaderboards ↗</a></li>
         <li><a href={site.matchesUrl}>Matches ↗</a></li>
         <li><a href={site.mapsUrl}>Maps ↗</a></li>
-        <li><a href={site.loginUrl}>Sign in to play online ↗</a></li>
+        <li><a href={site.loginUrl}>Sign in for ranked play ↗</a></li>
       </ul>
     </nav>
     <nav aria-label="Get involved">

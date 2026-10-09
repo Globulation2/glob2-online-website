@@ -29,6 +29,30 @@ The site uses Astro content collections for guides, news, history and source-lin
 
 The selected design is Colony. `/design/colony/` and `/design/field-guide/` remain noindexed review references. Search distinguishes current guidance from history. The legacy migration manifest records sources, revisions, attribution, language, rights and verification status. Original wiki prose and media remain source-linked where republication rights are unverified.
 
+## New-player introduction
+
+The homepage introduces the game through a real colony, decisions about work,
+food and flags, and the first-session guide. Shared editorial copy lives in
+`src/data/marketing.ts`; player instructions live in `src/content/guides`.
+The main navigation prioritizes the game, learning and community; competition
+and news remain available in the footer and at their original URLs.
+
+See [content verification](docs/website-content-verification.md) for the game
+revision, public-app observations and limits behind the current introduction.
+Source implementation and deployed availability are separate evidence. Recheck
+both before adding promises about devices, accounts or online features.
+
+Review a production build with `npm run preview`. Browser checks use the built
+site with Firebase headers via `node tests/server.mjs`; use `SITE_URL` to reuse
+an already running test server. Keep visual review captures in `artifacts/`,
+and complete two rendered review rounds before publishing substantial changes.
+With that test server running, `node scripts/review-site.mjs 1` and
+`node scripts/review-site.mjs 2` capture the five core pages in both themes at
+360, 768 and 1440px, check accessibility and 200% text reflow on the homepage,
+game explanation and first-session guide, and save ignored review artifacts.
+These checks complement human inspection of hierarchy,
+captions and contrast over artwork.
+
 ## Integrations and operations
 
 See [hosting and rollback](docs/hosting.md), [content maintenance](docs/content.md), and [player-rating snapshot contract](scripts/RANKINGS.md). Public pages use no account cookies or analytics, and do not initiate gameplay. The rankings widget requests a sanitized public snapshot; it never queries account persistence or uses authenticated APIs.
