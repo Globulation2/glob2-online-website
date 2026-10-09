@@ -21,7 +21,7 @@ for (const slug of slugs) test(`chapter ${slug} has usable navigation and access
     const hash = await link.getAttribute('href');
     await expect(page.locator(`[id="${hash!.slice(1)}"]`)).toHaveCount(1);
   }
-  const issues = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+  const issues = await new AxeBuilder({ page }).analyze();
   expect(issues.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) }))).toEqual([]);
 });
 test('illustrated pilot delivers same-origin images and controlled clips', async ({ page }) => {
