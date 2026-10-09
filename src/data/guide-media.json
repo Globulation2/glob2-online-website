@@ -1555,6 +1555,102 @@
       "poster": "expansion-supply-poster",
       "caption": "The completed second inn continues stocking while workers circulate through the existing colony. Compare both service panels afterward.",
       "alt": "Silent actual gameplay of a completed second inn and workers around the wheat pond."
+    },
+    {
+      "id": "choosing-ai-map",
+      "path": "/guide-media/v1/choosing-an-ai/map.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/map.webp",
+      "sha256": "2059e33b29e2162c238326b63707a3904657bbb55a5c118169a00bb91ed20af1",
+      "bytes": 80302,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Random map setup with two colonies and a compact map size.",
+      "alt": "Custom game Map tab showing the generator and colony settings."
+    },
+    {
+      "id": "choosing-ai-players",
+      "path": "/guide-media/v1/choosing-an-ai/players.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/players.webp",
+      "sha256": "64d3722d7edd5c94223b27b729bdc15a7af567ae37e8784a4abef30df2549464",
+      "bytes": 52992,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "One colony is You, the other AI, on different teams.",
+      "alt": "Players and Teams tab with You, Numbi AI and separate team choices."
+    },
+    {
+      "id": "choosing-ai-controller",
+      "path": "/guide-media/v1/choosing-an-ai/controller.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/controller.webp",
+      "sha256": "70123c962389d3ef6dbcd7865d4952241b2dca909083df5300df6aa6dfe390b9",
+      "bytes": 55830,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Use AI for an opponent; You + AI shares control of a colony.",
+      "alt": "Controller selector listing You, AI, You plus AI and Closed."
+    },
+    {
+      "id": "choosing-ai-roster",
+      "path": "/guide-media/v1/choosing-an-ai/roster.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/roster.webp",
+      "sha256": "78a9abe10dfd7edb3fa9e02d84d7624ec5cdf3634f76b9252089598d7ee81f57",
+      "bytes": 61822,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "The native AI selector lists eight opponents plus Inactive.",
+      "alt": "AI dropdown with Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, Maxima and Inactive."
+    },
+    {
+      "id": "choosing-ai-info",
+      "path": "/guide-media/v1/choosing-an-ai/info.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/info.webp",
+      "sha256": "49dfd4303f353ab4b4b5e6cc2b7007a249add00435dd4102b06054d7201369bd",
+      "bytes": 301738,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "The information panel explains the selected opponent and offers Use Numbi.",
+      "alt": "AI strategy panel with Numbi selected and Back and Use Numbi controls."
+    },
+    {
+      "id": "choosing-ai-standard",
+      "path": "/guide-media/v1/choosing-an-ai/standard.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/standard.webp",
+      "sha256": "50c04dde4d3e24330beff6853dcbc925bd3be5b324379dbd51e2ffaa50ed3241",
+      "bytes": 74896,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Keep Standard selected while learning ordinary colony and combat needs.",
+      "alt": "Game Rules tab with Standard selected."
+    },
+    {
+      "id": "choosing-ai-roster-detail",
+      "path": "/guide-media/v1/choosing-an-ai/roster-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/roster-detail.webp",
+      "sha256": "5a28eb2aab9105bedfbb6719e17e78a2dedcf0fbaeb4ff36d0dba5ae6e804b11",
+      "bytes": 11754,
+      "width": 323,
+      "height": 326,
+      "kind": "image",
+      "caption": "Detail: eight native opponents and Inactive appear in the selector; these displayed estimates are offline AI labels.",
+      "alt": "AI selector detail showing Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, Maxima and Inactive with difficulty labels."
+    },
+    {
+      "id": "choosing-ai-controller-detail",
+      "path": "/guide-media/v1/choosing-an-ai/controller-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/choosing-an-ai/controller-detail.webp",
+      "sha256": "46ab880617955a541eb425aa2df955c26f02c4134c3e5f283da212f43a245e07",
+      "bytes": 5170,
+      "width": 329,
+      "height": 170,
+      "kind": "image",
+      "caption": "Detail: AI controls an opponent; You + AI combines your orders with its AI. Closed removes that controller.",
+      "alt": "Controller dropdown detail with You, AI, You plus AI, Closed and shared-control slot note."
     }
   ]
 }
