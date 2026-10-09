@@ -374,6 +374,54 @@
       "alt": "Workers walk from the wheat at the upper right to the farther lower inn while its selected food stock changes.",
       "kind": "video",
       "poster": "hauling-delivery-poster"
+    },
+    {
+      "id": "jobs-war-request",
+      "path": "/guide-media/v1/jobs-and-flags/jobs-war-request.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/jobs-and-flags/jobs-war-request.webp",
+      "sha256": "9abb066d7ac19e382ba90ad3513b7265bb9607909cc42ddd8c6d547b71f35cf0",
+      "bytes": 55370,
+      "width": 1440,
+      "height": 900,
+      "caption": "A war flag requests warriors; this colony has only workers, so Working remains 0/10.",
+      "alt": "Selected war flag near a swarm with Working 0/10, Range 4 and minimum level 1; two workers and no warriors in the top counters.",
+      "kind": "image"
+    },
+    {
+      "id": "jobs-war-detail",
+      "path": "/guide-media/v1/jobs-and-flags/jobs-war-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/jobs-and-flags/jobs-war-detail.webp",
+      "sha256": "20490b6a23ecd79ecc5df10070f0b75f95761a7d74bfa9cba450bc753dd74aab",
+      "bytes": 6836,
+      "width": 150,
+      "height": 267,
+      "caption": "Detail: staffing, priority, range, and minimum-level filters are separate controls.",
+      "alt": "War flag panel showing On the way 0, Here 0, Working 0/10, Range 4 and level 1 selected.",
+      "kind": "image"
+    },
+    {
+      "id": "jobs-guard-area",
+      "path": "/guide-media/v1/jobs-and-flags/jobs-guard-area.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/jobs-and-flags/jobs-guard-area.webp",
+      "sha256": "fa8d9e449f7098fb71ef7a54ec0fefcd80a618348970cb611b4739d062c6221c",
+      "bytes": 29414,
+      "width": 1440,
+      "height": 900,
+      "caption": "Paint a small guard area with the blue brush; warriors must be available to use it.",
+      "alt": "Blue guard area brush selected in flags sidebar, with one blue square painted near the colony.",
+      "kind": "image"
+    },
+    {
+      "id": "jobs-guard-detail",
+      "path": "/guide-media/v1/jobs-and-flags/jobs-guard-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/jobs-and-flags/jobs-guard-detail.webp",
+      "sha256": "1f52625e9a5a0aa9340a31434b587e1969906271f1d4e8f29ea24087baf4c4c1",
+      "bytes": 3850,
+      "width": 145,
+      "height": 144,
+      "caption": "Detail: choose the area tool, add/remove mode, and brush before painting.",
+      "alt": "Guard area selected in sidebar, with Adding areas selected and a single-square brush selected.",
+      "kind": "image"
     }
   ]
 }
