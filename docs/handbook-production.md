@@ -12,7 +12,7 @@ The coordinator maintains `src/data/guide-coverage.json`. Each concept has an ar
 
 Guides live in `src/content/guides/`. Keep established slugs. Frontmatter `group` assigns a handbook section, `order` orders chapters within it, and `prerequisites` lists existing guide slugs. `reviewedAgainst` identifies the source revision. Sources use immutable revision links.
 
-Teach actions, observations and recovery. Use substantial sections rather than disconnected tips. Put each `[[media:asset-id]]` marker on its own paragraph at the step it explains. The marker resolves through `src/data/guide-media.json` to a responsive figure or user-controlled clip. Alt text describes the relevant game state; captions explain what the player should notice. Use actual player-perspective captures. Annotated media must preserve the underlying game state. Silent clips need an equivalent written explanation; speech would require captions and a transcript.
+Teach actions, observations and recovery. Use substantial sections rather than disconnected tips. Put each `[[media:asset-id]]` marker on its own paragraph at the step it explains. The marker resolves through `src/data/guide-media.json` to a responsive figure or user-controlled clip. Alt text describes the relevant game state; captions explain what the player should notice. Use actual player-perspective captures. Pair full scenes with genuine detail crops whenever readers must identify a control label or number at mobile width. Annotated media must preserve the underlying game state. Silent clips need an equivalent written explanation; speech would require captions and a transcript.
 
 ## Capture
 

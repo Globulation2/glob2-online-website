@@ -26,7 +26,7 @@ for(const route of chapters) {
  const html=await response.text();
  if(!response.ok||!html.includes('<article')||html.includes('[[media:')||!html.includes('On this page'))throw Error(`${route}: invalid handbook chapter`);
 }
-const assets=validateManifest(JSON.parse(await readFile('src/data/guide-media.json','utf8')));
+const assets=validateManifest(JSON.parse(await readFile(process.argv[3]??'src/data/guide-media.json','utf8')));
 for(let offset=0;offset<assets.length;offset+=4)await Promise.all(assets.slice(offset,offset+4).map(async asset=>{
  const response=await fetch(new URL(asset.path,base),{redirect:'error',signal:AbortSignal.timeout(60000)});
  if(!response.ok)throw Error(`${asset.id}: missing deployed media (${response.status})`);
