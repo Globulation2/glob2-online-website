@@ -1011,6 +1011,66 @@
       "caption": "The surviving hospital has two occupants. Healing capacity does not replace the lost inns.",
       "alt": "Selected hospital panel showing 260/260 HP, Inside 2/2 and Armour 5.",
       "kind": "image"
+    },
+    {
+      "id": "rules-standard",
+      "path": "/guide-media/v1/victory-and-rules/rules-standard.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/victory-and-rules/rules-standard.webp",
+      "sha256": "192b5f27e298385eb045c0864f3bc43e7818ec86d404dc48b28aca647868508e",
+      "bytes": 71018,
+      "width": 1440,
+      "height": 900,
+      "caption": "Read the actual Standard summary before starting a practice match.",
+      "alt": "Custom Game Rules tab with Standard selected, Conquest or prestige enabled, no timer and 1 x speed.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-conquest",
+      "path": "/guide-media/v1/victory-and-rules/rules-conquest.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/victory-and-rules/rules-conquest.webp",
+      "sha256": "5f98de6d6b02485400222bb2e9af5adc32d3e3779e1cd6ef906492992aac7438",
+      "bytes": 76600,
+      "width": 1440,
+      "height": 900,
+      "caption": "Changing Victory to Conquest only produces Standard + 1 change; prestige no longer triggers the finish.",
+      "alt": "Rules summary with Conquest only selected and highlighted change from Standard.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-victory-detail",
+      "path": "/guide-media/v1/victory-and-rules/rules-victory-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/victory-and-rules/rules-victory-detail.webp",
+      "sha256": "89c03886ae78f66780b2c15ea0ceae27738012022ed16b252061df5d80d7d296",
+      "bytes": 2426,
+      "width": 285,
+      "height": 55,
+      "caption": "Detail: victory mode is a choice, not an assumption.",
+      "alt": "Victory selector with Conquest or prestige unselected and Conquest only selected.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-sandbox",
+      "path": "/guide-media/v1/victory-and-rules/rules-sandbox.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/victory-and-rules/rules-sandbox.webp",
+      "sha256": "ddb11083b332f454e84fec856fe43782413d6c7e4b120387607f75a3fd527d67",
+      "bytes": 81020,
+      "width": 1440,
+      "height": 900,
+      "caption": "Sandbox changes the learning environment. Read its rules instead of treating its economy as Standard play.",
+      "alt": "Sandbox preset selected in the custom Game Rules tab.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-presets-detail",
+      "path": "/guide-media/v1/victory-and-rules/rules-presets-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/victory-and-rules/rules-presets-detail.webp",
+      "sha256": "d845d325da574bb8f4cb114df6942fa7b31f13dc58213f4e7b40a4188e2a8cd6",
+      "bytes": 7956,
+      "width": 261,
+      "height": 250,
+      "caption": "Select a preset before adjusting individual rules. Standard and Sandbox create different practice conditions.",
+      "alt": "Preset list with Standard selected, followed by Quick clash, Blitz, Gentle, and Sandbox. Sandbox is described as no fighting, no starving, build anything.",
+      "kind": "image"
     }
   ]
 }
