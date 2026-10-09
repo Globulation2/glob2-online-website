@@ -1,5 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {validateManifest, verifyAsset} from './stage-guide-media.mjs';
+import {fetchReleasedMedia} from './fetch-released-media.mjs';
 const base=process.argv[2];if(!base?.startsWith('https://'))throw Error('HTTPS website URL required');
 for(const route of ['/','/game/','/learn/','/community/','/competition/','/events/','/news/','/downloads/','/history/','/archive/','/search/']) {
  const response=await fetch(new URL(route,base),{signal:AbortSignal.timeout(15000)});
@@ -28,7 +29,7 @@ for(const route of chapters) {
 }
 const assets=validateManifest(JSON.parse(await readFile(process.argv[3]??'src/data/guide-media.json','utf8')));
 for(let offset=0;offset<assets.length;offset+=4)await Promise.all(assets.slice(offset,offset+4).map(async asset=>{
- const response=await fetch(new URL(asset.path,base),{redirect:'error',signal:AbortSignal.timeout(60000)});
+ const response=await fetchReleasedMedia(new URL(asset.path,base));
  if(!response.ok)throw Error(`${asset.id}: missing deployed media (${response.status})`);
  const chunks=[];let length=0;
  for await(const chunk of response.body){length+=chunk.length;if(length>asset.bytes)throw Error(`${asset.id}: oversized deployed media`);chunks.push(chunk);}
