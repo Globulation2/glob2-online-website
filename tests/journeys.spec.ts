@@ -31,6 +31,8 @@ test('live data pages hand off to the app',async({page})=>{
  await expect(page.getByRole('link',{name:/Browse maps in the online app/})).toHaveAttribute('href','https://app.glob2online.com/maps');
 });
 test('mobile and zoom reflow',async({page})=>{
+ // Test layout independently of the separately covered background-video lifecycle.
+ await page.emulateMedia({reducedMotion:'reduce'});
  for(const width of [360,768,1440]){
   await page.setViewportSize({width,height:900});await page.goto('/',{waitUntil:'domcontentloaded'});await page.evaluate(()=>document.fonts.ready);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
