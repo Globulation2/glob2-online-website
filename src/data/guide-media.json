@@ -518,6 +518,102 @@
       "caption": "The same shoreline at two times. Harvesting and growth change known wheat; the newly revealed lower area is exploration, so its extra wheat does not demonstrate regrowth.",
       "alt": "Side-by-side crops of the same wheat shoreline earlier and later, with more lower terrain revealed later.",
       "kind": "image"
+    },
+    {
+      "id": "population-panel",
+      "path": "/guide-media/v1/population-and-production/population-panel.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-panel.webp",
+      "sha256": "4d187a38410a54826a85980384b57e7717444a1d3be70c7d0626c04f93409d7f",
+      "bytes": 95858,
+      "width": 1440,
+      "height": 900,
+      "caption": "Worker-only production is enabled; Working requests the worker who supplies the swarm.",
+      "alt": "Selected swarm with food stock and Worker-only birth mix, next to a completed inn.",
+      "kind": "image"
+    },
+    {
+      "id": "population-panel-detail",
+      "path": "/guide-media/v1/population-and-production/population-panel-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-panel-detail.webp",
+      "sha256": "1a81a63e9258a1c256acf0798ab80b43e8caba26f6258cbc9b7a18e2da36bf86",
+      "bytes": 6854,
+      "width": 163,
+      "height": 269,
+      "caption": "Three birth weights are separate from the Working request.",
+      "alt": "Crop of swarm panel showing Working, Food and Worker, Explorer and Warrior controls.",
+      "kind": "image"
+    },
+    {
+      "id": "population-worker-result",
+      "path": "/guide-media/v1/population-and-production/population-worker-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-worker-result.webp",
+      "sha256": "d1ddade46e4b80b37cc69491440cc6290ec8461a769bade1da653cef30b3a917",
+      "bytes": 98246,
+      "width": 1440,
+      "height": 900,
+      "caption": "Worker-only production increased the worker total from six to eight.",
+      "alt": "Selected swarm, new workers around the colony and top worker total eight.",
+      "kind": "image"
+    },
+    {
+      "id": "population-worker-count",
+      "path": "/guide-media/v1/population-and-production/population-worker-count.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-worker-count.webp",
+      "sha256": "1fca1825d7d6cce8ea7f80580a834752c53147285748b48fa90aee4ea10ec0ac",
+      "bytes": 2112,
+      "width": 796,
+      "height": 80,
+      "caption": "The worker total is now eight; the explorer total is still zero.",
+      "alt": "Top bar crop showing worker availability five of total eight and explorer total zero.",
+      "kind": "image"
+    },
+    {
+      "id": "population-explorer-result",
+      "path": "/guide-media/v1/population-and-production/population-explorer-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-explorer-result.webp",
+      "sha256": "570b4fcf71e99980d4d98808af272f3cf6d22d98d6457ae44fcc54df04f8d9e7",
+      "bytes": 123508,
+      "width": 1440,
+      "height": 900,
+      "caption": "After deliveries and production time, the first explorer has been born.",
+      "alt": "Selected swarm with Explorer-only weight, top explorer total one, and a flying explorer beyond the lake at right.",
+      "kind": "image"
+    },
+    {
+      "id": "population-explorer-count",
+      "path": "/guide-media/v1/population-and-production/population-explorer-count.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-explorer-count.webp",
+      "sha256": "84cdb547e30fb5f3899c1d230206a7e2a22abbafe439c6d0406f2ee13e930fff",
+      "bytes": 2272,
+      "width": 796,
+      "height": 80,
+      "caption": "The explorer counter confirms a real birth: one explorer now exists.",
+      "alt": "Top bar crop showing eight workers and one explorer.",
+      "kind": "image"
+    },
+    {
+      "id": "population-zero-weights",
+      "path": "/guide-media/v1/population-and-production/population-zero-weights.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-zero-weights.webp",
+      "sha256": "9479ac1c53f509e95e558a556e9485b65d0126af10055ce3b374c6f53791cf28",
+      "bytes": 6738,
+      "width": 163,
+      "height": 269,
+      "caption": "All birth weights are zero. Existing units remain in the colony.",
+      "alt": "Selected swarm panel crop with all three production controls at zero.",
+      "kind": "image"
+    },
+    {
+      "id": "population-stable-total",
+      "path": "/guide-media/v1/population-and-production/population-stable-total.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/population-and-production/population-stable-total.webp",
+      "sha256": "84cdb547e30fb5f3899c1d230206a7e2a22abbafe439c6d0406f2ee13e930fff",
+      "bytes": 2272,
+      "width": 796,
+      "height": 80,
+      "caption": "After running with births stopped, the totals remain eight workers and one explorer.",
+      "alt": "Top bar crop with eight workers and one explorer after an interval with production weights zero.",
+      "kind": "image"
     }
   ]
 }

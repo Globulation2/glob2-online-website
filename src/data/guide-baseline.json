@@ -1,7 +1,7 @@
 {
-  "sourceRevision": "4edaed552c3574914197d4978fbff4b81bd1eedb",
+  "sourceRevision": "c26a0a02aeef4993a7478c3651d6117b49dbc56c",
   "gameVersion": "0.11.0.0",
   "url": "https://app.glob2online.com/play/",
-  "serialWasmSha256": "6310e1f5d57c817601227fc1b851ae19caeb5fc33f90d15ce6e245212485cc91",
-  "serialScriptSha256": "7c973311bf9e810aa0207b75eacf0ce78f27c33af6a009823bfda993103a5ba6"
+  "serialWasmSha256": "166081e8c6345709fd4068134faa937cf664cfddfee601914ade5df55c10cfcd",
+  "serialScriptSha256": "18f6a6ebe38f1b9a52b076458d99156418db84eec09956384fb2205306f1a6c0"
 }
