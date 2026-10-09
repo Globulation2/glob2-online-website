@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import releaseMetadata from '../src/data/release-metadata.json';
+import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
 import AxeBuilder from '@axe-core/playwright';
 for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 768, 1440]) {
   test(`download choices reflow and remain accessible ${colorScheme} ${width}`, async ({page}) => {
