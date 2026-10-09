@@ -698,6 +698,138 @@
       "caption": "After releasing the clearing job and letting services run, the hospital is empty again.",
       "alt": "Hospital panel showing Inside 0/2 after the healing observation interval.",
       "kind": "image"
+    },
+    {
+      "id": "training-school-site",
+      "path": "/guide-media/v1/training-and-upgrades/training-school-site.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-school-site.webp",
+      "sha256": "c65379d3596d34a1da8d746387c3790998da264c6cbc299559d6e0f96ee7db7e",
+      "bytes": 98318,
+      "width": 1440,
+      "height": 900,
+      "caption": "The school needs seven wood and two algae. Both kinds are arriving at this reachable shoreline site.",
+      "alt": "School construction site near two inns, with Wood 3/7 and Algae 1/2.",
+      "kind": "image"
+    },
+    {
+      "id": "training-school-service",
+      "path": "/guide-media/v1/training-and-upgrades/training-school-service.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-school-service.webp",
+      "sha256": "11e8e6127c899e6f9293aca050f7eb1eac9f54831c1dcf7a09bb281f9a38a072",
+      "bytes": 97582,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed school has three globs inside its four service places.",
+      "alt": "Finished school beside supplied inns, selected panel HP 360/360 and Inside 3/4.",
+      "kind": "image"
+    },
+    {
+      "id": "training-school-detail",
+      "path": "/guide-media/v1/training-and-upgrades/training-school-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-school-detail.webp",
+      "sha256": "d695e2377edca8543ce146cf15b883f123a29cc6bd4020792140a841aa31c562",
+      "bytes": 3572,
+      "width": 163,
+      "height": 129,
+      "caption": "Inside 3/4 records service occupancy, rather than construction labor.",
+      "alt": "School service panel showing three occupied training places.",
+      "kind": "image"
+    },
+    {
+      "id": "training-worker-before",
+      "path": "/guide-media/v1/training-and-upgrades/training-worker-before.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-worker-before.webp",
+      "sha256": "bd2915e7514bfe3006718ed42c8fdc0e403ed40666b086606c53e5ddbccf4012",
+      "bytes": 4944,
+      "width": 163,
+      "height": 230,
+      "caption": "An ordinary worker has Build (1): 8 before school training.",
+      "alt": "Worker ability panel showing Walk (1): 16 and Build (1): 8.",
+      "kind": "image"
+    },
+    {
+      "id": "training-worker-after",
+      "path": "/guide-media/v1/training-and-upgrades/training-worker-after.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-worker-after.webp",
+      "sha256": "9950a8d2498a535feb09ab694c7c2420fc3cd4418a2de08d862993d3338fa6e4",
+      "bytes": 4836,
+      "width": 163,
+      "height": 230,
+      "caption": "A worker that has completed training now shows Build (2): 12.",
+      "alt": "Trained worker ability panel showing Walk (1): 16 and Build (2): 12.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-locked",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-locked.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-locked.webp",
+      "sha256": "2f60b0fa816112a1aaec359fb091e19b877bd0076aa60df3b6711a310d7c4969",
+      "bytes": 7378,
+      "width": 163,
+      "height": 681,
+      "caption": "Before any worker qualified for the next tier, this healthy inn had no Upgrade action.",
+      "alt": "Level-one inn panel with Food 10/10 and Destroy button, without an Upgrade button.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-unlocked",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-unlocked.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-unlocked.webp",
+      "sha256": "72e9b938f3601f6280352b2d1621aac1a425772cbf743f3678c7560c559927cc",
+      "bytes": 8030,
+      "width": 163,
+      "height": 681,
+      "caption": "After school training, the inn offers Upgrade. Keep the other supplied inn operating before using it.",
+      "alt": "Level-one inn with Food 9/10 and newly available Upgrade button.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-site",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-site.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-site.webp",
+      "sha256": "24a822f5a04de00a42f3d29cfef75fde1ac7beb6b6b3dbebc5043833efaf2881",
+      "bytes": 104934,
+      "width": 1440,
+      "height": 900,
+      "caption": "The inn is now a level-two construction site. Two workers are attached and three of eight wood have arrived.",
+      "alt": "Selected upgraded inn site above a separate finished inn and school; Working 2/2, Wood 3/8.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-site-detail",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-site-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-site-detail.webp",
+      "sha256": "82b6bbd892fe679c4dcc01e9e503ec73227c4fb7c807715bd6807bf23df77352",
+      "bytes": 5456,
+      "width": 163,
+      "height": 201,
+      "caption": "Requesting two workers produced Working 2/2 here; the remaining requirement is five wood.",
+      "alt": "Level-two inn construction panel with HP 314/500, Working 2/2 and Wood 3/8.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-result",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-result.webp",
+      "sha256": "3bb2b32c1b41838668f0130e4b8b8279e935b9cd48f9f913aa885a141e2e74a0",
+      "bytes": 120400,
+      "width": 1440,
+      "height": 900,
+      "caption": "The upgraded inn is complete and already stocked with fourteen food. The backup inn stayed separate throughout construction.",
+      "alt": "Completed level-two inn, school and separate level-one inn around the swarm.",
+      "kind": "image"
+    },
+    {
+      "id": "training-upgrade-detail",
+      "path": "/guide-media/v1/training-and-upgrades/training-upgrade-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/training-and-upgrades/training-upgrade-detail.webp",
+      "sha256": "9e0370b1d2ec7c98f7cf1ecc439a39c52c18ea453543c95d7a8bf522c3b17df6",
+      "bytes": 7254,
+      "width": 163,
+      "height": 263,
+      "caption": "The finished inn has seven meal places and capacity for thirty food. Read its new Working request after completion.",
+      "alt": "Inn Level 2 panel with HP 500/500, Inside 0/7, Working 3/3 and Food 14/30.",
+      "kind": "image"
     }
   ]
 }
