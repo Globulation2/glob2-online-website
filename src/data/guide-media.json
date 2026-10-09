@@ -939,6 +939,78 @@
       "caption": "Detail: Inside 2/2 means both hospital places are occupied. It does not indicate a stored food supply.",
       "alt": "Hospital panel with HP 260/260, Inside 2/2 and Armour 5.",
       "kind": "image"
+    },
+    {
+      "id": "defense-inn",
+      "path": "/guide-media/v1/defending-your-colony/defense-inn.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-inn.webp",
+      "sha256": "503436f76e315296cb69d8604f5fcd09ae4545fb1687e5b89b62f17453a99567",
+      "bytes": 239176,
+      "width": 1440,
+      "height": 900,
+      "caption": "The first raid is already inside the food corridor. The selected inn still has food and two globs inside.",
+      "alt": "Cyan attackers among red defenders beside two inns; selected inn shows Food 6/10 and Inside 2/4.",
+      "kind": "image"
+    },
+    {
+      "id": "defense-contact-detail",
+      "path": "/guide-media/v1/defending-your-colony/defense-contact-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-contact-detail.webp",
+      "sha256": "b45cd336e7aec444e7dd47522560b52a18898286386da9e7ed4f1b4f52572f1e",
+      "bytes": 23288,
+      "width": 290,
+      "height": 290,
+      "caption": "The attack overlaps the two inns and their working approach.",
+      "alt": "Cropped battle area showing cyan attackers, red warriors, a war flag and two inns.",
+      "kind": "image"
+    },
+    {
+      "id": "defense-warrior-detail",
+      "path": "/guide-media/v1/defending-your-colony/defense-warrior-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-warrior-detail.webp",
+      "sha256": "98872df44fe223eaf4e7487074bb3262156bff2ded30c01beb74697d7856ae5c",
+      "bytes": 5980,
+      "width": 150,
+      "height": 270,
+      "caption": "Check readiness beyond the unit count: this warrior has 245/250 HP but only 29%food.",
+      "alt": "Selected red warrior panel showing HP 245/250, Food 29%, Walklevel 1 and attack traininglevel 2.",
+      "kind": "image"
+    },
+    {
+      "id": "defense-after-contact",
+      "path": "/guide-media/v1/defending-your-colony/defense-after-contact.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-after-contact.webp",
+      "sha256": "f8f3fc031ad797da709df7b5d0c18db8a1fbef843af74b844c7c515921ba6e03",
+      "bytes": 240212,
+      "width": 1440,
+      "height": 900,
+      "caption": "After the first exchange, both inns are gone and the selected warrior has 65/250 HP. The swarm is under attack.",
+      "alt": "Cyan attackers at the former inn sites, red survivors, selected warriorHP 65/250 and swarm under attack alert.",
+      "kind": "image"
+    },
+    {
+      "id": "defense-after-detail",
+      "path": "/guide-media/v1/defending-your-colony/defense-after-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-after-detail.webp",
+      "sha256": "a28b24c22e67440b61b9f0018b3d450d21cc789d87f1f35d7d73eb33f95ae955",
+      "bytes": 34172,
+      "width": 375,
+      "height": 353,
+      "caption": "Losing the inns turns a fight into a food emergency for the remaining colony.",
+      "alt": "Battle detail with cyan attackers at the former inn locations and beside the remaining swarm.",
+      "kind": "image"
+    },
+    {
+      "id": "defense-hospital-detail",
+      "path": "/guide-media/v1/defending-your-colony/defense-hospital-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/defending-your-colony/defense-hospital-detail.webp",
+      "sha256": "e26321d2e4d345d1f36d5c5a92594b88ec5fdcdea9dda431f2c469c96e93e152",
+      "bytes": 3420,
+      "width": 150,
+      "height": 125,
+      "caption": "The surviving hospital has two occupants. Healing capacity does not replace the lost inns.",
+      "alt": "Selected hospital panel showing 260/260 HP, Inside 2/2 and Armour 5.",
+      "kind": "image"
     }
   ]
 }
