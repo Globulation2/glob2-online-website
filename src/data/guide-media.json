@@ -2038,6 +2038,156 @@
       "caption": "Fifteen seconds at normal game speed: workers move between wheat and the inn while globs use meals. Food changes as service continues. This clip has no audio.",
       "alt": "Red workers haul near wheat and a supplied inn as its Food and Inside readings change.",
       "poster": "econo-hauling-poster"
+    },
+    {
+      "id": "warrush-selection",
+      "path": "/guide-media/v1/ai-warrush/warrush-selection.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-selection.webp",
+      "sha256": "4fbc68565e627e8366a7d3fcaf09bc246506f7c62ad87e62b45b9a62ce4f8636",
+      "bytes": 1246,
+      "width": 460,
+      "height": 37,
+      "kind": "image",
+      "caption": "Select Warrush for cyan on a separate team. Easy (1401) is an offline estimate.",
+      "alt": "Warrush chooser showing Easy (1401)."
+    },
+    {
+      "id": "warrush-opening-food",
+      "path": "/guide-media/v1/ai-warrush/warrush-opening-food.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-opening-food.webp",
+      "sha256": "aab67dc0896cae5db9322d399c5399caf0b9f7fd5c60a789dc62a6f42d948024",
+      "bytes": 121440,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "This first inn is still a foundation: Wood 0/3 and HP 1/200. Wait for completion and deliveries.",
+      "alt": "Red colony with inn foundation and nearby resources."
+    },
+    {
+      "id": "warrush-services",
+      "path": "/guide-media/v1/ai-warrush/warrush-services.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-services.webp",
+      "sha256": "10bf9af8a7b507541a02bef282a3049e5f7cfeda3296cccb4b3b6edd84877890",
+      "bytes": 220752,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Completed barracks Inside2/2, with the hospital and stocked inn nearby.",
+      "alt": "Red home colony with completed barracks, hospital and inn."
+    },
+    {
+      "id": "warrush-food-before-detail",
+      "path": "/guide-media/v1/ai-warrush/warrush-food-before-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-food-before-detail.webp",
+      "sha256": "9affab4bba817e678afedc66484f9187ed5c071afab9598fef1cf4738a4615dd",
+      "bytes": 9124,
+      "width": 149,
+      "height": 324,
+      "kind": "image",
+      "caption": "Before releasing production: Food 10/10, Inside 4/4, Working 0/2.",
+      "alt": "Inn panel showing stocked meals but no attached haulers."
+    },
+    {
+      "id": "warrush-contact",
+      "path": "/guide-media/v1/ai-warrush/warrush-contact.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-contact.webp",
+      "sha256": "49b22dfd31d33efd496931cb4ae832dab32d50bf5ee0cb5931972eec774ecdda",
+      "bytes": 163316,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Cyan warriors meet red defenders on the southern approach near the supplied tower.",
+      "alt": "Cyan and red warriors in contact south of the red guard strip."
+    },
+    {
+      "id": "warrush-growth-detail",
+      "path": "/guide-media/v1/ai-warrush/warrush-growth-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-growth-detail.webp",
+      "sha256": "78b32042784d4447db82660cddb087815e215c5b7cf4ade01b6836e7c1dbbbe5",
+      "bytes": 6364,
+      "width": 149,
+      "height": 267,
+      "kind": "image",
+      "caption": "The swarm Working request is 0/0 and all birth weights have been reduced.",
+      "alt": "Swarm panel with Working 0/0 and zero birth-weight bars."
+    },
+    {
+      "id": "warrush-guard",
+      "path": "/guide-media/v1/ai-warrush/warrush-guard.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-guard.webp",
+      "sha256": "c39c21d2ac9443b6e8723368438ccf40d25258a565ea133adffe7b609cdef086",
+      "bytes": 15680,
+      "width": 450,
+      "height": 210,
+      "kind": "image",
+      "caption": "A compact blue guard strip marks the southern approach, near the home services.",
+      "alt": "Small blue guard-area strip south of red services."
+    },
+    {
+      "id": "warrush-food-after-detail",
+      "path": "/guide-media/v1/ai-warrush/warrush-food-after-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-food-after-detail.webp",
+      "sha256": "3bf09e94f48960447390c51b1fe0732dbb16341486d49f604790efa2befd1ed2",
+      "bytes": 6686,
+      "width": 149,
+      "height": 264,
+      "kind": "image",
+      "caption": "After release and guard painting: inn Working 2/2, Food 8/10 and Inside 3/4.",
+      "alt": "Inn panel showing two haulers, eight food and three occupants."
+    },
+    {
+      "id": "warrush-hold-poster",
+      "path": "/guide-media/v1/ai-warrush/warrush-hold-poster.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-hold-poster.webp",
+      "sha256": "49b22dfd31d33efd496931cb4ae832dab32d50bf5ee0cb5931972eec774ecdda",
+      "bytes": 163316,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Observe defender movement and continued contact at the southern approach.",
+      "alt": "Warriors in contact near the red tower and guard strip."
+    },
+    {
+      "id": "warrush-hold-clip",
+      "path": "/guide-media/v1/ai-warrush/warrush-hold-clip.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-hold-clip.mp4",
+      "sha256": "7bd50ade5b9ff03f1b2e144b2c65a14eb50f7d81c5401edf0c234a728cf290e6",
+      "bytes": 2189812,
+      "width": 1440,
+      "height": 900,
+      "kind": "video",
+      "poster": "warrush-hold-poster",
+      "caption": "Red defenders and cyan attackers continue moving at the guarded approach. Check meals, healing and tower supply afterward.",
+      "alt": "Silent ten-second clip of continuing contact near the red tower.",
+      "trim": [
+        116,
+        126
+      ],
+      "duration": 10
+    },
+    {
+      "id": "warrush-barracks-detail",
+      "path": "/guide-media/v1/ai-warrush/warrush-barracks-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-barracks-detail.webp",
+      "sha256": "4e1727a591e2ba49863d90aa7358d9526f2707a2fec56e7193da702504ddac6d",
+      "bytes": 3398,
+      "width": 149,
+      "height": 133,
+      "kind": "image",
+      "caption": "The completed barracks holds two occupants. Inspect real admission and training before sending defenders away.",
+      "alt": "Barracks panel showing HP 440/440 and Inside 2/2."
+    },
+    {
+      "id": "warrush-hospital-detail",
+      "path": "/guide-media/v1/ai-warrush/warrush-hospital-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-warrush/warrush-hospital-detail.webp",
+      "sha256": "1903dcf93c48785699cefe7419afae2c024dd71c311748e25034bd2b8a5e30dc",
+      "bytes": 3314,
+      "width": 149,
+      "height": 133,
+      "kind": "image",
+      "caption": "The completed hospital also has two occupants. Allow injured survivors time to use it.",
+      "alt": "Hospital panel showing HP 260/260 and Inside 2/2."
     }
   ]
 }
