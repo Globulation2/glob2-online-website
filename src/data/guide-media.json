@@ -422,6 +422,102 @@
       "caption": "Detail: choose the area tool, add/remove mode, and brush before painting.",
       "alt": "Guard area selected in sidebar, with Adding areas selected and a single-square brush selected.",
       "kind": "image"
+    },
+    {
+      "id": "food-first-stock",
+      "path": "/guide-media/v1/sustainable-food/food-first-stock.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-first-stock.webp",
+      "sha256": "22cc20fc4e137dee9c2c464a7991005e8b7400871b8ad65e6e07d83cd3308a4f",
+      "bytes": 48944,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed inn is receiving wheat: Food 3/10, Working 2/2, Inside 0/4.",
+      "alt": "Selected completed inn beside revealed wheat with three food stored and two attached haulers.",
+      "kind": "image"
+    },
+    {
+      "id": "food-first-stock-detail",
+      "path": "/guide-media/v1/sustainable-food/food-first-stock-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-first-stock-detail.webp",
+      "sha256": "222ddecc69d3f475ed25f8c057d2cd41993b9c528a2685ab23df78af066b684a",
+      "bytes": 6322,
+      "width": 163,
+      "height": 248,
+      "caption": "Read Food, Working and Inside separately.",
+      "alt": "Inn panel crop showing Food 3/10, Working 2/2 and Inside 0/4.",
+      "kind": "image"
+    },
+    {
+      "id": "food-swarm",
+      "path": "/guide-media/v1/sustainable-food/food-swarm.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-swarm.webp",
+      "sha256": "8ee51e45ec3b8f29e5c1d39b9e9d5eaaadac071408a7fd2d54706d9e31ce5b69",
+      "bytes": 49296,
+      "width": 1440,
+      "height": 900,
+      "caption": "The swarm holds Food 4/20 for births while the inn has its own meal stock.",
+      "alt": "Selected swarm beside an inn, with four food stored, one attached worker and three production controls.",
+      "kind": "image"
+    },
+    {
+      "id": "food-swarm-detail",
+      "path": "/guide-media/v1/sustainable-food/food-swarm-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-swarm-detail.webp",
+      "sha256": "90d895275851fc8ec3775cc21519d98264ba2d5550896278b6e00c9a021c65ce",
+      "bytes": 6452,
+      "width": 163,
+      "height": 268,
+      "caption": "Swarm food produces units; it does not feed existing globs.",
+      "alt": "Swarm panel showing Food 4/20 and Worker, Explorer and Warrior weight controls.",
+      "kind": "image"
+    },
+    {
+      "id": "food-stock-falling",
+      "path": "/guide-media/v1/sustainable-food/food-stock-falling.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-stock-falling.webp",
+      "sha256": "21350b65ed1ffdec8b47feba1f675b742edadbdcdcc14cbe0d368760eb76db55",
+      "bytes": 6282,
+      "width": 163,
+      "height": 246,
+      "caption": "With hauling paused, meals have reduced the reserve from ten to seven; one glob is inside.",
+      "alt": "Inn panel showing Working 0/0, Food 7/10 and Inside 1/4.",
+      "kind": "image"
+    },
+    {
+      "id": "food-recovery",
+      "path": "/guide-media/v1/sustainable-food/food-recovery.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-recovery.webp",
+      "sha256": "a8f80459f6c948792b57a97497e498ae1b1c6fa4b37f3b0c032dcbb63ae313b8",
+      "bytes": 80714,
+      "width": 1440,
+      "height": 900,
+      "caption": "Restoring the inn request and releasing swarm labor replenished the reserve to Food 10/10.",
+      "alt": "Selected inn with Food 10/10 and Inside 1/4, with Working request two; swarm and wheat remain visible.",
+      "kind": "image"
+    },
+    {
+      "id": "food-recovery-detail",
+      "path": "/guide-media/v1/sustainable-food/food-recovery-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-recovery-detail.webp",
+      "sha256": "0aec626f63066be5ab3ace7a2521c7364007e692008871cd3c77ce3734ecfb6e",
+      "bytes": 7974,
+      "width": 163,
+      "height": 280,
+      "caption": "The inn is full again. Unavailable fruit messages describe another resource request.",
+      "alt": "Inn panel with Food 10/10, Working 0/2 and unavailable fruit messages.",
+      "kind": "image"
+    },
+    {
+      "id": "food-field-comparison",
+      "path": "/guide-media/v1/sustainable-food/food-field-comparison.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/sustainable-food/food-field-comparison.webp",
+      "sha256": "14462c7b9a42605830e613d118f66cc19695a8748fd9b833a4b8e11b233e881e",
+      "bytes": 19078,
+      "width": 320,
+      "height": 366,
+      "caption": "The same shoreline at two times. Harvesting and growth change known wheat; the newly revealed lower area is exploration, so its extra wheat does not demonstrate regrowth.",
+      "alt": "Side-by-side crops of the same wheat shoreline earlier and later, with more lower terrain revealed later.",
+      "kind": "image"
     }
   ]
 }
