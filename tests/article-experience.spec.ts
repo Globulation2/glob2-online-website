@@ -37,6 +37,7 @@ for (const scheme of ['light', 'dark'] as const) test(`article navigation and co
 test('deep links locate content and update current section without losing chapter context', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(fruit);
+  await page.evaluate(() => document.fonts.ready);
   const link = page.locator('.article-rail--contents a[data-section-link]').nth(1);
   const hash = await link.getAttribute('href');
   await link.click();
@@ -45,6 +46,7 @@ test('deep links locate content and update current section without losing chapte
   await expect(link).toHaveAttribute('aria-current', 'location');
   await expect(page.locator('.article-rail--collection a[aria-current="page"]')).toBeVisible();
   await page.reload();
+  await page.evaluate(() => document.fonts.ready);
   await expect(page.locator(hash!)).toBeInViewport();
 });
 
