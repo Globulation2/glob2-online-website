@@ -164,11 +164,37 @@ test('expanded native clips transfer playback state and never play two copies', 
   expect(expandedState.rate).toBe(inlineState.rate);
   expect(expandedState.muted, `Inline state before expansion: ${JSON.stringify(inlineState)}`).toBe(inlineState.muted);
   expect(expandedState.volume).toBeCloseTo(inlineState.volume, 6);
-  await expanded.evaluate((video: HTMLVideoElement) => { video.pause(); video.currentTime = 3; });
+  await expanded.evaluate((video: HTMLVideoElement) => {
+    video.pause(); video.currentTime = 3;
+    video.playbackRate = 1.25; video.volume = 0.25; video.muted = !video.muted;
+  });
+  const editedState = await expanded.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume }));
   await page.keyboard.press('Escape');
   await expect(viewer(page)).toBeHidden();
   await expect.poll(() => inline.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeCloseTo(3, 1);
   expect(await inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
+  const returnedState = await inline.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume }));
+  expect(returnedState.rate).toBe(editedState.rate);
+  expect(returnedState.muted, `Expanded state before closing: ${JSON.stringify(editedState)}`).toBe(editedState.muted);
+  expect(returnedState.volume).toBeCloseTo(editedState.volume, 6);
+
+  await inline.evaluate((video: HTMLVideoElement) => video.play());
+  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  await expect(viewer(page)).toBeVisible();
+  const reopened = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
+  await expect.poll(() => reopened.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
+  expect(await inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
+  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !video.paused).length)).toBe(1);
+  const playingState = await reopened.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
+  await page.keyboard.press('Escape');
+  await expect(viewer(page)).toBeHidden();
+  await expect.poll(() => inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
+  const resumedState = await inline.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
+  expect(resumedState.rate).toBe(playingState.rate);
+  expect(resumedState.muted, `Expanded state while playing: ${JSON.stringify(playingState)}`).toBe(playingState.muted);
+  expect(resumedState.volume).toBeCloseTo(playingState.volume, 6);
+  expect(resumedState.time).toBeGreaterThanOrEqual(playingState.time - 0.1);
+  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !video.paused).length)).toBe(1);
 });
 
 test('a failed lazy viewer import follows the original image link', async ({ page }) => {
