@@ -13,6 +13,7 @@ Use Node 24.14 or newer. Dependencies are pinned in package-lock.json.
 
 ```sh
 npm ci
+npm run design:sync
 npm run dev
 npm run check
 npm run build
@@ -27,7 +28,7 @@ npm test
 
 The site uses Astro content collections for guides, news, history and source-linked archive entries. `src/data/events.json` contains validated, reviewed human-community events; an empty collection is intentional until organizers announce something. `src/data/site.ts` holds community URLs. Configure only verified Discord invitations. `src/data/release-metadata.json` records a qualified all-platform manifest; `scripts/sync-releases.mjs` verifies immutable public release assets and production store links. Node 24.14+ is required for the shared TypeScript schema.
 
-The selected design is Colony. `/design/colony/` and `/design/field-guide/` remain noindexed review references. Search distinguishes current guidance from history. The legacy migration manifest records sources, revisions, attribution, language, rights and verification status. Original wiki prose and media remain source-linked where republication rights are unverified.
+The selected design is Colony, using the shared Meadow and Night colony themes. `/design/colony/` and `/design/field-guide/` remain noindexed review references. Search distinguishes current guidance from history. The legacy migration manifest records sources, revisions, attribution, language, rights and verification status. Original wiki prose and media remain source-linked where republication rights are unverified.
 
 ## New-player introduction
 
@@ -63,10 +64,28 @@ See [hosting and rollback](docs/hosting.md), [content maintenance](docs/content.
 
 Code is GPL-3.0-or-later. Game media attribution is listed on `/credits/`; legacy source links retain their original authorship and do not imply transfer of rights.
 
-The homepage's silent colony video and its two WebP posters come from
-`platform/apps/web/src/art/` in the game repository. Rebuild them using
-`tools/record_menu_colony.py` there and copy `colony-loop.mp4`,
-`colony-960.webp`, and `colony-1600.webp` into `public/brand/` together. The
-recording uses the actual menu simulation without UI, with a soft loop transition.
-The homepage pauses it off screen and in hidden tabs, supplies a pause button,
-and uses the poster for reduced motion and failed playback.
+The shared [Glob2 design system](https://github.com/Globulation2/glob2-design-system)
+owns portable tokens, typography, controls, icons, theme persistence, fonts, wordmark,
+favicons and colony recording/posters. This site owns editorial layouts and content.
+Do not copy theme definitions or reusable brand assets into this repository.
+Import shared CSS before local layout styles and opt into components with `.g2-ui`.
+
+`npm run design:sync` and Astro's config bootstrap resolve design-system `main` once
+per invocation and install that exact revision in isolation. Other dependencies retain
+their lockfile versions. Set `GLOB2_DESIGN_SYSTEM_SHA` to a full published commit SHA
+before checks/builds to reproduce a release or test a candidate. Resolution failures
+stop the build. `.cache/design-system.json` records the installed revision and file
+fingerprint; `/design-system.json` records the revision in the immutable static artifact.
+CI resolves once and shares the SHA throughout verification and packaging.
+
+The shared same-origin external bootstrap applies the preference before paint.
+Production HTTPS sites share the functional `glob2-theme` cookie across the apex and
+app subdomain (one year, Secure, SameSite=Lax, Path=/); local/third-party previews use
+origin-local storage. The privacy page describes this preference. Both themes respect
+reduced motion and forced colors. The colony has a poster fallback and pauses when
+hidden/offscreen, with a keyboard-accessible user control.
+
+To regenerate reusable artwork, use the game's artwork/colony tooling targeting the
+design-system checkout, update asset provenance there, and publish a new revision.
+Downstream builds stage only the required shared assets, including license notices;
+the package's independent HTML, Astro and React examples document new consumers.

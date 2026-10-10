@@ -1,3 +1,7 @@
+import { syncDesignSystem, stageDesignAssets } from './scripts/design-system.mjs';
+import { fileURLToPath } from 'node:url';
+const designSystem = syncDesignSystem();
+stageDesignAssets(fileURLToPath(new URL('./public', import.meta.url)), designSystem);
 import { defineConfig } from 'astro/config';
 import {unified} from '@astrojs/markdown-remark';
 import sitemap from '@astrojs/sitemap';

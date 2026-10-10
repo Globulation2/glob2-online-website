@@ -8,7 +8,7 @@ import { chromium, firefox, webkit } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 await mkdir('artifacts/downloads', {recursive: true});
 const directory = await mkdtemp(resolve('artifacts/downloads/populated-'));
-for (const file of ['src', 'public', 'astro.config.mjs', 'tsconfig.json', 'package.json', 'firebase.json', 'tests/server.mjs']) await cp(file, join(directory, file), {recursive: true});
+for (const file of ['src', 'public', 'astro.config.mjs', 'tsconfig.json', 'package.json', 'firebase.json', 'scripts/design-system.mjs', 'tests/server.mjs']) await cp(file, join(directory, file), {recursive: true});
 await symlink(resolve('node_modules'), join(directory, 'node_modules'), 'dir');
 const manifest = fixtureManifest();
 for (const pkg of manifest.packages) pkg.minimumOs = ({windows: 'Windows 11', macos: 'macOS 15', linux: 'the listed Linux runtime', android: 'Android 7.0 (API 24)'})[pkg.platform];
