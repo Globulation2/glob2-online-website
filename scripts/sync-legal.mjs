@@ -3,6 +3,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 import {resolve, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const check = args.includes('--check');
@@ -16,9 +17,8 @@ const files = [
 // Resolve remote master once so both documents come from the same revision.
 let revision;
 if (!game) {
-  const response = await fetch('https://api.github.com/repos/Globulation2/glob2/commits/master', {signal: AbortSignal.timeout(30000)});
-  if (!response.ok) throw new Error(`Cannot resolve game master: HTTP ${response.status}`);
-  revision = (await response.json()).sha;
+  // Public Git resolution avoids shared-runner GitHub API rate limits.
+  revision = execFileSync('git', ['ls-remote', 'https://github.com/Globulation2/glob2.git', 'refs/heads/master'], {encoding: 'utf8', timeout: 30000}).split(/\s+/)[0];
   if (!/^[a-f0-9]{40}$/.test(revision)) throw new Error('Invalid game revision');
 }
 // Read every source before writing anything; a missing source cannot partly import.
