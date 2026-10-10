@@ -53,3 +53,5 @@ Complete the first-colony pilot before expanding the queue. For each article, in
 Run all AGENTS.md checks plus `npm run check:media`. Browser tests must exercise illustrated articles, grouped navigation, prerequisite/contents/adjacent links, mobile/zoom layouts, light/dark themes, media failures and content without JavaScript. Record commands and actual limits in PR evidence.
 
 Publish each accepted article through a trusted same-repository PR preview. Main promotes the tested immutable Hosting version. Do not deploy game services or change multiplayer infrastructure as part of handbook publication.
+
+Release smoke checks retry required page and media responses only for temporary 404/503 statuses, with five attempts and 37 seconds cumulative backoff. Invalid successful HTML, missing chapter navigation, redirects, permanent errors and mismatched media bytes still fail. The intentional 404 and old application redirect checks are not retried. Each fetch is separately bounded; 37 seconds is not a total wall-time limit.
