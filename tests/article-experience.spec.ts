@@ -184,7 +184,7 @@ test('expanded native clips transfer playback state and never play two copies', 
   const reopened = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
   await expect.poll(() => reopened.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
   expect(await inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
-  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !video.paused).length)).toBe(1);
+  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !(video as HTMLVideoElement).paused).length)).toBe(1);
   const playingState = await reopened.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
   await page.keyboard.press('Escape');
   await expect(viewer(page)).toBeHidden();
@@ -194,7 +194,7 @@ test('expanded native clips transfer playback state and never play two copies', 
   expect(resumedState.muted, `Expanded state while playing: ${JSON.stringify(playingState)}`).toBe(playingState.muted);
   expect(resumedState.volume).toBeCloseTo(playingState.volume, 6);
   expect(resumedState.time).toBeGreaterThanOrEqual(playingState.time - 0.1);
-  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !video.paused).length)).toBe(1);
+  expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !(video as HTMLVideoElement).paused).length)).toBe(1);
 });
 
 test('a failed lazy viewer import follows the original image link', async ({ page }) => {
