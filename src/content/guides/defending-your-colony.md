@@ -28,7 +28,11 @@ Keep these questions in view:
 - Can wounded or hungry units reach services afterward?
 - Is there another short approach across the map's wrapping edge?
 
+:::warning
+
 Do not wall every visible boundary simply because it looks like an edge. The map wraps, and walls do not stop flying units.
+
+:::
 
 ## Produce defenders without losing the economy
 
@@ -69,9 +73,13 @@ Do not promise yourself a gate or a flyer-proof barrier that the map does not pr
 
 In this practice raid, the enemy reaches the two inns before the defenders stop it. The selected inn still has **Food 6/10** and **Inside 2/4**. Food stock has not failed yet; the danger is losing the buildings and the route that serves it.
 
+:::media-group
+
 [[media:defense-inn]]
 
 [[media:defense-contact-detail]]
+
+:::
 
 Pause a local practice raid and inspect three things before spending more workers:
 
@@ -83,9 +91,13 @@ Pause a local practice raid and inspect three things before spending more worker
 
 After play resumes, the attackers destroy both inns and damage the swarm. The selected warrior's health falls to 65/250. A force still being present is not the same as food service still being available.
 
+:::media-group
+
 [[media:defense-after-contact]]
 
 [[media:defense-after-detail]]
+
+:::
 
 The hospital remains occupied by two globs. That can preserve wounded units, but it cannot feed them. Rebuilding food service now competes with defending the surviving structures. The easier decision was to prepare the approach, supply, and trained defenders before the raid arrived.
 

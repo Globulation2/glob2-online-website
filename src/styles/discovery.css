@@ -1,0 +1,48 @@
+/* Browse surfaces share the article palette without changing other pages. */
+.discovery-shell { max-width: 1280px; padding-inline: 32px; }
+.discovery-shell .page-heading { margin-bottom: 24px; max-width: 70ch; }
+.discovery-shell .page-heading h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; margin-bottom: 12px; }
+.discovery-shell .page-heading > p:last-child { margin-bottom: 0; }
+.discovery-shell .collection-context, .search-guidance { max-width: 70ch; color: var(--ink-2); margin-bottom: 24px; }
+.handbook-entrypoints { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px; }
+.discovery-panel { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); padding: 24px; min-width: 0; }
+.discovery-panel h2 { margin-top: 0; font-size: 1.5rem; }
+.discovery-panel > :last-child { margin-bottom: 0; }
+.handbook-lookup ul { list-style: none; padding: 0; margin: 0 0 12px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.handbook-lookup li a { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid var(--line); font-weight: 700; }
+.discovery-shell .handbook-sections { margin-top: 24px; gap: 8px; padding: 0 0 24px; }
+.discovery-shell .handbook-sections a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 12px; border-radius: var(--r-sm); background: var(--surface-2); text-decoration: none; font-weight: 700; }
+.discovery-shell .handbook-sections a:hover { background: var(--surface-3); }
+.discovery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.discovery-card { display: flex; flex-direction: column; min-width: 0; padding: 24px; }
+.discovery-card h2, .discovery-card h3 { margin: 0 0 12px; font-size: 1.5rem; }
+.discovery-card p { margin: 0 0 20px; max-width: 60ch; }
+.discovery-card > .text-link { margin-top: auto; }
+.discovery-card-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 8px; }
+.discovery-card-meta .eyebrow { margin: 0; }
+.discovery-card time, .discovery-language { color: var(--ink-2); font-size: var(--text-sm); }
+.discovery-language { margin-bottom: 16px; }
+.search-browse { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 32px; border-top: 1px solid var(--line); padding-top: 16px; }
+.search-browse a { display: inline-flex; align-items: center; min-height: 44px; }
+.search-label { display: block; margin-bottom: 8px; font-weight: 700; }
+.search-label[hidden] { display: none; }
+.search-shell #search { min-width: 0; }
+.search-shell .pagefind-ui { --pagefind-ui-border-radius: 10px; --pagefind-ui-scale: 1; }
+.search-shell .pagefind-ui .pagefind-ui__result { padding: 24px 0; border-color: var(--line); }
+.search-shell .pagefind-ui .pagefind-ui__result-title { font-family: var(--font-display); font-size: 1.4rem; }
+.search-shell .pagefind-ui .pagefind-ui__result-excerpt { line-height: 1.65; max-width: 70ch; }
+.search-shell .pagefind-ui .pagefind-ui__result-nested { border-left: 2px solid var(--line-strong); margin-left: 8px; padding-left: 16px; }
+.search-shell .pagefind-ui mark { color: var(--accent-ink); background: var(--accent); padding-inline: 2px; }
+.search-shell .pagefind-ui button { min-height: 44px; }
+.search-shell .pagefind-ui .pagefind-ui__filter-name { font-weight: 700; }
+@media (max-width: 959px) {
+  .discovery-shell { padding-inline: 16px; }
+  .handbook-entrypoints { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 640px) {
+  .discovery-grid { grid-template-columns: 1fr; }
+  .discovery-panel, .discovery-card { padding: 16px; }
+  .handbook-lookup ul { grid-template-columns: 1fr; }
+  .discovery-shell .handbook-sections a { font-size: .9375rem; }
+  .search-shell .pagefind-ui .pagefind-ui__result-title { font-size: 1.2rem; }
+}

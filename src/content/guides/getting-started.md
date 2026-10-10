@@ -44,21 +44,33 @@ Once finished, the inn's workers fetch wheat instead. Select the completed inn a
 
 [[media:pilot-inn]]
 
+:::checkpoint
+
 The important checkpoint is **food arriving and globs eating**, not simply having placed a building. A completed but empty inn cannot feed the colony.
+
+:::
 
 ## 3. Understand the Working request
 
 Click the swarm. The **Working** row has arrows at either end. The number after the slash is the requested staffing; the number before it is how many workers are currently attached. For example, **Working 1/3** means one worker is attached to a request for three. Asking for more does not create more workers.
 
+:::media-group
+
 [[media:pilot-swarm]]
 
 [[media:pilot-working-detail]]
+
+:::
 
 The tutorial asks you to reduce the swarm's request to zero, then do the same at the inn. Use the left arrow on **Working** until the requested count reaches zero. This releases the workers from those jobs. They still need meals, and the inn's stored food will run down. Check both buildings: the number after the slash should now be zero.
 
 [[media:pilot-idle-detail]]
 
+:::warning
+
 **Keep this a brief demonstration.** Continue into the hospital task promptly. If you stop to read or take a break, pause the game. In an ordinary match, removing all food haulers for a long time is a way to starve the colony.
+
+:::
 
 An inn can also temporarily show fewer workers than requested because its food stock is full or workers are taking meals. Read the food count and any messages below it before treating a low Working count as a problem.
 
@@ -86,9 +98,13 @@ Select the swarm. Beneath its food display are three production bars: **Worker**
 4. Confirm that the inn still requests one worker.
 5. Let the game run and watch the swarm produce an explorer. Continue the tutorial messages and wait for a second explorer.
 
+:::media-group
+
 [[media:pilot-production]]
 
 [[media:pilot-production-detail]]
+
+:::
 
 Production bars set the **relative mix of future births**. They do not convert your existing workers into explorers. Setting only Explorer above zero makes future production explorers while food and a usable exit are available. Leaving both Worker and Explorer above zero shares production between them; it is not a guaranteed alternating queue.
 
@@ -96,9 +112,13 @@ Production bars set the **relative mix of future births**. They do not convert y
 
 Watch the revealed land expand and compare the minimap with the small starting clearing. After the second explorer, restore **Worker to one notch** and **Explorer to zero**, as the tutorial instructs. You now know how to change the colony's direction without directly commanding each glob.
 
+:::media-group
+
 [[media:pilot-two-explorers]]
 
 [[media:pilot-restored-detail]]
+
+:::
 
 Continue the last message to finish the tutorial. Its completion dialog offers **Continue playing** if you want to inspect your colony a little longer.
 

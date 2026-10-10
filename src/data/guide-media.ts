@@ -23,8 +23,8 @@ export function mediaHTML(id:string) {
   const captionId=`caption-${escape(asset.id)}`;
   const poster=asset.poster?` poster="${assetPath(mediaAsset(asset.poster).path)}"`:'';
   const content=asset.kind==='video'
-    ? `<video controls playsinline preload="none" width="${asset.width}" height="${asset.height}" aria-label="${alt}" aria-describedby="${captionId}"${poster}><source src="${path}" type="video/mp4"><a href="${path}">Watch or download this gameplay clip</a>.</video><p class="media-fallback"><a href="${path}">Open gameplay clip</a> · ${alt}</p>`
-    : `<a class="guide-image-link" href="${path}" aria-label="Open full-size image: ${alt}"><img src="${path}" alt="${alt}" width="${asset.width}" height="${asset.height}" loading="lazy" decoding="async"></a><p class="media-fallback"><a href="${path}">Open full-size screenshot</a></p>`;
+    ? `<p class="media-kind">Gameplay clip<span data-duration></span></p><video controls playsinline preload="none" width="${asset.width}" height="${asset.height}" aria-label="${alt}" aria-describedby="${captionId}"${poster}><source src="${path}" type="video/mp4"><a href="${path}">Watch or download this gameplay clip</a>.</video><div class="media-actions" data-pagefind-ignore><a href="${path}" data-media-open>Expand video ↗</a><a href="${path}">Open gameplay clip</a></div>`
+    : `<a class="guide-image-link" data-media-open href="${path}" aria-label="Open full-size image: ${alt}"><img src="${path}" alt="${alt}" width="${asset.width}" height="${asset.height}" loading="lazy" decoding="async"></a><p class="media-fallback" data-pagefind-ignore><a href="${path}">Open full-size screenshot</a></p>`;
   const figureClass=asset.kind==='image'&&asset.width<600?'guide-media guide-media--detail':'guide-media';
-  return `<figure class="${figureClass}" id="media-${escape(asset.id)}">${content}<figcaption id="${captionId}">${caption}</figcaption></figure>`;
+  return `<figure class="${figureClass}" id="media-${escape(asset.id)}" style="--media-width:${asset.width}px">${content}<figcaption id="${captionId}">${caption}</figcaption></figure>`;
 }

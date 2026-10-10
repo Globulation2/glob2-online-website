@@ -21,13 +21,21 @@ Start with a healthy Standard practice colony against an AI on a map with access
 3. Resume and watch the explorer reveal the trees. Keep vision there while workers collect fruit; nearby buildings and globs can also maintain it.
 4. Select the inn and read its separate Cherries, Oranges and Prunes counts.
 
+:::media-group
+
 [[media:fruit-orchard]]
+
+[[media:fruit-orchard-detail]]
+
+:::
+
+:::warning
 
 Fruit harvesting requires **current visibility**. Seeing trees once and leaving them in remembered fog is insufficient. Maintain an explorer near the source, or another dependable source of vision. A scout does not haul the fruit; workers still need access and time to bring it to the inn.
 
-The illustrated orchard is already within the colony's current vision. The exploration flag shows an optional request for additional scouts; it has **Here 0** and is not evidence that a scout has arrived.
+:::
 
-[[media:fruit-orchard-detail]]
+The illustrated orchard is already within the colony's current vision. The exploration flag shows an optional request for additional scouts; it has **Here 0** and is not evidence that a scout has arrived.
 
 ## Supply meals and fruit separately
 
@@ -37,9 +45,13 @@ Keep a reserve for the globs already inside. The offer counts a fruit kind only 
 
 Let workers make actual deliveries. If the stock stays at zero, check the source's current visibility, route, remaining fruit and the workers attached to the inn. A source beyond water can require a different route or trained ground units even though the flying scout reaches it easily. Dense resources can also block ground access. Open only the corridor you need, preserve the surrounding food, and use a hospital for globs injured by clearing.
 
+:::media-group
+
 [[media:fruit-stock]]
 
 [[media:fruit-stock-detail]]
+
+:::
 
 The meal's happiness counts **distinct fruit kinds**, rather than the number of cherries in storage. Three cherries are one kind; cherries, oranges and prunes offer three kinds. Each available kind can accompany a meal. Select a glob after it eats to inspect its fruit result.
 
@@ -65,21 +77,33 @@ Food advertisement allows another team's globs to consider your inns. Ordinary s
 
 Open the in-game Teams panel using the alliance icon beside the map. In this practice match, You and Econo already belong to separate teams. Enable **fV** beside Econo: the panel labels it “Show vision for Inn buildings (to steal units)”. Confirm with **Ok**, then resume. This shares the food offer; it does not give you control over the opponent's decisions.
 
+:::media-group
+
 [[media:fruit-advertise]]
 
 [[media:fruit-advertise-detail]]
+
+:::
 
 ## Understand the conversion decision
 
 A hungry glob compares usable meals. A reachable own inn offering equal or greater fruit variety keeps it with its colony. A richer rival offer can win the comparison only when food advertisement allows it, the rival service can feed and convert with adequate fruit reserves for its current occupants, and the trip is short enough for the glob's remaining nutrition.
 
+:::checkpoint
+
 Conversion changes ownership when the glob chooses the rival feeding service, before it completes the meal. It is not a fruit aura around the tree or a reward for merely enabling the checkbox. Observe the ownership and conversion event rather than counting every visitor as a successful conversion.
 
+:::
+
 In the illustrated match the native message says a unit from Econo / Cyan's team has joined your team. The worker total changes from 13 to 14 and the conversion counter reads **+1/-0**. The worker HUD uses available/total: **8/14** means eight available workers out of fourteen total. The swarm's production weights were zero during that interval, so this population increase is a conversion, not a birth. This demonstrates one successful offer; it does not promise the same timing or result in every match.
+
+:::media-group
 
 [[media:fruit-conversion]]
 
 [[media:fruit-conversion-detail]]
+
+:::
 
 [[media:fruit-offer-clip]]
 

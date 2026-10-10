@@ -3,6 +3,7 @@ title: "Facing Maxima: watch the economy behind the army"
 description: "Keep a supplied defense, replace lost scouts and reassess Maxima's growing services before committing your force."
 locale: "en"
 group: "ai"
+format: "profile"
 order: 8
 prerequisites: ["choosing-an-ai", "economy-and-expansion", "fruit-and-conversion", "training-and-upgrades", "defending-your-colony", "organizing-an-attack"]
 tags: ["AI", "Maxima", "scouting", "defense"]
@@ -28,7 +29,11 @@ In **Custom game**, choose **You** and **AI → Maxima** on opposing teams. Choo
 
 [[media:maxima-selection]]
 
+:::note
+
 Save the opening with **Escape → Save**. This map includes seven workers, an explorer and preplaced towers; inspect your actual starting assets on other maps.
+
+:::
 
 Fresh ordinary practice uses the packaged configuration for its match format. Imported saves retain their resolved AI configuration. A duel and a four-player free-for-all therefore need separate observations; do not assume changing the number of opponents merely adds copies of precisely the same match.
 
@@ -38,9 +43,13 @@ Place an inn with **B → I** beside reachable food and wood, then right-click o
 
 In this opening, the swarm's continuing production increased the worker population while the inn remained a foundation: **Wood 2/3**, **Working 1/3**. Food on the map was available, but the colony still needed workers to finish the actual service.
 
+:::media-group
+
 [[media:maxima-opening-site]]
 
 [[media:maxima-site-detail]]
+
+:::
 
 Select the swarm and temporarily reduce **Worker**, **Explorer** and **Warrior** birth weights to zero. Reduce **Working** too, releasing its carriers for the remaining construction and deliveries. Birth weights govern future units; they do not change existing globs into another role. Hauling alone can leave stored food funding births.
 
@@ -48,9 +57,13 @@ Select the swarm and temporarily reduce **Worker**, **Explorer** and **Warrior**
 
 After resuming, the inn completed and filled to **Food 10/10** with **Working 2/2**. Check **Inside** through actual meal visits as well: a full buffer and simultaneous service capacity answer different questions.
 
+:::media-group
+
 [[media:maxima-supplied-opening]]
 
 [[media:maxima-food-detail]]
+
+:::
 
 Once meals work, add a barracks and hospital with **B → B** and **B → H**, keeping their entrances and the food route clear. Resume controlled warrior production instead of leaving it permanently paused. A hospital heals injuries; it cannot replace an inn or solve hunger.
 
@@ -66,9 +79,13 @@ Use **F → E** to place an exploration flag on a useful approach, then right-cl
 
 In this duel, a later message said **Your unit has joined Maxima / 2 - Cyan's team ×3**. The red worker count fell from fifteen to thirteen while replacement explorers and warriors were being produced. This is an ownership-change message, not an ordinary combat-death notification.
 
+:::media-group
+
 [[media:maxima-conversion]]
 
 [[media:maxima-conversion-detail]]
+
+:::
 
 The red inn still had ordinary food but **Cherries 0/40**, **Oranges 0/40** and **Prunes 0/40**. A full ordinary food buffer therefore did not establish a competitive fruit offer.
 
@@ -95,11 +112,15 @@ After this interval the first inn still had **Food 9/10** and **Inside 2/4**, wh
 
 A supplied home position helps you inspect the next decision. It does not solve every route or conversion problem. Keep the notification, worker totals, meal stocks and actual fighting in view together; a good-looking line of warriors can hide a shrinking workforce.
 
+:::media-group
+
 [[media:maxima-front]]
 
-One selected cyan warrior had **HP 184/250**, **Food 72% (0)** and **Armour 10**, with attack-speed level 2 shown in its panel. This identifies an actual trained, injured fighter; it does not establish every warrior's level or Maxima's total force. Compare individual readiness before deciding that matching its visible headcount will be enough.
-
 [[media:maxima-warrior-detail]]
+
+:::
+
+One selected cyan warrior had **HP 184/250**, **Food 72% (0)** and **Armour 10**, with attack-speed level 2 shown in its panel. This identifies an actual trained, injured fighter; it does not establish every warrior's level or Maxima's total force. Compare individual readiness before deciding that matching its visible headcount will be enough.
 
 [[media:maxima-pressure-clip]]
 

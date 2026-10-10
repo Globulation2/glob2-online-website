@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import { readdirSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 const slugs = readdirSync('src/content/guides').filter(name => name.endsWith('.md')).map(name => name.slice(0, -3));
 
 test('handbook groups and learning path lead to real chapters', async ({ page }) => {
@@ -17,11 +17,14 @@ for (const slug of slugs) test(`chapter ${slug} has usable navigation and access
   await page.goto(`/learn/${slug}/`);
   await expect(page.locator('h1')).toHaveCount(1);
   await expect(page.locator('article')).not.toContainText('[[media:');
-  for (const link of await page.getByRole('navigation', { name: 'On this page' }).getByRole('link').all()) {
+  const source = readFileSync(`src/content/guides/${slug}.md`, 'utf8');
+  await expect(page.locator('article figure.guide-media')).toHaveCount([...source.matchAll(/\[\[media:[a-z0-9-]+\]\]/g)].length);
+  await expect(page.locator('article .media-group')).toHaveCount([...source.matchAll(/^:::media-group$/gm)].length);
+  for (const link of await page.locator('nav[aria-label="On this page"]:visible').getByRole('link').all()) {
     const hash = await link.getAttribute('href');
     await expect(page.locator(`[id="${hash!.slice(1)}"]`)).toHaveCount(1);
   }
-  const issues = await new AxeBuilder({ page }).analyze();
+  const issues = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa', 'best-practice']).analyze();
   expect(issues.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) }))).toEqual([]);
 });
 test('illustrated pilot delivers same-origin images and controlled clips', async ({ page }) => {
@@ -50,7 +53,7 @@ test('media failures preserve captions and article instructions', async ({ page 
   await first.scrollIntoViewIfNeeded();
   await expect(first.locator('figcaption')).not.toBeEmpty();
   await expect(first.getByRole('link', { name: 'Open full-size screenshot', exact: true })).toBeVisible();
-  await expect(page.getByRole('navigation', { name: 'On this page' })).toBeVisible();
+  await expect(page.locator('nav[aria-label="On this page"]:visible')).toBeVisible();
 });
 test('handbook reflows on mobile, at text zoom, and without JavaScript', async ({ browser, page }) => {
   for (const scheme of ['light', 'dark'] as const) {
@@ -66,7 +69,7 @@ test('handbook reflows on mobile, at text zoom, and without JavaScript', async (
   const context = await browser.newContext({ javaScriptEnabled: false });
   const plain = await context.newPage();
   await plain.goto((process.env.SITE_URL ?? 'http://127.0.0.1:4322') + '/learn/getting-started/');
-  await expect(plain.getByRole('navigation', { name: 'On this page' })).toBeVisible();
+  await expect(plain.locator('nav[aria-label="On this page"]:visible')).toBeVisible();
   await expect(plain.locator('article figure').first()).toBeVisible();
   await context.close();
 });

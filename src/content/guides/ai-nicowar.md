@@ -5,12 +5,17 @@ locale: "en"
 tags: ["AI", "Nicowar", "defense", "scouting"]
 order: 7
 group: "ai"
+format: "profile"
 prerequisites: ["choosing-an-ai", "sustainable-food", "jobs-and-flags", "training-and-upgrades", "defending-your-colony"]
 reviewedAgainst: "c26a0a02aeef4993a7478c3651d6117b49dbc56c"
 sources: [{"title":"Nicowar phases and readiness","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/nicowar/Phases.cpp"},{"title":"Shipped aggressive Nicowar profile","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/data/nicowar.txt"},{"title":"Nicowar supply and development","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/nicowar/Buildings.cpp"},{"title":"Nicowar attacks and defense","url":"https://github.com/Globulation2/glob2/tree/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/nicowar"},{"title":"Actual warrior flag qualification","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/building/Misc.cpp"}]
 ---
 
+:::checkpoint
+
 Nicowar can grow, train and prepare attacks at the same time. A town with new economic buildings can still be sending an army toward yours. The useful practice is to stage a trained home force while keeping meals available, then check the actual attachment and food result.
+
+:::
 
 Practice with a small home force: release raw warriors from their flag, let them train, then assemble two qualified defenders. Watch the barracks, flag and inn together so you can tell whether your army is becoming ready while meals remain available.
 
@@ -85,9 +90,13 @@ Do not treat a scout-under-attack message as proof that the ground army has arri
 
 The directed scout in this run revealed cyan training and service buildings and several explorers. Home alerts already reported a warrior, workers and the barracks under attack. That is a reason to inspect the colony immediately, even if the scout view is interesting.
 
+:::media-group
+
 [[media:nicowar-scout]]
 
 [[media:nicowar-scout-alert-detail]]
+
+:::
 
 Look for usable barracks and trained warriors, service capacity, and the routes into your working area. Nicowar's phases overlap rather than follow a fixed minute-by-minute script. It can add production and food service alongside military preparation; later it can develop movement, swimming and higher buildings.
 

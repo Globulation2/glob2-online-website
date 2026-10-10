@@ -3,6 +3,7 @@ title: "Facing Warrush: hold a supplied approach"
 description: "Recognize Warrush's military pressure, release unnecessary production, and keep defenders fed near a compact guard area."
 locale: "en"
 group: "ai"
+format: "profile"
 order: 5
 prerequisites: ["choosing-an-ai", "sustainable-food", "training-and-upgrades", "defending-your-colony"]
 tags: ["AI", "Warrush", "defense", "food"]
@@ -18,7 +19,11 @@ sources:
     url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/building/Services.cpp"
 ---
 
+:::note
+
 Warrush produces a military mixture and directs warriors toward discovered enemy buildings. Prepare a colony that can keep defenders fed through repeated contact. Its name does not give you a safe number of minutes before attack, and a successful hold does not end the duel.
+
+:::
 
 This exercise follows a Standard practice match on **balancedfor2**, red against cyan. The opening had seven workers and one explorer. The objective is to recognize contact, keep a working inn, release unnecessary growth and defend a compact approach while services continue operating.
 
@@ -42,9 +47,13 @@ Add a barracks with **B → B** and a hospital with **B → H** when you can com
 
 In this match the barracks and hospital completed and each held two occupants when the pressure checkpoint was resumed. The colony had twenty-one workers and twenty-one warriors, while the inn was full but had **Working 0/2**. That combination called for checking labor commitments before funding still more births.
 
+:::media-group
+
 [[media:warrush-services]]
 
 [[media:warrush-barracks-detail]]
+
+:::
 
 [[media:warrush-hospital-detail]]
 
