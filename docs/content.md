@@ -16,6 +16,18 @@ The Check download metadata workflow imports `downloads-manifest.json` from a qu
 
 Game release execution and sensitive configuration belong only to `genixpro/glob2-release`; the public downloads remain versioned assets in `Globulation2/glob2`. The page advertises packages only after every required platform and both production mobile stores are qualified. Empty metadata is intentional before the first release. Desktop/mobile alternatives and checksums work without JavaScript. Store links are validated public destinations, never guessed. `src/data/download-channels.json` holds reviewed, release-tag-bound store URL updates and package/store withdrawals separately from the immutable manifest. The importer does not overwrite this editorial file; changing releases requires resetting or re-reviewing its entries. Correct a withdrawn or broken download through reviewed metadata and restore a prior website version when needed; do not move game tags or replace published bytes.
 
+### Direct Flatpak downloads
+
+The marketing downloads page lists the qualified release's `.flatpak` bundle
+as a direct GitHub download; the game does not need a Flathub listing. Each
+listed bundle has installation and launch commands using its validated
+filename and a link to distribution-specific Flatpak setup. Flathub supplies
+the GNOME runtime, independently of where the game bundle is downloaded.
+Bundle updates require downloading and installing the newer release. These
+downloads do not configure an application repository for automatic updates;
+a signed repository would require a separate publishing and hosting setup.
+The instructions appear only for a listed, non-withdrawn Flatpak package.
+
 ## Review
 
 Substantial changes require two rendered rounds: factual/editorial review and usability/accessibility/integration review. Test newcomer play/download journeys, strategy discovery, original-source attribution, responsive navigation and community actions. Keep reports/screenshots in ignored artifacts; durable conclusions belong here or in the relevant guide.
