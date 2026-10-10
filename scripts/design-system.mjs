@@ -2,8 +2,14 @@
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync, copyFileSync, existsSync, appendFileSync, readdirSync, cpSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
+function runNpm(args, options) {
+  const cli = process.env.npm_execpath ?? join(dirname(process.execPath), 'node_modules/npm/bin/npm-cli.js');
+  if (existsSync(cli)) return execFileSync(process.execPath, [cli, ...args], options);
+  if (process.platform === 'win32') throw new Error('Run this build through npm so npm_execpath identifies its CLI');
+  return execFileSync('npm', args, options);
+}
 const repository = 'https://github.com/Globulation2/glob2-design-system.git';
 const root = fileURLToPath(new URL('../', import.meta.url));
 export function resolveDesignSystem() {
@@ -33,7 +39,7 @@ export function syncDesignSystem() {
   // or omit tools when Vite/Astro sets NODE_ENV=production while loading config.
   const cache = join(root, '.cache/design-system-install');
   rmSync(cache, { recursive: true, force: true }); mkdirSync(cache, { recursive: true });
-  execFileSync(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['install','--prefix',cache,'--omit=dev','--no-save','--package-lock=false','--ignore-scripts','--no-audit','--no-fund', `@glob2/design-system@git+${repository}#${sha}`], { cwd: cache, stdio:'inherit', env: { ...process.env, NODE_ENV: 'production' } });
+  runNpm( ['install','--prefix',cache,'--omit=dev','--no-save','--package-lock=false','--ignore-scripts','--no-audit','--no-fund', `@glob2/design-system@git+${repository}#${sha}`], { cwd: cache, stdio:'inherit', env: { ...process.env, NODE_ENV: 'production' } });
   const candidate = join(cache,'node_modules/@glob2/design-system');
   const manifest = JSON.parse(readFileSync(join(candidate,'package.json'),'utf8'));
   if (Object.keys(manifest.dependencies ?? {}).length) throw new Error('Design-system runtime dependencies require an explicit consumer dependency update');
