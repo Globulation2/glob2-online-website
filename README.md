@@ -53,6 +53,10 @@ game explanation and first-session guide, and save ignored review artifacts.
 These checks complement human inspection of hierarchy,
 captions and contrast over artwork.
 
+See [article authoring and interaction](docs/article-experience.md) for the shared
+reading layouts, Markdown callouts/media groups, library integration and full
+article review matrix.
+
 ## Integrations and operations
 
 See [hosting and rollback](docs/hosting.md), [content maintenance](docs/content.md), and [player-rating snapshot contract](scripts/RANKINGS.md). Public pages use no account cookies or analytics, and do not initiate gameplay. The rankings widget requests a sanitized public snapshot; it never queries account persistence or uses authenticated APIs.

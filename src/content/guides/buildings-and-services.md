@@ -26,7 +26,11 @@ Use a healthy local practice colony from [Keep the colony fed](/learn/sustainabl
 | Water blocks intended routes | Swimming pool | Eligible globs acquire or improve swimming. |
 | The colony can support more units | Swarm | Food reaches it and newborns leave through usable exits. |
 
+:::warning
+
 A hospital does not feed starving globs, and a school does not create workers. Fix the underlying shortage before choosing another building merely because it is available in the menu.
+
+:::
 
 ## Complete one project before adding three more
 
@@ -46,9 +50,13 @@ A higher-level site also requires trained builders. If labor is missing despite 
 
 After completion, select the building again. The fields depend on the service. At an inn, **Working** describes attached/requested haulers and **Inside** counts diners. A completed basic hospital shows Inside for patients and does not need a food stock or a continuous hauling assignment. Construction workers and service users are different roles.
 
+:::media-group
+
 [[media:services-active]]
 
 [[media:services-active-detail]]
+
+:::
 
 Eligible globs seek meals, healing and training automatically. You create usable capacity and leave them enough freedom to use it. Training can be delayed while every eligible unit remains occupied with other work. Do not read an empty service as proof that you must command each glob to enter.
 
@@ -56,9 +64,13 @@ Eligible globs seek meals, healing and training automatically. You create usable
 
 A damaged worker can leave work to seek healing. A level-one hospital has two service places and ordinary healing does not consume a material stock. To add one, press **B**, then **H**, place it on accessible clear ground, and let workers deliver its three wood before expecting patients. Place it where injured workers can reach it without a long detour, then observe an actual patient rather than judging it by construction alone.
 
+:::media-group
+
 [[media:services-healing]]
 
 [[media:services-healing-detail]]
+
+:::
 
 [[media:services-healing-result]]
 

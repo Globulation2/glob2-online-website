@@ -1,7 +1,11 @@
 ---
 import {getCollection} from 'astro:content';
+import '../styles/discovery.css';
+interface Props {collection:'news'|'history'|'archive'; path:string}
 const {collection,path}=Astro.props;
-const entries=await getCollection(collection as 'guides');
+const entries=await getCollection(collection);
 entries.sort((a,b)=>a.data.order-b.data.order);
+const labels={news:'Project news',history:'Project history',archive:'Historical archive'};
+const dateFormat=new Intl.DateTimeFormat('en',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
 ---
-<div class="two-grid">{entries.map(entry=><a class="card" href={`/${path}/${entry.id}/`}><span class="eyebrow">{entry.data.tags?.[0]??collection}</span><h2>{entry.data.title}</h2><p>{entry.data.description}</p><span class="text-link">Read more →</span></a>)}</div>
+{entries.length ? <div class="discovery-grid">{entries.map(entry=><a class="card discovery-card" href={`/${path}/${entry.id}/`}><div class="discovery-card-meta"><span class="eyebrow">{labels[collection]}</span>{entry.data.published&&<time datetime={entry.data.published.toISOString()}>{dateFormat.format(entry.data.published)}</time>}</div><h2>{entry.data.title}</h2><p>{entry.data.description}</p>{entry.data.locale!=='en'&&<span class="discovery-language" lang={entry.data.locale}>Language: {entry.data.locale}</span>}<span class="text-link">Read article →</span></a>)}</div> : <p>No articles are available in this collection yet.</p>}

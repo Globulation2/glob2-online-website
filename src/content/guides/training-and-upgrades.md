@@ -35,9 +35,13 @@ Training is automatic for eligible globs with a usable service and time availabl
 
 [[media:training-school-site]]
 
+:::media-group
+
 [[media:training-school-service]]
 
 [[media:training-school-detail]]
+
+:::
 
 If wood has arrived but algae remains at zero, follow the algae route and read the site's messages. Increase labor only when the requested workers can perform the job. Some shoreline sources can be harvested from accessible ground; crossing water to another source may require swimming. Inspect the actual route before building a pool solely because algae appears near water.
 
@@ -55,7 +59,11 @@ The display's ability level and rate are related but are not the same measuremen
 
 ## Keep meals available before upgrading an inn
 
+:::checkpoint
+
 Establish a second supplied inn before taking the first one offline. Watch it receive food and serve a meal; a backup foundation cannot feed the colony. Save a pre-upgrade milestone.
+
+:::
 
 Before any worker has the required construction qualification, the inn's **Upgrade** action is unavailable. Pressing **U** cannot bypass that requirement. After school training unlocks it, select the inn you intend to upgrade and press **U**, or choose its upgrade action. Check that the larger footprint has room. Once the upgrade begins, the building is a site and its old meal service is interrupted.
 
@@ -63,17 +71,25 @@ Before any worker has the required construction qualification, the inn's **Upgra
 
 [[media:training-upgrade-unlocked]]
 
+:::media-group
+
 [[media:training-upgrade-site]]
 
 [[media:training-upgrade-site-detail]]
+
+:::
 
 A level-two inn needs eight wood and workers that have completed builder training at a basic school. Even after the action has unlocked, the site can remain unstaffed when qualified workers are occupied, recovering, unreachable or lost. Return to the school and release eligible workers for training; do not solve an eligibility message by requesting every worker in the colony.
 
 Let trained builders deliver materials and finish the upgrade. Keep the backup inn supplied throughout. Select the completed inn and check the new service and food capacities before beginning another upgrade. Recheck Working as well: the completed building can restore its own default hauling request.
 
+:::media-group
+
 [[media:training-upgrade-result]]
 
 [[media:training-upgrade-detail]]
+
+:::
 
 ## Develop one stage at a time
 

@@ -5,12 +5,17 @@ locale: "en"
 tags: ["AI", "Castor", "scouting", "strategy"]
 order: 3
 group: "ai"
+format: "profile"
 prerequisites: ["getting-started", "choosing-an-ai"]
 reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources: [{"title":"Castor economy and strikes","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor/Control.cpp"},{"title":"Castor projects and development","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor"},{"title":"Castor readiness and progression","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor/State.cpp"},{"title":"Standard services and training","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"}]
 ---
 
+:::note
+
 Castor develops an economy, training facilities and defenses before committing forces against valuable enemy buildings. Facing it is an exercise in keeping information current: the town you first reveal can gain schools, barracks and towers while you are improving your own colony.
+
+:::
 
 This practice duel shows that change and a costly attack against the resulting defenses. Six trained warriors were requested for a probe near Castor's barracks. Three remained afterward. A healthy home colony made it possible to stop that assignment and bring survivors back, but the probe did not remove the training buildings.
 
@@ -60,9 +65,13 @@ Before committing an army, check the globs and services that must support it:
 4. Finish any defensive construction before relying on it. Inspect a tower's ammunition, rather than judging readiness from its sprite.
 5. Place a war flag for a useful approach and inspect the request, arrival and unit availability separately.
 
+:::media-group
+
 [[media:castor-ready-army]]
 
 [[media:castor-ready-army-detail]]
+
+:::
 
 The selected defender in this match had **HP 250/250** and completed attack training. The colony had six warriors, two inns, a school, barracks and hospital. Warrior births were stopped at that point so the existing force could be inspected without continually adding food demand.
 
@@ -74,9 +83,13 @@ The completed tower had **HP 480/480**, **Stone 4/4** and **Bullets 12/12**. The
 
 The probe replaced the home war assignment with a flag near Castor's revealed barracks and schools, requesting six warriors. The force still had to travel and could leave its assignment for services; placing the flag did not deliver six fighters simultaneously.
 
+:::media-group
+
 [[media:castor-probe-contact]]
 
 [[media:castor-probe-flag-detail]]
+
+:::
 
 At contact, the flag showed **Working 4/6**, **On the way 4** and **Here 0**. Cyan warriors and two towers were visible around the approach. One red warrior was already taking damage before the requested force had gathered.
 
@@ -86,9 +99,13 @@ At contact, the flag showed **Working 4/6**, **On the way 4** and **Here 0**. Cy
 
 The selected warrior's HP had fallen to **190/250**. After further fighting, the red warrior total fell from six to three while Castor's schools and barracks were still standing. The assignment was stopped and a home war flag was placed to draw survivors back.
 
+:::media-group
+
 [[media:castor-probe-return]]
 
 [[media:castor-return-detail]]
+
+:::
 
 Before renewing the commitment, inspect the approach and current defenses again. A valuable target can remain a poor immediate attack when the force arrives piecemeal or passes through defended ground.
 

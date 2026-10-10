@@ -25,7 +25,11 @@ Use a local **Custom game** with two colonies on Standard rules. Set your oppone
 
 The illustrated match uses a 128 × 128 Fingerprint map. Its red colony grows to eleven workers and seven warriors, with two inns, a school, barracks, and hospital. Those numbers describe this practice force; use readiness and supply to choose a force for your own map.
 
+:::checkpoint
+
 Your goal is to gather eligible warriors, reach an exposed enemy food service, observe the result, and return the force to home services. Destroying one structure is enough to learn the loop; you do not need to finish the whole match.
+
+:::
 
 ## Build a force you can feed
 
@@ -59,9 +63,13 @@ Open flags with **F → W**, then place a war flag at a safe gathering point nea
 
 In the example, the flag requests six warriors. Five are already here; the sixth request is still unfilled. Meals, healing, training, and other assignments can delay a glob. **Working 5/6** does not mean six warriors have assembled.
 
+:::media-group
+
 [[media:attack-gather]]
 
 [[media:attack-gather-detail]]
+
+:::
 
 Leave some labor and defenses at home. An army assembled during collapsing food delivery can spend the march returning for meals instead of fighting.
 
@@ -71,9 +79,13 @@ Scout the target area and name the intended change: remove an exposed inn, stop 
 
 Here, an Econo inn is exposed beside its swarm. Selecting the inn confirms **200/200 HP** before contact. The approach is ground the warriors can use; reaching it with a flying scout alone would not establish that.
 
+:::media-group
+
 [[media:attack-objective-before]]
 
 [[media:attack-objective-health-detail]]
+
+:::
 
 Previously seen buildings can become outdated information. Keep enough current vision to check the real target, rather than planning only around remembered silhouettes.
 
@@ -107,9 +119,13 @@ Do not assume a successful force is ready to fight again. A returning warrior he
 
 The home inn continues serving meals: its stock reaches **10/10**, with four occupants. **Working 0/2** at this moment is consistent with a full store; it does not itself show a delivery failure. Keep workers available as stock is used.
 
+:::media-group
+
 [[media:attack-home-meals]]
 
 [[media:attack-home-meals-detail]]
+
+:::
 
 A withdrawal still works through autonomous jobs and needs. It does not promise that every unit escapes immediately from a dangerous fight.
 

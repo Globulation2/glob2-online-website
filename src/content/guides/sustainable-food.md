@@ -24,11 +24,19 @@ Start with one reachable wheat patch, an inn close enough for regular deliveries
 4. Keep the inn selected after completion. Watch workers bring wheat, and read the labeled **Food** count.
 5. Let the game run through several deliveries and meals. A single full stock is useful, but the repeating route is what keeps the colony alive.
 
+:::media-group
+
 [[media:food-first-stock]]
 
 [[media:food-first-stock-detail]]
 
+:::
+
+:::note
+
 In this practice match, the completed inn has **Food 3/10**, **Working 2/2** and **Inside 0/4**. These are three different readings: stored meals, attached/requested hauling workers, and occupied service places. The yellow horizontal service display is not a food reserve.
+
+:::
 
 ## Separate supply from service capacity
 
@@ -49,9 +57,13 @@ More workers can solve a hauling shortage, but new workers also need food. Watch
 
 Select your swarm. Its Food belongs to unit production; it does not feed the existing colony. Each ordinary worker, explorer or warrior birth costs five food. The production weights choose the future unit mix, while Working requests workers to keep the swarm supplied.
 
+:::media-group
+
 [[media:food-swarm]]
 
 [[media:food-swarm-detail]]
+
+:::
 
 Compare the inn and swarm over time. If the swarm keeps producing while inn stocks fall, pause births before adding another swarm. Set all three birth weights to zero, using the left ends of their controls. If you also reduce the swarm's Working request, its food haulers can become available for other jobs. Neither change removes existing units.
 
@@ -65,9 +77,13 @@ Use a saved, healthy practice colony for this exercise. Keep the inn selected, n
 
 Restore the inn's request, slow births if necessary, and resume. Read the next few deliveries and meals together: the count can rise and fall within a healthy supply cycle. The goal is a reserve that replenishes, rather than a number that declines until the colony stops working.
 
+:::media-group
+
 [[media:food-recovery]]
 
 [[media:food-recovery-detail]]
+
+:::
 
 If hunger is already severe, cancel or reduce optional work first. Prioritize a reachable inn, preserve the path to wheat, and keep surviving workers on food. Add a hospital for damaged globs once the food route is functioning. A hospital heals; it cannot replace meals. If the nearest field is exhausted, secure another reachable supply rather than continuing to request nonexistent deliveries.
 

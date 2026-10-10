@@ -31,9 +31,13 @@ The menu icon beside the minimap and **Escape** open the in-game menu. Use it to
 
 Left-click a building or glob to inspect it. Selection exposes information and the controls appropriate to that object. It does not make a glob follow conventional click-to-move orders.
 
+:::media-group
+
 [[media:controls-building]]
 
 [[media:controls-building-detail]]
+
+:::
 
 On a selected building, look for these distinct readings:
 
@@ -50,7 +54,11 @@ A building does not show every row: a construction site needs materials, an inn 
 
 On a selected glob, inspect nutrition, health, abilities, and current activity. Low nutrition calls for reachable food. Lost health calls for healing as well. A worker briefly leaving a job to eat is different from a worker being unable to reach that job at all.
 
+:::note
+
 **Right-click** clears a selection or cancels a placement tool. After clearing the selection, further right-clicks cycle sidebar views. Cancel before clicking somewhere else if you do not intend to place another building or flag.
+
+:::
 
 ## Separate requests from available labor
 
@@ -69,9 +77,13 @@ The selected-building **Working** row and the swarm's production mix solve diffe
 
 Clear any selection, then use the sidebar's statistics icons below the minimap. The text view provides readings; the graph view helps you see change over time. Cycle the statistics page heading to inspect different groups of measurements.
 
+:::media-group
+
 [[media:controls-statistics]]
 
 [[media:controls-statistics-detail]]
+
+:::
 
 Use statistics to answer a specific question. Is food pressure rising as population grows? Are workers tied up while construction stalls? Did a fight leave many units needing recovery? A single number is less useful than a trend paired with a visible cause on the map.
 

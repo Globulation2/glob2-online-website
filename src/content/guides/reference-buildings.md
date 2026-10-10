@@ -5,6 +5,7 @@ locale: "en"
 tags: ["reference", "buildings", "upgrades"]
 order: 1
 group: "reference"
+format: "reference"
 prerequisites: ["buildings-and-services"]
 reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources: [{"title":"Standard building definitions","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"},{"title":"Upgrade availability and builder qualification","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/render/scene/SceneExtract.cpp"},{"title":"Materials and services","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/Services.cpp"}]
@@ -41,7 +42,11 @@ Before the colony has the required qualification, an upgrade action can be unava
 
 Qualification is distinct from the displayed rate of a worker's building ability. Read the site's messages and the worker's training instead of assuming more ordinary workers can replace one qualified builder.
 
+:::warning
+
 Upgrading interrupts the building's service. Keep a supplied backup inn before upgrading a feeding service, and check the larger footprint before committing. Damaged buildings can need repair before an upgrade is available.
+
+:::
 
 ## Service places after completion
 
