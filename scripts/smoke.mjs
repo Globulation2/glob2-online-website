@@ -3,7 +3,7 @@ import {validateManifest, verifyAsset} from './stage-guide-media.mjs';
 import {fetchReleasedResource} from './fetch-released-media.mjs';
 const base=process.argv[2];if(!base?.startsWith('https://'))throw Error('HTTPS website URL required');
 let handbook;
-for(const route of ['/','/game/','/learn/','/community/','/competition/','/events/','/news/','/downloads/','/history/','/archive/','/search/']) {
+for(const route of ['/','/game/','/learn/','/community/','/competition/','/events/','/news/','/downloads/','/history/','/archive/','/search/','/privacy/','/terms/']) {
  const response=await fetchReleasedResource(new URL(route,base));
  if(!response.ok)throw Error(`${route}: ${response.status}`);const html=await response.text();
  if(!html.includes('<h1')||/\.wasm["']|new WebSocket\(/.test(html))throw Error(`${route}: invalid public page`);

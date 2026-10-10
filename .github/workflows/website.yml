@@ -22,10 +22,11 @@ jobs:
         with:
           node-version: 24.14.0
           cache: npm
+      - run: node scripts/sync-legal.mjs --check
       - run: npm ci
       - run: npm run design:sync
       - run: npm run check && npm run build && node scripts/check-links.mjs
-      - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs
+      - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs scripts/test_legal_sync.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test

@@ -45,6 +45,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
     <nav class="nav" aria-label="Main navigation">
       {nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname.startsWith(url)?'page':undefined}>{label}</a>)}
       <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>Search</a>
+      <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
     </nav>
     <div class="header-end">
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Theme: same as this device. Change theme">Theme</button>
@@ -71,6 +72,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
         <li><a href="/history/">Our history</a></li>
         <li><a href="/archive/">Legacy archive</a></li>
         <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/terms/">Terms and conditions</a></li>
       </ul>
     </nav>
     <nav aria-label="Play online">
@@ -88,6 +90,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
       <ul>
         <li><a href={site.sourceUrl}>Source &amp; contributions ↗</a></li>
         <li><a href="/community/">Community</a></li>
+        <li><a href={site.discordUrl}>Join our Discord ↗</a></li>
         <li><a href="/credits/">Credits &amp; sources</a></li>
       </ul>
     </nav>
