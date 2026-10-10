@@ -1,9 +1,9 @@
-# Security-sensitive changes require the website maintainers' review.
-/.github/ @genixpro @Giszmo @stephanemagnenat @kylelutze
-/scripts/ @genixpro @Giszmo @stephanemagnenat @kylelutze
-/package.json @genixpro @Giszmo @stephanemagnenat @kylelutze
-/package-lock.json @genixpro @Giszmo @stephanemagnenat @kylelutze
-/firebase.json @genixpro @Giszmo @stephanemagnenat @kylelutze
-/.firebaserc @genixpro @Giszmo @stephanemagnenat @kylelutze
-/AGENTS.md @genixpro @Giszmo @stephanemagnenat @kylelutze
-/docs/hosting.md @genixpro @Giszmo @stephanemagnenat @kylelutze
+# Sole website maintainer; informational ownership, no second-review requirement.
+/.github/ @genixpro
+/scripts/ @genixpro
+/package.json @genixpro
+/package-lock.json @genixpro
+/firebase.json @genixpro
+/.firebaserc @genixpro
+/AGENTS.md @genixpro
+/docs/hosting.md @genixpro
