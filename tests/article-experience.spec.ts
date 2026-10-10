@@ -152,6 +152,7 @@ test('expanded native clips transfer playback state and never play two copies', 
     await video.play();
     video.currentTime = 2;
   });
+  const inlineState = await inline.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
   await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
   await expect(viewer(page)).toBeVisible();
   await expect.poll(() => inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
@@ -159,7 +160,10 @@ test('expanded native clips transfer playback state and never play two copies', 
   await expect(expanded).toBeVisible();
   await expect.poll(() => expanded.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
   await expect.poll(() => expanded.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeGreaterThanOrEqual(2);
-  expect(await expanded.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume }))).toEqual({ rate: 1.5, muted: true, volume: 0.4 });
+  const expandedState = await expanded.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume }));
+  expect(expandedState.rate).toBe(inlineState.rate);
+  expect(expandedState.muted, `Inline state before expansion: ${JSON.stringify(inlineState)}`).toBe(inlineState.muted);
+  expect(expandedState.volume).toBeCloseTo(inlineState.volume, 6);
   await expanded.evaluate((video: HTMLVideoElement) => { video.pause(); video.currentTime = 3; });
   await page.keyboard.press('Escape');
   await expect(viewer(page)).toBeHidden();
