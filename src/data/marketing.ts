@@ -68,7 +68,8 @@ export const downloads = {
 
 export const community = {
   title: 'Contribute to Globulation 2.',
-  description: 'Find the game’s source, report a reproducible problem, or explore the community’s original documentation.',
+  description: 'Join our Discord, find the game’s source, report a reproducible problem, or explore the community’s original documentation.',
+  discordDescription: 'Meet other players, ask questions, and talk about Globulation 2 on our community server.',
   contributionTitle: 'Work on the game',
   contributionDescription: 'The project repository holds the code and developer documentation. Start there to find the relevant build, contribution and translation instructions.',
   bugTitle: 'Report a bug',

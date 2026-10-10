@@ -14,7 +14,7 @@ export const site = {
   matchesUrl: 'https://app.glob2online.com/matches',
   mapsUrl: 'https://app.glob2online.com/maps',
   sourceUrl: 'https://github.com/Globulation2/glob2',
-  discordUrl: null as string | null,
+  discordUrl: 'https://discord.gg/xnVrafzMD',
 };
 
 export const communityLinks = [
