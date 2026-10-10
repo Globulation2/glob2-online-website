@@ -8,13 +8,15 @@ for (const preference of ['light', 'dark']) {
     await expect(page.locator('html')).toHaveAttribute('data-theme', preference);
     const background = await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim());
     await page.setViewportSize({ width: 360, height: 800 });
+    await expect(page.locator('.theme-toggle svg')).toBeVisible();
     const scrim = await page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage);
     // Engines serialize computed gradients differently (rgb vs color(srgb)).
-    // Compare this scrim with the opposite preference in the same engine.
-    await page.evaluate(value => { document.documentElement.dataset.theme = value; }, preference === 'light' ? 'dark' : 'light');
-    const oppositeScrim = await page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage);
-    expect(scrim).not.toBe(oppositeScrim);
-    await page.evaluate(value => { document.documentElement.dataset.theme = value; }, preference);
+    // Use the controller's button so initialization and preference refresh cannot
+    // overwrite a direct attribute mutation. Dark cycles to the opposite OS theme.
+    await page.locator('.theme-toggle').click();
+    await expect.poll(() => page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage)).not.toBe(scrim);
+    await page.evaluate(value => { localStorage.setItem('glob2-theme-v2', value); dispatchEvent(new Event('pageshow')); }, preference);
+    await expect(page.locator('html')).toHaveAttribute('data-theme', preference);
     await expect(page.locator('.colony-motion')).toBeHidden();
     await page.goto('/game/');
     expect(await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim())).toBe(background);
