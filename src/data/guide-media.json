@@ -915,6 +915,30 @@
       "caption": "The Game tab and Restore default shortcuts control sit above the individual bindings.",
       "alt": "Keyboard shortcuts section showing Game, Map editor and Restore default shortcuts.",
       "kind": "image"
+    },
+    {
+      "id": "recovery-raid-loss",
+      "path": "/guide-media/v1/recovering-your-colony/recovery-raid-loss.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/recovering-your-colony/recovery-raid-loss.webp",
+      "sha256": "cd90f176157272c455df493926c7c047b82830121a6c38eb3d792bb380d31c4a",
+      "bytes": 236676,
+      "width": 1440,
+      "height": 900,
+      "caption": "The two inns have been destroyed, while the surviving hospital has two globs inside. Healing and meals are separate needs.",
+      "alt": "Cyan attackers at the lost inn sites; the selected surviving hospital reports Inside 2/2.",
+      "kind": "image"
+    },
+    {
+      "id": "recovery-hospital-detail",
+      "path": "/guide-media/v1/recovering-your-colony/recovery-hospital-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/recovering-your-colony/recovery-hospital-detail.webp",
+      "sha256": "e26321d2e4d345d1f36d5c5a92594b88ec5fdcdea9dda431f2c469c96e93e152",
+      "bytes": 3420,
+      "width": 150,
+      "height": 125,
+      "caption": "Detail: Inside 2/2 means both hospital places are occupied. It does not indicate a stored food supply.",
+      "alt": "Hospital panel with HP 260/260, Inside 2/2 and Armour 5.",
+      "kind": "image"
     }
   ]
 }
