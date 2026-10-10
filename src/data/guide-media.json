@@ -1651,6 +1651,103 @@
       "kind": "image",
       "caption": "Detail: AI controls an opponent; You + AI combines your orders with its AI. Closed removes that controller.",
       "alt": "Controller dropdown detail with You, AI, You plus AI, Closed and shared-control slot note."
+    },
+    {
+      "id": "numbi-setup",
+      "path": "/guide-media/v1/ai-numbi/setup.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/setup.webp",
+      "sha256": "54f72a1bf13cf244a7ab48bdf1bd31b46e3dba4969b84e84813381f8a237eae0",
+      "bytes": 69354,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Keep the human and Numbi on separate teams in this Standard practice duel.",
+      "alt": "Players and Teams setup with You as Red, AI Numbi as Cyan, and separate teams."
+    },
+    {
+      "id": "numbi-services",
+      "path": "/guide-media/v1/ai-numbi/services.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/services.webp",
+      "sha256": "9e21ac495306603dfdece5109e58d9af1ffdf9bbeb81060978945b6857d9950a",
+      "bytes": 382832,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "The human colony has two inns, a swarm, school, barracks and completed hospital before contact.",
+      "alt": "Paused Red colony with two inns, swarm, school, barracks and selected hospital."
+    },
+    {
+      "id": "numbi-hospital-detail",
+      "path": "/guide-media/v1/ai-numbi/hospital-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/hospital-detail.webp",
+      "sha256": "89585fb72fe061245d59d3d52fb6c87d3a74b45b4e7158f485c1eefa214495dc",
+      "bytes": 3946,
+      "width": 131,
+      "height": 112,
+      "kind": "image",
+      "caption": "Detail: the completed hospital has 260/260 HP and two healing places; Inside is 0/2 here.",
+      "alt": "Selected level1 hospital panel showing HP 260/260, Inside 0/2 and Armour 5."
+    },
+    {
+      "id": "numbi-scouted",
+      "path": "/guide-media/v1/ai-numbi/scouted.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/scouted.webp",
+      "sha256": "b0367ac70c47063fe4c18c5933f5c7e4588e0e94fad49d5e59e2fe3d64c6e7be",
+      "bytes": 86880,
+      "width": 855,
+      "height": 523,
+      "kind": "image",
+      "caption": "Scouting revealed Numbi\u2019s schools, upgraded hospitals, barracks and tower. Darkened structures are remembered information.",
+      "alt": "Remembered Cyan colony around a swarm with schools, large hospitals, barracks, inn and tower; portions remain under fog."
+    },
+    {
+      "id": "numbi-first-pressure",
+      "path": "/guide-media/v1/ai-numbi/first-pressure.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/first-pressure.webp",
+      "sha256": "84a4dc53647cd7f5a3d43a3a33fa4607e758ceed02f14d7db12ab9921aa4976b",
+      "bytes": 377662,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "Cyan warriors reached the food routes. Red\u2019s six warriors included only three currently available.",
+      "alt": "Cyan warriors fighting Red near two inns, under-attack alerts and Red warrior availability 3/6."
+    },
+    {
+      "id": "numbi-pressure-detail",
+      "path": "/guide-media/v1/ai-numbi/pressure-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/pressure-detail.webp",
+      "sha256": "f5e0344cb6b7b54d53985ee75e8b135aa244187708c4c8a9d199c5707bbacb23",
+      "bytes": 56330,
+      "width": 495,
+      "height": 315,
+      "kind": "image",
+      "caption": "Detail: the attackers are already between the human defenders and their food buildings.",
+      "alt": "Close view of Cyan and Red combatants above the two Red inns."
+    },
+    {
+      "id": "numbi-after-pressure",
+      "path": "/guide-media/v1/ai-numbi/after-pressure.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/after-pressure.webp",
+      "sha256": "8108d3e2b67dab6beaa3c264e43fab75ea0d066f13910a3f66753e19e8ac59db",
+      "bytes": 350774,
+      "width": 1440,
+      "height": 900,
+      "kind": "image",
+      "caption": "The late defensive response failed: swarm, inns, school and tower were lost; fighting continues near the barracks and hospital.",
+      "alt": "Damaged Red colony without its swarm, inns, school or tower, with combat around a remaining barracks and hospital."
+    },
+    {
+      "id": "numbi-first-pressure-clip",
+      "path": "/guide-media/v1/ai-numbi/first-pressure.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public-pharaoh-418820/guide-media/v1/ai-numbi/first-pressure.mp4",
+      "sha256": "c2af615335f8d50ba0e80e8619fb022ff71567b0a033e3637124dfb06bcfa014",
+      "bytes": 3109925,
+      "width": 1440,
+      "height": 900,
+      "kind": "video",
+      "poster": "numbi-first-pressure",
+      "caption": "Fast practice playback: Cyan warriors arrive while Red\u2019s colony continues working. Pause the clip to inspect the attack alerts and food routes. This 15-second clip has no audio.",
+      "alt": "Red workers and warriors move around two inns before Cyan warriors enter the colony and attack alerts appear."
     }
   ]
 }
