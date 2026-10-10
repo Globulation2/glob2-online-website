@@ -2,6 +2,7 @@
 title: "Control reference"
 description: "A desktop cheat sheet for selection, camera movement, buildings, flags, areas, and local practice."
 group: "reference"
+format: "reference"
 order: 4
 prerequisites: []
 tags: ["controls", "reference"]
@@ -15,9 +16,13 @@ sources:
 
 These are the default desktop bindings. Open **Settings → Controls** to check your own configuration. Click the canvas before using game keys. A sequence such as **B → I** means press B, release it, then press I; **Ctrl + Shift + R** means hold the modifiers while pressing R.
 
+:::media-group
+
 [[media:reference-settings]]
 
 [[media:reference-settings-detail]]
+
+:::
 
 ## Mouse and selection
 
@@ -51,7 +56,11 @@ For a visual tour, see [controls and the HUD](/learn/controls-and-hud/).
 | Ctrl + − | Decrease game speed where allowed |
 | Ctrl + Shift + R | Start/stop recording |
 
+:::warning
+
 Pause, speed, and communication behavior depend on the session. Use local practice to learn controls before relying on them in a multiplayer match. Export finished recordings before clearing browser storage.
+
+:::
 
 ## Selected-building actions
 

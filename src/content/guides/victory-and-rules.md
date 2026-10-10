@@ -15,7 +15,11 @@ sources:
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/rulesets.json"
 ---
 
+:::note
+
 A match can end before you destroy every enemy structure. Read the rules and objectives before choosing your opening, and check the result screen's reason when it finishes.
+
+:::
 
 ## Check setup in three passes
 
@@ -49,9 +53,13 @@ The top bar presents three prestige readings: your colony's prestige, total pres
 
 In the standard building catalog, completed top-level schools provide prestige. That makes a prestige plan a development commitment: food, enough labor, trained builders, materials, and space for upgrades. Do not pursue those upgrades while the economy cannot feed its existing population.
 
+:::media-group
+
 [[media:rules-conquest]]
 
 [[media:rules-victory-detail]]
+
+:::
 
 Prestige is a match objective, not experience points or an online rating. Disabling the prestige rule changes whether reaching its threshold ends that match.
 

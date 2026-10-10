@@ -9,8 +9,12 @@ for (const preference of ['light', 'dark']) {
     const background = await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim());
     await page.setViewportSize({ width: 360, height: 800 });
     const scrim = await page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage);
-    expect(scrim).not.toContain('241, 241, 225');
-    expect(scrim).not.toContain('27, 18, 41');
+    // Engines serialize computed gradients differently (rgb vs color(srgb)).
+    // Compare this scrim with the opposite preference in the same engine.
+    await page.evaluate(value => { document.documentElement.dataset.theme = value; }, preference === 'light' ? 'dark' : 'light');
+    const oppositeScrim = await page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage);
+    expect(scrim).not.toBe(oppositeScrim);
+    await page.evaluate(value => { document.documentElement.dataset.theme = value; }, preference);
     await expect(page.locator('.colony-motion')).toBeHidden();
     await page.goto('/game/');
     expect(await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim())).toBe(background);

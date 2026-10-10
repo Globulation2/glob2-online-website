@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PageHeading from '../../components/PageHeading.astro';
+import '../../styles/discovery.css';
 import CollectionList from '../../components/CollectionList.astro';
 ---
-<Base title="Keep the old paths open." category="Historical"><div class="page-shell"><PageHeading title="Keep the old paths open." description="Legacy strategies, news, translations and community knowledge, with their original context."/><CollectionList collection="archive" path="archive"/></div></Base>
+<Base title="Keep the old paths open." category="Historical"><div class="page-shell discovery-shell"><PageHeading title="Keep the old paths open." description="Legacy strategies, news, translations and community knowledge, with their original context."/><p class="collection-context">Historical material may describe older versions of the game. For current instructions, use the <a href="/learn/">player handbook</a>.</p><CollectionList collection="archive" path="archive"/></div></Base>

@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run design:sync
       - run: npm run check && npm run build && node scripts/check-links.mjs
-      - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs scripts/test_legal_sync.mjs
+      - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs scripts/test_article_directives.mjs scripts/test_legal_sync.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test
@@ -53,7 +53,7 @@ jobs:
           retention-days: 7
   publish:
     needs: verify
-    if: github.ref == 'refs/heads/main' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
@@ -61,7 +61,7 @@ jobs:
       id-token: write
     environment: website
     concurrency:
-      group: ${{ github.event_name == 'pull_request' && format('website-pr-{0}', github.event.number) || 'website-production' }}
+      group: website-production
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
@@ -80,7 +80,7 @@ jobs:
           node-version: 24.14.0
       - name: Publish immutable preview
         env:
-          CHANNEL: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || 'candidate' }}
+          CHANNEL: candidate
         run: |
           python3 scripts/deploy-static.py --channel "$CHANNEL" > release.json
           cat release.json
@@ -91,7 +91,7 @@ jobs:
           PY
       - run: node scripts/smoke.mjs "$PREVIEW_URL"
       - name: Promote tested version
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
         run: |
           VERSION=$(python3 -c "import json; print(json.load(open('release.json'))['version'])")
           python3 scripts/promote-static.py --version "$VERSION" > promotion.json

@@ -5,6 +5,7 @@ locale: "en"
 tags: ["AI", "Numbi", "practice", "defense"]
 order: 2
 group: "ai"
+format: "profile"
 prerequisites: ["getting-started", "choosing-an-ai"]
 reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources: [{"title":"Numbi decisions and progression","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/numbi/AINumbi.cpp"},{"title":"Numbi economy","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/numbi"},{"title":"Training and building requirements","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"}]
@@ -22,7 +23,11 @@ The illustrated match used **Breachable highlands**, a generated **128 × 128** 
 
 [[media:numbi-setup]]
 
+:::checkpoint
+
 Give yourself three checkpoints: a colony that can feed itself, useful information about Numbi, and defenders whose training you have actually inspected. Save the opening so you can repeat one decision instead of rebuilding the entire experiment.
+
+:::
 
 ## Establish food before adding demands
 
@@ -32,9 +37,13 @@ Keep some workers producing and some supplying food. Add another inn when meals 
 
 In this match, the colony completed an inn, produced explorers, then returned the swarm to worker production. A school, barracks, second inn and hospital followed. These buildings existed before contact, but that alone did not make the defense ready.
 
+:::media-group
+
 [[media:numbi-services]]
 
 [[media:numbi-hospital-detail]]
+
+:::
 
 A hospital provides recovery. It does not replace an inn or make an outnumbered army win. Keep food routes and service access usable while developing military production.
 
@@ -66,9 +75,13 @@ Watch the warrior total and availability separately. Units already fighting, tra
 
 ## What the late defense showed
 
+:::media-group
+
 [[media:numbi-first-pressure]]
 
 [[media:numbi-pressure-detail]]
+
+:::
 
 [[media:numbi-first-pressure-clip]]
 

@@ -18,13 +18,21 @@ Start with the stable colony from [Keep the colony fed](/learn/sustainable-food/
 
 Select the swarm. **Food** is its local production stock, with a standard storage limit of twenty. **Working** requests workers to supply it. The three labeled controls below Food set the relative weights for future worker, explorer and warrior births.
 
+:::media-group
+
 [[media:population-panel]]
 
 [[media:population-panel-detail]]
 
+:::
+
 Every ordinary birth costs five food. Food in an inn is reserved there for meals; it is not the swarm's stock. A swarm that is busy producing can compete with inns for wheat and hauling workers.
 
+:::warning
+
 Check your inn first. If its Food is falling toward zero, pause growth and restore meals before creating more globs. A larger population with no working food route is a larger recovery problem.
+
+:::
 
 ## Produce one type deliberately
 
@@ -34,15 +42,23 @@ Check your inn first. If its Food is falling toward zero, pause growth and resto
 4. Resume. Observe food deliveries, production progress and the next newborn leaving the swarm.
 5. Read the worker total in the top bar. Existing workers do not change class when you move a production control.
 
+:::media-group
+
 [[media:population-worker-result]]
 
 [[media:population-worker-count]]
 
+:::
+
 To explore, set worker and warrior weights to zero and raise Explorer. Wait for an actual explorer birth before treating the change as complete. An explorer can reveal routes and resources, but it cannot replace the worker hauling food to your inn.
+
+:::media-group
 
 [[media:population-explorer-result]]
 
 [[media:population-explorer-count]]
+
+:::
 
 ## Weights are a mix, not a queue
 

@@ -21,7 +21,11 @@ You give the colony jobs, rather than issuing a route to every glob. Buildings r
 
 Begin with a supplied inn and a swarm. Select the inn and inspect **Working**, **Food**, and its current activity. Do the same for the swarm. The number before the slash is attached workers; the number after it is requested workers.
 
+:::note
+
 A request is a target, not a new worker. If you ask five buildings for three workers each while the colony has only a handful, some jobs will wait. Workers taking meals or healing also cannot be everywhere at once.
+
+:::
 
 Use this small exercise in a practice match:
 
@@ -41,7 +45,13 @@ Priority changes hiring preference. It does not create workers, refill an exhaus
 
 For higher-level construction, check worker training. A plentiful supply of ordinary workers does not substitute for builders with the required construction qualification. Release eligible workers from other duties and keep training services usable before requesting another upgrade.
 
+:::media-group
+
 [[media:jobs-war-request]]
+
+[[media:jobs-war-detail]]
+
+:::
 
 ## Choose the right flag
 
@@ -54,8 +64,6 @@ Open the flags/areas sidebar below the minimap, or use the default **F** sequenc
 | Clearing | F → C | Request workers to clear selected resource materials |
 
 Place the flag, right-click to leave placement, then select the flag itself. Inspect its **Working** request, range, and any unit-level or material filters. Ask for units you actually have. A war flag will not turn workers into warriors, and a training filter can leave a flag unstaffed until eligible units become available.
-
-[[media:jobs-war-detail]]
 
 A large radius permits a broad job area. A small radius concentrates work around the flag. Choose a radius to fit the task: surveying a region differs from attacking one structure. Increasing radius is not the same as increasing the number of units assigned.
 
@@ -76,9 +84,13 @@ Use a small patch where you can see the result. With forbidden terrain, check th
 
 Clearing can permanently change the resource layout. Inspect the materials enabled on a clearing flag and the actual patch before you assign workers. Keep living food patches and their growing space intact when building a sustainable food supply.
 
+:::media-group
+
 [[media:jobs-guard-area]]
 
 [[media:jobs-guard-detail]]
+
+:::
 
 ## Release work when the situation changes
 

@@ -44,15 +44,23 @@ Use an **Exploration flag** to direct exploration toward a location you want to 
 5. Resume and watch where the explorer goes and what land becomes visible.
 6. Move the flag to the next useful region, or remove the request when it is no longer needed.
 
+:::note
+
 A flag asks autonomous units to work around a destination. It does not prevent them from handling their own food and medical needs. If an explorer returns home, inspect those needs before assuming the flag failed.
+
+:::
 
 [[media:scout-start]]
 
 [[media:scout-flag-clip]]
 
+:::media-group
+
 [[media:scout-result]]
 
 [[media:scout-detail]]
+
+:::
 
 ## Distinguish discovery from current vision
 

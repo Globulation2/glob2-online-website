@@ -19,7 +19,11 @@ Recovery starts by stopping the colony from creating more obligations. Another s
 
 ## Take a local snapshot before changing everything
 
+:::note
+
 In local practice, press **P** to pause and inspect. Save a separate recovery milestone if you want to compare decisions. In an online match, use the time available without assuming local pause can stop opponents.
+
+:::
 
 Check the colony in this order:
 
@@ -54,9 +58,13 @@ Start from a saved, healthy colony with a supplied inn. This small exercise teac
 
 [[media:food-stock-falling]]
 
+:::media-group
+
 [[media:food-recovery]]
 
 [[media:food-recovery-detail]]
+
+:::
 
 At the final full stock, Working is 0/2. The request has been restored, but a full food reserve does not require continuous fetching. Read the food and the other resource messages before treating the low attached count as another failure. Restore a modest birth mix after supply is steady.
 
@@ -73,9 +81,13 @@ Inspect service occupancy and available capacity. A crowded service can need add
 
 In the raid below, both inns have been destroyed while the hospital still has **Inside 2/2**. Those two occupied places can heal globs, but the lost meal service is a separate emergency. Rebuilding an inn is useful only if surviving workers can construct it and deliver reachable food before the remaining position collapses.
 
+:::media-group
+
 [[media:recovery-raid-loss]]
 
 [[media:recovery-hospital-detail]]
+
+:::
 
 ## Find why construction stopped
 
