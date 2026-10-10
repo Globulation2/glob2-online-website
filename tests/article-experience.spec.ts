@@ -178,7 +178,8 @@ test('expanded native clips transfer playback state and never play two copies', 
   expect(returnedState.muted, `Expanded state before closing: ${JSON.stringify(editedState)}`).toBe(editedState.muted);
   expect(returnedState.volume).toBeCloseTo(editedState.volume, 6);
 
-  await inline.evaluate((video: HTMLVideoElement) => video.play());
+  // Muted playback is eligible for automatic resumption across browser policies.
+  await inline.evaluate((video: HTMLVideoElement) => { video.muted = true; return video.play(); });
   await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
   await expect(viewer(page)).toBeVisible();
   const reopened = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
@@ -195,6 +196,37 @@ test('expanded native clips transfer playback state and never play two copies', 
   expect(resumedState.volume).toBeCloseTo(playingState.volume, 6);
   expect(resumedState.time).toBeGreaterThanOrEqual(playingState.time - 0.1);
   expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !(video as HTMLVideoElement).paused).length)).toBe(1);
+});
+
+test('a rejected expanded playback request retains position and native play controls', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.addInitScript(() => {
+    const nativePlay = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function () {
+      if (this.closest('.pswp__video-shell')) {
+        this.setAttribute('data-play-rejected', 'true');
+        return Promise.reject(new DOMException('Playback requires another user gesture', 'NotAllowedError'));
+      }
+      return nativePlay.call(this);
+    };
+  });
+  await page.goto(firstColony);
+  const inline = page.locator('article video').first();
+  await inline.evaluate(async (video: HTMLVideoElement) => {
+    video.muted = true; await video.play(); video.currentTime = 2;
+  });
+  const position = await inline.evaluate((video: HTMLVideoElement) => video.currentTime);
+  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  const expanded = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
+  await expect(expanded).toBeVisible();
+  await expect(expanded).toHaveAttribute('data-play-rejected', 'true');
+  expect(await expanded.evaluate((video: HTMLVideoElement) => video.controls && video.paused)).toBe(true);
+  expect(await expanded.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeGreaterThanOrEqual(position - 0.1);
+  expect(await inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
+  await page.keyboard.press('Escape');
+  await expect(viewer(page)).toBeHidden();
+  expect(await inline.evaluate((video: HTMLVideoElement) => video.controls && video.paused)).toBe(true);
+  expect(await inline.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeGreaterThanOrEqual(position - 0.1);
 });
 
 test('a failed lazy viewer import follows the original image link', async ({ page }) => {
