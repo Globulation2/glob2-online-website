@@ -52,7 +52,7 @@ jobs:
           retention-days: 7
   publish:
     needs: verify
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     permissions:
@@ -90,7 +90,7 @@ jobs:
           PY
       - run: node scripts/smoke.mjs "$PREVIEW_URL"
       - name: Promote tested version
-        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
         run: |
           VERSION=$(python3 -c "import json; print(json.load(open('release.json'))['version'])")
           python3 scripts/promote-static.py --version "$VERSION" > promotion.json
