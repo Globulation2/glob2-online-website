@@ -23,6 +23,7 @@ jobs:
           node-version: 24.14.0
           cache: npm
       - run: npm ci
+      - run: npm run design:sync
       - run: npm run check && npm run build && node scripts/check-links.mjs
       - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_guide_media.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v

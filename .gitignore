@@ -13,3 +13,12 @@ __pycache__/
 .DS_Store
 release.json
 promotion.json
+
+# Staged from the resolved design-system Git revision.
+.cache/
+/public/brand/
+/public/fonts/
+/public/theme.js
+/public/favicon-32.png
+/public/apple-touch-icon.png
+/public/design-system.json

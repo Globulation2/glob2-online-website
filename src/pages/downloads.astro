@@ -21,7 +21,7 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
     <PageHeading eyebrow="Downloads" title={downloads.title} description={downloads.description} />
     <section class="card download-browser" aria-labelledby="browser-heading">
       <div><p class="eyebrow">No installation</p><h2 id="browser-heading">{downloads.browserTitle}</h2><p>{downloads.browserDescription}</p></div>
-      <a class="button" href={site.appUrl}>{downloads.browserLabel} ↗</a>
+      <a class="btn" href={site.appUrl}>{downloads.browserLabel} ↗</a>
     </section>
     <section class="download-release section-space" aria-labelledby="release-heading">
       <h2 id="release-heading">{manifest ? `Release ${manifest.version}` : 'Installed editions'}</h2>
@@ -34,7 +34,7 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
           <h2 id={`${platform.id}-heading`}>{platform.title}</h2>
           {packages.length ? <>
             <p>{platform.description}</p>
-            {platform.id === 'android' && googlePlay && <a class="button" href={googlePlay.url}>Get it on Google Play ↗</a>}
+            {platform.id === 'android' && googlePlay && <a class="btn" href={googlePlay.url}>Get it on Google Play ↗</a>}
             <ul class="download-packages">
               {packages.map((pkg, index) => <li>
                 <h3>{labels[pkg.format]} · {architectureLabel(pkg)}</h3>
@@ -50,7 +50,7 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
       })}
       <section class="card download-platform" aria-labelledby="ios-heading">
         <h2 id="ios-heading">iPhone &amp; iPad</h2>
-        {appStore ? <><p>Install the production edition from the App Store. Check the listing for supported devices and OS requirements.</p><a class="button" href={appStore.url}>Download on the App Store ↗</a></> : <p class="download-unavailable">No verified production App Store release is currently listed.</p>}
+        {appStore ? <><p>Install the production edition from the App Store. Check the listing for supported devices and OS requirements.</p><a class="btn" href={appStore.url}>Download on the App Store ↗</a></> : <p class="download-unavailable">No verified production App Store release is currently listed.</p>}
       </section>
       <section class="card download-platform" aria-labelledby="source-heading">
         <h2 id="source-heading">Source code</h2><p>{downloads.sourceDescription}</p><a class="text-link" href={site.sourceUrl}>Browse source and build instructions ↗</a><p class="download-meta"><a href="https://github.com/Globulation2/glob2/releases">Check releases ↗</a></p>

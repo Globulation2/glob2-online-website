@@ -16,7 +16,7 @@ Firebase headers enforce CSP, nosniff and a referrer policy. The narrowly allowe
 
 ## Website releases
 
-The Website workflow validates content/types, builds, checks internal links, runs publisher tests and browser journeys, and uploads a checked dist artifact. Trusted same-repository PRs receive seven-day previews. Fork PRs only run checks. Main publishes a candidate, smoke-tests its routes/headers, and promotes exactly that finalized version to live.
+The Website workflow resolves the latest design-system main SHA once, exports it to all later steps, validates content/types, builds, checks internal links, runs publisher tests and browser journeys, and uploads a checked dist artifact. Trusted same-repository PRs receive seven-day previews. Fork PRs only run checks. Main publishes a candidate, smoke-tests its routes/headers, and promotes exactly that finalized version to live.
 
 Superseded runs are cancelled: a newer push to the same PR or non-main branch cancels the older Website run. Main runs deploy, so they finish once started; GitHub replaces a pending main run with a newer one, so only the newest queued main commit deploys. Rollback, rankings, availability and metadata workflows never cancel in progress. scripts/test_workflows.py enforces this.
 
@@ -61,3 +61,20 @@ The existing Pharaoh prod monthly budget covers project pharaoh-418820 at CAD50/
 GCP Cloud Monitoring also checks availability independently of GitHub runner scheduling. The **Glob2 public website** uptime check requests `https://glob2online.com/`; **Glob2 multiplayer app** requests `https://app.glob2online.com/api/v1/instance`. Both validate HTTPS certificates, run every five minutes from the three USA probe locations, and use a ten-second request timeout. Their enabled availability policies count failing probes and open an incident when at least two probes keep failing for five minutes. See the [project uptime dashboard](https://console.cloud.google.com/monitoring/uptime?project=pharaoh-418820) and [alert policies](https://console.cloud.google.com/monitoring/alerting?project=pharaoh-418820). These HTTP checks complement the GitHub schema, freshness and browser-header checks; they do not verify gameplay.
 
 Initially the GCP availability policies have no notification channels: failures create dashboard incidents, but do not send email or other messages. Attach the operator's chosen notification channel to both policies once the recipient is supplied and verified. Review Firebase Hosting, public bucket and monitoring usage alongside the multiplayer service in the existing [Cloud Billing budget](https://console.cloud.google.com/billing/budgets). Budget alerts report spending; they do not stop resources automatically.
+
+## Shared theme build identity
+
+`npm ci` installs the manifest's baseline design-system SHA without lifecycle scripts.
+Run `npm run design:sync` before checks; it installs current main separately without
+changing other locked dependencies. `GLOB2_DESIGN_SYSTEM_SHA` selects a full candidate,
+reproduction or rollback revision. Astro also bootstraps on direct development/build
+invocations. Resolution/install errors fail closed. The compiled artifact contains
+`design-system.json`, so preview verification and live promotion use identical theme
+bytes as well as identical page bytes. Keep the recorded SHA with release evidence;
+do not re-resolve or rebuild between testing and promoting the immutable artifact.
+
+All package fonts, CSS, JavaScript and selected media are served by this site. The
+external `/theme.js` bootstrap remains compatible with the existing same-origin CSP.
+The functional preference cookie on HTTPS production has Domain=glob2online.com,
+Path=/, SameSite=Lax, Secure and a one-year lifetime; it is shared with the online app.
+No account or analytics integration is added. The privacy page documents the preference.

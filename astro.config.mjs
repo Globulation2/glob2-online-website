@@ -1,3 +1,7 @@
+import { syncDesignSystem, stageDesignAssets } from './scripts/design-system.mjs';
+import { fileURLToPath } from 'node:url';
+const designSystem = syncDesignSystem();
+stageDesignAssets(fileURLToPath(new URL('./public', import.meta.url)), designSystem);
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 // Keep generated scripts external so Firebase’s script-src 'self' CSP can execute them.

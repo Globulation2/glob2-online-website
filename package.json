@@ -12,10 +12,12 @@
     "build": "astro build && node scripts/stage-guide-media.mjs && pagefind --site dist",
     "preview": "astro preview",
     "test": "playwright test",
-    "check:media": "node --test scripts/test_guide_media.mjs"
+    "check:media": "node --test scripts/test_guide_media.mjs",
+    "design:sync": "node scripts/design-system.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
+    "@glob2/design-system": "git+https://github.com/Globulation2/glob2-design-system.git#b4aabe4f80e23ef3adbaaafaa2d13bbf806eef48",
     "astro": "7.3.5",
     "zod": "4.6.5"
   },
