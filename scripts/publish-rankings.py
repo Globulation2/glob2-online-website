@@ -63,7 +63,8 @@ def project_page(page, ladder, revision, generated_at):
         entity = row['entity']
         require(isinstance(entity, dict) and set(entity) == {'kind', 'account'} and entity['kind'] == 'account', 'non-human leaderboard entry')
         account = entity['account']
-        require(isinstance(account, dict) and set(account) == {'id', 'displayName', 'kind', 'createdAt'} and account['kind'] == 'registered', 'unexpected account metadata')
+        account_fields = {'id', 'displayName', 'kind', 'createdAt'}
+        require(isinstance(account, dict) and account_fields <= set(account) <= account_fields | {'avatarUrl'} and account['kind'] == 'registered', 'unexpected account metadata')
         entries.append({'rank': row['rank'], 'username': account['displayName'], 'rating': row['rating'], 'provisional': row['provisional'], 'games': row['games']})
     return validate_feed({'schemaVersion': 1, 'generatedAt': generated_at, 'backendRevision': revision, 'ratingPolicy': POLICY, 'ladder': ladder, 'hasMore': 'nextCursor' in page, 'entries': entries})
 
