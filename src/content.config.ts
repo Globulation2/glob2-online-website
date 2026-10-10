@@ -14,6 +14,7 @@ const editorial = z.object({
 });
 
 export const collections = {
+  legal: defineCollection({ loader: glob({ pattern: '*.md', base: './src/content/legal' }), schema: z.object({ title: z.string().min(1), description: z.string().min(1), sourceUrl: z.url(), sourceSha256: z.string().regex(/^[a-f0-9]{64}$/) }) }),
   guides: defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/guides' }), schema: editorial.extend({group:z.enum(['start','manage','develop','map','match','improve','ai','reference']).optional(), prerequisites:z.array(z.string().min(1)).default([])}) }),
   news: defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/news' }), schema: editorial }),
   history: defineCollection({ loader: glob({ pattern: '**/*.md', base: './src/content/history' }), schema: editorial }),

@@ -17,6 +17,8 @@
       { "source": "/design/**", "headers": [{ "key": "X-Robots-Tag", "value": "noindex,nofollow" }] }
     ],
     "redirects": [
+      { "source": "/privacy/fire-tablet", "destination": "/privacy/#fire-tablet-edition", "type": 301 },
+      { "source": "/privacy/fire-tablet/", "destination": "/privacy/#fire-tablet-edition", "type": 301 },
       { "source": "/signin", "destination": "https://app.glob2online.com/signin", "type": 302 },
       { "source": "/play", "destination": "https://app.glob2online.com/play/", "type": 302 },
       { "source": "/play/:path*", "destination": "https://app.glob2online.com/play/:path*", "type": 302 },
