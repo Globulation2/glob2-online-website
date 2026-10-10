@@ -97,7 +97,7 @@ test('phone navigation targets are thumb-sized',async({page})=>{
 test('new player can understand the game and reach a practical first session',async({page})=>{
  await page.goto('/');
  const navigation=page.getByRole('navigation',{name:'Main navigation'});
- await expect(navigation.getByRole('link')).toHaveText(['The game','Learn','Community','Search']);
+ await expect(navigation.getByRole('link')).toHaveText(['The game','Learn','Community','Search','Discord ↗']);
  await expect(page.getByRole('heading',{name:'Three decisions you will make'})).toBeVisible();
  await expect(page.locator('.mechanics-list > li')).toHaveCount(3);
  await expect(page.locator('.gameplay-image img')).toHaveAttribute('src','/images/glob2-first-colony.webp');
