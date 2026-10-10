@@ -3,6 +3,7 @@ title: "Facing Econo: keep food and fruit working"
 description: "Practice a supplied colony, scout Econo's economic expansion, and judge fruit access before committing workers or an army."
 locale: "en"
 group: "ai"
+format: "profile"
 order: 4
 prerequisites: ["choosing-an-ai", "sustainable-food", "resources-and-hauling", "fruit-and-conversion"]
 tags: ["AI", "Econo", "food", "scouting"]
@@ -30,7 +31,11 @@ Open **Custom game**, choose two colonies, and select **You** for one colony and
 
 The chooser's **Easy (1310)** is an offline difficulty estimate. It is separate from the online leaderboard's OpenSkill rating and rank. The illustrated match uses a generated **128 × 128 Fingerprint** map, red against cyan. Your resources and placements can differ.
 
+:::checkpoint
+
 Start, allow the opening to become visible, and save through **Escape → Save**. Pause with **P** when inspecting a panel; resume to test whether workers actually deliver or globs actually arrive.
+
+:::
 
 ## Establish meals before adding demands
 
@@ -38,9 +43,13 @@ Find reachable wheat, wood and clear land. Build one inn with **B → I**, right
 
 In this opening, workers first revealed the nearby pond and resources. The completed inn then held **Food 8/10** with two attached workers. That provided a useful starting checkpoint for scouting.
 
+:::media-group
+
 [[media:econo-first-meals]]
 
 [[media:econo-first-meals-detail]]
+
+:::
 
 Compare Food and Inside over time. Occupants use meals, and workers replenish the store. A single stocked frame is a checkpoint; repeated meals and deliveries show whether the arrangement continues working. Keep the growing wheat patch and a route around the pond intact.
 
@@ -80,9 +89,13 @@ Return to your inn and inspect the fruit stocks as well as Food. Seeing colored 
 
 At the home checkpoint, this colony's inn held **Food 8/10**, **Cherries 29/40**, and four occupants. Oranges and prunes were still zero. The colony had established one fruit supply, rather than all three.
 
+:::media-group
+
 [[media:econo-home-fruit]]
 
 [[media:econo-home-fruit-detail]]
+
+:::
 
 Fruit affects the appeal of a meal. An accessible enemy inn offering more appealing food can attract a hungry glob and convert it. Continue supplying your own population while improving fruit access; an inn without meals cannot serve the colony reliably. Read [fruit and conversion](/learn/fruit-and-conversion/) for the service and combat tradeoffs.
 

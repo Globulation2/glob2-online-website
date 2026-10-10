@@ -5,6 +5,7 @@ locale: "en"
 tags: ["reference", "units", "training"]
 order: 2
 group: "reference"
+format: "reference"
 prerequisites: ["population-and-production"]
 reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources: [{"title":"Standard unit types","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/types/Race.cpp"},{"title":"Unit activities and learning","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"},{"title":"Unit statistics and combat","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitStats.cpp"}]
@@ -54,7 +55,11 @@ Warriors' attacks and explorers' magic are different systems. Explorers are not 
 
 Combat experience is distinct from service training and online ratings. Check the unit's actual statistics rather than assuming equal-looking sprites have equal combat strength. Health, food, training, position and the number of units arriving together all affect a fight.
 
+:::warning
+
 Fruit served with meals records variety for that unit. It can influence food choice and conversion, but it is not a universal combat bonus: the fruit penalty can reduce effective armor for relevant unit types. Several copies of one fruit do not become several distinct kinds.
+
+:::
 
 ## Diagnose the missing contribution
 

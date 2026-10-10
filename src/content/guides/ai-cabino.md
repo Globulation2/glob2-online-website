@@ -3,6 +3,7 @@ title: "Facing Cabino: protect the services behind your army"
 description: "Scout Cabino's developing town, replace a lost scout, and keep meals and healing available while defending your colony."
 locale: "en"
 group: "ai"
+format: "profile"
 order: 8
 prerequisites: ["choosing-an-ai", "training-and-upgrades", "defending-your-colony", "fruit-and-conversion"]
 tags: ["AI", "Cabino", "services", "defense", "scouting"]
@@ -18,7 +19,11 @@ sources:
 
 Cabino develops a town with production, food, healing and training, then allocates units between those demands. Its army can attack several buildings at once. Its target priorities begin with hospitals and inns, ahead of swarms: your support buildings deserve protection even when the swarm itself looks safe.
 
+:::checkpoint
+
 Practice reading the whole colony against this opponent. Establish meals, scout its services, and check whether your defenders can return to food and healing. The illustrated exercise ends with a supplied home under local pressure; it does not require winning the match.
+
+:::
 
 ## Set up a Standard practice match
 
@@ -34,9 +39,13 @@ Cabino's production mix responds to what its controllers request and what units 
 
 Locate wheat, wood and clear ground near the swarm. Place an inn with **B → I**, right-click to leave placement, and inspect the foundation. Confirm that wood arrives and the building completes. Then wait for actual Food stock and meals.
 
+:::media-group
+
 [[media:cabino-first-inn]]
 
 [[media:cabino-first-inn-detail]]
+
+:::
 
 The first inn in this opening reached **Food 10/10**. Production had also grown the workforce to nineteen workers. The top unit counters show available units before the slash and total units after it; fewer available workers can mean existing assignments rather than deaths.
 

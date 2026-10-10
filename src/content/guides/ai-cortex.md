@@ -3,6 +3,7 @@ title: "Facing Cortex: keep supply and scouting current"
 description: "Recognize Cortex's changing development and pressure, keep a supplied defense, and inspect the opponent before choosing a counterattack."
 locale: "en"
 group: "ai"
+format: "profile"
 order: 6
 prerequisites: ["choosing-an-ai", "sustainable-food", "training-and-upgrades", "defending-your-colony", "organizing-an-attack"]
 tags: ["AI", "Cortex", "scouting", "supply"]
@@ -22,7 +23,11 @@ sources:
 
 Cortex develops feeding and training while changing its army commitments. A town that looked quiet on the first scout visit can gain services or send warriors while you are constructing your own buildings. Keep supply and information current together.
 
+:::checkpoint
+
 This Standard duel on **balanced for 2** follows red against cyan Cortex. The exercise is to maintain meals and healing during contact, recognize a construction project that cannot be supplied, and inspect the opponent before choosing the next commitment. It demonstrates a local supplied defense, not a completed victory.
+
+:::
 
 ## Choose ordinary Cortex
 
@@ -40,9 +45,13 @@ Build an inn with **B → I** beside reachable food and wood, then right-click o
 
 In this duel the first inn completed with **Food 6/10** and **Working 2/2**. Barracks and hospital followed while warrior births were added to the swarm's worker production. A second inn was completed as the population grew.
 
+:::media-group
+
 [[media:cortex-opening-food]]
 
 [[media:cortex-opening-food-detail]]
+
+:::
 
 Build only services you can supply. The attempted school is a useful warning: it had **Wood 7/7**, **Algae 0/2**, and a message that workers could not access the needed resource. More workers or a higher request cannot make an unreachable delivery work.
 
@@ -58,9 +67,13 @@ The first contact view showed cyan warriors approaching, a cyan war flag near th
 
 [[media:cortex-pressure]]
 
+:::media-group
+
 [[media:cortex-development]]
 
 [[media:cortex-development-detail]]
+
+:::
 
 The later scouting view recorded cyan barracks, hospitals, a school foundation, a swimming pool and an inn. The explorer was then lost; the red worker total also fell from nineteen to eighteen during continuing pressure. Remembered structures can stay visible after a scout disappears. Replace scouting before treating that view as current enemy-unit information.
 

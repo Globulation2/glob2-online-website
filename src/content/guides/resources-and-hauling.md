@@ -35,13 +35,21 @@ The **Inside** count tracks globs using the inn's service, not stored food. Work
 
 A new inn needs wood before it can serve food. Place one foundation on clear land near accessible trees and food, leaving room for globs to move around it. Right-click out of placement, select the foundation, and read the required resources.
 
+:::media-group
+
 [[media:hauling-construction]]
 
 [[media:hauling-construction-detail]]
 
+:::
+
 During construction, a wood count such as **1/3** means one of the three required wood deliveries has arrived. As workers bring more materials, construction advances. After completion, the inn's supply job changes to food and fruit. Keeping the same building selected makes this change easy to see.
 
+:::warning
+
 Do not place several foundations just to give your workers something to do. Every active site asks for labor, and globs still need meals while those sites are unfinished. If your first inn is running low, reduce other requests before asking for another project.
+
+:::
 
 ## Travel is part of the cost
 
@@ -51,15 +59,19 @@ Compare a short route to a long route before repeating a building placement. A w
 
 [[media:hauling-delivery-clip]]
 
+:::media-group
+
 [[media:hauling-delivered]]
+
+[[media:hauling-working-detail]]
+
+:::
 
 For a practical comparison, keep population and other work steady. Select each inn in turn and observe its Food count across several delivery trips. Ask which one runs short and which resources its workers actually use. A nearer building can help, but available land, future growth and safe access also matter; moving every service directly onto a resource patch is not an automatic solution.
 
 ## Read the request and the result separately
 
 **Working 1/3** means one worker is attached to a request for three. Increasing the request tells the colony you want more workers there. It does not guarantee they are available, able to reach the building, or qualified for its job.
-
-[[media:hauling-working-detail]]
 
 [[media:hauling-near-detail]]
 

@@ -35,7 +35,11 @@ To resume, return to the main menu, choose **Load**, select the save, and confir
 
 ## Export before clearing site data
 
+:::warning
+
 Open **Load**, select the file, and use **Export** to download it. Keep the downloaded copy somewhere you can find again. Export before clearing browser storage, changing browser profiles, or moving to a different browser.
+
+:::
 
 Use **Import** in the appropriate file chooser to bring a compatible file back. The game checks type and structure and waits for browser persistence before reporting that it was imported. Duplicate names receive a numbered copy rather than replacing an existing file.
 
@@ -43,9 +47,13 @@ If an import fails, read the error. A corrupt or unsupported file is not fixed b
 
 Campaign/tutorial progress has its own **Import progress** and **Export progress** controls. That backup preserves mission progress; it is distinct from a simulation save at a particular moment. Use the backup type that matches what you intend to keep.
 
+:::media-group
+
 [[media:browser-load]]
 
 [[media:browser-file-detail]]
+
+:::
 
 ## Use replays to inspect a match
 
@@ -63,9 +71,13 @@ Wait for recording finalization and export a copy before clearing site storage. 
 
 For a short shared explanation, a focused clip of the action and result is easier to follow than several minutes of unrelated play.
 
+:::media-group
+
 [[media:browser-recording]]
 
 [[media:browser-recording-detail]]
+
+:::
 
 ## Prepare for online play
 

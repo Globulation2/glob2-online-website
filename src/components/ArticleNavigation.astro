@@ -1,0 +1,10 @@
+---
+interface Item {title:string;href:string;current:boolean}
+interface Props {groups:{title:string;active:boolean;items:Item[]}[];parent:string;label:string}
+const {groups,parent,label}=Astro.props;
+---
+<nav aria-label={label}>
+<a class="article-rail-home" href={parent}>{parent==='/learn/'?'Player handbook':'All articles'} ↗</a>
+{groups.map(group=><details class="article-nav-group" open={group.active}><summary>{group.title}</summary><ul>{group.items.map(item=><li><a href={item.href} aria-current={item.current?'page':undefined}>{item.title}</a></li>)}</ul></details>)}
+<a class="article-rail-search" href="/search/">Search articles →</a>
+</nav>

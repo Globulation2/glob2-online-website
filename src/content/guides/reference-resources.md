@@ -5,6 +5,7 @@ locale: "en"
 tags: ["reference", "resources", "economy"]
 order: 3
 group: "reference"
+format: "reference"
 prerequisites: ["resources-and-hauling"]
 reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources: [{"title":"Standard resource definitions","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/resources/registry.json"},{"title":"Current vision required for fruit harvesting","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/map/gradient/SeedCells.h"},{"title":"Resource growth and spreading","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/map/ResourceGrowth.cpp"},{"title":"Worker clearing","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitMovement.cpp"}]
@@ -47,7 +48,11 @@ Paper is a defined Standard material, but the ordinary building cost list does n
 
 ## Harvesting and clearing are different decisions
 
+:::warning
+
 A hauling worker collects for a consumer. A clearing job removes selected resources to change the terrain; it can damage workers and remove a supply you wanted to keep. Check the clearing flag's material filters or the painted patch before using it.
+
+:::
 
 Rocks and the ordinary fruit trees cannot be removed with the standard clearing tool. A stone source does not become a new empty building site simply because many workers have used it.
 

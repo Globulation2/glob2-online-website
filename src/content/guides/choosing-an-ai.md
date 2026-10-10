@@ -28,19 +28,31 @@ Open [the browser game](https://app.glob2online.com/play/) and choose **Custom G
 
 [[media:choosing-ai-players]]
 
+:::note
+
 The controller choice matters. **AI** makes that colony your computer-controlled opponent. **You + AI** lets both you and an AI issue orders to the same colony; it is a different exercise. **Closed** removes that colony from the match. Check these before choosing the opponent's name.
+
+:::
+
+:::media-group
 
 [[media:choosing-ai-controller]]
 
 [[media:choosing-ai-controller-detail]]
 
+:::
+
 ## Choose the opponent by name
 
 Open the AI selector in the other colony's row. The eight native opponents are **Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, and Maxima**. Choose **Numbi** for a first practice duel.
 
+:::media-group
+
 [[media:choosing-ai-roster]]
 
 [[media:choosing-ai-roster-detail]]
+
+:::
 
 The small information button beside the selector opens the opponent descriptions. You can browse the names there and use the **Use** button to select one, or return with **Back**. Read the description to decide what to watch; keep scouting during the match to see what this opponent actually built on your map.
 

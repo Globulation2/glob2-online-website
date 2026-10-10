@@ -34,7 +34,11 @@ Decide what the expansion should accomplish: shorten the journey to meals, provi
 
 [[media:expansion-growth-detail]]
 
+:::note
+
 Pausing births limits one source of demand. [Fruit conversion](/learn/fruit-and-conversion/) can still add globs when you advertise food, so check the actual population rather than assuming it stays fixed.
+
+:::
 
 ## Build the smallest useful step
 
@@ -42,17 +46,25 @@ For a nearer meal service, place a basic inn on clear ground near the working ar
 
 The foundation in this example starts with **Wood 0/3** and **Working 0/2** after the request is reduced from three to two. Let the game run; actual workers have to join and deliver wood.
 
+:::media-group
+
 [[media:expansion-site]]
 
 [[media:expansion-site-detail]]
+
+:::
 
 A basic inn needs three wood to finish. Completion gives it four meal places and room for ten ordinary food; workers must then bring that food. Keep its supply request modest until the old and new inns are both serving meals.
 
 After construction, the new inn shows **HP 200/200**, **Working 2/2** and **Food 2/10**. The original inn still has **Food 8/10**, two occupants and both requested workers. Construction has succeeded without leaving the old meal service empty.
 
+:::media-group
+
 [[media:expansion-completed]]
 
 [[media:expansion-completed-detail]]
+
+:::
 
 Do not upgrade your only working meal service to solve a temporary crowd. An upgrade replaces it with a construction site until work finishes. A functioning backup makes that transition easier to support.
 
