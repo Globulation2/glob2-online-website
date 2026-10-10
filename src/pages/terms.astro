@@ -1,0 +1,7 @@
+---
+import {getEntry} from 'astro:content';
+import PolicyDocument from '../components/PrivacyPolicy.astro';
+const entry = await getEntry('legal', 'terms');
+if (!entry) throw new Error('Missing terms and conditions');
+---
+<PolicyDocument entry={entry}/>

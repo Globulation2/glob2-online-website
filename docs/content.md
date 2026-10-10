@@ -42,3 +42,37 @@ The review covers responsive website layouts; physical phone gameplay and
 anonymous ranked/account flows were not exercised. Keep resource-heavy game
 capture sessions separate from browser checks; `npm test -- --workers=1` is a
 reproducible local option when concurrent Firefox runs hit timeouts.
+
+## Privacy and terms
+
+The game repository is authoritative: `docs/mobile/privacy-policy.md` is the
+unified policy and `docs/mobile/terms.md` contains the service terms. The website
+renders synchronized copies in `src/content/legal/` at
+`https://glob2online.com/privacy/` and `https://glob2online.com/terms/`. Frontmatter
+records the source URL and SHA-256 of each original Markdown document.
+
+Use Node 24.14+ to sync and verify:
+
+```sh
+node scripts/sync-legal.mjs --game-repo /path/to/glob2
+node scripts/sync-legal.mjs --check --game-repo /path/to/glob2
+node --test scripts/test_legal_sync.mjs
+```
+
+Omit `--game-repo` to import or check public game master over HTTPS. The importer
+resolves one immutable source revision and reads both documents before writing.
+Review and merge game document changes first, then synchronize the website.
+Every website verification and the scheduled/manual legal check report upstream
+drift without changing files.
+Remote checks cannot pass for new source files until the game changes are
+published. Build remains independent of remote availability.
+
+The old Fire tablet Markdown is a compatibility pointer, and the website's
+`/privacy/fire-tablet/` route redirects to the unified page's edition section.
+Both game-menu branches use the unified URL, with the Fire section anchor where
+appropriate. Publish the website pages before shipping those game-menu changes;
+store listing URLs require separate updates through their release processes.
+
+When updating terms or privacy, verify optional product, payment and AI-provider
+claims against the game implementation. Preserve mandatory consumer rights and
+announce material terms changes with their effective date.
