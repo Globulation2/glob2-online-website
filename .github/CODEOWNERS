@@ -1,0 +1,9 @@
+# Sole website maintainer; informational ownership, no second-review requirement.
+/.github/ @genixpro
+/scripts/ @genixpro
+/package.json @genixpro
+/package-lock.json @genixpro
+/firebase.json @genixpro
+/.firebaserc @genixpro
+/AGENTS.md @genixpro
+/docs/hosting.md @genixpro

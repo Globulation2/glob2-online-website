@@ -20,6 +20,6 @@ Maintain content/migration-manifest.json when migrating legacy wiki content. Pre
 
 ## Deployment and secrets
 
-Firebase Hosting publishes dist only to glob2-website-pharaoh-418820. Preview PRs must be trusted same-repository branches; forks receive no cloud credentials. Main deployments test a preview and promote that exact immutable version. Use WIF, not service-account keys or permanent Firebase tokens. The feed publisher has separate bucket-scoped permissions and cannot access game persistence.
+Firebase Hosting publishes dist only to glob2-website-pharaoh-418820. All PRs run checks only and receive no deployment credentials or hosted previews. Production credentials are restricted to the exact main-branch website and rollback workflows. Main deployments test a preview and promote that exact immutable version. Use WIF, not service-account keys or permanent Firebase tokens. The feed publisher has separate bucket-scoped permissions and cannot access game persistence.
 
 Never change multiplayer infrastructure during a website deployment. Domain cutover is a separately verified operation. Keep source, scripts and enduring operational docs in Git; screenshots, reports, release responses, credentials and generated files belong in ignored artifacts or external secret storage. Do not commit .env files or any credentials.
