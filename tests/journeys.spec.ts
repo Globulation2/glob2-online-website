@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-const routes=['/','/game/','/learn/','/community/','/competition/','/news/','/downloads/','/history/','/archive/','/search/'];
-for(const scheme of ['light','dark'] as const) for(const route of routes) test(`usable and accessible ${route} (${scheme})`,async({page})=>{
+const routes=['/','/game/','/learn/','/community/','/competition/','/news/','/downloads/','/history/','/archive/','/search/','/privacy/','/terms/'];
+for(const scheme of ['light','dark'] as const) for(const route of routes) test(`usable and accessible ${route} (${scheme})`,async({page},testInfo)=>{
  await page.emulateMedia({colorScheme:scheme});
  await page.goto(route);
  if(route==='/search/') await expect(page.locator('#site-search')).toBeVisible();
  await expect(page.locator('h1')).toHaveCount(1);
  const issues=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
  expect(issues.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
+ if(route==='/privacy/'||route==='/terms/') await page.screenshot({path:testInfo.outputPath('legal-page.png')});
 });
 test('homepage is lightweight and handoff explicit',async({page})=>{
  const requests:string[]=[];page.on('request',r=>requests.push(r.url()));
