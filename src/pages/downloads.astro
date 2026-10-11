@@ -41,6 +41,17 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
                 <p class="download-meta">Version {manifest!.version} · {size(pkg.sizeBytes)}<br />Requires {pkg.minimumOs}</p>
                 <a class={index === 0 && platform.id !== 'android' ? 'button' : 'text-link'} href={pkg.url}>Download {platform.title} {labels[pkg.format]} — {architectureLabel(pkg)} ↗</a>
                 {pkg.dependencies?.length && <p class="download-meta">Dependencies: {pkg.dependencies.join(', ')}</p>}
+                {pkg.format === 'flatpak' && <details class="download-help download-flatpak">
+                  <summary>Install this Flatpak</summary>
+                  <ol>
+                    <li>Follow the <a href="https://flatpak.org/setup/">Flatpak setup instructions for your distribution ↗</a>, including adding the Flathub runtime repository.</li>
+                    <li>Download the bundle above, then open a terminal in the folder containing it and run:
+                      <pre><code>{`flatpak install --user ./${pkg.filename}\nflatpak run --user org.globulation2.Globulation2`}</code></pre>
+                    </li>
+                  </ol>
+                  <p>Installation may also download the required GNOME runtime. After installation, you can launch Globulation 2 from your applications menu.</p>
+                  <p>To update the game, download the newer bundle and run its install command again. These direct bundles do not configure automatic game updates.</p>
+                </details>}
                 <details class="download-checksum"><summary>SHA-256 · {labels[pkg.format]} · {architectureLabel(pkg)}</summary><code>{pkg.sha256}</code></details>
               </li>)}
             </ul>
@@ -72,5 +83,8 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
   summary {cursor: pointer; min-height: var(--target); padding: var(--sp-2) 0; text-decoration: underline; text-underline-offset: 3px;}
   .download-checksum code {display: block; overflow-wrap: anywhere; margin: var(--sp-2) 0;}
   .download-help p {margin: var(--sp-3) 0 0;}
+  .download-flatpak ol {padding-left: var(--sp-5);}
+  .download-flatpak li + li {border: 0; padding-top: 0; margin-top: var(--sp-3);}
+  .download-flatpak pre {white-space: pre-wrap; overflow-wrap: anywhere; margin: var(--sp-3) 0;}
   .download-unavailable {color: var(--ink-2);}
 </style>
