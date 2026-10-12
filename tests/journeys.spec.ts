@@ -100,9 +100,9 @@ test('new player can understand the game and reach a practical first session',as
  const navigation=page.getByRole('navigation',{name:'Main navigation'});
  await expect(navigation.getByRole('link')).toHaveText(['The game','Learn','Community','Search','Discord ↗']);
  await expect(page.getByRole('heading',{name:'Three decisions you will make'})).toBeVisible();
- await expect(page.locator('.mechanics-list > li')).toHaveCount(3);
- await expect(page.locator('.gameplay-image img')).toHaveAttribute('src','/images/glob2-first-colony.webp');
- await expect.poll(()=>page.locator('.gameplay-image img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>=1280)).toBe(true);
+ await expect(page.locator('.decisions > li')).toHaveCount(3);
+ await expect(page.locator('.game-window.lead-shot img')).toHaveAttribute('src','/images/glob2-exploration-flag.webp');
+ await expect.poll(()=>page.locator('.game-window.lead-shot img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>=1280)).toBe(true);
  await expect(page.getByRole('heading',{name:'News & notes'})).toHaveCount(0);
  await page.getByRole('link',{name:'Read the first-session guide',exact:false}).click();
  await expect(page.locator('article')).toContainText('Tutorial');

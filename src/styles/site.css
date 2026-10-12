@@ -200,12 +200,6 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 
 /* ---------------------------------------------------------------- home */
 
-.home > section, .home > figure { max-width: calc(var(--content) + 2 * var(--gutter)); margin-left: auto; margin-right: auto; padding-left: var(--gutter); padding-right: var(--gutter); }
-.home .hero {
-  position: relative;
-  margin-top: var(--sp-3);
-  isolation: isolate;
-}
 /* The game's main-menu colony behind the hero, faded towards the text. */
 .hero-colony {
   position: absolute;
@@ -222,57 +216,9 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   inset: 0;
   background: linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 96%, transparent) 48%, color-mix(in srgb, var(--bg) 65%, transparent) 65%, transparent 90%), linear-gradient(0deg, var(--hero-tint), var(--hero-tint));
 }
-.hero-copy { padding: var(--sp-8) var(--sp-6) 76px; }
-.hero-copy > * { max-width: 34rem; }
-.hero h1 { font-size: clamp(2.4rem, 1.6rem + 3.6vw, 4.3rem); margin-bottom: var(--sp-4); }
-.hero h1 .accent { color: var(--gold-ink); }
-.hero-description { font-size: 1.2rem; color: var(--ink); }
-.hero-note { font-size: var(--text-sm); color: var(--ink-2); font-weight: 650; }
-.gameplay-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  align-items: start;
-  gap: var(--sp-7);
-  margin-top: var(--sp-7);
-}
 .gameplay-image { margin: 0; max-width: 640px; }
 .gameplay-image img { display: block; width: 100%; border-radius: var(--r-sm); }
-.gameplay-image figcaption, .guide-figure figcaption { margin-top: var(--sp-3); font-size: var(--text-sm); color: var(--ink-2); max-width: 65ch; }
-.gameplay-copy p { color: var(--ink-2); font-size: var(--text-lg); }
-.home .feature { padding: var(--sp-4) 0; background: transparent; border: 0; border-top: 1px solid var(--line-strong); border-radius: 0; }
-.mechanics-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-6); list-style: none; padding: 0; margin: var(--sp-6) 0; }
-.mechanics-list > li { padding-top: var(--sp-5); border-top: 1px solid var(--line-strong); }
-.mechanics-list p { color: var(--ink-2); }
-.gameplay-copy .mechanics-list { display: block; list-style: decimal; padding-left: var(--sp-5); margin: var(--sp-5) 0 0; }
-.gameplay-copy .mechanics-list > li { padding: 0 0 0 var(--sp-2); border: 0; margin-bottom: var(--sp-4); }
-.gameplay-copy .mechanics-list > li::marker { font-weight: 700; color: var(--gold-ink); }
-.gameplay-copy .mechanics-list p { font-size: var(--text-md); }
-.gameplay-copy .mechanics-list h4 { font-size: var(--text-md); line-height: 1.4; margin: 0 0 var(--sp-2); }
-.gameplay-copy .mechanics-list > li:last-child { margin-bottom: 0; }
-.home > .two-grid { margin-top: var(--sp-6); }
-.first-steps { padding-left: var(--sp-5); margin: var(--sp-5) 0; }
-.first-steps li { padding-left: var(--sp-2); margin-bottom: var(--sp-4); }
-.first-steps li::marker { font-weight: 700; color: var(--gold-ink); }
-.guide-figure { margin: var(--sp-6) 0; }
-.guide-figure img { display: block; width: 100%; max-width: 640px; border-radius: var(--r-sm); }
-.home .callout { background: transparent; border: 0; border-left: 1px solid var(--line-strong); border-radius: 0; padding: 0 0 0 var(--sp-6); }
-.home .news-section .card { border: 0; border-top: 1px solid var(--line-strong); border-radius: 0; background: transparent; padding: var(--sp-5) 0; }
-.home .closing { border-top: 1px solid var(--line); }
-.hero-scene { margin-top: var(--sp-6); margin-bottom: 0; }
-.hero-scene img { display: block; width: 100%; max-width: 640px; border-radius: var(--r-lg); box-shadow: none; border: 4px solid var(--surface); }
-.intro { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2) var(--sp-7); margin-top: var(--sp-8); }
-.intro .eyebrow { grid-column: 1 / -1; }
-.intro p:last-child { align-self: center; font-size: var(--text-lg); color: var(--ink-2); }
-.home > .three-grid { margin-top: var(--sp-6); }
-.news-section { margin-top: var(--sp-8); }
-.closing {
-  margin-top: var(--sp-8);
-  text-align: center;
-  padding-top: var(--sp-7);
-  padding-bottom: var(--sp-7);
-}
-.closing p.eyebrow, .closing h2 { margin-left: auto; margin-right: auto; }
-.closing .btn, .closing .text-link { margin: var(--sp-3) var(--sp-2) 0; }
+.gameplay-image figcaption { margin-top: var(--sp-3); font-size: var(--text-sm); color: var(--ink-2); max-width: 65ch; }
 
 /* Design concept page (noindex). */
 .concept-label { position: relative; z-index: 6; padding: var(--sp-3) var(--gutter); text-align: center; background: var(--accent); color: var(--accent-ink); font-size: var(--text-sm); font-weight: 700; }
@@ -336,28 +282,16 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   .site-header .wrap { gap: var(--sp-2) var(--sp-3); }
   .nav { order: 3; width: 100%; }
 }
-/* At tablet widths the copy reaches across the scene: keep an even paper
-   scrim behind it instead of fading to grass beneath the last words. */
-@media (min-width: 701px) and (max-width: 980px) {
-  .hero-colony::after {
-    background: linear-gradient(90deg, color-mix(in srgb, var(--bg) 94%, transparent), color-mix(in srgb, var(--bg) 88%, transparent)), linear-gradient(0deg, var(--hero-tint), var(--hero-tint));
-  }
-}
 @media (max-width: 980px) {
   .three-grid { grid-template-columns: 1fr; }
   .site-footer .wrap { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .site-footer .wrap > :first-child { grid-column: 1 / -1; }
 }
 @media (max-width: 700px) {
-  .two-grid, .split-section, .intro, .gameplay-section, .mechanics-list { grid-template-columns: 1fr; }
-  .gameplay-section { gap: var(--sp-5); }
-  .home .callout { border-left: 0; border-top: 1px solid var(--line-strong); padding: var(--sp-5) 0 0; }
+  .two-grid, .split-section { grid-template-columns: 1fr; }
   .nav a { padding: 0 12px; flex: 1 1 auto; justify-content: center; }
   .page-shell { padding-left: calc(var(--gutter) + var(--sp-3)); padding-right: calc(var(--gutter) + var(--sp-3)); }
   .page-shell::before { inset: 0 calc(var(--gutter) - 12px); border-radius: var(--r-md); }
-  .hero-copy { padding: var(--sp-6) var(--sp-4) 76px; }
-  .hero-colony { background-position: 75% 60%; }
-  .hero-colony::after { background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 88%, transparent), color-mix(in srgb, var(--bg) 94%, transparent) 60%), linear-gradient(0deg, var(--hero-tint), var(--hero-tint)); }
   .callout { padding: var(--sp-5); }
   .card, .feature, .rankings { padding: var(--sp-4); }
   .btn { white-space: normal; text-align: center; }
