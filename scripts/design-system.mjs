@@ -58,7 +58,7 @@ export function stageDesignAssets(publicDir, metadata, brand = true) {
  const install = join(root,'node_modules/@glob2/design-system');
  rmSync(join(publicDir,'brand'),{recursive:true,force:true});
  mkdirSync(join(publicDir,'brand'),{recursive:true});
- const files = ['glob2-sans.woff2','nunito.woff2','glob-64.png','wordmark-letters.webp','wordmark-two.webp','colony-960.webp','colony-1600.webp','colony-loop.mp4','swarm.webp','wood.webp','fruit.webp','war-flag.webp','exploration-flag.webp'];
+ const files = ['glob2-sans.woff2','nunito.woff2','glob-64.png','wordmark-letters.webp','wordmark-two.webp','colony-960.webp','colony-1600.webp','colony-loop.mp4','swarm.webp','wood.webp','fruit.webp','war-flag.webp','exploration-flag.webp','inn.webp','worker.webp'];
  if (brand) for(const file of files) copyFileSync(join(install,'assets',file),join(publicDir,'brand',file));
  copyFileSync(join(install,'dist/bootstrap.js'),join(publicDir,'theme.js'));
  for(const file of ['favicon-32.png','apple-touch-icon.png']) copyFileSync(join(install,'assets',file),join(publicDir,file));
