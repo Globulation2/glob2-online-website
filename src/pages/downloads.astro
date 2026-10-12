@@ -43,7 +43,7 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
               {packages.map((pkg, index) => <li>
                 <h3>{labels[pkg.format]} · {architectureLabel(pkg)}</h3>
                 <p class="download-meta">Version {manifest!.version} · {size(pkg.sizeBytes)}<br />Requires {pkg.minimumOs}</p>
-                <a class={index === 0 && platform.id !== 'android' ? 'button' : 'text-link'} href={pkg.url}>Download {platform.title} {labels[pkg.format]} — {architectureLabel(pkg)} ↗</a>
+                <a class={index === 0 ? 'btn primary' : 'text-link'} href={pkg.url}>Download {platform.title} {labels[pkg.format]} — {architectureLabel(pkg)} ↗</a>
                 {pkg.dependencies?.length && <p class="download-meta">Dependencies: {pkg.dependencies.join(', ')}</p>}
                 {pkg.format === 'flatpak' && <details class="download-help download-flatpak">
                   <summary>Install this Flatpak</summary>
