@@ -59,6 +59,23 @@ export const metadataSchema = z.object({schemaVersion: z.literal(2), checkedAt: 
 export type DownloadManifest = z.infer<typeof manifestSchema>;
 export type DownloadPackage = z.infer<typeof packageSchema>;
 
+// Experimental public builds carry integrity metadata, never a qualification assertion.
+export const experimentalReleaseSchema = z.object({
+  status: z.literal('experimental'), version: z.string().regex(/^[0-9]+(?:\.[0-9]+)+$/),
+  tag: z.string().regex(/^v[0-9]+(?:\.[0-9]+)+$/), sourceCommit: commit, releaseNotesUrl: z.url(),
+  packages: z.array(packageSchema).min(1), sources: z.array(fileSchema).min(1),
+}).superRefine((release, ctx) => {
+  const fail = (message: string) => ctx.addIssue({code: 'custom', message});
+  if (release.tag !== `v${release.version}` || release.releaseNotesUrl !== `${repository}/releases/tag/${release.tag}`) fail('Experimental release identity mismatch');
+  const identities = release.packages.map(pkg => `${pkg.platform}:${pkg.architecture}:${pkg.format}`);
+  if (new Set(identities).size !== identities.length || identities.some(identity => !requiredPackages.includes(identity))) fail('Duplicate or unsupported package identity');
+  const files = [...release.packages, ...release.sources];
+  if (new Set(files.map(file => file.filename)).size !== files.length) fail('Duplicate filename');
+  for (const file of files) if (file.url !== `${repository}/releases/download/${release.tag}/${encodeURIComponent(file.filename)}`) fail('Downloads must use public versioned game release URLs');
+  for (const pkg of release.packages) if (!pkg.filename.toLowerCase().endsWith(`.${pkg.format}`)) fail('Package extension does not match format');
+  for (const source of release.sources) if (!/\.(tar\.gz|tar\.xz|zip)$/.test(source.filename)) fail('Source downloads must be archives');
+});
+
 // Editorial store updates and withdrawals are separate from immutable package metadata.
 export const channelsSchema = z.object({
   schemaVersion: z.literal(1), releaseTag: z.string().regex(/^v[0-9]+(?:\.[0-9]+)+$/).nullable(),

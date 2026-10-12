@@ -43,6 +43,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
       <span class="brand-online" aria-hidden="true">Online</span>
     </a>
     <nav class="nav" aria-label="Main navigation">
+      <a class="nav-download" href="/downloads/" aria-current={Astro.url.pathname.startsWith('/downloads/')?'page':undefined}>Download</a>
       {nav.map(([label,url])=><a href={url} aria-current={Astro.url.pathname.startsWith(url)?'page':undefined}>{label}</a>)}
       <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>Search</a>
       <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
@@ -61,6 +62,7 @@ const nav=[['The game','/game/'],['Learn','/learn/'],['Community','/community/']
     <div>
       <a class="brand-plain" href="/" aria-label={`${site.name} home`}><span class="wordmark" aria-hidden="true"></span></a>
       <p>A free, open-source<br/>real-time strategy game.</p>
+      <a class="btn primary" href="/downloads/">Download Globulation 2</a>
     </div>
     <nav aria-label="Explore">
       <h2>Explore</h2>

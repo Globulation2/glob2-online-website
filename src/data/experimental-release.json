@@ -1,0 +1,130 @@
+{
+  "status": "experimental",
+  "version": "0.11.2.0",
+  "tag": "v0.11.2.0",
+  "sourceCommit": "7d0d2da66ce7c3e15d15e3c22b37f13427dee80b",
+  "releaseNotesUrl": "https://github.com/Globulation2/glob2/releases/tag/v0.11.2.0",
+  "packages": [
+    {
+      "filename": "glob2-0.11.2.0-windows-x86_64-setup.exe",
+      "sizeBytes": 158722960,
+      "sha256": "8ae1bf774e2e5a794da9df5001c03a19bc386fd131777f381b9f359511936fdf",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-windows-x86_64-setup.exe",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "format": "exe",
+      "minimumOs": "Windows 10 (64-bit)"
+    },
+    {
+      "filename": "glob2-0.11.2.0-windows-x86_64.zip",
+      "sizeBytes": 179688876,
+      "sha256": "aca85b4897c7ed5a56af8c43cd73dc7ba9ab21cf80b558109c4aff28437c2276",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-windows-x86_64.zip",
+      "platform": "windows",
+      "architecture": "x86_64",
+      "format": "zip",
+      "minimumOs": "Windows 10 (64-bit)"
+    },
+    {
+      "filename": "Glob2-0.11.2.0-macos-arm64.dmg",
+      "sizeBytes": 196363243,
+      "sha256": "339da6b9fe96da8a56ad79057bcc0a632ed90244df6d795a62980ecf7655dbe7",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/Glob2-0.11.2.0-macos-arm64.dmg",
+      "platform": "macos",
+      "architecture": "arm64",
+      "format": "dmg",
+      "minimumOs": "macOS 15.0"
+    },
+    {
+      "filename": "Glob2-0.11.2.0-macos-x86_64.dmg",
+      "sizeBytes": 187091306,
+      "sha256": "9f8658af07b8b8bbf99a490d40d89a4c7be29f00b53414a1a8dd732cbaf28b5c",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/Glob2-0.11.2.0-macos-x86_64.dmg",
+      "platform": "macos",
+      "architecture": "x86_64",
+      "format": "dmg",
+      "minimumOs": "macOS 15.0"
+    },
+    {
+      "filename": "glob2.flatpak",
+      "sizeBytes": 182551640,
+      "sha256": "d8ae4f14d4588774e59c1e462ddf6001d4c67426e9ecdd57f0c4514a8e1795d2",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2.flatpak",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "format": "flatpak",
+      "minimumOs": "Flatpak with GNOME 51 runtime"
+    },
+    {
+      "filename": "glob2-0.11.2.0-linux-x86_64.snap",
+      "sizeBytes": 228249600,
+      "sha256": "58f118bda60ac5d403885a14ea5c81d2f63049d639c660f821e5a91bb1119eee",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-linux-x86_64.snap",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "format": "snap",
+      "minimumOs": "Linux with snapd"
+    },
+    {
+      "filename": "glob2-0.11.2.0-linux-x86_64-fedora43.rpm",
+      "sizeBytes": 164617682,
+      "sha256": "dbcf6236de1402f1a7712f37c887b8f2def3339d44e6204a0bf69ecf5110505e",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-linux-x86_64-fedora43.rpm",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "format": "rpm",
+      "minimumOs": "Fedora 43"
+    },
+    {
+      "filename": "glob2-0.11.2.0-linux-x86_64-ubuntu22.04.tar.gz",
+      "sizeBytes": 172423639,
+      "sha256": "3df7f4625b85d968e5381a6fa52699e7c6d4def877108c2b4090104e07345814",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-linux-x86_64-ubuntu22.04.tar.gz",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "format": "tar.gz",
+      "minimumOs": "Ubuntu 22.04 (64-bit)",
+      "dependencies": [
+        "Requires the system libraries listed in the archive INSTALL.txt file."
+      ]
+    },
+    {
+      "filename": "glob2-0.11.2.0-android-arm64-v8a.apk",
+      "sizeBytes": 206553895,
+      "sha256": "b5d1f6fb8d7ef52c937b54fb268c02659011fa01df3e4a76d81b758acf51837c",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-android-arm64-v8a.apk",
+      "platform": "android",
+      "architecture": "arm64",
+      "format": "apk",
+      "minimumOs": "Android 7.0 (API 24)"
+    },
+    {
+      "filename": "glob2-0.11.2.0-android-armeabi-v7a.apk",
+      "sizeBytes": 199910189,
+      "sha256": "814617f08bb29c5ef99161b0126150ccb33948d956040b3c5c73b5938679e995",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-android-armeabi-v7a.apk",
+      "platform": "android",
+      "architecture": "armv7",
+      "format": "apk",
+      "minimumOs": "Android 7.0 (API 24)"
+    },
+    {
+      "filename": "glob2-0.11.2.0-android-x86_64.apk",
+      "sizeBytes": 211034910,
+      "sha256": "ef6a11faf0989daf8134ef45edf34e32504fbd1a9a3ed78975d964f05a136bda",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0-android-x86_64.apk",
+      "platform": "android",
+      "architecture": "x86_64",
+      "format": "apk",
+      "minimumOs": "Android 7.0 (API 24)"
+    }
+  ],
+  "sources": [
+    {
+      "filename": "glob2-0.11.2.0.tar.gz",
+      "sizeBytes": 473622850,
+      "sha256": "400f76ff49ddfc7117c31c30709290d0a15a80774cbf717dc15bd8bbbfeccccd",
+      "url": "https://github.com/Globulation2/glob2/releases/download/v0.11.2.0/glob2-0.11.2.0.tar.gz"
+    }
+  ]
+}
