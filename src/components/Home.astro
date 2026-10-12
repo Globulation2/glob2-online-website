@@ -5,9 +5,9 @@ import {home, community} from '../data/marketing';
 const {concept='colony'}=Astro.props;
 const sprites=['worker','inn','war-flag'];
 const shots=[
-  {src:'/images/glob2-exploration-flag.webp',width:1280,height:720,title:'Send explorers out',caption:'An exploration flag and its range circle. Explorers head out to reveal the dark parts of the map.',alt:'A red swarm with an exploration flag placed nearby. The flag’s range circle is drawn around the swarm and the selected flag’s panel shows two explorers working.'},
-  {src:'/images/globulation2-match.webp',width:1000,height:562,title:'Share the map with rivals',caption:'Two colonies on one map: teal globs and buildings, with red globs nearby.',alt:'A teal colony with buildings and many small globs beside a yellow sand path. A few red globs and red crops are near the bottom left.'},
-  {src:'/images/glob2-first-colony.webp',width:1280,height:608,title:'Start small',caption:'The first tutorial colony: an inn, a swarm and workers gathering wheat.',alt:'A selected inn beside a red swarm, with workers gathering wheat and an inn panel showing Working 3/3 and Food 10/10.'},
+  {src:'/images/home-thriving-colony.webp',width:1280,height:720,title:'Grow a thriving colony',caption:'A purple colony late in a four-colony match: rows of inns and other buildings, with dozens of globs at work between the lakes.',alt:'A large purple colony seen from above, with a purple swarm on the left, rows of crescent-shaped inns and other buildings, many small purple globs, lakes ringed with sand and fields of wheat to the right.'},
+  {src:'/images/home-colony-defence.webp',width:1280,height:720,title:'Hold your ground',caption:'Three red swarms around the colony’s buildings. Purple globs have reached its top-left edge, where red warriors are under attack.',alt:'A red colony with three spiky red swarms, inns, round stone buildings and a pool. Range circles overlap the colony, and purple globs mix with red globs near the top-left corner.'},
+  {src:'/images/home-rival-expansion.webp',width:1280,height:720,title:'Race rivals for the map',caption:'Red and lime exploration flags side by side on open ground, with lime buildings beyond and wheat fields below.',alt:'A red and a lime exploration flag next to each other inside their range circles, beside a lake. Lime buildings sit to the north and east, with a large wheat field to the south and forest on either side.'},
 ];
 const facts=['Free and open source','Plays in your browser','Growing since 2004'];
 ---
@@ -38,6 +38,7 @@ const facts=['Free and open source','Plays in your browser','Growing since 2004'
     <a href={shot.src} aria-label={`View “${shot.title}” at full size`}><img src={shot.src} width={shot.width} height={shot.height} alt={shot.alt} loading="lazy"/></a>
     <figcaption><strong>{shot.title}.</strong> {shot.caption}</figcaption>
   </figure>)}</div>
+  <p class="shots-note">Screenshots from a four-colony match between computer players in the browser game, viewed in the replay viewer with fog of war turned off.</p>
   <h3 class="decisions-title">{home.decisionsTitle}</h3>
   <ol class="decisions">{home.decisions.map((decision,i)=><li><img src={`/brand/${sprites[i]}.webp`} alt="" width="72" height="72" loading="lazy"/><h4>{decision.title}</h4><p>{decision.description}</p></li>)}</ol>
 </section>

@@ -59,10 +59,10 @@ body:has(.home) .site-footer { margin-top: 0; }
 .home .game-window a { display: block; overflow: hidden; aspect-ratio: 16 / 9; border-radius: var(--r-md); border: 5px solid var(--ink); box-shadow: var(--shadow-lg); background: #000; transition: transform var(--dur) var(--ease); }
 .home .game-window a:hover { transform: translateY(-3px); }
 .home .game-window.lead-shot a { aspect-ratio: 1100 / 640; border-radius: var(--r-lg); border-width: 6px; }
-.home .game-window img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 35% 50%; }
-.home .game-window.lead-shot img { width: calc(1280 / 1100 * 100%); max-width: none; height: auto; margin-top: -2.2%; object-fit: initial; }
+.home .game-window img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 .home .game-window figcaption { margin: var(--sp-2) 0 0; color: var(--ink-2); font-size: var(--text-sm); }
 .home .game-window figcaption strong { color: var(--ink); }
+.home .shots-note { max-width: 1100px; margin: var(--sp-3) auto 0; color: var(--ink-2); font-size: var(--text-sm); text-align: center; }
 .home .decisions-title { text-align: center; margin: var(--sp-8) 0 var(--sp-5); font-size: var(--text-xl); }
 .home .decisions { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-5); padding: 0; margin: 0; }
 .home .decisions li { position: relative; padding: var(--sp-6) var(--sp-5) var(--sp-5); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease); }
