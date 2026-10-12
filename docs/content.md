@@ -10,11 +10,22 @@ The migration manifest in content/migration-manifest.json records the audited wi
 
 ## Events and downloads
 
+Experimental prereleases may be listed before all-platform qualification when
+the maintainer explicitly selects them for early testing. Publish the existing
+release as a public GitHub prerelease, then run
+`node scripts/sync-experimental-release.mjs vVERSION` with Node 24.14+ and submit
+the website change through a normal PR. This imports the published package
+inventory, validates its exact tag/source commit, public URLs, sizes and GitHub
+SHA-256 digests, and saves `src/data/experimental-release.json`. The page labels
+these builds experimental and states that platform/online testing is incomplete.
+It makes no qualification or mobile store claim. A qualified manifest takes
+precedence when available; reviewed withdrawals apply to the displayed tag.
+
 Event records in src/data/events.json require a unique slug, title, UTC start, optional end, IANA display timezone, format, organizer, status and rules. Registration links use HTTPS; published results are editorial. No events, registrations or standings should be fabricated. The provider interface currently reads Git content; actual bracket/registration backend integration is a separate feature.
 
 The Check download metadata workflow imports `downloads-manifest.json` from a qualified stable public game release. It paginates past evidence prereleases, checks the exact public tag commit, required platform packages and GitHub asset digests (hashing bytes when no digest is available). Schema v2 website metadata contains one manifest or null; a failed import never replaces the previous snapshot. Run `node scripts/sync-releases.mjs` with Node 24.14+ or dispatch the workflow after publication, then download and review its reviewed-download-metadata artifact and submit the resulting change through a normal PR. No release dispatch or website merge bypasses qualification.
 
-Game release execution and sensitive configuration belong only to `genixpro/glob2-release`; the public downloads remain versioned assets in `Globulation2/glob2`. The page advertises packages only after every required platform and both production mobile stores are qualified. Empty metadata is intentional before the first release. Desktop/mobile alternatives and checksums work without JavaScript. Store links are validated public destinations, never guessed. `src/data/download-channels.json` holds reviewed, release-tag-bound store URL updates and package/store withdrawals separately from the immutable manifest. The importer does not overwrite this editorial file; changing releases requires resetting or re-reviewing its entries. Correct a withdrawn or broken download through reviewed metadata and restore a prior website version when needed; do not move game tags or replace published bytes.
+Game release execution and sensitive configuration belong only to `genixpro/glob2-release`; the public downloads remain versioned assets in `Globulation2/glob2`. The qualified-release path requires every platform and both production mobile stores; experimental public builds use the separate path above. Empty qualified metadata is intentional before the first qualified release. Desktop/mobile alternatives and checksums work without JavaScript. Store links are validated public destinations, never guessed. `src/data/download-channels.json` holds reviewed, release-tag-bound store URL updates and package/store withdrawals separately from the immutable manifest. The importer does not overwrite this editorial file; changing releases requires resetting or re-reviewing its entries. Correct a withdrawn or broken download through reviewed metadata and restore a prior website version when needed; do not move game tags or replace published bytes.
 
 ### Direct Flatpak downloads
 

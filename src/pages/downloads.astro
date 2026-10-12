@@ -2,16 +2,19 @@
 import Base from '../layouts/Base.astro';
 import PageHeading from '../components/PageHeading.astro';
 import { publishedReleaseMetadata, site } from '../data/site';
-import { channelsSchema } from '../data/downloads-schema';
+import { channelsSchema, experimentalReleaseSchema } from '../data/downloads-schema';
+import experimentalData from '../data/experimental-release.json';
 import { downloadPlatforms as platforms, downloadArchitectures as architectures, downloadFormats as labels } from '../data/downloads';
 import { downloads } from '../data/marketing';
 import channelData from '../data/download-channels.json';
 import type { DownloadPackage } from '../data/downloads-schema';
-const manifest = publishedReleaseMetadata.manifest;
+const qualifiedManifest = publishedReleaseMetadata.manifest;
+const manifest = qualifiedManifest ?? experimentalReleaseSchema.parse(experimentalData);
+const experimental = !qualifiedManifest;
 const channels = channelsSchema.parse(channelData);
 if (channels.releaseTag && channels.releaseTag !== manifest?.tag) throw new Error('Reviewed channel updates must match the current release tag');
-const googlePlay = channels.withdrawnStores.includes('googlePlay') ? null : (channels.googlePlay ?? manifest?.qualification.stores.googlePlay);
-const appStore = channels.withdrawnStores.includes('appStore') ? null : (channels.appStore ?? manifest?.qualification.stores.appStore);
+const googlePlay = channels.withdrawnStores.includes('googlePlay') ? null : (channels.googlePlay ?? qualifiedManifest?.qualification.stores.googlePlay);
+const appStore = channels.withdrawnStores.includes('appStore') ? null : (channels.appStore ?? qualifiedManifest?.qualification.stores.appStore);
 const architectureLabel = (pkg: DownloadPackage) => pkg.platform === 'macos' ? (pkg.architecture === 'arm64' ? 'Apple Silicon' : 'Intel') : architectures[pkg.architecture];
 const packagesFor = (platform: typeof platforms[number]) => (manifest?.packages ?? []).filter(pkg => pkg.platform === platform.id && !channels.withdrawnPackages.includes(pkg.filename)).sort((a, b) => platform.formats.indexOf(a.format) - platform.formats.indexOf(b.format) || (a.architecture === 'arm64' ? -1 : b.architecture === 'arm64' ? 1 : a.architecture.localeCompare(b.architecture)));
 const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
@@ -24,8 +27,9 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
       <a class="btn" href={site.appUrl}>{downloads.browserLabel} ↗</a>
     </section>
     <section class="download-release section-space" aria-labelledby="release-heading">
-      <h2 id="release-heading">{manifest ? `Release ${manifest.version}` : 'Installed editions'}</h2>
-      {manifest ? <p>All packages below come from the same qualified release. <a href={manifest.releaseNotesUrl}>Read release notes ↗</a></p> : <p>A verified all-platform release is not published here yet. Use the browser app, or visit the source repository for build instructions.</p>}
+      <h2 id="release-heading">{experimental ? 'Experimental release' : 'Release'} {manifest.version}</h2>
+      <p>{experimental ? 'These builds are available for early testing. Full platform and online testing is still in progress; expect issues and follow-up releases.' : 'All packages below come from the same qualified release.'} <a href={manifest.releaseNotesUrl}>Read release notes ↗</a></p>
+      {experimental && <p>Found a problem? <a href={`${site.sourceUrl}/issues`}>Report it with your platform and game version ↗</a></p>}
     </section>
     <div class="two-grid download-platforms">
       {platforms.map(platform => {
@@ -33,7 +37,7 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
         return <section class="card download-platform" aria-labelledby={`${platform.id}-heading`}>
           <h2 id={`${platform.id}-heading`}>{platform.title}</h2>
           {packages.length ? <>
-            <p>{platform.description}</p>
+            <p>{platform.id === 'android' && !googlePlay ? 'Choose an APK that matches your device.' : platform.description}</p>
             {platform.id === 'android' && googlePlay && <a class="btn" href={googlePlay.url}>Get it on Google Play ↗</a>}
             <ul class="download-packages">
               {packages.map((pkg, index) => <li>

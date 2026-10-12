@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
+import experimentalRelease from '../src/data/experimental-release.json' with {type: 'json'};
 import AxeBuilder from '@axe-core/playwright';
 for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 768, 1440]) {
   test(`download choices reflow and remain accessible ${colorScheme} ${width}`, async ({page}) => {
@@ -12,11 +13,14 @@ for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 
     expect(requests.some(url => /api.github.com|\.wasm/.test(url))).toBe(false);
   });
 }
-test('unpublished downloads do not advertise planned packages', async ({page}) => {
+test('experimental downloads expose public packages without claiming qualification', async ({page}) => {
   test.skip(releaseMetadata.manifest !== null, 'A qualified release is now available');
   await page.goto('/downloads/');
-  await expect(page.getByText('A verified all-platform release is not published here yet.', {exact: false})).toBeVisible();
-  await expect(page.locator('a[href*="/releases/download/"]')).toHaveCount(0);
+  await expect(page.getByRole('heading', {name: `Experimental release ${experimentalRelease.version}`})).toBeVisible();
+  await expect(page.locator('a[href*="/releases/download/"]')).toHaveCount(experimentalRelease.packages.length + experimentalRelease.sources.length);
+  await expect(page.locator('main')).toContainText('Full platform and online testing is still in progress');
+  await expect(page.locator('main')).not.toContainText('same qualified release');
+  for (const pkg of experimentalRelease.packages) await expect(page.locator(`a[href="${pkg.url}"]`)).toBeVisible();
   await expect(page.getByRole('link', {name: /Play in browser/}).last()).toHaveAttribute('href', 'https://app.glob2online.com/play/');
 });
 test('platform choices work with JavaScript disabled and keyboard navigation', async ({browser}) => {

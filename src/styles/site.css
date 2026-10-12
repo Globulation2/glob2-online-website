@@ -82,6 +82,9 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
 }
 .nav a:hover { background: var(--surface-3); }
 .nav a[aria-current='page'] { background: var(--accent); color: var(--accent-ink); box-shadow: 0 1px 0 var(--accent-edge); }
+.nav a.nav-download { background: var(--accent); color: var(--accent-ink); box-shadow: 0 1px 0 var(--accent-edge); }
+.nav a.nav-download:hover { background: var(--accent-hover); }
+.site-footer a.btn.primary { color: var(--accent-ink); }
 .header-end { margin-left: auto; display: flex; align-items: center; gap: var(--sp-2); }
 .header-play { box-shadow: none; }
 /* Returning players' way into the app: quieter than Play, on the same surface as the nav. */
