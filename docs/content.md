@@ -10,9 +10,9 @@ The migration manifest in content/migration-manifest.json records the audited wi
 
 ## Events and downloads
 
-Experimental prereleases may be listed before all-platform qualification when
+Published releases may be listed as experimental downloads before all-platform qualification when
 the maintainer explicitly selects them for early testing. Publish the existing
-release as a public GitHub prerelease, then run
+release publicly on GitHub (stable or prerelease), then run
 `node scripts/sync-experimental-release.mjs vVERSION` with Node 24.14+ and submit
 the website change through a normal PR. This imports the published package
 inventory, validates its exact tag/source commit, public URLs, sizes and GitHub

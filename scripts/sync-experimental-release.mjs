@@ -1,4 +1,4 @@
-// Explicit selection of a public prerelease; no qualification claims.
+// Explicit selection of a published public release; no qualification claims.
 import {readFile, writeFile, rename, unlink} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
@@ -10,7 +10,7 @@ export async function syncExperimentalRelease(tag, {fetcher = fetch, filename = 
   const response = await fetcher(`https://api.github.com/repos/Globulation2/glob2/releases/tags/${tag}`, {signal: AbortSignal.timeout(30000)});
   if (!response.ok) throw new Error(`Release request failed: ${response.status}`);
   const release = await response.json();
-  if (release.draft || release.prerelease !== true || release.tag_name !== tag) throw new Error('Experimental downloads require a public prerelease');
+  if (release.draft || typeof release.prerelease !== 'boolean' || release.tag_name !== tag) throw new Error('Experimental downloads require a published public release');
   const url = `https://github.com/Globulation2/glob2/releases/download/${tag}/package-inventory.json`;
   const assets = release.assets ?? [];
   const inventoryAssets = assets.filter(asset => asset.name === 'package-inventory.json');
