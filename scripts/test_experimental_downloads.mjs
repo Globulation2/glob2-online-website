@@ -20,7 +20,8 @@ test('public experimental import is idempotent and failures preserve selected do
   assert.equal(await syncExperimentalRelease(metadata.tag,{filename,fetcher:fixture()}),true);
   const original=await readFile(filename,'utf8');
   assert.equal(await syncExperimentalRelease(metadata.tag,{filename,fetcher:fixture()}),false);
-  for(const options of [{draft:true},{prerelease:false},{corrupt:true},{source:'a'.repeat(40)}]) {
+  assert.equal(await syncExperimentalRelease(metadata.tag,{filename,fetcher:fixture({prerelease:false})}),false);
+  for(const options of [{draft:true},{prerelease:null},{corrupt:true},{source:'a'.repeat(40)}]) {
    await assert.rejects(syncExperimentalRelease(metadata.tag,{filename,fetcher:fixture(options)}));
    assert.equal(await readFile(filename,'utf8'),original);
   }
