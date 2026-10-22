@@ -16,7 +16,7 @@ Firebase headers enforce CSP, nosniff and a referrer policy. The narrowly allowe
 
 ## Website releases
 
-The Website workflow resolves the latest design-system main SHA once, exports it to all later steps, validates content/types, builds, checks internal links, runs publisher tests and browser journeys, and uploads a checked dist artifact. All PRs run checks and produce build/browser artifacts, without cloud credentials or hosted previews. Outside collaborators require approval to run workflows, including returning contributors. Main publishes a candidate, smoke-tests its routes/headers, and promotes exactly that finalized version to live.
+The Website workflow resolves the latest design-system main SHA once, exports it to all later steps, validates content/types, builds, checks internal links, runs publisher tests and browser journeys, and uploads a checked dist artifact. All PRs run checks and produce build/browser artifacts, without cloud credentials or hosted previews. Browser dependency installation uses Ubuntu’s main archive with bounded network timeouts and retries to avoid stalled runner-mirror downloads. Outside collaborators require approval to run workflows, including returning contributors. Main publishes a candidate, smoke-tests its routes/headers, and promotes exactly that finalized version to live.
 
 Superseded runs are cancelled: a newer push to the same PR or non-main branch cancels the older Website run. Main runs deploy, so they finish once started; GitHub replaces a pending main run with a newer one, so only the newest queued main commit deploys. Rollback, rankings, availability and metadata workflows never cancel in progress. scripts/test_workflows.py enforces this.
 
