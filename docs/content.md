@@ -16,9 +16,10 @@ release publicly on GitHub (stable or prerelease), then run
 `node scripts/sync-experimental-release.mjs vVERSION` with Node 24.14+ and submit
 the website change through a normal PR. This imports the published package
 inventory, validates its exact tag/source commit, public URLs, sizes and GitHub
-SHA-256 digests, and saves `src/data/experimental-release.json`. The page labels
-these builds experimental and states that platform/online testing is incomplete.
-It makes no qualification or mobile store claim. A qualified manifest takes
+SHA-256 digests, and saves `src/data/experimental-release.json`. The Downloads
+page presents the selected version as a release with platform downloads and
+release notes. Internal import status does not determine visitor-facing copy;
+the page makes no qualification or mobile store claim. A qualified manifest takes
 precedence when available; reviewed withdrawals apply to the displayed tag.
 
 Event records in src/data/events.json require a unique slug, title, UTC start, optional end, IANA display timezone, format, organizer, status and rules. Registration links use HTTPS; published results are editorial. No events, registrations or standings should be fabricated. The provider interface currently reads Git content; actual bracket/registration backend integration is a separate feature.

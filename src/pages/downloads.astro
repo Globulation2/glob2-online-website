@@ -10,7 +10,6 @@ import channelData from '../data/download-channels.json';
 import type { DownloadPackage } from '../data/downloads-schema';
 const qualifiedManifest = publishedReleaseMetadata.manifest;
 const manifest = qualifiedManifest ?? experimentalReleaseSchema.parse(experimentalData);
-const experimental = !qualifiedManifest;
 const channels = channelsSchema.parse(channelData);
 if (channels.releaseTag && channels.releaseTag !== manifest?.tag) throw new Error('Reviewed channel updates must match the current release tag');
 const googlePlay = channels.withdrawnStores.includes('googlePlay') ? null : (channels.googlePlay ?? qualifiedManifest?.qualification.stores.googlePlay);
@@ -27,9 +26,9 @@ const size = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MiB`;
       <a class="btn" href={site.appUrl}>{downloads.browserLabel} ↗</a>
     </section>
     <section class="download-release section-space" aria-labelledby="release-heading">
-      <h2 id="release-heading">{experimental ? 'Experimental release' : 'Release'} {manifest.version}</h2>
-      <p>{experimental ? 'These builds are available for early testing. Full platform and online testing is still in progress; expect issues and follow-up releases.' : 'All packages below come from the same qualified release.'} <a href={manifest.releaseNotesUrl}>Read release notes ↗</a></p>
-      {experimental && <p>Found a problem? <a href={`${site.sourceUrl}/issues`}>Report it with your platform and game version ↗</a></p>}
+      <h2 id="release-heading">Release {manifest.version}</h2>
+      <p>Choose the download for your platform below. <a href={manifest.releaseNotesUrl}>Read release notes ↗</a></p>
+      <p>Found a problem? <a href={`${site.sourceUrl}/issues`}>Report it with your platform and game version ↗</a></p>
     </section>
     <div class="two-grid download-platforms">
       {platforms.map(platform => {
