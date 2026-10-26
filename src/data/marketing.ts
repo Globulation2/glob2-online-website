@@ -57,7 +57,7 @@ export const game: { title: string; description: string; sections: { title: stri
 
 export const downloads = {
   title: 'Download Globulation 2.',
-  description: 'Download a build for your platform, or start your colony in the browser. Experimental releases are labeled for early testing.',
+  description: 'Download Globulation 2 for Windows, macOS, Linux, or Android, or start your colony in the browser.',
   browserTitle: 'Browser early access',
   browserDescription: 'Open the game and start with Tutorial. Browser saves stay in the browser profile where you created them; export a backup before clearing site data.',
   browserLabel: 'Play in browser',

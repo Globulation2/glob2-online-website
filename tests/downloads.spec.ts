@@ -13,12 +13,12 @@ for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 
     expect(requests.some(url => /api.github.com|\.wasm/.test(url))).toBe(false);
   });
 }
-test('experimental downloads expose public packages without claiming qualification', async ({page}) => {
+test('downloads present the selected release with public package links', async ({page}) => {
   test.skip(releaseMetadata.manifest !== null, 'A qualified release is now available');
   await page.goto('/downloads/');
-  await expect(page.getByRole('heading', {name: `Experimental release ${experimentalRelease.version}`})).toBeVisible();
+  await expect(page.getByRole('heading', {name: `Release ${experimentalRelease.version}`, exact: true})).toBeVisible();
   await expect(page.locator('a[href*="/releases/download/"]')).toHaveCount(experimentalRelease.packages.length + experimentalRelease.sources.length);
-  await expect(page.locator('main')).toContainText('Full platform and online testing is still in progress');
+  await expect(page.locator('main')).not.toContainText(/experimental|early testing|testing is still in progress/i);
   await expect(page.locator('main')).not.toContainText('same qualified release');
   for (const pkg of experimentalRelease.packages) await expect(page.locator(`a[href="${pkg.url}"]`)).toBeVisible();
   await expect(page.getByRole('link', {name: /Play in browser/}).last()).toHaveAttribute('href', 'https://app.glob2online.com/play/');
