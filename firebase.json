@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "glob2-website-pharaoh-418820",
+    "site": "glob2-website-personal-20261027",
     "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,

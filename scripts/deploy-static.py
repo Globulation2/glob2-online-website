@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Deploy an already verified Astro dist to a Firebase channel. No secret files."""
 import argparse, gzip, hashlib, json, pathlib, subprocess, urllib.request, urllib.error, urllib.parse, re
-PROJECT='pharaoh-418820'
-SITE='glob2-website-pharaoh-418820'
+PROJECT='bradley-personal-20261027'
+SITE='glob2-website-personal-20261027'
 BASE='https://firebasehosting.googleapis.com/v1beta1/'
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, *args, **kwargs):
