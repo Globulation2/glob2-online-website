@@ -38,7 +38,7 @@ The tracked manifest records IDs, public object URLs, same-origin website paths,
 python3 scripts/upload-guide-media.py --source-dir artifacts/handbook/approved
 ```
 
-Use Node 24.14+ on PATH. The local publisher impersonates `glob2-website-media@pharaoh-418820.iam.gserviceaccount.com` with a short-lived token. Its custom role permits only object creation and reading under `guide-media/`; it cannot replace/delete objects. `scripts/guide-media-role.yaml` is the enduring role definition. The feed publisher retains its separate ratings-only permissions. The bucket IAM condition is `resource.name.startsWith("projects/_/buckets/glob2-website-public-pharaoh-418820/objects/guide-media/")`.
+Use Node 24.14+ on PATH. The local publisher impersonates `glob2-website-media@bradley-personal-20261027.iam.gserviceaccount.com` with a short-lived token. Its custom role permits only object creation and reading under `guide-media/`; it cannot replace/delete objects. `scripts/guide-media-role.yaml` is the enduring role definition. The feed publisher retains its separate ratings-only permissions. The bucket IAM condition is `resource.name.startsWith("projects/_/buckets/glob2-website-public-pharaoh-418820/objects/guide-media/")`.
 
 Upload new reviewed media locally before opening its article PR, so the PR build can download the manifest’s assets. The verified website workflow produces a `guide-media` artifact from staged media; it is available for subsequent publication verification or recovery.
 

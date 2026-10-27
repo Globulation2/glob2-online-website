@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 
 BUCKET = 'glob2-website-public-pharaoh-418820'
-IDENTITY = 'glob2-website-media@pharaoh-418820.iam.gserviceaccount.com'
+IDENTITY = 'glob2-website-media@bradley-personal-20261027.iam.gserviceaccount.com'
 
 def publish(manifest, source, workload_identity=False):
     # Share validation with the build; do not let a publication point at another bucket.
