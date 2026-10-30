@@ -17,11 +17,11 @@ test('malformed, unsupported and future snapshots fail', () => {
   assert.throws(() => validateFreshness({ ...feed('2026-10-02T16:00:00Z'), entries: null }, now), /schema/);
 });
 test('canonical app metadata detects a hostname regression', () => {
-  const origin = 'https://app.glob2online.com';
-  const instance = { origin, realtimeUrl: 'wss://app.glob2online.com/realtime', supportedSimVersions: [], authProviders: [] };
+  const origin = 'https://app.glob2.online';
+  const instance = { origin, realtimeUrl: 'wss://app.glob2.online/realtime', supportedSimVersions: [], authProviders: [] };
   validateInstance(instance, origin);
-  assert.throws(() => validateInstance({ ...instance, origin: 'https://glob2online.com' }, origin), /origin/);
-  assert.throws(() => validateInstance({ ...instance, realtimeUrl: 'ws://app.glob2online.com/realtime' }, origin), /endpoint/);
+  assert.throws(() => validateInstance({ ...instance, origin: 'https://glob2.online' }, origin), /origin/);
+  assert.throws(() => validateInstance({ ...instance, realtimeUrl: 'ws://app.glob2.online/realtime' }, origin), /endpoint/);
 });
 test('HTTP failures, redirects and bounded requests are enforced', async () => {
   let options;

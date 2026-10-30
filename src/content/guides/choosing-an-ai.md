@@ -16,7 +16,7 @@ Finish [your first colony](/learn/getting-started/) before starting here. That t
 
 ## Set up a practice duel
 
-Open [the browser game](https://app.glob2online.com/play/) and choose **Custom Game**.
+Open [the browser game](https://app.glob2.online/play/) and choose **Custom Game**.
 
 1. On **Map**, choose **Random map**.
 2. Set **Colonies** to **two**. For a compact practice map, set width and height to **128**.

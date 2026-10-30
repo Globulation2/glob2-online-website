@@ -22,7 +22,7 @@ async function runSmokeFixture(mode) {
    globalThis.fetch=async input=>{
     const url=new URL(input),route=url.pathname;counts[route]=(counts[route]??0)+1;
     if(route==='/this-page-does-not-exist/')return new Response('missing',{status:404});
-    if(['/j/ABCDEFGH','/matches/00000000-0000-4000-8000-000000000000','/players/00000000-0000-4000-8000-000000000000','/leaderboard','/maps','/api/v1/instance','/play/'].includes(route))return new Response(null,{status:301,headers:{location:'https://app.glob2online.com'+route+url.search}});
+    if(['/j/ABCDEFGH','/matches/00000000-0000-4000-8000-000000000000','/players/00000000-0000-4000-8000-000000000000','/leaderboard','/maps','/api/v1/instance','/play/'].includes(route))return new Response(null,{status:301,headers:{location:'https://app.glob2.online'+route+url.search}});
     if(route==='/'&&${JSON.stringify(mode)}==='propagation'&&counts[route]===1)return new Response('not ready',{status:404});
     if(route==='/'&&${JSON.stringify(mode)}==='invalid')return new Response('invalid page');
     if(route===${JSON.stringify(asset.path)})return new Response(Buffer.from(${JSON.stringify(bytes.toString('base64'))},'base64'));

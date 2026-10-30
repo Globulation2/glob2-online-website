@@ -6,7 +6,7 @@ This repository owns the public static site. The game, account system and multip
 
 Use Node24.14+ and `npm ci`. Run `npm run check`, `npm run build`, `node scripts/check-links.mjs`, `node --test scripts/test_monitor.mjs`, `python3 -m unittest discover -s scripts -p 'test_*.py' -v`, and `npm test`. Browser tests require `npx playwright install --with-deps chromium firefox webkit` on Linux. A built-site preview is `npm run preview`.
 
-Keep Astro static. Do not add SSR, account forms, game runtime downloads, WebSockets, analytics, or new service subscriptions without an explicit product request. Gameplay starts only after navigating to app.glob2online.com.
+Keep Astro static. Do not add SSR, account forms, game runtime downloads, WebSockets, analytics, or new service subscriptions without an explicit product request. Gameplay starts only after navigating to app.glob2.online.
 
 Content lives in src/content and structured data in src/data. Validate events, keep download URLs tied to public releases, and never invent activity, rankings, dates, or unsupported game capabilities. Ratings preserve the modern platform's authoritative rank, provisional flag and OpenSkill scale.
 

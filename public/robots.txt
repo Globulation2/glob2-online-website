@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /design/
-Sitemap: https://glob2online.com/sitemap-index.xml
+Sitemap: https://glob2.online/sitemap-index.xml
