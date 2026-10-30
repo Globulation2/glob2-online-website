@@ -2,7 +2,7 @@
 title: "Globulation 2 privacy policy"
 description: "Privacy for the website, game editions and official online service."
 sourceUrl: "https://github.com/Globulation2/glob2/blob/master/docs/mobile/privacy-policy.md"
-sourceSha256: "785b4793768046680c187c1e6bc0382b99e2fe8796ef66088df787f39ba231f1"
+sourceSha256: "5f6def593fd64631fd81a1016e3fbcbae53fb6d2f764c6ff5ea1640507a73799"
 ---
 
 This policy covers the public website at [glob2.online](https://glob2.online/),

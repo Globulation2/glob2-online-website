@@ -2,7 +2,7 @@
 title: "Globulation 2 terms and conditions"
 description: "Terms for the public website and official online service."
 sourceUrl: "https://github.com/Globulation2/glob2/blob/master/docs/mobile/terms.md"
-sourceSha256: "71b7ce6854515f14077efd4187151967cf624098711836316e8af511abb4531b"
+sourceSha256: "5b2e19e695f6d8f16c0b29af787239680bdb5c78451736e28eacd5efd947467a"
 ---
 
 Last updated: 10 October 2026.
