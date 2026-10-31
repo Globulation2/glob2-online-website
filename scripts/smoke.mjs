@@ -1,6 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {validateManifest, verifyAsset} from './stage-guide-media.mjs';
-import {fetchReleasedResource} from './fetch-released-media.mjs';
+import {fetchReleasedResource, fetchReleasedRedirect} from './fetch-released-media.mjs';
 const base=process.argv[2];if(!base?.startsWith('https://'))throw Error('HTTPS website URL required');
 let handbook;
 for(const route of ['/','/game/','/learn/','/community/','/competition/','/events/','/news/','/downloads/','/history/','/archive/','/search/','/privacy/','/terms/']) {
@@ -14,7 +14,7 @@ const missing=await fetch(new URL('/this-page-does-not-exist/',base),{redirect:'
 // The apex used to be the multiplayer app; its old paths must reach the app host.
 const app='https://app.glob2.online';
 for(const [route,codes] of [['/j/ABCDEFGH',[301]],['/matches/00000000-0000-4000-8000-000000000000',[301]],['/players/00000000-0000-4000-8000-000000000000',[301]],['/leaderboard',[301]],['/maps',[301]],['/api/v1/instance',[301]],['/play/?join=ABCDEFGH',[301,302]]]) {
- const response=await fetch(new URL(route,base),{redirect:'manual',signal:AbortSignal.timeout(15000)});
+ const response=await fetchReleasedRedirect(new URL(route,base),app+route,codes);
  const location=response.headers.get('location');
  if(!codes.includes(response.status)||location!==app+route)throw Error(`${route}: ${response.status} -> ${location}, expected ${app+route}`);
 }
