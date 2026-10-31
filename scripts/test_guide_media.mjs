@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { validateManifest, verifyAsset, stageMedia, bucket } from './stage-guide-media.mjs';
-import { fetchReleasedMedia } from './fetch-released-media.mjs';
+import { fetchReleasedMedia, fetchReleasedRedirect } from './fetch-released-media.mjs';
 const bytes = Buffer.from('a captured teaching image');
 const asset = { id:'test-image',path:'/guide-media/v1/test/image.webp',url:`https://storage.googleapis.com/${bucket}/guide-media/v1/test/image.webp`,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length,width:1440,height:900,caption:'An inn receiving wheat.',alt:'A worker delivering wheat to an inn.',kind:'image' };
 const runFile = promisify(execFile);
@@ -22,7 +22,7 @@ async function runSmokeFixture(mode) {
    globalThis.fetch=async input=>{
     const url=new URL(input),route=url.pathname;counts[route]=(counts[route]??0)+1;
     if(route==='/this-page-does-not-exist/')return new Response('missing',{status:404});
-    if(['/j/ABCDEFGH','/matches/00000000-0000-4000-8000-000000000000','/players/00000000-0000-4000-8000-000000000000','/leaderboard','/maps','/api/v1/instance','/play/'].includes(route))return new Response(null,{status:301,headers:{location:'https://app.glob2.online'+route+url.search}});
+    if(['/j/ABCDEFGH','/matches/00000000-0000-4000-8000-000000000000','/players/00000000-0000-4000-8000-000000000000','/leaderboard','/maps','/api/v1/instance','/play/'].includes(route))return new Response(null,{status:301,headers:{location:(${JSON.stringify(mode)}==='redirect-propagation'&&route==='/j/ABCDEFGH'&&counts[route]===1?'https://app.glob2online.com':'https://app.glob2.online')+route+url.search}});
     if(route==='/'&&${JSON.stringify(mode)}==='propagation'&&counts[route]===1)return new Response('not ready',{status:404});
     if(route==='/'&&${JSON.stringify(mode)}==='invalid')return new Response('invalid page');
     if(route===${JSON.stringify(asset.path)})return new Response(Buffer.from(${JSON.stringify(bytes.toString('base64'))},'base64'));
@@ -44,6 +44,27 @@ test('release CLI rejects successful invalid HTML without retrying',async()=>{
   assert.match(error.stderr,/invalid public page/);
   assert.equal(JSON.parse(error.stdout.match(/Requests (.*)/)[1])['/'],1);return true;
  });
+});
+test('release CLI waits for prior channel redirect configuration to converge',async()=>{
+ const {stdout}=await runSmokeFixture('redirect-propagation');
+ assert.match(stdout,/Old app paths redirect to the app host/);
+ const counts=JSON.parse(stdout.match(/Requests (.*)/)[1]);
+ assert.equal(counts['/j/ABCDEFGH'],2);assert.equal(counts['/maps'],1);
+});
+test('redirect propagation retries remain bounded and preserve the final wrong destination',async()=>{
+ let calls=0;const waits=[];
+ const response=await fetchReleasedRedirect('https://example.test/j/ABCDEFGH','https://app.glob2.online/j/ABCDEFGH',[301],{
+  fetcher:async(_url,options)=>{calls++;assert.equal(options.redirect,'manual');return new Response(null,{status:301,headers:{location:'https://wrong.example/j/ABCDEFGH'}})},
+  sleep:async ms=>waits.push(ms)
+ });
+ assert.equal(calls,5);assert.deepEqual(waits,[2000,5000,10000,20000]);
+ assert.equal(response.headers.get('location'),'https://wrong.example/j/ABCDEFGH');
+});
+test('redirect propagation does not retry denied access',async()=>{
+ const response=await fetchReleasedRedirect('https://example.test/j/ABCDEFGH','https://app.glob2.online/j/ABCDEFGH',[301],{
+  fetcher:async()=>new Response(null,{status:403}),sleep:async()=>assert.fail('must not retry denied access')
+ });
+ assert.equal(response.status,403);
 });
 test('release CLI rejects an index that would silently skip all chapter checks',async()=>{
  await assert.rejects(runSmokeFixture('empty-index'),error=>{
