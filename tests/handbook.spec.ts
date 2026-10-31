@@ -42,7 +42,7 @@ test('illustrated pilot delivers same-origin images and controlled clips', async
   await expect(clip).toHaveAttribute('controls', '');
   await expect(clip).toHaveAttribute('preload', 'none');
   await expect(clip).toHaveAttribute('poster', /^\/guide-media\/.+\.webp$/);
-  expect(requests.some(url => /\.wasm|app\.glob2online\.com/.test(url))).toBe(false);
+  expect(requests.some(url => /\.wasm|app\.glob2\.online/.test(url))).toBe(false);
   // preload is advisory: WebKit may probe media without playing it.
   expect(await clip.evaluate((element: HTMLVideoElement) => element.paused && element.currentTime === 0 && !element.autoplay)).toBe(true);
 });

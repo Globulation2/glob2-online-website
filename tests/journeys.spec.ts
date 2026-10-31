@@ -13,23 +13,23 @@ for(const scheme of ['light','dark'] as const) for(const route of routes) test(`
 test('homepage is lightweight and handoff explicit',async({page})=>{
  const requests:string[]=[];page.on('request',r=>requests.push(r.url()));
  await page.goto('/'); await expect(page.getByText(/free, open-source real-time strategy game/i).first()).toBeVisible();
- await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
- await expect(page.getByRole('link',{name:/Sign in for ranked play/})).toHaveAttribute('href','https://app.glob2online.com/signin');
+ await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2.online/play/');
+ await expect(page.getByRole('link',{name:/Sign in for ranked play/})).toHaveAttribute('href','https://app.glob2.online/signin');
  await expect(page.getByRole('navigation',{name:'Globulation 2 Online app'})).toHaveCount(0);
  const header=page.locator('header.site-header');
- await expect(header.getByRole('link',{name:'Sign in',exact:true})).toHaveAttribute('href','https://app.glob2online.com/signin');
- await expect(header.getByRole('link',{name:/^Play/})).toHaveAttribute('href','https://app.glob2online.com/play/');
+ await expect(header.getByRole('link',{name:'Sign in',exact:true})).toHaveAttribute('href','https://app.glob2.online/signin');
+ await expect(header.getByRole('link',{name:/^Play/})).toHaveAttribute('href','https://app.glob2.online/play/');
  const online=page.getByRole('navigation',{name:'Play online'});
- await expect(online.getByRole('link',{name:/^Leaderboards/})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
- await expect(online.getByRole('link',{name:/^Matches/})).toHaveAttribute('href','https://app.glob2online.com/matches');
- await expect(online.getByRole('link',{name:/^Maps/})).toHaveAttribute('href','https://app.glob2online.com/maps');
+ await expect(online.getByRole('link',{name:/^Leaderboards/})).toHaveAttribute('href','https://app.glob2.online/leaderboard');
+ await expect(online.getByRole('link',{name:/^Matches/})).toHaveAttribute('href','https://app.glob2.online/matches');
+ await expect(online.getByRole('link',{name:/^Maps/})).toHaveAttribute('href','https://app.glob2.online/maps');
  expect(requests.some(url=>/\.wasm|\/realtime|\/yog|\/router/.test(url))).toBe(false);
 });
 test('live data pages hand off to the app',async({page})=>{
  await page.goto('/competition/');
- await expect(page.getByRole('link',{name:/See live leaderboards/})).toHaveAttribute('href','https://app.glob2online.com/leaderboard');
+ await expect(page.getByRole('link',{name:/See live leaderboards/})).toHaveAttribute('href','https://app.glob2.online/leaderboard');
  await page.goto('/community/');
- await expect(page.getByRole('link',{name:/Browse maps in the online app/})).toHaveAttribute('href','https://app.glob2online.com/maps');
+ await expect(page.getByRole('link',{name:/Browse maps in the online app/})).toHaveAttribute('href','https://app.glob2.online/maps');
 });
 test('mobile and zoom reflow',async({page})=>{
  // Test layout independently of the separately covered background-video lifecycle.
@@ -107,11 +107,11 @@ test('new player can understand the game and reach a practical first session',as
  await page.getByRole('link',{name:'Read the first-session guide',exact:false}).click();
  await expect(page.locator('article')).toContainText('Tutorial');
  await expect(page.locator('article')).toContainText(/worker|wheat/i);
- await expect(page.locator('article a[href="https://app.glob2online.com/play/"]').first()).toBeVisible();
+ await expect(page.locator('article a[href="https://app.glob2.online/play/"]').first()).toBeVisible();
  await page.goto('/game/');
  await expect(page.getByRole('heading',{name:'Three kinds of glob'})).toBeVisible();
  for(const role of ['Workers','Explorers','Warriors']) await expect(page.getByRole('heading',{name:role,exact:true})).toBeVisible();
  await page.goto('/downloads/');
- await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2online.com/play/');
+ await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2.online/play/');
  await expect(page.getByRole('link',{name:'Check releases',exact:false})).toHaveAttribute('href','https://github.com/Globulation2/glob2/releases');
 });

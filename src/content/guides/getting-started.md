@@ -12,7 +12,7 @@ reviewedAgainst: "012d57694f790788f3fe3c5e2a08196d236b949a"
 
 Your first goal is a working colony: an **inn with food**, a **swarm producing the units you want**, and workers keeping both supplied. The first tutorial lets you learn this without an opponent interrupting you.
 
-This walkthrough uses the desktop browser controls. Open [the browser game](https://app.glob2online.com/play/), choose **Tutorial**, select **Introduction and Basics** in **Tutorial Campaign**, and choose **Start Mission**. Read each message before pressing **Space** to continue. Press **H** to revisit earlier messages. If you need time to inspect something, press **P** to pause, then press it again to resume. Resume before advancing the next tutorial message.
+This walkthrough uses the desktop browser controls. Open [the browser game](https://app.glob2.online/play/), choose **Tutorial**, select **Introduction and Basics** in **Tutorial Campaign**, and choose **Start Mission**. Read each message before pressing **Space** to continue. Press **H** to revisit earlier messages. If you need time to inspect something, press **P** to pause, then press it again to resume. Resume before advancing the next tutorial message.
 
 [[media:pilot-menu]]
 

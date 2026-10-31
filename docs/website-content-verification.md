@@ -43,3 +43,7 @@ The 2004 first-alpha date remains attributed to the existing original news archi
 ## Updating this evidence
 
 Before adding a platform, feature or activity promise, check both the relevant source/release and the public visitor journey. Record the URL, review date, observable behavior and limits. Keep raw release responses, screenshots and browser reports in ignored artifacts; approved explanatory game captures belong with the site's credited assets. Recheck source-specific guides when their referenced behavior changes.
+
+## Domain migration note — 2026-10-30
+
+The old-domain URLs above and in `src/data/guide-baseline.json` preserve the actual capture/verification origin. Maintained player links now target `https://app.glob2.online/`; those historical observations do not verify the migrated hostname.

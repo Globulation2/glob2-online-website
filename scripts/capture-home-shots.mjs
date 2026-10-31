@@ -11,7 +11,7 @@ await mkdir(out,{recursive:true});
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ viewport: { width: W, height: H } });
 try {
-await page.goto('https://app.glob2online.com/play/?renderer=webgl2', { waitUntil: 'domcontentloaded' });
+await page.goto('https://app.glob2.online/play/?renderer=webgl2', { waitUntil: 'domcontentloaded' });
 await page.waitForFunction(() => window.glob2Diagnostics?.snapshot().screen.includes('MainMenuScreen'), null, { timeout: 120000 });
 const state=()=>page.evaluate(() => glob2Diagnostics.snapshot());
 const dump=async()=>{const s=await state();console.log(s.screen,s.tick,JSON.stringify(Object.fromEntries(Object.entries(s.controls).map(([k,v])=>[k,(v.text??v.label??'')+(v.enabled?'':'(x)')]))));};

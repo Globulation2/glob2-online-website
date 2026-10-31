@@ -21,7 +21,7 @@ test('downloads present the selected release with public package links', async (
   await expect(page.locator('main')).not.toContainText(/experimental|early testing|testing is still in progress/i);
   await expect(page.locator('main')).not.toContainText('same qualified release');
   for (const pkg of experimentalRelease.packages) await expect(page.locator(`a[href="${pkg.url}"]`)).toBeVisible();
-  await expect(page.getByRole('link', {name: /Play in browser/}).last()).toHaveAttribute('href', 'https://app.glob2online.com/play/');
+  await expect(page.getByRole('link', {name: /Play in browser/}).last()).toHaveAttribute('href', 'https://app.glob2.online/play/');
 });
 test('platform choices work with JavaScript disabled and keyboard navigation', async ({browser}) => {
   const context = await browser.newContext({javaScriptEnabled: false}); const page = await context.newPage();

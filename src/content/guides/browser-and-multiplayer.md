@@ -17,7 +17,7 @@ sources:
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/docs/features/gameplay-recording.md"
 ---
 
-The browser game runs after you open [app.glob2online.com](https://app.glob2online.com/play/). The public website's handbook does not start the game itself. Use a desktop mouse and keyboard for these instructions, and click the game canvas to give it keyboard focus and activate audio.
+The browser game runs after you open [app.glob2.online](https://app.glob2.online/play/). The public website's handbook does not start the game itself. Use a desktop mouse and keyboard for these instructions, and click the game canvas to give it keyboard focus and activate audio.
 
 ## Choose the right starting mode
 

@@ -56,8 +56,8 @@ export async function request(url, fetcher = fetch) {
 }
 
 export async function monitor() {
-  const website = 'https://glob2online.com';
-  const app = 'https://app.glob2online.com';
+  const website = 'https://glob2.online';
+  const app = 'https://app.glob2.online';
   const checks = [
     ['Public website', async () => {
       const { response, body } = await request(`${website}/`);

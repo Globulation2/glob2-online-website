@@ -41,7 +41,7 @@ class PublisherTest(unittest.TestCase):
                 publisher.project_page(p, 'ranked-1v1', '6dbb6bfb', '2026-10-02T10:00:00Z')
 
     def test_optional_public_avatar_is_accepted_and_omitted_from_feed(self):
-        for avatar in (None, 'https://app.glob2online.com/api/v1/avatars/public-id'):
+        for avatar in (None, 'https://app.glob2.online/api/v1/avatars/public-id'):
             with self.subTest(avatar=avatar):
                 p = page()
                 p['entries'][0]['entity']['account']['avatarUrl'] = avatar

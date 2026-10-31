@@ -2,13 +2,13 @@
 title: "Globulation 2 terms and conditions"
 description: "Terms for the public website and official online service."
 sourceUrl: "https://github.com/Globulation2/glob2/blob/master/docs/mobile/terms.md"
-sourceSha256: "71b7ce6854515f14077efd4187151967cf624098711836316e8af511abb4531b"
+sourceSha256: "5b2e19e695f6d8f16c0b29af787239680bdb5c78451736e28eacd5efd947467a"
 ---
 
 Last updated: 10 October 2026.
 
-These terms cover the public website at glob2online.com and the official online
-service at app.glob2online.com, including optional paid and AI-assisted features
+These terms cover the public website at glob2.online and the official online
+service at app.glob2.online, including optional paid and AI-assisted features
 when offered. They apply from publication. If you do not agree, do not use the
 official online service. The game software remains subject to its own
 open-source licences; you can use offline features under those licences.
@@ -42,7 +42,7 @@ with the child's use of the online service.
 
 Your display name, profile photo, ratings, match history and replays, and content
 you publish may be visible to other people as described in the
-[privacy policy](https://glob2online.com/privacy/).
+[privacy policy](https://glob2.online/privacy/).
 Do not put private information in material intended for public access.
 
 Upload only content you have the right to share. You retain your rights in your
@@ -77,10 +77,10 @@ applicable law.
 
 ## Privacy and account deletion
 
-The [unified privacy policy](https://glob2online.com/privacy/) explains collection,
+The [unified privacy policy](https://glob2.online/privacy/) explains collection,
 public visibility, retention, access requests and deletion for the website,
 game editions and official online service. Registered players can download or
-delete their account at [the account page](https://app.glob2online.com/account).
+delete their account at [the account page](https://app.glob2.online/account).
 Guest players can link a sign-in method first or contact us.
 
 ## Software licences and other operators

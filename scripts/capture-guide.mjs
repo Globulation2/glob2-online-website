@@ -5,8 +5,8 @@ import { pathToFileURL } from 'node:url';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 
-export async function captureGuide({ scenario, output, url = 'https://app.glob2online.com/play/?threads=serial&renderer=software' }) {
-  if (new URL(url).origin !== 'https://app.glob2online.com') throw new Error('Capture must use the public browser game');
+export async function captureGuide({ scenario, output, url = 'https://app.glob2.online/play/?threads=serial&renderer=software' }) {
+  if (new URL(url).origin !== 'https://app.glob2.online') throw new Error('Capture must use the public browser game');
   await mkdir(output, { recursive: true });
   const events = [], failures = [], delivered = []; const started = Date.now();
   const baseline = JSON.parse(await readFile('src/data/guide-baseline.json', 'utf8'));

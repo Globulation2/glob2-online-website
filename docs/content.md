@@ -72,7 +72,7 @@ reproducible local option when concurrent Firefox runs hit timeouts.
 The game repository is authoritative: `docs/mobile/privacy-policy.md` is the
 unified policy and `docs/mobile/terms.md` contains the service terms. The website
 renders synchronized copies in `src/content/legal/` at
-`https://glob2online.com/privacy/` and `https://glob2online.com/terms/`. Frontmatter
+`https://glob2.online/privacy/` and `https://glob2.online/terms/`. Frontmatter
 records the source URL and SHA-256 of each original Markdown document.
 
 Use Node 24.14+ to sync and verify:

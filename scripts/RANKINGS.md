@@ -39,7 +39,7 @@ schedule; the website must show the timestamp and stale/unavailable state.
 
 ```sh
 python3 scripts/publish-rankings.py \
-  --api-origin https://app.glob2online.com \
+  --api-origin https://app.glob2.online \
   --ladder ranked-1v1 \
   --backend-revision DEPLOYED_BACKEND_COMMIT_HEX \
   --bucket YOUR_PUBLIC_FEED_BUCKET --object rankings/v1.json
