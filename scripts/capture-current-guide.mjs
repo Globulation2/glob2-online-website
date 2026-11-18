@@ -1,9 +1,9 @@
 /** Capture real public-game actions against a hash-qualified observed payload. */
 import { chromium } from '@playwright/test';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const defaultBaseline = new URL('./handbook-scenarios/observed-baseline.json', import.meta.url);
@@ -13,6 +13,14 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
   const url = new URL(baseline.url);
   if (url.origin !== 'https://app.glob2.online') throw Error('Use the public game origin');
   const directory = path.resolve(output);
+  const repository = fileURLToPath(new URL('../', import.meta.url));
+  if (!path.relative(repository, directory).startsWith(`artifacts${path.sep}`)) throw Error('Capture output must be an ignored artifacts subdirectory');
+  try {
+    await access(path.join(directory, 'capture.json'));
+    throw Error('A capture record already exists; choose a new output directory');
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
   await mkdir(directory, { recursive: true });
   const record = { baseline, started: new Date().toISOString(), viewport: { width: 1440, height: 900 }, events: [], packages: [], downloads: [], errors: [], complete: false };
   const pending = [];
@@ -32,7 +40,7 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
       const bytes = await response.body();
       const observed = { name, url: response.url(), status: response.status(), bytes: bytes.length, sha256: hash(bytes), etag: response.headers()['etag'] ?? null, delivery: 'Original public response bytes forwarded unchanged after integrity verification' };
       record.packages.push(observed);
-      if (observed.status !== 200 || observed.sha256 !== baseline.packages[name].sha256) throw Error(`Delivered package mismatch: ${name}`);
+      if (observed.status !== 200 || observed.bytes !== baseline.packages[name].bytes || observed.sha256 !== baseline.packages[name].sha256) throw Error(`Delivered package mismatch: ${name}`);
       const headers = { ...response.headers() };
       delete headers['content-encoding'];
       delete headers['content-length'];
