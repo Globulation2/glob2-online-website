@@ -373,3 +373,15 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 @media (max-width:700px) { .header-end { width:100%; margin-inline-start:0; } .language-options { inset-inline-start:0; inset-inline-end:auto; } }
 :root[dir='rtl'] .home .hero-online, :root[dir='rtl'] .brand-online, :root[dir='rtl'] .home .facts li, :root[dir='rtl'] h1, :root[dir='rtl'] h2, :root[dir='rtl'] h3, :root[dir='rtl'] .eyebrow { letter-spacing: normal; }
 code[dir='ltr'], pre[dir='ltr'] { direction: ltr; unicode-bidi: isolate; text-align: left; }
+
+/* Keep navigation on a deliberate row instead of orphaning utility controls.
+   The content width is capped, so even wide viewports need the same layout. */
+.site-header .wrap {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--sp-2) var(--sp-4);}
+.site-header .brand {justify-self:start;}
+.site-header .nav {grid-column:1 / -1;grid-row:2;order:initial;width:auto;justify-content:center;justify-self:center;}
+.site-header .header-end {grid-column:2;grid-row:1;margin:0;width:auto;flex-wrap:nowrap;}
+@media(max-width:700px) {
+  .site-header .wrap {grid-template-columns:minmax(0,1fr);}
+  .site-header .header-end {grid-column:1;grid-row:2;justify-content:flex-start;flex-wrap:wrap;}
+  .site-header .nav {grid-row:3;justify-self:stretch;}
+}
