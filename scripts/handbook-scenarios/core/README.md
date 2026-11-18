@@ -45,3 +45,24 @@ available. This is not completion of the Food lesson.
 The final brief Inn interruption is exploratory. The first applied-High run
 showed no stock decline before hauling was restored, so it does not establish
 food depletion or recovery. Inspect every rerun before drawing those conclusions.
+
+`interactive-practice.mjs` supports exploration through the same qualified
+capture helper. It accepts serialized JSON commands in the ignored capture
+output directory and returns a read-only diagnostic snapshot after each actual
+UI action. The accepted actions are inspect, control, key, click, scroll,
+screenshot, advance (1–120 normal ticks), and close. It does not accept JavaScript
+or write game state.
+
+Write `interactive-command.json` atomically with the next integer `sequence`
+and an `action`, then wait for that sequence in `interactive-response.json`
+before issuing another command. Repeating the most recently completed sequence is ignored;
+other out-of-order commands fail. Screenshot names use the helper's restricted naming
+rules. A rejected action ends the capture; inspect its error record instead of
+waiting for another acknowledgement. The close command lets the helper finalize
+footage and the capture record.
+
+An actual 100-command Food supply session on 18 November used this unchanged
+bridge and completed with 115 recorded events. Preserve the real command recipe,
+watcher source and source hashes with each session: an interactive capture is not
+execution of a fixed lesson scenario. Inspect actual pause state and acknowledge
+any settled optional briefing before acting on the map.
