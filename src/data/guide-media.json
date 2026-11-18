@@ -902,7 +902,8 @@
       "height": 900,
       "caption": "Settings \u2192 Controls separates game bindings from map-editor bindings; select Game for this handbook.",
       "alt": "Controls settings with Keyboard shortcuts, Game selected, Restore default shortcuts and individual binding rows.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "reference-settings-v2"
     },
     {
       "id": "reference-settings-detail",
@@ -914,7 +915,8 @@
       "height": 135,
       "caption": "The Game tab and Restore default shortcuts control sit above the individual bindings.",
       "alt": "Keyboard shortcuts section showing Game, Map editor and Restore default shortcuts.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "reference-settings-detail-v2"
     },
     {
       "id": "recovery-raid-loss",
@@ -2914,6 +2916,30 @@
       "height": 240,
       "caption": "Detail from the same result: On the way 0, Here 1, and Working 1/1. The Working arrows set the requested explorer count.",
       "alt": "Selected Exploration Flag sidebar detail with On the way 0, Here 1, Working 1/1 and its request arrows.",
+      "kind": "image"
+    },
+    {
+      "id": "reference-settings-v2",
+      "path": "/guide-media/v2/reference-controls/settings-game-bindings.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/reference-controls/settings-game-bindings.webp",
+      "sha256": "40dc7efd4f7065a42626bd77a1a117851dbccde51f63c9c30c5e7dbb53bddd05",
+      "bytes": 201334,
+      "width": 1440,
+      "height": 900,
+      "caption": "Settings \u2192 Controls, with Game selected. The current shortcut list shows Escape for the main menu and U for starting or stopping an upgrade.",
+      "alt": "Current Controls settings with Game selected, Restore default shortcuts, and rows for the main menu, upgrades and worker requests.",
+      "kind": "image"
+    },
+    {
+      "id": "reference-settings-detail-v2",
+      "path": "/guide-media/v2/reference-controls/settings-binding-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/reference-controls/settings-binding-detail.webp",
+      "sha256": "7b40217b59a9505627eedc434e4d0d95669d81483dd2e1357dcf44062cdc5e3e",
+      "bytes": 1102,
+      "width": 254,
+      "height": 100,
+      "caption": "Detail from the same capture: the Escape and U binding buttons. Their corresponding action rows appear in the full screenshot.",
+      "alt": "The current shortcut binding buttons read escape and u.",
       "kind": "image"
     }
   ]

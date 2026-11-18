@@ -1,10 +1,10 @@
 # Player handbook production
 
-The handbook teaches the public browser game through illustrated, actionable lessons. Research and captures support editorial review; articles remain focused on playing. The website stays static, and creator programming and map editing are outside this handbook.
+The handbook teaches Globulation 2 through illustrated, actionable lessons. Browser-specific flows use the actual public browser game; shared gameplay demonstrations may use an exact public native release when the platform is stated. Research and captures support editorial review; articles remain focused on playing. The website stays static, and creator programming and map editing are outside this handbook.
 
 ## Research and ownership
 
-Before an article is commissioned, map its player concepts to the matching engine source, AI configuration and visible game behavior. Use the deployed build's source revision, not an arbitrary development checkout. Record the served package checksum and verify the deployment record matches it. Reconcile source differences before reusing research for a later build.
+Before an article is commissioned, map its player concepts to the matching engine source, AI configuration and visible game behavior. Use the deployed build's source revision, not an arbitrary development checkout. Record the served package checksum and verify the deployment record matches it. Reconcile source differences before reusing research for a later build. If the exact deployed source cannot be identified, record a null source revision and qualify the actual delivered payload hashes plus observed actions. Never substitute a candidate checkout revision for deployment identity. Omit `reviewedAgainst` for those observed-only updates and identify older or candidate implementation links as source context.
 
 The coordinator maintains `src/data/guide-coverage.json`. Each concept has an article destination or an explicit reason for exclusion/deferment. Research briefs, experimental observations and temporary review notes live in ignored `artifacts/handbook/`. Assign disjoint article and artifact directories to authors. After the pilot workflow passes, authors may produce independent groups in parallel. Reviewers must not review their own articles.
 
@@ -63,3 +63,27 @@ The current `/learn/getting-started/` entry now follows the observed public brow
 The current browser menu reports 0.11.6.0, but its exact deployed source revision remains unverified. This narrow observed UI correction does not replace `guide-baseline.json` or qualify a new whole-handbook capture baseline. The demonstrated explorer arrived while the initial request was two; that request was reduced to one afterward. The next Build another Inn prompt was read, but the remaining four tasks were not completed or claimed as verified.
 
 The older inn/hospital walkthrough remains in a closed, Pagefind-ignored reference disclosure. Its source revision, media IDs, object URLs and byte hashes are preserved; captions and accessible descriptions now explicitly identify it as the earlier 0.11.0.0 tutorial, including in the lightbox. Older subsection labels use bold paragraphs to avoid adding obsolete steps to the current contents navigation or skipping heading levels. Existing other handbook lessons remain current published material with their own earlier provenance; this update does not refresh all 237 earlier assets.
+
+## Current handbook migration
+
+`scripts/handbook-scenarios/observed-baseline.json` qualifies the observed public browser payload separately from the retained earlier `src/data/guide-baseline.json`. It records menu version 0.11.6.0 and exact JavaScript/WASM bytes and SHA-256 hashes, with an unverified source revision. Current browser captures use 1440×900, WebGL2 and the fully loaded HD artwork pack. Native demonstrations identify the exact public release, source and artifact separately; they do not establish identical browser behavior.
+
+| Chapter | Completed bounded update | Media/provenance status |
+| --- | --- | --- |
+| Control reference | Actual Settings→Controls→Keyboard shortcuts, Game bindings and binding-editor Cancel; current U label is Start/Stop Upgrade | Two reviewed v2 images, including a genuine binding detail crop, uploaded and public GET byte/hash verified; earlier two v1 records retain their original objects/digests and are marked `supersededBy` |
+| Choosing an AI opponent | The actual browser selector lists Econo - Easy (1310); removed the obsolete attribution of “No warriors” to its current label | Text correction only; existing illustrations remain explicitly qualified until the current selector family is integrated |
+
+Preserve teaching depth when replacing a family: match actual actions, counter values and outcomes, and keep useful motion demonstrations or record a reviewed replacement. A new generic scene is not sufficient evidence of a refreshed lesson. Replace source markers only after independent review, completed immutable upload and fresh public byte/hash readback. Older objects are never overwritten; staged-but-superseded metadata is retained while the partial migration is reconciled.
+
+### Repeat the reference-controls capture
+
+The first v2 reference-controls pair was captured interactively through Playwright MCP, not generated by the generic capture helper. Its ignored `artifacts/handbook-author-controls-reference/actions.json` records the real action sequence, and `runtime-proof.json` records fresh public payload hashes and control labels. To reproduce the same panel:
+
+1. Create an isolated browser tab at `https://app.glob2.online/play/?threads=serial&renderer=webgl2`, set 1440×900, and wait for the renderer and HD artwork pack to be ready.
+2. If the first-run Introduction offer is present, use `intro/menu` (Go back to main menu). From the main menu use `menu/6` (Settings), then `nav.4` (Controls).
+3. Use Game in Keyboard shortcuts (`keys.mode.0`); it was already selected by default in the original isolated session. Move the pointer to 950,610 and scroll down 600px. Wait until `keys.binding.3` (escape) is visibly available.
+4. Capture the full 1440×900 frame. The original shows the Game/Map editor tabs, Restore default shortcuts, and the Escape/U/worker-request rows. The detail is a genuine 254×100 crop at 865,430 from that same frame, encoded as WebP quality 92/method 6.
+5. Open `keys.binding.3`, verify the editor offers Save shortcut, Remove shortcut and Cancel, then use `binding.cancel`. Confirm that the escape binding is unchanged. The published image was captured before opening this editor.
+6. Fetch the public `index.js` and `index.wasm` payloads and compare bytes/SHA-256 with the observed baseline before accepting a new capture. Preserve source revision as unknown unless deployment identity is independently established. New world animation frames can differ; create new immutable paths rather than replacing the published image bytes.
+
+The reference capture does not change an account, multiplayer service, match state or saved shortcut. Subsequent maintained capture scenarios can reproduce these interactions, but their outputs must keep their own action and integrity records rather than being attributed to the original MCP session.

@@ -6,8 +6,7 @@ tags: ["practice", "opponents", "AI", "setup"]
 order: 1
 group: "ai"
 prerequisites: ["getting-started"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title": "Native AI names, selector and difficulty cohort", "url": "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/AINames.cpp"}, {"title": "Custom game controls", "url": "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/game/screens/CustomGameScreen.cpp"}, {"title": "Native opponent implementations", "url": "https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai"}]
+sources: [{"title": "Current browser AI selector, observed 18 November 2026", "url": "https://app.glob2.online/play/"}, {"title": "Earlier source context: native AI names and difficulty cohort", "url": "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/AINames.cpp"}, {"title": "Earlier source context: custom game controls", "url": "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/game/screens/CustomGameScreen.cpp"}, {"title": "Earlier source context: native opponents", "url": "https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai"}]
 ---
 
 An AI practice match lets you learn one problem at a time: keeping a colony supplied, spotting a change in the opponent's army, or surviving an attack without losing your food deliveries. Choose the opponent for the lesson you want to practice, then keep the setup simple enough to understand what happened.
@@ -44,6 +43,8 @@ The controller choice matters. **AI** makes that colony your computer-controlled
 
 ## Choose the opponent by name
 
+The selector wording was checked in the current browser game on 18 November 2026. The earlier illustrations below are awaiting replacement and can show older labels.
+
 Open the AI selector in the other colony's row. The eight native opponents are **Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, and Maxima**. Choose **Numbi** for a first practice duel.
 
 :::media-group
@@ -75,7 +76,7 @@ Use the labels to choose a starting challenge, then judge the match itself. Food
 | Cabino | Protect feeding, healing and training services while managing several attack targets. |
 | Maxima | Compare force, supply and routes before committing to a fight. |
 
-**Econo's “No warriors” label does not mean an empty or harmless colony.** It produces explorers, and trained explorers can threaten other colonies. Use it to practice development and reconnaissance while still paying attention to hostile activity.
+**Econo's current selector entry is “Econo - Easy (1310)”.** It produces explorers, and trained explorers can threaten other colonies. Use it to practice development and reconnaissance while still paying attention to hostile activity.
 
 **Inactive** is also listed, but it issues no AI orders. It can give you a quiet colony for a comparison; it does not teach defending against an AI attack.
 
