@@ -1,0 +1,312 @@
+{
+  "observed": "2026-11-18",
+  "context": "Current prepared Food supply practice lesson, actual public browser0.11.6.0; paused HUD states at2513. Normal simulation and real UI actions only.",
+  "sourceRevision": null,
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 41.397,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureRecord": "current-controls-food-high-2/capture.json",
+  "captureRecordSha256": "11575e06ee5821333d6fb4a0c85eb798679de9c11283da9f8edada45b950535c",
+  "events": 79,
+  "packages": [
+    {
+      "name": "index.js",
+      "url": "https://app.glob2.online/play/index.js",
+      "status": 200,
+      "bytes": 1846033,
+      "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+      "etag": "\"dmy2mgrwri8s4ota\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.wasm",
+      "url": "https://app.glob2.online/play/index.wasm",
+      "status": 200,
+      "bytes": 29604918,
+      "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+      "etag": "\"dmy2mgmqzryb3rcso\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.js",
+      "url": "https://app.glob2.online/play/index.js",
+      "status": 200,
+      "bytes": 1846033,
+      "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+      "etag": "\"dmy2mgrwri8s4ota\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.wasm",
+      "url": "https://app.glob2.online/play/index.wasm",
+      "status": 200,
+      "bytes": 29604918,
+      "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+      "etag": "\"dmy2mgmqzryb3rcso\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    }
+  ],
+  "method": "Full genuine PNG or declared crop bounds[left,top,right,bottom], RGB WebP92 method6; no paint or synthetic content.",
+  "assets": [
+    {
+      "candidate": "controls-inn-v3.webp",
+      "original": "controls-supplied-inn.png",
+      "originalSha256": "70f3446f1f2968feb14c69e559b407ed61e078a30f406c2a8404f56749d17414",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 235458,
+      "sha256": "20c35dc29147809fb27dd50ccff9881d9b4b90e0e6f57666dfa5fca64a3f4ec9",
+      "caption": "The prepared Food supply practice colony, paused with its existing Inn selected.",
+      "alt": "The selected Inn shows HP 200/200, Inside 0/4, Working 0/2 and Food 10/10.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-inn-detail-v3.webp",
+      "original": "controls-supplied-inn.png",
+      "originalSha256": "70f3446f1f2968feb14c69e559b407ed61e078a30f406c2a8404f56749d17414",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 7258,
+      "sha256": "307db63236a004ede3f05d3e586add06908720d30c39d603d4e046c48a0b2716",
+      "caption": "Detail: Inside 0/4, Working 0/2 and Food 10/10 on the existing Inn.",
+      "alt": "Inn sidebar detail with health, occupants, staffing request, priority and stored food.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-worker-v3.webp",
+      "original": "controls-selected-worker.png",
+      "originalSha256": "057db407860acd2ad1eb46d20a64a9d9448e445faf3d4d46e2e5fd6a72827969",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 221514,
+      "sha256": "f14f41506432e15c4ad9d9cc3d389b42d5dc5d100acae33cd8fb8ad5b23eb9d9",
+      "caption": "A selected worker has 200/200 HP and 69% Food; it is not carrying anything in this paused frame.",
+      "alt": "Worker information shows health, food, carrying state, current speed and training levels.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-worker-detail-v3.webp",
+      "original": "controls-selected-worker.png",
+      "originalSha256": "057db407860acd2ad1eb46d20a64a9d9448e445faf3d4d46e2e5fd6a72827969",
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5432,
+      "sha256": "1beb38d91aec6c20aa40c725a52939516815aa5d6a5b04d57cc04e20cb19486c",
+      "caption": "Detail: the selected worker’s health, food, carrying state and training.",
+      "alt": "Worker sidebar with HP 200/200, Food 69%, Not carrying anything, Walk and Build levels.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-statistics-v3.webp",
+      "original": "controls-statistics.png",
+      "originalSha256": "15e205456c3f337469f72cf26b9eb5a6ba94d4f86f898fe5cd5362d31bf3756d",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 233704,
+      "sha256": "658f3931ca1a5250a5176656402fa57fe656cdd26d131cabe8245e5b9e27dfb3",
+      "caption": "Statistics now groups colony measurements into topics and includes an inline population chart.",
+      "alt": "The Statistics Overview panel shows Population 13, population growth, an inline chart and Open full history.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-overlays-v3.webp",
+      "original": "controls-map-overlays.png",
+      "originalSha256": "969d1b981a417110e7ca7ca7b322e068edeedf7e3dd69a1b6bbfd9a54f581076",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 218986,
+      "sha256": "c261742e2b0b522eff9d6cb41a047d229fb7fe27cc2b1ed569b090370e44d34b",
+      "caption": "The Map overlays panel offers Starving Map, Wounded Units Map, Defense Map and Fertility Map.",
+      "alt": "Current map overlay controls, separate from the Statistics topic and history controls.",
+      "tick": 2513
+    },
+    {
+      "candidate": "controls-history-v3.webp",
+      "original": "controls-population-history.png",
+      "originalSha256": "6550bc949a30360303422c7ee124355ae7b4144a4af6cebe941433fff0edd66a",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 175474,
+      "sha256": "a4482585d85b656e101a272ac165c8e0574e95a5fee533e6cc9ecd21337282f3",
+      "caption": "Open full history expands the population chart; Details and Close remain available.",
+      "alt": "The expanded Population history chart is open over the paused colony, with Details and Close buttons.",
+      "tick": 2513
+    }
+  ],
+  "limits": [
+    "Actual Worker Food69% differs from prior fallback candidate61%; captions updated.",
+    "Statistics and Map overlays remain separate active panels; no unresolved Health interpretation included."
+  ],
+  "registeredAssets": [
+    {
+      "sha256": "20c35dc29147809fb27dd50ccff9881d9b4b90e0e6f57666dfa5fca64a3f4ec9",
+      "bytes": 235458,
+      "width": 1440,
+      "height": 900,
+      "caption": "The prepared Food supply practice colony, paused with its existing Inn selected.",
+      "alt": "The selected Inn shows HP 200/200, Inside 0/4, Working 0/2 and Food 10/10.",
+      "id": "controls-inn-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-inn-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-inn-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "307db63236a004ede3f05d3e586add06908720d30c39d603d4e046c48a0b2716",
+      "bytes": 7258,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail: Inside 0/4, Working 0/2 and Food 10/10 on the existing Inn.",
+      "alt": "Inn sidebar detail with health, occupants, staffing request, priority and stored food.",
+      "id": "controls-inn-detail-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-inn-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-inn-detail-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "f14f41506432e15c4ad9d9cc3d389b42d5dc5d100acae33cd8fb8ad5b23eb9d9",
+      "bytes": 221514,
+      "width": 1440,
+      "height": 900,
+      "caption": "A selected worker has 200/200 HP and 69% Food; it is not carrying anything in this paused frame.",
+      "alt": "Worker information shows health, food, carrying state, current speed and training levels.",
+      "id": "controls-worker-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-worker-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-worker-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "1beb38d91aec6c20aa40c725a52939516815aa5d6a5b04d57cc04e20cb19486c",
+      "bytes": 5432,
+      "width": 192,
+      "height": 260,
+      "caption": "Detail: the selected worker’s health, food, carrying state and training.",
+      "alt": "Worker sidebar with HP 200/200, Food 69%, Not carrying anything, Walk and Build levels.",
+      "id": "controls-worker-detail-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-worker-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-worker-detail-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "658f3931ca1a5250a5176656402fa57fe656cdd26d131cabe8245e5b9e27dfb3",
+      "bytes": 233704,
+      "width": 1440,
+      "height": 900,
+      "caption": "Statistics now groups colony measurements into topics and includes an inline population chart.",
+      "alt": "The Statistics Overview panel shows Population 13, population growth, an inline chart and Open full history.",
+      "id": "controls-statistics-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-statistics-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-statistics-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "c261742e2b0b522eff9d6cb41a047d229fb7fe27cc2b1ed569b090370e44d34b",
+      "bytes": 218986,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Map overlays panel offers Starving Map, Wounded Units Map, Defense Map and Fertility Map.",
+      "alt": "Current map overlay controls, separate from the Statistics topic and history controls.",
+      "id": "controls-overlays-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-overlays-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-overlays-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "a4482585d85b656e101a272ac165c8e0574e95a5fee533e6cc9ecd21337282f3",
+      "bytes": 175474,
+      "width": 1440,
+      "height": 900,
+      "caption": "Open full history expands the population chart; Details and Close remain available.",
+      "alt": "The expanded Population history chart is open over the paused colony, with Details and Close buttons.",
+      "id": "controls-history-v3",
+      "path": "/guide-media/v3/controls-and-hud/controls-history-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/controls-and-hud/controls-history-v3.webp",
+      "kind": "image"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "controls-inn-v3",
+      "status": 200,
+      "bytes": 235458,
+      "sha256": "20c35dc29147809fb27dd50ccff9881d9b4b90e0e6f57666dfa5fca64a3f4ec9"
+    },
+    {
+      "id": "controls-inn-detail-v3",
+      "status": 200,
+      "bytes": 7258,
+      "sha256": "307db63236a004ede3f05d3e586add06908720d30c39d603d4e046c48a0b2716"
+    },
+    {
+      "id": "controls-worker-v3",
+      "status": 200,
+      "bytes": 221514,
+      "sha256": "f14f41506432e15c4ad9d9cc3d389b42d5dc5d100acae33cd8fb8ad5b23eb9d9"
+    },
+    {
+      "id": "controls-worker-detail-v3",
+      "status": 200,
+      "bytes": 5432,
+      "sha256": "1beb38d91aec6c20aa40c725a52939516815aa5d6a5b04d57cc04e20cb19486c"
+    },
+    {
+      "id": "controls-statistics-v3",
+      "status": 200,
+      "bytes": 233704,
+      "sha256": "658f3931ca1a5250a5176656402fa57fe656cdd26d131cabe8245e5b9e27dfb3"
+    },
+    {
+      "id": "controls-overlays-v3",
+      "status": 200,
+      "bytes": 218986,
+      "sha256": "c261742e2b0b522eff9d6cb41a047d229fb7fe27cc2b1ed569b090370e44d34b"
+    },
+    {
+      "id": "controls-history-v3",
+      "status": 200,
+      "bytes": 175474,
+      "sha256": "a4482585d85b656e101a272ac165c8e0574e95a5fee533e6cc9ecd21337282f3"
+    }
+  ],
+  "scope": "Seven HUD stills at paused tick2513 in prepared Food supply practice. Existing Inn10/10Food,0/4Inside,0/2Working; selected Worker69%Food; Population13. Later completed new Inn readings belong to a distinct construction family. No whole-colony Health formula or native/browser source parity inferred."
+}

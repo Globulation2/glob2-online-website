@@ -1,6 +1,6 @@
 ---
 title: "Choosing an AI opponent"
-description: "Set up a practice duel, understand the opponent labels, and choose a useful next challenge from the eight native AIs."
+description: "Set up a practice duel, understand the opponent labels, and choose a useful next challenge from the eight built-in AIs."
 locale: "en"
 tags: ["practice", "opponents", "AI", "setup"]
 order: 1
@@ -23,9 +23,9 @@ Open [the browser game](https://app.glob2.online/play/) and choose **Custom Game
 4. Open **Players & Teams**. Keep your colony's controller set to **You** and the other colony's controller set to **AI**.
 5. Keep the colonies on different teams. A two-colony free-for-all is a straightforward duel.
 
-[[media:choosing-ai-map]]
+[[media:choosing-ai-map-v3]]
 
-[[media:choosing-ai-players]]
+[[media:choosing-ai-players-v3]]
 
 :::note
 
@@ -35,31 +35,31 @@ The controller choice matters. **AI** makes that colony your computer-controlled
 
 :::media-group
 
-[[media:choosing-ai-controller]]
+[[media:choosing-ai-controller-v3]]
 
-[[media:choosing-ai-controller-detail]]
+[[media:choosing-ai-controller-detail-v3]]
 
 :::
 
 ## Choose the opponent by name
 
-The selector wording was checked in the current browser game on 18 November 2026. The earlier illustrations below are awaiting replacement and can show older labels.
+The selector and setup illustrations were checked in the public browser game on 18 November 2026, with version 0.11.6.0 shown in its menu. The map is one ready 128×128, two-colony Lava shield example; choose and inspect the landscape for your own practice.
 
-Open the AI selector in the other colony's row. The eight native opponents are **Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, and Maxima**. Choose **Numbi** for a first practice duel.
+Open the AI selector in the other colony's row. The eight built-in opponents are **Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, and Maxima**. Choose **Numbi** for a first practice duel.
 
 :::media-group
 
-[[media:choosing-ai-roster]]
+[[media:choosing-ai-roster-v3]]
 
-[[media:choosing-ai-roster-detail]]
+[[media:choosing-ai-roster-detail-v3]]
 
 :::
 
-The small information button beside the selector opens the opponent descriptions. You can browse the names there and use the **Use** button to select one, or return with **Back**. Read the description to decide what to watch; keep scouting during the match to see what this opponent actually built on your map.
+The information button beside the selector opens **AI strategy & counterplay**. Browse the names on its left, then use **Use** followed by the opponent name to select it, or return with **Back**. The panel scrolls: read beyond the visible top section when you need more detail. Use the description to decide what to watch, then scout during play to see what this opponent actually builds on your map.
 
-[[media:choosing-ai-info]]
+[[media:choosing-ai-info-v3]]
 
-The selector's **Easy**, **Medium**, and **Hard** labels summarize an offline comparison between native AIs. The numbers beside them belong to that comparison. They are separate from the online player ladder and its **OpenSkill** rankings.
+The selector's **Easy**, **Medium**, and **Hard** labels summarize an offline comparison between built-in AIs. The numbers beside them belong to that comparison. They are separate from the online player ladder and its **OpenSkill** rankings.
 
 Use the labels to choose a starting challenge, then judge the match itself. Food access, travel distance, water, available room and your decisions can make two games against the same AI feel quite different. An Easy opponent can still destroy an unfinished or starving colony.
 
@@ -84,7 +84,7 @@ Use the labels to choose a starting challenge, then judge the match itself. Food
 
 On **Game Rules**, choose **Standard**. Check the setup, then choose **Play this map** once the preview is ready.
 
-[[media:choosing-ai-standard]]
+[[media:choosing-ai-standard-v3]]
 
 Standard keeps ordinary feeding, production, construction and combat needs in play. Disabling hunger, training or resource growth changes the decisions you are practicing. Learn that change deliberately once you can manage the ordinary loop.
 

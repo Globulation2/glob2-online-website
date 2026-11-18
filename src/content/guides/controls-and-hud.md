@@ -32,9 +32,9 @@ Left-click a building or glob to inspect it. Selection exposes information and t
 
 :::media-group
 
-[[media:controls-inn-v2]]
+[[media:controls-inn-v3]]
 
-[[media:controls-inn-detail-v2]]
+[[media:controls-inn-detail-v3]]
 
 :::
 
@@ -53,13 +53,13 @@ On a selected building, look for these distinct readings:
 
 A building does not show every row: a construction site needs materials, an inn supplies meals, and a swarm creates units. Read the labels rather than transferring the meaning of a bar from one building to another.
 
-On a selected glob, inspect nutrition, health, abilities, and current activity. Low nutrition calls for reachable food. Lost health calls for healing as well. A worker briefly leaving a job to eat is different from a worker being unable to reach that job at all. The selected worker below shows **HP 200/200**, **Food 61%**, and **Not carrying anything** in this paused frame.
+On a selected glob, inspect nutrition, health, abilities, and current activity. Low nutrition calls for reachable food. Lost health calls for healing as well. A worker briefly leaving a job to eat is different from a worker being unable to reach that job at all. The selected worker below shows **HP 200/200**, **Food 69%**, and **Not carrying anything** in this paused frame.
 
 :::media-group
 
-[[media:controls-worker-v2]]
+[[media:controls-worker-v3]]
 
-[[media:controls-worker-detail-v2]]
+[[media:controls-worker-detail-v3]]
 
 :::
 
@@ -86,11 +86,11 @@ The selected-building **Working** row and the swarm's production mix solve diffe
 
 Clear the selection, then choose the **Statistics** icon below the minimap. The current panel has topic buttons: **Overview**, **Colony**, **Economy**, **Military**, **World**, and **Game engine performance**. Use a topic to find the measurement relevant to your question.
 
-[[media:controls-statistics-v2]]
+[[media:controls-statistics-v3]]
 
 For a first example, choose **Population** in Overview. Its current value and an inline history chart appear in the sidebar. In this prepared colony, the selected reading is **Population 13**. Choose **Open full history** to expand the chart; **Details** offers its explanation and **Close** returns to the panel.
 
-[[media:controls-history-v2]]
+[[media:controls-history-v3]]
 
 Use history to answer a specific question. Did population grow while food stocks fell? Did an interruption coincide with stalled construction? Pair the measurement with a visible cause on the map. Inspect the definition and units before interpreting a percentage or a rate; an individual glob's HP and Food remain direct checks when that glob needs help.
 
@@ -98,7 +98,7 @@ Use history to answer a specific question. Did population grow while food stocks
 
 **Map overlays** is a separate sidebar view, opened with the fourth icon below the minimap. It is not the history chart. Its controls include **Starving Map**, **Wounded Units Map**, **Defense Map**, and **Fertility Map**.
 
-[[media:controls-overlays-v2]]
+[[media:controls-overlays-v3]]
 
 Use an overlay to locate an area worth inspecting, then return to the affected globs, buildings and routes. An overlay changes what the map shows; it does not feed a hungry glob, heal an injury, or assign more workers. The example shows all four boxes unchecked. Compare an overlay with the selected glob’s HP, Food and current activity before deciding what to change.
 

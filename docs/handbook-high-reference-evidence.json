@@ -1,0 +1,153 @@
+{
+  "observed": "2026-11-18T22:46:20.421Z",
+  "captureRecord": "current-reference-controls-high-1/capture.json",
+  "captureRecordSha256": "d6abc0eed45f9ccb4d8c51ce29f8002a52945916db6ef40f8a416af18f6ce04d",
+  "complete": true,
+  "errors": [],
+  "events": 24,
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 38.739,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "packages": [
+    {
+      "name": "index.js",
+      "url": "https://app.glob2.online/play/index.js",
+      "status": 200,
+      "bytes": 1846033,
+      "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+      "etag": "\"dmy2mgrwri8s4ota\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.wasm",
+      "url": "https://app.glob2.online/play/index.wasm",
+      "status": 200,
+      "bytes": 29604918,
+      "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+      "etag": "\"dmy2mgmqzryb3rcso\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.js",
+      "url": "https://app.glob2.online/play/index.js",
+      "status": 200,
+      "bytes": 1846033,
+      "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+      "etag": "\"dmy2mgrwri8s4ota\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    },
+    {
+      "name": "index.wasm",
+      "url": "https://app.glob2.online/play/index.wasm",
+      "status": 200,
+      "bytes": 29604918,
+      "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+      "etag": "\"dmy2mgmqzryb3rcso\"",
+      "delivery": "Original public response bytes forwarded unchanged after integrity verification"
+    }
+  ],
+  "scenario": "scripts/handbook-scenarios/reference-controls.mjs",
+  "method": "Genuine fullframe plus declared crop, WebP quality92 method6. Actual Escape editor opened and cancelled, unchanged binding verified; no settings changed except supported High-resolution qualification.",
+  "assets": [
+    {
+      "id": "reference-settings-v3",
+      "path": "/guide-media/v3/reference-controls/settings-game-bindings-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/reference-controls/settings-game-bindings-v3.webp",
+      "sha256": "7d28b7908b4784ffaea930d63c724123c3cff9063ff4d37cc3c6dd78fa7ae029",
+      "bytes": 225462,
+      "width": 1440,
+      "height": 900,
+      "caption": "Settings → Controls, with Game selected. The current shortcut list shows Escape for the main menu and U for starting or stopping an upgrade.",
+      "alt": "Current Controls settings with Game selected, Restore default shortcuts, and rows for the main menu and upgrades.",
+      "kind": "image",
+      "candidate": "settings-game-bindings-v3.webp",
+      "source": "reference-settings.png",
+      "sourceSha256": "18d8f819c20f191bba7b9cfe295d90b5fe63d62aabc6b489714c56fba88d4abd",
+      "cropBounds": null
+    },
+    {
+      "id": "reference-settings-detail-v3",
+      "path": "/guide-media/v3/reference-controls/settings-binding-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/reference-controls/settings-binding-detail-v3.webp",
+      "sha256": "7982adbb819317a87f7338eef40116f102e9100e1be22c7d91a44c264cc3795c",
+      "bytes": 1134,
+      "width": 254,
+      "height": 100,
+      "caption": "Detail from the same capture: the Escape and U binding buttons. Their corresponding action rows appear in the full screenshot.",
+      "alt": "The current shortcut binding buttons read escape and u.",
+      "kind": "image",
+      "candidate": "settings-binding-detail-v3.webp",
+      "source": "reference-settings.png",
+      "sourceSha256": "18d8f819c20f191bba7b9cfe295d90b5fe63d62aabc6b489714c56fba88d4abd",
+      "cropBounds": [
+        865,
+        635,
+        1119,
+        735
+      ]
+    }
+  ],
+  "registeredAssets": [
+    {
+      "id": "reference-settings-v3",
+      "sha256": "7d28b7908b4784ffaea930d63c724123c3cff9063ff4d37cc3c6dd78fa7ae029",
+      "bytes": 225462,
+      "width": 1440,
+      "height": 900,
+      "caption": "Settings → Controls, with Game selected. The current shortcut list shows Escape for the main menu and U for starting or stopping an upgrade.",
+      "alt": "Current Controls settings with Game selected, Restore default shortcuts, and rows for the main menu and upgrades.",
+      "path": "/guide-media/v3/reference-controls/settings-game-bindings-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/reference-controls/settings-game-bindings-v3.webp",
+      "kind": "image"
+    },
+    {
+      "id": "reference-settings-detail-v3",
+      "sha256": "7982adbb819317a87f7338eef40116f102e9100e1be22c7d91a44c264cc3795c",
+      "bytes": 1134,
+      "width": 254,
+      "height": 100,
+      "caption": "Detail from the same capture: the Escape and U binding buttons. Their corresponding action rows appear in the full screenshot.",
+      "alt": "The current shortcut binding buttons read escape and u.",
+      "path": "/guide-media/v3/reference-controls/settings-binding-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/reference-controls/settings-binding-detail-v3.webp",
+      "kind": "image"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "reference-settings-v3",
+      "status": 200,
+      "bytes": 225462,
+      "sha256": "7d28b7908b4784ffaea930d63c724123c3cff9063ff4d37cc3c6dd78fa7ae029"
+    },
+    {
+      "id": "reference-settings-detail-v3",
+      "status": 200,
+      "bytes": 1134,
+      "sha256": "7982adbb819317a87f7338eef40116f102e9100e1be22c7d91a44c264cc3795c"
+    }
+  ],
+  "limits": "The current scroll position shows Escape and U with their action rows in the full frame; the tiny crop contains the binding buttons only. Other reference bindings retain separately observed functional evidence; this pair does not claim to picture every row."
+}

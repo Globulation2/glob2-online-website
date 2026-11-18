@@ -23,9 +23,9 @@ Click the canvas before using game keys. A sequence such as **B → I** means pr
 
 :::media-group
 
-[[media:reference-settings-v2]]
+[[media:reference-settings-v3]]
 
-[[media:reference-settings-detail-v2]]
+[[media:reference-settings-detail-v3]]
 
 :::
 

@@ -17,15 +17,15 @@ The current entry below was checked in the public desktop browser game on **18 N
 
 Open [the browser game](https://app.glob2.online/play/) and choose **Tutorial** from its main menu. In **Tutorial lessons**, choose **Introduction**, the first lesson. The catalog also offers focused lessons such as **Food supply practice**, **Hospitals and healing**, and **Walking training**.
 
-[[media:current-introduction-lessons-v2]]
+[[media:tutorial-lessons-v3]]
 
-The Introduction briefing describes scouting with a flag, supplying your colony, and directing an attack. Read the **Briefing**, **Objectives**, and **Hints** tabs, then choose **Ok** to close the briefing and see the first instruction.
+If a briefing opens, read its **Briefing**, **Objectives**, and **Hints** tabs, then choose **Ok** to see the first instruction. Otherwise follow the visible lesson task. Introduction teaches scouting with a flag, supplying your colony, and directing an attack.
 
 ## 2. Scout the stone landmark
 
 The opening task is **1 / 5 — Scout the stone landmark**. Its instruction is to open **Flags**, place an **Exploration Flag** over the stone patch east of your colony, assign **one explorer**, and watch it travel to the flag. The lesson also provides **Show destination** and **Help / why?** controls.
 
-[[media:current-introduction-scout-v2]]
+[[media:introduction-scout-v3]]
 
 1. Open **Flags** under the minimap and choose **Exploration Flag**, the triangular flag icon.
 2. Choose **Show destination** to center the stone landmark, then click its stone patch to place the flag.
@@ -38,9 +38,9 @@ Watch the explorer travel. In the observed run, one explorer reached the flag wh
 
 :::media-group
 
-[[media:current-introduction-flag-v2]]
+[[media:introduction-scout-result-v3]]
 
-[[media:current-introduction-working-v2]]
+[[media:introduction-flag-detail-v3]]
 
 :::
 
