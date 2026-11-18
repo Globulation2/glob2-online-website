@@ -24,6 +24,7 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
   await mkdir(directory, { recursive: true });
   const record = { baseline, started: new Date().toISOString(), viewport: { width: 1440, height: 900 }, events: [], packages: [], downloads: [], errors: [], complete: false };
   const pending = [];
+  let downloadSequence = 0;
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({ viewport: record.viewport, recordVideo: { dir: path.join(directory, 'raw-video'), size: record.viewport }, acceptDownloads: true });
   const page = await context.newPage();
@@ -51,9 +52,10 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
     }
   });
   page.on('download', download => {
+    const sequence = ++downloadSequence;
     pending.push((async () => {
       const filename = path.basename(download.suggestedFilename()).replace(/[^a-zA-Z0-9._-]/g, '-');
-      const target = path.join(directory, 'downloads', `${record.downloads.length + 1}-${filename}`);
+      const target = path.join(directory, 'downloads', `${sequence}-${filename}`);
       await mkdir(path.dirname(target), { recursive: true });
       await download.saveAs(target);
       const bytes = await readFile(target);
