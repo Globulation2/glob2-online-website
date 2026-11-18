@@ -32,3 +32,16 @@ control before demonstrating a one-tile remove/restore operation while paused.
 A successful applied-High run on 18 November recorded 135 events and finished
 paused at tick 6854. Inspect each source frame before reusing its incidental
 counts, positions or timing; no Clearing/filter/drag behavior is qualified.
+
+`population-practice.mjs` uses the prepared Food supply colony for a separate
+production experiment. Repeated genuine decrement clicks clamp all birth
+controls before one role is increased. Normal simulation records Worker-only,
+all-zero, Explorer-only and a later all-zero hold with food and hauling visible.
+The scenario records observations rather than asserting a fixed birth count or
+an instant stop; an additional worker after the first reset was observed in the
+qualified run. Its later zero-weight hold had unchanged role totals with food
+available. This is not completion of the Food lesson.
+
+The final brief Inn interruption is exploratory. The first applied-High run
+showed no stock decline before hauling was restored, so it does not establish
+food depletion or recovery. Inspect every rerun before drawing those conclusions.
