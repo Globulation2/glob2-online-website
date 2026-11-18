@@ -126,7 +126,7 @@ test('community invitations use the verified permanent server invite',async({pag
 for(const width of [360,768,980,1024,1280,1470,1920]) test(`header uses deliberate rows without overlap at ${width}`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.goto('/search/');
  await page.evaluate(()=>document.fonts.ready);
- const boxes=await page.locator('.site-header .brand,.site-header .nav,.site-header .header-end').evaluateAll(elements=>elements.map(el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom};}));
+ const boxes=await page.locator('.site-header').evaluate(header=>['.brand','.nav','.header-end'].map(selector=>{const r=header.querySelector(selector)!.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom};}));
  const [brand,nav,utilities]=boxes;
  expect(nav.y).toBeGreaterThanOrEqual(Math.max(brand.bottom,utilities.bottom));
  if(width>700){expect(Math.abs(brand.y-utilities.y)).toBeLessThan(8);expect(utilities.x).toBeGreaterThanOrEqual(brand.right);}
