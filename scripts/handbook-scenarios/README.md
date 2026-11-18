@@ -18,6 +18,17 @@ module bytes are transparently forwarded unchanged after integrity verification;
 only transport encoding/length headers are removed. Changed payloads fail closed.
 These observations do not establish native-client or multiplayer qualification.
 
+Before the scenario, the helper selects **Settings → Display & graphics → Artwork
+→ High resolution** through actual visible controls, waits for persistence and
+reloads the application. It then reopens Settings to verify the enabled explicit
+choice, records before/after screenshots, and checks WebGL2 plus published artwork
+readiness. Package readiness alone is insufficient: Automatic can switch to
+Original for the rest of a slow session. Relevant adaptation/backend console
+messages are retained in the ignored capture record; a reported step-down after
+the explicit reload fails qualification. Earlier captures made before this gate
+remain valid state evidence, but need separate applied-artwork review before
+being presented as high-quality visual refreshes.
+
 Scenarios export an async function receiving:
 
 - `control(key)`: click an enabled visible control from the current diagnostic state.

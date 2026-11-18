@@ -12,6 +12,7 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
   const baseline = JSON.parse(await readFile(baselinePath, 'utf8'));
   const url = new URL(baseline.url);
   if (url.origin !== 'https://app.glob2.online') throw Error('Use the public game origin');
+  if (url.searchParams.get('renderer') !== 'webgl2') throw Error('Current quality captures require the supported WebGL2 renderer');
   const directory = path.resolve(output);
   const repository = fileURLToPath(new URL('../', import.meta.url));
   if (!path.relative(repository, directory).startsWith(`artifacts${path.sep}`)) throw Error('Capture output must be an ignored artifacts subdirectory');
@@ -22,13 +23,19 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
     if (error.code !== 'ENOENT') throw error;
   }
   await mkdir(directory, { recursive: true });
-  const record = { baseline, started: new Date().toISOString(), viewport: { width: 1440, height: 900 }, events: [], packages: [], downloads: [], errors: [], complete: false };
+  const record = { baseline, started: new Date().toISOString(), viewport: { width: 1440, height: 900 }, events: [], packages: [], downloads: [], presentationLogs: [], errors: [], complete: false };
   const pending = [];
   let downloadSequence = 0;
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({ viewport: record.viewport, recordVideo: { dir: path.join(directory, 'raw-video'), size: record.viewport }, acceptDownloads: true });
   const page = await context.newPage();
   page.on('pageerror', error => record.errors.push(String(error)));
+  page.on('console', message => {
+    const value = message.text();
+    if (/Device adaptation:|GLOB2_DEVICE_ADAPTATION|BACKEND requested=/.test(value)) {
+      record.presentationLogs.push({ seconds: (Date.now() - Date.parse(record.started)) / 1000, message: value });
+    }
+  });
   // Forward the original decoded public module bytes unchanged. Reading a large
   // WASM through the inspector after streaming compilation can evict its body.
   // Transparent request forwarding permits a hash check before browser delivery;
@@ -112,9 +119,50 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
       if (!record.packages.some(item => item.name === name && item.sha256 === baseline.packages[name].sha256)) throw Error(`Unqualified delivered package: ${name}`);
     }
     if (record.errors.length) throw Error('Payload qualification or startup failed');
+
+    // Downloaded/published HD assets do not establish the applied artwork mode:
+    // Automatic can step down during a slow capture. Choose the actual supported
+    // UI setting, persist it, and start a fresh application before any scene.
+    const mainMenuScreen = (await state()).screen;
+    const openGraphics = async () => {
+      await control('menu/6');
+      await page.waitForFunction(() => glob2Diagnostics.snapshot().screen === '14SettingsScreen', null, { timeout: 60000 });
+      await control('nav.0');
+      await page.waitForTimeout(250);
+      await page.mouse.move(950, 610);
+      await page.mouse.wheel(0, 600);
+      await note('graphics-scroll', { x: 950, y: 610, deltaY: 600 });
+    };
+    const closeGraphics = async () => {
+      await control('done');
+      await page.waitForFunction(screen => glob2Diagnostics.snapshot().screen === screen, mainMenuScreen, { timeout: 60000 });
+    };
+    await openGraphics();
+    await control('graphics.artwork');
+    if ((await state()).controls['popup/2']?.label !== 'High resolution') throw Error('Inspect actual artwork choices before changing this payload');
+    await control('popup/2');
+    if ((await state()).controls['graphics.artwork']?.label !== 'High resolution') throw Error('High resolution was not selected');
+    await screenshot('quality-selected-before-reload');
+    await closeGraphics();
+    await page.waitForTimeout(1500);
+    await page.waitForFunction(() => { const s = glob2Diagnostics.snapshot(); return !s.persisting && s.persistence === 'persisted'; }, null, { timeout: 60000 });
+    const appliedReloadAt = (Date.now() - Date.parse(record.started)) / 1000;
+    await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForFunction(() => window.glob2Diagnostics && glob2Diagnostics.snapshot().screen !== 'loading', null, { timeout: 120000 });
+    if ((await state()).controls['intro/menu']) await control('intro/menu');
+    await page.waitForFunction(screen => glob2Diagnostics.snapshot().screen === screen, mainMenuScreen, { timeout: 60000 });
+    await page.waitForFunction(() => { const s = glob2Diagnostics.snapshot(); return s.renderer === 'webgl2' && s.assets.hd === 'ready' && s.artworkReady; }, null, { timeout: 180000 });
+    await openGraphics();
+    const applied = await state();
+    if (applied.controls['graphics.artwork']?.label !== 'High resolution' || !applied.controls['graphics.artwork']?.enabled || applied.controls['graphics.artwork.keep']) throw Error('Applied artwork choice is unqualified after reload');
+    await screenshot('quality-applied-after-reload');
+    record.graphicsConfiguration = { choice: 'High resolution', appliedReloadAt, renderer: applied.renderer, artworkReady: applied.artworkReady, hdPackage: applied.assets.hd, method: 'Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection' };
+    await closeGraphics();
+    await page.waitForTimeout(3000);
     await note('ready');
     await scenario({ page, context, state, note, control, click, key, screenshot, waitTicks, output: directory, baseline });
     await Promise.all(pending);
+    if (record.presentationLogs.some(item => item.seconds >= appliedReloadAt && /stepped_down=1/.test(item.message))) throw Error('Artwork stepped down after explicit quality qualification');
     if (record.errors.length) throw Error('Capture recorded errors');
     record.complete = true;
   } catch (error) {
