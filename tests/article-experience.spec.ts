@@ -143,6 +143,7 @@ test('image viewer supports inspection, keyboard navigation, focus and scroll re
 test('expanded native clips transfer playback state and never play two copies', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(firstColony);
+  await page.locator('.earlier-tutorial-reference > summary').click();
   const inline = page.locator('article video').first();
   await inline.scrollIntoViewIfNeeded();
   await inline.evaluate(async (video: HTMLVideoElement) => {
@@ -194,6 +195,7 @@ test('expanded native clips transfer playback state and never play two copies', 
 test('closing a playing expanded clip returns its state to the inline player', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(firstColony);
+  await page.locator('.earlier-tutorial-reference > summary').click();
   const inline = page.locator('article video').first();
   await inline.evaluate(async (video: HTMLVideoElement) => {
     video.muted = true; await video.play(); video.currentTime = 2;
@@ -204,6 +206,7 @@ test('closing a playing expanded clip returns its state to the inline player', a
   await expect.poll(() => expanded.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
   expect(await inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
   expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !(video as HTMLVideoElement).paused).length)).toBe(1);
+  const detachedPlayer = await expanded.elementHandle();
   const playingState = await expanded.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
   await page.keyboard.press('Escape');
   await expect(viewer(page)).toBeHidden();
@@ -214,6 +217,10 @@ test('closing a playing expanded clip returns its state to the inline player', a
   expect(resumedState.volume).toBeCloseTo(playingState.volume, 6);
   expect(resumedState.time).toBeGreaterThanOrEqual(playingState.time - 0.1);
   expect(await page.locator('video').evaluateAll(videos => videos.filter(video => !(video as HTMLVideoElement).paused).length)).toBe(1);
+  // Model a queued play event arriving after PhotoSwipe detached its player.
+  expect(await detachedPlayer!.evaluate(video=>video.isConnected)).toBe(false);
+  await detachedPlayer!.evaluate(video=>video.dispatchEvent(new Event('play')));
+  expect(await inline.evaluate((video: HTMLVideoElement)=>video.paused)).toBe(false);
 });
 
 test('a rejected expanded playback request retains position and native play controls', async ({ page }) => {
@@ -229,6 +236,7 @@ test('a rejected expanded playback request retains position and native play cont
     };
   });
   await page.goto(firstColony);
+  await page.locator('.earlier-tutorial-reference > summary').click();
   const inline = page.locator('article video').first();
   await inline.evaluate(async (video: HTMLVideoElement) => {
     video.muted = true; await video.play(); video.currentTime = 2;
@@ -330,6 +338,7 @@ test('unavailable expanded clips retain instructions and a direct clip link', as
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.route('**/guide-media/**/*.mp4', route => route.abort());
   await page.goto(firstColony);
+  await page.locator('.earlier-tutorial-reference > summary').click();
   await page.getByRole('link', { name: 'Expand video', exact: false }).first().click();
   await expect(viewer(page)).toBeVisible();
   await viewer(page).locator('.pswp__item[aria-hidden="false"] video').evaluate((video: HTMLVideoElement) => { void video.play().catch(() => {}); });

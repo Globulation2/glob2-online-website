@@ -9,8 +9,8 @@
       "bytes": 6798,
       "width": 200,
       "height": 266,
-      "caption": "Detail: the swarm requests one worker and currently has one attached.",
-      "alt": "Swarm sidebar crop with Working 1/1, its staffing arrows and production controls.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Detail: the swarm requests one worker and currently has one attached.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Swarm sidebar crop with Working 1/1, its staffing arrows and production controls.",
       "kind": "image"
     },
     {
@@ -21,8 +21,8 @@
       "bytes": 6386,
       "width": 200,
       "height": 236,
-      "caption": "Detail: the inn request is temporarily zero for the tutorial demonstration.",
-      "alt": "Inn sidebar crop with Working 0/0 and Food 10/10.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Detail: the inn request is temporarily zero for the tutorial demonstration.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Inn sidebar crop with Working 0/0 and Food 10/10.",
       "kind": "image"
     },
     {
@@ -33,8 +33,8 @@
       "bytes": 5704,
       "width": 200,
       "height": 204,
-      "caption": "Detail: the hospital requests two workers; one is currently attached and two of three wood have arrived.",
-      "alt": "Hospital foundation sidebar crop showing Working 1/2, Wood 2/3 and construction health.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Detail: the hospital requests two workers; one is currently attached and two of three wood have arrived.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Hospital foundation sidebar crop showing Working 1/2, Wood 2/3 and construction health.",
       "kind": "image"
     },
     {
@@ -45,8 +45,8 @@
       "bytes": 6382,
       "width": 163,
       "height": 274,
-      "caption": "Detail: Explorer has one notch, Worker and Warrior zero; Working 1/1 keeps food coming.",
-      "alt": "Swarm sidebar crop with Explorer-only production, Working 1/1 and Food 2/20.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Detail: Explorer has one notch, Worker and Warrior zero; Working 1/1 keeps food coming.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Swarm sidebar crop with Explorer-only production, Working 1/1 and Food 2/20.",
       "kind": "image"
     },
     {
@@ -57,8 +57,8 @@
       "bytes": 6380,
       "width": 163,
       "height": 274,
-      "caption": "Detail: Worker production is restored to one notch; Explorer and Warrior return to zero.",
-      "alt": "Swarm sidebar crop with Worker-only production restored and Working 1/1.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Detail: Worker production is restored to one notch; Explorer and Warrior return to zero.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Swarm sidebar crop with Worker-only production restored and Working 1/1.",
       "kind": "image"
     },
     {
@@ -69,8 +69,8 @@
       "bytes": 240166,
       "width": 1440,
       "height": 900,
-      "caption": "The first tutorial mission is selected before starting.",
-      "alt": "Tutorial mission selection with the first mission and its map preview.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 The first tutorial mission is selected before starting.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Tutorial mission selection with the first mission and its map preview.",
       "kind": "image"
     },
     {
@@ -81,8 +81,8 @@
       "bytes": 58282,
       "width": 1440,
       "height": 900,
-      "caption": "One swarm, one worker, and a small patch of revealed land: the tutorial starting colony.",
-      "alt": "Initial red swarm and worker beside wheat; the minimap shows a small explored area.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 One swarm, one worker, and a small patch of revealed land: the tutorial starting colony.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Initial red swarm and worker beside wheat; the minimap shows a small explored area.",
       "kind": "image"
     },
     {
@@ -93,8 +93,8 @@
       "bytes": 29764,
       "width": 1440,
       "height": 500,
-      "caption": "The inn foundation shows its wood requirement and requested workers in the sidebar.",
-      "alt": "Selected inn construction site showing Working 0/3, wood 0/3 and construction health.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 The inn foundation shows its wood requirement and requested workers in the sidebar.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Selected inn construction site showing Working 0/3, wood 0/3 and construction health.",
       "kind": "image"
     },
     {
@@ -105,8 +105,8 @@
       "bytes": 60316,
       "width": 1440,
       "height": 900,
-      "caption": "The completed inn has food in stock and workers assigned to hauling.",
-      "alt": "Completed inn beside the swarm; sidebar shows Food 5/10 and Working 2/2.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 The completed inn has food in stock and workers assigned to hauling.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Completed inn beside the swarm; sidebar shows Food 5/10 and Working 2/2.",
       "kind": "image"
     },
     {
@@ -117,8 +117,8 @@
       "bytes": 56328,
       "width": 1440,
       "height": 900,
-      "caption": "Use the upper Working row for staffing; the three lower bars set future production.",
-      "alt": "Selected swarm with the Working row, food display and Worker, Explorer and Warrior production bars.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Use the upper Working row for staffing; the three lower bars set future production.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Selected swarm with the Working row, food display and Worker, Explorer and Warrior production bars.",
       "kind": "image"
     },
     {
@@ -129,8 +129,8 @@
       "bytes": 61870,
       "width": 1440,
       "height": 900,
-      "caption": "The completed hospital supplies healing alongside the inn and swarm.",
-      "alt": "Selected hospital showing full health and room for two globs, with nearby inn and swarm.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 The completed hospital supplies healing alongside the inn and swarm.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Selected hospital showing full health and room for two globs, with nearby inn and swarm.",
       "kind": "image"
     },
     {
@@ -141,8 +141,8 @@
       "bytes": 98266,
       "width": 1440,
       "height": 900,
-      "caption": "Explorer production is set separately from the worker hauling food to the swarm.",
-      "alt": "Selected swarm with its Working request and the three unit production ratio controls visible.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Explorer production is set separately from the worker hauling food to the swarm.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Selected swarm with its Working request and the three unit production ratio controls visible.",
       "kind": "image"
     },
     {
@@ -153,8 +153,8 @@
       "bytes": 191326,
       "width": 1440,
       "height": 900,
-      "caption": "Two explorers have revealed food, forests and stone beyond the starting clearing.",
-      "alt": "Expanded tutorial terrain and minimap; the top status bar shows two explorers and the swarm is selected.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Two explorers have revealed food, forests and stone beyond the starting clearing.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Expanded tutorial terrain and minimap; the top status bar shows two explorers and the swarm is selected.",
       "kind": "image"
     },
     {
@@ -165,8 +165,8 @@
       "bytes": 130094,
       "width": 1440,
       "height": 900,
-      "caption": "Give the local browser save a recognizable name before confirming.",
-      "alt": "Save game dialog with the name field and confirmation controls.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 Give the local browser save a recognizable name before confirming.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Save game dialog with the name field and confirmation controls.",
       "kind": "image"
     },
     {
@@ -177,8 +177,8 @@
       "bytes": 45732,
       "width": 1440,
       "height": 900,
-      "caption": "A two-colony practice setup: You against a Numbi Easy AI, using Standard rules.",
-      "alt": "Players and Teams tab with two colonies, one controlled by You and the other by Numbi Easy; Standard shown above.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 A two-colony practice setup: You against a Numbi Easy AI, using Standard rules.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Players and Teams tab with two colonies, one controlled by You and the other by Numbi Easy; Standard shown above.",
       "kind": "image"
     },
     {
@@ -189,8 +189,8 @@
       "bytes": 96360,
       "width": 1440,
       "height": 900,
-      "caption": "An explorer reveals terrain beyond the colony.",
-      "alt": "Tutorial colony with an explorer flying beyond the original visible clearing.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 An explorer reveals terrain beyond the colony.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: Tutorial colony with an explorer flying beyond the original visible clearing.",
       "kind": "image"
     },
     {
@@ -201,8 +201,8 @@
       "bytes": 1288641,
       "width": 1440,
       "height": 900,
-      "caption": "An explorer leaves the colony and uncovers terrain while workers continue their jobs. This 18-second clip has no audio.",
-      "alt": "An explorer flies around the tutorial colony and reveals nearby terrain; workers carry food to the inn and swarm.",
+      "caption": "Earlier 0.11.0.0 tutorial reference \u2014 An explorer leaves the colony and uncovers terrain while workers continue their jobs. This 18-second clip has no audio.",
+      "alt": "Earlier 0.11.0.0 tutorial capture: An explorer flies around the tutorial colony and reveals nearby terrain; workers carry food to the inn and swarm.",
       "kind": "video",
       "poster": "pilot-exploration-poster"
     },
@@ -2867,6 +2867,54 @@
       "caption": "Ten silent seconds at native 1x: a glob joins Maxima as workers6\u21925 while own Food9/10\u219210/10. The guard did not prevent conversion.",
       "alt": "Red home colony and inn during continuing pressure.",
       "poster": "maxima-clip-poster"
+    },
+    {
+      "id": "current-introduction-lessons-v2",
+      "path": "/guide-media/v2/getting-started/tutorial-lessons.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/tutorial-lessons.webp",
+      "sha256": "8ad14593e6ba2187731eaeeb73494ca47dfd43281ad156cbf8816026ab5b92f7",
+      "bytes": 324606,
+      "width": 1440,
+      "height": 900,
+      "caption": "The current Tutorial lessons catalog: Introduction is the first lesson. Captured from the public browser game showing version 0.11.6.0, 18 November 2026.",
+      "alt": "The Tutorial lessons catalog lists Introduction, Food supply practice, Hospitals and healing, Walking training and other lessons.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-scout-v2",
+      "path": "/guide-media/v2/getting-started/introduction-scout.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-scout.webp",
+      "sha256": "c45383e3fe4c1679087db89c30e19679311d7eef1deae3ccb1cd63adbcf7322d",
+      "bytes": 165450,
+      "width": 1440,
+      "height": 900,
+      "caption": "Introduction begins with 1 / 5, Scout the stone landmark: place an Exploration Flag and assign one explorer.",
+      "alt": "The current Introduction instruction asks for an Exploration Flag on the stone patch east of the colony, with Show destination and Help / why? buttons.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-flag-v2",
+      "path": "/guide-media/v2/getting-started/introduction-scout-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-scout-result.webp",
+      "sha256": "569292b4de5508f06c6b2ed635db58f2b0a30b9add91043d4423f000af0c6be6",
+      "bytes": 187028,
+      "width": 1440,
+      "height": 900,
+      "caption": "The scout has arrived: On the way 0, Here 1, Working 1/1. The prompt has advanced to 2 / 5, Build another Inn. The request was reduced from its default two after the first arrival.",
+      "alt": "A selected Exploration Flag on stone shows Here 1 and Working 1/1 beside the next lesson task, Build another Inn.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-working-v2",
+      "path": "/guide-media/v2/getting-started/introduction-flag-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-flag-detail.webp",
+      "sha256": "c94b4407bbef7e7082e3729e61cdca85fab944c436a7f8cb183cc4f3f2c94f46",
+      "bytes": 7406,
+      "width": 192,
+      "height": 240,
+      "caption": "Detail from the same result: On the way 0, Here 1, and Working 1/1. The Working arrows set the requested explorer count.",
+      "alt": "Selected Exploration Flag sidebar detail with On the way 0, Here 1, Working 1/1 and its request arrows.",
+      "kind": "image"
     }
   ]
 }

@@ -60,6 +60,17 @@ export function stageDesignAssets(publicDir, metadata, brand = true) {
  mkdirSync(join(publicDir,'brand'),{recursive:true});
  const files = ['glob2-sans.woff2','nunito.woff2','glob-64.png','wordmark-letters.webp','wordmark-two.webp','colony-960.webp','colony-1600.webp','colony-loop.mp4','swarm.webp','wood.webp','fruit.webp','war-flag.webp','exploration-flag.webp','inn.webp','worker.webp'];
  if (brand) for(const file of files) copyFileSync(join(install,'assets',file),join(publicDir,'brand',file));
+ // Versioned aliases prevent returning clients reusing an earlier release scene.
+ const releaseScene = [
+  ['colony-loop.mp4','colony-loop-v0.11.6.1.mp4','947eb6189be6ac64572866347129aa2101de7232d36d91b4ab577b39de3eca89'],
+  ['colony-1600.webp','colony-1600-v0.11.6.1.webp','db69c97d3928655de35496d82c51608ab1c1e05b923c5e458bf5c1bae485588c'],
+  ['colony-960.webp','colony-960-v0.11.6.1.webp','6aedacb7e46317c30b81aa60a69b3cf17d0a82c07b3b54db87235ae6de995254'],
+ ];
+ if(brand) for(const [source,target,expectedHash] of releaseScene) {
+  const file=join(install,'assets',source);
+  if(createHash('sha256').update(readFileSync(file)).digest('hex')!==expectedHash) throw new Error(`Unreviewed release scene: ${source}. Review provenance before updating versioned aliases.`);
+  copyFileSync(file,join(publicDir,'brand',target));
+ }
  copyFileSync(join(install,'dist/bootstrap.js'),join(publicDir,'theme.js'));
  for(const file of ['favicon-32.png','apple-touch-icon.png']) copyFileSync(join(install,'assets',file),join(publicDir,file));
  // The /fonts alias is retained for the online app's preload and existing links.

@@ -31,3 +31,7 @@ SITE_URL=http://127.0.0.1:4323 node scripts/review-i18n.mjs 2
 ```
 
 Each round checks English, German, Arabic, Japanese and Tamil home/download pages at 360px and 1440px, accessibility, horizontal overflow, native language-menu keyboard activation and page-preserving menu targets. Screenshots and machine reports go under ignored `artifacts/i18n/`; inspect them independently before publication. Also run the repository's complete required checks from `AGENTS.md`. Source completion, passing checks, merged source and live deployment are separate states.
+
+## Current release media exception
+
+The November18,2026 native-release media family changes the scenes being described. Its current observations in `src/data/artwork.ts` are rendered as explicitly marked English on localized pages, with English `lang` attributes, until independent translations are reviewed. This avoids applying the preserved October scene descriptions to different images; the194-field catalogs and review fingerprints remain unchanged. See [current media evidence](website-content-verification.md#current-public-marketing-media--18-november-2026).
