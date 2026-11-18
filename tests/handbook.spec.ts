@@ -31,6 +31,7 @@ test('illustrated pilot delivers same-origin images and controlled clips', async
   const requests: string[] = [];
   page.on('request', request => requests.push(request.url()));
   await page.goto('/learn/getting-started/');
+  await page.locator('.earlier-tutorial-reference > summary').click();
   const images = page.locator('article .guide-media img');
   expect(await images.count()).toBeGreaterThan(0);
   for (const image of await images.all()) {
@@ -72,4 +73,17 @@ test('handbook reflows on mobile, at text zoom, and without JavaScript', async (
   await expect(plain.locator('nav[aria-label="On this page"]:visible')).toBeVisible();
   await expect(plain.locator('article figure').first()).toBeVisible();
   await context.close();
+});
+
+test('current Introduction leads while the earlier tutorial stays qualified and collapsed',async({page})=>{
+  await page.goto('/learn/getting-started/');
+  await expect(page.locator('article')).toContainText('Scout the stone landmark');
+  await expect(page.locator('#media-current-introduction-lessons-v2')).toBeVisible();
+  const earlier=page.locator('.earlier-tutorial-reference');
+  await expect(earlier).not.toHaveAttribute('open','');
+  await expect(earlier).toHaveAttribute('data-pagefind-ignore','');
+  await expect(earlier.locator('#media-pilot-menu')).toBeHidden();
+  await earlier.locator('summary').click();
+  await expect(earlier).toContainText('not the current Introduction');
+  await expect(earlier.locator('#caption-pilot-menu')).toContainText('Earlier 0.11.0.0 tutorial reference');
 });

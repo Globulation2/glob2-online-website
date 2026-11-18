@@ -122,7 +122,11 @@ if (article) {
       const revealFailure=()=>{failure.hidden=false;};
       video.addEventListener('error',revealFailure);
       video.querySelectorAll('source').forEach(source=>source.addEventListener('error',revealFailure));
-      video.addEventListener('play',()=>{videos.forEach(other=>other.pause());expanded.forEach(other=>{if(other!==video)other.pause();});});
+      video.addEventListener('play',()=>{
+        // A queued event can arrive after close has restored inline playback.
+        if(closing||video.paused||!video.isConnected)return;
+        videos.forEach(other=>other.pause());expanded.forEach(other=>{if(other!==video)other.pause();});
+      });
       content.element=shell;expanded.set(content.index,video);content.onLoaded();
     });
     // Native controls own their pointer events; arrows remain available for clips.

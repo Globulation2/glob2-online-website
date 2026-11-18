@@ -1,0 +1,150 @@
+{
+  "observed": "2026-11-18",
+  "scope": "Current Introduction entry and first scouting task only; remaining lesson tasks not reproduced. Earlier tutorial retained separately as qualified reference.",
+  "browser": {
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=software",
+    "version_observed_in_menu": "0.11.6.0",
+    "source_revision": "unverified; version alone does not establish exact deployment source",
+    "script": {
+      "url": "https://app.glob2.online/play/index.js",
+      "final_url": "https://app.glob2.online/play/index.js",
+      "status": 200,
+      "bytes": 1846033,
+      "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+      "etag": "\"dmy2mgs1izj713kep\""
+    },
+    "wasm": {
+      "url": "https://app.glob2.online/play/index.wasm",
+      "bytes": 29604918,
+      "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+      "etag": "\"dmy2mgqzf57uhmjau\""
+    },
+    "renderer": "software",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  "assets": [
+    {
+      "id": "current-introduction-lessons-v2",
+      "path": "/guide-media/v2/getting-started/tutorial-lessons.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/tutorial-lessons.webp",
+      "sha256": "8ad14593e6ba2187731eaeeb73494ca47dfd43281ad156cbf8816026ab5b92f7",
+      "bytes": 324606,
+      "width": 1440,
+      "height": 900,
+      "caption": "The current Tutorial lessons catalog: Introduction is the first lesson. Captured from the public browser game showing version 0.11.6.0, 18 November 2026.",
+      "alt": "The Tutorial lessons catalog lists Introduction, Food supply practice, Hospitals and healing, Walking training and other lessons.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-scout-v2",
+      "path": "/guide-media/v2/getting-started/introduction-scout.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-scout.webp",
+      "sha256": "c45383e3fe4c1679087db89c30e19679311d7eef1deae3ccb1cd63adbcf7322d",
+      "bytes": 165450,
+      "width": 1440,
+      "height": 900,
+      "caption": "Introduction begins with 1 / 5, Scout the stone landmark: place an Exploration Flag and assign one explorer.",
+      "alt": "The current Introduction instruction asks for an Exploration Flag on the stone patch east of the colony, with Show destination and Help / why? buttons.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-flag-v2",
+      "path": "/guide-media/v2/getting-started/introduction-scout-result.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-scout-result.webp",
+      "sha256": "569292b4de5508f06c6b2ed635db58f2b0a30b9add91043d4423f000af0c6be6",
+      "bytes": 187028,
+      "width": 1440,
+      "height": 900,
+      "caption": "The scout has arrived: On the way 0, Here 1, Working 1/1. The prompt has advanced to 2 / 5, Build another Inn. The request was reduced from its default two after the first arrival.",
+      "alt": "A selected Exploration Flag on stone shows Here 1 and Working 1/1 beside the next lesson task, Build another Inn.",
+      "kind": "image"
+    },
+    {
+      "id": "current-introduction-working-v2",
+      "path": "/guide-media/v2/getting-started/introduction-flag-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/getting-started/introduction-flag-detail.webp",
+      "sha256": "c94b4407bbef7e7082e3729e61cdca85fab944c436a7f8cb183cc4f3f2c94f46",
+      "bytes": 7406,
+      "width": 192,
+      "height": 240,
+      "caption": "Detail from the same result: On the way 0, Here 1, and Working 1/1. The Working arrows set the requested explorer count.",
+      "alt": "Selected Exploration Flag sidebar detail with On the way 0, Here 1, Working 1/1 and its request arrows.",
+      "kind": "image"
+    }
+  ],
+  "originals": [
+    {
+      "id": "current-introduction-lessons-v2",
+      "original": "02-lessons.png",
+      "originalSha256": "893a7c4d63f658c8a06018bbe5e4fdb6929122ba598b2c1941f427d18f47a5db",
+      "treatment": "Full frame, WebP quality 92; no crop, annotation, repaint or generated additions."
+    },
+    {
+      "id": "current-introduction-scout-v2",
+      "original": "04-first-instruction.png",
+      "originalSha256": "847b123ded8e2883380111823c3828454e026eb0754dd47d6f5f2cf975ee2626",
+      "treatment": "Full frame, WebP quality 92; no crop, annotation, repaint or generated additions."
+    },
+    {
+      "id": "current-introduction-flag-v2",
+      "original": "10-scout-one-requested.png",
+      "originalSha256": "3b1ffef258cb71dfcd97aefeb9d5fa338183bcbc9c95ca950d0e27c760bbdc29",
+      "treatment": "Full frame, WebP quality 92; no crop, annotation, repaint or generated additions."
+    },
+    {
+      "id": "current-introduction-working-v2",
+      "original": "10-scout-one-requested.png",
+      "originalSha256": "3b1ffef258cb71dfcd97aefeb9d5fa338183bcbc9c95ca950d0e27c760bbdc29",
+      "crop": [
+        1248,
+        184,
+        192,
+        240
+      ],
+      "treatment": "Genuine sidebar detail crop from the same approved result frame; WebP quality 92. No annotation, repaint or generated additions."
+    }
+  ],
+  "observations": [
+    "Tutorial opens Tutorial lessons; Introduction is the first lesson.",
+    "Briefing offers Briefing/Objectives/Hints and Ok.",
+    "Task 1 / 5 is Scout the stone landmark.",
+    "Exploration Flag placed on stone using Flags, Exploration Flag, Show destination; Build tab leaves placement mode.",
+    "One existing explorer reached the flag with default requested count two and the lesson advanced to 2 / 5 Build another Inn.",
+    "The selected flag request was reduced to one afterward; final frame tick 3890 shows On the way 0, Here 1 and Working 1/1."
+  ],
+  "sourceRevision": "Unverified for the exact deployed browser payload; menu version alone does not establish source identity.",
+  "baseline": "Existing earlier handbook capture baseline is preserved unchanged; this bounded pilot does not qualify a new whole-handbook baseline.",
+  "publication": {
+    "date": "2026-11-18",
+    "method": "Dedicated immutable guide-media uploader; completed all four object creations after independent review, then cache-bypassed public GET size and SHA-256 readback.",
+    "readback": [
+      {
+        "id": "current-introduction-lessons-v2",
+        "status": 200,
+        "bytes": 324606,
+        "sha256": "8ad14593e6ba2187731eaeeb73494ca47dfd43281ad156cbf8816026ab5b92f7"
+      },
+      {
+        "id": "current-introduction-scout-v2",
+        "status": 200,
+        "bytes": 165450,
+        "sha256": "c45383e3fe4c1679087db89c30e19679311d7eef1deae3ccb1cd63adbcf7322d"
+      },
+      {
+        "id": "current-introduction-flag-v2",
+        "status": 200,
+        "bytes": 187028,
+        "sha256": "569292b4de5508f06c6b2ed635db58f2b0a30b9add91043d4423f000af0c6be6"
+      },
+      {
+        "id": "current-introduction-working-v2",
+        "status": 200,
+        "bytes": 7406,
+        "sha256": "c94b4407bbef7e7082e3729e61cdca85fab944c436a7f8cb183cc4f3f2c94f46"
+      }
+    ]
+  }
+}
