@@ -216,7 +216,8 @@
       "height": 900,
       "caption": "Pause local practice to inspect the minimap, construction panel, and top counters.",
       "alt": "Paused practice colony with a swarm, four workers, top counters, minimap and construction sidebar.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "controls-inn-v2"
     },
     {
       "id": "controls-building",
@@ -228,7 +229,8 @@
       "height": 900,
       "caption": "A selected swarm exposes Working, priority, food, and future-production controls.",
       "alt": "Selected tutorial swarm with Working 1/1, food stock and three unit production ratio bars.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "controls-inn-v2"
     },
     {
       "id": "controls-statistics",
@@ -240,7 +242,8 @@
       "height": 900,
       "caption": "The text statistics view summarizes the colony; click its page heading to inspect other measurement groups.",
       "alt": "Practice colony with text statistics showing four workers, three free workers and no hungry or wounded units.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "controls-statistics-v2"
     },
     {
       "id": "controls-statistics-detail",
@@ -252,7 +255,8 @@
       "height": 310,
       "caption": "Detail: the Colony page separates worker availability, health, and training counts.",
       "alt": "Colony statistics sidebar showing four workers, three free, zero hungry, zero starving and zero wounded.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "controls-statistics-v2"
     },
     {
       "id": "controls-building-detail",
@@ -264,7 +268,8 @@
       "height": 275,
       "caption": "Detail: Working is staffing; Priority chooses hiring preference; Food and the three production bars report separate functions.",
       "alt": "Selected swarm sidebar showing Working 1/1, low/medium/high priority, Food 4/20, and Worker, Explorer and Warrior production bars.",
-      "kind": "image"
+      "kind": "image",
+      "supersededBy": "controls-inn-detail-v2"
     },
     {
       "id": "hauling-delivery",
@@ -2940,6 +2945,90 @@
       "height": 100,
       "caption": "Detail from the same capture: the Escape and U binding buttons. Their corresponding action rows appear in the full screenshot.",
       "alt": "The current shortcut binding buttons read escape and u.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-inn-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-inn.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-inn.webp",
+      "sha256": "c0006b947e385f417ad88e87c4b238b183d2d773ea3ef139fad8ddfe86583b61",
+      "bytes": 189760,
+      "width": 1440,
+      "height": 900,
+      "caption": "The prepared Food supply practice colony, paused with its existing Inn selected.",
+      "alt": "The selected Inn shows HP 200/200, Inside 0/4, Working 0/2 and Food 10/10.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-inn-detail-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-inn-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-inn-detail.webp",
+      "sha256": "307db63236a004ede3f05d3e586add06908720d30c39d603d4e046c48a0b2716",
+      "bytes": 7258,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail: Inside 0/4, Working 0/2 and Food 10/10 on the existing Inn.",
+      "alt": "Inn sidebar detail with health, occupants, staffing request, priority and stored food.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-worker-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-worker.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-worker.webp",
+      "sha256": "16bdd5461e3ff9112515e0ea0d24c64e6a98f94be203f6c40f3d56900e0239d0",
+      "bytes": 174866,
+      "width": 1440,
+      "height": 900,
+      "caption": "A selected worker has 200/200 HP and 61% Food; it is not carrying anything in this paused frame.",
+      "alt": "Worker information shows health, food, carrying state, current speed and training levels.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-worker-detail-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-worker-detail.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-worker-detail.webp",
+      "sha256": "7a466fff85fbe21eb2142362c047c1d59678a15abedcb3243d7b14a76b161f85",
+      "bytes": 5434,
+      "width": 192,
+      "height": 260,
+      "caption": "Detail: the selected worker\u2019s health, food, carrying state and training.",
+      "alt": "Worker sidebar with HP 200/200, Food 61%, Not carrying anything, Walk and Build levels.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-statistics-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-statistics.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-statistics.webp",
+      "sha256": "2323e0d403b1bbdf665a3e24e661428e2b931ed259a09b593116ec1999169280",
+      "bytes": 186602,
+      "width": 1440,
+      "height": 900,
+      "caption": "Statistics groups colony measurements into topics and includes an inline population chart.",
+      "alt": "The Statistics Overview panel shows Population 13, population growth, an inline chart and Open full history.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-overlays-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-overlays.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-overlays.webp",
+      "sha256": "abff7206896d1fbc476ca109eec5a1dac88ac698bbf3b416971cb3b7f3535ef1",
+      "bytes": 172508,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Map overlays panel offers Starving Map, Wounded Units Map, Defense Map and Fertility Map.",
+      "alt": "Current map overlay controls, separate from the Statistics topic and history controls.",
+      "kind": "image"
+    },
+    {
+      "id": "controls-history-v2",
+      "path": "/guide-media/v2/controls-and-hud/controls-history.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/controls-and-hud/controls-history.webp",
+      "sha256": "0a3e1ebfe6b8210d5f07ac091b210958f56c36a0c7b6b53b1ceb2cb598a11c4a",
+      "bytes": 148136,
+      "width": 1440,
+      "height": 900,
+      "caption": "Open full history expands the population chart; Details and Close remain available.",
+      "alt": "The expanded Population history chart is open over the paused colony, with Details and Close buttons.",
       "kind": "image"
     }
   ]
