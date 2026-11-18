@@ -7,8 +7,7 @@ order: 2
 group: "reference"
 format: "reference"
 prerequisites: ["population-and-production"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title":"Standard unit types","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/types/Race.cpp"},{"title":"Unit activities and learning","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"},{"title":"Unit statistics and combat","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitStats.cpp"}]
+sources: [{"title":"Released native 0.11.6.1 air-route constraints","url":"https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/pathfind/MapAStarDomain.h"},{"title":"Released native 0.11.6.1 terrain and forbidden-area checks","url":"https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/Map.h"},{"title":"Earlier source context: Standard unit types","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/types/Race.cpp"},{"title":"Earlier source context: unit activities and learning","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"},{"title":"Earlier source context: unit statistics and combat","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitStats.cpp"}]
 ---
 
 Globs act autonomously. Select one to read what it is doing, its health, food and abilities. Assign useful jobs through buildings, flags and areas rather than treating selection as a move command.
@@ -18,8 +17,10 @@ Globs act autonomously. Select one to read what it is doing, its health, food an
 | Glob | Main jobs | Movement and limits | Assign through |
 | --- | --- | --- | --- |
 | Worker | Gather, haul, construct, repair and clear | Ground routes; swimming requires the relevant training | Building Working requests and clearing work |
-| Explorer | Reveal terrain and scout useful routes | Flies over obstacles and water; ground forbidden areas do not create an aerial barrier | Exploration flag |
+| Explorer | Reveal terrain and scout useful routes | Flies across water and ordinary ground obstacles; ground forbidden areas do not create an aerial barrier | Exploration flag |
 | Warrior | Attack and defend | Ground routes; movement and combat training change readiness | War flag or guard area when idle |
+
+Flight does not mean every tile is passable. The released native 0.11.6.1 route checks reject terrain or resources that block air movement, as well as an occupied air cell. That implementation qualification is separate from the earlier unit illustrations below; it has not been newly exercised in the current browser.
 
 Changing a swarm's production weights creates a future mix of these roles. It does not change an existing worker into a warrior or move an existing explorer. All three ordinary birth recipes cost five food.
 
