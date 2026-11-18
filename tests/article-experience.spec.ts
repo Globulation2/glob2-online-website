@@ -68,6 +68,12 @@ test('references, profiles, and historical editorial pages preserve their purpos
   await page.goto('/learn/reference-buildings/');
   await expect(page.locator('.article-heading .eyebrow')).toHaveText('Quick reference');
   await expect(page.getByRole('region', { name: /reference table/ }).first()).toBeVisible();
+  const mixedSources = page.getByRole('complementary', { name: 'Source references' });
+  await expect(mixedSources.getByRole('link', { name: /Released native 0.11.6.1 stone-wall cost/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings/stonewall.json');
+  await expect(mixedSources.getByRole('link', { name: /Earlier source context: Standard building definitions/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings');
+  await expect(mixedSources).not.toContainText('Reviewed against');
+  // A retained single-baseline reference still displays its review badge.
+  await page.goto('/learn/reference-resources/');
   await expect(page.getByRole('complementary', { name: 'Source references' })).toContainText('Reviewed against');
   await page.goto('/learn/ai-econo/');
   await expect(page.locator('.article-heading .eyebrow')).toHaveText('AI profile');

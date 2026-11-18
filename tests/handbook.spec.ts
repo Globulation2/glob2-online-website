@@ -78,7 +78,7 @@ test('handbook reflows on mobile, at text zoom, and without JavaScript', async (
 test('current Introduction leads while the earlier tutorial stays qualified and collapsed',async({page})=>{
   await page.goto('/learn/getting-started/');
   await expect(page.locator('article')).toContainText('Scout the stone landmark');
-  await expect(page.locator('#media-current-introduction-lessons-v2')).toBeVisible();
+  await expect(page.locator('#media-tutorial-lessons-v3')).toBeVisible();
   const earlier=page.locator('.earlier-tutorial-reference');
   await expect(earlier).not.toHaveAttribute('open','');
   await expect(earlier).toHaveAttribute('data-pagefind-ignore','');

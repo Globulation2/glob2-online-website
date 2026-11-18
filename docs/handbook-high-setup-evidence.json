@@ -1,0 +1,470 @@
+{
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 36.227,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "presentationLogs": [
+    {
+      "seconds": 7.382,
+      "message": "BACKEND requested=legacy-gl active=legacy-gl fallback_reason="
+    },
+    {
+      "seconds": 37.461,
+      "message": "BACKEND requested=legacy-gl active=legacy-gl fallback_reason="
+    }
+  ],
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 66,
+  "sourceCaptureSha256": "c21b2d70a24b9919a640c0c151c55ad5b7841461631888669accf0448553e976",
+  "originals": [
+    {
+      "id": "choosing-ai-map-v3",
+      "original": "practice-map.png",
+      "originalSha256": "a0d71531e048f8fbf52b71b39125e717a1a36c0383b1fb50f2d6f218dd7b27fa",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-players-v3",
+      "original": "players-and-teams.png",
+      "originalSha256": "1a3bbef5c1628868b4f72c80ccb619347e75eef4bccef5dd10b6ffeb59388da2",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-controller-v3",
+      "original": "controller-choices.png",
+      "originalSha256": "b700c01096a99704c197c324892ef594ca8437f49370e92ef03d6e2a374e5664",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-controller-detail-v3",
+      "original": "controller-choices.png",
+      "originalSha256": "b700c01096a99704c197c324892ef594ca8437f49370e92ef03d6e2a374e5664",
+      "cropBox": [
+        234,
+        292,
+        565,
+        464
+      ],
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-roster-v3",
+      "original": "opponent-roster.png",
+      "originalSha256": "272cbac2bf22c6293b8be9c3176a3c02c8ae74732866a280369037aa331f6139",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-roster-detail-v3",
+      "original": "opponent-roster.png",
+      "originalSha256": "272cbac2bf22c6293b8be9c3176a3c02c8ae74732866a280369037aa331f6139",
+      "cropBox": [
+        392,
+        294,
+        700,
+        622
+      ],
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-info-v3",
+      "original": "numbi-strategy.png",
+      "originalSha256": "1dc9f04ca10e2a0f4f3adf9d7525ba46a32cce3b36766f11eb9bc965cd77eae7",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "choosing-ai-standard-v3",
+      "original": "rules-standard.png",
+      "originalSha256": "0649299498f362caa1406d5b658d7ca4e4433e99e5283e27e29f0cb5a4fda8e8",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-presets-detail-v3",
+      "original": "rules-standard.png",
+      "originalSha256": "0649299498f362caa1406d5b658d7ca4e4433e99e5283e27e29f0cb5a4fda8e8",
+      "cropBox": [
+        66,
+        96,
+        326,
+        756
+      ],
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-conquest-v3",
+      "original": "rules-conquest-only.png",
+      "originalSha256": "478ef028fa55700fe938a6d36a3ea5253d86a067c4959bc74fb7deac2a865ca3",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-victory-detail-v3",
+      "original": "rules-conquest-only.png",
+      "originalSha256": "478ef028fa55700fe938a6d36a3ea5253d86a067c4959bc74fb7deac2a865ca3",
+      "cropBox": [
+        718,
+        148,
+        1000,
+        310
+      ],
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-sandbox-v3",
+      "original": "rules-sandbox.png",
+      "originalSha256": "dda14c886faeff8a1461f046fd58c9eddbfef0788f49348723d294fd9c443ee2",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-blitz-v3",
+      "original": "rules-blitz.png",
+      "originalSha256": "12d98588a422d8fee7696ffd57655a060444d476f551397e48921a2292afaee2",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "rules-all-v3",
+      "original": "rules-standard-all.png",
+      "originalSha256": "68a529446a82715f1209d1bacb0315231b29706979fae213bcb00e7c17ecc470",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser capture; full frame or declared rectangular crop, RGB WebP quality92/method6. No authored additions."
+    },
+    {
+      "id": "econo-profile-v3",
+      "original": "econo-strategy.png",
+      "originalSha256": "ddbf452f7cbd4cb0cd6cbddc2e1bf13144d8d89c79f4ff3483706ca8797e5a8f",
+      "cropBox": null,
+      "treatment": "Actual applied-High browser full frame, RGB WebP quality92/method6. No authored additions."
+    }
+  ],
+  "graphicsProofs": [
+    {
+      "file": "quality-selected-before-reload.png",
+      "sha256": "bfdc1cf84e5ddf7e71bd3f20aec19cdcb6b67c096f2234ef9ab1a206df1aeea4"
+    },
+    {
+      "file": "quality-applied-after-reload.png",
+      "sha256": "44d61983908cfefd0a56fc073b19530183dbc607d04a41cbd7c6f3b5237f4ef5"
+    },
+    {
+      "file": "quality-applied-after-reload.json",
+      "sha256": "4d0ff18540ebbd76fba3709d7aa415aaef41c62c5fe75181367dae63f1c28bd0"
+    }
+  ],
+  "observed": "2026-11-18",
+  "chapters": [
+    "choosing-an-ai",
+    "victory-and-rules"
+  ],
+  "additionalConsumer": "econo-profile-v3 is reserved for the independently authored Econo chapter; native replay qualification is separate.",
+  "captureMethod": "Maintained capture-current-guide.mjs with advanced/setup-and-rules.mjs. Real Settings choice, persistence, fresh reload and visible-setting verification precede normal UI scenario actions.",
+  "sourceQualification": "Exact deployed browser source revision remains unknown. Native backend log says legacy-gl; browser diagnostics renderer is webgl2. These labels describe separate layers.",
+  "limits": [
+    "Blitz and Sandbox frames have a generating map preview and prove rules configuration only.",
+    "AI strategy full frames show only their visible top portion.",
+    "Earlier v2 candidates remain immutable with their original objects and digests; they are not relabelled as High."
+  ],
+  "assets": [
+    {
+      "id": "choosing-ai-map-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-map-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-map-v3.webp",
+      "sha256": "f3e69b77eb87676d94b60868d13438157627335a7e1603482917f88f2f3dfb2c",
+      "bytes": 101176,
+      "width": 1440,
+      "height": 900,
+      "caption": "A ready 128 × 128 Lava shield preview with two colony start markers. Inspect the actual terrain and approaches on your map.",
+      "alt": "Current random-map setup shows Width 128, Height 128, Colonies 2 and a ready Lava shield preview.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-players-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-players-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-players-v3.webp",
+      "sha256": "ef6f0878fb14eee9865d436a66e63bc5a21389217487b96ab405617479b79d61",
+      "bytes": 55198,
+      "width": 1440,
+      "height": 900,
+      "caption": "The red colony is You on Team 1; the cyan colony is AI on Team 2, with Numbi - Easy (1204) selected.",
+      "alt": "Current Players & Teams setup with two separate-team colonies, human red and AI cyan.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-controller-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-controller-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-controller-v3.webp",
+      "sha256": "a6136afaf72ef4a2f031cb3a25e2b3b73793630607ffdbcf20271f230bc9a838",
+      "bytes": 58090,
+      "width": 1440,
+      "height": 900,
+      "caption": "The controller menu separates You, AI, You + AI and Closed.",
+      "alt": "The current colony-controller menu lists You, AI, You plus AI, and Closed.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-controller-detail-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-controller-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-controller-detail-v3.webp",
+      "sha256": "5c76cbc97975ef0175a8f4c335bf313db25f03a9ac36dbba829672f5a8c77c8a",
+      "bytes": 4602,
+      "width": 331,
+      "height": 172,
+      "caption": "Detail from the same frame: AI is selected, with You, You + AI and Closed available.",
+      "alt": "The controller-choice list enlarged, with AI highlighted.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-roster-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-roster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-roster-v3.webp",
+      "sha256": "7699c7c6f2a0b325e2d919b360db07ce62f1cb2aa6f76c9104b00f9f553c9969",
+      "bytes": 66584,
+      "width": 1440,
+      "height": 900,
+      "caption": "The current built-in opponent roster lists eight named opponents plus Inactive; Econo is Econo - Easy (1310).",
+      "alt": "The current AI selector lists Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, Maxima and Inactive.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-roster-detail-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-roster-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-roster-detail-v3.webp",
+      "sha256": "127c3076d600bd60918f7cc0336cc687c9be3905863739b8eab250a657673897",
+      "bytes": 10064,
+      "width": 308,
+      "height": 328,
+      "caption": "Detail: the current names and comparison labels, including Econo - Easy (1310).",
+      "alt": "The built-in AI list enlarged with its Easy, Medium and Hard labels and comparison numbers.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-info-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-info-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-info-v3.webp",
+      "sha256": "ae15728d91024d1191b8bcdf2731d55bf1286a6ae16da675d849d095b7b32b5c",
+      "bytes": 293924,
+      "width": 1440,
+      "height": 900,
+      "caption": "The top of Numbi’s AI strategy & counterplay panel. Additional text continues below the visible area; Back and Use Numbi are available.",
+      "alt": "Numbi’s strategy panel shows its timetable-based description, visible strategy sections, Back and Use Numbi.",
+      "kind": "image"
+    },
+    {
+      "id": "choosing-ai-standard-v3",
+      "path": "/guide-media/v3/choosing-an-ai/choosing-ai-standard-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/choosing-an-ai/choosing-ai-standard-v3.webp",
+      "sha256": "1d8b4d3b171d652a5ba87b5d3cd542f71935a1df598892b35c6af4a68c67a09f",
+      "bytes": 77264,
+      "width": 1440,
+      "height": 900,
+      "caption": "Standard has Conquest or prestige, no timer, probability victory off and game speed 1x in this current browser setup.",
+      "alt": "Current Standard rules summary with Conquest or prestige selected, Time limit Off, Probability victory Off and 1x speed.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-presets-detail-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-presets-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-presets-detail-v3.webp",
+      "sha256": "1fc6b1a24a8b77442e955218ce3681bfc3bd07fb7f2c3da029ffc9ccc2c08009",
+      "bytes": 21326,
+      "width": 260,
+      "height": 660,
+      "caption": "Current named presets range from Standard and Quick clash to Shifting alliances. Read the selected preset’s rules rather than relying on its name.",
+      "alt": "The current rule-preset list, with Standard selected.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-conquest-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-conquest-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-conquest-v3.webp",
+      "sha256": "2e54eb0a64e8f98f4a8b8cd56cffdf9459602860dc42abc27be3c91be28b13e9",
+      "bytes": 82734,
+      "width": 1440,
+      "height": 900,
+      "caption": "Changing Victory to Conquest only produces Standard + 1 change; the timer and probability ending remain off.",
+      "alt": "Current Game Rules summary shows Standard plus one change and Conquest only selected.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-victory-detail-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-victory-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-victory-detail-v3.webp",
+      "sha256": "40f8ecc516d7bcab1233490f8186c6945f7d8709657a5a027468308c63543e42",
+      "bytes": 4502,
+      "width": 282,
+      "height": 162,
+      "caption": "Detail from the same frame: Conquest only is selected, with Time limit and Probability victory both off.",
+      "alt": "Current victory controls enlarged: Conquest only, no timer and probability victory off.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-sandbox-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-sandbox-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-sandbox-v3.webp",
+      "sha256": "7ae04d50800ce4663c877c09119e52dcd159b1928adc7ecfa04fff0d110ced2d",
+      "bytes": 89248,
+      "width": 1440,
+      "height": 900,
+      "caption": "Sandbox reveals terrain, supplies a large stockpile and enables instant construction; hunger and combat are unchecked. This is a rules-panel capture, not a launched match.",
+      "alt": "Current Sandbox summary showing Reveal terrain, Large stockpile, Instant construction and unchecked hunger and combat.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-blitz-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-blitz-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-blitz-v3.webp",
+      "sha256": "9a840b75dda06e952ff6636c1e77132312d98fc4aaf5641ee09bff2a35a67274",
+      "bytes": 85518,
+      "width": 1440,
+      "height": 900,
+      "caption": "Blitz combines a 45-minute limit, 97% probability ending, 2x speed, eight Veteran workers and instant construction. The map preview is still generating; this frame verifies the rules only.",
+      "alt": "Current Blitz summary shows its timer, probability threshold, speed, starting workers and economy settings.",
+      "kind": "image"
+    },
+    {
+      "id": "rules-all-v3",
+      "path": "/guide-media/v3/victory-and-rules/rules-all-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/victory-and-rules/rules-all-v3.webp",
+      "sha256": "c66e9938ff771fa1cf29c0839fddec64197d34cd5739db81764e5e0713b30270",
+      "bytes": 123480,
+      "width": 1440,
+      "height": 900,
+      "caption": "All rules exposes Match, Start, Economy and Combat controls together. Here Standard keeps hunger, combat, wounded retreat, unit death and upgrades enabled.",
+      "alt": "Current Standard All rules panel with match, start, economy and combat settings visible.",
+      "kind": "image"
+    },
+    {
+      "id": "econo-profile-v3",
+      "sha256": "0270721e64af0ce7fd929a32c2e5f6606f006786f2550bb24d8076732b7e56be",
+      "bytes": 299138,
+      "width": 1440,
+      "height": 900,
+      "caption": "Current public browser AI strategy panel for Econo, observed 18 November 2026.",
+      "alt": "The current Econo strategy panel; this setup view is separate from the native replay demonstration.",
+      "platform": "browser",
+      "path": "/guide-media/v3/ai-econo/econo-profile-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/ai-econo/econo-profile-v3.webp",
+      "kind": "image"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "choosing-ai-map-v3",
+      "status": 200,
+      "bytes": 101176,
+      "sha256": "f3e69b77eb87676d94b60868d13438157627335a7e1603482917f88f2f3dfb2c"
+    },
+    {
+      "id": "choosing-ai-players-v3",
+      "status": 200,
+      "bytes": 55198,
+      "sha256": "ef6f0878fb14eee9865d436a66e63bc5a21389217487b96ab405617479b79d61"
+    },
+    {
+      "id": "choosing-ai-controller-v3",
+      "status": 200,
+      "bytes": 58090,
+      "sha256": "a6136afaf72ef4a2f031cb3a25e2b3b73793630607ffdbcf20271f230bc9a838"
+    },
+    {
+      "id": "choosing-ai-controller-detail-v3",
+      "status": 200,
+      "bytes": 4602,
+      "sha256": "5c76cbc97975ef0175a8f4c335bf313db25f03a9ac36dbba829672f5a8c77c8a"
+    },
+    {
+      "id": "choosing-ai-roster-v3",
+      "status": 200,
+      "bytes": 66584,
+      "sha256": "7699c7c6f2a0b325e2d919b360db07ce62f1cb2aa6f76c9104b00f9f553c9969"
+    },
+    {
+      "id": "choosing-ai-roster-detail-v3",
+      "status": 200,
+      "bytes": 10064,
+      "sha256": "127c3076d600bd60918f7cc0336cc687c9be3905863739b8eab250a657673897"
+    },
+    {
+      "id": "choosing-ai-info-v3",
+      "status": 200,
+      "bytes": 293924,
+      "sha256": "ae15728d91024d1191b8bcdf2731d55bf1286a6ae16da675d849d095b7b32b5c"
+    },
+    {
+      "id": "choosing-ai-standard-v3",
+      "status": 200,
+      "bytes": 77264,
+      "sha256": "1d8b4d3b171d652a5ba87b5d3cd542f71935a1df598892b35c6af4a68c67a09f"
+    },
+    {
+      "id": "rules-presets-detail-v3",
+      "status": 200,
+      "bytes": 21326,
+      "sha256": "1fc6b1a24a8b77442e955218ce3681bfc3bd07fb7f2c3da029ffc9ccc2c08009"
+    },
+    {
+      "id": "rules-conquest-v3",
+      "status": 200,
+      "bytes": 82734,
+      "sha256": "2e54eb0a64e8f98f4a8b8cd56cffdf9459602860dc42abc27be3c91be28b13e9"
+    },
+    {
+      "id": "rules-victory-detail-v3",
+      "status": 200,
+      "bytes": 4502,
+      "sha256": "40f8ecc516d7bcab1233490f8186c6945f7d8709657a5a027468308c63543e42"
+    },
+    {
+      "id": "rules-sandbox-v3",
+      "status": 200,
+      "bytes": 89248,
+      "sha256": "7ae04d50800ce4663c877c09119e52dcd159b1928adc7ecfa04fff0d110ced2d"
+    },
+    {
+      "id": "rules-blitz-v3",
+      "status": 200,
+      "bytes": 85518,
+      "sha256": "9a840b75dda06e952ff6636c1e77132312d98fc4aaf5641ee09bff2a35a67274"
+    },
+    {
+      "id": "rules-all-v3",
+      "status": 200,
+      "bytes": 123480,
+      "sha256": "c66e9938ff771fa1cf29c0839fddec64197d34cd5739db81764e5e0713b30270"
+    },
+    {
+      "id": "econo-profile-v3",
+      "status": 200,
+      "bytes": 299138,
+      "sha256": "0270721e64af0ce7fd929a32c2e5f6606f006786f2550bb24d8076732b7e56be"
+    }
+  ]
+}

@@ -6,21 +6,26 @@ format: "reference"
 order: 4
 prerequisites: []
 tags: ["controls", "reference"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Default game keyboard bindings"
+  - title: "Current public browser controls, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Earlier source context: default game keyboard bindings"
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/keyboard-gui.default.txt"
-  - title: "Keyboard action names"
+  - title: "Earlier source context: keyboard action names"
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/input/GameGUIKeyActions.cpp"
 ---
 
-These are the default desktop bindings. Open **Settings → Controls** to check your own configuration. Click the canvas before using game keys. A sequence such as **B → I** means press B, release it, then press I; **Ctrl + Shift + R** means hold the modifiers while pressing R.
+These are the default desktop bindings. Open **Settings → Controls**, scroll to **Keyboard shortcuts**, and select **Game** to check your own configuration. The **Map editor** tab has a separate binding set.
+
+Choose a binding to change it, or use the adjacent **+** control to add another shortcut for an action. The binding editor offers **Save shortcut** to apply a change and **Cancel** to leave it unchanged. **Restore default shortcuts** resets customized bindings, so use it only when you intend to reset them.
+
+Click the canvas before using game keys. A sequence such as **B → I** means press B, release it, then press I; **Ctrl + Shift + R** means hold the modifiers while pressing R.
 
 :::media-group
 
-[[media:reference-settings]]
+[[media:reference-settings-v3]]
 
-[[media:reference-settings-detail]]
+[[media:reference-settings-detail-v3]]
 
 :::
 
@@ -68,7 +73,7 @@ Pause, speed, and communication behavior depend on the session. Use local practi
 | --- | --- | --- |
 | + or = | Increase requested workers | Existing labor, food needs, and competing jobs |
 | − | Decrease requested workers | Whether the building still needs hauling or construction |
-| U | Request upgrade | Builder training, materials, and room for a larger footprint |
+| U | Start or stop an upgrade | Builder training, materials, and room for a larger footprint |
 | R | Request repair | Damage, worker supply, and materials |
 | D | Request destruction | That you selected the intended object |
 

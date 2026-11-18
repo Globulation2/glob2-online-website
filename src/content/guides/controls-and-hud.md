@@ -5,13 +5,14 @@ group: "start"
 order: 2
 prerequisites: ["getting-started"]
 tags: ["beginner", "controls", "reference"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Game interface and colony counters"
+  - title: "Current public browser interface, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Earlier source context: game interface and colony counters"
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/draw/GameGUIDraw.cpp"
-  - title: "Default game keyboard bindings"
+  - title: "Earlier source context: default game keyboard bindings"
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/keyboard-gui.default.txt"
-  - title: "Sidebar controls"
+  - title: "Earlier source context: sidebar controls"
     url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/input/GameGUIInputMenuClick.cpp"
 ---
 
@@ -19,9 +20,7 @@ A busy screen does not necessarily mean a productive colony. Learn to read the r
 
 ## Find your bearings
 
-Start a local **Custom Game**, then press **P** to pause while you inspect it. The main map occupies most of the screen. The minimap and working sidebar sit on the right; colony counters run across the top.
-
-[[media:controls-overview]]
+For the pictured practice, open **Tutorial → Food supply practice**. If a briefing appears, read it and choose **Ok**; otherwise follow the visible lesson task. This is a prepared training colony with an existing inn and swarm; its starting stocks are not a promise about a custom match. Press **P** to pause while you inspect it. The main map occupies most of the screen. The minimap and working sidebar sit on the right; colony counters run across the top.
 
 Use the minimap to move your view to another part of the map. **Home** brings you back to your colony. These change your camera; they do not send globs to that location. Clicking the game canvas gives the game keyboard focus. If a shortcut appears to do nothing, click the canvas before trying again.
 
@@ -33,11 +32,13 @@ Left-click a building or glob to inspect it. Selection exposes information and t
 
 :::media-group
 
-[[media:controls-building]]
+[[media:controls-inn-v3]]
 
-[[media:controls-building-detail]]
+[[media:controls-inn-detail-v3]]
 
 :::
+
+In this paused example, the existing inn shows **HP 200/200**, **Inside 0/4**, **Working 0/2**, and **Food 10/10**. A shortfall between attached and requested workers does not by itself establish a problem: inspect the stock and resume to watch what work is needed.
 
 On a selected building, look for these distinct readings:
 
@@ -52,7 +53,15 @@ On a selected building, look for these distinct readings:
 
 A building does not show every row: a construction site needs materials, an inn supplies meals, and a swarm creates units. Read the labels rather than transferring the meaning of a bar from one building to another.
 
-On a selected glob, inspect nutrition, health, abilities, and current activity. Low nutrition calls for reachable food. Lost health calls for healing as well. A worker briefly leaving a job to eat is different from a worker being unable to reach that job at all.
+On a selected glob, inspect nutrition, health, abilities, and current activity. Low nutrition calls for reachable food. Lost health calls for healing as well. A worker briefly leaving a job to eat is different from a worker being unable to reach that job at all. The selected worker below shows **HP 200/200**, **Food 69%**, and **Not carrying anything** in this paused frame.
+
+:::media-group
+
+[[media:controls-worker-v3]]
+
+[[media:controls-worker-detail-v3]]
+
+:::
 
 :::note
 
@@ -75,21 +84,25 @@ The selected-building **Working** row and the swarm's production mix solve diffe
 
 ## Use the statistics views
 
-Clear any selection, then use the sidebar's statistics icons below the minimap. The text view provides readings; the graph view helps you see change over time. Cycle the statistics page heading to inspect different groups of measurements.
+Clear the selection, then choose the **Statistics** icon below the minimap. The current panel has topic buttons: **Overview**, **Colony**, **Economy**, **Military**, **World**, and **Game engine performance**. Use a topic to find the measurement relevant to your question.
 
-:::media-group
+[[media:controls-statistics-v3]]
 
-[[media:controls-statistics]]
+For a first example, choose **Population** in Overview. Its current value and an inline history chart appear in the sidebar. In this prepared colony, the selected reading is **Population 13**. Choose **Open full history** to expand the chart; **Details** offers its explanation and **Close** returns to the panel.
 
-[[media:controls-statistics-detail]]
+[[media:controls-history-v3]]
 
-:::
+Use history to answer a specific question. Did population grow while food stocks fell? Did an interruption coincide with stalled construction? Pair the measurement with a visible cause on the map. Inspect the definition and units before interpreting a percentage or a rate; an individual glob's HP and Food remain direct checks when that glob needs help.
 
-Use statistics to answer a specific question. Is food pressure rising as population grows? Are workers tied up while construction stalls? Did a fight leave many units needing recovery? A single number is less useful than a trend paired with a visible cause on the map.
+## Use map overlays to locate trouble
 
-The graph sidebar also offers map overlays for needs such as starving or damaged units. These help locate trouble; they do not repair it. After locating the affected globs, inspect food, routes, services, and staffing in that area.
+**Map overlays** is a separate sidebar view, opened with the fourth icon below the minimap. It is not the history chart. Its controls include **Starving Map**, **Wounded Units Map**, **Defense Map**, and **Fertility Map**.
 
-Do not confuse **prestige** with your online rating. Prestige is an in-match victory measure. The online leaderboard uses the multiplayer platform's ranking system. Learn how the top bar's prestige readings affect a particular match in the match’s victory conditions and rules.
+[[media:controls-overlays-v3]]
+
+Use an overlay to locate an area worth inspecting, then return to the affected globs, buildings and routes. An overlay changes what the map shows; it does not feed a hungry glob, heal an injury, or assign more workers. The example shows all four boxes unchecked. Compare an overlay with the selected glob’s HP, Food and current activity before deciding what to change.
+
+**Prestige** is an in-match victory measure. The online leaderboard uses a separate player-ranking system. Read [victory conditions and custom rules](/learn/victory-and-rules/) before planning around a match's objective.
 
 ## A few shortcuts worth learning first
 
@@ -99,7 +112,7 @@ Do not confuse **prestige** with your online rating. Prestige is an in-match vic
 | P | Pause or resume local play | Inspect a problem without letting it grow |
 | Home | Return the camera to home | Recover your bearings after scouting |
 | H | Open message history | Revisit tutorial instructions or events |
-| Space | Go to an event; advance tutorial messages | Read the current tutorial prompt first |
+| Space | Go to an event; continue a message when prompted | Follow the active lesson’s visible instructions |
 | + or = / − | Increase / decrease selected building's requested workers | Move labor between competing jobs |
 | I | Toggle information drawing | Inspect map information without changing the simulation |
 | T | Toggle unit-path drawing | Investigate a unit's route |

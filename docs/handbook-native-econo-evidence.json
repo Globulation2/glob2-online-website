@@ -1,0 +1,327 @@
+{
+  "observed": "2026-11-18",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "packageSha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "renderer": "SDL GPU",
+    "framebuffer": [
+      2940,
+      1650
+    ],
+    "method": "Actual released native desktop MCP ui_act/ui_key/ui_click/ui_screenshot. No state injection or repainting.",
+    "map": "River revision 9, seed 713, 128x128, two colonies",
+    "gameSeed": 713,
+    "controllers": [
+      "Econo AI (red)",
+      "Cortex AI (cyan)"
+    ],
+    "humanControlled": false,
+    "tickLimit": 25000,
+    "probabilityVictory": 0,
+    "experiments": [],
+    "replayDuration": "13:53",
+    "view": "Econo watched; fog of war and combined vision checked. Actual replay pause used for stills. Town clock3:16; pressure/history clock11:09, sampledPopulation115.",
+    "limits": "Native AI-versus-AI illustration, not human play or a strength comparison. The recording duration13:53 is not an observed match victory. High-resolution mode is verified through supported UI/reload/rendered appearance; no native per-frame HD counter is exposed by MCP.",
+    "artwork": "Explicit High resolution selected through supported Graphics UI; applied on fresh replay load and confirmed in post-load and post-still Settings inspections.",
+    "timing": "The later stills are paused at tick20078, independently recorded as the initial paused tick of the subsequently started native video. The earlier town still records only its visible replay clock3:16; exact tick was not exported."
+  },
+  "browserBaseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "assets": [
+    {
+      "id": "econo-town-hd-v2",
+      "candidate": "econo-town-hd-v2.webp",
+      "kind": "image",
+      "source": "hd-econo-town.png",
+      "sourceSha256": "2b240e642f8f6972a8324ca1a878305f1207a4292ccb89a5ca0986fcbe6ec6f8",
+      "originalSize": [
+        2940,
+        1650
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 898,
+      "bytes": 340072,
+      "sha256": "87bd2c9731c956027dc689c6f937bb3df464376d1badcd4f3601818c347e53d5",
+      "caption": "Native 0.11.6.1 at 3:16, with SDL GPU and explicit High resolution: Econo has added a second swarm and several services.",
+      "alt": "Red Econo workers move among two swarms and services in the paused native replay.",
+      "platform": "native",
+      "qualityProof": "../native-high-resolution-proof.json"
+    },
+    {
+      "id": "econo-pressure-hd-v2",
+      "candidate": "econo-pressure-hd-v2.webp",
+      "kind": "image",
+      "source": "hd-econo-pressure.png",
+      "sourceSha256": "ed9e86f63b9e67ce9c302b13a78196d20c9bad9b17a0278172bcedee9e45c099",
+      "originalSize": [
+        2940,
+        1650
+      ],
+      "crop": [
+        0,
+        0,
+        2532,
+        1590
+      ],
+      "width": 1600,
+      "height": 1005,
+      "bytes": 473916,
+      "sha256": "73434c7e32facf2260d6c5527fc7168e54cfec8dc36915a10b5316ef201909c4",
+      "caption": "The same native replay at 11:09: cyan units press into Econo’s settlement while attack notifications appear.",
+      "alt": "Cyan warriors gather among red Econo’s services; several red globs have depleted health bars.",
+      "platform": "native",
+      "qualityProof": "../native-high-resolution-proof.json"
+    },
+    {
+      "id": "econo-history-hd-v2",
+      "candidate": "econo-history-hd-v2.webp",
+      "kind": "image",
+      "source": "hd-econo-population-history.png",
+      "sourceSha256": "caf046c462c68bcbe37974dbaf7473d2278b339e5dacc17bd7bd32fa9395a99a",
+      "originalSize": [
+        2940,
+        1650
+      ],
+      "crop": [
+        878,
+        338,
+        2064,
+        1310
+      ],
+      "width": 1186,
+      "height": 972,
+      "bytes": 34896,
+      "sha256": "8d392600e0effff617fb6158cac0b989647c9a3674fed7181a5e2d7e6d4857cc",
+      "caption": "Econo’s Population history at 11:09 has passed a peak above 100 and shows a sampled value of 115.",
+      "alt": "The native Population history for Econo rises beyond 100, then declines from its peak; the displayed reading is 115.",
+      "platform": "native",
+      "qualityProof": "../native-high-resolution-proof.json"
+    },
+    {
+      "id": "econo-cortex-pressure-motion-hd-v2",
+      "candidate": "econo-cortex-pressure-hd-v2.mp4",
+      "kind": "video",
+      "width": 1600,
+      "height": 898,
+      "durationSeconds": 12,
+      "posterId": "econo-cortex-pressure-poster-hd-v2",
+      "caption": "Normal-speed native 0.11.6.1 replay: cyan Cortex units move through red Econo’s settlement. Both colonies are AI-controlled.",
+      "alt": "Cyan warriors move among red Econo services and workers during the native replay.",
+      "platform": "native",
+      "bytes": 7266918,
+      "sha256": "29c28cbb994d49586db9242894ca7d7d742cb7ddeb42562ca84632b258393338"
+    },
+    {
+      "id": "econo-cortex-pressure-poster-hd-v2",
+      "candidate": "econo-cortex-pressure-hd-v2-poster.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 898,
+      "caption": "Opening frame of the native Econo–Cortex pressure clip.",
+      "alt": "Cyan warriors and red Econo workers among the settlement’s services.",
+      "platform": "native",
+      "bytes": 364092,
+      "sha256": "4ca69c5db3b2dbcd8b0ef00d5d84d63a9631f790c65bf09ed1e8f808ce7b1b70"
+    }
+  ],
+  "retirement": {
+    "oldEconoAssets": "All old Econo illustrations describe a different 0.11.0.0 human exercise and must leave the active chapter; preserve original manifest records/provenance.",
+    "econo-hauling-clip": "Earlier generic home food-service footage is retired with the old match narrative. Current construction/supply motion is demonstrated in the linked resources-and-hauling lesson; this native AI subsection does not claim a current human service-cycle recording."
+  },
+  "nativeArtifacts": {
+    "river.map.gz": "98d11fbfca2261bd8bd51d744beb7d9ff70b30493d3431899709bb57eb674cf9",
+    "econo-cortex-25000/game.replay": "381335889fd90225c8088836b20ad1fc057dabbdc7f37c0e2a43078cd8ad7b13",
+    "econo-cortex-25000/initial.game.gz": "d981f5cf40197f93f68bcfbcd1d371e4c649921834b010b81aa7b2c7654beb58",
+    "econo-cortex-25000/final.game.gz": "5a23b1feb8fc6af76645a04eb5e568aa3b19363847c51d898149f566ff16d6bd"
+  },
+  "approvalStatus": "Independent source/media/applied-artwork review approved all five native replacements. Shared-manifest registration, integration/render and publication remain pending. Earlier Software objects remain held.",
+  "qualityProof": {
+    "observed": "2026-11-18",
+    "publicNativeVersion": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "method": "Actual native MCP UI. Settings Display & graphics: switched Software → SDL GPU, selected Artwork → High resolution, then loaded a fresh replay and re-opened Settings to verify the applied selection remained High resolution. No code/state injection.",
+    "renderer": "SDL GPU, runtime texture-filtering capability proved by enabled Artwork choice and actual backend change/viewport transition.",
+    "choice": "Explicit High resolution (not Automatic); retained native preferences report rendererBackend=sdl-gpu, highResolutionArtworkChoice=on and highResolutionArtwork=1.",
+    "loadedReplay": "econo-cortex-25000/game.replay",
+    "proofFiles": [
+      {
+        "filename": "native-renderer-choice-sdl-gpu.png",
+        "sha256": "0fe36a78a097a20acbf0bb2a8784b6eaabc1fc480ecf3ea180bc3239f6f6a1fc"
+      },
+      {
+        "filename": "native-explicit-high-resolution-setting.png",
+        "sha256": "ebb906f7bde53fa83d558e072cfde4f1ee4edc281dbfd123cbe3c2fe9708e50d"
+      },
+      {
+        "filename": "hd-econo-post-load-graphics-proof.png",
+        "sha256": "e6240aba24ec1e172c56a3d10240ddbc97ca4d052ca7dff0cf0d5b6970a11008"
+      },
+      {
+        "filename": "hd-econo-post-load-graphics-proof.json",
+        "sha256": "5ddc03377e572ae129a5dec3fc826a6ca6d7cb40f1b7e68aa7b08d1658469a78"
+      },
+      {
+        "filename": "hd-probe-econo-loaded.png",
+        "sha256": "ad013f2a0ee0a12a8d746d99f339a592a562c3a8d86b4da5c864028f9806f13c"
+      }
+    ],
+    "sourceContract": [
+      "src/ui/settings/SettingsScreenGeneral.cpp: artwork requires textureFiltering; explicit High resolution is never adapted.",
+      "src/hud/GameGUI.cpp: new session requests settings.highResolutionArtwork.",
+      "libs/gag/src/Sprite.cpp: Software only draws original artwork, filtering backends support high-resolution frames."
+    ],
+    "limits": "Native MCP does not expose per-frame HD draw counters. Qualification uses actual supported explicit setting, fresh-load application, capable active backend and independently reviewed rendered appearance, not loaded-pack readiness alone. Earlier Software candidates remain held.",
+    "resourceResolution": {
+      "observedRoot": null,
+      "packagedResourcesExpected": "Glob2.app/Contents/Resources",
+      "qualification": "Source-supported resolution, not a per-file runtime trace. Exact released FileManager constructor searches the isolated profile, then Apple SDL_GetBasePath (bundle Resources), before GLOB2_ASSET_DIR, runtime assets, working directory and source roots. The isolated profile has no data/artwork override. Captured MCP/logs do not expose resolved resource roots. The prior process has closed; no live open-file verification was obtained.",
+      "source": "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/libs/gag/src/FileManager.cpp",
+      "publicationStatus": "Source-supported resolution qualification accepted by coordinator and reciprocal reviewer; no per-file path trace claimed."
+    }
+  },
+  "retirementDependencies": [
+    "Current resources-and-hauling construction/supply motion and teaching must be integrated and published in the same batch before retiring the old generic Econo human-food clip.",
+    "The browser opponent-panel frame remains separately pending applied-quality recapture by the website author."
+  ],
+  "motion": {
+    "source": "capture-774608457682.mp4",
+    "bytes": 44061383,
+    "sha256": "08d7eff26738cd2de6800777bfb6ae5de93f9e8acb0610fb400bdb7c0ad1ebde",
+    "sourceMetadata": "capture-774608457682.mp4.json",
+    "sourceDurationSeconds": 20.233333,
+    "sourceDroppedFrames": 5,
+    "sourceDroppedAudioSamples": 0,
+    "gameplayIntervalSeconds": [
+      0.466666,
+      19.833333
+    ],
+    "derivativeIntervalSeconds": [
+      5,
+      17
+    ],
+    "speed": "Actual supported replay speed control set to0 (normal1x) before recording; no temporal rescaling. Dropped-frame count describes recording, not a performance benchmark.",
+    "sourceInitialTick": 20078,
+    "sourceLastGameplayTick": 20632,
+    "transforms": "12-second continuous excerpt, resized1600x898; audio removed; no artwork alteration or synthetic frames. Export retains only the video stream; native recorder chapter/data tracks are omitted."
+  },
+  "registeredAssets": [
+    {
+      "id": "econo-town-hd-v2",
+      "kind": "image",
+      "sha256": "87bd2c9731c956027dc689c6f937bb3df464376d1badcd4f3601818c347e53d5",
+      "bytes": 340072,
+      "width": 1600,
+      "height": 898,
+      "caption": "Native 0.11.6.1 at 3:16, with SDL GPU and explicit High resolution: Econo has added a second swarm and several services.",
+      "alt": "Red Econo workers move among two swarms and services in the paused native replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-econo/econo-town-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-econo/econo-town-hd-v2.webp"
+    },
+    {
+      "id": "econo-pressure-hd-v2",
+      "kind": "image",
+      "sha256": "73434c7e32facf2260d6c5527fc7168e54cfec8dc36915a10b5316ef201909c4",
+      "bytes": 473916,
+      "width": 1600,
+      "height": 1005,
+      "caption": "The same native replay at 11:09: cyan units press into Econo’s settlement while attack notifications appear.",
+      "alt": "Cyan warriors gather among red Econo’s services; several red globs have depleted health bars.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-econo/econo-pressure-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-econo/econo-pressure-hd-v2.webp"
+    },
+    {
+      "id": "econo-history-hd-v2",
+      "kind": "image",
+      "sha256": "8d392600e0effff617fb6158cac0b989647c9a3674fed7181a5e2d7e6d4857cc",
+      "bytes": 34896,
+      "width": 1186,
+      "height": 972,
+      "caption": "Econo’s Population history at 11:09 has passed a peak above 100 and shows a sampled value of 115.",
+      "alt": "The native Population history for Econo rises beyond 100, then declines from its peak; the displayed reading is 115.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-econo/econo-history-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-econo/econo-history-hd-v2.webp"
+    },
+    {
+      "id": "econo-cortex-pressure-motion-hd-v2",
+      "kind": "video",
+      "sha256": "29c28cbb994d49586db9242894ca7d7d742cb7ddeb42562ca84632b258393338",
+      "bytes": 7266918,
+      "width": 1600,
+      "height": 898,
+      "caption": "Normal-speed native 0.11.6.1 replay: cyan Cortex units move through red Econo’s settlement. Both colonies are AI-controlled.",
+      "alt": "Cyan warriors move among red Econo services and workers during the native replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-econo/econo-cortex-pressure-motion-hd-v2.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-econo/econo-cortex-pressure-motion-hd-v2.mp4",
+      "poster": "econo-cortex-pressure-poster-hd-v2"
+    },
+    {
+      "id": "econo-cortex-pressure-poster-hd-v2",
+      "kind": "image",
+      "sha256": "4ca69c5db3b2dbcd8b0ef00d5d84d63a9631f790c65bf09ed1e8f808ce7b1b70",
+      "bytes": 364092,
+      "width": 1600,
+      "height": 898,
+      "caption": "Opening frame of the native Econo–Cortex pressure clip.",
+      "alt": "Cyan warriors and red Econo workers among the settlement’s services.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-econo/econo-cortex-pressure-poster-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-econo/econo-cortex-pressure-poster-hd-v2.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "econo-town-hd-v2",
+      "status": 200,
+      "bytes": 340072,
+      "sha256": "87bd2c9731c956027dc689c6f937bb3df464376d1badcd4f3601818c347e53d5"
+    },
+    {
+      "id": "econo-pressure-hd-v2",
+      "status": 200,
+      "bytes": 473916,
+      "sha256": "73434c7e32facf2260d6c5527fc7168e54cfec8dc36915a10b5316ef201909c4"
+    },
+    {
+      "id": "econo-history-hd-v2",
+      "status": 200,
+      "bytes": 34896,
+      "sha256": "8d392600e0effff617fb6158cac0b989647c9a3674fed7181a5e2d7e6d4857cc"
+    },
+    {
+      "id": "econo-cortex-pressure-motion-hd-v2",
+      "status": 200,
+      "bytes": 7266918,
+      "sha256": "29c28cbb994d49586db9242894ca7d7d742cb7ddeb42562ca84632b258393338"
+    },
+    {
+      "id": "econo-cortex-pressure-poster-hd-v2",
+      "status": 200,
+      "bytes": 364092,
+      "sha256": "4ca69c5db3b2dbcd8b0ef00d5d84d63a9631f790c65bf09ed1e8f808ce7b1b70"
+    }
+  ],
+  "publicationQualification": "Native High assets and provenance independently approved and immutable public byte-verified. Chapter publication still depends on its matching accepted source, separately qualified browser profile, current High resources motion and final rendered reviews.",
+  "browserProfileEvidence": "handbook-high-setup-evidence.json"
+}

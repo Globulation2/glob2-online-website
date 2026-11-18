@@ -1,0 +1,11 @@
+{
+  "observed": "2026-11-18",
+  "gameVersionObservedInMenu": "0.11.6.0",
+  "sourceRevision": null,
+  "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+  "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+  "packages": {
+    "index.js": { "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c", "bytes": 1846033 },
+    "index.wasm": { "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464", "bytes": 29604918 }
+  }
+}

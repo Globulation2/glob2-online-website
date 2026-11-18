@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('colony video supports byte ranges used by media playback', async ({ request }) => {
-  const url = '/brand/colony-loop-v0.11.6.1.mp4';
+  const url = '/brand/colony-loop-v0.11.6.1-hd.mp4';
   const head = await request.head(url);
   const size = Number(head.headers()['content-length']);
   expect(head.headers()['accept-ranges']).toBe('bytes');

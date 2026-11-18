@@ -7,11 +7,10 @@ order: 1
 group: "reference"
 format: "reference"
 prerequisites: ["buildings-and-services"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title":"Standard building definitions","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"},{"title":"Upgrade availability and builder qualification","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/render/scene/SceneExtract.cpp"},{"title":"Materials and services","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/Services.cpp"}]
+sources: [{"title":"Released native 0.11.6.1 stone-wall cost","url":"https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings/stonewall.json"},{"title":"Earlier source context: Standard building definitions","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"},{"title":"Earlier source context: upgrade availability and builder qualification","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/render/scene/SceneExtract.cpp"},{"title":"Earlier source context: materials and services","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/Services.cpp"}]
 ---
 
-These are the public browser game's Standard building costs. Read your match's rules before applying them to instant construction, starting stockpiles, experiments or an altered scenario. A construction cost is different from the stock a finished building keeps for its work.
+This reference retains the earlier source baseline for most Standard building values. The Stone wall row is corrected against the released native 0.11.6.1 catalog; its four-stone cost has not yet been rechecked in the current browser interface. Read your match's rules before applying them to instant construction, starting stockpiles, experiments or an altered scenario. A construction cost is different from the stock a finished building keeps for its work.
 
 ## Construction and upgrade materials
 
@@ -27,7 +26,7 @@ The Level 1 column is a new site's material requirement. Levels 2 and 3 are the 
 | Racetrack | 6 wood, 1 stone | 10 wood, 5 stone | 15 wood, 5 stone |
 | Swimming pool | 8 wood | 12 wood, 6 food | 8 wood, 4 food, 6 stone, 8 algae |
 | Defense tower | 6 wood | 10 wood, 14 stone | 8 wood, 14 stone, 2 algae |
-| Stone wall | 1 stone | — | — |
+| Stone wall | 4 stone (native 0.11.6.1) | — | — |
 | Market | 4 wood, 4 stone | Experimental | Experimental |
 
 A dash means there is no further Standard building tier. Market upgrades belong to the optional Markets V2 experiment; do not budget for them as ordinary progression.
