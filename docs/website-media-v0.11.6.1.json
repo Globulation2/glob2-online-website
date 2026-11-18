@@ -31,7 +31,10 @@
       "loop": "15 seconds; middle original seconds4\u201318, one-second dissolve source18\u201319 into3\u20134; opening and closing meet at source4",
       "audio": "removed",
       "poster": "exact decoded first delivered frame, WebP90,1600/960 wide",
-      "limits": "menu-colony background, not a human match or store launcher qualification; no stock/generated imagery, repaint, recolor or game-state manipulation"
+      "limits": "menu-colony background, not a human match or store launcher qualification; no stock/generated imagery, repaint, recolor or game-state manipulation",
+      "delivered_source_filename": "colony-loop-v0.11.6.1-seam.mp4",
+      "website_video_path": "/brand/colony-loop-v0.11.6.1.mp4",
+      "unused_candidate": "The earlier non-seam delivery candidate was not published; files records only the final shipped video alias and its posters."
     },
     "files": {
       "colony-1600-v0.11.6.1.webp": {
@@ -39,10 +42,6 @@
         "sha256": "db69c97d3928655de35496d82c51608ab1c1e05b923c5e458bf5c1bae485588c"
       },
       "colony-loop-v0.11.6.1.mp4": {
-        "bytes": 2027349,
-        "sha256": "aa0c3e4aa5fff67cf25acf426021328771c3f72ff9d1903d4f2c122d4c9cf589"
-      },
-      "colony-loop-v0.11.6.1-seam.mp4": {
         "bytes": 2079882,
         "sha256": "947eb6189be6ac64572866347129aa2101de7232d36d91b4ab577b39de3eca89"
       },
