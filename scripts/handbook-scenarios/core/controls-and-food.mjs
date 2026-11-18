@@ -7,7 +7,7 @@ export default async function controlsAndFood(api) {
   // Normal simulation only. A later colony view makes the staffing distinction
   // visible; no literal counter or unit position is written into the game.
   while ((await state()).tick < 2500) {
-    await waitTicks(Math.min(600, 2500 - (await state()).tick));
+    await waitTicks(Math.min(120, 2500 - (await state()).tick));
   }
   await key('p');
   await page.waitForFunction(() => glob2Diagnostics.snapshot().paused, null, { timeout: 10000 });
@@ -20,7 +20,7 @@ export default async function controlsAndFood(api) {
   // diagnostic assertion prevents silently substituting a building for a unit
   // if movement or future payload changes require renewed visual review.
   let selected = false;
-  for (const [x, y] of [[514, 590], [607, 403], [418, 547], [709, 100], [828, 239], [1111, 268], [688, 681], [893, 608], [589, 749]]) {
+  for (const [x, y] of [[820, 563], [868, 190], [728, 110], [666, 337], [1078, 265], [376, 502], [207, 683], [419, 675], [687, 742], [612, 786], [514, 590], [607, 403], [418, 547], [709, 100], [828, 239], [1111, 268], [688, 681], [893, 608], [589, 749]]) {
     await click(x, y);
     await click(x, y);
     if ((await state()).hud?.selection === 'unit') { selected = true; break; }
