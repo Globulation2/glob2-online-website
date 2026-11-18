@@ -24,7 +24,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   height: 300px;
   overflow: hidden;
   z-index: 0;
-  background: var(--grass) url('/brand/colony-960.webp') 50% 62% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-960-v0.11.6.1.webp') 50% 62% / cover no-repeat;
 }
 .world-band::after {
   content: '';
@@ -211,7 +211,7 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   overflow: hidden;
   border-radius: var(--r-lg);
   box-shadow: none;
-  background: var(--grass) url('/brand/colony-1600.webp') 70% 60% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-1600-v0.11.6.1.webp') 70% 60% / cover no-repeat;
 }
 .hero-colony::after {
   content: '';

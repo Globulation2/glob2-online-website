@@ -2,23 +2,20 @@
 import '../styles/home.css';
 import {site} from '../data/site';
 import {getGameLabel} from '../data/storefronts';
+import {currentGameplayShots,currentGalleryNote} from '../data/artwork';
 import { localizedMarketing, translate, localizedPath, englishLabel, type Locale } from '../i18n';
 const {concept='colony',locale='en'}=Astro.props as {concept?:string;locale?:Locale};
 const {home,community}=localizedMarketing(locale);
 const t=(key:Parameters<typeof translate>[1], params:Record<string,string|number>={})=>translate(locale,key,params);
 const english=(label:string)=>englishLabel(locale,label);
 const sprites=['worker','inn','war-flag'];
-const shots=[
-  {src:'/images/home-thriving-colony.webp',width:1280,height:720,title:t('home.shot.0.title'),caption:t('home.shot.0.caption'),alt:t('home.shot.0.alt')},
-  {src:'/images/home-colony-defence.webp',width:1280,height:720,title:t('home.shot.1.title'),caption:t('home.shot.1.caption'),alt:t('home.shot.1.alt')},
-  {src:'/images/home-rival-expansion.webp',width:1280,height:720,title:t('home.shot.2.title'),caption:t('home.shot.2.caption'),alt:t('home.shot.2.alt')},
-];
+const shots=currentGameplayShots;
 const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
 ---
 <div class:list={['home',{'colony':concept==='colony'}]}>
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-colony" aria-hidden="true">
-    <video class="colony-video" data-src="/brand/colony-loop.mp4" poster="/brand/colony-1600.webp" muted loop playsinline preload="none" tabindex="-1"></video>
+    <video class="colony-video" data-src="/brand/colony-loop-v0.11.6.1.mp4" poster="/brand/colony-1600-v0.11.6.1.webp" muted loop playsinline preload="none" tabindex="-1"></video>
   </div>
   <button class="colony-motion" type="button" data-pause={t('home.pause')} data-resume={t('home.resume')} hidden>❚❚ {t('home.pause')}</button>
   <div class="hero-copy">
@@ -40,10 +37,10 @@ const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
     <p>{home.gameplayDescription}</p>
   </div>
   <div class="shots">{shots.map((shot,i)=><figure class:list={['game-window',{"lead-shot":i===0}]}>
-    <a href={shot.src} aria-label={t('home.fullImage',{title:shot.title})}><img src={shot.src} width={shot.width} height={shot.height} alt={shot.alt} loading="lazy"/></a>
-    <figcaption><strong>{shot.title}.</strong> {shot.caption}</figcaption>
+    <a href={shot.src} aria-label={t('home.fullImage',{title:english(shot.title)})}><img src={shot.src} width={shot.width} height={shot.height} alt={english(shot.alt)} lang="en" loading="lazy"/></a>
+    <figcaption lang="en" dir="ltr"><strong>{english(shot.title)}.</strong> {shot.caption}</figcaption>
   </figure>)}</div>
-  <p class="shots-note">{t('home.shotsNote')}</p>
+  <p class="shots-note" lang="en" dir="ltr">{english(currentGalleryNote)}</p>
   <h3 class="decisions-title">{home.decisionsTitle}</h3>
   <ol class="decisions">{home.decisions.map((decision,i)=><li><img src={`/brand/${sprites[i]}.webp`} alt="" width="72" height="72" loading="lazy"/><h4>{decision.title}</h4><p>{decision.description}</p></li>)}</ol>
 </section>

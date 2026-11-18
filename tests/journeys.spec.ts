@@ -100,8 +100,10 @@ test('new player can understand the game and reach a practical first session',as
  const navigation=page.getByRole('navigation',{name:'Main navigation'});
  await expect(navigation.getByRole('link')).toHaveText(['Download','The game','Learn','Community','Search','Discord ↗']);
  await expect(page.getByRole('heading',{name:'Three decisions you will make'})).toBeVisible();
+ await expect(page.locator('.shots-note')).toContainText('released native game, version 0.11.6.1');
+ await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content','https://glob2.online/images/economy-v0.11.6.1.png');
  await expect(page.locator('.decisions > li')).toHaveCount(3);
- await expect(page.locator('.game-window.lead-shot img')).toHaveAttribute('src','/images/home-thriving-colony.webp');
+ await expect(page.locator('.game-window.lead-shot img')).toHaveAttribute('src','/images/economy-v0.11.6.1.webp');
  await expect.poll(()=>page.locator('.game-window.lead-shot img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>=1280)).toBe(true);
  await expect(page.getByRole('heading',{name:'News & notes'})).toHaveCount(0);
  await page.getByRole('link',{name:'Read the first-session guide',exact:false}).click();
@@ -110,6 +112,8 @@ test('new player can understand the game and reach a practical first session',as
  await expect(page.locator('article a[href="https://app.glob2.online/play/"]').first()).toBeVisible();
  await page.goto('/game/');
  await expect(page.getByRole('heading',{name:'Three kinds of glob'})).toBeVisible();
+ await expect(page.locator('.gameplay-image img')).toHaveAttribute('src','/images/economy-v0.11.6.1.webp');
+ await expect(page.locator('main .actions .primary')).toHaveAttribute('href','/downloads/');
  for(const role of ['Workers','Explorers','Warriors']) await expect(page.getByRole('heading',{name:role,exact:true})).toBeVisible();
  await page.goto('/downloads/');
  await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2.online/play/');

@@ -1,5 +1,16 @@
 # Website content verification
 
+## Current public marketing media — 18 November 2026
+
+The homepage, game explanation page and social preview now use reviewed captures of the public native **0.11.6.1** release, source revision `1b60514218218c89516b6c6f26f2fcefc9c8f974`. Their package and binary digests, map/replay identity, recording treatment and crop provenance are preserved in [the capture manifest](website-media-v0.11.6.1.json). The previous October homepage observations below describe the superseded marketing images. Earlier browser tutorial and handbook media remains in current lessons with its original capture provenance; it awaits a separate capture and UI refresh and is not an archived handbook.
+
+The hero is the actual native main-menu colony, with menus cropped out and native status bars retained. Its muted 15-second recording has a one-second dissolve at the join; the 1600px and 960px posters derive from the exact first delivered frame. Shared originals come from design-system revision `961a8f31ce586822a4ea2133edd3f8cb8ead8465`; the website stages versioned aliases for the video and both posters. Screenshots use their release in their filenames, and the social PNG is an encoding-only derivative of the reviewed economy WebP. Firebase also requires revalidation of public assets; only Astro's hashed build assets are immutable-cached.
+
+The three gameplay frames show an actual four-Cortex computer match on the shipped Four Squares map (seed714), through a paused replay and a live saved-game continuation, with fog/flags/areas off. The economy/overview replay displayed6:15/13:53; the exact frame tick is unverified. The rival view continues the25000-tick saved game; its exact capture tick is also unverified. The strategic screenshot deliberately shows the native adaptive strategic view. These are not human playtesting, a performance comparison, a typical match outcome, or qualification of another platform release. No generated imagery, repainting or compositing was added.
+
+`src/data/artwork.ts` supplies captions and accessible descriptions for this family. Its newly observed English descriptions use the established explicit English marker and `lang="en"` on localized pages. Previously reviewed translated captions name different older scenes and are intentionally preserved in their catalogs rather than applied to these new images. Handbook images retain their existing source revisions and guide-specific observations; refresh those only after matching the exact documented action and UI counters in the current game.
+
+
 Reviewed on 9 October 2026. The website and game deploy separately; source support for a feature does not establish its availability in the public app. This document records the editorial basis for the website, not a device qualification or a game release announcement.
 
 ## Source verification

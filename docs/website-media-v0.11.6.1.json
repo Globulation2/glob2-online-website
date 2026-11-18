@@ -1,0 +1,145 @@
+{
+  "hero": {
+    "captured": "2026-11-18",
+    "product": "Globulation 2",
+    "version": "0.11.6.1",
+    "source_revision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "release": "https://github.com/Globulation2/glob2/releases/tag/v0.11.6.1",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "package_sha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "binary_sha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
+    "renderer": "packaged native software renderer, high-tier detected, Automatic artwork, 2940x1656 framebuffer",
+    "hero": {
+      "scene": "actual live menu colony simulation from released package, UI omitted by crop; status bars retained",
+      "recording": "capture-759515517888.mp4",
+      "recording_sha256": "bd33383d7ad335d6f324bf4562002483d80405102a8ffdb3ab99330525c93939",
+      "chapter": "main_menu 1.133333\u201320.766666 seconds",
+      "source_range_seconds": [
+        3,
+        19
+      ],
+      "crop": [
+        892,
+        252,
+        2048,
+        1152
+      ],
+      "delivery_dimensions": [
+        1600,
+        900
+      ],
+      "loop": "15 seconds; middle original seconds4\u201318, one-second dissolve source18\u201319 into3\u20134; opening and closing meet at source4",
+      "audio": "removed",
+      "poster": "exact decoded first delivered frame, WebP90,1600/960 wide",
+      "limits": "menu-colony background, not a human match or store launcher qualification; no stock/generated imagery, repaint, recolor or game-state manipulation"
+    },
+    "files": {
+      "colony-1600-v0.11.6.1.webp": {
+        "bytes": 282168,
+        "sha256": "db69c97d3928655de35496d82c51608ab1c1e05b923c5e458bf5c1bae485588c"
+      },
+      "colony-loop-v0.11.6.1.mp4": {
+        "bytes": 2027349,
+        "sha256": "aa0c3e4aa5fff67cf25acf426021328771c3f72ff9d1903d4f2c122d4c9cf589"
+      },
+      "colony-loop-v0.11.6.1-seam.mp4": {
+        "bytes": 2079882,
+        "sha256": "947eb6189be6ac64572866347129aa2101de7232d36d91b4ab577b39de3eca89"
+      },
+      "colony-960-v0.11.6.1.webp": {
+        "bytes": 144942,
+        "sha256": "6aedacb7e46317c30b81aa60a69b3cf17d0a82c07b3b54db87235ae6de995254"
+      }
+    }
+  },
+  "screenshots": {
+    "captured": "2026-11-18",
+    "version": "0.11.6.1",
+    "source_revision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "release": "https://github.com/Globulation2/glob2/releases/tag/v0.11.6.1",
+    "package_sha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "binary_sha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
+    "renderer": "Actual released native client, software renderer, Automatic artwork, high device tier, 2940x1656 framebuffer",
+    "match": {
+      "map": "FourSquares1.map.gz shipped in exact release",
+      "map_sha256": "3f2ba4e3313fa31801449e057adaff679951abba7c599c271442a29578931869",
+      "game_seed": 714,
+      "controllers": [
+        "Cortex",
+        "Cortex",
+        "Cortex",
+        "Cortex"
+      ],
+      "generated_ticks": 25000,
+      "winner_team": -1,
+      "termination": "tickcap",
+      "authored_spawns": false,
+      "replay_sha256": "2550d8f40e70b6d5b974adbb6bdcf2664b19ff047076d75b278e8fbf8f414a5e",
+      "saved_game_sha256": "9dce309f91cf01c676005965eb5cc7e002c813df287761fcf4ed328fbd34a44e",
+      "command": "glob2 game run --map-file RELEASE/maps/FourSquares1.map.gz --game-seed 714 --player cortex --player cortex --player cortex --player cortex --ticks 25000 --save final --save every:12500 --write-replay --win-probability 0 --compute-threads 4 --output-dir OUTPUT"
+    },
+    "images": [
+      {
+        "file": "economy-v0.11.6.1.webp",
+        "native": "green-colony-native.png",
+        "crop": [
+          600,
+          100,
+          1920,
+          1080
+        ],
+        "scene": "Paused genuine four-Cortex replay at displayed6:15/13:53, lime colony,91%zoom. Fog off, flags off, areas off. Native status bars retained. Exact frame tick unverified.",
+        "caption": "Workers and new construction around a lime colony on Four Squares.",
+        "alt": "Lime workers move among an inn, school, racetrack and construction sites beside a forest.",
+        "native_sha256": "98bd80955f6e3ca74177010d4abdf72a217f2f27d0aee5fef0cc6f8d723150e0",
+        "sha256": "194a11009d3ade90ff82937ccba062007955c5129f8259e5ea43e1a6f15a0364",
+        "dimensions": [
+          1600,
+          900
+        ],
+        "treatment": "Declared crop, Lanczos downsize, WebPquality92. No paint, recolor, composition or game-state modification."
+      },
+      {
+        "file": "rival-pressure-v0.11.6.1.webp",
+        "native": "foursquares-colony-native.png",
+        "crop": [
+          550,
+          650,
+          1776,
+          999
+        ],
+        "scene": "Real live continuation of saved25000-tick four-Cortex game, red colony,83%zoom. Fog off, flags off, areas off. Red warriors and lime rivals visible at lower-left. No exact capture tick asserted.",
+        "caption": "A red colony and rival units share the approaches through Four Squares.",
+        "alt": "Red units surround a pool and colony buildings, with lime rivals approaching at the lower-left forest edge.",
+        "native_sha256": "f1114a603c54e597a0b0e7ed2417560ee9e57f3f29910391559ae2fb994e0e3d",
+        "sha256": "2e56432123d411f6ec1db0a6df6efb02b35b3e4ff2f945ed6e7d35bf2d0b8164",
+        "dimensions": [
+          1600,
+          900
+        ],
+        "treatment": "Declared crop, Lanczos downsize, WebPquality92. No paint, recolor, composition or game-state modification."
+      },
+      {
+        "file": "strategic-overview-v0.11.6.1.webp",
+        "native": "strategic-overview-native.png",
+        "crop": [
+          0,
+          80,
+          2464,
+          1386
+        ],
+        "scene": "Same genuine paused replay as economy, displayed6:15/13:53; adaptive detail32%zoom. Native purpose icons, resource squares and territory wash. Fog off, flags off, areas off. A partial map view, not a full-world export.",
+        "caption": "The adaptive strategic view shows buildings, resources and neighbouring territory.",
+        "alt": "The native strategic view shows lime and purple territory, building-purpose icons and resource fields separated by water.",
+        "native_sha256": "89bb774a3d558c7b5db16e4a280c3675427506ad4cd78654d529b4b7092aab57",
+        "sha256": "dba62ac692dbbb96e00302aa7bf705ff307cfd21498e3c53c82aa5152454ba24",
+        "dimensions": [
+          1600,
+          900
+        ],
+        "treatment": "Declared crop, Lanczos downsize, WebPquality92. No paint, recolor, composition or game-state modification."
+      }
+    ],
+    "scope": "Website candidate family for review; no storefront upload or extension of existing storefront-media approval. No human-playtesting, typical balance, performance or launcher-qualification claim. Native originals/replays remain ignored local game artifacts."
+  }
+}
