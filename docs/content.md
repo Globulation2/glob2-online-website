@@ -100,3 +100,13 @@ store listing URLs require separate updates through their release processes.
 When updating terms or privacy, verify optional product, payment and AI-provider
 claims against the game implementation. Preserve mandatory consumer rights and
 announce material terms changes with their effective date.
+
+## Store-first installation journey (18 November 2026)
+
+The homepage and header lead to the localized downloads page; browser early access is a secondary option. The downloads page first presents reviewed public Microsoft Store (Windows), App Store (iPhone/iPad), and Snap Store (Linux) listings from `src/data/storefronts.ts`. Each record includes its observation date. Their availability does not qualify the separate direct-download manifest or imply that other storefronts are live. Google Play closed testing and Epic review are not public installation destinations.
+
+Direct release files and installation instructions remain in a keyboard-accessible disclosure; the browser alternative stays available below it. The existing release-bound App Store overrides and withdrawals still take precedence over the reviewed fallback listing. Preserve the immutable package metadata and its qualification boundaries when updating stores. Before adding/changing a listing, verify its public product identity and platform; recheck production availability, regional limits and listed version independently. Record that evidence rather than inferring it from submission status.
+
+Existing reviewed locale catalogs and their independent review fingerprints are unchanged. English uses “Get the game”; other locales retain their reviewed Download label. New store explanatory prose uses the established explicit English marker until independently reviewed translations exist.
+
+The Discord invitation was replaced with the intended Globulation2 server's permanent `https://discord.gg/rQn3Br6AFA` invitation after native invite creation and unauthenticated Discord API verification on 18 November 2026. The previous invitation returned unknown/expired. The shared header deliberately keeps brand/utilities above navigation, with a separate utility row on narrow screens. Verify light/dark themes, long translations, keyboard focus and intermediate widths when editing it.

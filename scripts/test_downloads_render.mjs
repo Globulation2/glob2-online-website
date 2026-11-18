@@ -27,6 +27,7 @@ try {
     assert.equal(await page.locator('a[href*="/releases/download/"]').count(), 12);
     assert.equal(await page.locator('a[href^="https://play.google.com/"]').count(), 1);
     assert.equal(await page.locator('a[href^="https://apps.apple.com/"]').count(), 1);
+    await page.locator('.direct-downloads > summary').click();
     const flatpak = manifest.packages.find(pkg => pkg.format === 'flatpak');
     const help = page.locator('.download-flatpak');
     assert.equal(await help.count(), 1);
@@ -41,6 +42,7 @@ try {
     const accessibleContext = await browser.newContext({viewport:{width,height:1000},colorScheme});
     const accessible = await accessibleContext.newPage();
     await accessible.goto('http://127.0.0.1:4323/downloads/');
+    await accessible.locator('.direct-downloads > summary').click();
     await accessible.locator('.download-flatpak summary').click();
     assert.equal(await accessible.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     assert.deepEqual((await new AxeBuilder({page:accessible}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations, []);

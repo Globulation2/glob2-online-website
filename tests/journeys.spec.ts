@@ -18,7 +18,7 @@ test('homepage is lightweight and handoff explicit',async({page})=>{
  await expect(page.getByRole('navigation',{name:'Globulation 2 Online app'})).toHaveCount(0);
  const header=page.locator('header.site-header');
  await expect(header.getByRole('link',{name:'Sign in',exact:true})).toHaveAttribute('href','https://app.glob2.online/signin');
- await expect(header.getByRole('link',{name:/^Play/})).toHaveAttribute('href','https://app.glob2.online/play/');
+ await expect(header.getByRole('link',{name:'Get the game',exact:true})).toHaveAttribute('href','/downloads/');
  const online=page.getByRole('navigation',{name:'Play online'});
  await expect(online.getByRole('link',{name:/^Leaderboards/})).toHaveAttribute('href','https://app.glob2.online/leaderboard');
  await expect(online.getByRole('link',{name:/^Matches/})).toHaveAttribute('href','https://app.glob2.online/matches');
@@ -113,5 +113,29 @@ test('new player can understand the game and reach a practical first session',as
  for(const role of ['Workers','Explorers','Warriors']) await expect(page.getByRole('heading',{name:role,exact:true})).toBeVisible();
  await page.goto('/downloads/');
  await expect(page.getByRole('link',{name:'Play in browser',exact:false}).first()).toHaveAttribute('href','https://app.glob2.online/play/');
+ await page.locator('.direct-downloads > summary').click();
  await expect(page.getByRole('link',{name:'Check releases',exact:false})).toHaveAttribute('href','https://github.com/Globulation2/glob2/releases');
+});
+
+test('community invitations use the verified permanent server invite',async({page})=>{
+ await page.goto('/community/');
+ const invites=page.locator('a[href^="https://discord.gg/"]');
+ expect(await invites.count()).toBeGreaterThan(0);
+ for(const invite of await invites.all()) await expect(invite).toHaveAttribute('href','https://discord.gg/rQn3Br6AFA');
+});
+for(const width of [360,768,980,1024,1280,1470,1920]) test(`header uses deliberate rows without overlap at ${width}`,async({page})=>{
+ await page.setViewportSize({width,height:900});await page.goto('/search/');
+ await page.evaluate(()=>document.fonts.ready);
+ const boxes=await page.locator('.site-header .brand,.site-header .nav,.site-header .header-end').evaluateAll(elements=>elements.map(el=>{const r=el.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom};}));
+ const [brand,nav,utilities]=boxes;
+ expect(nav.y).toBeGreaterThanOrEqual(Math.max(brand.bottom,utilities.bottom));
+ if(width>700){expect(Math.abs(brand.y-utilities.y)).toBeLessThan(8);expect(utilities.x).toBeGreaterThanOrEqual(brand.right);}
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+test('header keyboard order follows its visible utility and navigation rows',async({page})=>{
+ await page.goto('/search/');
+ for(const selector of ['.skip-link','.site-header .brand','.language-picker summary','.theme-toggle','.header-signin','.header-play','.site-header .nav a:first-child']){
+  await page.keyboard.press('Tab');await expect(page.locator(selector)).toBeFocused();
+ }
 });
