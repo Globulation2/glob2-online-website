@@ -211,7 +211,7 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   overflow: hidden;
   border-radius: var(--r-lg);
   box-shadow: none;
-  background: var(--grass) url('/brand/colony-1600-v0.11.6.1.webp') 70% 60% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-1600-v0.11.6.1-hd.webp') 70% 60% / cover no-repeat;
 }
 .hero-colony::after {
   content: '';
