@@ -133,9 +133,11 @@ for(const width of [360,768,980,1024,1280,1470,1920]) test(`header uses delibera
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('header keyboard order follows its visible utility and navigation rows',async({page})=>{
+test('header keyboard order follows its visible utility and navigation rows',async({page,browserName})=>{
  await page.goto('/search/');
+ // macOS WebKit follows the system preference that uses Option-Tab for links.
+ const forward=browserName==='webkit'&&process.platform==='darwin'?'Alt+Tab':'Tab';
  for(const selector of ['.skip-link','.site-header .brand','.language-picker summary','.theme-toggle','.header-signin','.header-play','.site-header .nav a:first-child']){
-  await page.keyboard.press('Tab');await expect(page.locator(selector)).toBeFocused();
+  await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();
  }
 });
