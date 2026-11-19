@@ -1,0 +1,545 @@
+{
+  "observed": "2026-11-18",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "context": "Current public browser Food supply practice prepared colony used for an explicit production experiment; no custom AI match or completed Food lesson claim.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "sourceRevision": null,
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 41.092,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureRecord": "current-population-high-1/capture.json",
+  "captureRecordSha256": "9d7b40f0c1739d19df1338e711280fa4a868d46a84924ff4ded3bc0d1e640b4d",
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 322,
+  "scenario": "scripts/handbook-scenarios/core/population-practice.mjs",
+  "scenarioSha256": "57a76c7dbcd6e9d4204a3a83a45ca92aea16b621b0969a9929f72fb51955d37e",
+  "assets": [
+    {
+      "candidate": "population-panel-v3.webp",
+      "proposedId": "population-panel-v3",
+      "kind": "image",
+      "original": "population-swarm-initial.png",
+      "originalSha256": "ed666b1fb17d291c08b976982d8f0eab1041d99193ecedd81290fbc8ad48eab0",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 172024,
+      "sha256": "d7a1c6a2931784993008d60551806fa5a176774443697a41a09178f5b6a29735",
+      "tick": 131,
+      "caption": "The prepared Food supply practice colony begins with 8 workers and 1 explorer. The selected Swarm has Food 20/20.",
+      "alt": "Current Swarm selected, with its food, staffing and Worker/Explorer/Warrior birth controls."
+    },
+    {
+      "candidate": "population-panel-detail-v3.webp",
+      "proposedId": "population-panel-detail-v3",
+      "kind": "image",
+      "original": "population-swarm-initial.png",
+      "originalSha256": "ed666b1fb17d291c08b976982d8f0eab1041d99193ecedd81290fbc8ad48eab0",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "scale": 1,
+      "width": 192,
+      "height": 300,
+      "bytes": 7342,
+      "sha256": "414b163b3085a8e0b8c8bd71842256541e495a130becda6a0c003474f169f393",
+      "tick": 131,
+      "caption": "Detail of the same Swarm: production bars are separate from the Working hauling request.",
+      "alt": "Swarm sidebar with HP 700/700, Working 0/0, Food 20/20 and the three birth controls."
+    },
+    {
+      "candidate": "population-worker-result-v3.webp",
+      "proposedId": "population-worker-result-v3",
+      "kind": "image",
+      "original": "population-worker-only-result.png",
+      "originalSha256": "d30fdaced2c621dd42ad2d663b175b6076aaa7e0c16c4827f0a9d9a4208efa47",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 208186,
+      "sha256": "a98e5bf5ad433af52e9db5a81d893760ca25393d10914fe38b43927d9a836ebb",
+      "tick": 929,
+      "caption": "After Worker-only production resumed, the worker total rose from 8 to 10 while explorers remained 1. The selected Swarm has Food 7/20 and Working 2/2.",
+      "alt": "Selected Swarm and top bar after the Worker-only phase;10 total workers and 1 explorer."
+    },
+    {
+      "candidate": "population-worker-count-v3.webp",
+      "proposedId": "population-worker-count-v3",
+      "kind": "image",
+      "original": "population-worker-only-result.png",
+      "originalSha256": "d30fdaced2c621dd42ad2d663b175b6076aaa7e0c16c4827f0a9d9a4208efa47",
+      "crop": [
+        398,
+        0,
+        552,
+        18
+      ],
+      "scale": 3,
+      "width": 462,
+      "height": 54,
+      "bytes": 3696,
+      "sha256": "1cdeef3d2d57eb31d81286a2bab1562d0de109d0b5d8cd2694a0b37df504bf60",
+      "tick": 929,
+      "caption": "Enlarged top-bar crop from the same Worker result: 8 available / 10 total workers, 1/1 explorer and 0/0 warriors.",
+      "alt": "Worker result role counters:8/10, 1/1,0/0."
+    },
+    {
+      "candidate": "population-pending-birth-v3.webp",
+      "proposedId": "population-pending-birth-v3",
+      "kind": "image",
+      "original": "population-zero-hold-result.png",
+      "originalSha256": "8992b4b3249bd993df9ce26ca551278849502122fc53eacafdc7244123ae15cf",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 221532,
+      "sha256": "4e058f926ddc5562e048eec4d3146681f1495b46216d61a2bd6e7630f3382916",
+      "tick": 1573,
+      "caption": "After the controls were clamped back to zero, one additional worker was observed: 11 workers and 1 explorer. Do not infer an instant stop from the changed bars.",
+      "alt": "All three birth controls at their minimum, Swarm Food 16/20, Working 1/2, and 11 total workers."
+    },
+    {
+      "candidate": "population-explorer-result-v3.webp",
+      "proposedId": "population-explorer-result-v3",
+      "kind": "image",
+      "original": "population-explorer-only-result.png",
+      "originalSha256": "e431f7e36d6b843f6c5aaf7791f8e426ca45bdc0f46e144eb01dce224e46e420",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 238062,
+      "sha256": "030671f8cec509802b50ccdb186ad339e4f4f6fbed2d8c043420629acfecc434",
+      "tick": 1905,
+      "caption": "The Explorer-only phase increased explorers from 1 to 3 while the worker total stayed 11. Food is 8/20 and Working 2/2.",
+      "alt": "Swarm after Explorer-only production with 11 total workers and 3 explorers."
+    },
+    {
+      "candidate": "population-explorer-count-v3.webp",
+      "proposedId": "population-explorer-count-v3",
+      "kind": "image",
+      "original": "population-explorer-only-result.png",
+      "originalSha256": "e431f7e36d6b843f6c5aaf7791f8e426ca45bdc0f46e144eb01dce224e46e420",
+      "crop": [
+        398,
+        0,
+        552,
+        18
+      ],
+      "scale": 3,
+      "width": 462,
+      "height": 54,
+      "bytes": 3776,
+      "sha256": "e912e430d484a48441209666a054f6db70270e475b333f9ec1d57b3a060b2f6a",
+      "tick": 1905,
+      "caption": "Enlarged top-bar crop from the same Explorer result: 9 available / 11 total workers, 3/3 explorers and 0/0 warriors.",
+      "alt": "Explorer result role counters:9/11, 3/3,0/0."
+    },
+    {
+      "candidate": "population-zero-weights-v3.webp",
+      "proposedId": "population-zero-weights-v3",
+      "kind": "image",
+      "original": "population-final-zero-start.png",
+      "originalSha256": "56d79b79776ff0bab19d242254a2dfdfd335288ae1ecb8dacf0ce0d92af176ed",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 237948,
+      "sha256": "4aa0429aeca4055c7944c1de4b66851328342f2483e0d126cff7219f9b6ea8db",
+      "tick": 1905,
+      "caption": "All three birth controls were repeatedly decremented to their minimum. At the start of this hold, totals were 11 workers / 3 explorers, Food 8/20 and Working 2/2.",
+      "alt": "Swarm with all birth controls clamped to zero before the food-available hold."
+    },
+    {
+      "candidate": "population-stable-total-v3.webp",
+      "proposedId": "population-stable-total-v3",
+      "kind": "image",
+      "original": "population-final-zero-result.png",
+      "originalSha256": "e8dec0ba0eea53f1f957a2cb26fc241d3847e28253300af140077ec434cbcaea",
+      "crop": null,
+      "scale": 1,
+      "width": 1440,
+      "height": 900,
+      "bytes": 230640,
+      "sha256": "637813ed0979f404594a001affd71909e0aabe7517ce4bfca502a59adb8ca478",
+      "tick": 2542,
+      "caption": "After 637 normal simulation ticks, totals were still 11 workers and 3 explorers. Swarm Food rose from 8/20 to 15/20 with Working 2/2.",
+      "alt": "The same role totals at the end of a bounded all-zero hold, while food remains available."
+    },
+    {
+      "candidate": "population-stable-detail-v3.webp",
+      "proposedId": "population-stable-detail-v3",
+      "kind": "image",
+      "original": "population-final-zero-result.png",
+      "originalSha256": "e8dec0ba0eea53f1f957a2cb26fc241d3847e28253300af140077ec434cbcaea",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "scale": 1,
+      "width": 192,
+      "height": 300,
+      "bytes": 7288,
+      "sha256": "60d036ceec5cc036b64e06fbfa6dc79eff6ad3d833a1faf24fc4e0a6976c8463",
+      "tick": 2542,
+      "caption": "Detail of the final hold: Food 15/20 and Working 2/2; the unchanged totals are visible in the full frame.",
+      "alt": "Swarm Food 15/20, Working 2/2 and all three birth controls at minimum."
+    }
+  ],
+  "method": "Genuine frames/declared crops[left,top,right,bottom]. Counter crops enlarged3x with Lanczos; RGBWebP92method6. No repaint or game-state injection.",
+  "phases": [
+    {
+      "phase": "Worker-only",
+      "startTick": 580,
+      "endTick": 929,
+      "workerTotals": [
+        8,
+        10
+      ],
+      "explorerTotals": [
+        1,
+        1
+      ],
+      "Food": [
+        20,
+        7
+      ],
+      "Working": [
+        "0/2",
+        "2/2"
+      ]
+    },
+    {
+      "phase": "First all-zero adjustment",
+      "startTick": 929,
+      "endTick": 1573,
+      "workerTotals": [
+        10,
+        11
+      ],
+      "explorerTotals": [
+        1,
+        1
+      ],
+      "Food": [
+        7,
+        16
+      ],
+      "Working": [
+        "2/2",
+        "1/2"
+      ],
+      "qualification": "One additionalworker after zero observed. A pending-birth explanation is consistent with exactnative release source, but internal browser cause/deployed source is unverified; do not claim instant or indefinite stopping."
+    },
+    {
+      "phase": "Explorer-only",
+      "startTick": 1573,
+      "endTick": 1905,
+      "workerTotals": [
+        11,
+        11
+      ],
+      "explorerTotals": [
+        1,
+        3
+      ],
+      "Food": [
+        16,
+        8
+      ],
+      "Working": [
+        "1/2",
+        "2/2"
+      ]
+    },
+    {
+      "phase": "Settled all-zero hold",
+      "startTick": 1905,
+      "endTick": 2542,
+      "workerTotals": [
+        11,
+        11
+      ],
+      "explorerTotals": [
+        3,
+        3
+      ],
+      "Food": [
+        8,
+        15
+      ],
+      "Working": [
+        "2/2",
+        "2/2"
+      ],
+      "qualification": "Requested advance600ticks, actual observedbounds637ticks. Bounded observation withstoredfood andhaulers, not indefinite guarantee."
+    }
+  ],
+  "limits": [
+    "No exact ratio inferred from tiny bar fill: all three controls received20genuineleft clicks perreset before a single positive increment.",
+    "No Warrior-only birth, training, maximum population, resource-regrowth or hunger-disable rule qualification.",
+    "Later Inn experiment showedFood10unchanged through brief zero-hauler interval and afterrestoration; no depletion/refill or identifiedworker fullmealcycle claim.",
+    "Failed earlier ratio interpretations in previous fallback session remain separately excluded."
+  ],
+  "nativeMechanicContext": {
+    "url": "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/TypeSteps.cpp",
+    "qualification": "Exact releasednative context for pending late-choice production; not proof of public browser deployedsource parity."
+  },
+  "registeredAssets": [
+    {
+      "sha256": "d7a1c6a2931784993008d60551806fa5a176774443697a41a09178f5b6a29735",
+      "bytes": 172024,
+      "width": 1440,
+      "height": 900,
+      "caption": "The prepared Food supply practice colony begins with 8 workers and 1 explorer. The selected Swarm has Food 20/20.",
+      "alt": "Current Swarm selected, with its food, staffing and Worker/Explorer/Warrior birth controls.",
+      "id": "population-panel-v3",
+      "path": "/guide-media/v3/population-and-production/population-panel-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "414b163b3085a8e0b8c8bd71842256541e495a130becda6a0c003474f169f393",
+      "bytes": 7342,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the same Swarm: production bars are separate from the Working hauling request.",
+      "alt": "Swarm sidebar with HP 700/700, Working 0/0, Food 20/20 and the three birth controls.",
+      "id": "population-panel-detail-v3",
+      "path": "/guide-media/v3/population-and-production/population-panel-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "a98e5bf5ad433af52e9db5a81d893760ca25393d10914fe38b43927d9a836ebb",
+      "bytes": 208186,
+      "width": 1440,
+      "height": 900,
+      "caption": "After Worker-only production resumed, the worker total rose from 8 to 10 while explorers remained 1. The selected Swarm has Food 7/20 and Working 2/2.",
+      "alt": "Selected Swarm and top bar after the Worker-only phase;10 total workers and 1 explorer.",
+      "id": "population-worker-result-v3",
+      "path": "/guide-media/v3/population-and-production/population-worker-result-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-result-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "1cdeef3d2d57eb31d81286a2bab1562d0de109d0b5d8cd2694a0b37df504bf60",
+      "bytes": 3696,
+      "width": 462,
+      "height": 54,
+      "caption": "Enlarged top-bar crop from the same Worker result: 8 available / 10 total workers, 1/1 explorer and 0/0 warriors.",
+      "alt": "Worker result role counters:8/10, 1/1,0/0.",
+      "id": "population-worker-count-v3",
+      "path": "/guide-media/v3/population-and-production/population-worker-count-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-count-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "4e058f926ddc5562e048eec4d3146681f1495b46216d61a2bd6e7630f3382916",
+      "bytes": 221532,
+      "width": 1440,
+      "height": 900,
+      "caption": "After the controls were clamped back to zero, one additional worker was observed: 11 workers and 1 explorer. Do not infer an instant stop from the changed bars.",
+      "alt": "All three birth controls at their minimum, Swarm Food 16/20, Working 1/2, and 11 total workers.",
+      "id": "population-pending-birth-v3",
+      "path": "/guide-media/v3/population-and-production/population-pending-birth-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-pending-birth-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "030671f8cec509802b50ccdb186ad339e4f4f6fbed2d8c043420629acfecc434",
+      "bytes": 238062,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Explorer-only phase increased explorers from 1 to 3 while the worker total stayed 11. Food is 8/20 and Working 2/2.",
+      "alt": "Swarm after Explorer-only production with 11 total workers and 3 explorers.",
+      "id": "population-explorer-result-v3",
+      "path": "/guide-media/v3/population-and-production/population-explorer-result-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-result-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "e912e430d484a48441209666a054f6db70270e475b333f9ec1d57b3a060b2f6a",
+      "bytes": 3776,
+      "width": 462,
+      "height": 54,
+      "caption": "Enlarged top-bar crop from the same Explorer result: 9 available / 11 total workers, 3/3 explorers and 0/0 warriors.",
+      "alt": "Explorer result role counters:9/11, 3/3,0/0.",
+      "id": "population-explorer-count-v3",
+      "path": "/guide-media/v3/population-and-production/population-explorer-count-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-count-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "4aa0429aeca4055c7944c1de4b66851328342f2483e0d126cff7219f9b6ea8db",
+      "bytes": 237948,
+      "width": 1440,
+      "height": 900,
+      "caption": "All three birth controls were repeatedly decremented to their minimum. At the start of this hold, totals were 11 workers / 3 explorers, Food 8/20 and Working 2/2.",
+      "alt": "Swarm with all birth controls clamped to zero before the food-available hold.",
+      "id": "population-zero-weights-v3",
+      "path": "/guide-media/v3/population-and-production/population-zero-weights-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-zero-weights-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "637813ed0979f404594a001affd71909e0aabe7517ce4bfca502a59adb8ca478",
+      "bytes": 230640,
+      "width": 1440,
+      "height": 900,
+      "caption": "After 637 normal simulation ticks, totals were still 11 workers and 3 explorers. Swarm Food rose from 8/20 to 15/20 with Working 2/2.",
+      "alt": "The same role totals at the end of a bounded all-zero hold, while food remains available.",
+      "id": "population-stable-total-v3",
+      "path": "/guide-media/v3/population-and-production/population-stable-total-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-total-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "60d036ceec5cc036b64e06fbfa6dc79eff6ad3d833a1faf24fc4e0a6976c8463",
+      "bytes": 7288,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the final hold: Food 15/20 and Working 2/2; the unchanged totals are visible in the full frame.",
+      "alt": "Swarm Food 15/20, Working 2/2 and all three birth controls at minimum.",
+      "id": "population-stable-detail-v3",
+      "path": "/guide-media/v3/population-and-production/population-stable-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "population-panel-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-v3.webp?verify=1795047928548233000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 172024,
+      "sha256": "d7a1c6a2931784993008d60551806fa5a176774443697a41a09178f5b6a29735",
+      "observed": "2026-11-19T00:25:28.864091+00:00"
+    },
+    {
+      "id": "population-panel-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-detail-v3.webp?verify=1795047928548457000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7342,
+      "sha256": "414b163b3085a8e0b8c8bd71842256541e495a130becda6a0c003474f169f393",
+      "observed": "2026-11-19T00:25:28.889139+00:00"
+    },
+    {
+      "id": "population-worker-result-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-result-v3.webp?verify=1795047928548551000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 208186,
+      "sha256": "a98e5bf5ad433af52e9db5a81d893760ca25393d10914fe38b43927d9a836ebb",
+      "observed": "2026-11-19T00:25:28.874417+00:00"
+    },
+    {
+      "id": "population-worker-count-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-count-v3.webp?verify=1795047928548676000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 3696,
+      "sha256": "1cdeef3d2d57eb31d81286a2bab1562d0de109d0b5d8cd2694a0b37df504bf60",
+      "observed": "2026-11-19T00:25:28.985319+00:00"
+    },
+    {
+      "id": "population-pending-birth-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-pending-birth-v3.webp?verify=1795047928864252000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 221532,
+      "sha256": "4e058f926ddc5562e048eec4d3146681f1495b46216d61a2bd6e7630f3382916",
+      "observed": "2026-11-19T00:25:29.212160+00:00"
+    },
+    {
+      "id": "population-explorer-result-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-result-v3.webp?verify=1795047928874475000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 238062,
+      "sha256": "030671f8cec509802b50ccdb186ad339e4f4f6fbed2d8c043420629acfecc434",
+      "observed": "2026-11-19T00:25:29.219602+00:00"
+    },
+    {
+      "id": "population-explorer-count-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-count-v3.webp?verify=1795047928889192000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 3776,
+      "sha256": "e912e430d484a48441209666a054f6db70270e475b333f9ec1d57b3a060b2f6a",
+      "observed": "2026-11-19T00:25:29.192146+00:00"
+    },
+    {
+      "id": "population-zero-weights-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-zero-weights-v3.webp?verify=1795047928985389000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 237948,
+      "sha256": "4aa0429aeca4055c7944c1de4b66851328342f2483e0d126cff7219f9b6ea8db",
+      "observed": "2026-11-19T00:25:29.306230+00:00"
+    },
+    {
+      "id": "population-stable-total-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-total-v3.webp?verify=1795047929192215000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 230640,
+      "sha256": "637813ed0979f404594a001affd71909e0aabe7517ce4bfca502a59adb8ca478",
+      "observed": "2026-11-19T00:25:29.460666+00:00"
+    },
+    {
+      "id": "population-stable-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-detail-v3.webp?verify=1795047929212288000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7288,
+      "sha256": "60d036ceec5cc036b64e06fbfa6dc79eff6ad3d833a1faf24fc4e0a6976c8463",
+      "observed": "2026-11-19T00:25:29.408848+00:00"
+    }
+  ],
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  }
+}

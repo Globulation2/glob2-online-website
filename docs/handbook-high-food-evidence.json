@@ -1,0 +1,598 @@
+{
+  "observed": "2026-11-18",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "context": "Actual public browser0.11.6.0 prepared Food supply practice colony. Existing Inn supply interruption, not a completed construction lesson or custommatch.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 32.984,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 115,
+  "sourceHashes": {
+    "capture.json": "3891d752acecd98fcb80df1ae53386ef17ba51ccdb83cb6fa0241fe585a4c8bc",
+    "food-visible-observations.json": "6a2b087df0656b6844ceece9efa4d3f187d28beffe7b93719961160280fd6ee2",
+    "command.py": "7fc7e40df91b654fea56920003277fb03163cd3e820d1ecd5b58f838f71ef813",
+    "watch-food.py": "c0ec0804af8cd8f78a01f7ffe086d06fab7692efde058f18e26336fe15c5d944",
+    "scripts/capture-current-guide.mjs": "1939821897dc8f0717c33d5244c793e767a34d8a6b54c081527fb2317ed40f70",
+    "scripts/handbook-scenarios/core/interactive-practice.mjs": "ec77331e13c84ff4eae46ba7a59f71b05a4c546de8fd8d526d5a598f3a509a70"
+  },
+  "assets": [
+    {
+      "id": "food-first-stock-v3",
+      "candidate": "food-first-stock-v3.webp",
+      "kind": "image",
+      "original": "food-before-consumption.png",
+      "originalSha256": "bfd7808293b27e38e172c93438e7f383d84d03a632f54eb3785df8c96de1207c",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 222124,
+      "sha256": "67c9e1b1c0cd513e4971dad80d22550abff2596b8b3cf8c4df19e814bf57c89b",
+      "caption": "Before the interruption, the existing Inn has Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Selected Inn in the prepared Food supply practice colony, with a full food store and no hauling request.",
+      "snapshotTickBeforeCapture": 2287,
+      "observedTickAfterCaptureAndOCR": 2287,
+      "paused": true,
+      "exactImagePhysicsTick": 2287
+    },
+    {
+      "id": "food-first-stock-detail-v3",
+      "candidate": "food-first-stock-detail-v3.webp",
+      "kind": "image",
+      "original": "food-before-consumption.png",
+      "originalSha256": "bfd7808293b27e38e172c93438e7f383d84d03a632f54eb3785df8c96de1207c",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 7166,
+      "sha256": "58aa814d23dfb7e179ce6db979d95c00abad64a2eabbeab3a54a28d5b18b6c40",
+      "caption": "Detail of that Inn before resuming: Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Inn health, occupancy, staffing and stored Food before the interruption.",
+      "snapshotTickBeforeCapture": 2287,
+      "observedTickAfterCaptureAndOCR": 2287,
+      "paused": true,
+      "exactImagePhysicsTick": 2287
+    },
+    {
+      "id": "food-stock-falling-v3",
+      "candidate": "food-stock-falling-v3.webp",
+      "kind": "image",
+      "original": "food-stock-depleted.png",
+      "originalSha256": "e5a292c1cff7e807b2f23b9f1aba08b1f2c6a647abd7622bd950f0be845f7a00",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 232156,
+      "sha256": "268db332aeb0509da60cbe7e7b8f55b3804922a7141290f5b5200b0e4b5614c4",
+      "caption": "After normal simulation resumed with Working 0/0, the Inn’s Food count is 9/10.",
+      "alt": "Selected Inn with Food 9/10, Inside 0/4 and Working 0/0 after its stock fell.",
+      "snapshotTickBeforeCapture": 3887,
+      "observedTickAfterCaptureAndOCR": 3929,
+      "paused": false,
+      "exactImagePhysicsTick": null
+    },
+    {
+      "id": "food-hauling-restored-v3",
+      "candidate": "food-hauling-restored-v3.webp",
+      "kind": "image",
+      "original": "food-hauling-restored.png",
+      "originalSha256": "335d9392fc73672139b8137ee3cfccba05dd8483013bf2573baa5c32ffcad100",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 234462,
+      "sha256": "58cce1bd65c3376b9fbb3334942923e8b80681fdc3299139a7e75f7536a8d544",
+      "caption": "The hauling request is restored to two at high priority. Food is still 9/10 and Working reads 1/2 in this frame.",
+      "alt": "One worker attached against a request for two at the selected Inn; high priority and Food 9/10.",
+      "snapshotTickBeforeCapture": 4099,
+      "observedTickAfterCaptureAndOCR": 4148,
+      "paused": false,
+      "exactImagePhysicsTick": null
+    },
+    {
+      "id": "food-recovery-v3",
+      "candidate": "food-recovery-v3.webp",
+      "kind": "image",
+      "original": "food-stock-refilled-paused.png",
+      "originalSha256": "7bc0b965cb0652ef49eea67f36d4af44d4fcebdc55261f650a757091a434d696",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 212998,
+      "sha256": "733c68316bb09a1474cb1ed5f9e7652288f2d0eb776c327a73bce9b843551ab8",
+      "caption": "The later paused Inn has refilled to Food 10/10, with Inside 0/4 and Working 0/2.",
+      "alt": "Selected Inn after refill, showing full Food and a request for two even though no hauler is attached at this instant.",
+      "snapshotTickBeforeCapture": 4447,
+      "observedTickAfterCaptureAndOCR": 4447,
+      "paused": true,
+      "exactImagePhysicsTick": 4447
+    },
+    {
+      "id": "food-recovery-detail-v3",
+      "candidate": "food-recovery-detail-v3.webp",
+      "kind": "image",
+      "original": "food-stock-refilled-paused.png",
+      "originalSha256": "7bc0b965cb0652ef49eea67f36d4af44d4fcebdc55261f650a757091a434d696",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 7264,
+      "sha256": "b78b0ed44247c1ac96689a330b6424f8e25c902cadfba4841b03e1c32e7d362e",
+      "caption": "Detail after refill: Food 10/10, Inside 0/4 and Working 0/2.",
+      "alt": "Inn sidebar after the observed food reserve refilled.",
+      "snapshotTickBeforeCapture": 4447,
+      "observedTickAfterCaptureAndOCR": 4447,
+      "paused": true,
+      "exactImagePhysicsTick": 4447
+    },
+    {
+      "id": "food-consumption-refill-poster-v3",
+      "candidate": "food-consumption-refill-poster-v3.webp",
+      "kind": "image",
+      "width": 1440,
+      "height": 900,
+      "bytes": 190302,
+      "sha256": "f60c9abd6d4c3b93f8db0d05296d0cb1e35e07c4d918bd5db538d27e68da4bd5",
+      "caption": "Opening frame of the normal-speed food-consumption and refill excerpt.",
+      "alt": "Selected Inn with Food 10/10, Inside 1/4 and Working 0/0 at the start of the excerpt.",
+      "source": "review-0.png",
+      "sourceSha256": "8e7d32672b841d12704d9bfa3cb6eddd480847ff22d8acd9fa7813117b9c5926",
+      "method": "WebP92method6 from the exact decoded first delivered MP4 frame."
+    },
+    {
+      "id": "food-consumption-refill-clip-v3",
+      "candidate": "food-consumption-refill-clip-v3.mp4",
+      "kind": "video",
+      "width": 1440,
+      "height": 900,
+      "bytes": 4782700,
+      "sha256": "5fb6b964546b5938d1a7359eb8b8bfa23cc210aa71cbf8d56da1d4f6b173ffda",
+      "caption": "Thirty-four continuous seconds show Inn Food falling from 10/10 to 9/10 with hauling stopped, then returning to 10/10 after a request for two at high priority.",
+      "alt": "Normal-speed food-supply excerpt with the selected Inn’s stock, occupancy and hauling request visible.",
+      "poster": "food-consumption-refill-poster-v3",
+      "durationSeconds": 34
+    }
+  ],
+  "motion": {
+    "source": "page@b63a7bfd1cf712efa3df090f50baa911.webm",
+    "sourceSha256": "bdad2e7ec66107c8b312780ac0f78b18e47a226df6d7f378aa9110e5eee91912",
+    "rangeSeconds": [
+      864,
+      898
+    ],
+    "durationSeconds": 34,
+    "method": "Continuous source-video interval, H264CRF21 fast preset2threads yuv420p1440x90025fps, noaudio, faststart, no temporal rescaling, metadata/chapter tracks removed. First/middle/lastframes visually checked: Food10→9→10, no pause/menu intrusion in interval.",
+    "poster": "Exact decoded first delivered MP4 frame, WebP92method6.",
+    "droppedFrames": "Playwright raw recorder does not report dropped frames; no zero-drop or performance claim."
+  },
+  "tickConvention": "Paused before/final screenshots have exact physics ticks2287/4447. Running images record pre-screenshot diagnostic snapshot and later post-capture/OCR observation; no exact pixel-frame tick is claimed.",
+  "limits": [
+    "Normal supported mouse/keyboard actions only. OCR observes visible Food text and triggers physical UI controls; no state injection or speed change.",
+    "No identified worker full harvest/meal/return cycle, universal per-mealcost or isolated priority-only effect established.",
+    "A first premature P during briefing did not pause; it remains in the full action record and is excluded from accepted before/final state claims.",
+    "Browser source revision remains unverified; exact served JS/WASM and visibleversion qualify this actual target.",
+    "The earlier322event population-run Inn interval showedno decline; it remains separate and is not the source of this successful interruption."
+  ],
+  "manualRecipe": {
+    "file": "actual-action-recipe.md",
+    "sha256": "c21b63b54fc6ee1cf7707332e77da1ebf24d09f6b824797ad8403e33831faff6"
+  },
+  "supportObservations": {
+    "observed": "2026-11-18",
+    "context": "Supporting current food imagery from the qualified production experiment in prepared Food supply practice; no separate successful food-interruption experiment claimed.",
+    "baseline": {
+      "observed": "2026-11-18",
+      "gameVersionObservedInMenu": "0.11.6.0",
+      "sourceRevision": null,
+      "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+      "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+      "packages": {
+        "index.js": {
+          "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+          "bytes": 1846033
+        },
+        "index.wasm": {
+          "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+          "bytes": 29604918
+        }
+      }
+    },
+    "graphicsConfiguration": {
+      "choice": "High resolution",
+      "appliedReloadAt": 41.092,
+      "renderer": "webgl2",
+      "artworkReady": true,
+      "hdPackage": "ready",
+      "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+    },
+    "captureRecordSha256": "9d7b40f0c1739d19df1338e711280fa4a868d46a84924ff4ded3bc0d1e640b4d",
+    "captureComplete": true,
+    "captureErrors": [],
+    "captureEvents": 322,
+    "assets": [
+      {
+        "proposedId": "food-swarm-v3",
+        "candidate": "food-swarm-v3.webp",
+        "original": "food-swarm-growth-and-hauling-off.png",
+        "originalSha256": "9caf189de5f22783019cacee88b3c0b0c85048003b988860357003f3e2827c49",
+        "crop": null,
+        "tick": 2542,
+        "width": 1440,
+        "height": 900,
+        "bytes": 230306,
+        "sha256": "44c6f6aa852e89cb61d88ec4f4d62fa767ffa95d94370474968ed03599b9e55e",
+        "caption": "The Swarm’s birth controls and hauling request are at zero. Its remaining Food 15/20 is a separate store from the Inn’s meals.",
+        "alt": "Selected Swarm with Food 15/20, Working 0/0 and all three birth controls at minimum.",
+        "kind": "image"
+      },
+      {
+        "proposedId": "food-swarm-detail-v3",
+        "candidate": "food-swarm-detail-v3.webp",
+        "original": "food-swarm-growth-and-hauling-off.png",
+        "originalSha256": "9caf189de5f22783019cacee88b3c0b0c85048003b988860357003f3e2827c49",
+        "crop": [
+          1248,
+          184,
+          1440,
+          484
+        ],
+        "tick": 2542,
+        "width": 192,
+        "height": 300,
+        "bytes": 7180,
+        "sha256": "12d8698d7733d0ad0b62102d4e9ad6a08c0d88f816922f2fd47262f6fc171267",
+        "caption": "Detail of the same Swarm after birth controls and its hauling request were reduced.",
+        "alt": "Swarm sidebar showing Food 15/20, Working 0/0 and minimum Worker, Explorer and Warrior controls.",
+        "kind": "image"
+      },
+      {
+        "proposedId": "food-field-before-v3",
+        "candidate": "food-field-before-v3.webp",
+        "original": "population-swarm-initial.png",
+        "originalSha256": "ed666b1fb17d291c08b976982d8f0eab1041d99193ecedd81290fbc8ad48eab0",
+        "crop": [
+          700,
+          760,
+          1024,
+          900
+        ],
+        "tick": 131,
+        "width": 324,
+        "height": 140,
+        "bytes": 12036,
+        "sha256": "cfbb67f7a4c70d665f4b16cfc1678ff8641a33f1672ad17de1e16b5cdc3a4257",
+        "caption": "Visible portion of the lower wheat patch near the beginning of the prepared-colony experiment.",
+        "alt": "Earlier crop of a revealed wheat patch and neighboring ground, at normal camera zoom.",
+        "kind": "image"
+      },
+      {
+        "proposedId": "food-field-after-v3",
+        "candidate": "food-field-after-v3.webp",
+        "original": "food-inn-recovery-two.png",
+        "originalSha256": "deef8696d972277653639b0ea51f6b20659fd3e7866536d7519ce1453430d3e2",
+        "crop": [
+          700,
+          760,
+          1024,
+          900
+        ],
+        "tick": 4476,
+        "width": 324,
+        "height": 140,
+        "bytes": 12158,
+        "sha256": "ffb1af060d7e039d5b858de51a6d0a19a6d3a8b5232d2b7e93719a66fd455052",
+        "caption": "The same revealed patch later, with the camera unchanged while the colony was active. Compare the visible wheat, rather than newly explored terrain.",
+        "alt": "Later crop of the same wheat patch with a changed distribution of resource dots.",
+        "kind": "image"
+      }
+    ],
+    "method": "Genuine fullframe or declared crop[left,top,right,bottom]; WebP92method6, no annotation or paint.",
+    "limits": [
+      "Only visible portion of the same alreadyrevealed wheat patch; camera unchanged. Growth and harvesting are not isolated and no rate or guaranteed sustainability is inferred.",
+      "The source filename food-inn-recovery-two is merely an exploratory checkpoint name: Food stayed10 throughout that Inn test, so it is not recovery evidence. Only its map crop is selected here.",
+      "Birth controls were repeatedly clamped, actual SwarmWorking0/0 observed; no claim that reducing hauling removes its remaining stored Food."
+    ]
+  },
+  "registeredAssets": [
+    {
+      "sha256": "44c6f6aa852e89cb61d88ec4f4d62fa767ffa95d94370474968ed03599b9e55e",
+      "bytes": 230306,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Swarm’s birth controls and hauling request are at zero. Its remaining Food 15/20 is a separate store from the Inn’s meals.",
+      "alt": "Selected Swarm with Food 15/20, Working 0/0 and all three birth controls at minimum.",
+      "id": "food-swarm-v3",
+      "path": "/guide-media/v3/sustainable-food/food-swarm-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "12d8698d7733d0ad0b62102d4e9ad6a08c0d88f816922f2fd47262f6fc171267",
+      "bytes": 7180,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the same Swarm after birth controls and its hauling request were reduced.",
+      "alt": "Swarm sidebar showing Food 15/20, Working 0/0 and minimum Worker, Explorer and Warrior controls.",
+      "id": "food-swarm-detail-v3",
+      "path": "/guide-media/v3/sustainable-food/food-swarm-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "cfbb67f7a4c70d665f4b16cfc1678ff8641a33f1672ad17de1e16b5cdc3a4257",
+      "bytes": 12036,
+      "width": 324,
+      "height": 140,
+      "caption": "Visible portion of the lower wheat patch near the beginning of the prepared-colony experiment.",
+      "alt": "Earlier crop of a revealed wheat patch and neighboring ground, at normal camera zoom.",
+      "id": "food-field-before-v3",
+      "path": "/guide-media/v3/sustainable-food/food-field-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-before-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "ffb1af060d7e039d5b858de51a6d0a19a6d3a8b5232d2b7e93719a66fd455052",
+      "bytes": 12158,
+      "width": 324,
+      "height": 140,
+      "caption": "The same revealed patch later, with the camera unchanged while the colony was active. Compare the visible wheat, rather than newly explored terrain.",
+      "alt": "Later crop of the same wheat patch with a changed distribution of resource dots.",
+      "id": "food-field-after-v3",
+      "path": "/guide-media/v3/sustainable-food/food-field-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-after-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-first-stock-v3",
+      "kind": "image",
+      "sha256": "67c9e1b1c0cd513e4971dad80d22550abff2596b8b3cf8c4df19e814bf57c89b",
+      "bytes": 222124,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before the interruption, the existing Inn has Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Selected Inn in the prepared Food supply practice colony, with a full food store and no hauling request.",
+      "path": "/guide-media/v3/sustainable-food/food-first-stock-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-v3.webp"
+    },
+    {
+      "id": "food-first-stock-detail-v3",
+      "kind": "image",
+      "sha256": "58aa814d23dfb7e179ce6db979d95c00abad64a2eabbeab3a54a28d5b18b6c40",
+      "bytes": 7166,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of that Inn before resuming: Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Inn health, occupancy, staffing and stored Food before the interruption.",
+      "path": "/guide-media/v3/sustainable-food/food-first-stock-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-stock-falling-v3",
+      "kind": "image",
+      "sha256": "268db332aeb0509da60cbe7e7b8f55b3804922a7141290f5b5200b0e4b5614c4",
+      "bytes": 232156,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation resumed with Working 0/0, the Inn’s Food count is 9/10.",
+      "alt": "Selected Inn with Food 9/10, Inside 0/4 and Working 0/0 after its stock fell.",
+      "path": "/guide-media/v3/sustainable-food/food-stock-falling-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-stock-falling-v3.webp"
+    },
+    {
+      "id": "food-hauling-restored-v3",
+      "kind": "image",
+      "sha256": "58cce1bd65c3376b9fbb3334942923e8b80681fdc3299139a7e75f7536a8d544",
+      "bytes": 234462,
+      "width": 1440,
+      "height": 900,
+      "caption": "The hauling request is restored to two at high priority. Food is still 9/10 and Working reads 1/2 in this frame.",
+      "alt": "One worker attached against a request for two at the selected Inn; high priority and Food 9/10.",
+      "path": "/guide-media/v3/sustainable-food/food-hauling-restored-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-hauling-restored-v3.webp"
+    },
+    {
+      "id": "food-recovery-v3",
+      "kind": "image",
+      "sha256": "733c68316bb09a1474cb1ed5f9e7652288f2d0eb776c327a73bce9b843551ab8",
+      "bytes": 212998,
+      "width": 1440,
+      "height": 900,
+      "caption": "The later paused Inn has refilled to Food 10/10, with Inside 0/4 and Working 0/2.",
+      "alt": "Selected Inn after refill, showing full Food and a request for two even though no hauler is attached at this instant.",
+      "path": "/guide-media/v3/sustainable-food/food-recovery-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-v3.webp"
+    },
+    {
+      "id": "food-recovery-detail-v3",
+      "kind": "image",
+      "sha256": "b78b0ed44247c1ac96689a330b6424f8e25c902cadfba4841b03e1c32e7d362e",
+      "bytes": 7264,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail after refill: Food 10/10, Inside 0/4 and Working 0/2.",
+      "alt": "Inn sidebar after the observed food reserve refilled.",
+      "path": "/guide-media/v3/sustainable-food/food-recovery-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-consumption-refill-poster-v3",
+      "kind": "image",
+      "sha256": "f60c9abd6d4c3b93f8db0d05296d0cb1e35e07c4d918bd5db538d27e68da4bd5",
+      "bytes": 190302,
+      "width": 1440,
+      "height": 900,
+      "caption": "Opening frame of the normal-speed food-consumption and refill excerpt.",
+      "alt": "Selected Inn with Food 10/10, Inside 1/4 and Working 0/0 at the start of the excerpt.",
+      "path": "/guide-media/v3/sustainable-food/food-consumption-refill-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-poster-v3.webp"
+    },
+    {
+      "id": "food-consumption-refill-clip-v3",
+      "kind": "video",
+      "sha256": "5fb6b964546b5938d1a7359eb8b8bfa23cc210aa71cbf8d56da1d4f6b173ffda",
+      "bytes": 4782700,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-four continuous seconds show Inn Food falling from 10/10 to 9/10 with hauling stopped, then returning to 10/10 after a request for two at high priority.",
+      "alt": "Normal-speed food-supply excerpt with the selected Inn’s stock, occupancy and hauling request visible.",
+      "path": "/guide-media/v3/sustainable-food/food-consumption-refill-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-clip-v3.mp4",
+      "poster": "food-consumption-refill-poster-v3"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "food-swarm-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-v3.webp?verify=1795047929219692000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 230306,
+      "sha256": "44c6f6aa852e89cb61d88ec4f4d62fa767ffa95d94370474968ed03599b9e55e",
+      "observed": "2026-11-19T00:25:29.490356+00:00"
+    },
+    {
+      "id": "food-swarm-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-detail-v3.webp?verify=1795047929306338000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7180,
+      "sha256": "12d8698d7733d0ad0b62102d4e9ad6a08c0d88f816922f2fd47262f6fc171267",
+      "observed": "2026-11-19T00:25:29.454560+00:00"
+    },
+    {
+      "id": "food-field-before-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-before-v3.webp?verify=1795047929408890000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 12036,
+      "sha256": "cfbb67f7a4c70d665f4b16cfc1678ff8641a33f1672ad17de1e16b5cdc3a4257",
+      "observed": "2026-11-19T00:25:29.716244+00:00"
+    },
+    {
+      "id": "food-field-after-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-after-v3.webp?verify=1795047929454614000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 12158,
+      "sha256": "ffb1af060d7e039d5b858de51a6d0a19a6d3a8b5232d2b7e93719a66fd455052",
+      "observed": "2026-11-19T00:25:29.730320+00:00"
+    },
+    {
+      "id": "food-first-stock-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-v3.webp?verify=1795048570345860000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 222124,
+      "sha256": "67c9e1b1c0cd513e4971dad80d22550abff2596b8b3cf8c4df19e814bf57c89b",
+      "observed": "2026-11-19T00:36:10.633890+00:00"
+    },
+    {
+      "id": "food-first-stock-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-detail-v3.webp?verify=1795048570346172000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7166,
+      "sha256": "58aa814d23dfb7e179ce6db979d95c00abad64a2eabbeab3a54a28d5b18b6c40",
+      "observed": "2026-11-19T00:36:10.566770+00:00"
+    },
+    {
+      "id": "food-stock-falling-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-stock-falling-v3.webp?verify=1795048570346305000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 232156,
+      "sha256": "268db332aeb0509da60cbe7e7b8f55b3804922a7141290f5b5200b0e4b5614c4",
+      "observed": "2026-11-19T00:36:10.632981+00:00"
+    },
+    {
+      "id": "food-hauling-restored-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-hauling-restored-v3.webp?verify=1795048570346408000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 234462,
+      "sha256": "58cce1bd65c3376b9fbb3334942923e8b80681fdc3299139a7e75f7536a8d544",
+      "observed": "2026-11-19T00:36:10.628271+00:00"
+    },
+    {
+      "id": "food-recovery-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-v3.webp?verify=1795048570566823000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 212998,
+      "sha256": "733c68316bb09a1474cb1ed5f9e7652288f2d0eb776c327a73bce9b843551ab8",
+      "observed": "2026-11-19T00:36:10.893489+00:00"
+    },
+    {
+      "id": "food-recovery-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-detail-v3.webp?verify=1795048570628339000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 7264,
+      "sha256": "b78b0ed44247c1ac96689a330b6424f8e25c902cadfba4841b03e1c32e7d362e",
+      "observed": "2026-11-19T00:36:10.842649+00:00"
+    },
+    {
+      "id": "food-consumption-refill-poster-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-poster-v3.webp?verify=1795048570633049000",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 190302,
+      "sha256": "f60c9abd6d4c3b93f8db0d05296d0cb1e35e07c4d918bd5db538d27e68da4bd5",
+      "observed": "2026-11-19T00:36:10.906458+00:00"
+    },
+    {
+      "id": "food-consumption-refill-clip-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-clip-v3.mp4?verify=1795048570633918000",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 4782700,
+      "sha256": "5fb6b964546b5938d1a7359eb8b8bfa23cc210aa71cbf8d56da1d4f6b173ffda",
+      "observed": "2026-11-19T00:36:11.103137+00:00"
+    }
+  ],
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  }
+}

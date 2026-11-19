@@ -1,150 +1,118 @@
 ---
 title: "Facing Maxima: watch the economy behind the army"
-description: "Keep a supplied defense, replace lost scouts and reassess Maxima's growing services before committing your force."
+description: "Keep meals and information current, recognize ownership changes and reassess the support behind each military commitment."
 locale: "en"
 group: "ai"
 format: "profile"
-order: 8
+order: 9
 prerequisites: ["choosing-an-ai", "economy-and-expansion", "fruit-and-conversion", "training-and-upgrades", "defending-your-colony", "organizing-an-attack"]
-tags: ["AI", "Maxima", "scouting", "defense"]
-reviewedAgainst: "c26a0a02aeef4993a7478c3651d6117b49dbc56c"
+tags: ["AI", "Maxima", "scouting", "defense", "fruit"]
 sources:
-  - title: "Maxima economy and development"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/maxima/AIMaxima.cpp"
-  - title: "Maxima combat and waves"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/maxima/AIMaximaCombat.cpp"
-  - title: "Maxima supply-funded production"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/maxima/AIMaximaSwarmController.h"
-  - title: "Maxima strategy resolution"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/maxima/AIMaximaStrategy.cpp"
+  - title: "Current browser opponent selector, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Native 0.11.6.1 Maxima economy and fruit support"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/maxima/AIMaxima.cpp"
+  - title: "Native 0.11.6.1 Maxima combat and waves"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/maxima/AIMaximaCombat.cpp"
+  - title: "Native 0.11.6.1 supply-funded production"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/maxima/AIMaximaSwarmController.h"
+  - title: "Native 0.11.6.1 match-format strategy resolution"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/maxima/AIMaximaStrategy.cpp"
+  - title: "Native 0.11.6.1 harvesting visibility and material access"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/MapResources.cpp"
+  - title: "Native 0.11.6.1 reachable own and rival meal choice"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/team/TeamRouting.cpp"
+  - title: "Native 0.11.6.1 ownership change before the meal"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitActivity.cpp"
+  - title: "Native 0.11.6.1 available meal variety"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/Misc.cpp"
 ---
 
-Maxima connects population growth, food access, service development and military commitments. A force leaving its colony does not tell you how much production remains behind it. The useful habit against this opponent is to inspect the economy and the approach again before making the next commitment.
+Maxima connects population growth, food access, service development and military commitments. A force leaving its colony does not tell you how much production remains behind it. Inspect the economy and approach again before making the next commitment.
 
-This Standard practice duel uses **balanced for 2**, red against cyan Maxima. Start with the supply and training chapters first: the exercise depends on reading actual stocks and arrivals, rather than copying an army size or a fixed opening timer.
+## Choose a practice match you can inspect
 
-## Choose a comparable practice match
+Create two colonies through [choosing an AI](/learn/choosing-an-ai/), with **You** and **AI → Maxima** on separate teams. Choose **Standard** with experiments off. The current browser selector labels Maxima **Hard (1873)**, an offline difficulty estimate separate from an online player's rating.
 
-In **Custom game**, choose **You** and **AI → Maxima** on opposing teams. Choose **Standard** with experiments off. The native selector displays **Hard (1873)**, an offline difficulty estimate separate from online OpenSkill ratings and authoritative ranks.
+[[media:choosing-ai-roster-v3]]
 
-[[media:maxima-selection]]
+Save the opening before changing births, services or defense. Read the actual landscape and starting buildings instead of copying positions or an army size from another match. Pause local practice to inspect a panel, then resume to watch deliveries and arrivals.
 
-:::note
+The exact native 0.11.6.1 policy resolves different configurations for a duel, free-for-all or team format. Imported saves retain their resolved configuration. Changing the number of opponents therefore needs fresh observations; it does not simply add more copies of the same duel.
 
-Save the opening with **Escape → Save**. This map includes seven workers, an explorer and preplaced towers; inspect your actual starting assets on other maps.
+## Finish the meals that support growth
 
-:::
+Find reachable wheat, wood and clear ground. Place an inn with **B → I**, cancel placement, and inspect its actual construction materials and attached workers. A foundation does not yet provide meal capacity. Use [resources and hauling](/learn/resources-and-hauling/) for the current construction and initial-supply demonstration.
 
-Fresh ordinary practice uses the packaged configuration for its match format. Imported saves retain their resolved AI configuration. A duel and a four-player free-for-all therefore need separate observations; do not assume changing the number of opponents merely adds copies of precisely the same match.
+If births compete with the unfinished service, reduce future production to a level the colony can supply. Birth weights and the swarm's **Working** request do different jobs. Lowering the hauling request releases labor but leaves stored production food available; an already pending birth can still finish after weights reach zero. Inspect actual totals and food after resuming.
 
-## Release growth that outruns your first meals
+When the inn completes, compare **Food**, **Inside** and **Working** through real visits. A full store is a buffer; it does not show whether hauling will keep up. Inspect swarm production food separately, then restore a birth mix that leaves enough workers for meals and construction.
 
-Place an inn with **B → I** beside reachable food and wood, then right-click out of placement. Wait for completion before treating it as feeding capacity.
+Add reachable training and healing only when their construction and use can be supplied. Select actual warriors to inspect health, food and both combat abilities before relying on a visible headcount. A hospital cannot replace an inn.
 
-In this opening, the swarm's continuing production increased the worker population while the inn remained a foundation: **Wood 2/3**, **Working 1/3**. Food on the map was available, but the colony still needed workers to finish the actual service.
+## Inspect a native Maxima episode
 
-:::media-group
+The images below show an AI-versus-AI replay in released **native 0.11.6.1**, red Cabino against cyan Maxima on a generated 128×128 River map. Both colonies are computer-controlled. SDL GPU and explicit High resolution artwork are applied. This native example is separate from the browser selector and your own human practice.
 
-[[media:maxima-opening-site]]
+[[media:maxima-development-hd-v2]]
 
-[[media:maxima-site-detail]]
+At **2:13**, Maxima has a developing service settlement. Its exact native production policy considers reachable fertile food, workforce and hunger pressure, and funds further development around those constraints. Several services using one patch do not multiply that patch's food supply.
 
-:::
+Scout the support behind an army as well as the army itself. A quiet town may still be preparing further growth. Use an exploration flag to answer a specific question about routes, meals or defenders, and compare its request with actual arrivals.
 
-Select the swarm and temporarily reduce **Worker**, **Explorer** and **Warrior** birth weights to zero. Reduce **Working** too, releasing its carriers for the remaining construction and deliveries. Birth weights govern future units; they do not change existing globs into another role. Hauling alone can leave stored food funding births.
+Replace lost information deliberately. Remembered buildings are previous information, and an explorer's flying route does not prove a ground route for warriors or haulers. Check home alerts while looking at an interesting enemy town.
 
-[[media:maxima-production-paused]]
+## Distinguish an ownership change from a combat loss
 
-After resuming, the inn completed and filled to **Food 10/10** with **Working 2/2**. Check **Inside** through actual meal visits as well: a full buffer and simultaneous service capacity answer different questions.
-
-:::media-group
-
-[[media:maxima-supplied-opening]]
-
-[[media:maxima-food-detail]]
-
-:::
-
-Once meals work, add a barracks and hospital with **B → B** and **B → H**, keeping their entrances and the food route clear. Resume controlled warrior production instead of leaving it permanently paused. A hospital heals injuries; it cannot replace an inn or solve hunger.
-
-## Read what Maxima can support
-
-Maxima's production policy considers reachable fertile food, available workforce and hunger pressure. It also plans new feeding and development projects around labor, materials and service access. Several buildings using one patch do not multiply that patch's sustainable food.
-
-This helps explain why inspecting only the swarm or a visible warrior group is insufficient. Scout its inns, service buildings and expansions. A quiet town can still be building the support for a later force. A completed barracks does not establish the level of every warrior; inspect the actual selected unit when you can.
-
-Use **F → E** to place an exploration flag on a useful approach, then right-click out of placement. Watch actual arrivals and fresh visibility. Explorer flight does not establish a ground route for warriors, and a lost explorer leaves remembered buildings without necessarily preserving current enemy-unit information.
-
-## Recognize conversion before replacing lost globs
-
-In this duel, a later message said **Your unit has joined Maxima / 2 - Cyan's team ×3**. The red worker count fell from fifteen to thirteen while replacement explorers and warriors were being produced. This is an ownership-change message, not an ordinary combat-death notification.
+At **5:35**, while watching Maxima, the native replay reports **A unit from cabino's team has joined your team ×7**. This is an ownership-change notification. It does not identify which individual took which route or meal.
 
 :::media-group
 
-[[media:maxima-conversion]]
+[[media:maxima-joins-hd-v2]]
 
-[[media:maxima-conversion-detail]]
+[[media:maxima-joins-detail-hd-v2]]
 
 :::
 
-The red inn still had ordinary food but **Cherries 0/40**, **Oranges 0/40** and **Prunes 0/40**. A full ordinary food buffer therefore did not establish a competitive fruit offer.
-
-Maxima's fruit policy maintains useful source visibility and advertises feeding services when its fruit supply qualifies. A glob can choose a reachable advertised rival meal offering better fruit variety, changing ownership before completing the meal. Read [Fruit, happiness and conversion](/learn/fruit-and-conversion/) for the actual conditions and the armor tradeoff; a fruit tree or the advertisement checkbox alone does not automatically convert visitors.
-
-When you see this message:
-
-1. Pause and inspect the own inn's food, fruit stocks and current occupants.
-2. Check whether an orchard has current visibility and a ground hauling route. Remembered trees and a flying scout's route are insufficient for fruit delivery.
-3. Watch actual fruit deliveries before counting that inn as a better offer. Each advertised kind needs adequate stock for the current occupants.
-4. Reassess staffing after ownership losses. Automatically replacing every missing glob can consume food while the original problem continues.
-
-A reachable own offer with equal or greater fruit variety keeps the glob with its colony. Improve real service availability and fruit access; do not assume a guard area orders hungry globs to refuse rival meals.
-
-## Keep defense and recovery separate
-
-For the local defense exercise, pause all three swarm birth weights and its hauling request again, then paint a compact **Guard area** with **A → G** near the home meals and hospital. Right-click out of painting, resume and inspect what actually happens. Existing war-flag assignments and service trips can still take warriors away from the guard area.
-
-[[media:maxima-defense]]
-
-After this interval the first inn still had **Food 9/10** and **Inside 2/4**, while the red workforce had fallen to six workers and eleven warriors remained. A further joining notification appeared alongside warrior-under-attack warnings. The compact guard did not stop ownership losses or establish a successful hold.
-
-[[media:maxima-result-detail]]
-
-A supplied home position helps you inspect the next decision. It does not solve every route or conversion problem. Keep the notification, worker totals, meal stocks and actual fighting in view together; a good-looking line of warriors can hide a shrinking workforce.
+Separately, Maxima's own inn at the same paused time shows **Food 5/10**, **Oranges 5/40**, **Inside 4/4** and **Working 1/1**, with Cherries and Prunes at zero. Those are the selected service's actual stores and occupants; they do not by themselves establish the cause of the earlier join notifications.
 
 :::media-group
 
-[[media:maxima-front]]
+[[media:maxima-inn-fruit-hd-v2]]
 
-[[media:maxima-warrior-detail]]
+[[media:maxima-inn-fruit-detail-hd-v2]]
 
 :::
 
-One selected cyan warrior had **HP 184/250**, **Food 72% (0)** and **Armour 10**, with attack-speed level 2 shown in its panel. This identifies an actual trained, injured fighter; it does not establish every warrior's level or Maxima's total force. Compare individual readiness before deciding that matching its visible headcount will be enough.
+In the exact native release, Maxima can maintain fruit-source visibility and advertise qualifying feeding services. A convertible hungry glob can choose a reachable, advertised non-allied service with a better available fruit offer. Ownership changes when that rival meal is chosen, before the trip and meal finish. A reachable own meal with equal or greater available variety is preferred; service availability, route, starvation travel limit and conversion eligibility also matter.
 
-[[media:maxima-pressure-clip]]
+Fruit trees nearby and an advertisement checkbox alone do not establish those conditions. Read [fruit and conversion](/learn/fruit-and-conversion/) and inspect actual named stores, occupants and service access rather than assuming every missing unit died in combat.
 
-The silent clip replays home service from the guard checkpoint at normal speed. A joining notification appears while the worker total changes from six to five and the inn refills from Food 9/10 to 10/10. Ordinary meals remained supplied during that ownership loss. Read the notification and fruit stocks alongside the combat; this response did not demonstrate a victory or a lasting defense.
+When a joining notification appears in your own practice:
 
-Maxima can gather land forces before advancing, retain a home defense and reconsider offense during a serious colony emergency. Food and army readiness affect those decisions. These are conditional policies, not a promise that a distraction will empty its base or that every visible group is its whole army.
+1. Pause and read which colony gained or lost the glob. Check current role totals alongside the notice.
+2. Inspect your own inn's ordinary food, each named fruit stock, occupants and workers. Ordinary food alone does not measure its fruit offer.
+3. Check current orchard visibility and a usable ground hauling route. Observe actual fruit deliveries before counting an orchard as supplied.
+4. Restore essential service work before replacing every missing glob. Extra births can consume food while an ownership-loss problem continues.
+5. Resume and watch the next interval. Keep combat losses, ordinary service trips and joining notifications separate when assessing the workforce.
 
-After ending this practice by leaving the match, **Net conversions** recorded twelve globs lost to Maxima. The overview recorded only one ordinary red unit loss, alongside eight cyan losses. Combat damage therefore told only part of the story: the workforce was being recruited away while the defense inflicted damage. The result screen labels leaving as a loss; this was a stopped practice exercise, not a demonstrated elimination.
+## Keep defense, recovery and victory separate
 
-[[media:maxima-conversion-history]]
+For a supplied home defense, release unneeded production and competing construction, allowing for a pending birth. Paint a compact **Guard area** with **A → G** near useful meals and healing, then cancel painting. Follow actual arrivals and service visits after resuming.
 
-[[media:maxima-practice-summary]]
+Guard attraction does not override every explicit war-flag assignment, and hungry globs can still need a meal. A well-positioned line therefore does not establish that food, healing or ownership are stable. Inspect each service and the actual condition of returning defenders.
 
-Open **Net conversions** separately from **Units lost** when reviewing your own practice. A successful-looking fight should not distract from the labor and service economy changing underneath it.
+Save a functioning checkpoint before increasing the commitment. Native Maxima can gather forces, retain home defense and reconsider offense during emergencies; the observed approaching group need not be its whole force. Re-scout the target, check your qualified warriors and ground route, and follow [organizing an attack](/learn/organizing-an-attack/) for a limited commitment with a recovery plan.
 
-Before committing a counterattack, re-scout the approach and the support behind it. Check your own warrior's health, both combat abilities and actual route. Units eating or healing are temporarily unavailable; they are not necessarily lost. Use [Organizing an attack](/learn/organizing-an-attack/) for a limited commitment and inspect survivors before repeating it.
+The pictured native replay eventually reaches its **13:53 tick-cap end with both colonies alive and no winner recorded**. The notifications and service states are useful diagnosis examples, not a demonstrated elimination or a comparison of general AI strength.
 
-| Symptom | What to inspect | Next decision |
+| Observation | Check next | Useful decision |
 | --- | --- | --- |
-| First inn remains a foundation | Materials, arrived workers and competing swarm demand | Release unnecessary production and finish the feeding service |
-| A glob joins cyan | Ownership-change notification and own fruit offer | Repair fruit visibility, route and real meal stocks |
-| Explorer disappears from an old scout view | Current count, notifications and fresh visibility | Replace information without treating remembered units as current |
-| Home food is full but workers keep leaving | Fruit stock, occupants and reachable rival offers | Diagnose conversion separately from starvation |
-| Defenders leave the guard patch | War-flag assignments, hunger, injuries and service trips | Preserve actual meals and healing before extending the line |
-| Enemy force pauses briefly | Fresh scouts, current services and approach | Reassess before committing the entire army |
+| First inn remains a foundation | Materials, arrived workers and competing demand | Finish usable meals before adding more commitments |
+| A glob joins the rival | Notification, own service access and fruit stores | Improve the actual offer before replacing every missing unit |
+| Scout disappears from an old view | Current totals, alerts and fresh visibility | Replace information while preserving home work |
+| Many warriors exist but few arrive | Training, routes, other jobs and service use | Reduce or redirect the commitment after diagnosis |
+| Contact appears successful while labor shrinks | Ownership changes, births and combat losses | Restore the service economy as well as the defense |
+| Maxima expands behind a visible force | New meals, training, routes and defenders | Reassess the support before repeating the same raid |
 
-Practice these observations under the same rules first. No hunger, no resource growth, no upgrades and peaceful play change feeding, renewal, training and combat constraints. A different match format can resolve a different opponent configuration; keep that context with your comparison. When the workforce or supply fails, return to [Recovering your colony](/learn/recovering-your-colony/) before rebuilding every lost commitment.
+Repeat one change from the saved opening and compare the next supplied interval: deliveries, trained arrivals, ownership notices and recovery. Judge the configured match result separately from a successful local fight.

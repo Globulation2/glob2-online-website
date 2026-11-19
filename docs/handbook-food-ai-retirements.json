@@ -1,0 +1,477 @@
+{
+  "sourceBaseline": "a63a2e2418fec4679fddc80af3886ec23e2e61b7",
+  "scope": [
+    "ai-warrush",
+    "ai-nicowar",
+    "ai-cabino",
+    "ai-maxima",
+    "sustainable-food",
+    "population-and-production",
+    "reference-resources",
+    "recovering-your-colony",
+    "economy-and-expansion"
+  ],
+  "qualification": "Candidate accepted-source snapshot overlays only these nine owned ready article paths on the last merged source. Newer Schools registrations and reference-buildings/units remain excluded from the ready scope. No claim of production publication.",
+  "chapters": [
+    {
+      "chapter": "ai-warrush",
+      "oldIdsRemovedFromConsumer": [
+        "warrush-barracks-detail",
+        "warrush-contact",
+        "warrush-food-after-detail",
+        "warrush-food-before-detail",
+        "warrush-growth-detail",
+        "warrush-guard",
+        "warrush-hold-clip",
+        "warrush-hold-poster",
+        "warrush-hospital-detail",
+        "warrush-opening-food",
+        "warrush-selection",
+        "warrush-services"
+      ],
+      "newIds": [
+        "choosing-ai-roster-v3",
+        "warrush-guard-detail-hd-v2",
+        "warrush-guard-targets-hd-v2",
+        "warrush-town-hd-v2"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "ai-nicowar",
+      "oldIdsRemovedFromConsumer": [
+        "nicowar-barracks-training-detail",
+        "nicowar-empty-barracks-detail",
+        "nicowar-first-food-detail",
+        "nicowar-loss-detail",
+        "nicowar-lost-services",
+        "nicowar-profile-detail",
+        "nicowar-qualified-request-detail",
+        "nicowar-qualified-result-detail",
+        "nicowar-raw-flag-detail",
+        "nicowar-retry-food-detail",
+        "nicowar-scout",
+        "nicowar-scout-alert-detail",
+        "nicowar-setup-detail",
+        "nicowar-training-clip",
+        "nicowar-training-poster"
+      ],
+      "newIds": [
+        "choosing-ai-roster-v3",
+        "nicowar-home-flag-detail-hd-v2",
+        "nicowar-home-flag-hd-v2",
+        "nicowar-offensive-flag-detail-hd-v2",
+        "nicowar-offensive-flag-hd-v2"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "ai-cabino",
+      "oldIdsRemovedFromConsumer": [
+        "cabino-first-inn",
+        "cabino-first-inn-detail",
+        "cabino-growth-released",
+        "cabino-healing-detail",
+        "cabino-meals-detail",
+        "cabino-profile",
+        "cabino-scout-production",
+        "cabino-scout-request",
+        "cabino-service-clip",
+        "cabino-service-line",
+        "cabino-service-poster",
+        "cabino-town"
+      ],
+      "newIds": [
+        "cabino-development-hd-v2",
+        "cabino-history-hd-v2",
+        "cabino-hospital-detail-hd-v2",
+        "cabino-hospital-hd-v2",
+        "cabino-inn-detail-hd-v2",
+        "cabino-inn-hd-v2",
+        "choosing-ai-roster-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "ai-maxima",
+      "oldIdsRemovedFromConsumer": [
+        "maxima-clip-poster",
+        "maxima-conversion",
+        "maxima-conversion-detail",
+        "maxima-conversion-history",
+        "maxima-defense",
+        "maxima-food-detail",
+        "maxima-front",
+        "maxima-opening-site",
+        "maxima-practice-summary",
+        "maxima-pressure-clip",
+        "maxima-production-paused",
+        "maxima-result-detail",
+        "maxima-selection",
+        "maxima-site-detail",
+        "maxima-supplied-opening",
+        "maxima-warrior-detail"
+      ],
+      "newIds": [
+        "choosing-ai-roster-v3",
+        "maxima-development-hd-v2",
+        "maxima-inn-fruit-detail-hd-v2",
+        "maxima-inn-fruit-hd-v2",
+        "maxima-joins-detail-hd-v2",
+        "maxima-joins-hd-v2"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "sustainable-food",
+      "oldIdsRemovedFromConsumer": [
+        "food-field-comparison",
+        "food-first-stock",
+        "food-first-stock-detail",
+        "food-recovery",
+        "food-recovery-detail",
+        "food-stock-falling",
+        "food-swarm",
+        "food-swarm-detail"
+      ],
+      "newIds": [
+        "food-consumption-refill-clip-v3",
+        "food-consumption-refill-poster-v3",
+        "food-field-after-v3",
+        "food-field-before-v3",
+        "food-first-stock-detail-v3",
+        "food-first-stock-v3",
+        "food-hauling-restored-v3",
+        "food-recovery-detail-v3",
+        "food-recovery-v3",
+        "food-stock-falling-v3",
+        "food-swarm-detail-v3",
+        "food-swarm-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {
+        "food-first-stock-detail": [
+          "reference-buildings"
+        ]
+      }
+    },
+    {
+      "chapter": "population-and-production",
+      "oldIdsRemovedFromConsumer": [
+        "population-explorer-count",
+        "population-explorer-result",
+        "population-panel",
+        "population-panel-detail",
+        "population-stable-total",
+        "population-worker-count",
+        "population-worker-result",
+        "population-zero-weights"
+      ],
+      "newIds": [
+        "population-explorer-count-v3",
+        "population-explorer-result-v3",
+        "population-panel-detail-v3",
+        "population-panel-v3",
+        "population-pending-birth-v3",
+        "population-stable-detail-v3",
+        "population-stable-total-v3",
+        "population-worker-count-v3",
+        "population-worker-result-v3",
+        "population-zero-weights-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {
+        "population-explorer-result": [
+          "reference-units"
+        ]
+      }
+    },
+    {
+      "chapter": "reference-resources",
+      "oldIdsRemovedFromConsumer": [
+        "food-field-comparison",
+        "food-swarm-detail",
+        "services-stalled-school"
+      ],
+      "newIds": [
+        "food-field-after-v3",
+        "food-field-before-v3",
+        "food-swarm-detail-v3",
+        "food-swarm-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {
+        "services-stalled-school": [
+          "reference-buildings",
+          "buildings-and-services"
+        ]
+      }
+    },
+    {
+      "chapter": "recovering-your-colony",
+      "oldIdsRemovedFromConsumer": [
+        "food-recovery",
+        "food-recovery-detail",
+        "food-stock-falling",
+        "recovery-hospital-detail",
+        "recovery-raid-loss"
+      ],
+      "newIds": [
+        "food-recovery-detail-v3",
+        "food-recovery-v3",
+        "food-stock-falling-v3",
+        "services-hospital-foundation-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-after-v3",
+        "services-patient-before-detail-v3",
+        "services-patient-before-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "economy-and-expansion",
+      "oldIdsRemovedFromConsumer": [
+        "expansion-completed",
+        "expansion-completed-detail",
+        "expansion-growth-detail",
+        "expansion-new-result-detail",
+        "expansion-old-food-detail",
+        "expansion-old-result-detail",
+        "expansion-site",
+        "expansion-site-detail",
+        "expansion-supply-clip",
+        "expansion-supply-poster"
+      ],
+      "newIds": [
+        "food-first-stock-detail-v3",
+        "food-first-stock-v3",
+        "hauling-construction-clip-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-poster-v3",
+        "hauling-construction-v3",
+        "hauling-delivered-detail-v3",
+        "hauling-delivered-v3",
+        "hauling-foundation-detail-v3",
+        "hauling-foundation-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    }
+  ],
+  "retiredIdsWithoutConsumers": [
+    "cabino-first-inn",
+    "cabino-first-inn-detail",
+    "cabino-growth-released",
+    "cabino-healing-detail",
+    "cabino-meals-detail",
+    "cabino-profile",
+    "cabino-scout-production",
+    "cabino-scout-request",
+    "cabino-service-clip",
+    "cabino-service-line",
+    "cabino-service-poster",
+    "cabino-town",
+    "expansion-completed",
+    "expansion-completed-detail",
+    "expansion-growth-detail",
+    "expansion-new-result-detail",
+    "expansion-old-food-detail",
+    "expansion-old-result-detail",
+    "expansion-site",
+    "expansion-site-detail",
+    "expansion-supply-clip",
+    "expansion-supply-poster",
+    "food-field-comparison",
+    "food-first-stock",
+    "food-recovery",
+    "food-recovery-detail",
+    "food-stock-falling",
+    "food-swarm",
+    "food-swarm-detail",
+    "maxima-clip-poster",
+    "maxima-conversion",
+    "maxima-conversion-detail",
+    "maxima-conversion-history",
+    "maxima-defense",
+    "maxima-food-detail",
+    "maxima-front",
+    "maxima-opening-site",
+    "maxima-practice-summary",
+    "maxima-pressure-clip",
+    "maxima-production-paused",
+    "maxima-result-detail",
+    "maxima-selection",
+    "maxima-site-detail",
+    "maxima-supplied-opening",
+    "maxima-warrior-detail",
+    "nicowar-barracks-training-detail",
+    "nicowar-empty-barracks-detail",
+    "nicowar-first-food-detail",
+    "nicowar-loss-detail",
+    "nicowar-lost-services",
+    "nicowar-profile-detail",
+    "nicowar-qualified-request-detail",
+    "nicowar-qualified-result-detail",
+    "nicowar-raw-flag-detail",
+    "nicowar-retry-food-detail",
+    "nicowar-scout",
+    "nicowar-scout-alert-detail",
+    "nicowar-setup-detail",
+    "nicowar-training-clip",
+    "nicowar-training-poster",
+    "population-explorer-count",
+    "population-panel",
+    "population-panel-detail",
+    "population-stable-total",
+    "population-worker-count",
+    "population-worker-result",
+    "population-zero-weights",
+    "recovery-hospital-detail",
+    "recovery-raid-loss",
+    "warrush-barracks-detail",
+    "warrush-contact",
+    "warrush-food-after-detail",
+    "warrush-food-before-detail",
+    "warrush-growth-detail",
+    "warrush-guard",
+    "warrush-hold-clip",
+    "warrush-hold-poster",
+    "warrush-hospital-detail",
+    "warrush-opening-food",
+    "warrush-selection",
+    "warrush-services"
+  ],
+  "nonArchivalV1Ids": 61,
+  "remainingChapters": 9,
+  "qualifiedEarlierIntroductionIds": 17,
+  "remaining": [
+    {
+      "chapter": "exploration-and-movement",
+      "sourceSha256": "2640be163446c4317cc164d7ea3e71e6c2780721d6f65d7e033f2228fba46e7f",
+      "activeV1Ids": [
+        "scout-clip-poster",
+        "scout-detail",
+        "scout-flag-clip",
+        "scout-result",
+        "scout-start"
+      ]
+    },
+    {
+      "chapter": "defending-your-colony",
+      "sourceSha256": "c3397ac637e274cf205185199d1ef54ab062936cfce07f73b9ca7debff648531",
+      "activeV1Ids": [
+        "defense-after-contact",
+        "defense-after-detail",
+        "defense-contact-detail",
+        "defense-hospital-detail",
+        "defense-inn",
+        "defense-warrior-detail"
+      ]
+    },
+    {
+      "chapter": "browser-and-multiplayer",
+      "sourceSha256": "b823dd6877494599716b98668799a0132572937bac9109af29a9a515eff1fbe5",
+      "activeV1Ids": [
+        "browser-file-detail",
+        "browser-load",
+        "browser-recording",
+        "browser-recording-detail"
+      ]
+    },
+    {
+      "chapter": "reference-buildings",
+      "sourceSha256": "9001855dd79041a39fc2706908f1aea156d0683e55125d55903d96f4eaa58186",
+      "activeV1Ids": [
+        "food-first-stock-detail",
+        "services-healing-detail",
+        "services-stalled-school"
+      ]
+    },
+    {
+      "chapter": "buildings-and-services",
+      "sourceSha256": "473739850d878e542b2e88f2a32f66792a6c585c47ef6af93f707836d6bd9b33",
+      "activeV1Ids": [
+        "services-active",
+        "services-active-detail",
+        "services-foundation",
+        "services-healing",
+        "services-healing-detail",
+        "services-healing-result",
+        "services-stalled-school"
+      ]
+    },
+    {
+      "chapter": "fruit-and-conversion",
+      "sourceSha256": "4f2c9dc1d8c23a99fd32dcac8ca587b8e77a8e71f3b606d65a488f13baf34577",
+      "activeV1Ids": [
+        "fruit-advertise",
+        "fruit-advertise-detail",
+        "fruit-armor-after",
+        "fruit-armor-before",
+        "fruit-conversion",
+        "fruit-conversion-detail",
+        "fruit-meal",
+        "fruit-offer-clip",
+        "fruit-orchard",
+        "fruit-orchard-detail",
+        "fruit-stock",
+        "fruit-stock-detail"
+      ]
+    },
+    {
+      "chapter": "reference-units",
+      "sourceSha256": "c25ed863e9c17be90fb977413b8a5d19717d6701666643bda956c55dcbbecd5c",
+      "activeV1Ids": [
+        "population-explorer-result",
+        "training-worker-after"
+      ]
+    },
+    {
+      "chapter": "organizing-an-attack",
+      "sourceSha256": "9c4d58f300bea8471ab9b8420e809c3e5b42b944e3448dd4c528cd5631e2f5b4",
+      "activeV1Ids": [
+        "attack-contact-clip",
+        "attack-contact-poster",
+        "attack-gather",
+        "attack-gather-detail",
+        "attack-home-group-detail",
+        "attack-home-meals",
+        "attack-home-meals-detail",
+        "attack-objective-after",
+        "attack-objective-before",
+        "attack-objective-health-detail",
+        "attack-production-detail",
+        "attack-readiness-detail",
+        "attack-returning-warrior-detail",
+        "attack-staging-meals-detail"
+      ]
+    },
+    {
+      "chapter": "training-and-upgrades",
+      "sourceSha256": "180f7b5f9dcd956ee7612741f136733a3f0049f25008b6e52faddece78c24850",
+      "activeV1Ids": [
+        "training-school-detail",
+        "training-school-service",
+        "training-school-site",
+        "training-upgrade-detail",
+        "training-upgrade-locked",
+        "training-upgrade-result",
+        "training-upgrade-site",
+        "training-upgrade-site-detail",
+        "training-upgrade-unlocked",
+        "training-worker-after",
+        "training-worker-before"
+      ]
+    }
+  ],
+  "remainingFamilies": [
+    "browser-and-multiplayer",
+    "buildings-and-services",
+    "defending-your-colony",
+    "exploration-and-movement",
+    "fruit-and-conversion",
+    "organizing-an-attack",
+    "population-and-production",
+    "sustainable-food",
+    "training-and-upgrades"
+  ],
+  "remainingFamilyCount": 9
+}

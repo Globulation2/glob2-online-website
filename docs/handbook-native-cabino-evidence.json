@@ -1,0 +1,350 @@
+{
+  "observed": "2026-11-18",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "packageSha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "renderer": "SDL GPU",
+    "framebuffer": [
+      2940,
+      1646
+    ],
+    "method": "Actual released native desktop MCP ui_act/ui_key/ui_click/ui_screenshot. No state injection or repainting.",
+    "map": "River revision 9, seed 713, 128x128, two colonies",
+    "gameSeed": 716,
+    "controllers": [
+      "Cabino AI (red)",
+      "Maxima AI (cyan)"
+    ],
+    "humanControlled": false,
+    "tickLimit": 25000,
+    "probabilityVictory": 0,
+    "replayDuration": "13:53",
+    "view": "Cabino watched, fog of war and combined vision checked, Show areas unchecked in the selected service/statistics frames. Real pause used.",
+    "limits": "Genuine AI-versus-AI replay, not human play or a controlled strength comparison. Both colonies survived the tick-cap end and no winner was recorded. No individual conversion route or cause was followed.",
+    "artwork": "Explicit High resolution selected through supported Graphics UI; applied on fresh replay load and confirmed in post-load and post-still Settings inspections.",
+    "timing": "Visible paused clock8:48 for Warrush/Nicowar. Cabino/Maxima early2:13 and later5:35; exact capture ticks not exported. No normal-speed motion clip is claimed for session4."
+  },
+  "assets": [
+    {
+      "id": "cabino-development-hd-v2",
+      "candidate": "cabino-development-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-development.png",
+      "sourceSha256": "b387ad851c1e1be16bdc81f97c599ad95e2268a967a0beda913797ab60759253",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 352824,
+      "sha256": "cc46e6ac7661f9e4735b6d67ee41d96c61b1642fd51ef84a833391ef392bd15b",
+      "caption": "Native 0.11.6.1 at 2:13: Cabino’s red settlement has a completed inn and hospital among its developing services.",
+      "alt": "Paused red Cabino settlement with an inn, hospital, swarm and workers in the native AI replay.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "cabino-inn-hd-v2",
+      "candidate": "cabino-inn-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-inn.png",
+      "sourceSha256": "e1aa309bb7f464fb669976f85fa2f4da7a3329799cf0910e17b4484a5ca0917f",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 357678,
+      "sha256": "45f51ab4153b62d8d9d6d6f78a0a7c52c01646a52fd7dd9b1472a153c6215ff3",
+      "caption": "Cabino’s own inn at 2:13 shows Food 10/10, Inside 1/4 and Working 0/1; its three named fruit stores are zero.",
+      "alt": "Selected Cabino inn showing full ordinary food, one occupant and no attached hauler.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "cabino-inn-detail-hd-v2",
+      "candidate": "cabino-inn-detail-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-inn.png",
+      "sourceSha256": "e1aa309bb7f464fb669976f85fa2f4da7a3329799cf0910e17b4484a5ca0917f",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        2580,
+        375,
+        2865,
+        895
+      ],
+      "width": 285,
+      "height": 520,
+      "bytes": 17988,
+      "sha256": "96842a440909b6da53a8197f78b68c327b83eaabee0ab4cb63d86fe3f7504c4f",
+      "caption": "Inn detail: Food 10/10, Inside 1/4, Working 0/1; fruit stores 0/40.",
+      "alt": "Readable Cabino inn food, occupants, hauling and fruit counters.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "cabino-hospital-hd-v2",
+      "candidate": "cabino-hospital-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-barracks.png",
+      "sourceSha256": "7f14899852f815e9f53819bb490e9105094d760e01b9abf940f16c883f90f73b",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 352310,
+      "sha256": "19be071ac8a5e9940d96e69410d4a7c10afcf833b2cc0b66a0c55dc6213f0eea",
+      "caption": "Cabino’s selected hospital shows Inside 2/2 and HP 260/260 at the same native replay time, 2:13.",
+      "alt": "Selected red Cabino hospital with two occupants and full building health.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "cabino-hospital-detail-hd-v2",
+      "candidate": "cabino-hospital-detail-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-barracks.png",
+      "sourceSha256": "7f14899852f815e9f53819bb490e9105094d760e01b9abf940f16c883f90f73b",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        2580,
+        375,
+        2860,
+        660
+      ],
+      "width": 280,
+      "height": 285,
+      "bytes": 8136,
+      "sha256": "062150f30e76e58d9bb0f88d767f11c59e0a90f7710319b81f172e713dedc619",
+      "caption": "Hospital detail: Inside 2/2, HP 260/260.",
+      "alt": "Readable Cabino hospital occupancy and health panel.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "cabino-history-hd-v2",
+      "candidate": "cabino-history-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/cabino-high-population-history.png",
+      "sourceSha256": "eeaf0a8ff7bb52e1d980b7c5d37bd1da374376fcae2b602d29308152e4651b2c",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        878,
+        330,
+        2060,
+        1310
+      ],
+      "width": 1182,
+      "height": 980,
+      "bytes": 32548,
+      "sha256": "4174756124a3d3c4355061a7f0e1a12aa2b3771c70dd129f57cd3a5147f9cd93",
+      "caption": "Cabino’s Population history at 5:35 displays 39, with a small decline followed by renewed growth in the sampled history.",
+      "alt": "Native Cabino Population history rises toward 40 with a brief intervening dip and current displayed reading 39.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    }
+  ],
+  "nativeArtifacts": {
+    "cabino-maxima-25000/game.replay": "aa87e48907f0f7b9230ab301509b4884930d22faddaa54100f70b35e7867bc93",
+    "river.map.gz": "98d11fbfca2261bd8bd51d744beb7d9ff70b30493d3431899709bb57eb674cf9",
+    "cabino-maxima-25000/checkpoint-5000.game.gz": "2a35a32efbe657a0e1eb4f6b1a6c3bdb26bf4400cdfa1d92567f02e1a85810ab",
+    "cabino-maxima-25000/final.game.gz": "b51425dc2392db4f76310450a5b25d85ff290fa1a03d21083e1f3cd6f060a066",
+    "cabino-maxima-25000/result.json": "45de8a1b8134e59708062311e84a591def2dd07bc5b5d97761f26b1879beb2ed"
+  },
+  "qualityProof": "../session4-high-resolution-proof.json",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "retirement": {
+    "scope": "All old chapter images and clips illustrate a different earlier human exercise; preserve original objects/provenance, do not relabel as current native play.",
+    "dependency": "Retire old generic human service/defense footage only with current High resources construction/supply motion and Guard teaching integrated and published in the same batch. Native current evidence is a separately identified AI-versus-AI illustration."
+  },
+  "nativeOutcome": {
+    "ticks": 25000,
+    "game_seed": 716,
+    "termination": "tick_cap",
+    "resolved": {
+      "tick_limit": 25000,
+      "map": "river",
+      "save_version": 217,
+      "winning_conditions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "experiments": [],
+      "rules": {
+        "teamStatsDelay": 8,
+        "aiOrderDelay": 14,
+        "buildingGradientDelay": 8,
+        "noGrowth": 0,
+        "scarcity": 0,
+        "instantConstruction": 0,
+        "stockpile": 0,
+        "noHunger": 0,
+        "noUpgrades": 0,
+        "glassCannon": 0,
+        "fearless": 0,
+        "noPermadeath": 0,
+        "peaceful": 0,
+        "fortress": 0,
+        "suddenDeathTick": 0,
+        "winProbabilityPermille": 0
+      },
+      "resource_claims": "default",
+      "resource_claims_policy_name": "contention-v2"
+    },
+    "winning_teams": [],
+    "unresolved": true,
+    "qualification": "Both colonies remain alive at this unresolved tick cap; no winner or general strength ranking is inferred."
+  },
+  "registeredAssets": [
+    {
+      "id": "cabino-development-hd-v2",
+      "sha256": "cc46e6ac7661f9e4735b6d67ee41d96c61b1642fd51ef84a833391ef392bd15b",
+      "bytes": 352824,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 2:13: Cabino’s red settlement has a completed inn and hospital among its developing services.",
+      "alt": "Paused red Cabino settlement with an inn, hospital, swarm and workers in the native AI replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-development-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-development-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-inn-hd-v2",
+      "sha256": "45f51ab4153b62d8d9d6d6f78a0a7c52c01646a52fd7dd9b1472a153c6215ff3",
+      "bytes": 357678,
+      "width": 1600,
+      "height": 896,
+      "caption": "Cabino’s own inn at 2:13 shows Food 10/10, Inside 1/4 and Working 0/1; its three named fruit stores are zero.",
+      "alt": "Selected Cabino inn showing full ordinary food, one occupant and no attached hauler.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-inn-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-inn-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-inn-detail-hd-v2",
+      "sha256": "96842a440909b6da53a8197f78b68c327b83eaabee0ab4cb63d86fe3f7504c4f",
+      "bytes": 17988,
+      "width": 285,
+      "height": 520,
+      "caption": "Inn detail: Food 10/10, Inside 1/4, Working 0/1; fruit stores 0/40.",
+      "alt": "Readable Cabino inn food, occupants, hauling and fruit counters.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-inn-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-inn-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "cabino-hospital-hd-v2",
+      "sha256": "19be071ac8a5e9940d96e69410d4a7c10afcf833b2cc0b66a0c55dc6213f0eea",
+      "bytes": 352310,
+      "width": 1600,
+      "height": 896,
+      "caption": "Cabino’s selected hospital shows Inside 2/2 and HP 260/260 at the same native replay time, 2:13.",
+      "alt": "Selected red Cabino hospital with two occupants and full building health.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-hospital-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-hospital-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-hospital-detail-hd-v2",
+      "sha256": "062150f30e76e58d9bb0f88d767f11c59e0a90f7710319b81f172e713dedc619",
+      "bytes": 8136,
+      "width": 280,
+      "height": 285,
+      "caption": "Hospital detail: Inside 2/2, HP 260/260.",
+      "alt": "Readable Cabino hospital occupancy and health panel.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-hospital-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-hospital-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "cabino-history-hd-v2",
+      "sha256": "4174756124a3d3c4355061a7f0e1a12aa2b3771c70dd129f57cd3a5147f9cd93",
+      "bytes": 32548,
+      "width": 1182,
+      "height": 980,
+      "caption": "Cabino’s Population history at 5:35 displays 39, with a small decline followed by renewed growth in the sampled history.",
+      "alt": "Native Cabino Population history rises toward 40 with a brief intervening dip and current displayed reading 39.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-history-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-history-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "cabino-development-hd-v2",
+      "status": 200,
+      "bytes": 352824,
+      "sha256": "cc46e6ac7661f9e4735b6d67ee41d96c61b1642fd51ef84a833391ef392bd15b"
+    },
+    {
+      "id": "cabino-inn-hd-v2",
+      "status": 200,
+      "bytes": 357678,
+      "sha256": "45f51ab4153b62d8d9d6d6f78a0a7c52c01646a52fd7dd9b1472a153c6215ff3"
+    },
+    {
+      "id": "cabino-inn-detail-hd-v2",
+      "status": 200,
+      "bytes": 17988,
+      "sha256": "96842a440909b6da53a8197f78b68c327b83eaabee0ab4cb63d86fe3f7504c4f"
+    },
+    {
+      "id": "cabino-hospital-hd-v2",
+      "status": 200,
+      "bytes": 352310,
+      "sha256": "19be071ac8a5e9940d96e69410d4a7c10afcf833b2cc0b66a0c55dc6213f0eea"
+    },
+    {
+      "id": "cabino-hospital-detail-hd-v2",
+      "status": 200,
+      "bytes": 8136,
+      "sha256": "062150f30e76e58d9bb0f88d767f11c59e0a90f7710319b81f172e713dedc619"
+    },
+    {
+      "id": "cabino-history-hd-v2",
+      "status": 200,
+      "bytes": 32548,
+      "sha256": "4174756124a3d3c4355061a7f0e1a12aa2b3771c70dd129f57cd3a5147f9cd93"
+    }
+  ],
+  "sharedBrowserProfile": "choosing-ai-roster-v3: actual public browser opponent selector, independently applied High; native gameplay source and platform remain separate.",
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  }
+}

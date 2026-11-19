@@ -1,128 +1,112 @@
 ---
 title: "Recover from starvation, stalled construction, and failed attacks"
-description: "Stop adding pressure, restore essential jobs, and find the bottleneck before rebuilding."
+description: "Separate food from health, release competing jobs, and verify one repaired system before rebuilding."
+locale: "en"
 group: "improve"
 order: 2
 prerequisites: ["jobs-and-flags", "sustainable-food"]
 tags: ["troubleshooting", "recovery", "strategy"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Unit meals, medicine, and job interruptions"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"
-  - title: "Colony survival checks"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/team/TeamStep.cpp"
-  - title: "Staffing and priorities"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/input/GameGUIInputMenuClickBuilding.cpp"
+  - title: "Current public browser Food supply and Hospitals practice, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: hunger and recovery"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMedical.cpp"
+  - title: "Released native 0.11.6.1 source context: service routing"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/team/TeamRouting.cpp"
 ---
 
-Recovery starts by stopping the colony from creating more obligations. Another swarm, construction site, or war flag can make the same shortage worse. Identify the failing system, restore it, then rebuild gradually.
+Recovery starts by finding the failing system. Another construction site, swarm or attack can add obligations before the colony can support them. Restore one essential service, watch the result, then reopen growth.
 
-## Take a local snapshot before changing everything
+The two exercises here are separate prepared tutorials: **Food supply practice** demonstrates a small repairable supply interruption; the **Hospitals** lesson demonstrates healing an already injured, fed worker. They do not depict one colony surviving starvation or a raid.
 
-:::note
+## Take a local snapshot
 
-In local practice, press **P** to pause and inspect. Save a separate recovery milestone if you want to compare decisions. In an online match, use the time available without assuming local pause can stop opponents.
+In local practice, press **P** to inspect while paused. In an online match, do not assume that local pause can stop opponents. Read these before changing several controls:
 
-:::
+1. Food in reachable inns, and whether it is replenishing.
+2. Actual versus requested workers and usable supply routes.
+3. Individual Food and HP, and service occupancy.
+4. Construction and flag requests competing with essentials.
+5. Swarm production and its separate food store.
+6. Survivors still committed to unsafe destinations.
 
-Check the colony in this order:
+A request is a demand for labor, not a promise that someone is free to join. A full store is a snapshot, not evidence that supply can keep up indefinitely.
 
-1. Food stored in reachable inns.
-2. Food workers and the routes they use.
-3. Hungry or injured units and usable services.
-4. Requests competing for the same workers.
-5. Swarm production adding more mouths.
-6. Combat flags keeping units away from home.
+## Repair a small food interruption
 
-Units inside services may be eating or healing. Inspect the **Inside** count instead of judging the population only by sprites outside. Recovery services are active parts of the colony, not empty space where units disappear.
+Open **Tutorial → Food supply practice** and inspect the existing inn. Acknowledge a briefing if one appears. This exercise begins with supply available; do not deliberately reproduce it in a colony already starving.
 
-## Restore food before expanding population
+1. Pause and record Food, Inside and Working. The recorded inn starts with Food **10/10**, Inside **0/4**, Working **0/0**.
+2. Resume with that hauling request at zero. Inspect often and stop before a dangerous shortage. The recorded reserve falls to **9/10**.
+3. Restore a request for two and high priority. In the running illustration, **Working 1/2** means one attached worker against two requested; Food is still **9/10**.
+4. Wait for actual deliveries, then pause to inspect again. Here Food returns to **10/10**, Inside is **0/4** and Working is **0/2**.
 
-Select an inn and inspect its labeled Food count, Working request, and any shortage message. Check that wheat is reachable and that painted forbidden terrain or new structures did not cut off delivery.
-
-If construction is using the available workers, reduce its requests and favor the food job. Slow swarm production while the inn recovers. The swarm consumes food for future units; its stores do not feed the globs already alive.
-
-Resume and watch a complete delivery-and-meal cycle. The checkpoint is food reaching users repeatedly, not a one-time count rising while hungry units still cannot access the inn.
-
-If the local food patch is exhausted, labor redistribution alone cannot refill it. Locate reachable supply or plan another viable inn with enough construction capacity to finish and supply it. Do not order several remote sites before establishing which one the surviving colony can support.
-
-## Practice a repairable food interruption
-
-Start from a saved, healthy colony with a supplied inn. This small exercise teaches labor redistribution before a shortage becomes starvation.
-
-1. Pause and note the inn's Food stock. In this example it starts at 10/10.
-2. Reduce the inn's Working request to zero. Resume briefly, then pause with food still available. Meals have reduced this reserve to 7/10.
-3. Stop the swarm's three birth weights and reduce its hauling request to release competing food labor.
-4. Restore the inn's request; this example requests two workers. Resume and watch the delivery route.
-5. Check that food returns and keeps replenishing across meals. Here it returns to 10/10 without losing a unit.
-
-[[media:food-stock-falling]]
+[[media:food-stock-falling-v3]]
 
 :::media-group
 
-[[media:food-recovery]]
+[[media:food-recovery-v3]]
 
-[[media:food-recovery-detail]]
+[[media:food-recovery-detail-v3]]
 
 :::
 
-At the final full stock, Working is 0/2. The request has been restored, but a full food reserve does not require continuous fetching. Read the food and the other resource messages before treating the low attached count as another failure. Restore a modest birth mix after supply is steady.
+The request remains two when the attached count returns to zero. Do not raise it merely to make the two numbers match: look at the store and messages first. This sequence demonstrates a bounded refill after labor was restored, not a whole-colony recovery or a single worker's complete meal cycle. See [food supply](/learn/sustainable-food/) for the continuous excerpt and ongoing checks.
 
-This is a repairable interruption in a healthy colony. If food is already gone and workers are starving, protect their remaining time by reducing optional commitments immediately; do not spend it reproducing the exercise.
+If the store never replenishes, inspect reachable wheat, worker availability and competing requests. A higher priority cannot create missing resources or open a blocked route. Reduce optional construction and production before adding another remote service that the same workers must finish and supply.
 
-## Heal damage after hunger
+## Separate hunger from injury
 
-Globs need food and health. A hospital provides healing; it is not a replacement food source. A unit whose health fell during hunger still needs a reachable meal and usable healing afterward.
+Select an affected unit. **Food** and **HP** answer different questions: a meal service supplies food, while a Hospital treats injury. The prepared Hospitals lesson explicitly starts with an injured patient who is already fed; do not diagnose its initial injury as starvation.
 
-Keep the route to services open and give recovering units time away from nonessential work. If you immediately reassign every survivor to construction or fighting, the recovery period may never finish.
-
-Inspect service occupancy and available capacity. A crowded service can need additional capacity, but adding another site during a labor or material shortage has a cost. Solve the actual bottleneck before expanding.
-
-
-In the raid below, both inns have been destroyed while the hospital still has **Inside 2/2**. Those two occupied places can heal globs, but the lost meal service is a separate emergency. Rebuilding an inn is useful only if surviving workers can construct it and deliver reachable food before the remaining position collapses.
+In that lesson, pause and select the patient before building. The recorded worker has **HP 50/200** and **Food 81%**.
 
 :::media-group
 
-[[media:recovery-raid-loss]]
+[[media:services-patient-before-v3]]
 
-[[media:recovery-hospital-detail]]
+[[media:services-patient-before-detail-v3]]
 
 :::
+
+Place a Hospital through the Build controls on the prompted clear ground, leaving a route around it. Inspect the site: here it begins at **HP 1/260**, **Wood 0/3**, **Working 0/2**. Follow the task's request for builders; construction must finish before the service can help.
+
+[[media:services-hospital-foundation-v3]]
+
+Reselect the same patient before resuming. Keep that selection while normal simulation runs, then inspect again when the lesson completes. In the recorded interval the same selected worker reaches **HP 200/200** with **Food 40%**.
+
+:::media-group
+
+[[media:services-patient-after-v3]]
+
+[[media:services-patient-after-detail-v3]]
+
+:::
+
+The completed Hospital shows **HP 260/260** and **Inside 0/2** at the later pause, after the patient’s HP has recovered and the lesson is complete. Keep food available afterward. Finishing a Hospital does not replace an inn or its hauling route.
 
 ## Find why construction stopped
 
-Select one site at a time. Read its material requirement, attached/requested workers, current health/progress, and messages.
+Inspect one site at a time before assigning every free worker.
 
-| What is missing | Useful check | Recovery action |
+| Visible shortage | Check next | Useful small repair |
 | --- | --- | --- |
-| Workers | Demand at other buildings and unit needs | Release workers from lower-value jobs |
-| A material | Remaining supply and route to it | Reopen access or choose a viable supply location |
-| Qualified builders | Construction qualification and upgrade level | Make training usable and free eligible workers |
-| Room for an upgrade | Adjacent structures/resources and larger footprint | Clear only the necessary obstruction or reconsider the upgrade |
-| A usable exit | Buildings and walls near the service | Reopen access before adding more labor |
+| No attached workers | Other requests and unit needs | Release labor from optional work. |
+| Material count does not rise | Remaining supply and ground access | Reopen a usable route or choose a viable source. |
+| Eligible builders unavailable | Required qualification and training access | Train and free suitable workers before expanding the request. |
+| Upgrade cannot fit | Its larger footprint and nearby obstructions | Clear necessary space before committing the upgrade. |
+| Service cannot be reached | Surrounding buildings, walls and painted restrictions | Restore entry and exit access. |
 
-High priority cannot solve missing skill, material, or space. Requesting more workers against an impossible requirement turns a visible stall into a wider shortage.
+The [current hauling exercise](/learn/resources-and-hauling/) shows a real foundation becoming a supplied inn. Use that sequence to distinguish construction progress from the continuing food job. If several sites stall, choose the one that restores essential capacity and reduce the others.
 
-When several sites stall, choose one that restores essential capacity. Reduce or cancel other commitments instead of spreading the same few workers across everything.
+## Regroup after a failed attack
 
-## Recover after a failed attack
+Reduce or move an obsolete war flag and check where survivors are committed. Inspect their food, health, training and return route before asking for another attack. Protect the working approach with a compact defensive position while leaving room for hauling; [jobs and flags](/learn/jobs-and-flags/) demonstrates the actual War flag and Guard-area controls.
 
-Move or reduce the obsolete war flag. Check whether surviving warriors are still committed to a dangerous destination or can return to food and healing. Do not replace the entire lost force before checking home supplies.
+Treat this as a troubleshooting exercise, not a pictured successful counterattack. Review a replay or your own observations for staggered arrivals, travel, blocked access, enemy defenses or a poor objective. Fix one identifiable problem before replacing the lost force.
 
-Then inspect damage at home. If a food route or swarm was lost, rebuilding that economy can matter more than immediate retaliation. Protect the working approach with a compact defensive position and leave workers room to haul.
+## Reopen commitments one at a time
 
-Review why the attack failed: incomplete training, staggered arrivals, long supply trips, enemy towers, a blocked route, or a poor objective. Make one correction before the next attempt. A replay can help inspect what happened, while a milestone save gives you a concrete local state to practice from.
+Restore a modest production mix only after food and usable services improve. Watch whether the next workers can actually join useful jobs. Finish one essential project, leave time for meals and recovery, then consider the next commitment. A quiet period can be productive when globs are eating, healing or training.
 
-## Reopen growth carefully
-
-Once food delivery, health, and labor availability improve, resume one commitment:
-
-1. Restore a modest future-production mix.
-2. Observe whether inn supply still holds.
-3. Finish the most useful stalled project.
-4. Allow training and recovery between new jobs.
-5. Add the next commitment only when the first is supported.
-
-A short period of apparent inactivity can be productive if globs are eating, healing, or training. Judge recovery by usable capacity, not by how many construction sites are on screen.
-
-Return to [sustainable food](/learn/sustainable-food/) to prevent the shortage recurring, or [defense](/learn/defending-your-colony/) to protect the rebuilt supply routes.
+Continue with [food supply](/learn/sustainable-food/), [population and production](/learn/population-and-production/) or [defense](/learn/defending-your-colony/) according to the bottleneck you found.

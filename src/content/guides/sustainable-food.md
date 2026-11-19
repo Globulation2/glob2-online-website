@@ -1,106 +1,135 @@
 ---
 title: "Keep the colony fed"
-description: "Read food stocks and service demand, slow births when supply falls behind, and preserve the next harvest."
+description: "Read local food stocks and service demand, slow growth when supply falls behind, and verify that deliveries replenish what globs consume."
 locale: "en"
 tags: ["strategy", "economy", "farming"]
 order: 4
 group: "manage"
 prerequisites: ["resources-and-hauling"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title":"Inn capacity and meals","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings/inn.json"},{"title":"Hunger and recovery","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitMedical.cpp"},{"title":"Resource growth","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/map/ResourceGrowth.cpp"},{"title":"Swarm production","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings/swarm.json"}]
+sources:
+  - title: "Current public browser Food supply practice, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: inn storage and feeding"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings/inn.json"
+  - title: "Released native 0.11.6.1 source context: unit hunger and recovery"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMedical.cpp"
+  - title: "Released native 0.11.6.1 source context: Swarm production"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/TypeSteps.cpp"
+  - title: "Released native 0.11.6.1 source context: resource ecology"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/resources/registry.json"
 ---
 
-Food is a continuing job. Completing an inn gives your globs somewhere to eat; workers still have to deliver wheat, and the building can serve only a limited number of globs at once. New births add another mouth and consume food at the swarm. A colony can therefore outgrow a food system that worked a few minutes earlier.
+Food is a continuing job. Completing an inn provides a service, but workers still have to replenish its stock. Births draw on a separate store at the swarm, while every new glob adds demand for meals. A colony can outgrow a food system that worked a few minutes earlier.
 
-Complete [Resources and hauling](/learn/resources-and-hauling/) first. Practice in a local Standard match against Numbi, with hunger and resource growth enabled. Save before changing your food system so you can try the correction again.
+Complete [resources and hauling](/learn/resources-and-hauling/) first. For the pictured exercise, open **Tutorial → Food supply practice**. This prepared colony already has an inn, a swarm and stocked supplies; those are not a custom match's starting conditions. If a briefing appears, acknowledge it and follow the visible lesson task. Use the existing inn for the interruption below; the construction exercise in Resources and hauling covers building another one.
 
-## Establish a working food route
+## Read the local store and the service separately
 
-Start with one reachable wheat patch, an inn close enough for regular deliveries, and workers available to supply it. Avoid adding several other construction sites while this first route is coming online.
+Select an inn and distinguish three readings:
 
-1. Find revealed wheat and nearby buildable ground. Leave room for globs to pass around the inn.
-2. Press **B**, then **I**, and click to place the inn. Right-click to leave placement mode; select the foundation.
-3. Set its Working request and watch the required wood arrive. Construction must finish before the inn can feed anyone.
-4. Keep the inn selected after completion. Watch workers bring wheat, and read the labeled **Food** count.
-5. Let the game run through several deliveries and meals. A single full stock is useful, but the repeating route is what keeps the colony alive.
+- **Food** is stored supply at this particular building.
+- **Inside** counts globs currently using its service.
+- **Working** compares attached hauling workers with the requested number.
 
 :::media-group
 
-[[media:food-first-stock]]
+[[media:food-first-stock-v3]]
 
-[[media:food-first-stock-detail]]
-
-:::
-
-:::note
-
-In this practice match, the completed inn has **Food 3/10**, **Working 2/2** and **Inside 0/4**. These are three different readings: stored meals, attached/requested hauling workers, and occupied service places. The yellow horizontal service display is not a food reserve.
+[[media:food-first-stock-detail-v3]]
 
 :::
 
-## Separate supply from service capacity
+The selected level-one inn starts this demonstration with **Food 10/10**, **Inside 0/4** and **Working 0/0**. It has a full reserve and nobody inside, while its hauling request is temporarily zero. The four service places and ten food capacity are different limits; a bar for service activity is not another food reserve.
 
-A level-one inn stores ten food and serves up to four globs at once. A meal uses one food. An empty inn needs deliveries; a stocked inn with every service place occupied needs time or more service capacity. Building another inn helps only if you can supply it.
+When establishing your own supply, keep a usable route between revealed wheat and the inn. Leave room around the footprint and avoid several competing construction sites. The [construction exercise](/learn/resources-and-hauling/) shows materials arriving, the inn finishing, and its work changing to food delivery.
 
-Pause and inspect a struggling inn before choosing a remedy:
+After completion, recheck the hauling request. Watch several deliveries and meals rather than treating one full stock as evidence of lasting supply. A delivery and consumption can happen close together, so an unchanged net count does not prove that nobody worked or ate.
 
-| What you see | What to check | First response |
+## Control growth without confusing the two food stores
+
+Select the swarm separately. Its **Food** supports births; it does not replace the inn's meals for existing globs. Its **Worker**, **Explorer** and **Warrior** birth controls determine future production, while **Working** asks existing workers to supply that building.
+
+:::media-group
+
+[[media:food-swarm-v3]]
+
+[[media:food-swarm-detail-v3]]
+
+:::
+
+This selected Swarm frame comes from a separate production experiment in the same prepared lesson. Its birth controls and hauling request have been reduced to their minimum, yet **Food 15/20** remains. Reducing hauling does not remove the stored supply, and raising a production control does not transform existing workers into another role.
+
+If meals are falling behind growth, reduce future births before adding another swarm. Use the left end of each birth control until it reaches its minimum. Check the actual population after resuming; changed bars alone do not prove that the total has already stopped changing. The [production lesson](/learn/population-and-production/) illustrates the observed changes and a later food-available hold.
+
+You can also reduce the swarm's hauling request to release that competing job, while preserving the inn's supply. Restore a modest production mix only after meals and deliveries can keep up. Avoid waiting until every local stock is empty before making the adjustment.
+
+## Observe a small interruption, then refill
+
+Start from a supplied, healthy colony and keep food in reserve. This is a brief inspection exercise, not a requirement to starve anyone. Pause when you need time to read a panel.
+
+1. Select the inn and note Food, Inside and Working.
+2. Temporarily reduce its hauling request to zero.
+3. Resume and wait for an actual stock change. Watch the building and passing globs; do not assume a fixed number of seconds is enough.
+4. Once the stock has fallen while food remains, restore a modest hauling request. Use priority to favor this essential job over optional work.
+5. Resume if paused and watch the next deliveries, occupancy and stock together.
+
+[[media:food-stock-falling-v3]]
+
+In the observed run, the existing inn's stock fell from **10/10 to 9/10** while **Working was 0/0**. Food remains available throughout this small interruption.
+
+[[media:food-hauling-restored-v3]]
+
+The request was restored to **two** and priority set to **high**. The next illustrated frame still has **Food 9/10** and shows **Working 1/2**: one worker has attached against a request for two. Changing a request is not an instant delivery.
+
+:::media-group
+
+[[media:food-recovery-v3]]
+
+[[media:food-recovery-detail-v3]]
+
+:::
+
+The later paused frame has **Food 10/10**, **Inside 0/4** and **Working 0/2**. The reserve has refilled, even though no worker is attached at this instant. Read the full stock before treating that staffing difference as another shortage.
+
+[[media:food-consumption-refill-clip-v3]]
+
+The continuous, normal-speed excerpt shows the stock reduction, the changed hauling request and the refill. Keep watching additional meals and deliveries before expanding the colony again.
+
+## Choose the remedy from the bottleneck
+
+| What you see | What to check | Useful response |
 | --- | --- | --- |
-| Food keeps approaching zero | Working, accessible wheat, trip length and competing jobs | Release labor for food and shorten the delivery route. |
-| Food is available but Inside stays full | Nearby hungry globs and total service capacity | Keep this inn running while adding another supplied inn. |
-| Workers leave construction repeatedly | Meals and health, as well as the site's request | Restore food first; hungry workers cannot sustain the construction schedule. |
-| Food is full but few workers are attached | Remaining supply requests and panel messages | A full stock can need little work; inspect before raising the request. |
+| Food repeatedly approaches zero | Actual deliveries, reachable wheat, trip length and competing jobs | Release hauling labor and shorten an inefficient route |
+| Food is available but Inside stays full | Waiting hungry globs and usable service capacity | Keep this inn supplied while adding capacity you can maintain |
+| Food is full but Working is below the request | Current reserve, occupancy and other supply needs | Observe before raising the request again |
+| Workers repeatedly leave a foundation | Their Food, HP and service access | Restore meals or healing before adding more construction |
+| Swarm food rises while inn food falls | Birth controls, hauling requests and shared demand for wheat | Slow growth and preserve meals for existing globs |
+| Several projects are unfinished together | Required materials, eligible builders and actual attachments | Finish or release one commitment before adding another |
 
-More workers can solve a hauling shortage, but new workers also need food. Watch the result across several meal cycles before repeating the expansion.
+More workers can help a hauling shortage, but they also need meals. A second inn helps only if workers can complete it and then supply it. Keep the original inn operating while an additional one is still a foundation.
 
-## Watch the swarm compete for wheat
+If hunger is already severe, reduce optional work, preserve the route to reachable wheat and prioritize food. Once the food route works, maintain access to healing for damaged globs. A hospital can aid recovery; it does not replace the inn's meals. If the nearby resource has gone, raising a request cannot manufacture another delivery.
 
-Select your swarm. Its Food belongs to unit production; it does not feed the existing colony. Each ordinary worker, explorer or warrior birth costs five food. The production weights choose the future unit mix, while Working requests workers to keep the swarm supplied.
+## Watch the next harvest
 
-:::media-group
-
-[[media:food-swarm]]
-
-[[media:food-swarm-detail]]
-
-:::
-
-Compare the inn and swarm over time. If the swarm keeps producing while inn stocks fall, pause births before adding another swarm. Set all three birth weights to zero, using the left ends of their controls. If you also reduce the swarm's Working request, its food haulers can become available for other jobs. Neither change removes existing units.
-
-Resume after making the correction. Give workers time to finish their current activity, reach the wheat and deliver it. Restore a modest production mix only when the inn can keep up with meals again. Do not wait for every food stock to be empty before acting.
-
-## Try a small supply interruption, then recover
-
-Use a saved, healthy practice colony for this exercise. Keep the inn selected, note its Food count, then temporarily reduce its Working request to zero. Resume briefly and watch meals draw down the stored food. Pause while food remains; this exercise does not require anyone to starve.
-
-[[media:food-stock-falling]]
-
-Restore the inn's request, slow births if necessary, and resume. Read the next few deliveries and meals together: the count can rise and fall within a healthy supply cycle. The goal is a reserve that replenishes, rather than a number that declines until the colony stops working.
+Under ordinary growth rules, wheat can renew and spread on suitable terrain, but harvesting can outrun that renewal. A large visible patch is a reserve, not a guaranteed throughput. Keep the camera in the same place and compare already revealed ground so new exploration does not look like regrowth.
 
 :::media-group
 
-[[media:food-recovery]]
+[[media:food-field-before-v3]]
 
-[[media:food-recovery-detail]]
+[[media:food-field-after-v3]]
 
 :::
 
-If hunger is already severe, cancel or reduce optional work first. Prioritize a reachable inn, preserve the path to wheat, and keep surviving workers on food. Add a hospital for damaged globs once the food route is functioning. A hospital heals; it cannot replace meals. If the nearest field is exhausted, secure another reachable supply rather than continuing to request nonexistent deliveries.
+These crops show the same revealed portion of a wheat patch earlier and later in the prepared-colony experiment. The nearby stone provides a fixed landmark. Compare the changed distribution while the colony is active, then watch further harvesting and renewal before deciding how much population this field can support.
 
-## Preserve the next harvest
+Preserve useful wheat and growing space instead of clearing the field just to tidy the town. Trees, persistent deposits and fruit have different behavior; use the [resource reference](/learn/reference-resources/) when planning future room and supply.
 
-Wheat can grow and spread under suitable terrain conditions, but harvesting can outrun that growth. A large field is a reserve, not a promise of unlimited throughput. Trees also regrow and spread; stone deposits behave differently and do not turn into empty farmland when used.
+Optional **Farm Areas** add separate field mechanics. This exercise does not require a painted farm area. No-growth, hunger and scarcity rules can change the problem; inspect the selected [match rules](/learn/victory-and-rules/) before applying an ordinary supply plan to an experiment.
 
-Watch the same revealed field over time. Keep the camera in the same place, compare the actual wheat tiles, and distinguish regrowth from newly explored fog. Notice whether harvesting is shrinking the patch faster than new wheat appears. Protect growing space from unnecessary construction and avoid clearing valuable wheat just to make a tidier colony.
+## Repeat from a healthy checkpoint
 
-[[media:food-field-comparison]]
+Before another expansion, check the inn's Food and Inside, the swarm's birth demand, and the workers actually attached to important jobs. Expand delivery for a hauling shortage, service capacity for an occupied inn, and population only when the supply can support it.
 
-When supply trends downward, slow growth, reduce competing food consumption, or expand toward another secure field. Do not assume that a fixed worker count or a particular field shape will support every population and map.
-
-The optional **Farm Areas** experiment adds separate field mechanics. This Standard lesson uses ordinary wheat growth and does not require a painted farm area. No-growth and resource-scarcity custom rules also change how long reserves last; check the match rules before treating a field as renewable.
-
-## Choose the next expansion from the bottleneck
-
-Before another project, inspect the inn's Food and Inside counts, the swarm's food demand, and the workers actually attached to each job. Expand supply for a delivery shortage, service capacity for a meal bottleneck, and population only when both can support it.
-
-Save the recovered colony. Return to [Your first colony](/learn/getting-started/) if you need the placement and staffing sequence, or use [Resources and hauling](/learn/resources-and-hauling/) to trace a route that is still failing. Repeat one change at a time until you can explain why the food reserve is replenishing.
+Save a supplied milestone through the game's own controls. Repeat one change at a time from that checkpoint and compare actual stock, arrivals and service use. Your goal is to explain why the reserve replenishes across continuing colony activity, then preserve that condition while adding the next project.
