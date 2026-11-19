@@ -40,7 +40,7 @@ test('illustrated pilot delivers same-origin images and controlled clips', async
     await expect(image).toHaveAttribute('alt', /.+/);
   }
   const clip = page.locator('article video').first();
-  await expect(clip).toHaveAttribute('controls', '');
+  await expect(clip.locator('..').getByRole('button', { name: /^Play clip:/ })).toBeVisible();
   await expect(clip).toHaveAttribute('preload', 'none');
   await expect(clip).toHaveAttribute('poster', /^\/guide-media\/.+\.webp$/);
   expect(requests.some(url => /\.wasm|app\.glob2\.online/.test(url))).toBe(false);

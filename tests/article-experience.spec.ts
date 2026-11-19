@@ -94,7 +94,15 @@ test('native article disclosures and original media work without JavaScript', as
   await expect(page.locator('.article-contents-disclosure nav')).toBeVisible();
   await page.getByText('Browse handbook', { exact: true }).click();
   await expect(page.getByRole('navigation', { name: 'Browse handbook chapters', exact: true })).toBeVisible();
-  await expect(page.locator('article video').first()).toHaveAttribute('controls', '');
+  await page.goto(baseURL! + '/learn/exploration-and-movement/');
+  const nativeClip=page.locator('article video');
+  await expect(nativeClip).toHaveAttribute('controls', '');
+  await expect(nativeClip).toHaveAttribute('preload', 'none');
+  await expect(page.getByRole('button',{name:/^Play clip:/})).toHaveCount(0);
+  const directClip=page.getByRole('link',{name:'Open gameplay clip',exact:true});
+  await expect(directClip).toBeVisible();
+  const clipResponse=await page.request.get(baseURL!+(await directClip.getAttribute('href'))!);
+  expect(clipResponse.ok()).toBe(true);expect(clipResponse.headers()['content-type']).toContain('video/mp4');
   const original = page.getByRole('link', { name: 'Open full-size screenshot', exact: true }).first();
   const href = await original.getAttribute('href');
   await original.click();
@@ -162,7 +170,7 @@ test('expanded native clips transfer playback state and never play two copies', 
     video.currentTime = 2;
   });
   const inlineState = await inline.evaluate((video: HTMLVideoElement) => ({ rate: video.playbackRate, muted: video.muted, volume: video.volume, time: video.currentTime }));
-  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  await inline.locator('xpath=ancestor::figure[1]').getByRole('link', { name: 'Expand video', exact: false }).click();
   await expect(viewer(page)).toBeVisible();
   await expect.poll(() => inline.evaluate((video: HTMLVideoElement) => video.paused)).toBe(true);
   const expanded = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
@@ -188,7 +196,7 @@ test('expanded native clips transfer playback state and never play two copies', 
   expect(returnedState.volume).toBeCloseTo(editedState.volume, 6);
 
   // Reopening a paused clip preserves the edited state without requesting autoplay.
-  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  await inline.locator('xpath=ancestor::figure[1]').getByRole('link', { name: 'Expand video', exact: false }).click();
   const reopened = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
   await expect(reopened).toBeVisible();
   await expect.poll(() => reopened.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeCloseTo(3, 1);
@@ -208,7 +216,7 @@ test('closing a playing expanded clip returns its state to the inline player', a
   await inline.evaluate(async (video: HTMLVideoElement) => {
     video.muted = true; await video.play(); video.currentTime = 2;
   });
-  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  await inline.locator('xpath=ancestor::figure[1]').getByRole('link', { name: 'Expand video', exact: false }).click();
   const expanded = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
   await expect(expanded).toBeVisible();
   await expect.poll(() => expanded.evaluate((video: HTMLVideoElement) => video.paused)).toBe(false);
@@ -250,7 +258,7 @@ test('a rejected expanded playback request retains position and native play cont
     video.muted = true; await video.play(); video.currentTime = 2;
   });
   const position = await inline.evaluate((video: HTMLVideoElement) => video.currentTime);
-  await inline.locator('..').getByRole('link', { name: 'Expand video', exact: false }).click();
+  await inline.locator('xpath=ancestor::figure[1]').getByRole('link', { name: 'Expand video', exact: false }).click();
   const expanded = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
   await expect(expanded).toBeVisible();
   await expect(expanded).toHaveAttribute('data-play-rejected', 'true');
@@ -404,5 +412,79 @@ test('detail image opening cue leaves shallow counters visible and works by keyb
     await page.keyboard.press('Escape');
     await expect(viewer(page)).toBeHidden();
     await expect(link).toBeFocused();
+  }
+});
+
+test('fresh guide posters wait for explicit keyboard playback inline and expanded', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  const mediaRequests: string[] = [];
+  page.on('request', request => { if (/\.mp4(?:\?|$)/.test(request.url())) mediaRequests.push(request.url()); });
+  await page.goto('/learn/exploration-and-movement/');
+  const inline = page.locator('article video');
+  const start = page.locator('article .guide-video-start');
+  await expect(start).toBeVisible();
+  expect(await inline.evaluate((v: HTMLVideoElement) => v.paused && v.currentTime === 0 && !v.autoplay && !v.controls)).toBe(true);
+  await page.waitForTimeout(350);
+  expect(mediaRequests).toEqual([]);
+  await start.focus();
+  await page.keyboard.press('Enter');
+  await expect.poll(() => inline.evaluate((v: HTMLVideoElement) => !v.paused && v.currentTime > 0)).toBe(true);
+  await expect(inline).toBeFocused();
+  await expect(start).toBeHidden();
+  expect(await inline.evaluate((v: HTMLVideoElement) => v.controls)).toBe(true);
+
+  await page.goto('/learn/exploration-and-movement/');
+  const requestsBeforeExpansion = mediaRequests.length;
+  await page.getByRole('link', { name: 'Expand video', exact: false }).click();
+  const expanded = viewer(page).locator('.pswp__item[aria-hidden="false"] video');
+  const expandedStart = viewer(page).locator('.pswp__item[aria-hidden="false"] .guide-video-start');
+  await expect(expandedStart).toBeVisible();
+  expect(await expanded.evaluate((v: HTMLVideoElement) => v.paused && v.currentTime === 0 && !v.controls)).toBe(true);
+  await page.waitForTimeout(350);
+  expect(mediaRequests.length).toBe(requestsBeforeExpansion);
+  await expandedStart.focus();
+  await page.keyboard.press('Space');
+  await expect.poll(() => expanded.evaluate((v: HTMLVideoElement) => !v.paused && v.currentTime > 0)).toBe(true);
+  await expect(expanded).toBeFocused();
+  expect(await expanded.evaluate((v: HTMLVideoElement) => v.controls)).toBe(true);
+  await page.keyboard.press('Escape');
+  await expect(viewer(page)).toBeHidden();
+});
+
+test('a rejected explicit clip start keeps native controls and the original link available', async ({ page }) => {
+  await page.addInitScript(() => { HTMLMediaElement.prototype.play = () => Promise.reject(new DOMException('Playback unavailable', 'NotAllowedError')); });
+  await page.goto('/learn/exploration-and-movement/');
+  await page.getByRole('button', { name: /^Play clip:/ }).click();
+  await expect(page.getByRole('alert')).toContainText('could not start');
+  const video = page.locator('article video');
+  expect(await video.evaluate((v: HTMLVideoElement) => v.controls && v.paused && v.currentTime === 0)).toBe(true);
+  await expect(video.locator('xpath=ancestor::figure[1]').locator('.media-actions').getByRole('link', { name: 'Open gameplay clip', exact: true })).toBeVisible();
+  await page.getByRole('link', { name: 'Expand video', exact: false }).click();
+  await viewer(page).getByRole('button', { name: /^Play clip:/ }).click();
+  const failure=viewer(page).getByRole('alert');
+  await expect(failure).toContainText('could not start');
+  const direct=failure.getByRole('link', { name:'Open gameplay clip',exact:true });
+  await expect(direct).toBeVisible();
+  await expect(direct).toHaveAttribute('href', /\/guide-media\/.+\.mp4$/);
+  await direct.focus();await expect(direct).toBeFocused();
+  const expanded=viewer(page).locator('.pswp__item[aria-hidden="false"] video');
+  const playerBox=await expanded.boundingBox(),errorBox=await failure.boundingBox();
+  expect(errorBox!.y+errorBox!.height).toBeLessThan(playerBox!.y+playerBox!.height-44);
+  expect(await expanded.evaluate((v:HTMLVideoElement)=>v.controls&&v.paused)).toBe(true);
+  await page.keyboard.press('Escape');await expect(viewer(page)).toBeHidden();
+});
+
+test('expanded poster Play accepts pointer and touch activation', async ({ browser, baseURL }) => {
+  for (const hasTouch of [false, true]) {
+    const context=await browser.newContext({viewport:{width:360,height:900},hasTouch,reducedMotion:'reduce'});
+    const page=await context.newPage();await page.goto(baseURL!+'/learn/exploration-and-movement/');
+    await page.getByRole('link',{name:'Expand video',exact:false}).click();
+    const start=viewer(page).getByRole('button',{name:/^Play clip:/});
+    if(hasTouch)await start.tap();else await start.click();
+    const video=viewer(page).locator('.pswp__item[aria-hidden="false"] video');
+    await expect.poll(()=>video.evaluate((v:HTMLVideoElement)=>!v.paused&&v.currentTime>0)).toBe(true);
+    await expect(start).toBeHidden();await expect(video).toBeFocused();
+    expect(await video.evaluate((v:HTMLVideoElement)=>v.controls)).toBe(true);
+    await context.close();
   }
 });
