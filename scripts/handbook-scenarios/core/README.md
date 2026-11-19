@@ -50,8 +50,7 @@ food depletion or recovery. Inspect every rerun before drawing those conclusions
 capture helper. It accepts serialized JSON commands in the ignored capture
 output directory and returns a read-only diagnostic snapshot after each actual
 UI action. The accepted actions are inspect, control, key, click, scroll,
-screenshot, advance (1–120 normal ticks), and close. It does not accept JavaScript
-or write game state.
+screenshot, advance (1–120 normal ticks), import-file, and close. It accepts no JavaScript evaluation or direct simulation-state writes.
 
 Write `interactive-command.json` atomically with the next integer `sequence`
 and an `action`, then wait for that sequence in `interactive-response.json`
@@ -66,3 +65,12 @@ bridge and completed with 115 recorded events. Preserve the real command recipe,
 watcher source and source hashes with each session: an interactive capture is not
 execution of a fixed lesson scenario. Inspect actual pause state and acknowledge
 any settled optional briefing before acting on the map.
+
+For `import-file`, provide a visible game control `key` and a `filename` such as
+`downloads/1-example.glob2` from this capture's actual completed download list.
+The helper waits for pending downloads and supplies a read-only copy of their
+recorded metadata. The bridge checks the relative/canonical path and exact byte
+length and SHA before opening the real file chooser through that control. It
+accepts no arbitrary file or raw state input. The action
+records the imported relative filename/hash; inspect the resulting game UI to
+verify acceptance, rather than treating file-picker completion as a loaded game.
