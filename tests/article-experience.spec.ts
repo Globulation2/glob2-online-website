@@ -72,8 +72,13 @@ test('references, profiles, and historical editorial pages preserve their purpos
   await expect(mixedSources.getByRole('link', { name: /Released native 0.11.6.1 stone-wall cost/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings/stonewall.json');
   await expect(mixedSources.getByRole('link', { name: /Earlier source context: Standard building definitions/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings');
   await expect(mixedSources).not.toContainText('Reviewed against');
-  // A retained single-baseline reference still displays its review badge.
   await page.goto('/learn/reference-resources/');
+  const resourceSources = page.getByRole('complementary', { name: 'Source references' });
+  await expect(resourceSources.getByRole('link', { name: /Current public browser food and production examples/ })).toHaveAttribute('href', 'https://app.glob2.online/play/');
+  await expect(resourceSources.getByRole('link', { name: /Released native 0.11.6.1 Standard resource definitions/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/resources/registry.json');
+  await expect(resourceSources).not.toContainText('Reviewed against');
+  // The retained browser-files chapter still identifies its single earlier source baseline.
+  await page.goto('/learn/browser-and-multiplayer/');
   await expect(page.getByRole('complementary', { name: 'Source references' })).toContainText('Reviewed against');
   await page.goto('/learn/ai-econo/');
   await expect(page.locator('.article-heading .eyebrow')).toHaveText('AI profile');
@@ -385,10 +390,10 @@ test('supported fullscreen inspection exits cleanly when the viewer closes', asy
 
 test('detail image opening cue leaves shallow counters visible and works by keyboard', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  for (const width of [360, 1280]) {
+  for (const {slug,asset} of [{slug:'ai-numbi',asset:'numbi-warriors-detail-hd-v2'},{slug:'ai-maxima',asset:'maxima-joins-detail-hd-v2'}]) for (const width of [360, 1280]) {
     await page.setViewportSize({ width, height: 900 });
-    await page.goto('/learn/ai-numbi/');
-    const link = page.locator('#media-numbi-warriors-detail-hd-v2 .guide-image-link');
+    await page.goto(`/learn/${slug}/`);
+    const link = page.locator(`#media-${asset} .guide-image-link`);
     const image = link.locator('img');
     await link.scrollIntoViewIfNeeded();
     await expect(image).toBeVisible();

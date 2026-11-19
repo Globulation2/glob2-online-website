@@ -1,104 +1,95 @@
 ---
 title: "Facing Warrush: hold a supplied approach"
-description: "Recognize Warrush's military pressure, release unnecessary production, and keep defenders fed near a compact guard area."
+description: "Recognize military pressure, release competing demand and keep a compact defense connected to meals and healing."
 locale: "en"
 group: "ai"
 format: "profile"
 order: 5
 prerequisites: ["choosing-an-ai", "sustainable-food", "training-and-upgrades", "defending-your-colony"]
 tags: ["AI", "Warrush", "defense", "food"]
-reviewedAgainst: "c26a0a02aeef4993a7478c3651d6117b49dbc56c"
 sources:
-  - title: "Warrush controller and guard-area policy"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/warrush/AIWarrush.cpp"
-  - title: "Warrush tuning"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/warrush/AIWarrushTuning.h"
-  - title: "Warrior movement and guard attraction"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/unit/UnitMovement.cpp"
-  - title: "Food and healing service admission"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/building/Services.cpp"
+  - title: "Current browser opponent selector, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Native 0.11.6.1 Warrush production and guard-area policy"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/warrush/AIWarrush.cpp"
+  - title: "Native 0.11.6.1 Warrush tuning"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/warrush/AIWarrushTuning.h"
+  - title: "Native 0.11.6.1 warrior guard attraction"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMovement.cpp"
 ---
 
-:::note
-
-Warrush produces a military mixture and directs warriors toward discovered enemy buildings. Prepare a colony that can keep defenders fed through repeated contact. Its name does not give you a safe number of minutes before attack, and a successful hold does not end the duel.
-
-:::
-
-This exercise follows a Standard practice match on **balancedfor2**, red against cyan. The opening had seven workers and one explorer. The objective is to recognize contact, keep a working inn, release unnecessary growth and defend a compact approach while services continue operating.
+Warrush produces a military mixture and directs warriors toward discovered enemy buildings. Prepare a colony that can keep defenders fed through contact. Its name does not give you a safe number of minutes before attack, and one successful hold does not end the duel.
 
 ## Choose Standard and establish supply
 
-In **Custom game**, select the map, put **You** and **AI → Warrush** on separate teams, and choose **Standard** in Game Rules with experiments off. The chooser's **Easy (1401)** is an offline difficulty estimate, separate from online OpenSkill ratings and ranks. Save the opening through **Escape → Save**.
+Create two colonies through [choosing an AI](/learn/choosing-an-ai/). Select **You** and **AI → Warrush** on separate teams, and choose **Standard** with experiments off. The browser chooser labels Warrush **Easy (1401)**, an offline difficulty estimate separate from an online player's rating. Save the opening before changing the production mix.
 
-[[media:warrush-selection]]
+[[media:choosing-ai-roster-v3]]
 
-Find reachable wheat and wood, build an inn with **B → I**, and right-click to leave placement. Wait for actual completion and deliveries. Inspect Food, Inside and Working together: a full store can coexist with no attached haulers.
+Find reachable wheat and wood. Build an inn with **B → I**, cancel placement and inspect the actual foundation materials and attached workers. Wait for completion and deliveries before committing to several training buildings. Follow [resources and hauling](/learn/resources-and-hauling/) for the current illustrated construction and initial supply workflow.
 
-[[media:warrush-opening-food]]
-
-Warrush builds food, production and training as its economy permits. Its choices depend on staffing, supplies, available facilities and the rules; do not expect one fixed building sequence. Keep scouting useful approaches without assuming your flying scout's route is also open to ground defenders.
+Read **Food**, **Inside** and **Working** together. A full store can coexist with no attached haulers at that moment; resume and check whether deliveries recover after meals. An inn's food and the swarm's production food are separate stocks.
 
 ## Prepare defenders and their services
 
-Select the swarm and adjust births toward warriors while maintaining enough workers for food and construction. Changing a production weight changes future births; it does not turn workers into warriors. Watch the actual totals and food stock while the new units arrive.
+Adjust swarm births toward a force you can supply while retaining the workers needed for meals and construction. Changing weights affects future role allocation; a pending birth can still finish, and existing workers do not turn into warriors. Watch the actual totals and production food.
 
-Add a barracks with **B → B** and a hospital with **B → H** when you can complete them. Inspect Inside to confirm units are using the service. Training and healing take time, and warriors may leave their position for meals or services. A nearby defense tower can support the approach, but it also needs ammunition and usable supply routes.
+Complete a reachable barracks and hospital when the economy can support them. Inspect individual abilities and actual occupants afterward. Training and healing take time, and warriors can leave an assignment for meals or services. A nearby defense tower also needs ammunition and a usable supply route.
 
-In this match the barracks and hospital completed and each held two occupants when the pressure checkpoint was resumed. The colony had twenty-one workers and twenty-one warriors, while the inn was full but had **Working 0/2**. That combination called for checking labor commitments before funding still more births.
+## Inspect a native Warrush episode
+
+The following images show an AI-versus-AI replay in released **native 0.11.6.1**, red Warrush against cyan Nicowar on a generated 128×128 River map. Both colonies are computer-controlled. The session uses SDL GPU and explicitly applied High resolution artwork; the pictured clock is **8:48**. The browser chooser above and the human exercise below are separate from this native demonstration.
+
+[[media:warrush-town-hd-v2]]
+
+Read the finished-service notices alongside the attack alert. Several services and a military population exist, but the same paused frame does not show whether every injury or meal is being handled. Inspect actual stock, occupants and unit condition before relying on that capacity.
+
+Pause your human practice to inspect the services, then resume to observe a real visit or delivery. A finished building is preparation; use by the appropriate globs is a separate result.
+
+## Read contact before changing the defense
+
+An alert identifies something to inspect. Look at the actual location, enemy units, injuries, building health and the route to meals. Select a threatened unit or service before deciding whether to add defenders, restore supply or stop a competing project.
+
+In native 0.11.6.1, Warrush can steer offense with guard paint over discovered enemy building footprints. It does not require a visible war flag to keep applying pressure. Actual paths, available warriors, combat and service trips still affect arrivals. A quiet interval is time to inspect the approach, not proof that another commitment cannot arrive.
 
 :::media-group
 
-[[media:warrush-services]]
+[[media:warrush-guard-targets-hd-v2]]
 
-[[media:warrush-barracks-detail]]
+[[media:warrush-guard-detail-hd-v2]]
 
 :::
 
-[[media:warrush-hospital-detail]]
+This is Warrush's watched-team area view over Nicowar's town at the same paused time. The blue Guard paint covers enemy building footprints; it is not a human-painted home defense. Look at the actual enemy units near those services before deciding where your own defense needs support.
 
-[[media:warrush-food-before-detail]]
+The replay later reaches its 13:53 tick-cap end with both colonies alive and no winner recorded. Use the pictured commitment to practice diagnosis, rather than treating it as a strength ranking or a demonstrated victory.
 
-These are observed checkpoint counts, not a required army size. Pause with **P** to read the panels, then resume to see whether the requests actually work.
+## Release competing demand and guard a useful place
 
-## Read actual contact
+When a usable force already exists, reduce demand that prevents its support from working:
 
-An attack alert tells you something has happened; inspect the location and current state before deciding what it requires. Look for enemy globs, injured defenders, building HP and the approach to the inn. Cyan warriors reached this colony's southern approach. Defenders gathered near the tower while the inn, barracks and hospital remained farther inside the home area.
+1. Inspect the swarm's food and birth weights. Stop unneeded future births while the current colony recovers, allowing for an already pending birth.
+2. Inspect the swarm's **Working** request separately. Reducing that request releases labor; it does not itself prevent stored production food from being spent on births.
+3. Release construction or other requests that compete with essential meals and healing. Check actual worker attachment after resuming.
+4. Paint a compact **Guard area** with **A → G**, then cancel painting. Choose a defensible approach near services rather than painting a large region without checking where units gather.
+5. Watch real contact and service visits. Guard attraction does not override every explicit war-flag assignment or promise an evenly spaced line.
 
-[[media:warrush-contact]]
+Use [defending your colony](/learn/defending-your-colony/) for defensive planning. Preserve room and routes for meals and healing while checking whether the force actually remains usable.
 
-Warrush's offensive steering uses guard areas around discovered enemy building footprints. It does not need a visible war flag to keep applying pressure. Meals, healing, available paths and combat still affect which warriors arrive. Treat an apparently quiet moment as time to inspect supply and damage, rather than proof that another wave cannot come.
+## Inspect the result through continuing work
 
-## Release growth and guard a compact approach
+Compare the inn's replenishment, occupants and attached workers through meals. Select wounded defenders, observe hospital use, and recheck their condition before sending them away again. A tower's remaining HP is different from its stone and ammunition stock.
 
-When enough defenders already exist, select the swarm and set all three birth weights—**Worker**, **Explorer** and **Warrior**—to zero, then reduce its request to **Working 0/0**. Check both changes in the panel: lowering the Working request alone can leave births consuming stored food. This example stopped further births and released labor from production.
+Do not infer an indefinite defense from a single stocked frame. Save a functioning checkpoint, then compare one change after another: fewer births, a better gathering position or a released construction request.
 
-[[media:warrush-growth-detail]]
+For a counterattack, scout current enemy services and defenders and follow [organizing an attack](/learn/organizing-an-attack/). Keep a route to meals and judge actual arrivals before renewing the request. The configured victory condition, rather than the disappearance of one attacker, determines when the match is won.
 
-Paint a small **Guard area** at the approach you intend to hold using **A → G**, then right-click when finished. Keep it close enough for meals and services. Idle warriors can use guard attraction; a broad painted region does not guarantee an even distribution or override an explicit war-flag request.
-
-[[media:warrush-guard]]
-
-Resume and inspect the result. After releasing production and painting the southern guard strip, this inn had **Working 2/2**, **Food 8/10**, and three occupants. The tower still showed **HP 480/480**, **Stone 4/4** and **Bullets 10/12** while cyan contact was visible nearby. This was a supplied hold over the observed interval, with continuing combat.
-
-[[media:warrush-food-after-detail]]
-
-[[media:warrush-hold-clip]]
-
-The silent clip shows defenders and cyan attackers moving at the approach. The useful check is whether defenders can return to meals and services while pressure continues. Reinspect HP, ammunition, attached haulers and stocks afterward; a single full panel cannot prove an indefinite defense.
-
-## Decide what comes after the hold
-
-Save a functioning checkpoint before your next commitment. If the inn stops receiving food, release competing requests, check reachable resources and let deliveries recover. If survivors are injured, keep the hospital usable and avoid immediately sending them away again. If the tower loses ammunition, inspect its stone route and Working request.
-
-For a counterattack, scout the current target and follow [organizing an attack](/learn/organizing-an-attack/). Keep a return route to meals. This exercise demonstrates a local hold; it does not demonstrate an attack victory or a universal response that defeats Warrush on every map.
-
-| What you observe | What to check | Useful adjustment |
+| Observation | Check next | Useful adjustment |
 | --- | --- | --- |
-| The inn is stocked but has no attached workers | Simultaneous production, building requests and worker availability | Release unnecessary production, then verify actual attachment |
-| Warriors gather far from meals | Guard areas, war flags and reachable services | Concentrate the useful request near a supplied approach |
-| Injured defenders keep circulating | Hospital completion, admission and nearby meals | Give survivors time to use services before another operation |
-| A tower stops supporting the fight | Bullets, stone stock and deliveries | Restore its reachable supply while defenders hold |
-| Contact continues after one attacker disappears | Newly arriving units and remaining enemy buildings | Keep observing the approach and preserve supply |
+| The inn empties during contact | Simultaneous births, construction and hauling | Release unneeded demand and verify replenishment |
+| Warriors gather far from meals | Guard paint, explicit flags and reachable services | Keep a useful compact assignment near support |
+| Injured defenders circulate | Healing places, access and nearby meals | Allow actual recovery before another operation |
+| A tower stops supporting the approach | Ammunition, stone and delivery workers | Restore its usable supply route |
+| Contact continues after one attacker disappears | New arrivals and surviving enemy services | Keep inspecting while preserving food and healing |
 
-Return to [recovering your colony](/learn/recovering-your-colony/) if services fail. Judge success by the colony's continuing ability to feed, train, heal and defend, then pursue the configured victory conditions when you are ready.
+Return to [recovering your colony](/learn/recovering-your-colony/) if essential services fail. The useful practice result is a colony that can keep feeding, training, healing and defending through its next commitment.

@@ -1,0 +1,266 @@
+{
+  "observed": "2026-11-18",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "packageSha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "renderer": "SDL GPU",
+    "framebuffer": [
+      2940,
+      1646
+    ],
+    "method": "Actual released native desktop MCP ui_act/ui_key/ui_click/ui_screenshot. No state injection or repainting.",
+    "map": "River revision 9, seed 713, 128x128, two colonies",
+    "gameSeed": 715,
+    "controllers": [
+      "Warrush AI (red)",
+      "Nicowar AI (cyan)"
+    ],
+    "humanControlled": false,
+    "tickLimit": 25000,
+    "probabilityVictory": 0,
+    "replayDuration": "13:53",
+    "view": "Nicowar watched, fog of war and combined vision checked. Home-flag frame retains Show areas enabled; offensive-flag frame has areas hidden. Real pause used, with actual flag-range outlines retained.",
+    "limits": "Genuine AI-versus-AI replay, not human play or a controlled strength comparison. Both colonies survived the tick-cap end and no winner was recorded. No individual conversion route or cause was followed.",
+    "artwork": "Explicit High resolution selected through supported Graphics UI; applied on fresh replay load and confirmed in post-load and post-still Settings inspections.",
+    "timing": "Visible paused clock8:48 for Warrush/Nicowar. Cabino/Maxima early2:13 and later5:35; exact capture ticks not exported. No normal-speed motion clip is claimed for session4."
+  },
+  "assets": [
+    {
+      "id": "nicowar-home-flag-hd-v2",
+      "candidate": "nicowar-home-flag-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/nicowar-high-war-flag.png",
+      "sourceSha256": "98e5a1e094c9df84d589710cd166002473f7adcd5895bf6e9236aee040075c64",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 427888,
+      "sha256": "f4a9feb19c1a7207f1c068e4ec003659fb1a7edb40c3e8b617845d4383554568",
+      "caption": "Native 0.11.6.1 at 8:48: Nicowar’s home War Flag requests two at minimum level 1; none are Here or On the way in this paused frame.",
+      "alt": "Selected Nicowar home War Flag with Working 0/2, range 4 and minimum required level 1.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "nicowar-home-flag-detail-hd-v2",
+      "candidate": "nicowar-home-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/nicowar-high-war-flag.png",
+      "sourceSha256": "98e5a1e094c9df84d589710cd166002473f7adcd5895bf6e9236aee040075c64",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        2580,
+        375,
+        2860,
+        965
+      ],
+      "width": 280,
+      "height": 590,
+      "bytes": 18278,
+      "sha256": "6da633c1c66f9851def3afa44328af825613d02d4d2b7c5eab2b90bf5eaf9cd5",
+      "caption": "Home flag detail: Working 0/2, range 4, minimum required level 1.",
+      "alt": "Readable native home War Flag request and level controls.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "nicowar-offensive-flag-hd-v2",
+      "candidate": "nicowar-offensive-flag-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/nicowar-high-offensive-flag.png",
+      "sourceSha256": "740094f9ae500e601b779f6aa9285431cc018d5a8404bd9a547a07f1c9bf5dd9",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 395598,
+      "sha256": "ac2446f7bab6d6eef63d0f6107f5138404245b98a02fbda4edfb6f5cb1661462",
+      "caption": "At the same 8:48, a Nicowar flag inside red Warrush’s settlement requests five at minimum level 2; Here and On the way are both zero.",
+      "alt": "Selected Nicowar offensive War Flag in Warrush territory with Working 0/5 and minimum required level 2.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "nicowar-offensive-flag-detail-hd-v2",
+      "candidate": "nicowar-offensive-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/nicowar-high-offensive-flag.png",
+      "sourceSha256": "740094f9ae500e601b779f6aa9285431cc018d5a8404bd9a547a07f1c9bf5dd9",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        2580,
+        375,
+        2860,
+        965
+      ],
+      "width": 280,
+      "height": 590,
+      "bytes": 18284,
+      "sha256": "e8a7efc71c6ee6dee52b72698680371bea5b212678c9b86f9312b62245f6702d",
+      "caption": "Offensive flag detail: Working 0/5, range 4, minimum required level 2.",
+      "alt": "Readable native offensive War Flag request and selected minimum level 2.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    }
+  ],
+  "nativeArtifacts": {
+    "warrush-nicowar-25000/game.replay": "ff92f3a568c284df84c97e9c87c2fa4abb519203fe4f02b006b372f3bf82f6f6",
+    "river.map.gz": "98d11fbfca2261bd8bd51d744beb7d9ff70b30493d3431899709bb57eb674cf9",
+    "warrush-nicowar-25000/checkpoint-5000.game.gz": "be2017dc082f0e470e26b8b0affa71ce8e2c845a9d109a83ec04eb6aef19e9ae",
+    "warrush-nicowar-25000/final.game.gz": "a4d5d64fa283267e5c913c9263a88f8ca150e90426dac6355c5c411d1219f9c9",
+    "warrush-nicowar-25000/result.json": "e9d4a9ec1d3d6ab04c73682e6fa04e4fa4f4a0d3e65003997328cd07c66ee621"
+  },
+  "qualityProof": "../session4-high-resolution-proof.json",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "retirement": {
+    "scope": "All old chapter images and clips illustrate a different earlier human exercise; preserve original objects/provenance, do not relabel as current native play.",
+    "dependency": "Retire old generic human service/defense footage only with current High resources construction/supply motion and Guard teaching integrated and published in the same batch. Native current evidence is a separately identified AI-versus-AI illustration."
+  },
+  "nativeOutcome": {
+    "ticks": 25000,
+    "game_seed": 715,
+    "termination": "tick_cap",
+    "resolved": {
+      "tick_limit": 25000,
+      "map": "river",
+      "save_version": 217,
+      "winning_conditions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "experiments": [],
+      "rules": {
+        "teamStatsDelay": 8,
+        "aiOrderDelay": 14,
+        "buildingGradientDelay": 8,
+        "noGrowth": 0,
+        "scarcity": 0,
+        "instantConstruction": 0,
+        "stockpile": 0,
+        "noHunger": 0,
+        "noUpgrades": 0,
+        "glassCannon": 0,
+        "fearless": 0,
+        "noPermadeath": 0,
+        "peaceful": 0,
+        "fortress": 0,
+        "suddenDeathTick": 0,
+        "winProbabilityPermille": 0
+      },
+      "resource_claims": "default",
+      "resource_claims_policy_name": "contention-v2"
+    },
+    "winning_teams": [],
+    "unresolved": true,
+    "qualification": "Both colonies remain alive at this unresolved tick cap; no winner or general strength ranking is inferred."
+  },
+  "registeredAssets": [
+    {
+      "id": "nicowar-home-flag-hd-v2",
+      "sha256": "f4a9feb19c1a7207f1c068e4ec003659fb1a7edb40c3e8b617845d4383554568",
+      "bytes": 427888,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 8:48: Nicowar’s home War Flag requests two at minimum level 1; none are Here or On the way in this paused frame.",
+      "alt": "Selected Nicowar home War Flag with Working 0/2, range 4 and minimum required level 1.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-home-flag-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-home-flag-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "nicowar-home-flag-detail-hd-v2",
+      "sha256": "6da633c1c66f9851def3afa44328af825613d02d4d2b7c5eab2b90bf5eaf9cd5",
+      "bytes": 18278,
+      "width": 280,
+      "height": 590,
+      "caption": "Home flag detail: Working 0/2, range 4, minimum required level 1.",
+      "alt": "Readable native home War Flag request and level controls.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-home-flag-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-home-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "nicowar-offensive-flag-hd-v2",
+      "sha256": "ac2446f7bab6d6eef63d0f6107f5138404245b98a02fbda4edfb6f5cb1661462",
+      "bytes": 395598,
+      "width": 1600,
+      "height": 896,
+      "caption": "At the same 8:48, a Nicowar flag inside red Warrush’s settlement requests five at minimum level 2; Here and On the way are both zero.",
+      "alt": "Selected Nicowar offensive War Flag in Warrush territory with Working 0/5 and minimum required level 2.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-offensive-flag-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-offensive-flag-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "nicowar-offensive-flag-detail-hd-v2",
+      "sha256": "e8a7efc71c6ee6dee52b72698680371bea5b212678c9b86f9312b62245f6702d",
+      "bytes": 18284,
+      "width": 280,
+      "height": 590,
+      "caption": "Offensive flag detail: Working 0/5, range 4, minimum required level 2.",
+      "alt": "Readable native offensive War Flag request and selected minimum level 2.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-offensive-flag-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-offensive-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "nicowar-home-flag-hd-v2",
+      "status": 200,
+      "bytes": 427888,
+      "sha256": "f4a9feb19c1a7207f1c068e4ec003659fb1a7edb40c3e8b617845d4383554568"
+    },
+    {
+      "id": "nicowar-home-flag-detail-hd-v2",
+      "status": 200,
+      "bytes": 18278,
+      "sha256": "6da633c1c66f9851def3afa44328af825613d02d4d2b7c5eab2b90bf5eaf9cd5"
+    },
+    {
+      "id": "nicowar-offensive-flag-hd-v2",
+      "status": 200,
+      "bytes": 395598,
+      "sha256": "ac2446f7bab6d6eef63d0f6107f5138404245b98a02fbda4edfb6f5cb1661462"
+    },
+    {
+      "id": "nicowar-offensive-flag-detail-hd-v2",
+      "status": 200,
+      "bytes": 18284,
+      "sha256": "e8a7efc71c6ee6dee52b72698680371bea5b212678c9b86f9312b62245f6702d"
+    }
+  ],
+  "sharedBrowserProfile": "choosing-ai-roster-v3: actual public browser opponent selector, independently applied High; native gameplay source and platform remain separate.",
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  }
+}

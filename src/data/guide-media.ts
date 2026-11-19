@@ -3,7 +3,7 @@ import manifest from './guide-media.json';
 export interface GuideMediaAsset {
   id:string; path:string; url:string; sha256:string; bytes:number;
   width:number; height:number; caption:string; alt:string;
-  kind:'image'|'video'; poster?:string;
+  kind:'image'|'video'; poster?:string; presentation?:'detail';
 }
 export const guideMedia = manifest.assets as GuideMediaAsset[];
 export function mediaAsset(id:string):GuideMediaAsset {
@@ -25,6 +25,6 @@ export function mediaHTML(id:string) {
   const content=asset.kind==='video'
     ? `<p class="media-kind">Gameplay clip<span data-duration></span></p><video controls playsinline preload="none" width="${asset.width}" height="${asset.height}" aria-label="${alt}" aria-describedby="${captionId}"${poster}><source src="${path}" type="video/mp4"><a href="${path}">Watch or download this gameplay clip</a>.</video><div class="media-actions" data-pagefind-ignore><a href="${path}" data-media-open>Expand video ↗</a><a href="${path}">Open gameplay clip</a></div>`
     : `<a class="guide-image-link" data-media-open href="${path}" aria-label="Open full-size image: ${alt}"><img src="${path}" alt="${alt}" width="${asset.width}" height="${asset.height}" loading="lazy" decoding="async"></a><p class="media-fallback" data-pagefind-ignore><a href="${path}">Open full-size screenshot</a></p>`;
-  const figureClass=asset.kind==='image'&&asset.width<600?'guide-media guide-media--detail':'guide-media';
+  const figureClass=['guide-media',asset.kind==='image'&&asset.width<600?'guide-media--detail':'',asset.presentation==='detail'?'guide-media--crop':''].filter(Boolean).join(' ');
   return `<figure class="${figureClass}" id="media-${escape(asset.id)}" style="--media-width:${asset.width}px">${content}<figcaption id="${captionId}">${caption}</figcaption></figure>`;
 }

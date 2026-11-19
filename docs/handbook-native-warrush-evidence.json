@@ -1,0 +1,221 @@
+{
+  "observed": "2026-11-18",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "packageSha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "renderer": "SDL GPU",
+    "framebuffer": [
+      2940,
+      1646
+    ],
+    "method": "Actual released native desktop MCP ui_act/ui_key/ui_click/ui_screenshot. No state injection or repainting.",
+    "map": "River revision 9, seed 713, 128x128, two colonies",
+    "gameSeed": 715,
+    "controllers": [
+      "Warrush AI (red)",
+      "Nicowar AI (cyan)"
+    ],
+    "humanControlled": false,
+    "tickLimit": 25000,
+    "probabilityVictory": 0,
+    "replayDuration": "13:53",
+    "view": "Warrush watched, fog of war and combined vision checked. Development frame has areas hidden; Guard-target frames use actual Show areas enabled over Nicowar town. Real pause used, with flag-range outlines retained.",
+    "limits": "Genuine AI-versus-AI replay, not human play or a controlled strength comparison. Both colonies survived the tick-cap end and no winner was recorded. No individual conversion route or cause was followed.",
+    "artwork": "Explicit High resolution selected through supported Graphics UI; applied on fresh replay load and confirmed in post-load and post-still Settings inspections.",
+    "timing": "Visible paused clock8:48 for Warrush/Nicowar. Cabino/Maxima early2:13 and later5:35; exact capture ticks not exported. No normal-speed motion clip is claimed for session4."
+  },
+  "assets": [
+    {
+      "id": "warrush-town-hd-v2",
+      "candidate": "warrush-town-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/warrush-high-development.png",
+      "sourceSha256": "0ccc10bc33b70fad122862fc8bb97674c308966c46dbd8c11f94e9ac04bc6ceb",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 405016,
+      "sha256": "53d743277f7430ee3bdc808980d364d9261108a42f21cf06fafde51595a85bb4",
+      "caption": "Native 0.11.6.1 at 8:48: Warrush has developed several services; the barracks and inn completion notices appear alongside a racetrack-under-attack alert.",
+      "alt": "Red Warrush settlement with multiple services, workers and warriors in the paused native AI replay.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "warrush-guard-targets-hd-v2",
+      "candidate": "warrush-guard-targets-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/warrush-high-guard-targets.png",
+      "sourceSha256": "4a76f6e3f511a25b528a4f45b9e0213c1f85fb8639a85366e8b980064443764a",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": null,
+      "width": 1600,
+      "height": 896,
+      "bytes": 416546,
+      "sha256": "18524fd3b7df1e56eb868b68e6b1b47ff3a76b7e428391e344d963d922479e88",
+      "caption": "Watching Warrush at the same paused 8:48, Show areas reveals blue Guard paint over several cyan Nicowar building footprints.",
+      "alt": "Native spectator view watches Warrush while blue Guard areas overlay enemy Nicowar buildings and red and cyan units meet nearby.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    },
+    {
+      "id": "warrush-guard-detail-hd-v2",
+      "candidate": "warrush-guard-detail-hd-v2.webp",
+      "kind": "image",
+      "source": "../session4/warrush-high-guard-targets.png",
+      "sourceSha256": "4a76f6e3f511a25b528a4f45b9e0213c1f85fb8639a85366e8b980064443764a",
+      "originalSize": [
+        2940,
+        1646
+      ],
+      "crop": [
+        1000,
+        340,
+        1550,
+        1080
+      ],
+      "width": 550,
+      "height": 740,
+      "bytes": 137030,
+      "sha256": "9a8e40d3c49596a4e224d0f2c232487036242207955ebb3e2e529183cf15c00c",
+      "caption": "Detail from the same frame: blue Guard paint covers the enemy service and swarm footprints.",
+      "alt": "Cyan building footprints covered by blue Guard paint in the watched Warrush view.",
+      "platform": "native",
+      "qualityProof": "../session4-high-resolution-proof.json"
+    }
+  ],
+  "nativeArtifacts": {
+    "warrush-nicowar-25000/game.replay": "ff92f3a568c284df84c97e9c87c2fa4abb519203fe4f02b006b372f3bf82f6f6",
+    "river.map.gz": "98d11fbfca2261bd8bd51d744beb7d9ff70b30493d3431899709bb57eb674cf9",
+    "warrush-nicowar-25000/checkpoint-5000.game.gz": "be2017dc082f0e470e26b8b0affa71ce8e2c845a9d109a83ec04eb6aef19e9ae",
+    "warrush-nicowar-25000/final.game.gz": "a4d5d64fa283267e5c913c9263a88f8ca150e90426dac6355c5c411d1219f9c9",
+    "warrush-nicowar-25000/result.json": "e9d4a9ec1d3d6ab04c73682e6fa04e4fa4f4a0d3e65003997328cd07c66ee621"
+  },
+  "qualityProof": "../session4-high-resolution-proof.json",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "retirement": {
+    "scope": "All old chapter images and clips illustrate a different earlier human exercise; preserve original objects/provenance, do not relabel as current native play.",
+    "dependency": "Retire old generic human service/defense footage only with current High resources construction/supply motion and Guard teaching integrated and published in the same batch. Native current evidence is a separately identified AI-versus-AI illustration."
+  },
+  "nativeOutcome": {
+    "ticks": 25000,
+    "game_seed": 715,
+    "termination": "tick_cap",
+    "resolved": {
+      "tick_limit": 25000,
+      "map": "river",
+      "save_version": 217,
+      "winning_conditions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "experiments": [],
+      "rules": {
+        "teamStatsDelay": 8,
+        "aiOrderDelay": 14,
+        "buildingGradientDelay": 8,
+        "noGrowth": 0,
+        "scarcity": 0,
+        "instantConstruction": 0,
+        "stockpile": 0,
+        "noHunger": 0,
+        "noUpgrades": 0,
+        "glassCannon": 0,
+        "fearless": 0,
+        "noPermadeath": 0,
+        "peaceful": 0,
+        "fortress": 0,
+        "suddenDeathTick": 0,
+        "winProbabilityPermille": 0
+      },
+      "resource_claims": "default",
+      "resource_claims_policy_name": "contention-v2"
+    },
+    "winning_teams": [],
+    "unresolved": true,
+    "qualification": "Both colonies remain alive at this unresolved tick cap; no winner or general strength ranking is inferred."
+  },
+  "registeredAssets": [
+    {
+      "id": "warrush-town-hd-v2",
+      "sha256": "53d743277f7430ee3bdc808980d364d9261108a42f21cf06fafde51595a85bb4",
+      "bytes": 405016,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 8:48: Warrush has developed several services; the barracks and inn completion notices appear alongside a racetrack-under-attack alert.",
+      "alt": "Red Warrush settlement with multiple services, workers and warriors in the paused native AI replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-town-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-town-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "warrush-guard-targets-hd-v2",
+      "sha256": "18524fd3b7df1e56eb868b68e6b1b47ff3a76b7e428391e344d963d922479e88",
+      "bytes": 416546,
+      "width": 1600,
+      "height": 896,
+      "caption": "Watching Warrush at the same paused 8:48, Show areas reveals blue Guard paint over several cyan Nicowar building footprints.",
+      "alt": "Native spectator view watches Warrush while blue Guard areas overlay enemy Nicowar buildings and red and cyan units meet nearby.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-guard-targets-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-guard-targets-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "warrush-guard-detail-hd-v2",
+      "sha256": "9a8e40d3c49596a4e224d0f2c232487036242207955ebb3e2e529183cf15c00c",
+      "bytes": 137030,
+      "width": 550,
+      "height": 740,
+      "caption": "Detail from the same frame: blue Guard paint covers the enemy service and swarm footprints.",
+      "alt": "Cyan building footprints covered by blue Guard paint in the watched Warrush view.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-guard-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-guard-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "warrush-town-hd-v2",
+      "status": 200,
+      "bytes": 405016,
+      "sha256": "53d743277f7430ee3bdc808980d364d9261108a42f21cf06fafde51595a85bb4"
+    },
+    {
+      "id": "warrush-guard-targets-hd-v2",
+      "status": 200,
+      "bytes": 416546,
+      "sha256": "18524fd3b7df1e56eb868b68e6b1b47ff3a76b7e428391e344d963d922479e88"
+    },
+    {
+      "id": "warrush-guard-detail-hd-v2",
+      "status": 200,
+      "bytes": 137030,
+      "sha256": "9a8e40d3c49596a4e224d0f2c232487036242207955ebb3e2e529183cf15c00c"
+    }
+  ],
+  "sharedBrowserProfile": "choosing-ai-roster-v3: actual public browser opponent selector, independently applied High; native gameplay source and platform remain separate.",
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  }
+}

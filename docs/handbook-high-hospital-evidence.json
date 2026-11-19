@@ -1,0 +1,393 @@
+{
+  "observed": "2026-11-18 (local); source session began 2026-11-19 UTC",
+  "approvalStatus": "Independent source/media/applied-artwork reviews, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production acceptance remain pending.",
+  "context": "Actual public browser prepared Hospitals/healing lesson.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 38.432,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 48,
+  "sourceHashes": {
+    "capture.json": "4cba45c46350213ef6d62043cc78efd1609db0c2350f2345b4068c09c5abdf89",
+    "command.py": "7fc7e40df91b654fea56920003277fb03163cd3e820d1ecd5b58f838f71ef813",
+    "quality-applied-after-reload.png": "a5c834b6c589d76909fc75789c05f4f36fd6770b87c68fd27f371f06d10c1df2",
+    "quality-applied-after-reload.json": "8596992ee5b00d349dd002ef464acd5a206b39fb6eab83f2548b06cfe1c5bd1a"
+  },
+  "assets": [
+    {
+      "id": "services-hospital-foundation-v3",
+      "candidate": "services-hospital-foundation-v3.webp",
+      "kind": "image",
+      "original": "hospital-foundation.png",
+      "originalSha256": "8ace72a4a5c99c7adcf3104306b5ae65c44ec1a733f8ba6ad62142b58ab287d4",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 221504,
+      "sha256": "a99511817ad71cc713acc45e5aae61cbbce28748913b5a355f55fb669520d448",
+      "caption": "The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital construction site selected in the prepared healing lesson; two builders are requested and none is attached.",
+      "paused": true,
+      "exactImagePhysicsTick": 1389,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp"
+    },
+    {
+      "id": "services-hospital-foundation-detail-v3",
+      "candidate": "services-hospital-foundation-detail-v3.webp",
+      "kind": "image",
+      "original": "hospital-foundation.png",
+      "originalSha256": "8ace72a4a5c99c7adcf3104306b5ae65c44ec1a733f8ba6ad62142b58ab287d4",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 5728,
+      "sha256": "908f2adc0ac0dc258f3a429f1c9f354fab41636db6e41d29c740673e252e25d6",
+      "caption": "Sidebar detail: The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital foundation sidebar: HP 1/260, Working 0/2 and Wood 0/3.",
+      "paused": true,
+      "exactImagePhysicsTick": 1389,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp"
+    },
+    {
+      "id": "services-hospital-completed-v3",
+      "candidate": "services-hospital-completed-v3.webp",
+      "kind": "image",
+      "original": "hospital-completed-service.png",
+      "originalSha256": "c4241b16631c9dc58fe6846438fa457f5a8f53f2d9146a20bc3ce9733f93f6ec",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 214124,
+      "sha256": "f9b25bf95a6e63476a6b0e11705c9e7da7fbc33fed273efd8d6d205ac5926bb2",
+      "caption": "After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital selected with an empty two-place service capacity; the lesson completion prompt remains visible.",
+      "paused": true,
+      "exactImagePhysicsTick": 4947,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp"
+    },
+    {
+      "id": "services-hospital-completed-detail-v3",
+      "candidate": "services-hospital-completed-detail-v3.webp",
+      "kind": "image",
+      "original": "hospital-completed-service.png",
+      "originalSha256": "c4241b16631c9dc58fe6846438fa457f5a8f53f2d9146a20bc3ce9733f93f6ec",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 3610,
+      "sha256": "d837f5682a458bbd6eff6b819a11abd092d749c2d2b4bcb9c1f78ca33988cf81",
+      "caption": "Sidebar detail: After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital sidebar: HP 260/260, Inside 0/2 and Armour 5.",
+      "paused": true,
+      "exactImagePhysicsTick": 4947,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp"
+    },
+    {
+      "id": "services-patient-before-v3",
+      "candidate": "services-patient-before-v3.webp",
+      "kind": "image",
+      "original": "hospital-patient-before-resume.png",
+      "originalSha256": "dd03ee68924d14c249015f6a80e49cffb7055f5345194ffa3bc54c05303bff59",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 220324,
+      "sha256": "fd0edca71524ed6d89c280b055e56490cc97a78bb6ec3d724a6b5fd286740d4e",
+      "caption": "Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker in the prepared healing lesson, with the new Hospital foundation visible nearby.",
+      "paused": true,
+      "exactImagePhysicsTick": 1389,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-patient-before-v3.webp"
+    },
+    {
+      "id": "services-patient-before-detail-v3",
+      "candidate": "services-patient-before-detail-v3.webp",
+      "kind": "image",
+      "original": "hospital-patient-before-resume.png",
+      "originalSha256": "dd03ee68924d14c249015f6a80e49cffb7055f5345194ffa3bc54c05303bff59",
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5418,
+      "sha256": "384c06589163891a04e869979e142d5b3b719d52d9fe0858156e9759695df48e",
+      "caption": "Sidebar detail: Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker sidebar before resuming: HP 50/200 and Food 81%.",
+      "paused": true,
+      "exactImagePhysicsTick": 1389,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp"
+    },
+    {
+      "id": "services-patient-after-v3",
+      "candidate": "services-patient-after-v3.webp",
+      "kind": "image",
+      "original": "hospital-patient-inspection.png",
+      "originalSha256": "dd5201d54427574c3fd1bc680bb41babfaa43aafa7d6827968c9af3d9596984c",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 215470,
+      "sha256": "ce27f673693768c273fad0e859e146f97ad57c88642ec42bfccb4d4e2ee2f36e",
+      "caption": "After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker after the Hospital restores its health, alongside the actual lesson completion prompt.",
+      "paused": true,
+      "exactImagePhysicsTick": 4947,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-patient-after-v3.webp"
+    },
+    {
+      "id": "services-patient-after-detail-v3",
+      "candidate": "services-patient-after-detail-v3.webp",
+      "kind": "image",
+      "original": "hospital-patient-inspection.png",
+      "originalSha256": "dd5201d54427574c3fd1bc680bb41babfaa43aafa7d6827968c9af3d9596984c",
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5468,
+      "sha256": "d4f3370b0086ab297658d284b3bc98cc66d7f814a101a93306c16308229a8698",
+      "caption": "Sidebar detail: After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker sidebar at the final pause: HP 200/200 and Food 40%.",
+      "paused": true,
+      "exactImagePhysicsTick": 4947,
+      "proposedPath": "/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp"
+    }
+  ],
+  "encoding": "Original full RGB frames or declared rectangular sidebar crops only; WebP quality92 method6, no scaling/retouch.",
+  "patientContinuity": "Reselected at the identical paused position before resume; no unit-selection changes until final paused inspection. No underlying unit identifier inferred.",
+  "limits": [
+    "No occupied Hospital frame: completed service shows Inside0/2.",
+    "No captured individual entering/healing/leaving cycle; actual same-selection HP recovery and lesson completion are observed.",
+    "No training, original-injury cause, or browser/native source parity claim.",
+    "Exact browser source revision is unverified; served payload identity is preserved."
+  ],
+  "recipe": {
+    "file": "actual-action-recipe.md",
+    "sha256": "96d531f2ddbfcf0bb7447afd34d8460a59faff5c9a677e87d283875be2ea3ebe"
+  },
+  "registeredAssets": [
+    {
+      "id": "services-hospital-foundation-v3",
+      "kind": "image",
+      "sha256": "a99511817ad71cc713acc45e5aae61cbbce28748913b5a355f55fb669520d448",
+      "bytes": 221504,
+      "width": 1440,
+      "height": 900,
+      "caption": "The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital construction site selected in the prepared healing lesson; two builders are requested and none is attached.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp"
+    },
+    {
+      "id": "services-hospital-foundation-detail-v3",
+      "kind": "image",
+      "sha256": "908f2adc0ac0dc258f3a429f1c9f354fab41636db6e41d29c740673e252e25d6",
+      "bytes": 5728,
+      "width": 192,
+      "height": 300,
+      "caption": "Sidebar detail: The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital foundation sidebar: HP 1/260, Working 0/2 and Wood 0/3.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-hospital-completed-v3",
+      "kind": "image",
+      "sha256": "f9b25bf95a6e63476a6b0e11705c9e7da7fbc33fed273efd8d6d205ac5926bb2",
+      "bytes": 214124,
+      "width": 1440,
+      "height": 900,
+      "caption": "After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital selected with an empty two-place service capacity; the lesson completion prompt remains visible.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp"
+    },
+    {
+      "id": "services-hospital-completed-detail-v3",
+      "kind": "image",
+      "sha256": "d837f5682a458bbd6eff6b819a11abd092d749c2d2b4bcb9c1f78ca33988cf81",
+      "bytes": 3610,
+      "width": 192,
+      "height": 300,
+      "caption": "Sidebar detail: After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital sidebar: HP 260/260, Inside 0/2 and Armour 5.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-patient-before-v3",
+      "kind": "image",
+      "sha256": "fd0edca71524ed6d89c280b055e56490cc97a78bb6ec3d724a6b5fd286740d4e",
+      "bytes": 220324,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker in the prepared healing lesson, with the new Hospital foundation visible nearby.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-v3.webp"
+    },
+    {
+      "id": "services-patient-before-detail-v3",
+      "kind": "image",
+      "sha256": "384c06589163891a04e869979e142d5b3b719d52d9fe0858156e9759695df48e",
+      "bytes": 5418,
+      "width": 192,
+      "height": 260,
+      "caption": "Sidebar detail: Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker sidebar before resuming: HP 50/200 and Food 81%.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-patient-after-v3",
+      "kind": "image",
+      "sha256": "ce27f673693768c273fad0e859e146f97ad57c88642ec42bfccb4d4e2ee2f36e",
+      "bytes": 215470,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker after the Hospital restores its health, alongside the actual lesson completion prompt.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-v3.webp"
+    },
+    {
+      "id": "services-patient-after-detail-v3",
+      "kind": "image",
+      "sha256": "d4f3370b0086ab297658d284b3bc98cc66d7f814a101a93306c16308229a8698",
+      "bytes": 5468,
+      "width": 192,
+      "height": 260,
+      "caption": "Sidebar detail: After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker sidebar at the final pause: HP 200/200 and Food 40%.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "services-hospital-foundation-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp",
+      "status": 200,
+      "bytes": 221504,
+      "sha256": "a99511817ad71cc713acc45e5aae61cbbce28748913b5a355f55fb669520d448",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-hospital-foundation-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp",
+      "status": 200,
+      "bytes": 5728,
+      "sha256": "908f2adc0ac0dc258f3a429f1c9f354fab41636db6e41d29c740673e252e25d6",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-hospital-completed-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp",
+      "status": 200,
+      "bytes": 214124,
+      "sha256": "f9b25bf95a6e63476a6b0e11705c9e7da7fbc33fed273efd8d6d205ac5926bb2",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-hospital-completed-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp",
+      "status": 200,
+      "bytes": 3610,
+      "sha256": "d837f5682a458bbd6eff6b819a11abd092d749c2d2b4bcb9c1f78ca33988cf81",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-patient-before-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-v3.webp",
+      "status": 200,
+      "bytes": 220324,
+      "sha256": "fd0edca71524ed6d89c280b055e56490cc97a78bb6ec3d724a6b5fd286740d4e",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-patient-before-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp",
+      "status": 200,
+      "bytes": 5418,
+      "sha256": "384c06589163891a04e869979e142d5b3b719d52d9fe0858156e9759695df48e",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-patient-after-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-v3.webp",
+      "status": 200,
+      "bytes": 215470,
+      "sha256": "ce27f673693768c273fad0e859e146f97ad57c88642ec42bfccb4d4e2ee2f36e",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "services-patient-after-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
+      "status": 200,
+      "bytes": 5468,
+      "sha256": "d4f3370b0086ab297658d284b3bc98cc66d7f814a101a93306c16308229a8698",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "independentGroups": "Core author reviewed AI4/resource reference; advanced author reviewed food/population/recovery/expansion. Root reviewed representative source and corrected crop presentation."
+  },
+  "publicationQualification": "Matching source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original objects retain their bytes and provenance."
+}

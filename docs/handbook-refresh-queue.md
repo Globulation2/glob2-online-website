@@ -4,10 +4,10 @@ Observed 18 November 2026. This queue follows the authorized complete handbook r
 
 ## Priority correction batch
 
-- Main site: independently approved native SDL GPU/explicit High hero, three genuine Four Squares views and social derivative are integrated with new URLs and an exact design-system pin. Two rendered rounds and focused playback checks passed; publication is pending.
-- First-session guide: four observed High browser replacements are integrated, public byte/hash verified and approved in two rendered rounds. The previously qualified earlier lesson reference stays distinct; the first scouting goal does not prove remaining Introduction tasks. Publication is pending.
-- Control reference and HUD: fresh applied-High replacements are integrated and approved in two rendered rounds, with actual workerFood69% reflected in the source. Earlier pack-ready-only objects remain separate. Publication is pending.
-- Choosing an AI and victory/rules: qualified High browser setup family, immutable v3 objects and actual public byte/hash readback are complete. Two independently reviewed rendered rounds and focused checks passed; frozen-head CI and publication remain pending.
+- Main site: independently approved native SDL GPU/explicit High hero, three genuine Four Squares views and social derivative are integrated with new URLs and an exact design-system pin. Two rendered rounds and focused playback checks passed; the first batch is published and independently verified.
+- First-session guide: four observed High browser replacements are integrated, public byte/hash verified and approved in two rendered rounds. The previously qualified earlier lesson reference stays distinct; the first scouting goal does not prove remaining Introduction tasks. The first batch is published and independently verified.
+- Control reference and HUD: fresh applied-High replacements are integrated and approved in two rendered rounds, with actual workerFood69% reflected in the source. Earlier pack-ready-only objects remain separate. The first batch is published and independently verified.
+- Choosing an AI and victory/rules: qualified High browser setup family, immutable v3 objects and actual public byte/hash readback are complete. Two independently reviewed rendered rounds and focused checks passed; frozen-head CI, publication and independent public verification passed.
 
 [Setup evidence](handbook-high-setup-evidence.json) and [production rules](handbook-production.md) preserve the actual payload, applied-quality and source boundaries. Exact browser deployment source remains unknown; the released native source is qualified separately.
 
@@ -32,3 +32,11 @@ Do not hold the shared food, service, route or browser chapters behind all eight
 ## Completion accounting
 
 Read actual chapter media markers and implicit video posters. Proposed registry retirement is not proof that a published consumer stopped using an older object. Initial v2 pack-ready-only candidates remain immutable with honest qualification; accepted High replacements use distinct paths. Source-only corrections to Stone wall cost and air routes do not count as refreshed chapters. Preserve useful older guidance explicitly until the corresponding actual current action/state is verified, and do not reduce an unresolved lesson to an unverified stub.
+
+## Next nine-page source unit
+
+Remaining AI4, sustainable food, population, recovery, expansion and resource reference now have independently approved matching current media, immutable upload/public byte verification and integrated source. Food includes a genuine bounded10→9→10 supply sequence and34-second normal-speed excerpt; recovery adds same-patient Hospital healing. Native observer scenes and browser exercises remain separately qualified. All48 newly registered objects have durable evidence in the production record. Two independently approved rendered rounds each covered36 viewport/theme states with no overflow or axe findings. Required CI and public acceptance remain pending.
+
+Candidate consumer reconciliation is61 older non-archival IDs across9 remaining chapters, plus17 qualified earlier Introduction references. The81 retired IDs have no consumers in that explicit nine-path snapshot. Building/unit references, actual upgrades, browser files/network behavior and other remaining lessons stay in the queue; a visible Upgrade button is not an upgrade outcome.
+
+The preceding six-page second batch is independently verified live ata63a2e2 (72 asset reads,20 desktop/mobile states, deployed detail-cue and keyboard checks). Live remaining coverage is142 older IDs /18 chapters /15 families; the next nine-page candidate stays separate.

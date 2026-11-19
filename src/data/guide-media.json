@@ -507,7 +507,12 @@
       "height": 900,
       "caption": "The completed inn is receiving wheat: Food 3/10, Working 2/2, Inside 0/4.",
       "alt": "Selected completed inn beside revealed wheat with three food stored and two attached haulers.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-first-stock-detail",
@@ -519,7 +524,12 @@
       "height": 248,
       "caption": "Read Food, Working and Inside separately.",
       "alt": "Inn panel crop showing Food 3/10, Working 2/2 and Inside 0/4.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "Removed from this consumer only; remains active in reference-buildings."
     },
     {
       "id": "food-swarm",
@@ -531,7 +541,12 @@
       "height": 900,
       "caption": "The swarm holds Food 4/20 for births while the inn has its own meal stock.",
       "alt": "Selected swarm beside an inn, with four food stored, one attached worker and three production controls.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-swarm-detail",
@@ -543,7 +558,13 @@
       "height": 268,
       "caption": "Swarm food produces units; it does not feed existing globs.",
       "alt": "Swarm panel showing Food 4/20 and Worker, Explorer and Warrior weight controls.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "reference-resources",
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-stock-falling",
@@ -555,7 +576,13 @@
       "height": 246,
       "caption": "With hauling paused, meals have reduced the reserve from ten to seven; one glob is inside.",
       "alt": "Inn panel showing Working 0/0, Food 7/10 and Inside 1/4.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "recovering-your-colony",
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-recovery",
@@ -567,7 +594,13 @@
       "height": 900,
       "caption": "Restoring the inn request and releasing swarm labor replenished the reserve to Food 10/10.",
       "alt": "Selected inn with Food 10/10 and Inside 1/4, with Working request two; swarm and wheat remain visible.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "recovering-your-colony",
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-recovery-detail",
@@ -579,7 +612,13 @@
       "height": 280,
       "caption": "The inn is full again. Unavailable fruit messages describe another resource request.",
       "alt": "Inn panel with Food 10/10, Working 0/2 and unavailable fruit messages.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "recovering-your-colony",
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-field-comparison",
@@ -591,7 +630,13 @@
       "height": 366,
       "caption": "The same shoreline at two times. Harvesting and growth change known wheat; the newly revealed lower area is exploration, so its extra wheat does not demonstrate regrowth.",
       "alt": "Side-by-side crops of the same wheat shoreline earlier and later, with more lower terrain revealed later.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "reference-resources",
+        "sustainable-food"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-panel",
@@ -603,7 +648,12 @@
       "height": 900,
       "caption": "Worker-only production is enabled; Working requests the worker who supplies the swarm.",
       "alt": "Selected swarm with food stock and Worker-only birth mix, next to a completed inn.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-panel-detail",
@@ -615,7 +665,12 @@
       "height": 269,
       "caption": "Three birth weights are separate from the Working request.",
       "alt": "Crop of swarm panel showing Working, Food and Worker, Explorer and Warrior controls.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-worker-result",
@@ -627,7 +682,12 @@
       "height": 900,
       "caption": "Worker-only production increased the worker total from six to eight.",
       "alt": "Selected swarm, new workers around the colony and top worker total eight.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-worker-count",
@@ -639,7 +699,12 @@
       "height": 80,
       "caption": "The worker total is now eight; the explorer total is still zero.",
       "alt": "Top bar crop showing worker availability five of total eight and explorer total zero.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-explorer-result",
@@ -651,7 +716,12 @@
       "height": 900,
       "caption": "After deliveries and production time, the first explorer has been born.",
       "alt": "Selected swarm with Explorer-only weight, top explorer total one, and a flying explorer beyond the lake at right.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "Removed from this consumer only; remains active in reference-units."
     },
     {
       "id": "population-explorer-count",
@@ -663,7 +733,12 @@
       "height": 80,
       "caption": "The explorer counter confirms a real birth: one explorer now exists.",
       "alt": "Top bar crop showing eight workers and one explorer.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-zero-weights",
@@ -675,7 +750,12 @@
       "height": 269,
       "caption": "All birth weights are zero. Existing units remain in the colony.",
       "alt": "Selected swarm panel crop with all three production controls at zero.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-stable-total",
@@ -687,7 +767,12 @@
       "height": 80,
       "caption": "After running with births stopped, the totals remain eight workers and one explorer.",
       "alt": "Top bar crop with eight workers and one explorer after an interval with production weights zero.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "population-and-production"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-foundation",
@@ -711,7 +796,12 @@
       "height": 237,
       "caption": "Wood 7/7 has arrived, but Algae remains 0/2 and the resource-distance message explains the stall.",
       "alt": "School construction panel showing full wood requirement, no algae and distance-related warning.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "reference-resources"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "Removed from this consumer only; remains active in reference-buildings, buildings-and-services."
     },
     {
       "id": "services-active",
@@ -1002,7 +1092,12 @@
       "height": 900,
       "caption": "The two inns have been destroyed, while the surviving hospital has two globs inside. Healing and meals are separate needs.",
       "alt": "Cyan attackers at the lost inn sites; the selected surviving hospital reports Inside 2/2.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "recovering-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "recovery-hospital-detail",
@@ -1014,7 +1109,12 @@
       "height": 125,
       "caption": "Detail: Inside 2/2 means both hospital places are occupied. It does not indicate a stored food supply.",
       "alt": "Hospital panel with HP 260/260, Inside 2/2 and Armour 5.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "recovering-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-inn",
@@ -1526,7 +1626,12 @@
       "height": 257,
       "kind": "image",
       "caption": "Before expansion, the home inn has Food 7/10, Inside 4/4 and Working 2/2.",
-      "alt": "Original inn service panel showing supplied food and all four places occupied."
+      "alt": "Original inn service panel showing supplied food and all four places occupied.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-growth-detail",
@@ -1538,7 +1643,12 @@
       "height": 272,
       "kind": "image",
       "caption": "The practice checkpoint already has zero birth weights. Read the swarm before funding more growth.",
-      "alt": "Swarm panel with zero Worker, Explorer and Warrior production weights."
+      "alt": "Swarm panel with zero Worker, Explorer and Warrior production weights.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-site",
@@ -1550,7 +1660,12 @@
       "height": 900,
       "kind": "image",
       "caption": "A second inn foundation sits north of the wheat pond; the original inn remains open.",
-      "alt": "Inn foundation north of wheat pond, original inn west of pond and swarm farther west."
+      "alt": "Inn foundation north of wheat pond, original inn west of pond and swarm farther west.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-site-detail",
@@ -1562,7 +1677,12 @@
       "height": 203,
       "kind": "image",
       "caption": "The request has been reduced to two. Wood 0/3 must arrive before the site can serve meals.",
-      "alt": "Inn construction panel HP1/200, Working0/2, Wood0/3."
+      "alt": "Inn construction panel HP1/200, Working0/2, Wood0/3.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-completed",
@@ -1574,7 +1694,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The second inn has completed and begun collecting ordinary food.",
-      "alt": "Finished second inn north of the pond alongside retained original inn."
+      "alt": "Finished second inn north of the pond alongside retained original inn.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-completed-detail",
@@ -1586,7 +1711,12 @@
       "height": 255,
       "kind": "image",
       "caption": "Completion is followed by supply: HP 200/200, Working 2/2 and Food 2/10.",
-      "alt": "Completed inn panel HP200/200, Inside0/4, Working2/2, Food2/10."
+      "alt": "Completed inn panel HP200/200, Inside0/4, Working2/2, Food2/10.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-new-result-detail",
@@ -1598,7 +1728,12 @@
       "height": 282,
       "kind": "image",
       "caption": "Later, the new inn has Food 9/10 and one occupant. Its fruit-access warning is separate from its working wheat meals.",
-      "alt": "New inn panel Food9/10, Inside1/4, Working1/2 and fruit access warning."
+      "alt": "New inn panel Food9/10, Inside1/4, Working1/2 and fruit access warning.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-old-result-detail",
@@ -1610,7 +1745,12 @@
       "height": 282,
       "kind": "image",
       "caption": "The original inn remains full and serves two occupants even with Working 0/2 at this instant.",
-      "alt": "Old inn panel Food10/10, Cherries23/40, Inside2/4 and Working0/2."
+      "alt": "Old inn panel Food10/10, Cherries23/40, Inside2/4 and Working0/2.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-supply-poster",
@@ -1622,7 +1762,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Two completed inns remain near reachable wheat while globs move between their work and services.",
-      "alt": "Two completed inns, swarm and workers around the wheat pond."
+      "alt": "Two completed inns, swarm and workers around the wheat pond.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "expansion-supply-clip",
@@ -1635,7 +1780,12 @@
       "kind": "video",
       "poster": "expansion-supply-poster",
       "caption": "The completed second inn continues stocking while workers circulate through the existing colony. Compare both service panels afterward.",
-      "alt": "Silent actual gameplay of a completed second inn and workers around the wheat pond."
+      "alt": "Silent actual gameplay of a completed second inn and workers around the wheat pond.",
+      "retiredFrom": [
+        "economy-and-expansion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "choosing-ai-map",
@@ -2330,7 +2480,12 @@
       "height": 37,
       "kind": "image",
       "caption": "Select Warrush for cyan on a separate team. Easy (1401) is an offline estimate.",
-      "alt": "Warrush chooser showing Easy (1401)."
+      "alt": "Warrush chooser showing Easy (1401).",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-opening-food",
@@ -2342,7 +2497,12 @@
       "height": 900,
       "kind": "image",
       "caption": "This first inn is still a foundation: Wood 0/3 and HP 1/200. Wait for completion and deliveries.",
-      "alt": "Red colony with inn foundation and nearby resources."
+      "alt": "Red colony with inn foundation and nearby resources.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-services",
@@ -2354,7 +2514,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Completed barracks Inside2/2, with the hospital and stocked inn nearby.",
-      "alt": "Red home colony with completed barracks, hospital and inn."
+      "alt": "Red home colony with completed barracks, hospital and inn.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-food-before-detail",
@@ -2366,7 +2531,12 @@
       "height": 324,
       "kind": "image",
       "caption": "Before releasing production: Food 10/10, Inside 4/4, Working 0/2.",
-      "alt": "Inn panel showing stocked meals but no attached haulers."
+      "alt": "Inn panel showing stocked meals but no attached haulers.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-contact",
@@ -2378,7 +2548,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Cyan warriors meet red defenders on the southern approach near the supplied tower.",
-      "alt": "Cyan and red warriors in contact south of the red guard strip."
+      "alt": "Cyan and red warriors in contact south of the red guard strip.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-growth-detail",
@@ -2390,7 +2565,12 @@
       "height": 267,
       "kind": "image",
       "caption": "The swarm Working request is 0/0 and all birth weights have been reduced.",
-      "alt": "Swarm panel with Working 0/0 and zero birth-weight bars."
+      "alt": "Swarm panel with Working 0/0 and zero birth-weight bars.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-guard",
@@ -2402,7 +2582,12 @@
       "height": 210,
       "kind": "image",
       "caption": "A compact blue guard strip marks the southern approach, near the home services.",
-      "alt": "Small blue guard-area strip south of red services."
+      "alt": "Small blue guard-area strip south of red services.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-food-after-detail",
@@ -2414,7 +2599,12 @@
       "height": 264,
       "kind": "image",
       "caption": "After release and guard painting: inn Working 2/2, Food 8/10 and Inside 3/4.",
-      "alt": "Inn panel showing two haulers, eight food and three occupants."
+      "alt": "Inn panel showing two haulers, eight food and three occupants.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-hold-poster",
@@ -2426,7 +2616,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Observe defender movement and continued contact at the southern approach.",
-      "alt": "Warriors in contact near the red tower and guard strip."
+      "alt": "Warriors in contact near the red tower and guard strip.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-hold-clip",
@@ -2444,7 +2639,12 @@
         116,
         126
       ],
-      "duration": 10
+      "duration": 10,
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-barracks-detail",
@@ -2456,7 +2656,12 @@
       "height": 133,
       "kind": "image",
       "caption": "The completed barracks holds two occupants. Inspect real admission and training before sending defenders away.",
-      "alt": "Barracks panel showing HP 440/440 and Inside 2/2."
+      "alt": "Barracks panel showing HP 440/440 and Inside 2/2.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "warrush-hospital-detail",
@@ -2468,7 +2673,12 @@
       "height": 133,
       "kind": "image",
       "caption": "The completed hospital also has two occupants. Allow injured survivors time to use it.",
-      "alt": "Hospital panel showing HP 260/260 and Inside 2/2."
+      "alt": "Hospital panel showing HP 260/260 and Inside 2/2.",
+      "retiredFrom": [
+        "ai-warrush"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cortex-selection",
@@ -2716,7 +2926,12 @@
       "height": 58,
       "kind": "image",
       "caption": "Cabino is Medium (1680) in the offline chooser. Its ordinary policy targets support services.",
-      "alt": "Cabino profile heading and description of trained attacks targeting healing and food."
+      "alt": "Cabino profile heading and description of trained attacks targeting healing and food.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-first-inn",
@@ -2728,7 +2943,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The first inn is completed and holds Food 10/10; nineteen workers exist. Check services before adding army demands.",
-      "alt": "Red home colony with selected inn showing Food 10/10 and worker total nineteen."
+      "alt": "Red home colony with selected inn showing Food 10/10 and worker total nineteen.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-first-inn-detail",
@@ -2740,7 +2960,12 @@
       "height": 242,
       "kind": "image",
       "caption": "Food 10/10 at the completed first inn; HP 200/200 and four meal spaces.",
-      "alt": "Inn panel showing HP 200/200, Inside 0/4, Working 0/2 and Food 10/10."
+      "alt": "Inn panel showing HP 200/200, Inside 0/4, Working 0/2 and Food 10/10.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-scout-production",
@@ -2752,7 +2977,12 @@
       "height": 275,
       "kind": "image",
       "caption": "Three replacement explorers now exist. Birth weights and the swarm Working request have been reduced to zero.",
-      "alt": "Swarm panel with zero Working request and Worker, Explorer and Warrior birth weights at zero."
+      "alt": "Swarm panel with zero Working request and Worker, Explorer and Warrior birth weights at zero.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-town",
@@ -2764,7 +2994,12 @@
       "height": 870,
       "kind": "image",
       "caption": "A later scouting view reveals Cabino's barracks, two hospitals, racetrack and tower. Dim silhouettes are remembered buildings, so inspect current conditions before an attack.",
-      "alt": "Cyan training and healing buildings above a previously revealed swarm and two inns, with exploration flag and remembered terrain."
+      "alt": "Cyan training and healing buildings above a previously revealed swarm and two inns, with exploration flag and remembered terrain.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-scout-request",
@@ -2776,7 +3011,12 @@
       "height": 262,
       "kind": "image",
       "caption": "This request is still unanswered: Working 0/2, On the way 0 and Here 0. The remembered town does not supply current vision.",
-      "alt": "Exploration flag panel showing Working 0/2, On the way zero and Here zero."
+      "alt": "Exploration flag panel showing Working 0/2, On the way zero and Here zero.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-growth-released",
@@ -2788,7 +3028,12 @@
       "height": 275,
       "kind": "image",
       "caption": "All birth weights and the swarm Working request are zero. Releasing deliveries and stopping recipes are separate actions.",
-      "alt": "Swarm panel with Working 0/0 and all three birth weight bars empty."
+      "alt": "Swarm panel with Working 0/0 and all three birth weight bars empty.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-service-line",
@@ -2800,7 +3045,12 @@
       "height": 900,
       "kind": "image",
       "caption": "A compact guard strip crosses the approach to the second inn. Both meal services, barracks and occupied hospital remain intact.",
-      "alt": "Red colony with two inns, barracks, selected occupied hospital, guard strip and warrior attack warning."
+      "alt": "Red colony with two inns, barracks, selected occupied hospital, guard strip and warrior attack warning.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-meals-detail",
@@ -2812,7 +3062,12 @@
       "height": 292,
       "kind": "image",
       "caption": "After the running interval, the second inn holds Food 10/10 with Inside 3/4. It remains at HP 200/200.",
-      "alt": "Inn panel showing HP 200/200, Inside 3/4, Working 0/2 and Food 10/10."
+      "alt": "Inn panel showing HP 200/200, Inside 3/4, Working 0/2 and Food 10/10.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-healing-detail",
@@ -2824,7 +3079,12 @@
       "height": 132,
       "kind": "image",
       "caption": "The hospital has two occupants and full building health. Continue checking meals and damaged units separately.",
-      "alt": "Hospital panel showing HP 260/260, Inside 2/2 and Armor 5."
+      "alt": "Hospital panel showing HP 260/260, Inside 2/2 and Armor 5.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-service-poster",
@@ -2836,7 +3096,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Supplied home at the beginning of the running service interval.",
-      "alt": "Two red inns, barracks, hospital and guard strip during incoming attack warnings."
+      "alt": "Two red inns, barracks, hospital and guard strip during incoming attack warnings.",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "cabino-service-clip",
@@ -2849,7 +3114,12 @@
       "kind": "video",
       "caption": "Ten seconds of actual service and local defense, captured with the game speed set to 4x. Globs move through the supplied home while warrior attack warnings continue. This clip has no audio.",
       "alt": "Red globs use and approach the selected inn while cyan contact and warrior attack warnings remain visible.",
-      "poster": "cabino-service-poster"
+      "poster": "cabino-service-poster",
+      "retiredFrom": [
+        "ai-cabino"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-setup-detail",
@@ -2861,7 +3131,12 @@
       "height": 39,
       "kind": "image",
       "caption": "Choose Nicowar; Medium (1653) is an offline estimate, separate from online OpenSkill ratings.",
-      "alt": "Nicowar chooser label Medium (1653)."
+      "alt": "Nicowar chooser label Medium (1653).",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-profile-detail",
@@ -2873,7 +3148,12 @@
       "height": 38,
       "kind": "image",
       "caption": "The live strategy panel identifies Nicowar. Its shipped aggressive profile belongs to this opponent; Warrush is a separate chooser entry.",
-      "alt": "Native strategy panel headed Nicowar Medium (1653)."
+      "alt": "Native strategy panel headed Nicowar Medium (1653).",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-first-food-detail",
@@ -2885,7 +3165,12 @@
       "height": 301,
       "kind": "image",
       "caption": "The completed first inn has Food 10/10, HP 200/200 and Working 0/2 at this stocked instant.",
-      "alt": "Inn panel with ten food, four empty places, and zero of two suppliers attached."
+      "alt": "Inn panel with ten food, four empty places, and zero of two suppliers attached.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-scout",
@@ -2897,7 +3182,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The directed scout reveals cyan services and explorers while alerts report attacks on red workers and the barracks at home.",
-      "alt": "Scout view of cyan buildings and explorers across a pond; red home attack alerts at upper left."
+      "alt": "Scout view of cyan buildings and explorers across a pond; red home attack alerts at upper left.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-scout-alert-detail",
@@ -2909,7 +3199,12 @@
       "height": 81,
       "kind": "image",
       "caption": "These home alerts are the reason to leave the scout view and inspect the threatened services.",
-      "alt": "Alerts report warrior, barracks and workers under attack."
+      "alt": "Alerts report warrior, barracks and workers under attack.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-lost-services",
@@ -2921,7 +3216,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The first run lost the home inn, swarm and barracks; surviving red globs remain in the former working area.",
-      "alt": "Home area with red survivors and no original service buildings."
+      "alt": "Home area with red survivors and no original service buildings.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-loss-detail",
@@ -2933,7 +3233,12 @@
       "height": 289,
       "kind": "image",
       "caption": "A separate retry also ended in colony elimination. Increasing early requests did not establish a winning defense.",
-      "alt": "Result panel says You have lost, Colony eliminated."
+      "alt": "Result panel says You have lost, Colony eliminated.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-raw-flag-detail",
@@ -2945,7 +3250,12 @@
       "height": 301,
       "kind": "image",
       "caption": "Before the correction, minimum level 1 accepts four raw warriors at a ten-warrior request.",
-      "alt": "War flag: Here 4, Working 4/10, minimum required level 1 selected."
+      "alt": "War flag: Here 4, Working 4/10, minimum required level 1 selected.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-empty-barracks-detail",
@@ -2957,7 +3267,12 @@
       "height": 139,
       "kind": "image",
       "caption": "The completed barracks has no trainees while the raw warriors occupy their flag.",
-      "alt": "Barracks HP 440/440, Inside 0/2."
+      "alt": "Barracks HP 440/440, Inside 0/2.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-qualified-request-detail",
@@ -2969,7 +3284,12 @@
       "height": 301,
       "kind": "image",
       "caption": "Minimum level 2 releases unqualified warriors; the reduced two-warrior request is initially empty.",
-      "alt": "War flag: Here 0, Working 0/2, minimum required level 2 selected."
+      "alt": "War flag: Here 0, Working 0/2, minimum required level 2 selected.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-barracks-training-detail",
@@ -2981,7 +3301,12 @@
       "height": 139,
       "kind": "image",
       "caption": "After releasing raw warriors, both barracks places are occupied during training.",
-      "alt": "Barracks HP 440/440, Inside 2/2."
+      "alt": "Barracks HP 440/440, Inside 2/2.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-qualified-result-detail",
@@ -2993,7 +3318,12 @@
       "height": 301,
       "kind": "image",
       "caption": "The qualified home flag later holds two warriors, with nobody still travelling toward it.",
-      "alt": "War flag: Here 2, On the way 0, Working 2/2, minimum level 2 selected."
+      "alt": "War flag: Here 2, On the way 0, Working 2/2, minimum level 2 selected.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-retry-food-detail",
@@ -3005,7 +3335,12 @@
       "height": 301,
       "kind": "image",
       "caption": "The replay inn has Food 9/10 after meal use, with one occupant and one supplier attached. Continue checking replenishment.",
-      "alt": "Inn Food 9/10, Inside 1/4, Working 1/2; warnings indicate two unavailable units and six unable to access fruit."
+      "alt": "Inn Food 9/10, Inside 1/4, Working 1/2; warnings indicate two unavailable units and six unable to access fruit.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-training-poster",
@@ -3017,7 +3352,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The clip begins with raw warriors occupying the level-1 flag.",
-      "alt": "Home war flag Here 4, Working 4/10, minimum required level 1."
+      "alt": "Home war flag Here 4, Working 4/10, minimum required level 1.",
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "nicowar-training-clip",
@@ -3031,7 +3371,12 @@
       "caption": "Fast practice playback: raising the minimum and reducing the request releases raw warriors, then two qualified warriors assemble. The written steps explain the training and meal checks. The inn is stocked at the end. This clip has no audio.",
       "alt": "Actual change from level-1 raw-warrior flag to minimum level 2 and two attached qualifying warriors.",
       "poster": "nicowar-training-poster",
-      "playbackRate": 3.6666666666666665
+      "playbackRate": 3.6666666666666665,
+      "retiredFrom": [
+        "ai-nicowar"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-selection",
@@ -3043,7 +3388,12 @@
       "height": 61,
       "kind": "image",
       "caption": "Maxima is selected for a fresh Standard duel; Hard (1873) is an offline estimate.",
-      "alt": "Native Maxima profile selected in custom game setup."
+      "alt": "Native Maxima profile selected in custom game setup.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-opening-site",
@@ -3055,7 +3405,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The inn remains a construction site while production competes for workers.",
-      "alt": "Red inn foundation selected beside wheat and swarm."
+      "alt": "Red inn foundation selected beside wheat and swarm.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-site-detail",
@@ -3067,7 +3422,12 @@
       "height": 240,
       "kind": "image",
       "caption": "Inn foundation: Wood 2/3 and Working 1/3.",
-      "alt": "Inn construction panel with missing wood and one assigned worker."
+      "alt": "Inn construction panel with missing wood and one assigned worker.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-production-paused",
@@ -3079,7 +3439,12 @@
       "height": 280,
       "kind": "image",
       "caption": "Pause all birth weights and release the swarm hauling request while the first inn finishes.",
-      "alt": "Swarm panel with birth bars zero and Working0/0."
+      "alt": "Swarm panel with birth bars zero and Working0/0.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-supplied-opening",
@@ -3091,7 +3456,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The first inn is complete with a full food buffer.",
-      "alt": "Red colony with selected finished inn beside food."
+      "alt": "Red colony with selected finished inn beside food.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-food-detail",
@@ -3103,7 +3473,12 @@
       "height": 265,
       "kind": "image",
       "caption": "Food10/10, Inside0/4 and Working2/2 are separate measures.",
-      "alt": "Completed inn panel showing food stock, occupancy and workers."
+      "alt": "Completed inn panel showing food stock, occupancy and workers.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-conversion",
@@ -3115,7 +3490,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The native joining notification identifies ownership losses during continued production.",
-      "alt": "Cyan units near the red approach with message that globs joined Maxima."
+      "alt": "Cyan units near the red approach with message that globs joined Maxima.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-conversion-detail",
@@ -3127,7 +3507,12 @@
       "height": 36,
       "kind": "image",
       "caption": "Your unit has joined Maxima /2 - Cyan’s team ×3 distinguishes conversion from combat death.",
-      "alt": "Native ownership-change message naming Maxima and three joining events."
+      "alt": "Native ownership-change message naming Maxima and three joining events.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-defense",
@@ -3139,7 +3524,12 @@
       "height": 900,
       "kind": "image",
       "caption": "A compact guard did not prevent continuing conversion and combat pressure.",
-      "alt": "Red guard strip and home inn with remaining defenders and joining notification."
+      "alt": "Red guard strip and home inn with remaining defenders and joining notification.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-result-detail",
@@ -3151,7 +3541,12 @@
       "height": 300,
       "kind": "image",
       "caption": "The inn still has Food9/10, Inside2/4 and zero stocks of all three fruit kinds.",
-      "alt": "Inn panel showing ordinary food available but all fruit stocks zero."
+      "alt": "Inn panel showing ordinary food available but all fruit stocks zero.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-front",
@@ -3163,7 +3558,12 @@
       "height": 900,
       "kind": "image",
       "caption": "A later fresh view shows cyan warriors near the red approach; this is not a census of Maxima’s army.",
-      "alt": "Several cyan units and a tower near the red defense approach."
+      "alt": "Several cyan units and a tower near the red defense approach.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-warrior-detail",
@@ -3175,7 +3575,12 @@
       "height": 335,
       "kind": "image",
       "caption": "Selected cyan warrior: HP184/250, Food72%(0), Armour10 and attack-speed level2.",
-      "alt": "Enemy warrior panel showing health, nutrition and combat training."
+      "alt": "Enemy warrior panel showing health, nutrition and combat training.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-conversion-history",
@@ -3187,7 +3592,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Net conversions records twelve globs recruited away by Maxima during this stopped practice.",
-      "alt": "Result graph ending at red minus12 and cyan plus12 net conversions."
+      "alt": "Result graph ending at red minus12 and cyan plus12 net conversions.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-practice-summary",
@@ -3199,7 +3609,12 @@
       "height": 155,
       "kind": "image",
       "caption": "The overview records one ordinary red unit loss and eight cyan losses; conversions belong to a separate metric. Leaving practice is shown as defeat.",
-      "alt": "Native practice result overview and separate unit-loss totals."
+      "alt": "Native practice result overview and separate unit-loss totals.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-clip-poster",
@@ -3211,7 +3626,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Home food service during continuing pressure after the failed local guard response.",
-      "alt": "Selected red inn and surviving globs at home."
+      "alt": "Selected red inn and surviving globs at home.",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "maxima-pressure-clip",
@@ -3225,7 +3645,12 @@
       "duration": 10,
       "caption": "Ten silent seconds at native 1x: a glob joins Maxima as workers6→5 while own Food9/10→10/10. The guard did not prevent conversion.",
       "alt": "Red home colony and inn during continuing pressure.",
-      "poster": "maxima-clip-poster"
+      "poster": "maxima-clip-poster",
+      "retiredFrom": [
+        "ai-maxima"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this accepted source snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "current-introduction-lessons-v2",
@@ -4767,6 +5192,622 @@
       "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-history-hd-v2.webp",
       "qualityEvidence": "docs/handbook-native-castor-evidence.json",
       "artworkQualification": "Independently reviewed explicit High resolution after fresh load; released native0.11.6.1 SDL GPU; source/packaged-resource qualification retained in evidence."
+    },
+    {
+      "id": "warrush-town-hd-v2",
+      "sha256": "53d743277f7430ee3bdc808980d364d9261108a42f21cf06fafde51595a85bb4",
+      "bytes": 405016,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 8:48: Warrush has developed several services; the barracks and inn completion notices appear alongside a racetrack-under-attack alert.",
+      "alt": "Red Warrush settlement with multiple services, workers and warriors in the paused native AI replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-town-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-town-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "warrush-guard-targets-hd-v2",
+      "sha256": "18524fd3b7df1e56eb868b68e6b1b47ff3a76b7e428391e344d963d922479e88",
+      "bytes": 416546,
+      "width": 1600,
+      "height": 896,
+      "caption": "Watching Warrush at the same paused 8:48, Show areas reveals blue Guard paint over several cyan Nicowar building footprints.",
+      "alt": "Native spectator view watches Warrush while blue Guard areas overlay enemy Nicowar buildings and red and cyan units meet nearby.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-guard-targets-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-guard-targets-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "warrush-guard-detail-hd-v2",
+      "sha256": "9a8e40d3c49596a4e224d0f2c232487036242207955ebb3e2e529183cf15c00c",
+      "bytes": 137030,
+      "width": 550,
+      "height": 740,
+      "caption": "Detail from the same frame: blue Guard paint covers the enemy service and swarm footprints.",
+      "alt": "Cyan building footprints covered by blue Guard paint in the watched Warrush view.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-warrush/warrush-guard-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-warrush/warrush-guard-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "nicowar-home-flag-hd-v2",
+      "sha256": "f4a9feb19c1a7207f1c068e4ec003659fb1a7edb40c3e8b617845d4383554568",
+      "bytes": 427888,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 8:48: Nicowar’s home War Flag requests two at minimum level 1; none are Here or On the way in this paused frame.",
+      "alt": "Selected Nicowar home War Flag with Working 0/2, range 4 and minimum required level 1.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-home-flag-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-home-flag-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "nicowar-home-flag-detail-hd-v2",
+      "sha256": "6da633c1c66f9851def3afa44328af825613d02d4d2b7c5eab2b90bf5eaf9cd5",
+      "bytes": 18278,
+      "width": 280,
+      "height": 590,
+      "caption": "Home flag detail: Working 0/2, range 4, minimum required level 1.",
+      "alt": "Readable native home War Flag request and level controls.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-home-flag-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-home-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "nicowar-offensive-flag-hd-v2",
+      "sha256": "ac2446f7bab6d6eef63d0f6107f5138404245b98a02fbda4edfb6f5cb1661462",
+      "bytes": 395598,
+      "width": 1600,
+      "height": 896,
+      "caption": "At the same 8:48, a Nicowar flag inside red Warrush’s settlement requests five at minimum level 2; Here and On the way are both zero.",
+      "alt": "Selected Nicowar offensive War Flag in Warrush territory with Working 0/5 and minimum required level 2.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-offensive-flag-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-offensive-flag-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "nicowar-offensive-flag-detail-hd-v2",
+      "sha256": "e8a7efc71c6ee6dee52b72698680371bea5b212678c9b86f9312b62245f6702d",
+      "bytes": 18284,
+      "width": 280,
+      "height": 590,
+      "caption": "Offensive flag detail: Working 0/5, range 4, minimum required level 2.",
+      "alt": "Readable native offensive War Flag request and selected minimum level 2.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-nicowar/nicowar-offensive-flag-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-nicowar/nicowar-offensive-flag-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "cabino-development-hd-v2",
+      "sha256": "cc46e6ac7661f9e4735b6d67ee41d96c61b1642fd51ef84a833391ef392bd15b",
+      "bytes": 352824,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 2:13: Cabino’s red settlement has a completed inn and hospital among its developing services.",
+      "alt": "Paused red Cabino settlement with an inn, hospital, swarm and workers in the native AI replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-development-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-development-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-inn-hd-v2",
+      "sha256": "45f51ab4153b62d8d9d6d6f78a0a7c52c01646a52fd7dd9b1472a153c6215ff3",
+      "bytes": 357678,
+      "width": 1600,
+      "height": 896,
+      "caption": "Cabino’s own inn at 2:13 shows Food 10/10, Inside 1/4 and Working 0/1; its three named fruit stores are zero.",
+      "alt": "Selected Cabino inn showing full ordinary food, one occupant and no attached hauler.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-inn-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-inn-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-inn-detail-hd-v2",
+      "sha256": "96842a440909b6da53a8197f78b68c327b83eaabee0ab4cb63d86fe3f7504c4f",
+      "bytes": 17988,
+      "width": 285,
+      "height": 520,
+      "caption": "Inn detail: Food 10/10, Inside 1/4, Working 0/1; fruit stores 0/40.",
+      "alt": "Readable Cabino inn food, occupants, hauling and fruit counters.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-inn-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-inn-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "cabino-hospital-hd-v2",
+      "sha256": "19be071ac8a5e9940d96e69410d4a7c10afcf833b2cc0b66a0c55dc6213f0eea",
+      "bytes": 352310,
+      "width": 1600,
+      "height": 896,
+      "caption": "Cabino’s selected hospital shows Inside 2/2 and HP 260/260 at the same native replay time, 2:13.",
+      "alt": "Selected red Cabino hospital with two occupants and full building health.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-hospital-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-hospital-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "cabino-hospital-detail-hd-v2",
+      "sha256": "062150f30e76e58d9bb0f88d767f11c59e0a90f7710319b81f172e713dedc619",
+      "bytes": 8136,
+      "width": 280,
+      "height": 285,
+      "caption": "Hospital detail: Inside 2/2, HP 260/260.",
+      "alt": "Readable Cabino hospital occupancy and health panel.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-hospital-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-hospital-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "cabino-history-hd-v2",
+      "sha256": "4174756124a3d3c4355061a7f0e1a12aa2b3771c70dd129f57cd3a5147f9cd93",
+      "bytes": 32548,
+      "width": 1182,
+      "height": 980,
+      "caption": "Cabino’s Population history at 5:35 displays 39, with a small decline followed by renewed growth in the sampled history.",
+      "alt": "Native Cabino Population history rises toward 40 with a brief intervening dip and current displayed reading 39.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-cabino/cabino-history-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-cabino/cabino-history-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "maxima-development-hd-v2",
+      "sha256": "a26d73f3b370943b78f89c01e14c10b89b6ff3d1ded5450208ddd95757c505e2",
+      "bytes": 354438,
+      "width": 1600,
+      "height": 896,
+      "caption": "Native 0.11.6.1 at 2:13: cyan Maxima’s settlement and its current services in the AI-versus-AI replay.",
+      "alt": "Paused cyan Maxima settlement in the released native replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-maxima/maxima-development-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-maxima/maxima-development-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "maxima-joins-hd-v2",
+      "sha256": "721325fbe4762c2a525efb707e2bafb8daab86b4f2d8f3d35c9ca3d6d5ab188a",
+      "bytes": 366976,
+      "width": 1600,
+      "height": 896,
+      "caption": "At 5:35 while watching Maxima, the game reports “A unit from cabino’s team has joined your team ×7”. This notification does not identify the individual visitor’s route or meal.",
+      "alt": "Native Maxima spectator view with an actual seven-join notification alongside attack alerts and a school-completion notice.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-maxima/maxima-joins-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-maxima/maxima-joins-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "maxima-joins-detail-hd-v2",
+      "sha256": "b5101466790a85f0c22fdac28ae4ac0d2e4464ff01513e979967bf922f5f90cb",
+      "bytes": 48998,
+      "width": 1020,
+      "height": 215,
+      "caption": "Detail from the same 5:35 frame: the Cabino-to-Maxima joining notification is an ownership-change event.",
+      "alt": "Readable joining-team notification in the native Maxima replay.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-maxima/maxima-joins-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-maxima/maxima-joins-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "maxima-inn-fruit-hd-v2",
+      "sha256": "2c4cbff05b5d1b077e193f505bfbc4a41e13bf3af9eceb9b849e86e0e9f5973a",
+      "bytes": 367552,
+      "width": 1600,
+      "height": 896,
+      "caption": "Separately, Maxima’s own inn at the same paused 5:35 shows Food 5/10, Oranges 5/40, Inside 4/4 and Working 1/1.",
+      "alt": "Selected native Maxima inn with five food, five oranges, four occupants and one attached hauler.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-maxima/maxima-inn-fruit-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-maxima/maxima-inn-fruit-hd-v2.webp",
+      "kind": "image"
+    },
+    {
+      "id": "maxima-inn-fruit-detail-hd-v2",
+      "sha256": "3c1412a6ac123eba21533a90fb9bb64381662feb1a9b65229ad88b2e1d655c94",
+      "bytes": 18486,
+      "width": 285,
+      "height": 520,
+      "caption": "Own-inn detail: Food 5/10, Oranges 5/40, Cherries and Prunes 0/40, Inside 4/4 and Working 1/1.",
+      "alt": "Readable native Maxima inn ordinary-food, fruit, occupancy and hauling counters.",
+      "platform": "native",
+      "path": "/guide-media/v2/ai-maxima/maxima-inn-fruit-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-maxima/maxima-inn-fruit-detail-hd-v2.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "d7a1c6a2931784993008d60551806fa5a176774443697a41a09178f5b6a29735",
+      "bytes": 172024,
+      "width": 1440,
+      "height": 900,
+      "caption": "The prepared Food supply practice colony begins with 8 workers and 1 explorer. The selected Swarm has Food 20/20.",
+      "alt": "Current Swarm selected, with its food, staffing and Worker/Explorer/Warrior birth controls.",
+      "id": "population-panel-v3",
+      "path": "/guide-media/v3/population-and-production/population-panel-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "414b163b3085a8e0b8c8bd71842256541e495a130becda6a0c003474f169f393",
+      "bytes": 7342,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the same Swarm: production bars are separate from the Working hauling request.",
+      "alt": "Swarm sidebar with HP 700/700, Working 0/0, Food 20/20 and the three birth controls.",
+      "id": "population-panel-detail-v3",
+      "path": "/guide-media/v3/population-and-production/population-panel-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-panel-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "a98e5bf5ad433af52e9db5a81d893760ca25393d10914fe38b43927d9a836ebb",
+      "bytes": 208186,
+      "width": 1440,
+      "height": 900,
+      "caption": "After Worker-only production resumed, the worker total rose from 8 to 10 while explorers remained 1. The selected Swarm has Food 7/20 and Working 2/2.",
+      "alt": "Selected Swarm and top bar after the Worker-only phase;10 total workers and 1 explorer.",
+      "id": "population-worker-result-v3",
+      "path": "/guide-media/v3/population-and-production/population-worker-result-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-result-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "1cdeef3d2d57eb31d81286a2bab1562d0de109d0b5d8cd2694a0b37df504bf60",
+      "bytes": 3696,
+      "width": 462,
+      "height": 54,
+      "caption": "Enlarged top-bar crop from the same Worker result: 8 available / 10 total workers, 1/1 explorer and 0/0 warriors.",
+      "alt": "Worker result role counters:8/10, 1/1,0/0.",
+      "id": "population-worker-count-v3",
+      "path": "/guide-media/v3/population-and-production/population-worker-count-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-worker-count-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "4e058f926ddc5562e048eec4d3146681f1495b46216d61a2bd6e7630f3382916",
+      "bytes": 221532,
+      "width": 1440,
+      "height": 900,
+      "caption": "After the controls were clamped back to zero, one additional worker was observed: 11 workers and 1 explorer. Do not infer an instant stop from the changed bars.",
+      "alt": "All three birth controls at their minimum, Swarm Food 16/20, Working 1/2, and 11 total workers.",
+      "id": "population-pending-birth-v3",
+      "path": "/guide-media/v3/population-and-production/population-pending-birth-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-pending-birth-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "030671f8cec509802b50ccdb186ad339e4f4f6fbed2d8c043420629acfecc434",
+      "bytes": 238062,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Explorer-only phase increased explorers from 1 to 3 while the worker total stayed 11. Food is 8/20 and Working 2/2.",
+      "alt": "Swarm after Explorer-only production with 11 total workers and 3 explorers.",
+      "id": "population-explorer-result-v3",
+      "path": "/guide-media/v3/population-and-production/population-explorer-result-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-result-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "e912e430d484a48441209666a054f6db70270e475b333f9ec1d57b3a060b2f6a",
+      "bytes": 3776,
+      "width": 462,
+      "height": 54,
+      "caption": "Enlarged top-bar crop from the same Explorer result: 9 available / 11 total workers, 3/3 explorers and 0/0 warriors.",
+      "alt": "Explorer result role counters:9/11, 3/3,0/0.",
+      "id": "population-explorer-count-v3",
+      "path": "/guide-media/v3/population-and-production/population-explorer-count-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-explorer-count-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "4aa0429aeca4055c7944c1de4b66851328342f2483e0d126cff7219f9b6ea8db",
+      "bytes": 237948,
+      "width": 1440,
+      "height": 900,
+      "caption": "All three birth controls were repeatedly decremented to their minimum. At the start of this hold, totals were 11 workers / 3 explorers, Food 8/20 and Working 2/2.",
+      "alt": "Swarm with all birth controls clamped to zero before the food-available hold.",
+      "id": "population-zero-weights-v3",
+      "path": "/guide-media/v3/population-and-production/population-zero-weights-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-zero-weights-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "637813ed0979f404594a001affd71909e0aabe7517ce4bfca502a59adb8ca478",
+      "bytes": 230640,
+      "width": 1440,
+      "height": 900,
+      "caption": "After 637 normal simulation ticks, totals were still 11 workers and 3 explorers. Swarm Food rose from 8/20 to 15/20 with Working 2/2.",
+      "alt": "The same role totals at the end of a bounded all-zero hold, while food remains available.",
+      "id": "population-stable-total-v3",
+      "path": "/guide-media/v3/population-and-production/population-stable-total-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-total-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "60d036ceec5cc036b64e06fbfa6dc79eff6ad3d833a1faf24fc4e0a6976c8463",
+      "bytes": 7288,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the final hold: Food 15/20 and Working 2/2; the unchanged totals are visible in the full frame.",
+      "alt": "Swarm Food 15/20, Working 2/2 and all three birth controls at minimum.",
+      "id": "population-stable-detail-v3",
+      "path": "/guide-media/v3/population-and-production/population-stable-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/population-and-production/population-stable-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "44c6f6aa852e89cb61d88ec4f4d62fa767ffa95d94370474968ed03599b9e55e",
+      "bytes": 230306,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Swarm’s birth controls and hauling request are at zero. Its remaining Food 15/20 is a separate store from the Inn’s meals.",
+      "alt": "Selected Swarm with Food 15/20, Working 0/0 and all three birth controls at minimum.",
+      "id": "food-swarm-v3",
+      "path": "/guide-media/v3/sustainable-food/food-swarm-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-v3.webp",
+      "kind": "image"
+    },
+    {
+      "sha256": "12d8698d7733d0ad0b62102d4e9ad6a08c0d88f816922f2fd47262f6fc171267",
+      "bytes": 7180,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of the same Swarm after birth controls and its hauling request were reduced.",
+      "alt": "Swarm sidebar showing Food 15/20, Working 0/0 and minimum Worker, Explorer and Warrior controls.",
+      "id": "food-swarm-detail-v3",
+      "path": "/guide-media/v3/sustainable-food/food-swarm-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-swarm-detail-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "cfbb67f7a4c70d665f4b16cfc1678ff8641a33f1672ad17de1e16b5cdc3a4257",
+      "bytes": 12036,
+      "width": 324,
+      "height": 140,
+      "caption": "Visible portion of the lower wheat patch near the beginning of the prepared-colony experiment.",
+      "alt": "Earlier crop of a revealed wheat patch and neighboring ground, at normal camera zoom.",
+      "id": "food-field-before-v3",
+      "path": "/guide-media/v3/sustainable-food/food-field-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-before-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "sha256": "ffb1af060d7e039d5b858de51a6d0a19a6d3a8b5232d2b7e93719a66fd455052",
+      "bytes": 12158,
+      "width": 324,
+      "height": 140,
+      "caption": "The same revealed patch later, with the camera unchanged while the colony was active. Compare the visible wheat, rather than newly explored terrain.",
+      "alt": "Later crop of the same wheat patch with a changed distribution of resource dots.",
+      "id": "food-field-after-v3",
+      "path": "/guide-media/v3/sustainable-food/food-field-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-field-after-v3.webp",
+      "kind": "image",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-first-stock-v3",
+      "kind": "image",
+      "sha256": "67c9e1b1c0cd513e4971dad80d22550abff2596b8b3cf8c4df19e814bf57c89b",
+      "bytes": 222124,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before the interruption, the existing Inn has Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Selected Inn in the prepared Food supply practice colony, with a full food store and no hauling request.",
+      "path": "/guide-media/v3/sustainable-food/food-first-stock-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-v3.webp"
+    },
+    {
+      "id": "food-first-stock-detail-v3",
+      "kind": "image",
+      "sha256": "58aa814d23dfb7e179ce6db979d95c00abad64a2eabbeab3a54a28d5b18b6c40",
+      "bytes": 7166,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail of that Inn before resuming: Food 10/10, Inside 0/4 and Working 0/0.",
+      "alt": "Inn health, occupancy, staffing and stored Food before the interruption.",
+      "path": "/guide-media/v3/sustainable-food/food-first-stock-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-first-stock-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-stock-falling-v3",
+      "kind": "image",
+      "sha256": "268db332aeb0509da60cbe7e7b8f55b3804922a7141290f5b5200b0e4b5614c4",
+      "bytes": 232156,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation resumed with Working 0/0, the Inn’s Food count is 9/10.",
+      "alt": "Selected Inn with Food 9/10, Inside 0/4 and Working 0/0 after its stock fell.",
+      "path": "/guide-media/v3/sustainable-food/food-stock-falling-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-stock-falling-v3.webp"
+    },
+    {
+      "id": "food-hauling-restored-v3",
+      "kind": "image",
+      "sha256": "58cce1bd65c3376b9fbb3334942923e8b80681fdc3299139a7e75f7536a8d544",
+      "bytes": 234462,
+      "width": 1440,
+      "height": 900,
+      "caption": "The hauling request is restored to two at high priority. Food is still 9/10 and Working reads 1/2 in this frame.",
+      "alt": "One worker attached against a request for two at the selected Inn; high priority and Food 9/10.",
+      "path": "/guide-media/v3/sustainable-food/food-hauling-restored-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-hauling-restored-v3.webp"
+    },
+    {
+      "id": "food-recovery-v3",
+      "kind": "image",
+      "sha256": "733c68316bb09a1474cb1ed5f9e7652288f2d0eb776c327a73bce9b843551ab8",
+      "bytes": 212998,
+      "width": 1440,
+      "height": 900,
+      "caption": "The later paused Inn has refilled to Food 10/10, with Inside 0/4 and Working 0/2.",
+      "alt": "Selected Inn after refill, showing full Food and a request for two even though no hauler is attached at this instant.",
+      "path": "/guide-media/v3/sustainable-food/food-recovery-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-v3.webp"
+    },
+    {
+      "id": "food-recovery-detail-v3",
+      "kind": "image",
+      "sha256": "b78b0ed44247c1ac96689a330b6424f8e25c902cadfba4841b03e1c32e7d362e",
+      "bytes": 7264,
+      "width": 192,
+      "height": 300,
+      "caption": "Detail after refill: Food 10/10, Inside 0/4 and Working 0/2.",
+      "alt": "Inn sidebar after the observed food reserve refilled.",
+      "path": "/guide-media/v3/sustainable-food/food-recovery-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-recovery-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "food-consumption-refill-poster-v3",
+      "kind": "image",
+      "sha256": "f60c9abd6d4c3b93f8db0d05296d0cb1e35e07c4d918bd5db538d27e68da4bd5",
+      "bytes": 190302,
+      "width": 1440,
+      "height": 900,
+      "caption": "Opening frame of the normal-speed food-consumption and refill excerpt.",
+      "alt": "Selected Inn with Food 10/10, Inside 1/4 and Working 0/0 at the start of the excerpt.",
+      "path": "/guide-media/v3/sustainable-food/food-consumption-refill-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-poster-v3.webp"
+    },
+    {
+      "id": "food-consumption-refill-clip-v3",
+      "kind": "video",
+      "sha256": "5fb6b964546b5938d1a7359eb8b8bfa23cc210aa71cbf8d56da1d4f6b173ffda",
+      "bytes": 4782700,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-four continuous seconds show Inn Food falling from 10/10 to 9/10 with hauling stopped, then returning to 10/10 after a request for two at high priority.",
+      "alt": "Normal-speed food-supply excerpt with the selected Inn’s stock, occupancy and hauling request visible.",
+      "path": "/guide-media/v3/sustainable-food/food-consumption-refill-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/sustainable-food/food-consumption-refill-clip-v3.mp4",
+      "poster": "food-consumption-refill-poster-v3"
+    },
+    {
+      "id": "services-hospital-foundation-v3",
+      "kind": "image",
+      "sha256": "a99511817ad71cc713acc45e5aae61cbbce28748913b5a355f55fb669520d448",
+      "bytes": 221504,
+      "width": 1440,
+      "height": 900,
+      "caption": "The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital construction site selected in the prepared healing lesson; two builders are requested and none is attached.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-v3.webp"
+    },
+    {
+      "id": "services-hospital-foundation-detail-v3",
+      "kind": "image",
+      "sha256": "908f2adc0ac0dc258f3a429f1c9f354fab41636db6e41d29c740673e252e25d6",
+      "bytes": 5728,
+      "width": 192,
+      "height": 300,
+      "caption": "Sidebar detail: The paused Hospital foundation has HP 1/260, Wood 0/3 and Working 0/2.",
+      "alt": "Hospital foundation sidebar: HP 1/260, Working 0/2 and Wood 0/3.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-foundation-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-hospital-completed-v3",
+      "kind": "image",
+      "sha256": "f9b25bf95a6e63476a6b0e11705c9e7da7fbc33fed273efd8d6d205ac5926bb2",
+      "bytes": 214124,
+      "width": 1440,
+      "height": 900,
+      "caption": "After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital selected with an empty two-place service capacity; the lesson completion prompt remains visible.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-v3.webp"
+    },
+    {
+      "id": "services-hospital-completed-detail-v3",
+      "kind": "image",
+      "sha256": "d837f5682a458bbd6eff6b819a11abd092d749c2d2b4bcb9c1f78ca33988cf81",
+      "bytes": 3610,
+      "width": 192,
+      "height": 300,
+      "caption": "Sidebar detail: After the healing lesson completes, the paused Hospital has HP 260/260 and Inside 0/2.",
+      "alt": "Completed Hospital sidebar: HP 260/260, Inside 0/2 and Armour 5.",
+      "path": "/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-hospital-completed-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-patient-before-v3",
+      "kind": "image",
+      "sha256": "fd0edca71524ed6d89c280b055e56490cc97a78bb6ec3d724a6b5fd286740d4e",
+      "bytes": 220324,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker in the prepared healing lesson, with the new Hospital foundation visible nearby.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-v3.webp"
+    },
+    {
+      "id": "services-patient-before-detail-v3",
+      "kind": "image",
+      "sha256": "384c06589163891a04e869979e142d5b3b719d52d9fe0858156e9759695df48e",
+      "bytes": 5418,
+      "width": 192,
+      "height": 260,
+      "caption": "Sidebar detail: Before resuming, the selected injured worker has HP 50/200 and Food 81%.",
+      "alt": "Selected injured worker sidebar before resuming: HP 50/200 and Food 81%.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-before-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "services-patient-after-v3",
+      "kind": "image",
+      "sha256": "ce27f673693768c273fad0e859e146f97ad57c88642ec42bfccb4d4e2ee2f36e",
+      "bytes": 215470,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker after the Hospital restores its health, alongside the actual lesson completion prompt.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-v3.webp"
+    },
+    {
+      "id": "services-patient-after-detail-v3",
+      "kind": "image",
+      "sha256": "d4f3370b0086ab297658d284b3bc98cc66d7f814a101a93306c16308229a8698",
+      "bytes": 5468,
+      "width": 192,
+      "height": 260,
+      "caption": "Sidebar detail: After normal simulation, the same continuously selected worker has HP 200/200 and Food 40%; the healing lesson is complete.",
+      "alt": "The same selected worker sidebar at the final pause: HP 200/200 and Food 40%.",
+      "path": "/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
+      "presentation": "detail"
     }
   ]
 }
