@@ -1,0 +1,228 @@
+{
+  "sourceBaseline": "194cbae7a68ef4e7effe61587c8b0ee7a97c4745",
+  "scope": "Six matching current source chapters; source reference reconciliation only, not a claim of production publication.",
+  "chapters": [
+    {
+      "chapter": "resources-and-hauling",
+      "oldIds": [
+        "hauling-construction",
+        "hauling-construction-detail",
+        "hauling-delivered",
+        "hauling-delivery",
+        "hauling-delivery-clip",
+        "hauling-delivery-poster",
+        "hauling-near-detail",
+        "hauling-route-comparison",
+        "hauling-working-detail"
+      ],
+      "newIds": [
+        "hauling-construction-clip-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-poster-v3",
+        "hauling-construction-v3",
+        "hauling-delivered-detail-v3",
+        "hauling-delivered-v3",
+        "hauling-foundation-detail-v3",
+        "hauling-foundation-v3"
+      ],
+      "retiredIds": [
+        "hauling-construction",
+        "hauling-construction-detail",
+        "hauling-delivered",
+        "hauling-delivery",
+        "hauling-delivery-clip",
+        "hauling-delivery-poster",
+        "hauling-near-detail",
+        "hauling-route-comparison",
+        "hauling-working-detail"
+      ],
+      "otherActiveConsumers": {}
+    },
+    {
+      "chapter": "jobs-and-flags",
+      "oldIds": [
+        "jobs-guard-area",
+        "jobs-guard-detail",
+        "jobs-war-detail",
+        "jobs-war-request"
+      ],
+      "newIds": [
+        "jobs-exploration-detail-v3",
+        "jobs-exploration-v3",
+        "jobs-guard-area-v3",
+        "jobs-guard-detail-v3",
+        "jobs-guard-removing-v3",
+        "jobs-guard-restored-v3",
+        "jobs-war-detail-v3",
+        "jobs-war-request-v3"
+      ],
+      "retiredIds": [
+        "jobs-guard-area",
+        "jobs-guard-detail",
+        "jobs-war-detail",
+        "jobs-war-request"
+      ],
+      "otherActiveConsumers": {}
+    },
+    {
+      "chapter": "ai-econo",
+      "oldIds": [
+        "econo-contested-orchard",
+        "econo-first-meals",
+        "econo-first-meals-detail",
+        "econo-hauling-clip",
+        "econo-hauling-poster",
+        "econo-home-fruit",
+        "econo-home-fruit-detail",
+        "econo-production-released-detail",
+        "econo-profile-detail",
+        "econo-scout-production-detail",
+        "econo-scouted-services"
+      ],
+      "newIds": [
+        "econo-cortex-pressure-motion-hd-v2",
+        "econo-cortex-pressure-poster-hd-v2",
+        "econo-history-hd-v2",
+        "econo-pressure-hd-v2",
+        "econo-profile-v3",
+        "econo-town-hd-v2"
+      ],
+      "retiredIds": [
+        "econo-contested-orchard",
+        "econo-first-meals",
+        "econo-first-meals-detail",
+        "econo-hauling-clip",
+        "econo-hauling-poster",
+        "econo-home-fruit",
+        "econo-home-fruit-detail",
+        "econo-production-released-detail",
+        "econo-profile-detail",
+        "econo-scout-production-detail",
+        "econo-scouted-services"
+      ],
+      "otherActiveConsumers": {}
+    },
+    {
+      "chapter": "ai-cortex",
+      "oldIds": [
+        "cortex-defense",
+        "cortex-development",
+        "cortex-development-detail",
+        "cortex-food-after-detail",
+        "cortex-growth-detail",
+        "cortex-hold-clip",
+        "cortex-hold-poster",
+        "cortex-hospital-detail",
+        "cortex-opening-food",
+        "cortex-opening-food-detail",
+        "cortex-pressure",
+        "cortex-school-detail",
+        "cortex-selection"
+      ],
+      "newIds": [
+        "choosing-ai-roster-v3",
+        "econo-cortex-pressure-motion-hd-v2",
+        "econo-cortex-pressure-poster-hd-v2",
+        "econo-pressure-hd-v2"
+      ],
+      "retiredIds": [
+        "cortex-defense",
+        "cortex-development",
+        "cortex-development-detail",
+        "cortex-food-after-detail",
+        "cortex-growth-detail",
+        "cortex-hold-clip",
+        "cortex-hold-poster",
+        "cortex-hospital-detail",
+        "cortex-opening-food",
+        "cortex-opening-food-detail",
+        "cortex-pressure",
+        "cortex-school-detail",
+        "cortex-selection"
+      ],
+      "otherActiveConsumers": {}
+    },
+    {
+      "chapter": "ai-numbi",
+      "oldIds": [
+        "numbi-after-pressure",
+        "numbi-first-pressure",
+        "numbi-first-pressure-clip",
+        "numbi-hospital-detail",
+        "numbi-pressure-detail",
+        "numbi-scouted",
+        "numbi-services",
+        "numbi-setup"
+      ],
+      "newIds": [
+        "choosing-ai-info-v3",
+        "numbi-history-hd-v2",
+        "numbi-opening-hd-v2",
+        "numbi-readiness-hd-v2",
+        "numbi-town-motion-hd-v2",
+        "numbi-town-motion-poster-hd-v2",
+        "numbi-warriors-detail-hd-v2"
+      ],
+      "retiredIds": [
+        "numbi-after-pressure",
+        "numbi-first-pressure",
+        "numbi-first-pressure-clip",
+        "numbi-hospital-detail",
+        "numbi-pressure-detail",
+        "numbi-scouted",
+        "numbi-services",
+        "numbi-setup"
+      ],
+      "otherActiveConsumers": {}
+    },
+    {
+      "chapter": "ai-castor",
+      "oldIds": [
+        "castor-contact-clip",
+        "castor-contact-poster",
+        "castor-probe-contact",
+        "castor-probe-damage-detail",
+        "castor-probe-flag-detail",
+        "castor-probe-return",
+        "castor-ready-army",
+        "castor-ready-army-detail",
+        "castor-ready-tower-detail",
+        "castor-return-detail",
+        "castor-scout-early",
+        "castor-scout-later",
+        "castor-setup-detail"
+      ],
+      "newIds": [
+        "castor-history-hd-v2",
+        "castor-inn-detail-hd-v2",
+        "castor-inn-hd-v2",
+        "castor-population-hd-v2",
+        "castor-swarm-detail-hd-v2",
+        "castor-swarm-hd-v2",
+        "choosing-ai-roster-v3"
+      ],
+      "retiredIds": [
+        "castor-contact-clip",
+        "castor-contact-poster",
+        "castor-probe-contact",
+        "castor-probe-damage-detail",
+        "castor-probe-flag-detail",
+        "castor-probe-return",
+        "castor-ready-army",
+        "castor-ready-army-detail",
+        "castor-ready-tower-detail",
+        "castor-return-detail",
+        "castor-scout-early",
+        "castor-scout-later",
+        "castor-setup-detail"
+      ],
+      "otherActiveConsumers": {}
+    }
+  ],
+  "remainingSourceScope": {
+    "nonArchivalV1Ids": 142,
+    "chaptersWithCurrentOlderMedia": 18,
+    "qualifiedEarlierIntroductionIds": 17,
+    "publication": "Candidate source unit only; production counts change after its release is verified."
+  }
+}

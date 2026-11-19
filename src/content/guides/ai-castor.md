@@ -1,120 +1,119 @@
 ---
-title: "Facing Castor: scout before committing the army"
-description: "Read Castor's growing services and defenses, prepare a supplied force, and learn from a costly probe against its training buildings."
+title: "Facing Castor: inspect the colony before committing"
+description: "Keep meals, growth and training supplied, update your view of Castor, and check a real force before choosing a limited target."
 locale: "en"
 tags: ["AI", "Castor", "scouting", "strategy"]
 order: 3
 group: "ai"
 format: "profile"
-prerequisites: ["getting-started", "choosing-an-ai"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title":"Castor economy and strikes","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor/Control.cpp"},{"title":"Castor projects and development","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor"},{"title":"Castor readiness and progression","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/castor/State.cpp"},{"title":"Standard services and training","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"}]
+prerequisites: ["choosing-an-ai", "sustainable-food", "training-and-upgrades", "organizing-an-attack"]
+sources:
+  - title: "Current browser Castor selector, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Native 0.11.6.1 Castor economy and strikes"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/castor/Control.cpp"
+  - title: "Native 0.11.6.1 Castor readiness and progression"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/castor/State.cpp"
+  - title: "Native 0.11.6.1 Castor project implementation"
+    url: "https://github.com/Globulation2/glob2/tree/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/castor"
 ---
+
+Castor manages development as projects and adjusts production around food and workforce. Practice reading the colony you actually encounter. Several buildings do not guarantee a large population, a stocked inn does not supply every swarm, and a finished barracks does not prove that every warrior has trained.
+
+## Set up a repeatable exercise
+
+Create two colonies through [choosing an AI](/learn/choosing-an-ai/). Select **You** and **AI → Castor**, use separate teams and choose **Standard** with experiments off. Save the opening before changing the production mix.
+
+[[media:choosing-ai-roster-v3]]
+
+The browser selector's offline difficulty number is separate from an online player's rating. Inspect your own reachable wheat, wood, clear ground and approach before copying a placement from any example. Pause locally to read a panel, then resume to observe real deliveries and arrivals.
 
 :::note
 
-Castor develops an economy, training facilities and defenses before committing forces against valuable enemy buildings. Facing it is an exercise in keeping information current: the town you first reveal can gain schools, barracks and towers while you are improving your own colony.
+The gameplay example is an **AI-versus-AI replay in released native 0.11.6.1**, cyan Castor against red Numbi on a generated 128×128 River map. Both colonies are computer-controlled, and the spectator watches Castor. It illustrates one supply and contact episode, separately from the human exercise below; it is not a comparison establishing which AI is stronger.
 
 :::
 
-This practice duel shows that change and a costly attack against the resulting defenses. Six trained warriors were requested for a probe near Castor's barracks. Three remained afterward. A healthy home colony made it possible to stop that assignment and bring survivors back, but the probe did not remove the training buildings.
+## Keep feeding and production distinct
 
-## Set up a match you can repeat
+Complete a reachable inn before adding several projects. Inspect the foundation's materials and workers, then watch the completed inn's **Food**, **Inside** and **Working** through meals and deliveries. Use [resources and hauling](/learn/resources-and-hauling/) for the current construction and supply workflow.
 
-Use [Choosing an AI opponent](/learn/choosing-an-ai/) to create a two-colony Standard duel. Select **You** for your colony, **AI → Castor** for the other, and keep separate teams. Save the opening before changing the production mix.
+Inspect the swarm separately. It uses its own food stock for births; an inn's stocked Food reading does not establish that production is supplied. Check the swarm's actual food, staffing and production mix while increasing population.
 
-[[media:castor-setup-detail]]
+A school, barracks or hospital competes for construction labor and materials before it can help. Release an unnecessary request when several projects leave essential supply struggling. Do not replace an empty reserve with a higher requested workforce until you have checked the actual route, eligibility and available workers.
 
-The illustrated match used generated **Breachable highlands**, **128 × 128**, with red versus cyan. Find your own reachable wheat, wood and clear land before copying a placement. The landscape's ponds and resource rings make route inspection useful, but your generated layout can differ.
-
-Pause with **P** to inspect a panel, then resume to observe an actual delivery or service visit. A paused picture of an empty road does not establish that an economy has stopped.
-
-## Build supply and information together
-
-Complete a supplied inn before adding several training projects. Watch its Food reserve through meals and deliveries, then produce a few explorers. Restore worker production when you have enough scouts for the question you are trying to answer.
-
-In this duel, an inn came first, followed by three explorers. Worker production resumed while a school, barracks, second inn and hospital were completed. That sequence kept the colony supplied while opening the map.
-
-Use the minimap to inspect revealed territory. Place an exploration flag where it can answer a question: where is Castor developing, what approach reaches its town, and which services stand near that approach? Check whether explorers are still present before treating the view as current.
-
-[[media:castor-scout-early]]
-
-The first useful view showed Castor's swarm, inn, swimming pool, barracks and two school foundations. Later, those schools were complete; another barracks and a defense tower had appeared.
-
-[[media:castor-scout-later]]
-
-Remembered structures can remain after scouts leave. In this match the explorer total eventually fell to zero. The familiar layout then became a record of earlier sightings, rather than a reliable view of every current defender. Replace or redirect scouting deliberately before choosing a target.
-
-## Understand what its development means
-
-Castor manages construction as projects and expands services and training in stages. Its placement considers usable workforce, food access, growth conditions, space and enemy reach. Expect development to depend on the map and available workers rather than following one visible building order every time.
-
-Food pressure also changes its choices. Castor can slow unit production and adjust staffing at wheat consumers; under ordinary growth rules, its food care can allow a sparse catchment time to recover. That does not make every quiet interval a food pause. Observe changes in units, buildings and routes before explaining their cause.
-
-A swimming pool is another reason to inspect routes and units. Training belongs to individual globs; the building does not grant swimming to the entire colony instantly. This duel shows the facility, rather than a demonstrated water crossing.
-
-Its military demand grows with development and time. Attack readiness considers healthy warrior fighting power and a timeout; strikes favor seen, reachable buildings, including valuable training facilities. A lost assault can raise the force required for another. Keep watching the approaches to your school and barracks as well as your swarm.
-
-## Make your own readiness visible
-
-Before committing an army, check the globs and services that must support it:
-
-1. Finish a reachable barracks and produce warriors while preserving food hauling.
-2. Let warriors train, then select an actual unit and inspect its abilities. A finished barracks is not a training record.
-3. Read both inns' Food and Inside counts. Keep meals available while warriors gather or return.
-4. Finish any defensive construction before relying on it. Inspect a tower's ammunition, rather than judging readiness from its sprite.
-5. Place a war flag for a useful approach and inspect the request, arrival and unit availability separately.
+In the native replay at **5:38**, Castor’s selected swarm has **Food 4/20** and **Working 0/0**. A nearby selected inn has **Food 10/10**, **Inside 0/4** and **Working 0/1**. These are two different local stores in the same paused town.
 
 :::media-group
 
-[[media:castor-ready-army]]
+[[media:castor-swarm-hd-v2]]
 
-[[media:castor-ready-army-detail]]
+[[media:castor-swarm-detail-hd-v2]]
 
 :::
-
-The selected defender in this match had **HP 250/250** and completed attack training. The colony had six warriors, two inns, a school, barracks and hospital. Warrior births were stopped at that point so the existing force could be inspected without continually adding food demand.
-
-[[media:castor-ready-tower-detail]]
-
-The completed tower had **HP 480/480**, **Stone 4/4** and **Bullets 12/12**. These were preparations before contact. Castor did not attack our town during this interval, so the intact colony was not evidence that this defense had defeated an assault.
-
-## What the probe actually encountered
-
-The probe replaced the home war assignment with a flag near Castor's revealed barracks and schools, requesting six warriors. The force still had to travel and could leave its assignment for services; placing the flag did not deliver six fighters simultaneously.
 
 :::media-group
 
-[[media:castor-probe-contact]]
+[[media:castor-inn-hd-v2]]
 
-[[media:castor-probe-flag-detail]]
-
-:::
-
-At contact, the flag showed **Working 4/6**, **On the way 4** and **Here 0**. Cyan warriors and two towers were visible around the approach. One red warrior was already taking damage before the requested force had gathered.
-
-[[media:castor-probe-damage-detail]]
-
-[[media:castor-contact-clip]]
-
-The selected warrior's HP had fallen to **190/250**. After further fighting, the red warrior total fell from six to three while Castor's schools and barracks were still standing. The assignment was stopped and a home war flag was placed to draw survivors back.
-
-:::media-group
-
-[[media:castor-probe-return]]
-
-[[media:castor-return-detail]]
+[[media:castor-inn-detail-hd-v2]]
 
 :::
 
-Before renewing the commitment, inspect the approach and current defenses again. A valuable target can remain a poor immediate attack when the force arrives piecemeal or passes through defended ground.
+In your practice, ask which stock is empty and which task needs a delivery. The answers distinguish an inn's meal service from a swarm's births and a foundation's construction.
 
-## Recover before trying another commitment
+## Scout development without assuming its cause
 
-After a failed probe, inspect the surviving army, food routes and services. Stop requesting units into the same exposed position, check where survivors are going, and keep meals and healing reachable. Preserve the workers and infrastructure that can replace losses.
+Produce a small number of explorers while maintaining meals. Use an exploration flag to answer a specific question: which services have completed, where are the defenders, or what ground approach reaches the town? Compare the requested count with **On the way** and **Here** after resuming.
 
-Use the saved state to compare one decision at a time: fresher scouting, a different approach, a better gathered force, or a smaller commitment. Watch the outcome before calling any change an improvement. Training, defender position, ammunition and service access matter together; a larger warrior total alone does not explain an attack's prospects.
+Move or remove an obsolete request. Replace current vision if scouts leave or disappear; remembered structures are previous sightings rather than a reliable view of every defender. A flying explorer's route does not prove that ground workers or warriors can use the same approach.
 
-Custom rules can change the exercise. No hunger changes feeding pressure, no resource growth makes waiting for regrowth ineffective, and peaceful play removes ordinary combat. Check the rules before applying observations from a Standard duel.
+At **8:33**, Castor’s own Statistics panel reports **Population 4**, while a barracks-under-attack alert appears. Buildings and service capacity have not become a large defending force in this episode.
 
-Your practice checkpoints are a supplied colony, an updated view of Castor, inspected training, and an assignment whose actual arrivals and outcome you can explain. Return to [Resources and hauling](/learn/resources-and-hauling/) when the force lacks supply, or [Keep the colony fed](/learn/sustainable-food/) before replacing losses that the economy cannot yet support.
+[[media:castor-population-hd-v2]]
+
+The Population history shows the earlier plateau near five and the later sampled four. Compare that history with current units, supplies and contact before deciding why the total changed.
+
+[[media:castor-history-hd-v2]]
+
+Compare buildings with actual population, training and delivery activity. An unchanged total does not identify one cause by itself. Inspect food, births, wounds, conversion and losses before deciding what a quiet interval means.
+
+## Understand conditional development
+
+In native 0.11.6.1, Castor's construction projects consider workforce, food, space and enemy reach. Food pressure can change production and staffing decisions. Under ordinary resource growth, waiting can allow a catchment to recover, but a quiet scene is not proof that this is what the controller is doing.
+
+Its military demand changes with development and time. Attack readiness considers healthy warrior fighting power and a timeout, while strikes choose seen, reachable enemy buildings. A failed assault can increase what is required before trying again.
+
+Keep watching the approach to useful training and services as well as the swarm. A swimming pool is a reason to inspect individual movement training and possible routes, rather than proof that the whole colony can cross water immediately.
+
+## Make readiness visible before a probe
+
+Prepare a limited human exercise rather than trying to copy a pictured force size:
+
+1. Complete a reachable barracks while keeping meals supplied.
+2. Produce warriors without removing the workers needed for food and construction.
+3. Allow training, then select an actual warrior and inspect its combat abilities.
+4. Check food, injuries, occupancy and routes back to healing before asking the force to travel.
+5. Choose a revealed, reachable target and inspect its defenders and supporting services.
+6. Set a small war-flag request with an appropriate minimum level; follow actual arrivals after resuming.
+
+A flag allocates eligible units. It does not create trained warriors or deliver the whole request at once. If raw warriors remain assigned instead of training, release that assignment and observe whether they use the needed service.
+
+If you add a tower, wait for construction and inspect ammunition before relying on it. An intact tower during a quiet interval does not demonstrate that it has defeated an assault.
+
+## Read contact and decide when to stop
+
+Watch the target, the approach and the home economy together. Units can leave for meals or healing, and survivors may return in different condition. Select real units instead of treating a lower request count as a complete account of losses.
+
+If the probe cannot sustain pressure, remove or reduce the assignment, let survivors recover and scout again. A failed probe can still answer a question about defenders or routes; repeating the same request without learning from it spends more of the supplied force.
+
+| Observation | Check next | Useful adjustment |
+| --- | --- | --- |
+| Inn stocked but births remain slow | Swarm food, staffing and production mix | Restore the actual production supply before adding another swarm |
+| More services but little population change | Food, births, injuries and recent contact | Diagnose the observed constraint instead of counting buildings |
+| A barracks is complete but units remain raw | Individual abilities and competing assignments | Release an obstructing request and observe training |
+| A tower stands on the chosen approach | Completed state, ammunition and nearby defenders | Choose a supported, limited probe or another reachable target |
+| Requested warriors arrive separately | Here, On the way, food and healing trips | Reduce or gather the commitment before renewing it |
+| A probe ends with fewer healthy warriors | Survivors, services and updated enemy vision | Recover and change one decision before repeating |
+
+Save the supplied checkpoint. Repeat one change—earlier scouting, fewer concurrent projects or a more qualified force—and compare the resulting deliveries, training and arrivals. The useful result is a decision you can explain from the actual colony, rather than an assumed fixed Castor opening.

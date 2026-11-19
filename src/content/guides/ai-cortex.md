@@ -1,123 +1,100 @@
 ---
 title: "Facing Cortex: keep supply and scouting current"
-description: "Recognize Cortex's changing development and pressure, keep a supplied defense, and inspect the opponent before choosing a counterattack."
+description: "Recognize Cortex's development and pressure, maintain reachable meals and healing, and inspect the approach before committing defenders."
 locale: "en"
 group: "ai"
 format: "profile"
 order: 6
 prerequisites: ["choosing-an-ai", "sustainable-food", "training-and-upgrades", "defending-your-colony", "organizing-an-attack"]
 tags: ["AI", "Cortex", "scouting", "supply"]
-reviewedAgainst: "c26a0a02aeef4993a7478c3651d6117b49dbc56c"
 sources:
-  - title: "Cortex ordinary policy and production"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/cortex/CortexPolicy.cpp"
-  - title: "Cortex combat decisions"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/cortex/CortexPolicyCombat.cpp"
-  - title: "Cortex economy and staffing"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/cortex/CortexPolicyEconomy.cpp"
-  - title: "Cortex wave movement"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/ai/cortex/AICortexFlags.cpp"
-  - title: "Service admission and resource availability"
-    url: "https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/building/Services.cpp"
+  - title: "Current browser opponent selector, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Native 0.11.6.1 Cortex production and economy facts"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/cortex/CortexPolicy.cpp"
+  - title: "Native 0.11.6.1 Cortex combat and support choices"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/cortex/CortexPolicyCombat.cpp"
+  - title: "Native 0.11.6.1 Cortex economy and staffing"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/cortex/CortexPolicyEconomy.cpp"
+  - title: "Native 0.11.6.1 Cortex wave movement"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/cortex/AICortexFlags.cpp"
 ---
 
-Cortex develops feeding and training while changing its army commitments. A town that looked quiet on the first scout visit can gain services or send warriors while you are constructing your own buildings. Keep supply and information current together.
-
-:::checkpoint
-
-This Standard duel on **balanced for 2** follows red against cyan Cortex. The exercise is to maintain meals and healing during contact, recognize a construction project that cannot be supplied, and inspect the opponent before choosing the next commitment. It demonstrates a local supplied defense, not a completed victory.
-
-:::
+Cortex develops feeding and training while changing its army commitments. A town that looked quiet on the first scout visit can send warriors while you are constructing your own services. Keep supply and information current together.
 
 ## Choose ordinary Cortex
 
-In **Custom game**, put **You** and **AI → Cortex** on separate teams and choose **Standard** with experiments off. The selector displays **Medium (1601)**. That is an offline difficulty estimate, separate from online OpenSkill ratings and authoritative ranks.
+Open **Custom game**, give **You** and **AI → Cortex** separate colonies and teams, and choose **Standard** with experiments off. The observed browser selector calls this opponent **Cortex - Medium (1601)**. That number estimates an offline AI duel cohort; it is separate from an online player's rating.
 
-[[media:cortex-selection]]
+[[media:choosing-ai-roster-v3]]
 
-The ordinary Cortex opponent uses its built-in decision policy. Experimental learned policies are separate development options; this walkthrough uses the ordinary public selection. An imported save can preserve its own configuration, so start a fresh ordinary practice duel when comparing these observations.
+Use the ordinary built-in selection for this exercise. Experimental learned policies are separate development options. Start a fresh ordinary duel and save the opening with **Escape → Save** so that the configuration and first decisions are repeatable.
 
-Save the opening with **Escape → Save**. The map in this example started with seven workers, an explorer and existing defense towers. On another map, inspect the actual opening assets rather than assuming those towers or those totals will exist.
+:::note
+
+The setup panel is from the current browser game. The gameplay excerpt below is a **native 0.11.6.1 AI-versus-AI replay**, cyan Cortex against red Econo on a generated 128×128 River map. Both colonies are computer-controlled, and the spectator is watching Econo's settlement. It shows Cortex's units reaching this opponent; it does not record the human defense exercise or establish a general AI strength ranking.
+
+:::
 
 ## Establish supply before adding projects
 
-Build an inn with **B → I** beside reachable food and wood, then right-click out of placement. Wait for completion, select the inn and watch **Food**, **Inside** and **Working** through deliveries and meals. A foundation cannot feed the colony, and a full food buffer does not tell you how many globs can eat simultaneously.
+Find reachable wheat, wood and open ground. Build an inn with **B → I**, right-click out of placement and inspect the foundation's actual materials and staffing. Wait for completion and deliveries before adding several training projects. The [resources and hauling lesson](/learn/resources-and-hauling/) demonstrates the current construction and supply controls.
 
-In this duel the first inn completed with **Food 6/10** and **Working 2/2**. Barracks and hospital followed while warrior births were added to the swarm's worker production. A second inn was completed as the population grew.
+Read **Food**, **Inside** and **Working** separately. Stored food, simultaneous service places and attached workers answer different questions. Resume long enough to observe deliveries after meals, rather than treating one stocked frame as a permanent surplus.
 
-:::media-group
+Build only services you can supply. For a stalled project, inspect the missing ingredient, route, eligibility and actual worker messages. Adding a larger request cannot create an inaccessible resource. Shore-accessible algae can be collected without swimming; inspect the approach instead of assuming that a pond's appearance establishes access. Swimming is trained on individual globs over time.
 
-[[media:cortex-opening-food]]
+:::checkpoint
 
-[[media:cortex-opening-food-detail]]
-
-:::
-
-Build only services you can supply. The attempted school is a useful warning: it had **Wood 7/7**, **Algae 0/2**, and a message that workers could not access the needed resource. More workers or a higher request cannot make an unreachable delivery work.
-
-[[media:cortex-school-detail]]
-
-For a stalled project, inspect the missing ingredient, routes and worker eligibility. Release its unnecessary Working request while investigating. Shore-accessible algae can be harvested without swimming; a pond's appearance alone does not establish an accessible shore. A swimming pool also trains individual globs over time rather than instantly granting the colony a water route.
-
-## Scout development and the approach
-
-Use the opening explorer to inspect useful approaches. Place an exploration flag with **F → E**, then right-click out of placement. Move the request when it has answered the current question, and inspect revealed territory through the minimap. Your explorer's flying route does not prove ground warriors can take the same route.
-
-The first contact view showed cyan warriors approaching, a cyan war flag near the red approach, and a cyan hospital farther along the route. Those are reasons to inspect current enemy development and the local fight before committing defenders away from home.
-
-[[media:cortex-pressure]]
-
-:::media-group
-
-[[media:cortex-development]]
-
-[[media:cortex-development-detail]]
+Before increasing growth or warrior demand, complete the first inn and watch wheat replenish its Food store through meals. Release a competing construction request if it repeatedly empties. Save a supplied checkpoint before extending the town.
 
 :::
 
-The later scouting view recorded cyan barracks, hospitals, a school foundation, a swimming pool and an inn. The explorer was then lost; the red worker total also fell from nineteen to eighteen during continuing pressure. Remembered structures can stay visible after a scout disappears. Replace scouting before treating that view as current enemy-unit information.
+## Scout the opponent and the approach
 
-Cortex weighs food capacity, staffing, available resources and training when choosing development. It can build support and expand onto another food catchment when its current supply is strained. Schools, movement training and army services depend on actual eligibility; they are not a guaranteed fixed build sequence or a recipe you must copy.
+Produce a small explorer force while keeping food supplied. Place an exploration flag with **F → E**, cancel placement and inspect the requested count, **On the way** and **Here** after resuming. Move or remove the request when it has answered the current question.
 
-Its attacks also depend on known targets, force readiness and support distance. Waves can gather before marching, and new forces can form while older ones remain committed. A flag moving is a request changing, not proof that every warrior arrived together or that the previous force disappeared.
+Look for additional swarms, completed training, inns and healing along the approach. Revisit the opponent before choosing a target. Remembered structures can remain after current vision is lost, and an explorer's flying route does not prove that ground warriors can follow it.
 
-Do not rely on food pressure making the opponent passive. An established starving Cortex colony can attempt a more urgent attack. Serious damage at home can trigger defense, while minor harassment during an offensive commitment may not immediately recall its force. These are conditional tendencies: inspect the units and actual outcome before attributing a quiet interval to one cause.
+In the native replay at **11:09**, cyan Cortex warriors are among red Econo's services. Attack notifications and depleted red health bars make the contact visible. The excerpt continues that same encounter at normal replay speed.
+
+[[media:econo-pressure-hd-v2]]
+
+[[media:econo-cortex-pressure-motion-hd-v2]]
+
+Follow where the units gather and where service access remains. The spectator's Econo panel describes Econo; it does not expose Cortex's exact food stocks. One encounter also cannot show every stage of Cortex's attack planning.
+
+## Recognize conditional development
+
+In native 0.11.6.1's built-in policy, Cortex adjusts worker production to staffing demand and adds warriors as its economy develops. Food, spare labor, usable resources and training eligibility affect development. Treat these as reasons to inspect current services and units, rather than a fixed build order you must copy.
+
+Its attacks consider known targets, force readiness and support distance. Successive waves can gather before marching; a changed flag request does not mean every unit has already arrived. Forward food and healing can support a longer approach when the policy can establish them.
+
+Do not assume that food trouble makes the opponent passive. An established starving Cortex colony can attempt an urgent attack. Serious danger at home can call a force back, while minor harassment during an existing offensive commitment may leave that commitment in place.
 
 ## Keep the home defense usable
 
-When the colony already has a useful defending force, pause new demand before deciding to grow further:
+Pause a local practice to inspect the following choices, then resume and observe their effects:
 
-1. Select the swarm and set all **Worker**, **Explorer** and **Warrior** birth weights to zero for this exercise. Reduce its **Working** request to zero too. Birth weights govern future units; they do not change existing workers into warriors. A reduced hauling request alone can still leave births spending stored food.
-2. Keep both inns, the barracks and hospital reachable. Inspect actual occupants, stocks and HP rather than judging service readiness from the sprite.
-3. Paint a compact **Guard area** with **A → G** on the approach near meals and healing, then right-click when finished. Guard attraction helps idle warriors; it does not override an existing war-flag assignment or guarantee an evenly spaced line.
-4. Resume and check whether contact continues, supplies remain available, and defenders can return for services.
+1. Select the swarm and adjust the **Worker**, **Explorer** and **Warrior** birth weights to demand you can feed. A zero weight changes future role allocation; an already pending birth can still finish. It does not transform or remove existing globs. A zero hauling request alone can still leave stored food available for births.
+2. Keep inns, training and healing reachable. Inspect real stocks, occupants, HP and unit abilities. A completed barracks is not proof that every warrior has trained.
+3. Paint a compact **Guard area** with **A → G** near the approach, meals and healing, then cancel painting. Check the actual defending units after resuming. Guard attraction does not override every other assignment or guarantee an evenly spaced line.
+4. Watch contact, deliveries, food stores and service visits together. Wounded or hungry warriors can leave their assignment for services; a request count is not an arrival count.
 
-[[media:cortex-growth-detail]]
-
-[[media:cortex-defense]]
-
-The red colony had nineteen workers and eighteen warriors before this change. After the observed defense interval, both inns had **Food 10/10**: one held three occupants and the other four. The hospital had two occupants, and the eighteen-warrior total was still present. Those are useful signs that services remained available during the local hold; they do not prove every defender was healthy or an indefinite defense was established.
-
-[[media:cortex-food-after-detail]]
-
-[[media:cortex-hospital-detail]]
-
-[[media:cortex-hold-clip]]
-
-The silent clip follows the home meal cycle after the local hold. Read the written steps alongside it: preserve services, inspect real arrivals and injuries, and check the resulting food and unit totals. Saving the functioning checkpoint lets you compare a later decision without reconstructing the opening.
+Use [defending your colony](/learn/defending-your-colony/) for the full defense workflow. Reduce new growth or an unnecessary construction commitment if it competes with the meals keeping the existing force usable.
 
 ## Inspect again before a counterattack
 
-A supplied hold creates time to choose the next operation. Scout current enemy services, the ground approach and the location of defenders. Inspect a real warrior's food, health and training before assigning the force; a completed barracks is not evidence that every warrior has finished training.
+A supplied hold gives you time to choose the next operation. Scout the current enemy approach, services and defenders. Select a real warrior to check food, health and training, then inspect the force's route to meals and healing.
 
-A reachable, valuable target is only part of readiness. The force must gather, travel, fight and still reach meals or healing. Use [Organizing an attack](/learn/organizing-an-attack/) to plan a limited commitment and watch actual arrivals. Reassess when survivors return instead of immediately sending the same request out again.
+Choose a limited, reachable target. Use [organizing an attack](/learn/organizing-an-attack/) to follow actual arrivals and reassess survivors rather than immediately renewing the same request. Save a functioning checkpoint so that changing one decision does not require rebuilding the opening.
 
 | What you see | What to inspect | Next useful action |
 | --- | --- | --- |
-| A school remains unfinished | Missing algae, reachable shore and eligibility messages | Release competing requests and establish a real delivery route |
-| Full inns but defenders keep leaving | Food, Inside, trips and the position of the guard request | Keep service access close and observe through a meal cycle |
-| Cyan services appear along the route | Fresh scouts, defenders and ground access | Update the approach before choosing a target |
-| Pressure seems to stop briefly | Current units, flags and your own service use | Save and inspect; do not assume the opponent surrendered |
-| A new commitment arrives piecemeal | Actual Here/On the way counts and medical trips | Gather or reduce the commitment before renewing it |
+| A service remains unfinished | Missing material, reachable supply and worker messages | Release competing requests and establish a real delivery route |
+| Stocked inns but defenders keep leaving | Individual food, injuries, occupants and trips | Keep useful services close and observe through meals and healing |
+| Cyan units reach buildings beyond the first scout view | Current vision, ground approach and local defenders | Update the approach before choosing a target |
+| Pressure seems to stop briefly | Current units, flags and service use | Save and inspect before treating the interval as safety |
+| A commitment arrives piecemeal | Actual Here/On the way counts and medical trips | Gather or reduce the commitment before renewing it |
 
-Different rules change the exercise. No hunger removes ordinary feeding pressure, no resource growth prevents waiting for seed regrowth, and peaceful play removes ordinary combat. Return to [Keep the colony fed](/learn/sustainable-food/) or [Recovering your colony](/learn/recovering-your-colony/) if the supporting economy fails before another operation.
+Different rules change this exercise. No hunger removes ordinary feeding pressure, no resource growth changes whether waiting can restore a food catchment, and peaceful play removes ordinary combat. Return to [keeping the colony fed](/learn/sustainable-food/) or [recovering your colony](/learn/recovering-your-colony/) if the supporting economy fails before the next operation.

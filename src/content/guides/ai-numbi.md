@@ -1,104 +1,110 @@
 ---
 title: "Facing Numbi: use the quiet opening"
-description: "Read Numbi's developing colony, prepare food and trained defenders, and learn from a defense that began too late."
+description: "Scout Numbi's staged development and prepare supplied, trained defenders before the first contact."
 locale: "en"
 tags: ["AI", "Numbi", "practice", "defense"]
 order: 2
 group: "ai"
 format: "profile"
 prerequisites: ["getting-started", "choosing-an-ai"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
-sources: [{"title":"Numbi decisions and progression","url":"https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/numbi/AINumbi.cpp"},{"title":"Numbi economy","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/ai/numbi"},{"title":"Training and building requirements","url":"https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings"}]
+sources:
+  - title: "Current browser Numbi panel, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Native 0.11.6.1 Numbi progression"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/numbi/AINumbi.cpp"
+  - title: "Native 0.11.6.1 Numbi economy"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/numbi/AINumbiEconomy.cpp"
+  - title: "Native 0.11.6.1 Numbi attack management"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/ai/numbi/AINumbiMilitary.cpp"
 ---
 
-Numbi develops its colony in stages. Its early emphasis on food and workers gives you a useful exercise: establish your own supply, scout its development, and prepare a defense while the map still feels quiet. Later, it shifts toward warriors and sends groups toward enemy buildings.
+Numbi develops in stages: its native 0.11.6.1 policy first emphasizes workers and feeding, adds services and training, then increases military production. Use an apparently quiet opening to prepare. A colony that has food and several buildings is not automatically ready to defend them.
 
-Do not treat a quiet opening as a promise of safety. This lesson follows a practice duel in which the human colony developed services but postponed its army. Numbi's first pressure exposed that mistake, and a tower started during the fight did not save the colony.
+This lesson separates a human practice exercise from a current native replay showing that progression. The replay does not demonstrate a human victory or defeat, and its timestamps are not a countdown you can safely copy.
 
-## Start a useful practice match
+## Start a repeatable practice match
 
-Use [Choosing an AI opponent](/learn/choosing-an-ai/) to create a two-colony duel. Set your controller to **You**, the other to **AI → Numbi**, keep separate teams, and use **Standard** rules. Pause with **P** when inspecting panels.
+Create a two-colony duel through [choosing an AI](/learn/choosing-an-ai/). Select **You** for your colony, **AI → Numbi** for the other, separate teams and **Standard** rules. Leave experiments off while learning ordinary food, labor and training.
 
-The illustrated match used **Breachable highlands**, a generated **128 × 128** map. Its resource rings, lakes and passages gave scouts useful terrain to reveal. Your generated layout may differ: find food, trees and a walkable approach before copying a placement.
+[[media:choosing-ai-info-v3]]
 
-[[media:numbi-setup]]
+Save the opening. Use local pause while inspecting a panel, then resume to test deliveries and arrivals. Inspect reachable wheat, trees, clear land and the approach before choosing a building position; a generated landscape can change all four.
 
 :::checkpoint
 
-Give yourself three checkpoints: a colony that can feed itself, useful information about Numbi, and defenders whose training you have actually inspected. Save the opening so you can repeat one decision instead of rebuilding the entire experiment.
+Give yourself three checkpoints: meals that remain supplied, a current view of Numbi's development, and defenders whose actual training and arrival you have inspected. Save before changing a production or defense decision so you can repeat that one choice.
 
 :::
 
-## Establish food before adding demands
+## Keep food ahead of new demands
 
-Build an inn on clear land with access to wheat and construction wood. Inspect its foundation while workers deliver wood; after completion, check **Food**, **Inside**, and **Working** separately. Resume long enough to see meals and deliveries.
+Build a reachable inn and inspect its foundation. Construction wood and attached workers explain whether it can finish; the completed inn's Food and Inside readings explain a different service. Use [resources and hauling](/learn/resources-and-hauling/) for a current illustrated construction/supply exercise.
 
-Keep some workers producing and some supplying food. Add another inn when meals and deliveries show a need, rather than because the colony has reached an arbitrary age. An empty food stock, an overfull service, and a long delivery route need different corrections.
+Watch meals and deliveries after globs start using the service. Add another inn when occupancy, stock and route length show a need. An empty stock, crowded service and long delivery route are different problems.
 
-In this match, the colony completed an inn, produced explorers, then returned the swarm to worker production. A school, barracks, second inn and hospital followed. These buildings existed before contact, but that alone did not make the defense ready.
+Preserve worker production while supplying swarms and inns. A school, barracks or hospital competes for builders and materials before it can help. Several unfinished projects can delay all of them. A hospital provides recovery; it does not replace meals or make an untrained force ready.
+
+## Watch the military commitment change
+
+The following scenes come from **native 0.11.6.1**, red **Numbi AI** against cyan **Castor AI**, on a generated 128×128 River map. Both colonies are computer-controlled. They illustrate this episode's development, separately from the browser setup and your human exercise.
+
+At **5:38**, Numbi's top bar shows **zero warriors** while workers and services are already present.
+
+[[media:numbi-opening-hd-v2]]
+
+At **7:58**, the same watched colony has **ten warriors**. The top-bar detail reads **7 available / 10 total**: a total does not mean every unit can immediately answer a new request.
 
 :::media-group
 
-[[media:numbi-services]]
+[[media:numbi-readiness-hd-v2]]
 
-[[media:numbi-hospital-detail]]
-
-:::
-
-A hospital provides recovery. It does not replace an inn or make an outnumbered army win. Keep food routes and service access usable while developing military production.
-
-## Scout the change in Numbi's colony
-
-Produce a few explorers, then restore enough worker production to sustain your own growth. Use the minimap to inspect revealed territory. If you place an exploration flag, choose a location that answers a useful question: where is the opponent, which route approaches it, or what development can you see?
-
-[[media:numbi-scouted]]
-
-The scouts in this duel revealed schools, upgraded hospitals, a barracks and a tower around Numbi's swarm. That was a reason to prepare for developed opposition. A visible barracks does not tell you how many warriors have completed training; keep watching units and routes as well as buildings.
-
-Watch whether your information is still current. When explorers disappear or leave the area, remembered structures can remain on the map. In this match the explorer count eventually fell to zero. The familiar outline of Numbi's colony was no longer a live view of its army.
-
-Move a risky scouting assignment, replace losses deliberately, and avoid sending every new explorer back into the same danger without checking what changed. Preserve a food economy while gathering information.
-
-## Prepare units, then check readiness
-
-Numbi's progression moves from workers and services through development and limited military production, then toward a much larger warrior share. Its attacks depend on available fighting force and its attack controller. There is no useful universal countdown to memorize: map access, food, development and the speed at which you run the game affect what you encounter.
-
-Use the quiet period to make readiness visible:
-
-1. Finish a barracks where warriors can reach it.
-2. Set a nonzero warrior production weight at your swarm while preserving the workers your supplies need.
-3. Resume and confirm that warriors are born and actually train. Inspect a unit's abilities; the presence of a barracks is not its training record.
-4. Check Food and meal access again as the population grows.
-5. Choose where defenders should gather and how injured or hungry units can return to services.
-
-Watch the warrior total and availability separately. Units already fighting, training or using services cannot all answer a fresh request immediately. A flag requests eligible units; it does not create an army.
-
-## What the late defense showed
-
-:::media-group
-
-[[media:numbi-first-pressure]]
-
-[[media:numbi-pressure-detail]]
+[[media:numbi-warriors-detail-hd-v2]]
 
 :::
 
-[[media:numbi-first-pressure-clip]]
+The native policy and these observations explain why the first quiet scout visit is insufficient. They do not establish when Numbi will reach your particular colony. Routes, supplies, development and the selected game speed all affect what you encounter.
 
-Cyan warriors reached the human colony's food routes. Red had six warriors in total, with only three shown as available at the captured moment. The swarm, two inns, school, barracks and hospital were still standing. This was already a fight inside the colony.
+[[media:numbi-town-motion-hd-v2]]
 
-The response placed a war flag near contact and began a defense tower. That response came too late. The attacking group destroyed the swarm, both inns, the school and the new tower while fighting continued around the remaining barracks and hospital.
+This short recording shows ordinary playback of the native town as globs move among its services. It does not show a human defensive hold or prove that every visible warrior has completed training.
 
-[[media:numbi-after-pressure]]
+## Keep scouting useful and current
 
-This comparison teaches a concrete warning: starting a defensive project after attackers reach your food and production buildings can leave the builders, supplies and fighting force under pressure at once. The late tower was a failed response in this duel. Do not copy it as a winning emergency recipe.
+Produce a small number of explorers without abandoning meals, then return to the production mix you can supply. Send an exploration flag to answer a question: where is Numbi developing, what ground route approaches the town, or which training and defensive buildings can you see?
 
-When contact begins, pause briefly to inspect the threatened buildings, defender positions and remaining services. Reduce unrelated work, keep essential supply requests staffed, and respond with units and structures you can actually use. If food or production has already been lost, reassess what can be rebuilt safely instead of continuing the old expansion plan.
+Check the flag's request and actual arrivals. Move or remove a request once it has answered the question. If scouts disappear or leave, remembered structures are earlier sightings; they do not reveal every current defender.
 
-## Repeat the decision, not the mistake
+Revisit Numbi after building your own services. Look for completed training, upgrades and new military units rather than assuming the first arrangement persists. A visible barracks is a reason to inspect units and routes, not proof of an army's size or level.
 
-Load your earlier save or start another Numbi duel. Before the colony becomes crowded with projects, complete warrior training and inspect the approach. Save that state too. Compare what happens when defenders are ready before contact with the late response shown here.
+## Make your own readiness visible
 
-If Numbi withdraws or stops sending a group, use the breathing room to check food, replace losses and scout again. Its attack controller can end an assault after losses and require more force for the next one. A pause in pressure does not establish that the opponent has stopped developing.
+Use the opening to verify each step:
 
-Your practice goal is to explain the difference between a stocked colony, a developed colony and a defended colony. Keep those three conditions working together before experimenting with an attack of your own.
+1. Finish a barracks that your warriors can reach.
+2. Set a nonzero warrior production weight while retaining the workers needed for meals and construction.
+3. Resume and confirm that warriors are born. Changing a production weight does not train existing globs or instantly create a defender.
+4. Let eligible units use training; select an individual warrior and inspect its abilities afterward.
+5. Check food and a route to healing as population and military demand grow.
+6. Choose a compact gathering point, set the flag's request and minimum level appropriately, then compare On the way with Here after resuming.
+
+Units fighting, training or using services cannot all answer another request immediately. A flag allocates eligible globs; it does not create an army. If a raw unit is held at a flag instead of training, reduce or remove that assignment and check whether it returns to the needed service.
+
+## Respond to contact with usable support
+
+When rival units reach home, inspect what they threaten: a food route, occupied inn, production building or exposed defender. Reduce unrelated work, preserve essential supply and use units and structures that are already ready.
+
+A tower foundation started during contact still needs materials and builders. Treat it as a construction commitment, rather than a substitute for defenders already on the approach. If production or feeding has been lost, reassess what can be rebuilt safely before repeating the old expansion plan.
+
+The native Population history after the recording shows Numbi growing to a sampled **40**. Compare that history with the current unit counts and the services supporting them. Both colonies remain AI-controlled; this is one recorded episode, rather than a ranking or a human defensive result.
+
+[[media:numbi-history-hd-v2]]
+
+The replay ends at its configured **13:53** duration. “Replay Ended” alone does not identify a winning colony. In your practice, read the actual result reason and the selected [victory rules](/learn/victory-and-rules/).
+
+## Repeat the decision
+
+Load the saved opening. Improve one choice: finish training earlier, inspect the approach sooner, or release a competing construction request. Resume and compare actual food deliveries, trained units and arrivals with your previous attempt.
+
+If an attack withdraws, use the breathing room to recover and scout again. Numbi's native attack controller can end an assault after losses and require more force for another attempt; an interval without pressure does not mean development has stopped.
+
+Your goal is to explain the difference between a stocked colony, a developed colony and a defended colony, then keep those conditions working together before attempting an attack of your own.

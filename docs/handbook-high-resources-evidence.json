@@ -1,0 +1,320 @@
+{
+  "observed": "2026-11-18",
+  "context": "Actual prepared Food supply practice lesson in current public browser0.11.6.0, no Standard/Numbi claim.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "sourceRevision": null,
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 41.397,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureRecord": "current-controls-food-high-2/capture.json",
+  "captureRecordSha256": "11575e06ee5821333d6fb4a0c85eb798679de9c11283da9f8edada45b950535c",
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 79,
+  "assets": [
+    {
+      "candidate": "resources-foundation-v3.webp",
+      "original": "resources-inn-foundation.png",
+      "originalSha256": "304d9099d2a8c889a78cffb9dea7aa1b8c98d67882def29fb5b566aa7aa64951",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 223014,
+      "sha256": "042295fcdd37f4abb4953a41ff201ab7833153f13f0bbc96f4579a5432e7d36e",
+      "tick": 2513,
+      "caption": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "alt": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3."
+    },
+    {
+      "candidate": "resources-foundation-detail-v3.webp",
+      "original": "resources-inn-foundation.png",
+      "originalSha256": "304d9099d2a8c889a78cffb9dea7aa1b8c98d67882def29fb5b566aa7aa64951",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 5628,
+      "sha256": "1dbcfeba526590820f37090e4d844e6f64b608e25ba26da6337dc3dab5443559",
+      "tick": 2513,
+      "caption": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "alt": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3."
+    },
+    {
+      "candidate": "resources-construction-v3.webp",
+      "original": "resources-construction-4.png",
+      "originalSha256": "9ff346214dbaa42709f61e3df6824dd9b8e883e7b6fb88c9fe70f8b82a925aa9",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 228022,
+      "sha256": "c251f128459e17e0e5e282d98c25a4c04c5f33a82a716e2b8a669766d9ced327",
+      "tick": 3083,
+      "caption": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "alt": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3."
+    },
+    {
+      "candidate": "resources-construction-detail-v3.webp",
+      "original": "resources-construction-4.png",
+      "originalSha256": "9ff346214dbaa42709f61e3df6824dd9b8e883e7b6fb88c9fe70f8b82a925aa9",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 5792,
+      "sha256": "3793a89944b3248da3db0699083544df2907be4d88309fe25c20c3d44d9ef6d0",
+      "tick": 3083,
+      "caption": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "alt": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3."
+    },
+    {
+      "candidate": "resources-stocked-v3.webp",
+      "original": "resources-supplied-inn-paused.png",
+      "originalSha256": "f97293a145584be55795bb46b1781cc3ca899883ceba4240007a804f4b9e64b0",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 215168,
+      "sha256": "9603aa4efb77319c0711f3f4056e92365e91af190ca2dbac2d8ab3a70d86d8f5",
+      "tick": 3520,
+      "caption": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "alt": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion."
+    },
+    {
+      "candidate": "resources-stocked-detail-v3.webp",
+      "original": "resources-supplied-inn-paused.png",
+      "originalSha256": "f97293a145584be55795bb46b1781cc3ca899883ceba4240007a804f4b9e64b0",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 7140,
+      "sha256": "4c62cc502eca9c0f7e3cfc8a2eac5464a3e8d5c52ac6df6f139fcb431d9a6016",
+      "tick": 3520,
+      "caption": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "alt": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion."
+    },
+    {
+      "candidate": "hauling-construction-clip-v3.mp4",
+      "kind": "video",
+      "sha256": "a976c3ee7ea823b60d62781e38743c69e1cb93623d884dc1771a42567412fe86",
+      "bytes": 6259821,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-four seconds of normal-speed material delivery, Inn construction and initial food stocking in the prepared Food supply practice lesson.",
+      "alt": "Workers haul materials to the selected Inn, complete construction and begin supplying food.",
+      "durationSeconds": 34,
+      "posterCandidate": "hauling-construction-poster-v3.webp"
+    },
+    {
+      "candidate": "hauling-construction-poster-v3.webp",
+      "kind": "image",
+      "sha256": "32f004e56f4d195c27761007c429c00a9a3bc0d5e7466a6bc5a1d11806f14ff4",
+      "bytes": 182152,
+      "width": 1440,
+      "height": 900,
+      "caption": "Opening frame of the current construction and initial supply recording.",
+      "alt": "New Inn foundation visible before normal simulation resumes."
+    }
+  ],
+  "treatment": "Full genuine frame or declared crop[left,top,right,bottom], WebP92method6. Video H264CRF21 yuv420p1440x90025fps silent, continuous excerpt without temporal rescaling.",
+  "motion": {
+    "source": "page@0cb6bcbb73631309e322f1f08ca98309.webm",
+    "sourceSha256": "e3eda688aabbe0ade4ba976d9e3937a0b603b9a596f9db395fb1b37286052b8d",
+    "rangeSeconds": [
+      153,
+      187
+    ],
+    "durationSeconds": 34,
+    "note": "Video source timestamps; action-record timestamps have browser-startup offset. Reviewed decoded frames determine the actual visual interval. No individual worker full meal/return cycle claimed."
+  },
+  "limits": [
+    "Construction progress still was captured during normal simulation at3083; final supplied still paused at3520. Each asset records its own actual tick.",
+    "The clip reaches initial stocking; its sampled33second frame showsFood6/10. The separately captured finalstill is paused3520 withFood6/10,Inside0/4,Working2/2, and is not an identified-worker meal cycle.",
+    "No identified-worker full consumption loop or controlled near/far comparison demonstrated."
+  ],
+  "scenario": "scripts/handbook-scenarios/core/controls-and-food.mjs",
+  "scenarioSha256": "db8ae4646d38471a5ea816fe09211370144ce4c933d68b774a6438124c92cddf",
+  "registeredAssets": [
+    {
+      "sha256": "042295fcdd37f4abb4953a41ff201ab7833153f13f0bbc96f4579a5432e7d36e",
+      "bytes": 223014,
+      "width": 1440,
+      "height": 900,
+      "caption": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "alt": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "id": "hauling-foundation-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-foundation-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-foundation-v3.webp"
+    },
+    {
+      "sha256": "1dbcfeba526590820f37090e4d844e6f64b608e25ba26da6337dc3dab5443559",
+      "bytes": 5628,
+      "width": 192,
+      "height": 300,
+      "caption": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "alt": "A new Inn foundation in the prepared Food supply practice colony: HP 1/200, Working 0/3 and Wood 0/3.",
+      "id": "hauling-foundation-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-foundation-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-foundation-detail-v3.webp"
+    },
+    {
+      "sha256": "c251f128459e17e0e5e282d98c25a4c04c5f33a82a716e2b8a669766d9ced327",
+      "bytes": 228022,
+      "width": 1440,
+      "height": 900,
+      "caption": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "alt": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "id": "hauling-construction-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-construction-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-construction-v3.webp"
+    },
+    {
+      "sha256": "3793a89944b3248da3db0699083544df2907be4d88309fe25c20c3d44d9ef6d0",
+      "bytes": 5792,
+      "width": 192,
+      "height": 300,
+      "caption": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "alt": "Construction has advanced to HP 135/200 with Working 1/3 and Wood 2/3.",
+      "id": "hauling-construction-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-construction-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-construction-detail-v3.webp"
+    },
+    {
+      "sha256": "9603aa4efb77319c0711f3f4056e92365e91af190ca2dbac2d8ab3a70d86d8f5",
+      "bytes": 215168,
+      "width": 1440,
+      "height": 900,
+      "caption": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "alt": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "id": "hauling-delivered-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-delivered-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-delivered-v3.webp"
+    },
+    {
+      "sha256": "4c62cc502eca9c0f7e3cfc8a2eac5464a3e8d5c52ac6df6f139fcb431d9a6016",
+      "bytes": 7140,
+      "width": 192,
+      "height": 300,
+      "caption": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "alt": "The new Inn is complete and supplied: HP 200/200, Food 6/10, Inside 0/4 and Working 2/2. The lesson reports completion.",
+      "id": "hauling-delivered-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-delivered-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-delivered-detail-v3.webp"
+    },
+    {
+      "sha256": "a976c3ee7ea823b60d62781e38743c69e1cb93623d884dc1771a42567412fe86",
+      "bytes": 6259821,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-four seconds of normal-speed material delivery, Inn construction and initial food stocking in the prepared Food supply practice lesson.",
+      "alt": "Workers haul materials to the selected Inn, complete construction and begin supplying food.",
+      "id": "hauling-construction-clip-v3",
+      "kind": "video",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-construction-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-construction-clip-v3.mp4",
+      "poster": "hauling-construction-poster-v3"
+    },
+    {
+      "sha256": "32f004e56f4d195c27761007c429c00a9a3bc0d5e7466a6bc5a1d11806f14ff4",
+      "bytes": 182152,
+      "width": 1440,
+      "height": 900,
+      "caption": "Opening frame of the current construction and initial supply recording.",
+      "alt": "New Inn foundation visible before normal simulation resumes.",
+      "id": "hauling-construction-poster-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/resources-and-hauling/hauling-construction-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/resources-and-hauling/hauling-construction-poster-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "hauling-foundation-v3",
+      "status": 200,
+      "bytes": 223014,
+      "sha256": "042295fcdd37f4abb4953a41ff201ab7833153f13f0bbc96f4579a5432e7d36e"
+    },
+    {
+      "id": "hauling-foundation-detail-v3",
+      "status": 200,
+      "bytes": 5628,
+      "sha256": "1dbcfeba526590820f37090e4d844e6f64b608e25ba26da6337dc3dab5443559"
+    },
+    {
+      "id": "hauling-construction-v3",
+      "status": 200,
+      "bytes": 228022,
+      "sha256": "c251f128459e17e0e5e282d98c25a4c04c5f33a82a716e2b8a669766d9ced327"
+    },
+    {
+      "id": "hauling-construction-detail-v3",
+      "status": 200,
+      "bytes": 5792,
+      "sha256": "3793a89944b3248da3db0699083544df2907be4d88309fe25c20c3d44d9ef6d0"
+    },
+    {
+      "id": "hauling-delivered-v3",
+      "status": 200,
+      "bytes": 215168,
+      "sha256": "9603aa4efb77319c0711f3f4056e92365e91af190ca2dbac2d8ab3a70d86d8f5"
+    },
+    {
+      "id": "hauling-delivered-detail-v3",
+      "status": 200,
+      "bytes": 7140,
+      "sha256": "4c62cc502eca9c0f7e3cfc8a2eac5464a3e8d5c52ac6df6f139fcb431d9a6016"
+    },
+    {
+      "id": "hauling-construction-clip-v3",
+      "status": 200,
+      "bytes": 6259821,
+      "sha256": "a976c3ee7ea823b60d62781e38743c69e1cb93623d884dc1771a42567412fe86"
+    },
+    {
+      "id": "hauling-construction-poster-v3",
+      "status": 200,
+      "bytes": 182152,
+      "sha256": "32f004e56f4d195c27761007c429c00a9a3bc0d5e7466a6bc5a1d11806f14ff4"
+    }
+  ],
+  "publicationQualification": "Exact reviewed output bytes were immutable-uploaded and freshly public GET verified. Matching source and two independent rendered/integration rounds are approved. Required release CI and production publication remain pending; earlier objects retain original provenance."
+}

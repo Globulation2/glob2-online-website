@@ -249,7 +249,7 @@
       "bytes": 66584,
       "width": 1440,
       "height": 900,
-      "caption": "The current built-in opponent roster lists eight named opponents plus Inactive; Econo is Econo - Easy (1310).",
+      "caption": "The current built-in opponent roster lists eight named opponents plus Inactive.",
       "alt": "The current AI selector lists Numbi, Castor, Econo, Warrush, Cortex, Nicowar, Cabino, Maxima and Inactive.",
       "kind": "image"
     },
@@ -466,5 +466,6 @@
       "bytes": 299138,
       "sha256": "0270721e64af0ce7fd929a32c2e5f6606f006786f2550bb24d8076732b7e56be"
     }
-  ]
+  ],
+  "captionRevision": "The shared roster caption is generic for reuse across opponent chapters; original image bytes, crop and SHA remain unchanged."
 }

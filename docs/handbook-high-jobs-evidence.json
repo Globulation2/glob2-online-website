@@ -1,0 +1,313 @@
+{
+  "observed": "2026-11-18",
+  "context": "Actual prepared Guard zones and flag tactics lesson in current public browser0.11.6.0. All4goals completed through genuine UI input and normal simulation.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "sourceRevision": null,
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 42.621,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureRecord": "current-guard-high-2/capture.json",
+  "captureRecordSha256": "38b3212b7dd840517504540dc71f063157db0351eaafacb1a2d7defca836e675",
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 135,
+  "scenario": "scripts/handbook-scenarios/core/guard-practice.mjs",
+  "scenarioSha256": "e695a55c38346810fe6ddea91f4f166542f3b733682691818c0b340daaf86e60",
+  "assets": [
+    {
+      "candidate": "jobs-war-request-v3.webp",
+      "original": "jobs-war-arrivals.png",
+      "originalSha256": "253458f5b92e145e4878f62bb413e89077ac5915c711c40966ce0fc43d617268",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 137158,
+      "sha256": "ae2833952b20bc5ef2819acdc07e65ab7c4a9e65a31d5becd94e2e58c6582ef7",
+      "tick": 6854,
+      "caption": "After real scout, guard and defence tasks, three warriors have reached the War flag in Guard zones and flag tactics.",
+      "alt": "The War flag shows On the way 0, Here 3, Working 3/3, high priority, Range 4 and minimum level 1."
+    },
+    {
+      "candidate": "jobs-war-detail-v3.webp",
+      "original": "jobs-war-arrivals.png",
+      "originalSha256": "253458f5b92e145e4878f62bb413e89077ac5915c711c40966ce0fc43d617268",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 7592,
+      "sha256": "01cb50ed17a8c362428eac7613cecc633317d5e4e6fbaa8fae747d1df587c3a0",
+      "tick": 6854,
+      "caption": "The same selected War flag, enlarged for its request and range controls.",
+      "alt": "War flag panel with Here 3, Working 3/3, high priority, Range 4 and minimum required level 1."
+    },
+    {
+      "candidate": "jobs-guard-area-v3.webp",
+      "original": "jobs-guard-painted.png",
+      "originalSha256": "100be50c2aa380ce5a13844b91089dfe307dbb82cd50c7107fac939f4ffd76bb",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 202498,
+      "sha256": "bace4f1398bd421e0150ddccaa32b82b2c58cd283c1dea65204e09437e7cc613",
+      "tick": 1437,
+      "caption": "Four Guard tiles were painted at the lesson destination while paused, using A then G.",
+      "alt": "A small blue 2×2 Guard patch is visible at the destination; the area brush sidebar is open."
+    },
+    {
+      "candidate": "jobs-guard-detail-v3.webp",
+      "original": "jobs-guard-painted.png",
+      "originalSha256": "100be50c2aa380ce5a13844b91089dfe307dbb82cd50c7107fac939f4ffd76bb",
+      "crop": [
+        1248,
+        184,
+        1440,
+        424
+      ],
+      "width": 192,
+      "height": 240,
+      "bytes": 5510,
+      "sha256": "94c16fd1c11bfb1fb0211f08f269d014757988da72fe5d1f1fa72e5c2af952f3",
+      "tick": 1437,
+      "caption": "The genuine Guard-area brush panel used for the painted patch.",
+      "alt": "Guard-area tool with adding/removing controls and brush choices."
+    },
+    {
+      "candidate": "jobs-exploration-v3.webp",
+      "original": "jobs-scout-after-normal-simulation.png",
+      "originalSha256": "87775a9e48563bec5af7ca9bae846dcd1b8c3f4a13c0765e9cf78083b7f4397e",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 139972,
+      "sha256": "05cf1acf3871e044df69b353df3782d4e441be4edcff5a4cdafea58d0f4cadda",
+      "tick": 1437,
+      "caption": "The Exploration flag request was reduced from 2 to 1 and range from 10 to 4 before resuming. One explorer has now arrived and the lesson advanced to Guard preparation.",
+      "alt": "Selected Exploration flag: On the way 0, Here 1, Working 1/1, Range 4, any explorer filter."
+    },
+    {
+      "candidate": "jobs-exploration-detail-v3.webp",
+      "original": "jobs-scout-after-normal-simulation.png",
+      "originalSha256": "87775a9e48563bec5af7ca9bae846dcd1b8c3f4a13c0765e9cf78083b7f4397e",
+      "crop": [
+        1248,
+        184,
+        1440,
+        464
+      ],
+      "width": 192,
+      "height": 280,
+      "bytes": 8274,
+      "sha256": "c52193fc30d59b4883a834cac9fad8c6ca7e175b553d17b1a2e43479a6bda1ee",
+      "tick": 1437,
+      "caption": "The Exploration flag request was reduced from 2 to 1 and range from 10 to 4 before resuming. One explorer has now arrived and the lesson advanced to Guard preparation.",
+      "alt": "Exploration flag panel with Working 1/1, Range 4, On the way 0 and Here 1."
+    },
+    {
+      "candidate": "jobs-guard-removing-v3.webp",
+      "original": "jobs-guard-one-tile-removed.png",
+      "originalSha256": "f47adf295f3dd6117cd37aed6e8fbba41ea6f5abc2d1083eddb7344468cbecd9",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 134430,
+      "sha256": "4b638bc4de5435e29717415edc369826e9043b446e57c2ab5e33003a170add12",
+      "tick": 6854,
+      "caption": "After lesson completion, A then D removed one of the Guard tiles while paused.",
+      "alt": "One tile of the blue Guard patch is absent and the removing-area control is selected."
+    },
+    {
+      "candidate": "jobs-guard-restored-v3.webp",
+      "original": "jobs-guard-restored.png",
+      "originalSha256": "bc3ec54a31dcc581245bf8eb794730b8a8e5e5ed2f97f41b079fa478ea921cb8",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 134606,
+      "sha256": "3a4f42ff63c315f68d1c253d99d05a45a5ea6794719f322813bbfed803c43cec",
+      "tick": 6854,
+      "caption": "A then A returned to adding and restored the same Guard tile.",
+      "alt": "The 2×2 Guard patch is restored while the completed lesson remains paused."
+    }
+  ],
+  "treatment": "Full genuine frames or declared crops[left,top,right,bottom], RGB WebP92method6. No paint or state injection.",
+  "limits": [
+    "Exploration request/range reduced before actual travel; selected arrival frameHere1/Onway0 replaces formerfallbacktravel-frameHere0/Onway1.",
+    "Only actual demonstrated Exploration/Guard/War and single-tile add/remove behavior qualified; no claim of tested Clearing, Forbidden, Farm, drag painting or stricter filters.",
+    "First High attempt was interrupted after discovering a delayed unacknowledged briefing and is excluded; this135eventrun settled/acknowledged the actual briefing and completed."
+  ],
+  "registeredAssets": [
+    {
+      "sha256": "ae2833952b20bc5ef2819acdc07e65ab7c4a9e65a31d5becd94e2e58c6582ef7",
+      "bytes": 137158,
+      "width": 1440,
+      "height": 900,
+      "caption": "After real scout, guard and defence tasks, three warriors have reached the War flag in Guard zones and flag tactics.",
+      "alt": "The War flag shows On the way 0, Here 3, Working 3/3, high priority, Range 4 and minimum level 1.",
+      "id": "jobs-war-request-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-war-request-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-war-request-v3.webp"
+    },
+    {
+      "sha256": "01cb50ed17a8c362428eac7613cecc633317d5e4e6fbaa8fae747d1df587c3a0",
+      "bytes": 7592,
+      "width": 192,
+      "height": 300,
+      "caption": "The same selected War flag, enlarged for its request and range controls.",
+      "alt": "War flag panel with Here 3, Working 3/3, high priority, Range 4 and minimum required level 1.",
+      "id": "jobs-war-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-war-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-war-detail-v3.webp"
+    },
+    {
+      "sha256": "bace4f1398bd421e0150ddccaa32b82b2c58cd283c1dea65204e09437e7cc613",
+      "bytes": 202498,
+      "width": 1440,
+      "height": 900,
+      "caption": "Four Guard tiles were painted at the lesson destination while paused, using A then G.",
+      "alt": "A small blue 2×2 Guard patch is visible at the destination; the area brush sidebar is open.",
+      "id": "jobs-guard-area-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-guard-area-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-guard-area-v3.webp"
+    },
+    {
+      "sha256": "94c16fd1c11bfb1fb0211f08f269d014757988da72fe5d1f1fa72e5c2af952f3",
+      "bytes": 5510,
+      "width": 192,
+      "height": 240,
+      "caption": "The genuine Guard-area brush panel used for the painted patch.",
+      "alt": "Guard-area tool with adding/removing controls and brush choices.",
+      "id": "jobs-guard-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-guard-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-guard-detail-v3.webp"
+    },
+    {
+      "sha256": "05cf1acf3871e044df69b353df3782d4e441be4edcff5a4cdafea58d0f4cadda",
+      "bytes": 139972,
+      "width": 1440,
+      "height": 900,
+      "caption": "The Exploration flag request was reduced from 2 to 1 and range from 10 to 4 before resuming. One explorer has now arrived and the lesson advanced to Guard preparation.",
+      "alt": "Selected Exploration flag: On the way 0, Here 1, Working 1/1, Range 4, any explorer filter.",
+      "id": "jobs-exploration-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-exploration-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-exploration-v3.webp"
+    },
+    {
+      "sha256": "c52193fc30d59b4883a834cac9fad8c6ca7e175b553d17b1a2e43479a6bda1ee",
+      "bytes": 8274,
+      "width": 192,
+      "height": 280,
+      "caption": "The Exploration flag request was reduced from 2 to 1 and range from 10 to 4 before resuming. One explorer has now arrived and the lesson advanced to Guard preparation.",
+      "alt": "Exploration flag panel with Working 1/1, Range 4, On the way 0 and Here 1.",
+      "id": "jobs-exploration-detail-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-exploration-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-exploration-detail-v3.webp"
+    },
+    {
+      "sha256": "4b638bc4de5435e29717415edc369826e9043b446e57c2ab5e33003a170add12",
+      "bytes": 134430,
+      "width": 1440,
+      "height": 900,
+      "caption": "After lesson completion, A then D removed one of the Guard tiles while paused.",
+      "alt": "One tile of the blue Guard patch is absent and the removing-area control is selected.",
+      "id": "jobs-guard-removing-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-guard-removing-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-guard-removing-v3.webp"
+    },
+    {
+      "sha256": "3a4f42ff63c315f68d1c253d99d05a45a5ea6794719f322813bbfed803c43cec",
+      "bytes": 134606,
+      "width": 1440,
+      "height": 900,
+      "caption": "A then A returned to adding and restored the same Guard tile.",
+      "alt": "The 2×2 Guard patch is restored while the completed lesson remains paused.",
+      "id": "jobs-guard-restored-v3",
+      "kind": "image",
+      "path": "/guide-media/v3/jobs-and-flags/jobs-guard-restored-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/jobs-and-flags/jobs-guard-restored-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "jobs-war-request-v3",
+      "status": 200,
+      "bytes": 137158,
+      "sha256": "ae2833952b20bc5ef2819acdc07e65ab7c4a9e65a31d5becd94e2e58c6582ef7"
+    },
+    {
+      "id": "jobs-war-detail-v3",
+      "status": 200,
+      "bytes": 7592,
+      "sha256": "01cb50ed17a8c362428eac7613cecc633317d5e4e6fbaa8fae747d1df587c3a0"
+    },
+    {
+      "id": "jobs-guard-area-v3",
+      "status": 200,
+      "bytes": 202498,
+      "sha256": "bace4f1398bd421e0150ddccaa32b82b2c58cd283c1dea65204e09437e7cc613"
+    },
+    {
+      "id": "jobs-guard-detail-v3",
+      "status": 200,
+      "bytes": 5510,
+      "sha256": "94c16fd1c11bfb1fb0211f08f269d014757988da72fe5d1f1fa72e5c2af952f3"
+    },
+    {
+      "id": "jobs-exploration-v3",
+      "status": 200,
+      "bytes": 139972,
+      "sha256": "05cf1acf3871e044df69b353df3782d4e441be4edcff5a4cdafea58d0f4cadda"
+    },
+    {
+      "id": "jobs-exploration-detail-v3",
+      "status": 200,
+      "bytes": 8274,
+      "sha256": "c52193fc30d59b4883a834cac9fad8c6ca7e175b553d17b1a2e43479a6bda1ee"
+    },
+    {
+      "id": "jobs-guard-removing-v3",
+      "status": 200,
+      "bytes": 134430,
+      "sha256": "4b638bc4de5435e29717415edc369826e9043b446e57c2ab5e33003a170add12"
+    },
+    {
+      "id": "jobs-guard-restored-v3",
+      "status": 200,
+      "bytes": 134606,
+      "sha256": "3a4f42ff63c315f68d1c253d99d05a45a5ea6794719f322813bbfed803c43cec"
+    }
+  ],
+  "publicationQualification": "Exact reviewed output bytes were immutable-uploaded and freshly public GET verified. Matching source and two independent rendered/integration rounds are approved. Required release CI and production publication remain pending; earlier objects retain original provenance."
+}

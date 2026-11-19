@@ -381,3 +381,26 @@ test('supported fullscreen inspection exits cleanly when the viewer closes', asy
   await expect(viewer(page)).toBeHidden();
   await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
 });
+
+
+test('detail image opening cue leaves shallow counters visible and works by keyboard', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  for (const width of [360, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/learn/ai-numbi/');
+    const link = page.locator('#media-numbi-warriors-detail-hd-v2 .guide-image-link');
+    const image = link.locator('img');
+    await link.scrollIntoViewIfNeeded();
+    await expect(image).toBeVisible();
+    const linkBox = await link.boundingBox();
+    const imageBox = await image.boundingBox();
+    expect(linkBox!.y + linkBox!.height - imageBox!.y - imageBox!.height).toBeGreaterThanOrEqual(44);
+    await link.focus();
+    await page.keyboard.press('Enter');
+    await expect(viewer(page)).toBeVisible();
+    await expect(viewer(page).locator('.pswp__item[aria-hidden="false"] .pswp__img:not(.pswp__img--placeholder)')).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(viewer(page)).toBeHidden();
+    await expect(link).toBeFocused();
+  }
+});

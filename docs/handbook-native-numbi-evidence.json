@@ -1,0 +1,291 @@
+{
+  "observed": "2026-11-18",
+  "approvalStatus": "Independent source/media/applied-artwork approval, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production publication remain pending; earlier candidates retain their original qualification.",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "renderer": "Actual active SDL GPU per session3backend log; explicitHighresolution persisted, postload/postcapture UI proof.",
+    "launchWorkingDirectory": "Released Glob2.app/Contents/Resources",
+    "resourceResolution": "PackagedResources launch directory and bundle-before-working-directory exactsource lookup; no isolatedprofiledataoverride. No perspriteopenpathtrace.",
+    "framebuffer": [
+      2940,
+      1656
+    ],
+    "map": "River revision9, mapseed713,128x128",
+    "gameSeed": 714,
+    "controllers": [
+      "Numbi red",
+      "Castor cyan"
+    ],
+    "humanControlled": false,
+    "view": "Numbi watched, fogofwar and combinedvision checked; actualminimap camera changes; stills paused.",
+    "timing": "New visible clocks5:38 and7:58; source recordinginitialpausedtick14358. LaterPopulation reading after recording. No exactstilltick exported.",
+    "outcome": "Original25000tickrun terminatedtick_cap, bothalive, no winningteams; unresolved. Quitting this replay not an outcome."
+  },
+  "proofs": {
+    "launch-high-setting.png": "fc723e48f39d80fd049471fb5c031e3d21d17db43f9f0d790f74f9ac0e3da2dd",
+    "numbi-postload-high-proof.png": "df0385475984389829e240bd99f3a493bf6529dd488d4bb5bb16bccd6c65b5e0",
+    "numbi-castor-postcapture-high-proof.png": "d36e68cb8ac23c27f643b53089f6640a78ad0520af8d1af6b5a85923f7c40a37"
+  },
+  "assets": [
+    {
+      "id": "numbi-opening-hd-v2",
+      "candidate": "numbi-opening-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 901,
+      "bytes": 379582,
+      "sha256": "ab22a27400e8bceca78d294e7e6f1d3a97a035291b48a95fea711dda90d89d9f",
+      "source": "numbi-high-zero-warriors.png",
+      "sourceSha256": "6c6516564ddaad76f09a9d47d74e97b473c1ac8451534e791ad4dbdb3b0d55fb",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": null,
+      "caption": "Native 0.11.6.1 at 5:38: Numbi has workers and services while the warrior total is still zero.",
+      "alt": "Red Numbi town and top bar showing 28 workers, 2 explorers and zero warriors.",
+      "platform": "native"
+    },
+    {
+      "id": "numbi-readiness-hd-v2",
+      "candidate": "numbi-readiness-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 901,
+      "bytes": 404040,
+      "sha256": "8fc3a9ef31d3ac51866e8bb69f28d23b79aeef7d12b2d7b936d23dd2dbd9223c",
+      "source": "numbi-high-developed.png",
+      "sourceSha256": "247248651c3779d3c7cf2f0ac043f540c6baabf01c90d1b61244353577459d7f",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": null,
+      "caption": "The same native replay at 7:58: Numbi now has ten warriors, with seven available.",
+      "alt": "Numbi services and workers; the warrior top bar reads 7 available of 10 total.",
+      "platform": "native"
+    },
+    {
+      "id": "numbi-warriors-detail-hd-v2",
+      "candidate": "numbi-warriors-detail-hd-v2.webp",
+      "kind": "image",
+      "width": 320,
+      "height": 45,
+      "bytes": 3632,
+      "sha256": "8a0a5fd5fab1fd1e739a66d6a449f961d294810576bee8e3f5a72c6b65734b21",
+      "source": "numbi-high-developed.png",
+      "sourceSha256": "247248651c3779d3c7cf2f0ac043f540c6baabf01c90d1b61244353577459d7f",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": [
+        820,
+        0,
+        1140,
+        45
+      ],
+      "caption": "The 7:58 top bar distinguishes available and total globs: 2/28 workers, 2/2 explorers and 7/10 warriors.",
+      "alt": "Native topbar detail with role icons and available/total counters.",
+      "platform": "native"
+    },
+    {
+      "id": "numbi-history-hd-v2",
+      "candidate": "numbi-history-hd-v2.webp",
+      "kind": "image",
+      "width": 1186,
+      "height": 982,
+      "bytes": 33424,
+      "sha256": "1fb5699686128fc69ca5c6bcecc8fa3a1ca2d895c71aac402eaeab38a1c659b8",
+      "source": "numbi-high-population-history.png",
+      "sourceSha256": "c9c5abb54775b3b36e32719ec6668728c7c9d38a203519f06a16ddd4071ecb5f",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": [
+        878,
+        338,
+        2064,
+        1320
+      ],
+      "caption": "Numbi’s Population history after the normal-speed recording shows growth to a sampled 40.",
+      "alt": "Native full Population history for the watched Numbi colony, displaying 40.",
+      "platform": "native"
+    },
+    {
+      "id": "numbi-town-motion-hd-v2",
+      "candidate": "numbi-town-motion-hd-v2.mp4",
+      "kind": "video",
+      "width": 1600,
+      "height": 902,
+      "durationSeconds": 12,
+      "bytes": 4700914,
+      "sha256": "395e4bd70312551d25ea413764a63315d37824b1f45e5a1ae0615f1abca9f849",
+      "posterId": "numbi-town-motion-poster-hd-v2",
+      "caption": "Twelve seconds of normal-speed native 0.11.6.1 replay show Numbi globs moving among their services. Both colonies are AI-controlled.",
+      "alt": "Red Numbi globs move among inns, training and healing services.",
+      "platform": "native"
+    },
+    {
+      "id": "numbi-town-motion-poster-hd-v2",
+      "candidate": "numbi-town-motion-poster-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 902,
+      "bytes": 362892,
+      "sha256": "5e30c3178a810436770e44203de4464c27e48f2b901d808aab1694b1977a6707",
+      "caption": "Opening frame of the current native Numbi town recording.",
+      "alt": "Red Numbi globs among the town’s services.",
+      "platform": "native"
+    }
+  ],
+  "motion": {
+    "source": "capture-776408891231.mp4",
+    "sourceSha256": "067b6229f1020a83182443aefbf87d7ac9a8a35ab7edff7274b0bf721f87aa39",
+    "sourceMetadata": "capture-776408891231.mp4.json",
+    "complete": true,
+    "sourceDurationSeconds": 34.833333,
+    "sourceDroppedFrames": 3,
+    "gameplayIntervalSeconds": [
+      0.466666,
+      34.4
+    ],
+    "sourceRangeSeconds": [
+      7,
+      19
+    ],
+    "sourceGameplayTicks": [
+      14358,
+      15362
+    ],
+    "speed": "Supported game/speed=0 actualnormal1x before recording; no respeeding. Rawdroppedframes retained provenance, not performancebenchmark.",
+    "method": "Continuous 12 seconds from the actual native recorder; video stream only, resized to1600x902 with default ffmpeg scaling, H264 silent. No fabricated state, artwork alteration or temporal rescaling."
+  },
+  "retirementDependencies": [
+    "Earlier humanfaileddefense episode is retired explicitly, not represented as currentnative AIvsAI. Humanreadiness/defense exercise retained.",
+    "Current resourcesmotion and actualGuarddefense teaching must be integrated/published in samebatch.",
+    "Browser Numbi profile reuses the separately qualified, registered choosing-ai-info-v3 object; no duplicate profile bytes or claim that unseen panel continuation was inspected."
+  ],
+  "registeredAssets": [
+    {
+      "sha256": "ab22a27400e8bceca78d294e7e6f1d3a97a035291b48a95fea711dda90d89d9f",
+      "bytes": 379582,
+      "width": 1600,
+      "height": 901,
+      "caption": "Native 0.11.6.1 at 5:38: Numbi has workers and services while the warrior total is still zero.",
+      "alt": "Red Numbi town and top bar showing 28 workers, 2 explorers and zero warriors.",
+      "platform": "native",
+      "id": "numbi-opening-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-numbi/numbi-opening-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-opening-hd-v2.webp"
+    },
+    {
+      "sha256": "8fc3a9ef31d3ac51866e8bb69f28d23b79aeef7d12b2d7b936d23dd2dbd9223c",
+      "bytes": 404040,
+      "width": 1600,
+      "height": 901,
+      "caption": "The same native replay at 7:58: Numbi now has ten warriors, with seven available.",
+      "alt": "Numbi services and workers; the warrior top bar reads 7 available of 10 total.",
+      "platform": "native",
+      "id": "numbi-readiness-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-numbi/numbi-readiness-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-readiness-hd-v2.webp"
+    },
+    {
+      "sha256": "8a0a5fd5fab1fd1e739a66d6a449f961d294810576bee8e3f5a72c6b65734b21",
+      "bytes": 3632,
+      "width": 320,
+      "height": 45,
+      "caption": "The 7:58 top bar distinguishes available and total globs: 2/28 workers, 2/2 explorers and 7/10 warriors.",
+      "alt": "Native topbar detail with role icons and available/total counters.",
+      "platform": "native",
+      "id": "numbi-warriors-detail-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-numbi/numbi-warriors-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-warriors-detail-hd-v2.webp"
+    },
+    {
+      "sha256": "1fb5699686128fc69ca5c6bcecc8fa3a1ca2d895c71aac402eaeab38a1c659b8",
+      "bytes": 33424,
+      "width": 1186,
+      "height": 982,
+      "caption": "Numbi’s Population history after the normal-speed recording shows growth to a sampled 40.",
+      "alt": "Native full Population history for the watched Numbi colony, displaying 40.",
+      "platform": "native",
+      "id": "numbi-history-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-numbi/numbi-history-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-history-hd-v2.webp"
+    },
+    {
+      "sha256": "395e4bd70312551d25ea413764a63315d37824b1f45e5a1ae0615f1abca9f849",
+      "bytes": 4700914,
+      "width": 1600,
+      "height": 902,
+      "caption": "Twelve seconds of normal-speed native 0.11.6.1 replay show Numbi globs moving among their services. Both colonies are AI-controlled.",
+      "alt": "Red Numbi globs move among inns, training and healing services.",
+      "platform": "native",
+      "id": "numbi-town-motion-hd-v2",
+      "kind": "video",
+      "path": "/guide-media/v2/ai-numbi/numbi-town-motion-hd-v2.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-town-motion-hd-v2.mp4",
+      "poster": "numbi-town-motion-poster-hd-v2"
+    },
+    {
+      "sha256": "5e30c3178a810436770e44203de4464c27e48f2b901d808aab1694b1977a6707",
+      "bytes": 362892,
+      "width": 1600,
+      "height": 902,
+      "caption": "Opening frame of the current native Numbi town recording.",
+      "alt": "Red Numbi globs among the town’s services.",
+      "platform": "native",
+      "id": "numbi-town-motion-poster-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-numbi/numbi-town-motion-poster-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-numbi/numbi-town-motion-poster-hd-v2.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "numbi-opening-hd-v2",
+      "status": 200,
+      "bytes": 379582,
+      "sha256": "ab22a27400e8bceca78d294e7e6f1d3a97a035291b48a95fea711dda90d89d9f"
+    },
+    {
+      "id": "numbi-readiness-hd-v2",
+      "status": 200,
+      "bytes": 404040,
+      "sha256": "8fc3a9ef31d3ac51866e8bb69f28d23b79aeef7d12b2d7b936d23dd2dbd9223c"
+    },
+    {
+      "id": "numbi-warriors-detail-hd-v2",
+      "status": 200,
+      "bytes": 3632,
+      "sha256": "8a0a5fd5fab1fd1e739a66d6a449f961d294810576bee8e3f5a72c6b65734b21"
+    },
+    {
+      "id": "numbi-history-hd-v2",
+      "status": 200,
+      "bytes": 33424,
+      "sha256": "1fb5699686128fc69ca5c6bcecc8fa3a1ca2d895c71aac402eaeab38a1c659b8"
+    },
+    {
+      "id": "numbi-town-motion-hd-v2",
+      "status": 200,
+      "bytes": 4700914,
+      "sha256": "395e4bd70312551d25ea413764a63315d37824b1f45e5a1ae0615f1abca9f849"
+    },
+    {
+      "id": "numbi-town-motion-poster-hd-v2",
+      "status": 200,
+      "bytes": 362892,
+      "sha256": "5e30c3178a810436770e44203de4464c27e48f2b901d808aab1694b1977a6707"
+    }
+  ],
+  "publicationQualification": "Accepted matching source and current High shared resources/Guard teaching form one reviewed publication batch. Final release CI and production verification are pending."
+}
