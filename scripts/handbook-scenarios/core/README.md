@@ -6,7 +6,7 @@ Run from the website repository with Node 24.14+ and a new ignored output direct
 node scripts/capture-current-guide.mjs scripts/handbook-scenarios/core/controls-and-food.mjs artifacts/handbook/controls-food-attempt-1
 ```
 
-The helper qualifies the exact public JavaScript/WASM payload, WebGL2 and HD readiness before acting. The exact deployed source revision remains unverified.
+The helper qualifies the exact public JavaScript/WASM payload, selects High resolution through the actual graphics settings, reloads the application and rechecks the enabled choice with WebGL2 and loaded artwork before acting. Pack readiness alone is not accepted as the applied artwork choice. The exact deployed source revision remains unverified.
 
 `food-practice.mjs` opens the current Tutorial → Food supply practice lesson. It is a prepared training colony, not a custom Standard match or AI qualification. The initial task may open directly; only a visible optional briefing is acknowledged.
 
@@ -23,3 +23,46 @@ an actual explorer arrival. It inspects a settled entry frame before acknowledgi
 an optional briefing. The default flag request stays in place during travel;
 after the task advances, the scenario pauses and reduces the request to one.
 It does not claim completion of the Introduction's remaining tasks.
+
+`guard-practice.mjs` opens Guard zones and flag tactics, settles the optional
+briefing, and uses actual flag and area controls. It follows an explorer to the
+practice enemy, paints four Guard tiles, lets the defense run, and sets a War
+flag request to three at high priority. The scenario requires the lesson-complete
+control before demonstrating a one-tile remove/restore operation while paused.
+A successful applied-High run on 18 November recorded 135 events and finished
+paused at tick 6854. Inspect each source frame before reusing its incidental
+counts, positions or timing; no Clearing/filter/drag behavior is qualified.
+
+`population-practice.mjs` uses the prepared Food supply colony for a separate
+production experiment. Repeated genuine decrement clicks clamp all birth
+controls before one role is increased. Normal simulation records Worker-only,
+all-zero, Explorer-only and a later all-zero hold with food and hauling visible.
+The scenario records observations rather than asserting a fixed birth count or
+an instant stop; an additional worker after the first reset was observed in the
+qualified run. Its later zero-weight hold had unchanged role totals with food
+available. This is not completion of the Food lesson.
+
+The final brief Inn interruption is exploratory. The first applied-High run
+showed no stock decline before hauling was restored, so it does not establish
+food depletion or recovery. Inspect every rerun before drawing those conclusions.
+
+`interactive-practice.mjs` supports exploration through the same qualified
+capture helper. It accepts serialized JSON commands in the ignored capture
+output directory and returns a read-only diagnostic snapshot after each actual
+UI action. The accepted actions are inspect, control, key, click, scroll,
+screenshot, advance (1–120 normal ticks), and close. It does not accept JavaScript
+or write game state.
+
+Write `interactive-command.json` atomically with the next integer `sequence`
+and an `action`, then wait for that sequence in `interactive-response.json`
+before issuing another command. Repeating the most recently completed sequence is ignored;
+other out-of-order commands fail. Screenshot names use the helper's restricted naming
+rules. A rejected action ends the capture; inspect its error record instead of
+waiting for another acknowledgement. The close command lets the helper finalize
+footage and the capture record.
+
+An actual 100-command Food supply session on 18 November used this unchanged
+bridge and completed with 115 recorded events. Preserve the real command recipe,
+watcher source and source hashes with each session: an interactive capture is not
+execution of a fixed lesson scenario. Inspect actual pause state and acknowledge
+any settled optional briefing before acting on the map.

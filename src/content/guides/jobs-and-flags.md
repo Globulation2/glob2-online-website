@@ -1,117 +1,122 @@
 ---
 title: "Jobs, priorities, flags, and areas"
-description: "Give the colony useful work without starving services or overcommitting its workers."
+description: "Request useful work, keep essential services supplied, and use flags and small painted areas deliberately."
 group: "manage"
 order: 1
 prerequisites: ["getting-started", "controls-and-hud"]
 tags: ["beginner", "management", "flags"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Staffing, priorities, and flag controls"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/input/GameGUIInputMenuClickBuilding.cpp"
-  - title: "Unit jobs and needs"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"
-  - title: "Map tools and area painting"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/GameGUIToolManager.cpp"
+  - title: "Current public browser Guard zones and flag tactics lesson, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: staffing, priorities and flag controls"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/hud/input/GameGUIInputMenuClickBuilding.cpp"
+  - title: "Released native 0.11.6.1 source context: unit work and needs"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitActivity.cpp"
+  - title: "Released native 0.11.6.1 source context: area tools"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/hud/GameGUIToolManager.cpp"
 ---
 
-You give the colony jobs, rather than issuing a route to every glob. Buildings request workers; flags request units around a location; painted areas change how the colony uses terrain. Globs still need meals, healing, eligible skills, and usable routes.
+You give the colony jobs. Buildings request workers; flags request units near a destination; painted areas affect how units use terrain. Requests still depend on the units you have, their needs and training, and a usable route.
 
-## Keep the food jobs staffed first
+For the pictured exercise, open **Tutorial**, scroll down and choose **Guard zones and flag tactics**. This prepared colony already has services, an explorer and warriors. Follow its four tasks: scout, prepare a guard zone, repel the practice attack and counterattack. It is a useful place to learn these controls; its starting army and supplies are not a custom game's opening.
 
-Begin with a supplied inn and a swarm. Select the inn and inspect **Working**, **Food**, and its current activity. Do the same for the swarm. The number before the slash is attached workers; the number after it is requested workers.
+## Keep essential work supplied
 
-:::note
+Select an inn and compare **Food**, **Inside** and **Working**. Food is its stock, Inside is service occupancy, and Working compares attached units with the request. Then inspect the swarm and any construction sites. The [controls lesson](/learn/controls-and-hud/) shows these different readings in a current prepared colony.
 
-A request is a target, not a new worker. If you ask five buildings for three workers each while the colony has only a handful, some jobs will wait. Workers taking meals or healing also cannot be everywhere at once.
+A request does not create a unit. Asking five projects for three workers each can leave jobs waiting when the colony has only a handful. Workers may also leave work to eat, heal or train. A fully stocked inn may need little hauling at that instant; a site missing a reachable material cannot use extra requests to manufacture it.
 
-:::
+Try one new project at a time:
 
-Use this small exercise in a practice match:
+1. Check that the inn has food and receives deliveries.
+2. Place one useful site near its materials.
+3. Give it a modest Working request and resume.
+4. Compare actual attachments and deliveries at the site and inn.
+5. Reduce the optional request if meals begin falling behind.
 
-1. Check that food reaches the inn.
-2. Place one useful construction site near its materials.
-3. Give the site a modest Working request.
-4. Watch both the site and inn while workers travel.
-5. If the inn empties, reduce the site's request before adding another project.
+## Use priority without promising an outcome
 
-Check the actual outcome, not just the requested number. A building with full stock may not need everyone requested at that instant; a site missing a reachable material cannot use extra labor effectively.
+The selected building or flag offers **low**, **mid** and **high** priority. Use the visible choice to favor an important request over optional work. In the pictured counterattack, the War flag is set to high; the later frame shows the requested three warriors have arrived.
 
-## Use priority to choose between competing requests
+Priority does not train a worker, turn one unit type into another, open a blocked route or provide missing food. When a request remains empty, check eligibility, needs, competing assignments and access before increasing it again. Preserve essential food hauling while releasing units for a new operation.
 
-The selected building's **Priority** row offers low, medium, and high. Raise an essential food job above a nonurgent construction job when they compete for workers. Leave enough labor for new tasks instead of treating every project as high priority.
+## Scout with an Exploration flag
 
-Priority changes hiring preference. It does not create workers, refill an exhausted forest, train an unqualified builder, or open a blocked route. If a high-priority job remains empty, inspect those other requirements.
+The first task asks for an Exploration flag at the enemy base. Choose **Show destination**, press **F**, then **E**, and place it near the marked region. Right-click to leave placement, then left-click the flag to inspect it.
 
-For higher-level construction, check worker training. A plentiful supply of ordinary workers does not substitute for builders with the required construction qualification. Release eligible workers from other duties and keep training services usable before requesting another upgrade.
-
-:::media-group
-
-[[media:jobs-war-request]]
-
-[[media:jobs-war-detail]]
-
-:::
-
-## Choose the right flag
-
-Open the flags/areas sidebar below the minimap, or use the default **F** sequence.
-
-| Flag | Default sequence | Job |
-| --- | --- | --- |
-| Exploration | F → E | Send explorers toward a chosen region |
-| War | F → W | Request warriors around a combat objective |
-| Clearing | F → C | Request workers to clear selected resource materials |
-
-Place the flag, right-click to leave placement, then select the flag itself. Inspect its **Working** request, range, and any unit-level or material filters. Ask for units you actually have. A war flag will not turn workers into warriors, and a training filter can leave a flag unstaffed until eligible units become available.
-
-A large radius permits a broad job area. A small radius concentrates work around the flag. Choose a radius to fit the task: surveying a region differs from attacking one structure. Increasing radius is not the same as increasing the number of units assigned.
-
-You can drag a flag to move its destination. Reduce its request or remove it when the job ends; otherwise the colony may keep spending effort there. Use exploration flags to inspect useful terrain and war flags to organize an attack.
-
-## Paint a small area before painting a large one
-
-Areas are terrain markings, not buildings or unit-production controls. Press **A** to open areas. With the default controls, **A → G** selects Guard, **A → A** selects adding, and **A → D** selects removing. Choose a brush, then click or drag over the map. Right-click when done.
-
-| Area | Use | Main mistake to avoid |
-| --- | --- | --- |
-| Forbidden | Keep ground units away from marked terrain | Cutting the only usable route to food or construction |
-| Guard | Give idle warriors defensive ground to patrol | Painting such a broad area that defense spreads away from the threatened route |
-| Clearing | Mark resources for workers to clear | Removing food or useful material that you meant to preserve |
-| Farm, when enabled | Use the optional farming-area tool | Assuming this experiment exists in every match |
-
-Use a small patch where you can see the result. With forbidden terrain, check that units still have a route around it. Flying explorers can cross forbidden ground; this tool does not form an aerial barrier. If ground units stall, switch to **removing areas** and erase the troublesome part. Do not paint a barrier across a food route and then try to solve the result by raising the inn's priority.
-
-Clearing can permanently change the resource layout. Inspect the materials enabled on a clearing flag and the actual patch before you assign workers. Keep living food patches and their growing space intact when building a sustainable food supply.
+The panel separates **On the way**, **Here**, **Working**, **Range** and the minimum-level filter. A flag's radius controls the region of its work; the Working request controls how many eligible units it seeks. Changing one is not a substitute for changing the other.
 
 :::media-group
 
-[[media:jobs-guard-area]]
+[[media:jobs-exploration-v3]]
 
-[[media:jobs-guard-detail]]
+[[media:jobs-exploration-detail-v3]]
 
 :::
 
-## Release work when the situation changes
+The request was reduced from two to one and the range from ten to four through the left arrows before resuming. In this later frame, one explorer has arrived: **Working 1/1**, **On the way 0** and **Here 1**. The lesson has advanced to the Guard task. Compare the request with the actual travel and arrival rather than expecting an assignment to move the unit instantly.
 
-After a new building finishes, its job can change from construction to hauling or service. Recheck its Working request instead of assuming the construction setting is still useful. After exploration or battle, check flags and areas too.
+Use a minimum-level filter only when you have a reason and eligible units. The pictured Exploration flag accepts any explorer. A stricter filter can make a useful-looking request wait for a unit you have not produced or trained.
 
-A quick reset is:
+## Paint a small Guard zone
 
-1. Restore essential food hauling.
-2. Reduce requests on jobs that no longer need many workers.
-3. Remove obsolete flags or move them to the next useful task.
-4. Leave idle units time to eat, heal, and train.
-5. Resume expansion only when the colony has spare capacity again.
+In the second task, choose **Show destination**, then press **A**, followed by **G**, for the Guard area tool. Choose a brush and paint a small patch at the marked destination. The pictured patch is four adjacent tiles, painted while paused.
 
-## Diagnose an unstaffed job
+:::media-group
 
-| Symptom | Check | Correction |
+[[media:jobs-guard-area-v3]]
+
+[[media:jobs-guard-detail-v3]]
+
+:::
+
+Resume so warriors can reach it. Painting while paused changes the area; it does not move a warrior there. This lesson waits for defenders, launches a practice attack and then asks you to counterattack. Keep the existing inns supplied while units travel and fight.
+
+Guard areas and War flags can compete for warriors. A zone that was useful during defense may hold units away from the next objective. Inspect the current task and actual assignments rather than covering the entire map with Guard tiles.
+
+To remove an unwanted patch, press **A**, then **D**, and paint over it. **A**, then **A**, returns to adding. In the following paused comparison, one tile was removed and then restored through those actual controls. No unit movement was needed for the area change.
+
+[[media:jobs-guard-removing-v3]]
+
+[[media:jobs-guard-restored-v3]]
+
+Right-click when you finish painting so an incidental map click does not add another mark.
+
+## Request a focused counterattack
+
+After repelling the practice attack, this lesson unlocks the War flag. Choose **Show destination**, press **F**, then **W**, and place it near the enemy Swarm. Right-click out of placement and select the star-shaped flag. If several flags overlap, check the panel title before changing a request.
+
+The actual selected War flag initially requested ten warriors. The exercise needs three and a radius of four or smaller. Reduce the Working request with its left arrow, inspect Range, and keep the minimum required level suitable for your existing army. Resume and watch **On the way** and **Here** change.
+
+:::media-group
+
+[[media:jobs-war-request-v3]]
+
+[[media:jobs-war-detail-v3]]
+
+:::
+
+The later frame shows **Working 3/3**, **On the way 0**, **Here 3**, **Range 4**, high priority and minimum level one. This is an observed arrival, not a promise that any request for three will fill immediately. By this frame the prepared lesson reports completion of its scouting, defense and counterattack tasks.
+
+Keep an army's meal and healing routes in mind. A focused radius can concentrate a job, but it does not supply an army or guarantee that the target is safe to attack. Follow [organizing an attack](/learn/organizing-an-attack/) for the larger operation.
+
+## Choose other tools deliberately
+
+Exploration, War and Clearing flags request different unit roles. The default **F → C** Clearing flag is for removing chosen resource materials, not delivering those materials to an inn or foundation. Inspect its filters and the actual patch before assigning workers; preserve useful food and building material.
+
+Areas also have different purposes. Forbidden marks can obstruct ground routes; Clearing areas can remove resources; optional Farm Areas belong to an experiment. Test a small, visible patch and keep routes around it open. A painted area is not a wall or a guarantee against every movement type. If units stall, remove the questionable marks and observe the route again. Check **Settings → Controls** if your shortcuts differ.
+
+## Release work when the task ends
+
+After a building completes, its work can change from construction to supply. After scouting or combat, a flag or Guard zone can also become obsolete. Reduce or remove requests that no longer serve your plan.
+
+| Symptom | Check next | Useful correction |
 | --- | --- | --- |
-| Working stays below request | Labor demand, unit meals, health, and existing assignments | Reduce a competing request and allow time for travel |
-| Site has workers but does not finish | Missing materials and builder skill | Open supply routes or supply trained builders |
-| Flag stays empty | Unit role and minimum-level setting | Produce/train eligible units or relax an unnecessarily strict filter |
-| Units stop near an area boundary | Forbidden marks and terrain | Erase the obstruction or choose a reachable destination |
-| Food collapses after many new jobs | Inn deliveries and swarm production | Release haulers and slow growth |
+| Working stays below the request | Unit role, needs, training, other assignments and access | Release a competing request and allow travel time |
+| A flag is staffed but Here remains zero | On the way, radius and destination | Observe the approach before raising the request |
+| A site has workers but waits | Required materials, routes and construction qualification | Fix the missing requirement instead of only hiring more |
+| Warriors remain at home | Guard markings and other flag requests | Remove obsolete defensive work before a new commitment |
+| Food falls during several projects | Inn deliveries and swarm demand | Slow expansion and release haulers for meals |
+| Units stop near painted terrain | The marks and alternative paths | Remove a small section and inspect actual movement |
 
-Once the basic job system feels predictable, learn how [resources and hauling](/learn/resources-and-hauling/) and [food supply](/learn/sustainable-food/) determine what those jobs can accomplish.
+Restore essential supply first, then choose the next useful job. The [resources lesson](/learn/resources-and-hauling/) follows construction deliveries, and [food supply](/learn/sustainable-food/) helps you decide whether the colony can sustain another request.

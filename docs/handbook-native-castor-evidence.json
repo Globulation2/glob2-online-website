@@ -1,0 +1,302 @@
+{
+  "observed": "2026-11-18",
+  "approvalStatus": "Independent source/media/applied-artwork approval, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production publication remain pending; earlier candidates retain their original qualification.",
+  "native": {
+    "version": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "renderer": "Active SDL GPU from packaged Resources launch; explicit High resolution persisted and actual enabled setting rechecked after fresh replay load and after captures.",
+    "framebuffer": [
+      2940,
+      1656
+    ],
+    "map": "River revision9; map seed713;128x128",
+    "gameSeed": 714,
+    "controllers": [
+      "Numbi red",
+      "Castor cyan"
+    ],
+    "humanControlled": false,
+    "view": "Castor watched through actual spectator control, Home centers its colony. Own Castor selected-building controls are read-only/disabled in this AI replay. Fogofwar and combinedvision checked.",
+    "timing": "Visible replay clocks5:38 for stock panels and8:33 for population/contact. Stills paused; exactstilltick not exported.",
+    "resourceResolution": "Launch CWD packaged Resources, no profile artworkoverride, source-supported bundle-before-later-roots resolution; no per-sprite pathtrace.",
+    "outcome": "Original25000ticknative run ended tick_cap with bothcoloniesalive, winningteams empty, unresolved. Neither picturedepisode nor quittingthereplay is a matchwinner."
+  },
+  "proofs": {
+    "launch-high-setting.png": "fc723e48f39d80fd049471fb5c031e3d21d17db43f9f0d790f74f9ac0e3da2dd",
+    "numbi-postload-high-proof.png": "df0385475984389829e240bd99f3a493bf6529dd488d4bb5bb16bccd6c65b5e0",
+    "numbi-castor-postcapture-high-proof.png": "d36e68cb8ac23c27f643b53089f6640a78ad0520af8d1af6b5a85923f7c40a37"
+  },
+  "assets": [
+    {
+      "id": "castor-swarm-hd-v2",
+      "candidate": "castor-swarm-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 901,
+      "bytes": 371672,
+      "sha256": "1296e3a99527e0f5219b4682e43f803bc384a2314332de3d5039781b941aca74",
+      "source": "castor-high-swarm.png",
+      "sourceSha256": "8b2d1f19b155cf0372fa1a185f19640f8e341bd669a5a1f450a1dbd77dbef688",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": null,
+      "caption": "Native 0.11.6.1 at 5:38: Castor’s selected swarm has Food 4/20 and Working 0/0.",
+      "alt": "Cyan Castor swarm selected in the native replay, with its production supply panel.",
+      "platform": "native"
+    },
+    {
+      "id": "castor-swarm-detail-hd-v2",
+      "candidate": "castor-swarm-detail-hd-v2.webp",
+      "kind": "image",
+      "width": 408,
+      "height": 575,
+      "bytes": 18868,
+      "sha256": "65dd2e006e6453a42a97ff1f91a586fa4f25e8dda31572785207aaa0fd89de7f",
+      "source": "castor-high-swarm.png",
+      "sourceSha256": "8b2d1f19b155cf0372fa1a185f19640f8e341bd669a5a1f450a1dbd77dbef688",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": [
+        2532,
+        365,
+        2940,
+        940
+      ],
+      "caption": "Detail of the same swarm: its Food 4/20 and Working 0/0 are separate from an inn’s meal store.",
+      "alt": "Castor Swarm panel showing HP 700/700, Working 0/0 and Food 4/20.",
+      "platform": "native"
+    },
+    {
+      "id": "castor-inn-hd-v2",
+      "candidate": "castor-inn-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 901,
+      "bytes": 371334,
+      "sha256": "8ac7caa0fd39cc639ed1b69d4d25c2719bfaccd3362a201a0ea87ee11300dc2d",
+      "source": "castor-high-inn-other.png",
+      "sourceSha256": "cbfedfe8dbc5e89c3888868dcb04bac92ac19b8876155ed88bb17409f81fba34",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": null,
+      "caption": "Another service in the same paused town at 5:38: this inn has Food 10/10, Inside 0/4 and Working 0/1.",
+      "alt": "Cyan Castor inn selected, with its stocked meal service panel.",
+      "platform": "native"
+    },
+    {
+      "id": "castor-inn-detail-hd-v2",
+      "candidate": "castor-inn-detail-hd-v2.webp",
+      "kind": "image",
+      "width": 408,
+      "height": 575,
+      "bytes": 19190,
+      "sha256": "913f5f54c54b3a7d9715cbd38b7db6e1c20421a3636979443a8a9f9331c73324",
+      "source": "castor-high-inn-other.png",
+      "sourceSha256": "cbfedfe8dbc5e89c3888868dcb04bac92ac19b8876155ed88bb17409f81fba34",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": [
+        2532,
+        365,
+        2940,
+        940
+      ],
+      "caption": "The stocked inn is a different local store from the swarm: Food 10/10, Inside 0/4 and Working 0/1.",
+      "alt": "Castor Inn panel showing HP 200/200, Inside 0/4, Working 0/1 and Food 10/10.",
+      "platform": "native"
+    },
+    {
+      "id": "castor-population-hd-v2",
+      "candidate": "castor-population-hd-v2.webp",
+      "kind": "image",
+      "width": 1600,
+      "height": 901,
+      "bytes": 400442,
+      "sha256": "68820b041432a2cc9edc6439bbfb605cdf68a480747e01fda3300632049dd9b8",
+      "source": "castor-high-later-population.png",
+      "sourceSha256": "b3183a208c3e64a15d92838c8cc53673b5e2dfa603eaad00ebcf51dc444fe62e",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": null,
+      "caption": "At 8:33 the watched Castor colony reports Population 4 while the barracks-under-attack alert is visible.",
+      "alt": "Castor town with a barracks-under-attack notification and Population 4 in its own statistics sidebar.",
+      "platform": "native"
+    },
+    {
+      "id": "castor-history-hd-v2",
+      "candidate": "castor-history-hd-v2.webp",
+      "kind": "image",
+      "width": 1186,
+      "height": 982,
+      "bytes": 30386,
+      "sha256": "717155a77c5ceba40465acd6e84e882ab071e0ef0e9e15b51166dc6255523bfd",
+      "source": "castor-high-population-history.png",
+      "sourceSha256": "e6872980b868147a9c28383225a99c748e691a89ec85a68e48352cf8afc42938",
+      "originalSize": [
+        2940,
+        1656
+      ],
+      "cropBounds": [
+        878,
+        338,
+        2064,
+        1320
+      ],
+      "caption": "Castor’s Population history at 8:33 reports a sampled4 after the earlier plateau near five.",
+      "alt": "Native full Population history labelled castor, displaying4.",
+      "platform": "native"
+    }
+  ],
+  "treatment": "Actual fullframe or declaredcrop; RGB WebP92 method6 and Lanczos resize of widefullframes. No fake counters, artificialorders, repainting, recolor or removed native overlays.",
+  "retirement": {
+    "directOldIds": [
+      "castor-setup-detail",
+      "castor-scout-early",
+      "castor-scout-later",
+      "castor-ready-army",
+      "castor-ready-army-detail",
+      "castor-ready-tower-detail",
+      "castor-probe-contact",
+      "castor-probe-flag-detail",
+      "castor-probe-damage-detail",
+      "castor-contact-clip",
+      "castor-probe-return",
+      "castor-return-detail"
+    ],
+    "proposal": "Earlier human trained-army probe and numericloss episode is explicitly retired, not relabelled. Human supply/scout/train/limitedprobe/recovery teaching remains as actionableexercise, paired with current native supply/contact observations.",
+    "dependencies": [
+      "Current High resources construction/supply motion and Guard coverage integrated/published samebatch.",
+      "Independent review must accept retirement of old humancontactclip against teachingcoverage; otherwise obtain a more relevant current motion example.",
+      "Keep original objects/provenance; inspect other consumers before superseding."
+    ]
+  },
+  "registeredAssets": [
+    {
+      "sha256": "1296e3a99527e0f5219b4682e43f803bc384a2314332de3d5039781b941aca74",
+      "bytes": 371672,
+      "width": 1600,
+      "height": 901,
+      "caption": "Native 0.11.6.1 at 5:38: Castor’s selected swarm has Food 4/20 and Working 0/0.",
+      "alt": "Cyan Castor swarm selected in the native replay, with its production supply panel.",
+      "platform": "native",
+      "id": "castor-swarm-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-swarm-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-swarm-hd-v2.webp"
+    },
+    {
+      "sha256": "65dd2e006e6453a42a97ff1f91a586fa4f25e8dda31572785207aaa0fd89de7f",
+      "bytes": 18868,
+      "width": 408,
+      "height": 575,
+      "caption": "Detail of the same swarm: its Food 4/20 and Working 0/0 are separate from an inn’s meal store.",
+      "alt": "Castor Swarm panel showing HP 700/700, Working 0/0 and Food 4/20.",
+      "platform": "native",
+      "id": "castor-swarm-detail-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-swarm-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-swarm-detail-hd-v2.webp"
+    },
+    {
+      "sha256": "8ac7caa0fd39cc639ed1b69d4d25c2719bfaccd3362a201a0ea87ee11300dc2d",
+      "bytes": 371334,
+      "width": 1600,
+      "height": 901,
+      "caption": "Another service in the same paused town at 5:38: this inn has Food 10/10, Inside 0/4 and Working 0/1.",
+      "alt": "Cyan Castor inn selected, with its stocked meal service panel.",
+      "platform": "native",
+      "id": "castor-inn-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-inn-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-inn-hd-v2.webp"
+    },
+    {
+      "sha256": "913f5f54c54b3a7d9715cbd38b7db6e1c20421a3636979443a8a9f9331c73324",
+      "bytes": 19190,
+      "width": 408,
+      "height": 575,
+      "caption": "The stocked inn is a different local store from the swarm: Food 10/10, Inside 0/4 and Working 0/1.",
+      "alt": "Castor Inn panel showing HP 200/200, Inside 0/4, Working 0/1 and Food 10/10.",
+      "platform": "native",
+      "id": "castor-inn-detail-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-inn-detail-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-inn-detail-hd-v2.webp"
+    },
+    {
+      "sha256": "68820b041432a2cc9edc6439bbfb605cdf68a480747e01fda3300632049dd9b8",
+      "bytes": 400442,
+      "width": 1600,
+      "height": 901,
+      "caption": "At 8:33 the watched Castor colony reports Population 4 while the barracks-under-attack alert is visible.",
+      "alt": "Castor town with a barracks-under-attack notification and Population 4 in its own statistics sidebar.",
+      "platform": "native",
+      "id": "castor-population-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-population-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-population-hd-v2.webp"
+    },
+    {
+      "sha256": "717155a77c5ceba40465acd6e84e882ab071e0ef0e9e15b51166dc6255523bfd",
+      "bytes": 30386,
+      "width": 1186,
+      "height": 982,
+      "caption": "Castor’s Population history at 8:33 reports a sampled4 after the earlier plateau near five.",
+      "alt": "Native full Population history labelled castor, displaying4.",
+      "platform": "native",
+      "id": "castor-history-hd-v2",
+      "kind": "image",
+      "path": "/guide-media/v2/ai-castor/castor-history-hd-v2.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v2/ai-castor/castor-history-hd-v2.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "castor-swarm-hd-v2",
+      "status": 200,
+      "bytes": 371672,
+      "sha256": "1296e3a99527e0f5219b4682e43f803bc384a2314332de3d5039781b941aca74"
+    },
+    {
+      "id": "castor-swarm-detail-hd-v2",
+      "status": 200,
+      "bytes": 18868,
+      "sha256": "65dd2e006e6453a42a97ff1f91a586fa4f25e8dda31572785207aaa0fd89de7f"
+    },
+    {
+      "id": "castor-inn-hd-v2",
+      "status": 200,
+      "bytes": 371334,
+      "sha256": "8ac7caa0fd39cc639ed1b69d4d25c2719bfaccd3362a201a0ea87ee11300dc2d"
+    },
+    {
+      "id": "castor-inn-detail-hd-v2",
+      "status": 200,
+      "bytes": 19190,
+      "sha256": "913f5f54c54b3a7d9715cbd38b7db6e1c20421a3636979443a8a9f9331c73324"
+    },
+    {
+      "id": "castor-population-hd-v2",
+      "status": 200,
+      "bytes": 400442,
+      "sha256": "68820b041432a2cc9edc6439bbfb605cdf68a480747e01fda3300632049dd9b8"
+    },
+    {
+      "id": "castor-history-hd-v2",
+      "status": 200,
+      "bytes": 30386,
+      "sha256": "717155a77c5ceba40465acd6e84e882ab071e0ef0e9e15b51166dc6255523bfd"
+    }
+  ],
+  "publicationQualification": "Accepted matching source and current High shared resources/Guard teaching form one reviewed publication batch. Final release CI and production verification are pending."
+}

@@ -152,7 +152,7 @@
     "econo-cortex-25000/initial.game.gz": "d981f5cf40197f93f68bcfbcd1d371e4c649921834b010b81aa7b2c7654beb58",
     "econo-cortex-25000/final.game.gz": "5a23b1feb8fc6af76645a04eb5e568aa3b19363847c51d898149f566ff16d6bd"
   },
-  "approvalStatus": "Independent source/media/applied-artwork review approved all five native replacements. Shared-manifest registration, integration/render and publication remain pending. Earlier Software objects remain held.",
+  "approvalStatus": "Independent source/media/applied-artwork approval, immutable upload, fresh public byte/hash verification, matching source integration and two rendered review rounds are complete. Required release CI and production publication remain pending; earlier candidates retain their original qualification.",
   "qualityProof": {
     "observed": "2026-11-18",
     "publicNativeVersion": "0.11.6.1",
@@ -198,8 +198,7 @@
     }
   },
   "retirementDependencies": [
-    "Current resources-and-hauling construction/supply motion and teaching must be integrated and published in the same batch before retiring the old generic Econo human-food clip.",
-    "The browser opponent-panel frame remains separately pending applied-quality recapture by the website author."
+    "Current resources-and-hauling construction/supply motion and teaching must be integrated and published in the same batch before retiring the old generic Econo human-food clip."
   ],
   "motion": {
     "source": "capture-774608457682.mp4",
@@ -322,6 +321,7 @@
       "sha256": "4ca69c5db3b2dbcd8b0ef00d5d84d63a9631f790c65bf09ed1e8f808ce7b1b70"
     }
   ],
-  "publicationQualification": "Native High assets and provenance independently approved and immutable public byte-verified. Chapter publication still depends on its matching accepted source, separately qualified browser profile, current High resources motion and final rendered reviews.",
-  "browserProfileEvidence": "handbook-high-setup-evidence.json"
+  "publicationQualification": "Accepted matching source and current High shared resources/Guard teaching form one reviewed publication batch. Final release CI and production verification are pending.",
+  "browserProfileEvidence": "handbook-high-setup-evidence.json",
+  "browserProfileQualification": "The separate browser econo-profile-v3 is registered and public byte/hash verified; actual applied High browser evidence is in handbook-high-setup-evidence.json."
 }
