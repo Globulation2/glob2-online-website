@@ -15,7 +15,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
@@ -28,15 +28,12 @@ jobs:
       - run: npm run check && npm run build && node scripts/check-links.mjs
       - run: node --test scripts/test_monitor.mjs scripts/test_downloads.mjs scripts/test_experimental_downloads.mjs scripts/test_guide_media.mjs scripts/test_article_directives.mjs scripts/test_legal_sync.mjs scripts/test_i18n.mjs
       - run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
-      - name: Install browser dependencies
-        run: |
-          # The hosted runner's Azure mirror can stall individual package downloads.
-          sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
-          if [ -f /etc/apt/apt-mirrors.txt ]; then
-            printf 'https://archive.ubuntu.com/ubuntu\n' | sudo tee /etc/apt/apt-mirrors.txt > /dev/null
-          fi
-          printf 'Acquire::Retries "2";\nAcquire::http::Timeout "30";\nAcquire::https::Timeout "30";\n' | sudo tee /etc/apt/apt.conf.d/80-browser-downloads > /dev/null
-          npx playwright install --with-deps chromium firefox webkit
+      - name: Install browser system dependencies
+        timeout-minutes: 8
+        run: bash scripts/install-browser-dependencies.sh
+      - name: Install browsers
+        timeout-minutes: 3
+        run: npx playwright install chromium firefox webkit
       - run: npm test
       - run: node scripts/test_downloads_render.mjs
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6

@@ -268,7 +268,10 @@ test('a rejected expanded playback request retains position and native play cont
   await page.keyboard.press('Escape');
   await expect(viewer(page)).toBeHidden();
   expect(await inline.evaluate((video: HTMLVideoElement) => video.controls && video.paused)).toBe(true);
-  expect(await inline.evaluate((video: HTMLVideoElement) => video.currentTime)).toBeGreaterThanOrEqual(position - 0.1);
+  // Closing the viewer can restore through loadedmetadata and an asynchronous seek.
+  await expect.poll(() => inline.evaluate((video: HTMLVideoElement) =>
+    video.readyState >= 1 && !video.seeking && video.controls && video.paused ? video.currentTime : 0
+  )).toBeGreaterThanOrEqual(position - 0.1);
 });
 
 test('a failed lazy viewer import follows the original image link', async ({ page }) => {

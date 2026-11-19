@@ -167,6 +167,10 @@ test('header keyboard order follows the visible brand, action, navigation and se
  await page.setViewportSize({width:360,height:900});await page.goto('/search/');
  for(const selector of ['.skip-link','.site-header .brand','.header-play','.header-menu>summary']){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
  await page.keyboard.press('Enter');await page.keyboard.press(forward);await expect(page.locator('.site-header .nav a:first-child')).toBeFocused();
+ // Begin closed so the wide-state assertion proves a breakpoint transition,
+ // rather than accepting the already-open mobile disclosure before WebKit paints.
+ await page.locator('.header-menu>summary').focus();await page.keyboard.press('Enter');
+ await expect(page.locator('.header-menu')).not.toHaveAttribute('open','');
  await page.setViewportSize({width:760,height:900});await expect(page.locator('.header-menu')).toHaveAttribute('open','');
  await page.locator('.site-header .nav a:first-child').focus();
  await page.setViewportSize({width:759,height:900});await expect(page.locator('.header-menu')).not.toHaveAttribute('open','');
