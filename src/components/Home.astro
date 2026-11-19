@@ -15,7 +15,7 @@ const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
 <div class:list={['home',{'colony':concept==='colony'}]}>
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-colony" aria-hidden="true">
-    <video class="colony-video" data-src="/brand/colony-loop-2026-11-19.mp4" poster="/brand/colony-1600-2026-11-19.webp" muted loop playsinline preload="none" tabindex="-1"></video>
+    <video class="colony-video" data-src="/brand/colony-loop-2026-11-19b.mp4" poster="/brand/colony-1600-2026-11-19b.webp" muted loop playsinline preload="none" tabindex="-1"></video>
   </div>
   <button class="colony-motion" type="button" data-pause={t('home.pause')} data-resume={t('home.resume')} hidden>❚❚ {t('home.pause')}</button>
   <div class="hero-copy"><div class="hero-panel">
@@ -55,6 +55,14 @@ const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
 
 <script>
 import { mountColony } from '@glob2/design-system/colony';
+// The masthead floats over the hero; reserve exactly its height, including an open menu.
+const masthead = document.querySelector<HTMLElement>('.site-header');
+const home = document.querySelector<HTMLElement>('.home');
+if (masthead && home) {
+ const reserve = () => home.style.setProperty('--home-header-h', `${masthead.offsetHeight}px`);
+ new ResizeObserver(reserve).observe(masthead);
+ reserve();
+}
 document.querySelectorAll<HTMLVideoElement>('.colony-video').forEach(video => {
  const hero = video.closest<HTMLElement>('.hero')!;
  const button = hero.querySelector<HTMLButtonElement>('.colony-motion')!;

@@ -1,12 +1,18 @@
-/* Home page. Only the compact wide masthead floats over the hero. */
+/* Home page. The masthead floats over the hero video at every width; the hero
+   reserves its height (--home-header-h, measured by the page script, with
+   per-breakpoint estimates until then). Without JavaScript the masthead keeps
+   its own row above the hero. */
 
 body:has(.home) .world-band { display: none; }
-body:has(.home) .site-header { position: absolute; inset: 0 0 auto; z-index: 5; }
-body:has(.home) .site-header:has(.header-menu:not([data-enhanced])) { position:relative; background:var(--grass-deep); }
+html:root body:has(.home) .site-header { position: absolute; inset: 0 0 auto; z-index: 5; background: transparent; }
+html:root body:has(.home) .site-header:has(.header-menu:not([data-enhanced])) { position:relative; background:var(--grass-deep); }
+body:has(.header-menu:not([data-enhanced])) .home { --home-header-h: 0px; }
 body:has(.header-menu:not([data-enhanced])) .home .hero-copy { padding-top:var(--sp-6); }
 body:has(.home) .site-footer { margin-top: 0; }
 
-.home { --hero-ink: #fbf3d8; --sea-rgb: 30, 24, 112; }
+.home { --hero-ink: #fbf3d8; --sea-rgb: 30, 24, 112; --home-header-h: 94px; }
+@media (max-width: 1399px) { .home { --home-header-h: 160px; } }
+@media (max-width: 759px) { .home { --home-header-h: 136px; } }
 @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .home { --sea-rgb: 22, 14, 74; } }
 :root[data-theme='dark'] .home { --sea-rgb: 22, 14, 74; }
 .home > section, .home > ul { margin-left: auto; margin-right: auto; }
@@ -17,7 +23,7 @@ body:has(.home) .site-footer { margin-top: 0; }
    in RTL too, because the recorded scene does not mirror. */
 .home > .hero {
   position: relative; isolation: isolate; max-width: none; margin: 0; padding: 0;
-  min-height: min(86vh, 760px); display: flex; align-items: center;
+  min-height: min(86vh, 760px); display: flex; align-items: center; padding-top: var(--home-header-h);
   color: var(--hero-ink); background: rgb(var(--sea-rgb));
 }
 .home .hero-colony { inset: 0; border-radius: 0; background-position: 0% 0%; }
@@ -25,7 +31,7 @@ body:has(.home) .site-footer { margin-top: 0; }
 .home .hero-colony::after {
   background: linear-gradient(270deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
 }
-.home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: 112px var(--gutter) 104px; }
+.home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: var(--sp-5) var(--gutter) 104px; }
 .home .hero-panel {
   width: min(100%, 31rem); margin-left: auto; padding: var(--sp-6) var(--sp-6) var(--sp-5);
   background: linear-gradient(165deg, rgba(var(--sea-rgb), 0.8), rgba(var(--sea-rgb), 0.9));
@@ -111,8 +117,9 @@ body:has(.home) .site-footer { margin-top: 0; }
   .home .shots { grid-template-columns: 1fr; }
   .home .game-window.lead-shot { grid-row: auto; }
   /* Narrow screens: the beach plays as a band above the copy. */
-  .home > .hero { display: block; min-height: 0; }
-  .home .hero-colony { position: relative; inset: auto; z-index: 0; aspect-ratio: 4 / 3; max-height: 62vh; width: 100%; }
+  /* The band also runs up behind the masthead, so it adds the masthead's height. */
+  .home > .hero { display: block; min-height: 0; padding-top: 0; }
+  .home .hero-colony { position: relative; inset: auto; z-index: 0; width: 100%; height: min(calc(100vw * 3 / 4), 62vh); box-sizing: content-box; padding-top: var(--home-header-h); }
   .home .hero-colony::after { background: linear-gradient(180deg, rgba(var(--sea-rgb), 0) 70%, rgb(var(--sea-rgb)) 100%); }
   .home .hero-copy { position: relative; padding-bottom: 72px; }
   /* The copy's top padding is sp-6 here in every header state; overlap the band by 56px. */
@@ -125,7 +132,6 @@ body:has(.home) .site-footer { margin-top: 0; }
 }
 @media (max-width: 480px) { .home .hero-logo .wordmark { max-width: 16rem; } }
 @media (max-width: 1399px) {
-  body:has(.home) .site-header { position: relative; background: var(--grass-deep); padding-bottom: var(--sp-3); }
   .home .hero-copy { padding-top: var(--sp-6); }
   .home .hero-panel { padding-top: var(--sp-5); }
   .home .hero-logo { margin-bottom: var(--sp-3); }
@@ -135,7 +141,7 @@ body:has(.home) .site-footer { margin-top: 0; }
   .home .hero-copy { padding: var(--sp-6) var(--gutter) 72px; }
   .home .hero-panel { padding: var(--sp-5) var(--sp-4) var(--sp-4); }
   /* A shorter band keeps the panel's actions on a phone's first screen. */
-  .home .hero-colony { aspect-ratio: 16 / 9; }
+  .home .hero-colony { height: calc(100vw * 9 / 16); }
   .home > .paths { grid-template-columns: 1fr; }
   .home .game-window a, .home .game-window.lead-shot a { border-width: 4px; border-radius: var(--r-md); }
 }

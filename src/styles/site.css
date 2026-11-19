@@ -24,7 +24,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   height: 300px;
   overflow: hidden;
   z-index: 0;
-  background: var(--grass) url('/brand/colony-960-2026-11-19.webp') 50% 62% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-960-2026-11-19b.webp') 50% 62% / cover no-repeat;
 }
 .world-band::after {
   content: '';
@@ -253,7 +253,7 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   overflow: hidden;
   border-radius: var(--r-lg);
   box-shadow: none;
-  background: var(--grass) url('/brand/colony-1600-2026-11-19.webp') 70% 60% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-1600-2026-11-19b.webp') 70% 60% / cover no-repeat;
 }
 .hero-colony::after {
   content: '';
@@ -385,9 +385,6 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 .language-options a[aria-current] { background: var(--surface-3); font-weight: 800; }
 
 .nav a { white-space: normal; text-align: center; }
-:root:not([lang='en']) body:has(.home) .site-header { position: relative; background: var(--grass-deep); }
-/* Below 981px the copy follows the video band, not the header. */
-@media (min-width: 981px) { :root:not([lang='en']) .home .hero-copy { padding-top: var(--sp-7); } }
 :root[dir='rtl'] .hero-colony > video, :root[dir='rtl'] .hero-colony { direction: ltr; }
 .home h1, .home h2, .path, .site-footer a { overflow-wrap: anywhere; }
 
