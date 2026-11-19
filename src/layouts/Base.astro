@@ -52,6 +52,16 @@ const nav=[[t('ui.game'),localizedPath(locale,'game')],[english(t('ui.learn')),'
       <span class="wordmark" aria-hidden="true"></span>
       <span class="brand-online" aria-hidden="true">{t('ui.online')}</span>
     </a>
+    <a class="header-play btn primary" href={localizedPath(locale,'downloads')}>{getGameLabel(locale,t('ui.download'))}</a>
+    <details class="header-menu">
+      <summary>{t('ui.mainNavigation')} <span aria-hidden="true">＋</span></summary>
+      <div class="header-content">
+    <nav class="nav" aria-label={t('ui.mainNavigation')}>
+      <a href={localizedPath(locale,'downloads')} aria-current={current(localizedPath(locale,'downloads'))}>{t('ui.download')}</a>
+      {nav.map(([label,url])=><a href={url} aria-current={current(url)}>{label}</a>)}
+      <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>{english(t('ui.search'))}</a>
+      <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
+    </nav>
     <div class="header-end">
       <details class="language-picker">
         <summary aria-label={t('ui.chooseLanguage')}>{t('ui.language')}</summary>
@@ -61,16 +71,32 @@ const nav=[[t('ui.game'),localizedPath(locale,'game')],[english(t('ui.learn')),'
       </details>
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label={t('ui.themeInitial')} data-system={t('ui.themeSystem')} data-light={t('ui.themeLight')} data-dark={t('ui.themeDark')} data-change={t('ui.changeTheme')}>{t('ui.theme')}</button>
       <a class="header-signin" href={site.loginUrl}>{t('ui.signin')}</a>
-      <a class="header-play btn primary" href={localizedPath(locale,'downloads')}>{getGameLabel(locale,t('ui.download'))}</a>
     </div>
-    <nav class="nav" aria-label={t('ui.mainNavigation')}>
-      <a href={localizedPath(locale,'downloads')} aria-current={current(localizedPath(locale,'downloads'))}>{t('ui.download')}</a>
-      {nav.map(([label,url])=><a href={url} aria-current={current(url)}>{label}</a>)}
-      <a href="/search/" aria-current={Astro.url.pathname.startsWith('/search/')?'page':undefined}>{english(t('ui.search'))}</a>
-      <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
-    </nav>
+      </div>
+    </details>
   </div>
 </header>
+<script>
+// The native disclosure starts compact without JavaScript. Enhancement opens
+// desktop navigation and preserves focus when crossing the narrow breakpoint.
+const headerMenu=document.querySelector<HTMLDetailsElement>('.header-menu')!;
+const headerWide=matchMedia('(min-width: 760px)');
+headerMenu.dataset.enhanced='';
+headerMenu.open=headerWide.matches;
+let headerFocus:EventTarget|null=null;
+document.addEventListener('focusin',event=>{headerFocus=headerMenu.contains(event.target as Node)?event.target:null;});
+document.addEventListener('pointerdown',event=>{if(!headerMenu.contains(event.target as Node))headerFocus=null;});
+headerWide.addEventListener('change',()=>{
+  const active=document.activeElement;
+  const summary=headerMenu.querySelector<HTMLElement>(':scope > summary')!;
+  const focusedContent=headerMenu.contains(active)&&active!==summary;
+  // Chromium may blur a summary as its desktop style hides it, before this event.
+  const focusedSummary=active===summary||(active===document.body&&headerFocus===summary);
+  headerMenu.open=headerWide.matches;
+  if(!headerWide.matches&&focusedContent)summary.focus();
+  else if(headerWide.matches&&focusedSummary)headerMenu.querySelector<HTMLAnchorElement>('.nav a')!.focus();
+});
+</script>
 <main id="main" tabindex="-1" data-pagefind-body={!noindex?true:undefined} data-pagefind-ignore={noindex?true:undefined}>{category&&<span hidden data-pagefind-filter="type">{category}</span>}<slot/></main>
 <footer class="site-footer" data-pagefind-ignore>
   <div class="decor" aria-hidden="true"><img src="/brand/wood.webp" width="56" height="56" alt=""/><img src="/brand/fruit.webp" width="40" height="40" alt=""/><img src="/brand/wood.webp" width="44" height="44" alt=""/></div>
