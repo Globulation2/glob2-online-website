@@ -1,0 +1,812 @@
+{
+  "observed": "2026-11-18 local; session2026-11-19UTC",
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
+  "context": "Actual current public browser local-save/file/recording flow after the genuine Upgrading buildings lesson; Online hub observed separately.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 44.193,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 145,
+  "sourceHashes": {
+    "capture.json": "965c43172a16c0361943dadc91abdd01a594ef4f2f6a9d65d10a6770adc3caa3",
+    "command.py": "7fc7e40df91b654fea56920003277fb03163cd3e820d1ecd5b58f838f71ef813",
+    "quality-applied-after-reload.png": "a5c834b6c589d76909fc75789c05f4f36fd6770b87c68fd27f371f06d10c1df2",
+    "quality-applied-after-reload.json": "8596992ee5b00d349dd002ef464acd5a206b39fb6eab83f2548b06cfe1c5bd1a"
+  },
+  "assets": [
+    {
+      "id": "browser-main-v3",
+      "candidate": "browser-main-v3.webp",
+      "kind": "image",
+      "original": "browser-main-file-entry.png",
+      "originalSha256": "ad4bba0f80dbb0939a04e56e51e2f04f006ab624e6e8055c079880628d27dcb1",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 418310,
+      "sha256": "4f2e24c149855bec1e400ae862c176d8c3075a7481386d1ca4165f2d2894c23b",
+      "caption": "The current main menu offers Load game, Tutorial and Play online.",
+      "alt": "Browser 0.11.6.0 main menu with Load game and Play online.",
+      "diagnosticTick": 3849,
+      "screen": "14MainMenuScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp"
+    },
+    {
+      "id": "browser-game-menu-v3",
+      "candidate": "browser-game-menu-v3.webp",
+      "kind": "image",
+      "original": "browser-game-menu.png",
+      "originalSha256": "879168bf03375d2d7213de3e5860422665f772d7f907fc3e5ccef55690b30017",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 127268,
+      "sha256": "10a923556d2060906a36e89e3631dbba6efe358577fcb5e313662c4dcb1b79a3",
+      "caption": "The local game menu offers Save game and Load game.",
+      "alt": "Paused upgraded practice game with the actual Save game and Load game menu.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp"
+    },
+    {
+      "id": "browser-save-dialog-v3",
+      "candidate": "browser-save-dialog-v3.webp",
+      "kind": "image",
+      "original": "browser-save-dialog.png",
+      "originalSha256": "98d97be9067a684cde8fe2f19ff0341abae7228167d4b63bd6e1e6eb6f3b1a4e",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 82800,
+      "sha256": "8a4751dd0089217d735b01fa28666850351740f19b537227371d1e1d286a48dd",
+      "caption": "The actual Save game dialog before confirmation.",
+      "alt": "Current browser Save game dialog for the prepared Upgrading buildings scene.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-selected-save-v3",
+      "candidate": "browser-selected-save-v3.webp",
+      "kind": "image",
+      "original": "browser-selected-save.png",
+      "originalSha256": "87ad8ef35249ce946bb0171f1d057c49a015b2f801bdfe62f8d2b487faaebbda",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 271306,
+      "sha256": "415cf2ce2788e37349c8d9ee754148d0c7a99dbfb7d2a1c770449079502d0659",
+      "caption": "Choose game shows the selected original Upgrading buildings save and Import/Export file controls.",
+      "alt": "Selected local save in the actual Choose game panel.",
+      "diagnosticTick": 3849,
+      "screen": "15ChooseMapScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp"
+    },
+    {
+      "id": "browser-file-detail-v3",
+      "candidate": "browser-file-detail-v3.webp",
+      "kind": "image",
+      "original": "browser-selected-save.png",
+      "originalSha256": "87ad8ef35249ce946bb0171f1d057c49a015b2f801bdfe62f8d2b487faaebbda",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        228,
+        198,
+        1212,
+        702
+      ],
+      "width": 984,
+      "height": 504,
+      "bytes": 15118,
+      "sha256": "d8cdc27086e0a89f70310f208aa02f9e490873f25965fbfd3e48ac3817a1cffb",
+      "caption": "Detail of Choose game with the selected save and Import/Export file controls.",
+      "alt": "Genuine Choose game dialog detail with local save and file controls.",
+      "diagnosticTick": 3849,
+      "screen": "15ChooseMapScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp"
+    },
+    {
+      "id": "browser-import-confirmed-v3",
+      "candidate": "browser-import-confirmed-v3.webp",
+      "kind": "image",
+      "original": "browser-import-completed.png",
+      "originalSha256": "7ea31618594a615bf2ad480fcf52bf30cde569d720b08f0229166d974ba6d041",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 266838,
+      "sha256": "08ee444715429ac9ad2c99db453de6607039e219d29b7b590ae498540e995efa",
+      "caption": "After importing the exported file, Choose game lists 1-Upgrading buildings alongside the original save.",
+      "alt": "Actual imported copy listed in the browser game chooser.",
+      "diagnosticTick": 3849,
+      "screen": "15ChooseMapScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp"
+    },
+    {
+      "id": "browser-duplicate-import-v3",
+      "candidate": "browser-duplicate-import-v3.webp",
+      "kind": "image",
+      "original": "browser-duplicate-import-completed.png",
+      "originalSha256": "bdc9ac359b16d074659d9397e9a6ed1b2f190a59b832c0a46c43f4623f5c6cf0",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 251676,
+      "sha256": "6adc7a6376ed6498d86bfb95ea1948d49192a48aa00b5969b5a40290e303bc41",
+      "caption": "Importing the same file again creates 1-Upgrading buildings (1); this copy is selected before its byte-identical re-export.",
+      "alt": "Chooser with two numbered imported copies and the original save preserved.",
+      "diagnosticTick": 3849,
+      "screen": "15ChooseMapScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp"
+    },
+    {
+      "id": "browser-loaded-game-v3",
+      "candidate": "browser-loaded-game-v3.webp",
+      "kind": "image",
+      "original": "browser-loaded-racetrack-proof.png",
+      "originalSha256": "4814b5297d280a15df2bb31badd7b1edf4c433df83a4c1810331b7048de9cd8b",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 225272,
+      "sha256": "e7e9b59a789f0d52215b3b806720347ab4718dc0c213270cbc641f24fdac7032",
+      "caption": "After loading the imported copy and pausing, the selected Racetrack is level 2 with HP 1000/1000; the completed lesson prompt remains.",
+      "alt": "Actual game entered from the imported copy, then paused with the upgraded Racetrack selected.",
+      "diagnosticTick": 4383,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 4383,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp"
+    },
+    {
+      "id": "browser-replay-save-dialog-v3",
+      "candidate": "browser-replay-save-dialog-v3.webp",
+      "kind": "image",
+      "original": "browser-replay-named.png",
+      "originalSha256": "dfa7fb4269775a537c04ff4281bf2cda57aa52efca1d946b8934626d1bd7beed",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 36892,
+      "sha256": "966cb380526c201eadee04cf8ce91f7e08899c6811700f95382e52eb4dba2e17",
+      "caption": "The named Save Replay dialog before Ok; subsequent confirmation returned to results.",
+      "alt": "Actual Save Replay dialog with handbook entered as the filename; no replay list or playback shown.",
+      "diagnosticTick": 3849,
+      "screen": "14LoadSaveDialog",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-recordings-v3",
+      "candidate": "browser-recordings-v3.webp",
+      "kind": "image",
+      "original": "browser-recording-finalized.png",
+      "originalSha256": "1b39f1c12c20828eaed9aa93a46f35e38dc1e0aad55446d9b0f15126610b3d1c",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 332684,
+      "sha256": "1c39e15c26f2d5de111c4ffdaf6bf9b62dee807e3a7aa25e9199b444bdd06035",
+      "caption": "The finalized recording offers Export video, Export metadata and Export events.",
+      "alt": "Actual Recordings panel with the completed MP4 and separate export controls.",
+      "diagnosticTick": 4934,
+      "screen": "20RecordingFilesScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp"
+    },
+    {
+      "id": "browser-recording-detail-v3",
+      "candidate": "browser-recording-detail-v3.webp",
+      "kind": "image",
+      "original": "browser-recording-finalized.png",
+      "originalSha256": "1b39f1c12c20828eaed9aa93a46f35e38dc1e0aad55446d9b0f15126610b3d1c",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        388,
+        198,
+        1052,
+        702
+      ],
+      "width": 664,
+      "height": 504,
+      "bytes": 8384,
+      "sha256": "feab3a8dea7188bfd72ec86c0c5e2c59f66e82d5b71eff4fd09ed48f68e28921",
+      "caption": "Detail of the finalized recording and its three export controls.",
+      "alt": "Genuine Recordings dialog detail with Export video, Export metadata and Export events.",
+      "diagnosticTick": 4934,
+      "screen": "20RecordingFilesScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp"
+    },
+    {
+      "id": "browser-online-hub-v3",
+      "candidate": "browser-online-hub-v3.webp",
+      "kind": "image",
+      "original": "browser-online-entry.png",
+      "originalSha256": "269f0b6b56c45c471c617099f5c6fb8bf39340aa92e7b0d1f80961184b614039",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        180,
+        130,
+        1260,
+        640
+      ],
+      "width": 1080,
+      "height": 510,
+      "bytes": 34582,
+      "sha256": "5290cbb40b3cd9fd249c1e8c6c305bedf32283340364d704fc33aa946b8867ac",
+      "caption": "Current Online hub controls for quick match and room creation/joining; no match or room was joined.",
+      "alt": "Cropped current Online hub body showing Ranked/Casual, Find match, Create room and Join by code controls.",
+      "diagnosticTick": 4934,
+      "screen": "15OnlineHubScreen",
+      "paused": true,
+      "exactImagePhysicsTick": null,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp"
+    }
+  ],
+  "encoding": "RGB WebP quality 92 method 6; full frame or declared exact rectangular crop; no resize or retouch.",
+  "limits": [
+    "Only the actual named Save Replay dialog, Ok and return to results were observed; no persisted replay-list entry or playback claim.",
+    "Both save exports are 117893 bytes with SHA 3cd978aa2ee8dacc0461ae7acd7bc890a7bc4db161cf651b97d6cb10bcb627c5; two real file-chooser imports are recorded.",
+    "Gameplay resumed after loading the imported copy; final selected Racetrack proof is paused at 4383.",
+    "Exported recording is functional proof, not a public motion asset: 56.533333 seconds, H264 1440x900 30fps, AAC and chapter data track, complete true and three reported dropped frames; whole audio/video decoded successfully.",
+    "Online crop omits the unnecessary task guest identity header; no queue, room or chat was joined.",
+    "Menu diagnostic tick can retain the prior scene tick; no exact active physics-frame tick is asserted for non-match screens."
+  ],
+  "downloads": [
+    {
+      "filename": "downloads/1-Upgrading_buildings.game.gz",
+      "bytes": 117893,
+      "sha256": "3cd978aa2ee8dacc0461ae7acd7bc890a7bc4db161cf651b97d6cb10bcb627c5"
+    },
+    {
+      "filename": "downloads/2-1-Upgrading_buildings_-1-.game.gz",
+      "bytes": 117893,
+      "sha256": "3cd978aa2ee8dacc0461ae7acd7bc890a7bc4db161cf651b97d6cb10bcb627c5"
+    },
+    {
+      "filename": "downloads/3-capture-659037100.mp4",
+      "bytes": 11843651,
+      "sha256": "95ad1618684d4c0193af4a3b5ab2cea53e400e32f11ee62c2a2094ef0279c523"
+    },
+    {
+      "filename": "downloads/4-capture-659037100.mp4.json",
+      "bytes": 1197,
+      "sha256": "81d2803f6657bbe67e75a4f7727b06978bc902de78bb3ee5e52a592ac7670ba1"
+    },
+    {
+      "filename": "downloads/5-capture-659037100.mp4.events.jsonl",
+      "bytes": 984,
+      "sha256": "874e68ab7decedf36a07cf5a0d38c62931aee23c09ebb22bb39428d50dc07833"
+    }
+  ],
+  "imports": [
+    {
+      "seconds": 611.883,
+      "action": "interactive:import-file",
+      "control": "import",
+      "filename": "downloads/1-Upgrading_buildings.game.gz",
+      "bytes": 117893,
+      "sha256": "3cd978aa2ee8dacc0461ae7acd7bc890a7bc4db161cf651b97d6cb10bcb627c5"
+    },
+    {
+      "seconds": 657.52,
+      "action": "interactive:import-file",
+      "control": "import",
+      "filename": "downloads/1-Upgrading_buildings.game.gz",
+      "bytes": 117893,
+      "sha256": "3cd978aa2ee8dacc0461ae7acd7bc890a7bc4db161cf651b97d6cb10bcb627c5"
+    }
+  ],
+  "recordingProof": {
+    "metadata": {
+      "version": 1,
+      "video": "capture-659037100.mp4",
+      "session": "capture-659037100.mp4",
+      "segment": 1,
+      "session_start_us": 0,
+      "checkpoint_generation": 60,
+      "complete": true,
+      "error": "",
+      "duration_us": 56533333,
+      "fps": 30,
+      "width": 1440,
+      "height": 900,
+      "crf": 23,
+      "encoder": "libx264",
+      "fallback_reason": "WebCodecs H.264 configuration unavailable",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "dropped_frames": 3,
+      "dropped_audio_samples": 0,
+      "chapters": [
+        {
+          "id": 1,
+          "title": "game_session / in_game_main",
+          "start_us": 0,
+          "end_us": 35833333,
+          "phase": "dialog",
+          "screen": "game_session",
+          "dialog": "in_game_main",
+          "match": 1,
+          "mode": "single_player",
+          "map": "Upgrading buildings",
+          "team": 0,
+          "tick": 4383,
+          "start_tick": 4383,
+          "last_tick": 4383
+        },
+        {
+          "id": 2,
+          "title": "game_session / dialog",
+          "start_us": 35833333,
+          "end_us": 55800000,
+          "phase": "dialog",
+          "screen": "game_session",
+          "dialog": "dialog",
+          "match": 1,
+          "mode": "single_player",
+          "map": "Upgrading buildings",
+          "team": 0,
+          "tick": 4383,
+          "start_tick": 4383,
+          "last_tick": 4934
+        },
+        {
+          "id": 3,
+          "title": "game_session / in_game_main",
+          "start_us": 55800000,
+          "end_us": 56533333,
+          "phase": "dialog",
+          "screen": "game_session",
+          "dialog": "in_game_main",
+          "match": 1,
+          "mode": "single_player",
+          "map": "Upgrading buildings",
+          "team": 0,
+          "tick": 4934,
+          "start_tick": 4934,
+          "last_tick": 4934
+        }
+      ]
+    },
+    "wholeVideoAudioDecode": "Entire exported audio/video decoded with ffmpeg -v error -i exported.mp4 -f null -; samples at 2, 38 and 50 seconds visually checked.",
+    "publicMotionAsset": false
+  },
+  "registeredAssets": [
+    {
+      "id": "browser-main-v3",
+      "kind": "image",
+      "sha256": "4f2e24c149855bec1e400ae862c176d8c3075a7481386d1ca4165f2d2894c23b",
+      "bytes": 418310,
+      "width": 1440,
+      "height": 900,
+      "caption": "The current main menu offers Load game, Tutorial and Play online.",
+      "alt": "Browser 0.11.6.0 main menu with Load game and Play online.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp"
+    },
+    {
+      "id": "browser-game-menu-v3",
+      "kind": "image",
+      "sha256": "10a923556d2060906a36e89e3631dbba6efe358577fcb5e313662c4dcb1b79a3",
+      "bytes": 127268,
+      "width": 1440,
+      "height": 900,
+      "caption": "The local game menu offers Save game and Load game.",
+      "alt": "Paused upgraded practice game with the actual Save game and Load game menu.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp"
+    },
+    {
+      "id": "browser-save-dialog-v3",
+      "kind": "image",
+      "sha256": "8a4751dd0089217d735b01fa28666850351740f19b537227371d1e1d286a48dd",
+      "bytes": 82800,
+      "width": 1440,
+      "height": 900,
+      "caption": "The actual Save game dialog before confirmation.",
+      "alt": "Current browser Save game dialog for the prepared Upgrading buildings scene.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-selected-save-v3",
+      "kind": "image",
+      "sha256": "415cf2ce2788e37349c8d9ee754148d0c7a99dbfb7d2a1c770449079502d0659",
+      "bytes": 271306,
+      "width": 1440,
+      "height": 900,
+      "caption": "Choose game shows the selected original Upgrading buildings save and Import/Export file controls.",
+      "alt": "Selected local save in the actual Choose game panel.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp"
+    },
+    {
+      "id": "browser-file-detail-v3",
+      "kind": "image",
+      "sha256": "d8cdc27086e0a89f70310f208aa02f9e490873f25965fbfd3e48ac3817a1cffb",
+      "bytes": 15118,
+      "width": 984,
+      "height": 504,
+      "caption": "Detail of Choose game with the selected save and Import/Export file controls.",
+      "alt": "Genuine Choose game dialog detail with local save and file controls.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp"
+    },
+    {
+      "id": "browser-import-confirmed-v3",
+      "kind": "image",
+      "sha256": "08ee444715429ac9ad2c99db453de6607039e219d29b7b590ae498540e995efa",
+      "bytes": 266838,
+      "width": 1440,
+      "height": 900,
+      "caption": "After importing the exported file, Choose game lists 1-Upgrading buildings alongside the original save.",
+      "alt": "Actual imported copy listed in the browser game chooser.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp"
+    },
+    {
+      "id": "browser-duplicate-import-v3",
+      "kind": "image",
+      "sha256": "6adc7a6376ed6498d86bfb95ea1948d49192a48aa00b5969b5a40290e303bc41",
+      "bytes": 251676,
+      "width": 1440,
+      "height": 900,
+      "caption": "Importing the same file again creates 1-Upgrading buildings (1); this copy is selected before its byte-identical re-export.",
+      "alt": "Chooser with two numbered imported copies and the original save preserved.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp"
+    },
+    {
+      "id": "browser-loaded-game-v3",
+      "kind": "image",
+      "sha256": "e7e9b59a789f0d52215b3b806720347ab4718dc0c213270cbc641f24fdac7032",
+      "bytes": 225272,
+      "width": 1440,
+      "height": 900,
+      "caption": "After loading the imported copy and pausing, the selected Racetrack is level 2 with HP 1000/1000; the completed lesson prompt remains.",
+      "alt": "Actual game entered from the imported copy, then paused with the upgraded Racetrack selected.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp"
+    },
+    {
+      "id": "browser-replay-save-dialog-v3",
+      "kind": "image",
+      "sha256": "966cb380526c201eadee04cf8ce91f7e08899c6811700f95382e52eb4dba2e17",
+      "bytes": 36892,
+      "width": 1440,
+      "height": 900,
+      "caption": "The named Save Replay dialog before Ok; subsequent confirmation returned to results.",
+      "alt": "Actual Save Replay dialog with handbook entered as the filename; no replay list or playback shown.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-recordings-v3",
+      "kind": "image",
+      "sha256": "1c39e15c26f2d5de111c4ffdaf6bf9b62dee807e3a7aa25e9199b444bdd06035",
+      "bytes": 332684,
+      "width": 1440,
+      "height": 900,
+      "caption": "The finalized recording offers Export video, Export metadata and Export events.",
+      "alt": "Actual Recordings panel with the completed MP4 and separate export controls.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp"
+    },
+    {
+      "id": "browser-recording-detail-v3",
+      "kind": "image",
+      "sha256": "feab3a8dea7188bfd72ec86c0c5e2c59f66e82d5b71eff4fd09ed48f68e28921",
+      "bytes": 8384,
+      "width": 664,
+      "height": 504,
+      "caption": "Detail of the finalized recording and its three export controls.",
+      "alt": "Genuine Recordings dialog detail with Export video, Export metadata and Export events.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp"
+    },
+    {
+      "id": "browser-online-hub-v3",
+      "kind": "image",
+      "sha256": "5290cbb40b3cd9fd249c1e8c6c305bedf32283340364d704fc33aa946b8867ac",
+      "bytes": 34582,
+      "width": 1080,
+      "height": 510,
+      "caption": "Current Online hub controls for quick match and room creation/joining; no match or room was joined.",
+      "alt": "Cropped current Online hub body showing Ranked/Casual, Find match, Create room and Join by code controls.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp"
+    },
+    {
+      "id": "browser-file-detail-mobile-v3",
+      "kind": "image",
+      "sha256": "4e51b552d9b369a7485c46ed21fce0a4ec3574bd9fb3863ba52b7e06e34defce",
+      "bytes": 4812,
+      "width": 304,
+      "height": 404,
+      "caption": "File-list detail: Upgrading buildings is selected; Replays, Import, Export file and Delete are visible.",
+      "alt": "Genuine left-pane crop of Choose a game, with the selected local save and file controls readable.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "browser-main-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp",
+      "status": 200,
+      "bytes": 418310,
+      "sha256": "4f2e24c149855bec1e400ae862c176d8c3075a7481386d1ca4165f2d2894c23b",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-game-menu-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp",
+      "status": 200,
+      "bytes": 127268,
+      "sha256": "10a923556d2060906a36e89e3631dbba6efe358577fcb5e313662c4dcb1b79a3",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-save-dialog-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp",
+      "status": 200,
+      "bytes": 82800,
+      "sha256": "8a4751dd0089217d735b01fa28666850351740f19b537227371d1e1d286a48dd",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-selected-save-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp",
+      "status": 200,
+      "bytes": 271306,
+      "sha256": "415cf2ce2788e37349c8d9ee754148d0c7a99dbfb7d2a1c770449079502d0659",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-file-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp",
+      "status": 200,
+      "bytes": 15118,
+      "sha256": "d8cdc27086e0a89f70310f208aa02f9e490873f25965fbfd3e48ac3817a1cffb",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-import-confirmed-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp",
+      "status": 200,
+      "bytes": 266838,
+      "sha256": "08ee444715429ac9ad2c99db453de6607039e219d29b7b590ae498540e995efa",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-duplicate-import-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp",
+      "status": 200,
+      "bytes": 251676,
+      "sha256": "6adc7a6376ed6498d86bfb95ea1948d49192a48aa00b5969b5a40290e303bc41",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-loaded-game-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp",
+      "status": 200,
+      "bytes": 225272,
+      "sha256": "e7e9b59a789f0d52215b3b806720347ab4718dc0c213270cbc641f24fdac7032",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-replay-save-dialog-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp",
+      "status": 200,
+      "bytes": 36892,
+      "sha256": "966cb380526c201eadee04cf8ce91f7e08899c6811700f95382e52eb4dba2e17",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-recordings-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp",
+      "status": 200,
+      "bytes": 332684,
+      "sha256": "1c39e15c26f2d5de111c4ffdaf6bf9b62dee807e3a7aa25e9199b444bdd06035",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-recording-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp",
+      "status": 200,
+      "bytes": 8384,
+      "sha256": "feab3a8dea7188bfd72ec86c0c5e2c59f66e82d5b71eff4fd09ed48f68e28921",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-online-hub-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp",
+      "status": 200,
+      "bytes": 34582,
+      "sha256": "5290cbb40b3cd9fd249c1e8c6c305bedf32283340364d704fc33aa946b8867ac",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "browser-file-detail-mobile-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp",
+      "status": 200,
+      "bytes": 4812,
+      "sha256": "4e51b552d9b369a7485c46ed21fce0a4ec3574bd9fb3863ba52b7e06e34defce",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "mobileControlReplacement": {
+    "reason": "The wide chooser crop made its control labels too small on mobile. A new genuine left-pane crop retains the same actual selected filename and Import/Export controls at readable size; the full scene retains preview context. Original immutable object and provenance preserved.",
+    "candidate": {
+      "approvalStatus": "Pending independent final crop/bytes approval before immutable upload.",
+      "context": "Legibility refinement only, from the already independently approved current upgrade/files session.",
+      "assets": [
+        {
+          "id": "browser-file-detail-mobile-v3",
+          "candidate": "browser-file-detail-mobile-v3.webp",
+          "kind": "image",
+          "width": 304,
+          "height": 404,
+          "bytes": 4812,
+          "sha256": "4e51b552d9b369a7485c46ed21fce0a4ec3574bd9fb3863ba52b7e06e34defce",
+          "caption": "File-list detail: Upgrading buildings is selected; Replays, Import, Export file and Delete are visible.",
+          "alt": "Genuine left-pane crop of Choose a game, with the selected local save and file controls readable.",
+          "original": "browser-selected-save.png",
+          "originalSha256": "87ad8ef35249ce946bb0171f1d057c49a015b2f801bdfe62f8d2b487faaebbda",
+          "originalPixels": [
+            1440,
+            900
+          ],
+          "crop": [
+            236,
+            246,
+            540,
+            650
+          ],
+          "presentation": "detail",
+          "proposedPath": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp"
+        }
+      ],
+      "encoding": "RGB WebP quality92 method6, exact declared crop without resize or retouch.",
+      "replacesInSource": "browser-file-detail-v3; original immutable object retained.",
+      "sourceCaptureSha256": "965c43172a16c0361943dadc91abdd01a594ef4f2f6a9d65d10a6770adc3caa3"
+    },
+    "publicReadback": [
+      {
+        "id": "browser-file-detail-mobile-v3",
+        "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp",
+        "status": 200,
+        "bytes": 4812,
+        "sha256": "4e51b552d9b369a7485c46ed21fce0a4ec3574bd9fb3863ba52b7e06e34defce",
+        "contentType": "image/webp",
+        "matches": true
+      }
+    ]
+  },
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  },
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved."
+}

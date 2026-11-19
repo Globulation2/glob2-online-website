@@ -1,6 +1,6 @@
 {
   "observed": "2026-11-18 local",
-  "approvalStatus": "Independent source, media/temporal and applied-High reviews, immutable upload and fresh public byte/hash verification complete. Matching six-article source preparation is integrated; rendered reviews, full release CI and production acceptance remain pending.",
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
   "context": "Actual current public browser prepared Guard zones and flag tactics lesson; same genuine successful source as current jobs family.",
   "baseline": {
     "observed": "2026-11-18",
@@ -322,5 +322,14 @@
     "reference-buildings",
     "reference-units"
   ],
-  "publicationQualification": "This is a source-preparation commit, not rendered or production acceptance. The final nine-page publication unit will also include training/upgrades, browser files and fruit after their specific remaining observations."
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  }
 }

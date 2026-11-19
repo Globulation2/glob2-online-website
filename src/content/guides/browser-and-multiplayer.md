@@ -1,107 +1,151 @@
 ---
 title: "Browser play, saves, replays, and multiplayer"
-description: "Keep useful practice states, export local progress, and prepare to join the online game."
+description: "Save a useful state, export and restore a real backup, record a clip, and inspect the online choices."
+locale: "en"
 group: "match"
 order: 2
 prerequisites: ["getting-started"]
 tags: ["beginner", "multiplayer", "troubleshooting", "saves"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Browser files and persistence"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/docs/browser/storage.md"
-  - title: "Online client"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/docs/multiplayer/client.md"
-  - title: "Replays"
-    url: "https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/src/replay"
-  - title: "Gameplay recording"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/docs/features/gameplay-recording.md"
+  - title: "Current public browser save, export, import, load, recording and online controls, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: browser storage and file formats"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/docs/browser/storage.md"
+  - title: "Released native 0.11.6.1 source context: gameplay recording"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/docs/features/gameplay-recording.md"
+  - title: "Released native 0.11.6.1 source context: replay implementation"
+    url: "https://github.com/Globulation2/glob2/tree/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/replay"
+  - title: "Released native 0.11.6.1 source context: online client"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/docs/multiplayer/client.md"
 ---
 
-The browser game runs after you open [app.glob2.online](https://app.glob2.online/play/). The public website's handbook does not start the game itself. Use a desktop mouse and keyboard for these instructions, and click the game canvas to give it keyboard focus and activate audio.
+Open [the browser game](https://app.glob2.online/play/) to play; reading the website's handbook does not start a simulation. These desktop examples use the actual public **browser 0.11.6.0** with explicitly applied High resolution artwork. Its exact deployed source revision remains unverified. Storage and replay background from the released native source is identified separately from the observed browser steps.
 
-## Choose the right starting mode
+[[media:browser-main-v3]]
 
-**Tutorial** teaches actions in a controlled sequence. **Campaign** follows mission objectives. **Custom Game** lets you choose local maps, opponents, teams, and rules. Start locally before joining a live opponent so that food, staffing, and controls feel familiar.
-
-An account and a browser save are different things. Saves and imported files belong to the browser profile and site address where you played. Signing in does not make those local files appear in another browser.
+Use **Tutorial** for prepared lessons, **Custom game** for a local map and opponents, **Campaign** for missions, and **Load game** for retained files. Learn the local controls before joining a live opponent. A saved simulation, campaign progress, a replay and a recorded video preserve different things.
 
 ## Save a useful decision point
 
-In a local match, open the menu with **Escape** or the icon beside the minimap and choose **Save game**. Enter a recognizable name and confirm. Use separate names for an initial colony, a developed position, and a pre-attack decision if you want to retain all three.
+Choose a healthy local practice state you may want to revisit. The pictured example saves the completed **Upgrading buildings** lesson after its Racetrack upgrade; it is not another player's game.
 
-Do not close the tab while the game is still writing. If a save or storage operation reports failure, use its retry/export option and read the result. A dismissed error is not a successful backup.
+1. In local practice, pause if you want time to inspect. Press **Escape** or use the game-menu icon.
+2. Choose **Save game**.
+3. Use the **Filename** field to identify the milestone. Use separate names when you want to retain an opening and a later decision.
+4. Choose **Ok** and wait for the save operation to finish and return to the game.
 
-To resume, return to the main menu, choose **Load**, select the save, and confirm. A save recreates a playable state; a replay serves a different purpose.
+[[media:browser-game-menu-v3]]
 
-## Export before clearing site data
+[[media:browser-save-dialog-v3]]
 
-:::warning
+The recorded save uses the existing name **Upgrading buildings**. Do not close the tab while it is still writing. If an error remains visible, read it and follow the available retry or export route; dismissing an error is not a completed backup.
 
-Open **Load**, select the file, and use **Export** to download it. Keep the downloaded copy somewhere you can find again. Export before clearing browser storage, changing browser profiles, or moving to a different browser.
+Use explicit saves for checkpoints rather than relying only on an Auto save. Saving a simulation is separate from keeping the tutorial or campaign's mission-progress record.
 
-:::
+## Export from the main-menu file chooser
 
-Use **Import** in the appropriate file chooser to bring a compatible file back. The game checks type and structure and waits for browser persistence before reporting that it was imported. Duplicate names receive a numbered copy rather than replacing an existing file.
+Return to the main menu and choose **Load game**. The current main-menu **Choose a game** screen provides **Import** and **Export file**. The simpler Load game dialog inside the running match did not show those controls in this observation.
 
-If an import fails, read the error. A corrupt or unsupported file is not fixed by repeatedly selecting it. A storage failure may offer a retry or an export of the bytes. Keep the original backup while investigating.
-
-Campaign/tutorial progress has its own **Import progress** and **Export progress** controls. That backup preserves mission progress; it is distinct from a simulation save at a particular moment. Use the backup type that matches what you intend to keep.
-
-:::media-group
-
-[[media:browser-load]]
-
-[[media:browser-file-detail]]
-
-:::
-
-## Use replays to inspect a match
-
-The results flow offers replay saving. Keep a replay when you want to review a fight, trace an opponent's development, or inspect a timing decision. Replays follow the game's command history and depend on compatible simulation versions.
-
-Do not assume a replay can be loaded as a normal save or jumped to an exact tick on every build. Keep milestone saves as well when you want to play a decision again. Retain the game version alongside a replay you expect to use later.
-
-When reviewing a failed attack, inspect the build-up as well as the fight: unit training, food, the march, and support services may explain more than the final casualties.
-
-## Record a short lesson or memorable moment
-
-The game supports recording through its controls, with **Ctrl + Shift + R** as the default toggle. Settings' Recording section lets you inspect its state; the Recordings screen provides export for finished files.
-
-Wait for recording finalization and export a copy before clearing site storage. Recording files and simulation replays are different: a video preserves your visible perspective, while a replay follows compatible game commands. Browser storage availability and recording performance can vary, so check the output rather than assuming the toggle produced a usable file.
-
-For a short shared explanation, a focused clip of the action and result is easier to follow than several minutes of unrelated play.
+1. Select the saved game in the left list.
+2. Check its preview and displayed information so you know which file you are exporting.
+3. Choose **Export file** and wait for the browser download to finish.
+4. Keep the downloaded file somewhere you can find again, alongside the game version used for it.
 
 :::media-group
 
-[[media:browser-recording]]
+[[media:browser-selected-save-v3]]
 
-[[media:browser-recording-detail]]
+[[media:browser-file-detail-mobile-v3]]
 
 :::
 
-## Prepare for online play
+This demonstration downloaded a **.game.gz** file. Keep its extension and contents intact. Record the release version from the main menu; the chooser’s own Version field can display a different value. A simulation save recreates a playable state; it is not the same as an MP4 recording or a replay's command history.
 
-Choose **Play online** in the game to reach the online hub. Review the available rooms or queues and the account options the instance presents. Casual guest access and rated play are distinct; read the selected queue rather than assuming every game uses the same account requirements or opponent type.
+The released browser-storage implementation keeps local files by browser profile and site origin. Keep exported backups before clearing site data, changing profiles or moving to another address. Do not assume signing in transfers a local simulation file; use the actual export and import controls for that backup.
 
-Before joining:
+## Import a compatible backup and wait for confirmation
 
-1. Learn the default controls in local practice.
-2. Check the room's map, teams, rules, and opponent information.
-3. Use a compatible current client.
-4. Keep the tab active and allow the game to finish its connection/loading flow.
-5. Avoid starting a match when you cannot stay through it.
+In the main-menu game chooser, choose **Import** and select the compatible save through the browser's file picker. Wait for validation and persistence. A chosen filename or a dismissed picker is only the beginning.
 
-A local AI difficulty estimate is not the same as an online leaderboard rank. The modern platform's authoritative ranking, provisional status, and rating scale belong to its rated-play context.
+[[media:browser-import-confirmed-v3]]
 
-## Troubleshoot without losing your files
+In this actual run the newly imported copy appeared and became selected alongside the original **Upgrading buildings** save. The first import and a second import were both performed with the same downloaded file.
 
-| Problem | First check | Next action |
+[[media:browser-duplicate-import-v3]]
+
+The repeated import created a separate **(1)** copy; the original and first imported copy remained in the list. Re-exporting the imported copy produced exactly the same bytes as the initial download in this check. That result does not make an arbitrary, corrupt or incompatible file valid.
+
+If import reports an error, keep the original backup and read the message. The native storage implementation validates file type, version and structure before accepting it. A persistence failure and a file-validation failure are different problems; follow the actual retry/export options rather than assuming either has succeeded.
+
+## Load and check the state you meant to keep
+
+Select the imported game, choose **Ok**, and wait for the match to finish loading. Inspect a recognizable building, unit or milestone rather than treating the file-picker action as a successful restore. Pause again if you need inspection time: the recorded import resumed normal simulation after loading.
+
+[[media:browser-loaded-game-v3]]
+
+Here the imported save restored the upgraded **Level 2 Racetrack**, **HP 1000/1000**, and the lesson-complete state. This is an actual save-game round trip, distinct from replay playback.
+
+## Keep replay history separate from saved simulations
+
+The results screen offers **Save Replay**. Enter a name, choose **Ok**, and wait for that save operation to finish. The named dialog below belongs to this demonstration's results flow after leaving the local lesson.
+
+[[media:browser-replay-save-dialog-v3]]
+
+In this check, **Ok** returned to results; a persisted replay entry or playback was not verified.
+
+The main-menu game chooser offers a **Replays** control for selecting the other file type. Replays follow compatible game commands rather than storing a video of the visible screen. Keep the relevant game version and a milestone save as well when you want to play a decision again. Do not assume a replay is a normal save or supports arbitrary exact-tick seeking.
+
+When reviewing a match, inspect the build-up as well as the final fight: training, food, travel and support can explain a later result.
+
+## Record and export visible footage
+
+A recording preserves the local visible perspective. It is different from both a playable save and a command-history replay.
+
+1. Open the game menu and choose **Start recording**. Check that the control changes to **Stop recording**.
+2. Return to the game and capture the action you want to explain. A paused screen, menu and gameplay are different parts of the same visible recording.
+3. Stop recording and allow finalization to finish.
+4. Open **Recordings**, then choose **Export video** for the completed entry.
+5. Keep the downloaded video before clearing browser storage. Export its metadata or events separately if you need those additional records.
+
+:::media-group
+
+[[media:browser-recordings-v3]]
+
+[[media:browser-recording-detail-v3]]
+
+:::
+
+The actual check exported a playable **MP4**, with metadata and events as separate downloads. The file includes both menus and gameplay; exporting the metadata alone would not provide that video. Inspect a downloaded recording in a player before treating a toggle as a usable result.
+
+Default recording shortcuts can be checked under **Settings → Controls**; the actual menu controls above avoid relying on a customized binding. Recording availability, encoder choice and storage can vary. Read any error and preserve completed exports rather than assuming an interrupted recording was finalized.
+
+## Inspect the online choices before joining
+
+Choose **Play online** from the main menu. The observed hub has **Ranked 1v1**, **Casual 1v1**, **Rooms**, account sign-in, and a code-or-invite field. These are different choices, not evidence that you have already joined a match.
+
+[[media:browser-online-hub-v3]]
+
+The observed Casual option describes an unrated queue with an AI fallback after a wait. Read the current queue's actual description; online availability and waiting times can change. A local AI difficulty estimate is not an online leaderboard rank.
+
+Before choosing a match:
+
+- Practice the default controls locally.
+- Inspect the selected map, rules, teams and account requirements.
+- Use a compatible current client and keep its connection/loading flow active.
+- Choose a session you can stay through.
+
+For a private room, use the intended code or invitation and inspect its settings before starting. The pictured example stops at the hub; inspect the current room or queue details before starting.
+
+## Troubleshoot without losing the backup
+
+| Problem | Inspect first | Next step |
 | --- | --- | --- |
-| Keys do not reach the game | Canvas focus and current dialog | Click the canvas; close or finish the dialog |
-| Audio is silent | Browser interaction and game mute setting | Click the game and inspect audio settings |
-| Save appears missing | Browser profile and exact site address | Return to the original profile/address or import your export |
-| Import reports an error | File type, version, and storage message | Keep the original and follow the displayed retry/export route |
-| Replay will not play | Simulation/version compatibility | Use the matching client where available; retain the original replay |
-| Online entry fails | Current client, network, and hub message | Read the connection error and retry from the hub |
+| Keys do not reach the game | Canvas focus and active dialog | Click the game and finish or close the dialog. |
+| Save seems missing | Browser profile, site address and selected list | Return to the original location or import the compatible export. |
+| Import stays busy | Visible validation/persistence message | Wait for completion rather than navigating away. |
+| Import reports failure | File type, version and actual error | Retain the original and follow the offered recovery controls. |
+| Load returns an unexpected state | Selected file and recognizable milestone | Recheck the correct backup before overwriting anything. |
+| Recording is absent or unusable | Finalization, errors and the downloaded video | Inspect the actual output and preserve any completed export. |
+| Online entry fails | Current client, network and displayed hub message | Resolve that condition before joining a session. |
 
-Use the game's **Quit** flow for a controlled exit and allow storage to finish. Refreshing or abruptly closing a tab cannot wait for pending writes.
+Finish save and export operations before leaving. Browser-tab closure cannot wait for pending storage writes; a download you have actually retained is a separate backup from the local browser store.

@@ -1,0 +1,638 @@
+{
+  "observed": "2026-11-18 local; session2026-11-19UTC",
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
+  "context": "Actual public browser Upgrading buildings prepared lesson, not a custom Standard opening.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 44.193,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 145,
+  "sourceHashes": {
+    "capture.json": "965c43172a16c0361943dadc91abdd01a594ef4f2f6a9d65d10a6770adc3caa3",
+    "command.py": "7fc7e40df91b654fea56920003277fb03163cd3e820d1ecd5b58f838f71ef813",
+    "quality-applied-after-reload.png": "a5c834b6c589d76909fc75789c05f4f36fd6770b87c68fd27f371f06d10c1df2",
+    "quality-applied-after-reload.json": "8596992ee5b00d349dd002ef464acd5a206b39fb6eab83f2548b06cfe1c5bd1a"
+  },
+  "assets": [
+    {
+      "id": "upgrade-racetrack-before-v3",
+      "candidate": "upgrade-racetrack-before-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-before.png",
+      "originalSha256": "fb5dc8308a99eabdb4a2df0e28a2f95bee7250030a4733e90c88fb01ffaec43e",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 220744,
+      "sha256": "01895c793e2c16c1f4eba3335c1bead0d0bc3877b0c26e2dcd1b03e9ceec916d",
+      "caption": "Before Upgrade, the paused level 1 Racetrack shows HP 675/675 and Inside 2/2.",
+      "alt": "Before Upgrade, the paused level1 Racetrack shows HP675/675 and Inside2/2.",
+      "diagnosticTick": 375,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 375,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-before-detail-v3",
+      "candidate": "upgrade-racetrack-before-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-before.png",
+      "originalSha256": "fb5dc8308a99eabdb4a2df0e28a2f95bee7250030a4733e90c88fb01ffaec43e",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 3966,
+      "sha256": "969cdb400a4d4053cc0942afb1214e44a164b33a536ed8570bfccfa9fc2cd2eb",
+      "caption": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "alt": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "diagnosticTick": 375,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 375,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-v3",
+      "candidate": "upgrade-racetrack-queued-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-site.png",
+      "originalSha256": "d25e0901fdfb7d293cd5e1869fd308ef613b83918880e452b2832b19e24c2668",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 220182,
+      "sha256": "6a6e5e4dd9108b318c5caf53b5680afe9805319a8508a8412f16200ddeaf2965",
+      "caption": "After choosing Upgrade at the same pause, the level 1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "alt": "After choosing Upgrade at the same pause, the level1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "diagnosticTick": 375,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 375,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-detail-v3",
+      "candidate": "upgrade-racetrack-queued-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-site.png",
+      "originalSha256": "d25e0901fdfb7d293cd5e1869fd308ef613b83918880e452b2832b19e24c2668",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 4104,
+      "sha256": "2639db65895cd52293f41f6cb9d850c2abf25166976e09475524f11cd455475f",
+      "caption": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "alt": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "diagnosticTick": 375,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 375,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-v3",
+      "candidate": "upgrade-racetrack-construction-v3.webp",
+      "kind": "image",
+      "original": "upgrade-construction-paused.png",
+      "originalSha256": "26664ded16fe00ecfc280da09d9362967459535ee189a5ad41b7f7a386cbc891",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 236210,
+      "sha256": "f05701a36a350b4d7a7b8e91093b6639b75866c0b2ec73bac38c95b0ba557b15",
+      "caption": "At paused tick 2000, the level 2 site shows HP 961/1000,Wood 8/10,Stone 5/5 and Working 2/7.",
+      "alt": "At pausedtick2000, the level2 site shows HP961/1000,Wood8/10,Stone5/5 and Working2/7.",
+      "diagnosticTick": 2000,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 2000,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-detail-v3",
+      "candidate": "upgrade-racetrack-construction-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-construction-paused.png",
+      "originalSha256": "26664ded16fe00ecfc280da09d9362967459535ee189a5ad41b7f7a386cbc891",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 6776,
+      "sha256": "5b043a2053608567d23eafd93d62b6f778decfd9a978234bbc6910e7083c38d0",
+      "caption": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "alt": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "diagnosticTick": 2000,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 2000,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-v3",
+      "candidate": "upgrade-worker-before-v3.webp",
+      "kind": "image",
+      "original": "upgrade-training-worker-before.png",
+      "originalSha256": "73efdcc89ebec601e475afec9c27a91a783585b3f08a7af640988f0383f14251",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 231506,
+      "sha256": "d9889dd9edbe86f3a3066c09debd0d8049b8d5ec34e743b3ca24828cfcd24186",
+      "caption": "At paused tick 2000, the selected worker shows Walk (1): 16,HP 200/200 and Food 75%.",
+      "alt": "At pausedtick2000, the selected worker shows Walk(1):16,HP200/200 and Food75%.",
+      "diagnosticTick": 2000,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 2000,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-detail-v3",
+      "candidate": "upgrade-worker-before-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-training-worker-before.png",
+      "originalSha256": "73efdcc89ebec601e475afec9c27a91a783585b3f08a7af640988f0383f14251",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5518,
+      "sha256": "29bccddd20524d8c36f47df7f61392ac2cfbd4117444b6011df3caf44031e34b",
+      "caption": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "alt": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "diagnosticTick": 2000,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 2000,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-v3",
+      "candidate": "upgrade-worker-after-v3.webp",
+      "kind": "image",
+      "original": "upgrade-selected-worker-final.png",
+      "originalSha256": "5ad775a80150e476b85fe4c7279579e35fe64c22f1e15ce8f815eef0f5bd28fa",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 230344,
+      "sha256": "20c2363bcdf6e84e2ca0bb101044bcc97097f8c841bce919aa40f3a68b799efb",
+      "caption": "At paused tick 3849, the same continuously selected worker shows Walk (3): 26,HP 200/200 and Food 56%; the lesson is complete.",
+      "alt": "At pausedtick3849, the same continuously selected worker shows Walk(3):26,HP200/200 and Food56%; the lesson is complete.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-detail-v3",
+      "candidate": "upgrade-worker-after-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-selected-worker-final.png",
+      "originalSha256": "5ad775a80150e476b85fe4c7279579e35fe64c22f1e15ce8f815eef0f5bd28fa",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5492,
+      "sha256": "803cffe34a71098ec0503f86d266c2f0f027158940d31d62ed1278008a3a1945",
+      "caption": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "alt": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-v3",
+      "candidate": "upgrade-racetrack-completed-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-completed.png",
+      "originalSha256": "9fee10dc04dc3a39fa0e7ebc5df6196d172636d37ee096c6ff985d137528f601",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 230376,
+      "sha256": "310b0fcf6663280191c3f34bbf15a08461d395b8f683ad06551b07e544b99314",
+      "caption": "The completed level 2 Racetrack at paused tick 3849 has HP 1000/1000 and Inside 4/4.",
+      "alt": "The completed level2 Racetrack at pausedtick3849 has HP1000/1000 and Inside4/4.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-detail-v3",
+      "candidate": "upgrade-racetrack-completed-detail-v3.webp",
+      "kind": "image",
+      "original": "upgrade-racetrack-completed.png",
+      "originalSha256": "9fee10dc04dc3a39fa0e7ebc5df6196d172636d37ee096c6ff985d137528f601",
+      "originalPixels": [
+        1440,
+        900
+      ],
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 4048,
+      "sha256": "ccdfda99fbcac17c9de1adc987350cea08f9b5c03368ed6fcf6f0aa9925c3f99",
+      "caption": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "alt": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "diagnosticTick": 3849,
+      "screen": "match",
+      "paused": true,
+      "exactImagePhysicsTick": 3849,
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp"
+    }
+  ],
+  "encoding": "RGB WebP quality 92 method 6; full frame or declared exact rectangular crop; no resize or retouch.",
+  "limits": [
+    "All selected frames are actually paused at ticks 375, 2000 or 3849.",
+    "Worker retained from tick 2000 to 3849 without selection changes; Walk 1 to 3 does not establish one visit or identical progress for every unit.",
+    "The initial upgrade was queued while an occupant remained; construction and completion are separate observed states.",
+    "No Inn upgrade, locked-control comparison or whole-colony training claim."
+  ],
+  "registeredAssets": [
+    {
+      "id": "upgrade-racetrack-before-v3",
+      "kind": "image",
+      "sha256": "01895c793e2c16c1f4eba3335c1bead0d0bc3877b0c26e2dcd1b03e9ceec916d",
+      "bytes": 220744,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before Upgrade, the paused level 1 Racetrack shows HP 675/675 and Inside 2/2.",
+      "alt": "Before Upgrade, the paused level1 Racetrack shows HP675/675 and Inside2/2.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-before-detail-v3",
+      "kind": "image",
+      "sha256": "969cdb400a4d4053cc0942afb1214e44a164b33a536ed8570bfccfa9fc2cd2eb",
+      "bytes": 3966,
+      "width": 192,
+      "height": 300,
+      "caption": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "alt": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-v3",
+      "kind": "image",
+      "sha256": "6a6e5e4dd9108b318c5caf53b5680afe9805319a8508a8412f16200ddeaf2965",
+      "bytes": 220182,
+      "width": 1440,
+      "height": 900,
+      "caption": "After choosing Upgrade at the same pause, the level 1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "alt": "After choosing Upgrade at the same pause, the level1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-detail-v3",
+      "kind": "image",
+      "sha256": "2639db65895cd52293f41f6cb9d850c2abf25166976e09475524f11cd455475f",
+      "bytes": 4104,
+      "width": 192,
+      "height": 300,
+      "caption": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "alt": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-v3",
+      "kind": "image",
+      "sha256": "f05701a36a350b4d7a7b8e91093b6639b75866c0b2ec73bac38c95b0ba557b15",
+      "bytes": 236210,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 2000, the level 2 site shows HP 961/1000,Wood 8/10,Stone 5/5 and Working 2/7.",
+      "alt": "At pausedtick2000, the level2 site shows HP961/1000,Wood8/10,Stone5/5 and Working2/7.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-detail-v3",
+      "kind": "image",
+      "sha256": "5b043a2053608567d23eafd93d62b6f778decfd9a978234bbc6910e7083c38d0",
+      "bytes": 6776,
+      "width": 192,
+      "height": 300,
+      "caption": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "alt": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-v3",
+      "kind": "image",
+      "sha256": "d9889dd9edbe86f3a3066c09debd0d8049b8d5ec34e743b3ca24828cfcd24186",
+      "bytes": 231506,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 2000, the selected worker shows Walk (1): 16,HP 200/200 and Food 75%.",
+      "alt": "At pausedtick2000, the selected worker shows Walk(1):16,HP200/200 and Food75%.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-detail-v3",
+      "kind": "image",
+      "sha256": "29bccddd20524d8c36f47df7f61392ac2cfbd4117444b6011df3caf44031e34b",
+      "bytes": 5518,
+      "width": 192,
+      "height": 260,
+      "caption": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "alt": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-v3",
+      "kind": "image",
+      "sha256": "20c2363bcdf6e84e2ca0bb101044bcc97097f8c841bce919aa40f3a68b799efb",
+      "bytes": 230344,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 3849, the same continuously selected worker shows Walk (3): 26,HP 200/200 and Food 56%; the lesson is complete.",
+      "alt": "At pausedtick3849, the same continuously selected worker shows Walk(3):26,HP200/200 and Food56%; the lesson is complete.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-detail-v3",
+      "kind": "image",
+      "sha256": "803cffe34a71098ec0503f86d266c2f0f027158940d31d62ed1278008a3a1945",
+      "bytes": 5492,
+      "width": 192,
+      "height": 260,
+      "caption": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "alt": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-v3",
+      "kind": "image",
+      "sha256": "310b0fcf6663280191c3f34bbf15a08461d395b8f683ad06551b07e544b99314",
+      "bytes": 230376,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed level 2 Racetrack at paused tick 3849 has HP 1000/1000 and Inside 4/4.",
+      "alt": "The completed level2 Racetrack at pausedtick3849 has HP1000/1000 and Inside4/4.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-detail-v3",
+      "kind": "image",
+      "sha256": "ccdfda99fbcac17c9de1adc987350cea08f9b5c03368ed6fcf6f0aa9925c3f99",
+      "bytes": 4048,
+      "width": 192,
+      "height": 300,
+      "caption": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "alt": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "upgrade-racetrack-before-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp",
+      "status": 200,
+      "bytes": 220744,
+      "sha256": "01895c793e2c16c1f4eba3335c1bead0d0bc3877b0c26e2dcd1b03e9ceec916d",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-before-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp",
+      "status": 200,
+      "bytes": 3966,
+      "sha256": "969cdb400a4d4053cc0942afb1214e44a164b33a536ed8570bfccfa9fc2cd2eb",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-queued-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp",
+      "status": 200,
+      "bytes": 220182,
+      "sha256": "6a6e5e4dd9108b318c5caf53b5680afe9805319a8508a8412f16200ddeaf2965",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-queued-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp",
+      "status": 200,
+      "bytes": 4104,
+      "sha256": "2639db65895cd52293f41f6cb9d850c2abf25166976e09475524f11cd455475f",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-construction-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp",
+      "status": 200,
+      "bytes": 236210,
+      "sha256": "f05701a36a350b4d7a7b8e91093b6639b75866c0b2ec73bac38c95b0ba557b15",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-construction-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp",
+      "status": 200,
+      "bytes": 6776,
+      "sha256": "5b043a2053608567d23eafd93d62b6f778decfd9a978234bbc6910e7083c38d0",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-worker-before-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp",
+      "status": 200,
+      "bytes": 231506,
+      "sha256": "d9889dd9edbe86f3a3066c09debd0d8049b8d5ec34e743b3ca24828cfcd24186",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-worker-before-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp",
+      "status": 200,
+      "bytes": 5518,
+      "sha256": "29bccddd20524d8c36f47df7f61392ac2cfbd4117444b6011df3caf44031e34b",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-worker-after-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp",
+      "status": 200,
+      "bytes": 230344,
+      "sha256": "20c2363bcdf6e84e2ca0bb101044bcc97097f8c841bce919aa40f3a68b799efb",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-worker-after-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp",
+      "status": 200,
+      "bytes": 5492,
+      "sha256": "803cffe34a71098ec0503f86d266c2f0f027158940d31d62ed1278008a3a1945",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-completed-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp",
+      "status": 200,
+      "bytes": 230376,
+      "sha256": "310b0fcf6663280191c3f34bbf15a08461d395b8f683ad06551b07e544b99314",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "upgrade-racetrack-completed-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp",
+      "status": 200,
+      "bytes": 4048,
+      "sha256": "ccdfda99fbcac17c9de1adc987350cea08f9b5c03368ed6fcf6f0aa9925c3f99",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  },
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved."
+}
