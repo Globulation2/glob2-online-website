@@ -415,7 +415,17 @@ test('detail image opening cue leaves shallow counters visible and works by keyb
   }
 });
 
-test('fresh guide posters wait for explicit keyboard playback inline and expanded', async ({ page }) => {
+test('fresh guide posters wait for explicit keyboard playback inline and expanded', async ({ page, browserName }, testInfo) => {
+  await page.addInitScript(() => {
+    const activity = { playCalls: 0, loadCalls: 0, playEvents: 0 };
+    (window as typeof window & { guideMediaActivity: typeof activity }).guideMediaActivity = activity;
+    const play = HTMLMediaElement.prototype.play, load = HTMLMediaElement.prototype.load;
+    HTMLMediaElement.prototype.play = function () { activity.playCalls++; return play.call(this); };
+    HTMLMediaElement.prototype.load = function () { activity.loadCalls++; return load.call(this); };
+    document.addEventListener('play', () => activity.playEvents++, true);
+  });
+  const activity = () => page.evaluate(() => (window as typeof window & { guideMediaActivity: { playCalls: number; loadCalls: number; playEvents: number } }).guideMediaActivity);
+  const untouched = { playCalls: 0, loadCalls: 0, playEvents: 0 };
   await page.emulateMedia({ reducedMotion: 'reduce' });
   const mediaRequests: string[] = [];
   page.on('request', request => { if (/\.mp4(?:\?|$)/.test(request.url())) mediaRequests.push(request.url()); });
@@ -425,7 +435,11 @@ test('fresh guide posters wait for explicit keyboard playback inline and expande
   await expect(start).toBeVisible();
   expect(await inline.evaluate((v: HTMLVideoElement) => v.paused && v.currentTime === 0 && !v.autoplay && !v.controls)).toBe(true);
   await page.waitForTimeout(350);
-  expect(mediaRequests).toEqual([]);
+  expect(await activity()).toEqual(untouched);
+  // preload=none is advisory: WebKit can probe the static no-JS source
+  // during parsing, without an application load/play call or playback.
+  if (browserName !== 'webkit') expect(mediaRequests).toEqual([]);
+  const initialRequests = [...mediaRequests];
   await start.focus();
   await page.keyboard.press('Enter');
   await expect.poll(() => inline.evaluate((v: HTMLVideoElement) => !v.paused && v.currentTime > 0)).toBe(true);
@@ -441,7 +455,11 @@ test('fresh guide posters wait for explicit keyboard playback inline and expande
   await expect(expandedStart).toBeVisible();
   expect(await expanded.evaluate((v: HTMLVideoElement) => v.paused && v.currentTime === 0 && !v.controls)).toBe(true);
   await page.waitForTimeout(350);
-  expect(mediaRequests.length).toBe(requestsBeforeExpansion);
+  expect(await activity()).toEqual(untouched);
+  if (browserName !== 'webkit') expect(mediaRequests.length).toBe(requestsBeforeExpansion);
+  await testInfo.attach('untouched-native-media-requests', {
+    body: JSON.stringify({ browserName, initialRequests, expansionRequests: mediaRequests.slice(requestsBeforeExpansion) }), contentType: 'application/json'
+  });
   await expandedStart.focus();
   await page.keyboard.press('Space');
   await expect.poll(() => expanded.evaluate((v: HTMLVideoElement) => !v.paused && v.currentTime > 0)).toBe(true);

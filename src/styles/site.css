@@ -24,7 +24,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   height: 300px;
   overflow: hidden;
   z-index: 0;
-  background: var(--grass) url('/brand/colony-960-v0.11.6.1.webp') 50% 62% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-960-v0.11.6.1-hd.webp') 50% 62% / cover no-repeat;
 }
 .world-band::after {
   content: '';
