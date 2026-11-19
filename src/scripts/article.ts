@@ -21,6 +21,33 @@ if (article) {
   if(rail&&current) rail.scrollTop=Math.max(0,current.offsetTop-rail.clientHeight/3);
   const figures=[...article.querySelectorAll<HTMLElement>('.guide-media')];
   const videos=[...article.querySelectorAll<HTMLVideoElement>('video')];
+  const nativeControls=new WeakMap<HTMLVideoElement,()=>void>();
+  // Keep the poster still until a real play request; native unloaded controls
+  // can paint a perpetual loading indicator before playback has been requested.
+  const prepareVideo=(video:HTMLVideoElement,shell:HTMLElement)=>{
+    const start=document.createElement('button');start.type='button';start.className='guide-video-start';
+    start.textContent='Play clip ▶';start.setAttribute('aria-label',`Play clip: ${video.getAttribute('aria-label')??'Gameplay clip'}`);
+    start.setAttribute('aria-describedby',video.getAttribute('aria-describedby')??'');
+    const status=document.createElement('p');status.className='guide-video-status';status.hidden=true;status.setAttribute('role','alert');
+    if(shell.classList.contains('pswp__video-shell'))status.classList.add('pswp__video-error');
+    const show=()=>{video.controls=true;video.tabIndex=0;start.hidden=true;};
+    const fail=(message:string)=>{
+      if(!video.isConnected)return;
+      show();const link=document.createElement('a');link.href=video.querySelector('source')!.src;link.textContent='Open gameplay clip';
+      status.replaceChildren(document.createTextNode(`${message} `),link);status.hidden=false;
+    };
+    nativeControls.set(video,show);
+    video.controls=false;video.tabIndex=-1;
+    video.addEventListener('play',()=>{if(video.isConnected)show();});
+    start.addEventListener('click',()=>{
+      status.hidden=true;show();video.focus();
+      void video.play().catch(()=>fail('This clip could not start. Use the player controls to retry, or open it directly.'));
+    });
+    video.addEventListener('error',()=>fail('This clip could not load.'));
+    video.querySelectorAll('source').forEach(source=>source.addEventListener('error',()=>fail('This clip could not load.')));
+    shell.append(start,status);
+  };
+  for(const video of videos){const shell=document.createElement('div');shell.className='guide-video-shell';video.before(shell);shell.append(video);prepareVideo(video,shell);}
   for(const video of videos) {
     video.addEventListener('play',()=>{videos.forEach(other=>{if(other!==video)other.pause();});});
     video.addEventListener('loadedmetadata',()=>{
@@ -35,9 +62,11 @@ if (article) {
     const restore=()=>{
       video.currentTime=Number.isFinite(video.duration)?Math.min(state.time,video.duration):state.time;
       video.playbackRate=state.rate;video.volume=state.volume;video.muted=state.muted;
-      if(resume&&state.playing&&video.isConnected) void video.play().catch(()=>{});else video.pause();
+      if(state.time>0)nativeControls.get(video)?.();
+      if(resume&&state.playing&&video.isConnected){nativeControls.get(video)?.();void video.play().catch(()=>{});}else video.pause();
     };
-    if(video.readyState>=1)restore();else {video.addEventListener('loadedmetadata',restore,{once:true});video.load();}
+    if(video.readyState>=1)restore();else if(state.time>0||state.playing){video.addEventListener('loadedmetadata',restore,{once:true});video.load();}
+    else{video.playbackRate=state.rate;video.volume=state.volume;video.muted=state.muted;video.pause();}
   };
   let gallery:PhotoSwipe|undefined;
   let loading:Promise<typeof import('photoswipe')>|undefined;
@@ -117,11 +146,7 @@ if (article) {
       video.setAttribute('aria-describedby','article-media-caption');video.dataset.mediaIndex=String(content.index);
       for(const child of source.querySelectorAll('source,track'))video.append(child.cloneNode(true));
       const fallback=document.createElement('a');fallback.href=source.querySelector('source')!.src;fallback.textContent='Open gameplay clip';video.append(fallback);
-      const failure=document.createElement('p');failure.className='pswp__video-error';failure.hidden=true;
-      failure.append('This clip could not load. ',fallback.cloneNode(true));shell.append(video,failure);
-      const revealFailure=()=>{failure.hidden=false;};
-      video.addEventListener('error',revealFailure);
-      video.querySelectorAll('source').forEach(source=>source.addEventListener('error',revealFailure));
+      shell.append(video);prepareVideo(video,shell);
       video.addEventListener('play',()=>{
         // A queued event can arrive after close has restored inline playback.
         if(closing||video.paused||!video.isConnected)return;

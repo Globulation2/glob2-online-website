@@ -1,0 +1,232 @@
+{
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
+  "observed": "2026-11-18 local",
+  "assets": [
+    {
+      "id": "fruit-advertisement-before-hd-v3",
+      "kind": "image",
+      "candidate": "fruit-advertisement-before-hd-v3.webp",
+      "width": 1600,
+      "height": 896,
+      "bytes": 81272,
+      "sha256": "93dfaf0f42e61eeae84c4848f7133a1fe152be9017eac1ae54728087edf0175e",
+      "caption": "Before editing, the local human-controlled match has fV unchecked for the three Numbi colonies.",
+      "alt": "Native Teams panel with fV unchecked for Lime, Cyan and Purple Numbi colonies.",
+      "source": "teams-food-before.png",
+      "sourceSha256": "d4890a899ffa7d4a9da8e1c606f88c9a605fdf24da7101410a63e0709161b2fe",
+      "cropBox": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp",
+      "transform": {
+        "originalPixels": [
+          2940,
+          1646
+        ],
+        "cropBox": null,
+        "outputPixels": [
+          1600,
+          896
+        ],
+        "resize": "Lanczos proportional2940x1646 to1600x896",
+        "encoding": "RGB WebP quality92 method6"
+      }
+    },
+    {
+      "id": "fruit-advertisement-confirmed-hd-v3",
+      "kind": "image",
+      "candidate": "fruit-advertisement-confirmed-hd-v3.webp",
+      "width": 1600,
+      "height": 896,
+      "bytes": 79762,
+      "sha256": "0b8a76f946aecdd8ae9ef696427981c9411493d649eb5076f55cbf0d232e271f",
+      "caption": "After enabling fV for Lime Numbi, choosing Ok and reopening Teams, its fV remains checked.",
+      "alt": "Reopened native Teams panel with fV checked for Lime Numbi; Cyan and Purple remain unchecked.",
+      "source": "teams-food-confirmed.png",
+      "sourceSha256": "658b936cb957db0107b0c3ccc527bffd5822535833d341ae06ed678f26558644",
+      "cropBox": null,
+      "presentation": null,
+      "proposedPath": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp",
+      "transform": {
+        "originalPixels": [
+          2940,
+          1646
+        ],
+        "cropBox": null,
+        "outputPixels": [
+          1600,
+          896
+        ],
+        "resize": "Lanczos proportional2940x1646 to1600x896",
+        "encoding": "RGB WebP quality92 method6"
+      }
+    },
+    {
+      "id": "fruit-advertisement-detail-hd-v3",
+      "kind": "image",
+      "candidate": "fruit-advertisement-detail-hd-v3.webp",
+      "width": 1282,
+      "height": 771,
+      "bytes": 52870,
+      "sha256": "11295bb30866e6ec55589e5ccc3876ae3802c43d38981ca9b78c0bc91173125d",
+      "caption": "Actual Teams detail: fV for Lime is checked; the legend labels it “Show vision for Inn buildings (to steal units)”.",
+      "alt": "Teams dialog showing Lime fV checked and the separate fV, mV and chat legends.",
+      "source": "teams-food-confirmed.png",
+      "sourceSha256": "658b936cb957db0107b0c3ccc527bffd5822535833d341ae06ed678f26558644",
+      "cropBox": [
+        830,
+        438,
+        2112,
+        1209
+      ],
+      "presentation": "detail",
+      "proposedPath": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp",
+      "transform": {
+        "originalPixels": [
+          2940,
+          1646
+        ],
+        "cropBox": [
+          830,
+          438,
+          2112,
+          1209
+        ],
+        "outputPixels": [
+          1282,
+          771
+        ],
+        "resize": "No resize; exact1282x771 dialog crop",
+        "encoding": "RGB WebP quality92 method6"
+      }
+    }
+  ],
+  "provenance": {
+    "nativeVersion": "0.11.6.1",
+    "sourceRevision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "binarySha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
+    "method": "Released native MCP real UI; isolated human-controlled local custom match versus three Numbi AI colonies, ordinary supported Teams toggle then Ok and reopen. No messages, public players or state injection.",
+    "renderer": "SDL GPU",
+    "artwork": "Explicit enabled High resolution after fresh custom-game load, with Settings proof retained; no per-frame HD draw counter.",
+    "resourceResolution": "Packaged Resources working directory and isolated profile; exact-source bundle-first resolution is source-supported, not per-sprite traced.",
+    "proofFiles": [
+      {
+        "filename": "human-custom-controllers.png",
+        "sha256": "7a69f5ae695a383bb5a1a0b4d5a76b35cbedb11b0f5e69652544e4e956a22650"
+      },
+      {
+        "filename": "teams-postload-graphics-proof.png",
+        "sha256": "895f591cd6612331a93b6ca732c799854227265fd9df4c190e7d435c3d8e30b7"
+      },
+      {
+        "filename": "teams-postload-graphics-proof.json",
+        "sha256": "8cbd8de62a5d91871c8da57af1a24a890ec3ac7f01aeef00615e32de71550c3a"
+      },
+      {
+        "filename": "graphics-after-fruit-attempt.png",
+        "sha256": "74ea962f9b42953e3d43736eae2bc01b3366fd641e8f0c76ef4e08b6a066c2b9"
+      },
+      {
+        "filename": "graphics-after-fruit-attempt.json",
+        "sha256": "d938914fbad12d6f805a44c3b6ece31408dd3fd750a32aff86a01edf0e5c88d8"
+      },
+      {
+        "filename": "actions.jsonl",
+        "sha256": "f9ae6db4b0e1e0ad919e4e3ab89dbae959a579200d575fe7f6ae0f17d6cb9543"
+      },
+      {
+        "filename": "native-packaged-resources.log",
+        "sha256": "a56a226a6ea938b033fa1c50d434f99f2af81f9be4498e5e87f1bd70216823c6"
+      }
+    ],
+    "limits": [
+      "fV setting confirmation is not a conversion demonstration.",
+      "A separate Food lesson produced a warrior through normal birth controls, but yielded no selected-unit fruit/armor before-after pair or measured Inn fruit stock.",
+      "Final Food lesson paused own Swarm Food1/20 Working2/2; population12 workers,1explorer,1warrior.",
+      "Existing Maxima replay notices and own Inn oranges remain separate evidence from this new human-controlled match.",
+      "Process exited normally with code0, MCP port closed; no motion recording claimed."
+    ]
+  },
+  "recipe": {
+    "filename": "actual-action-recipe.md",
+    "sha256": "54d184ffbbdf38985b877e662f60db5b568f6f79d2615534e6f9702cb9463596"
+  },
+  "observerSourceSha256": "c21d12ae1be34cdfc40100bf9b8d49047b45985f06cd9cb9d90a3551e1972bfb",
+  "registeredAssets": [
+    {
+      "id": "fruit-advertisement-before-hd-v3",
+      "kind": "image",
+      "sha256": "93dfaf0f42e61eeae84c4848f7133a1fe152be9017eac1ae54728087edf0175e",
+      "bytes": 81272,
+      "width": 1600,
+      "height": 896,
+      "caption": "Before editing, the local human-controlled match has fV unchecked for the three Numbi colonies.",
+      "alt": "Native Teams panel with fV unchecked for Lime, Cyan and Purple Numbi colonies.",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp"
+    },
+    {
+      "id": "fruit-advertisement-confirmed-hd-v3",
+      "kind": "image",
+      "sha256": "0b8a76f946aecdd8ae9ef696427981c9411493d649eb5076f55cbf0d232e271f",
+      "bytes": 79762,
+      "width": 1600,
+      "height": 896,
+      "caption": "After enabling fV for Lime Numbi, choosing Ok and reopening Teams, its fV remains checked.",
+      "alt": "Reopened native Teams panel with fV checked for Lime Numbi; Cyan and Purple remain unchecked.",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp"
+    },
+    {
+      "id": "fruit-advertisement-detail-hd-v3",
+      "kind": "image",
+      "sha256": "11295bb30866e6ec55589e5ccc3876ae3802c43d38981ca9b78c0bc91173125d",
+      "bytes": 52870,
+      "width": 1282,
+      "height": 771,
+      "caption": "Actual Teams detail: fV for Lime is checked; the legend labels it “Show vision for Inn buildings (to steal units)”.",
+      "alt": "Teams dialog showing Lime fV checked and the separate fV, mV and chat legends.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "fruit-advertisement-before-hd-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp",
+      "status": 200,
+      "bytes": 81272,
+      "sha256": "93dfaf0f42e61eeae84c4848f7133a1fe152be9017eac1ae54728087edf0175e",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "fruit-advertisement-confirmed-hd-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp",
+      "status": 200,
+      "bytes": 79762,
+      "sha256": "0b8a76f946aecdd8ae9ef696427981c9411493d649eb5076f55cbf0d232e271f",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "fruit-advertisement-detail-hd-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp",
+      "status": 200,
+      "bytes": 52870,
+      "sha256": "11295bb30866e6ec55589e5ccc3876ae3802c43d38981ca9b78c0bc91173125d",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  },
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved."
+}

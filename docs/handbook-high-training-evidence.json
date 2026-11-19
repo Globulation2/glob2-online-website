@@ -1,0 +1,486 @@
+{
+  "observed": "2026-11-18 local; session 2026-11-19 UTC",
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
+  "context": "Actual current public browser prepared Schools lesson, accepted attempt high-2.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 43.215,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 65,
+  "sourceHashes": {
+    "capture.json": "64ca1848c3beb413df56ebb80710f88bddb820a4b13c450b658be435f228c0db",
+    "command.py": "7fc7e40df91b654fea56920003277fb03163cd3e820d1ecd5b58f838f71ef813",
+    "quality-applied-after-reload.png": "cdffbb6afd3176f6b08a8687285a807418dc09a364ac5560de6af5fa9dc3dee5",
+    "quality-applied-after-reload.json": "9d879ecadd43fc4cd6fa6110474b6612b80b4d95f1528bd61641c5f168bf2f45"
+  },
+  "assets": [
+    {
+      "id": "training-worker-before-v3",
+      "candidate": "training-worker-before-v3.webp",
+      "kind": "image",
+      "original": "training-worker-proven-before.png",
+      "originalSha256": "834d118ded4b95f75eba428d06ca32971ff31e42bdaa4be2f174fd3d72941d6e",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 203454,
+      "sha256": "059374063e0e94932adf819a09ebf4b9493910ec91abca8ff5e0fdd153ccf67e",
+      "caption": "Before resuming, the selected worker shows Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Selected worker before training, with its Build level and value visible.",
+      "paused": true,
+      "exactImagePhysicsTick": 779,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp"
+    },
+    {
+      "id": "training-worker-before-detail-v3",
+      "candidate": "training-worker-before-detail-v3.webp",
+      "kind": "image",
+      "original": "training-worker-proven-before.png",
+      "originalSha256": "834d118ded4b95f75eba428d06ca32971ff31e42bdaa4be2f174fd3d72941d6e",
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5480,
+      "sha256": "91b2cce8bad0c6b46ce783273430528168382cd125f9484fd2ff961d56e44f72",
+      "caption": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "paused": true,
+      "exactImagePhysicsTick": 779,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp"
+    },
+    {
+      "id": "training-worker-after-v3",
+      "candidate": "training-worker-after-v3.webp",
+      "kind": "image",
+      "original": "training-same-worker-after.png",
+      "originalSha256": "d7364777e4385057948e21fbc2961e1ac10b35e2eb519d77a17b01f10264e1c6",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 217788,
+      "sha256": "d864a3f5cd2d339c7e9f7c64122a366033a3fd39f9a906358f3b07c236e24fd0",
+      "caption": "After normal simulation, the same continuously selected worker shows Build (2): 12, HP 200/200 and Food 51%; the School lesson is complete.",
+      "alt": "The same selected worker after its Build ability improves, with the lesson completion prompt visible.",
+      "paused": true,
+      "exactImagePhysicsTick": 4079,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp"
+    },
+    {
+      "id": "training-worker-after-detail-v3",
+      "candidate": "training-worker-after-detail-v3.webp",
+      "kind": "image",
+      "original": "training-same-worker-after.png",
+      "originalSha256": "d7364777e4385057948e21fbc2961e1ac10b35e2eb519d77a17b01f10264e1c6",
+      "crop": [
+        1248,
+        184,
+        1440,
+        444
+      ],
+      "width": 192,
+      "height": 260,
+      "bytes": 5486,
+      "sha256": "6bae10cf3277a0326a5dfc5b266049c8734618554ab4ded6530d61008ac576fd",
+      "caption": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "alt": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "paused": true,
+      "exactImagePhysicsTick": 4079,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp"
+    },
+    {
+      "id": "training-school-foundation-v3",
+      "candidate": "training-school-foundation-v3.webp",
+      "kind": "image",
+      "original": "training-school-foundation.png",
+      "originalSha256": "e0cffff6817cb5d4cc17a1c3e19c6ad3052bd1d95c865167347749ab9e87b8c0",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 214546,
+      "sha256": "6a2d83da36581ced7cd39f2e3339eb80f219a42e7d0b575d064fc3c165505438",
+      "caption": "The paused School foundation shows HP 1/360, Wood 0/7, Algae 0/2 and Working 0/5.",
+      "alt": "Selected School foundation in the prepared Schools lesson; five builders are requested and none is attached.",
+      "paused": true,
+      "exactImagePhysicsTick": 365,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp"
+    },
+    {
+      "id": "training-school-foundation-detail-v3",
+      "candidate": "training-school-foundation-detail-v3.webp",
+      "kind": "image",
+      "original": "training-school-foundation.png",
+      "originalSha256": "e0cffff6817cb5d4cc17a1c3e19c6ad3052bd1d95c865167347749ab9e87b8c0",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 6134,
+      "sha256": "5892ca24d950f3b44c52b9620b6c9549fe7c5d2bae45498be85fc6833236223a",
+      "caption": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "alt": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "paused": true,
+      "exactImagePhysicsTick": 365,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp"
+    },
+    {
+      "id": "training-school-construction-v3",
+      "candidate": "training-school-construction-v3.webp",
+      "kind": "image",
+      "original": "training-pause-inspect.png",
+      "originalSha256": "54cfe680ecd8f3684cddd94f864cd8cd5c0147452dffbc5ee31f1a3565b58d02",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 205892,
+      "sha256": "440766c95ec97a07441bbd2c94e967f04b9926ca96338d6676d78eb3dd2e34d1",
+      "caption": "At the later paused inspection, construction has reached HP 81/360 and Wood 2/7, with Algae 0/2 and Working 5/5.",
+      "alt": "Selected School construction site with five attached builders and partially delivered materials.",
+      "paused": true,
+      "exactImagePhysicsTick": 779,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp"
+    },
+    {
+      "id": "training-school-construction-detail-v3",
+      "candidate": "training-school-construction-detail-v3.webp",
+      "kind": "image",
+      "original": "training-pause-inspect.png",
+      "originalSha256": "54cfe680ecd8f3684cddd94f864cd8cd5c0147452dffbc5ee31f1a3565b58d02",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 6220,
+      "sha256": "948089a5cdb07e5bf86bbda2b6eb1866d4f3183778b13c63a13499064b067dd8",
+      "caption": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "alt": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "paused": true,
+      "exactImagePhysicsTick": 779,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp"
+    },
+    {
+      "id": "training-school-completed-v3",
+      "candidate": "training-school-completed-v3.webp",
+      "kind": "image",
+      "original": "training-completed-school.png",
+      "originalSha256": "2ea9d787a8fb0cc60ca1d09ab445ae064fffc0f4e1f7382fb7356255d4c812f5",
+      "crop": null,
+      "width": 1440,
+      "height": 900,
+      "bytes": 217120,
+      "sha256": "a00b77558336e81891d6adc1f1498cdb1e9763f47cbd44c1c9473d338a7ccfa8",
+      "caption": "The completed paused School has HP 360/360 and Inside 1/4; an Upgrade control is visible.",
+      "alt": "Completed School selected after the lesson succeeds, with one of four places occupied and an Upgrade control.",
+      "paused": true,
+      "exactImagePhysicsTick": 4079,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp"
+    },
+    {
+      "id": "training-school-completed-detail-v3",
+      "candidate": "training-school-completed-detail-v3.webp",
+      "kind": "image",
+      "original": "training-completed-school.png",
+      "originalSha256": "2ea9d787a8fb0cc60ca1d09ab445ae064fffc0f4e1f7382fb7356255d4c812f5",
+      "crop": [
+        1248,
+        184,
+        1440,
+        484
+      ],
+      "width": 192,
+      "height": 300,
+      "bytes": 3702,
+      "sha256": "472eb57f2b57895a9be898968c77c63f41c37ac03a4c0ebfb4e5343df7a819b0",
+      "caption": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "alt": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "paused": true,
+      "exactImagePhysicsTick": 4079,
+      "proposedPath": "/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp"
+    }
+  ],
+  "encoding": "Original full RGB frames or declared rectangular sidebar crops; WebP92method6, no scaling/retouch.",
+  "workerContinuity": "Using zero-based capture.events array indices: actual unit selection at index42 and screenshot43 tick779, then only resume/waits/screenshots through final pause4079 and screenshot60; no unit-selection change. These screenshots are one-based events44/61. Underlying GID not inferred.",
+  "limits": [
+    "No completed Inn upgrade or observed locked/unlocked Inn control comparison.",
+    "Visible School Upgrade control is not an executed upgrade.",
+    "No isolated harvest-skill improvement, full enter/train/leave cycle or performance claim.",
+    "Earlier none-selection worker-named files and timed-out high-1 attempt excluded.",
+    "Browser exact source revision remains unverified; actual served package identity preserved."
+  ],
+  "recipe": {
+    "file": "actual-action-recipe.md",
+    "sha256": "c8b3ff31af531d95adc7ef8d7d08cea57fa7efcbc4afe2b93dd1e68dfe17c032"
+  },
+  "registeredAssets": [
+    {
+      "id": "training-worker-before-v3",
+      "kind": "image",
+      "sha256": "059374063e0e94932adf819a09ebf4b9493910ec91abca8ff5e0fdd153ccf67e",
+      "bytes": 203454,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before resuming, the selected worker shows Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Selected worker before training, with its Build level and value visible.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp"
+    },
+    {
+      "id": "training-worker-before-detail-v3",
+      "kind": "image",
+      "sha256": "91b2cce8bad0c6b46ce783273430528168382cd125f9484fd2ff961d56e44f72",
+      "bytes": 5480,
+      "width": 192,
+      "height": 260,
+      "caption": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-worker-after-v3",
+      "kind": "image",
+      "sha256": "d864a3f5cd2d339c7e9f7c64122a366033a3fd39f9a906358f3b07c236e24fd0",
+      "bytes": 217788,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation, the same continuously selected worker shows Build (2): 12, HP 200/200 and Food 51%; the School lesson is complete.",
+      "alt": "The same selected worker after its Build ability improves, with the lesson completion prompt visible.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp"
+    },
+    {
+      "id": "training-worker-after-detail-v3",
+      "kind": "image",
+      "sha256": "6bae10cf3277a0326a5dfc5b266049c8734618554ab4ded6530d61008ac576fd",
+      "bytes": 5486,
+      "width": 192,
+      "height": 260,
+      "caption": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "alt": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-foundation-v3",
+      "kind": "image",
+      "sha256": "6a2d83da36581ced7cd39f2e3339eb80f219a42e7d0b575d064fc3c165505438",
+      "bytes": 214546,
+      "width": 1440,
+      "height": 900,
+      "caption": "The paused School foundation shows HP 1/360, Wood 0/7, Algae 0/2 and Working 0/5.",
+      "alt": "Selected School foundation in the prepared Schools lesson; five builders are requested and none is attached.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp"
+    },
+    {
+      "id": "training-school-foundation-detail-v3",
+      "kind": "image",
+      "sha256": "5892ca24d950f3b44c52b9620b6c9549fe7c5d2bae45498be85fc6833236223a",
+      "bytes": 6134,
+      "width": 192,
+      "height": 300,
+      "caption": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "alt": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-construction-v3",
+      "kind": "image",
+      "sha256": "440766c95ec97a07441bbd2c94e967f04b9926ca96338d6676d78eb3dd2e34d1",
+      "bytes": 205892,
+      "width": 1440,
+      "height": 900,
+      "caption": "At the later paused inspection, construction has reached HP 81/360 and Wood 2/7, with Algae 0/2 and Working 5/5.",
+      "alt": "Selected School construction site with five attached builders and partially delivered materials.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp"
+    },
+    {
+      "id": "training-school-construction-detail-v3",
+      "kind": "image",
+      "sha256": "948089a5cdb07e5bf86bbda2b6eb1866d4f3183778b13c63a13499064b067dd8",
+      "bytes": 6220,
+      "width": 192,
+      "height": 300,
+      "caption": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "alt": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-completed-v3",
+      "kind": "image",
+      "sha256": "a00b77558336e81891d6adc1f1498cdb1e9763f47cbd44c1c9473d338a7ccfa8",
+      "bytes": 217120,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed paused School has HP 360/360 and Inside 1/4; an Upgrade control is visible.",
+      "alt": "Completed School selected after the lesson succeeds, with one of four places occupied and an Upgrade control.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp"
+    },
+    {
+      "id": "training-school-completed-detail-v3",
+      "kind": "image",
+      "sha256": "472eb57f2b57895a9be898968c77c63f41c37ac03a4c0ebfb4e5343df7a819b0",
+      "bytes": 3702,
+      "width": 192,
+      "height": 300,
+      "caption": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "alt": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp",
+      "presentation": "detail"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "training-worker-before-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp",
+      "status": 200,
+      "bytes": 203454,
+      "sha256": "059374063e0e94932adf819a09ebf4b9493910ec91abca8ff5e0fdd153ccf67e",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-worker-before-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp",
+      "status": 200,
+      "bytes": 5480,
+      "sha256": "91b2cce8bad0c6b46ce783273430528168382cd125f9484fd2ff961d56e44f72",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-worker-after-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp",
+      "status": 200,
+      "bytes": 217788,
+      "sha256": "d864a3f5cd2d339c7e9f7c64122a366033a3fd39f9a906358f3b07c236e24fd0",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-worker-after-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp",
+      "status": 200,
+      "bytes": 5486,
+      "sha256": "6bae10cf3277a0326a5dfc5b266049c8734618554ab4ded6530d61008ac576fd",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-foundation-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp",
+      "status": 200,
+      "bytes": 214546,
+      "sha256": "6a2d83da36581ced7cd39f2e3339eb80f219a42e7d0b575d064fc3c165505438",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-foundation-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp",
+      "status": 200,
+      "bytes": 6134,
+      "sha256": "5892ca24d950f3b44c52b9620b6c9549fe7c5d2bae45498be85fc6833236223a",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-construction-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp",
+      "status": 200,
+      "bytes": 205892,
+      "sha256": "440766c95ec97a07441bbd2c94e967f04b9926ca96338d6676d78eb3dd2e34d1",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-construction-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp",
+      "status": 200,
+      "bytes": 6220,
+      "sha256": "948089a5cdb07e5bf86bbda2b6eb1866d4f3183778b13c63a13499064b067dd8",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-completed-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp",
+      "status": 200,
+      "bytes": 217120,
+      "sha256": "a00b77558336e81891d6adc1f1498cdb1e9763f47cbd44c1c9473d338a7ccfa8",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "training-school-completed-detail-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp",
+      "status": 200,
+      "bytes": 3702,
+      "sha256": "472eb57f2b57895a9be898968c77c63f41c37ac03a4c0ebfb4e5343df7a819b0",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "sourcePreparationScope": [
+    "buildings-and-services",
+    "exploration-and-movement",
+    "defending-your-colony",
+    "organizing-an-attack",
+    "reference-buildings",
+    "reference-units"
+  ],
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "observed": "2026-11-18 local",
+  "approvalStatus": "Independent source/media/applied-High reviews, immutable upload, fresh public byte/hash verification, matching final source and two independent rendered review rounds are complete. Required final-head CI and production acceptance remain pending.",
+  "context": "Actual current public browser prepared Guard zones and flag tactics lesson; same genuine successful source as current jobs family.",
+  "baseline": {
+    "observed": "2026-11-18",
+    "gameVersionObservedInMenu": "0.11.6.0",
+    "sourceRevision": null,
+    "sourceQualification": "Unverified exact deployment source; this baseline qualifies the actual delivered public payload and visible controls only.",
+    "url": "https://app.glob2.online/play/?threads=serial&renderer=webgl2",
+    "packages": {
+      "index.js": {
+        "sha256": "c1d9c3b6ad57785e61222e0c1f80ebc8c228edcf432a40f35977ea321393920c",
+        "bytes": 1846033
+      },
+      "index.wasm": {
+        "sha256": "c2b1333ca25463c16e3054d584f4fb528e1e6a8bdc831048d1801a8449e86464",
+        "bytes": 29604918
+      }
+    }
+  },
+  "graphicsConfiguration": {
+    "choice": "High resolution",
+    "appliedReloadAt": 42.621,
+    "renderer": "webgl2",
+    "artworkReady": true,
+    "hdPackage": "ready",
+    "method": "Selected through Settings, persisted, fresh application reload, then actual enabled setting rechecked; no runtime state injection"
+  },
+  "captureComplete": true,
+  "captureErrors": [],
+  "captureEvents": 135,
+  "sourceHashes": {
+    "capture.json": "38b3212b7dd840517504540dc71f063157db0351eaafacb1a2d7defca836e675",
+    "rawVideo": "e8e63ddb4d90289341cca0f63bf3e440939608e09635019e69e5b258b94e5bc9",
+    "quality-applied-after-reload.png": "de3950e6255a998a35d12e83b06aeebf5f5fa265744a1e08d495b49eeb92a2cd",
+    "quality-applied-after-reload.json": "fe1397bd766f63bded3cf71db89ca06cfc474c8df55a7a06e48b5311605a662a",
+    "executedScenario": "e695a55c38346810fe6ddea91f4f166542f3b733682691818c0b340daaf86e60"
+  },
+  "assets": [
+    {
+      "id": "scout-reveal-clip-v3",
+      "candidate": "scout-reveal-clip-v3.mp4",
+      "kind": "video",
+      "width": 1440,
+      "height": 900,
+      "durationSeconds": 26,
+      "bytes": 3058255,
+      "sha256": "ab05faef3afcfaac5f9bec625ce5ddb484b79cc692131270e2ad652978fd8b39",
+      "caption": "Twenty-six continuous seconds show an explorer revealing the enemy Swarm and the lesson advancing to Guard preparation.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "poster": "scout-reveal-poster-v3",
+      "proposedPath": "/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4"
+    },
+    {
+      "id": "scout-reveal-poster-v3",
+      "candidate": "scout-reveal-poster-v3.webp",
+      "kind": "image",
+      "width": 1440,
+      "height": 900,
+      "bytes": 107344,
+      "sha256": "1aee93744e95c5e5f8899c928eaed04fa73d1dd9845bd408473f481cf6e66f0f",
+      "caption": "Exact opening frame of the scout reveal excerpt.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "source": "scout-reveal-review-first.png",
+      "sourceSha256": "01a6c74b82939e2f652d5d5cfdf30293f327385f99afb97ecc3c35344ee2ac0b",
+      "proposedPath": "/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp"
+    },
+    {
+      "id": "defense-guard-contact-clip-v3",
+      "candidate": "defense-guard-contact-clip-v3.mp4",
+      "kind": "video",
+      "width": 1440,
+      "height": 900,
+      "durationSeconds": 35,
+      "bytes": 6282789,
+      "sha256": "a272b7d75069877b2f584e2301be98befe519afa2cc6c5573afc401c897e3060",
+      "caption": "Thirty-five continuous seconds show the prepared Guard group, cyan attackers approaching and contact near the painted tiles; the lesson progresses through the defensive task.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "poster": "defense-guard-contact-poster-v3",
+      "proposedPath": "/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4"
+    },
+    {
+      "id": "defense-guard-contact-poster-v3",
+      "candidate": "defense-guard-contact-poster-v3.webp",
+      "kind": "image",
+      "width": 1440,
+      "height": 900,
+      "bytes": 178490,
+      "sha256": "468c934ad916f898283e693ff788267446b3207d4aa4cab3b9849b94767071a0",
+      "caption": "Exact opening frame of the defense guard contact excerpt.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "source": "defense-guard-contact-review-first.png",
+      "sourceSha256": "2988e5fac16dce1e271229c09a20e1d6c9956927c7b9209a172803e236afc947",
+      "proposedPath": "/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp"
+    },
+    {
+      "id": "attack-counterattack-clip-v3",
+      "candidate": "attack-counterattack-clip-v3.mp4",
+      "kind": "video",
+      "width": 1440,
+      "height": 900,
+      "durationSeconds": 29,
+      "bytes": 4287264,
+      "sha256": "e6e4327eaade7e34ebbb40bf72bf2eac4ce2e4fed2bb4a8a7406dc33dcc5034f",
+      "caption": "Twenty-nine continuous seconds show warriors at the cyan practice Swarm, its disappearance and actual lesson completion.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "poster": "attack-counterattack-poster-v3",
+      "proposedPath": "/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4"
+    },
+    {
+      "id": "attack-counterattack-poster-v3",
+      "candidate": "attack-counterattack-poster-v3.webp",
+      "kind": "image",
+      "width": 1440,
+      "height": 900,
+      "bytes": 153478,
+      "sha256": "367d7751a0951bd75e151609dca9d7491628fb762b73c9e06d66b91297ae2557",
+      "caption": "Exact opening frame of the attack counterattack excerpt.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "source": "attack-counterattack-review-first.png",
+      "sourceSha256": "e6ac35b1fbc3f74a1ce07788310e35e22da85838a3aaa13f7ba5baae5be5af81",
+      "proposedPath": "/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp"
+    }
+  ],
+  "motion": [
+    {
+      "clip": "scout-reveal-clip-v3",
+      "rawIntervalSeconds": [
+        84,
+        110
+      ],
+      "frameCount": "650",
+      "firstDecodedFrameSha256": "01a6c74b82939e2f652d5d5cfdf30293f327385f99afb97ecc3c35344ee2ac0b",
+      "firstMiddleLastChecked": [
+        "scout-reveal-review-first.png",
+        "scout-reveal-review-middle.png",
+        "scout-reveal-review-last.png"
+      ]
+    },
+    {
+      "clip": "defense-guard-contact-clip-v3",
+      "rawIntervalSeconds": [
+        140,
+        175
+      ],
+      "frameCount": "875",
+      "firstDecodedFrameSha256": "2988e5fac16dce1e271229c09a20e1d6c9956927c7b9209a172803e236afc947",
+      "firstMiddleLastChecked": [
+        "defense-guard-contact-review-first.png",
+        "defense-guard-contact-review-middle.png",
+        "defense-guard-contact-review-last.png"
+      ]
+    },
+    {
+      "clip": "attack-counterattack-clip-v3",
+      "rawIntervalSeconds": [
+        286,
+        315
+      ],
+      "frameCount": "725",
+      "firstDecodedFrameSha256": "e6ac35b1fbc3f74a1ce07788310e35e22da85838a3aaa13f7ba5baae5be5af81",
+      "firstMiddleLastChecked": [
+        "attack-counterattack-review-first.png",
+        "attack-counterattack-review-middle.png",
+        "attack-counterattack-review-last.png"
+      ]
+    }
+  ],
+  "recipe": {
+    "file": "actual-action-recipe.md",
+    "sha256": "8704ed84ea16b3509f9fe4a62f8b018f808a09fb798fab57287b29dbf6fe5fe0"
+  },
+  "limits": [
+    "Prepared tutorial goals, not human custom-match victories or AI ranking.",
+    "Defense shows actual contact and prompt progression, not a controlled comparison of painted versus unpainted terrain.",
+    "Counterattack shows actual Swarm disappearance and lesson completion, not unobserved withdrawal or subsequent feeding.",
+    "Scout arrival does not prove ground access, swimming or map-specific air-barrier traversal.",
+    "Current browser source revision remains unverified."
+  ],
+  "registeredAssets": [
+    {
+      "id": "scout-reveal-clip-v3",
+      "kind": "video",
+      "sha256": "ab05faef3afcfaac5f9bec625ce5ddb484b79cc692131270e2ad652978fd8b39",
+      "bytes": 3058255,
+      "width": 1440,
+      "height": 900,
+      "caption": "Twenty-six continuous seconds show an explorer revealing the enemy Swarm and the lesson advancing to Guard preparation.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "poster": "scout-reveal-poster-v3",
+      "durationSeconds": 26,
+      "path": "/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4"
+    },
+    {
+      "id": "scout-reveal-poster-v3",
+      "kind": "image",
+      "sha256": "1aee93744e95c5e5f8899c928eaed04fa73d1dd9845bd408473f481cf6e66f0f",
+      "bytes": 107344,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the scout reveal excerpt.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "path": "/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp"
+    },
+    {
+      "id": "defense-guard-contact-clip-v3",
+      "kind": "video",
+      "sha256": "a272b7d75069877b2f584e2301be98befe519afa2cc6c5573afc401c897e3060",
+      "bytes": 6282789,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-five continuous seconds show the prepared Guard group, cyan attackers approaching and contact near the painted tiles; the lesson progresses through the defensive task.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "poster": "defense-guard-contact-poster-v3",
+      "durationSeconds": 35,
+      "path": "/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4"
+    },
+    {
+      "id": "defense-guard-contact-poster-v3",
+      "kind": "image",
+      "sha256": "468c934ad916f898283e693ff788267446b3207d4aa4cab3b9849b94767071a0",
+      "bytes": 178490,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the defense guard contact excerpt.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "path": "/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp"
+    },
+    {
+      "id": "attack-counterattack-clip-v3",
+      "kind": "video",
+      "sha256": "e6e4327eaade7e34ebbb40bf72bf2eac4ce2e4fed2bb4a8a7406dc33dcc5034f",
+      "bytes": 4287264,
+      "width": 1440,
+      "height": 900,
+      "caption": "Twenty-nine continuous seconds show warriors at the cyan practice Swarm, its disappearance and actual lesson completion.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "poster": "attack-counterattack-poster-v3",
+      "durationSeconds": 29,
+      "path": "/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4"
+    },
+    {
+      "id": "attack-counterattack-poster-v3",
+      "kind": "image",
+      "sha256": "367d7751a0951bd75e151609dca9d7491628fb762b73c9e06d66b91297ae2557",
+      "bytes": 153478,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the attack counterattack excerpt.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "path": "/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp"
+    }
+  ],
+  "publicReadback": [
+    {
+      "id": "scout-reveal-clip-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4",
+      "status": 200,
+      "bytes": 3058255,
+      "sha256": "ab05faef3afcfaac5f9bec625ce5ddb484b79cc692131270e2ad652978fd8b39",
+      "contentType": "video/mp4",
+      "matches": true
+    },
+    {
+      "id": "scout-reveal-poster-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp",
+      "status": 200,
+      "bytes": 107344,
+      "sha256": "1aee93744e95c5e5f8899c928eaed04fa73d1dd9845bd408473f481cf6e66f0f",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "defense-guard-contact-clip-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4",
+      "status": 200,
+      "bytes": 6282789,
+      "sha256": "a272b7d75069877b2f584e2301be98befe519afa2cc6c5573afc401c897e3060",
+      "contentType": "video/mp4",
+      "matches": true
+    },
+    {
+      "id": "defense-guard-contact-poster-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp",
+      "status": 200,
+      "bytes": 178490,
+      "sha256": "468c934ad916f898283e693ff788267446b3207d4aa4cab3b9849b94767071a0",
+      "contentType": "image/webp",
+      "matches": true
+    },
+    {
+      "id": "attack-counterattack-clip-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4",
+      "status": 200,
+      "bytes": 4287264,
+      "sha256": "e6e4327eaade7e34ebbb40bf72bf2eac4ce2e4fed2bb4a8a7406dc33dcc5034f",
+      "contentType": "video/mp4",
+      "matches": true
+    },
+    {
+      "id": "attack-counterattack-poster-v3",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp",
+      "status": 200,
+      "bytes": 153478,
+      "sha256": "367d7751a0951bd75e151609dca9d7491628fb762b73c9e06d66b91297ae2557",
+      "contentType": "image/webp",
+      "matches": true
+    }
+  ],
+  "sourcePreparationScope": [
+    "buildings-and-services",
+    "exploration-and-movement",
+    "defending-your-colony",
+    "organizing-an-attack",
+    "reference-buildings",
+    "reference-units"
+  ],
+  "publicationQualification": "Source and two independently reviewed rendered rounds are accepted. Required frozen-head CI and production verification remain pending; original immutable media remains preserved.",
+  "renderedReview": {
+    "rounds": 2,
+    "viewportThemeCasesPerRound": 36,
+    "overflowFindings": 0,
+    "axeFindings": 0,
+    "imageDecodeFailures": 0,
+    "independentGroups": "Advanced reviewer: route/combat3 and services; core reviewer: references2, fruit, training and browser files; coordinator reviewed representative states.",
+    "initialVideoState": "Untouched posters and explicit Play control, no load/play warm-up. Chromium/WebKit360/1440 inline+expanded: zero MP4 requests, paused/time0. Native controls restore only on user intent; paused2s handoff adds no play event."
+  }
+}

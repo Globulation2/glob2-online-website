@@ -1,0 +1,799 @@
+{
+  "sourceBaseline": "449835af60648fc53058d10aecd7a5c39d3f9638",
+  "scope": [
+    "buildings-and-services",
+    "exploration-and-movement",
+    "defending-your-colony",
+    "organizing-an-attack",
+    "reference-buildings",
+    "reference-units",
+    "training-and-upgrades",
+    "browser-and-multiplayer",
+    "fruit-and-conversion"
+  ],
+  "qualification": "Final nine-source candidate overlays these article paths on the accepted PR66 source head. Independent source/media reviews and two rendered rounds are complete; final-head CI and production acceptance remain pending.",
+  "chapters": [
+    {
+      "chapter": "buildings-and-services",
+      "oldIdsRemovedFromConsumer": [
+        "services-active",
+        "services-active-detail",
+        "services-foundation",
+        "services-healing",
+        "services-healing-detail",
+        "services-healing-result",
+        "services-stalled-school"
+      ],
+      "newIds": [
+        "services-hospital-completed-detail-v3",
+        "services-hospital-completed-v3",
+        "services-hospital-foundation-detail-v3",
+        "services-hospital-foundation-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-after-v3",
+        "services-patient-before-detail-v3",
+        "services-patient-before-v3",
+        "training-school-completed-detail-v3",
+        "training-school-completed-v3",
+        "training-school-construction-detail-v3",
+        "training-school-construction-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "exploration-and-movement",
+      "oldIdsRemovedFromConsumer": [
+        "scout-clip-poster",
+        "scout-detail",
+        "scout-flag-clip",
+        "scout-result",
+        "scout-start"
+      ],
+      "newIds": [
+        "jobs-exploration-detail-v3",
+        "jobs-exploration-v3",
+        "scout-reveal-clip-v3",
+        "scout-reveal-poster-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "defending-your-colony",
+      "oldIdsRemovedFromConsumer": [
+        "defense-after-contact",
+        "defense-after-detail",
+        "defense-contact-detail",
+        "defense-hospital-detail",
+        "defense-inn",
+        "defense-warrior-detail"
+      ],
+      "newIds": [
+        "defense-guard-contact-clip-v3",
+        "defense-guard-contact-poster-v3",
+        "jobs-guard-area-v3",
+        "jobs-guard-detail-v3",
+        "jobs-guard-removing-v3",
+        "jobs-guard-restored-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "organizing-an-attack",
+      "oldIdsRemovedFromConsumer": [
+        "attack-contact-clip",
+        "attack-contact-poster",
+        "attack-gather",
+        "attack-gather-detail",
+        "attack-home-group-detail",
+        "attack-home-meals",
+        "attack-home-meals-detail",
+        "attack-objective-after",
+        "attack-objective-before",
+        "attack-objective-health-detail",
+        "attack-production-detail",
+        "attack-readiness-detail",
+        "attack-returning-warrior-detail",
+        "attack-staging-meals-detail"
+      ],
+      "newIds": [
+        "attack-counterattack-clip-v3",
+        "attack-counterattack-poster-v3",
+        "jobs-war-detail-v3",
+        "jobs-war-request-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "reference-buildings",
+      "oldIdsRemovedFromConsumer": [
+        "food-first-stock-detail",
+        "services-healing-detail",
+        "services-stalled-school"
+      ],
+      "newIds": [
+        "food-recovery-detail-v3",
+        "services-hospital-completed-detail-v3",
+        "training-school-completed-detail-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "reference-units",
+      "oldIdsRemovedFromConsumer": [
+        "population-explorer-result",
+        "training-worker-after"
+      ],
+      "newIds": [
+        "population-explorer-result-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-before-detail-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "training-and-upgrades",
+      "oldIdsRemovedFromConsumer": [
+        "training-school-detail",
+        "training-school-service",
+        "training-school-site",
+        "training-upgrade-detail",
+        "training-upgrade-locked",
+        "training-upgrade-result",
+        "training-upgrade-site",
+        "training-upgrade-site-detail",
+        "training-upgrade-unlocked",
+        "training-worker-after",
+        "training-worker-before"
+      ],
+      "newIds": [
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3",
+        "upgrade-racetrack-before-detail-v3",
+        "upgrade-racetrack-before-v3",
+        "upgrade-racetrack-completed-detail-v3",
+        "upgrade-racetrack-completed-v3",
+        "upgrade-racetrack-construction-detail-v3",
+        "upgrade-racetrack-construction-v3",
+        "upgrade-racetrack-queued-detail-v3",
+        "upgrade-racetrack-queued-v3",
+        "upgrade-worker-after-detail-v3",
+        "upgrade-worker-after-v3",
+        "upgrade-worker-before-detail-v3",
+        "upgrade-worker-before-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "browser-and-multiplayer",
+      "oldIdsRemovedFromConsumer": [
+        "browser-file-detail",
+        "browser-load",
+        "browser-recording",
+        "browser-recording-detail"
+      ],
+      "newIds": [
+        "browser-duplicate-import-v3",
+        "browser-file-detail-v3",
+        "browser-game-menu-v3",
+        "browser-import-confirmed-v3",
+        "browser-loaded-game-v3",
+        "browser-main-v3",
+        "browser-online-hub-v3",
+        "browser-recording-detail-v3",
+        "browser-recordings-v3",
+        "browser-replay-save-dialog-v3",
+        "browser-save-dialog-v3",
+        "browser-selected-save-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "fruit-and-conversion",
+      "oldIdsRemovedFromConsumer": [
+        "fruit-advertise",
+        "fruit-advertise-detail",
+        "fruit-armor-after",
+        "fruit-armor-before",
+        "fruit-conversion",
+        "fruit-conversion-detail",
+        "fruit-meal",
+        "fruit-offer-clip",
+        "fruit-orchard",
+        "fruit-orchard-detail",
+        "fruit-stock",
+        "fruit-stock-detail"
+      ],
+      "newIds": [
+        "fruit-advertisement-before-hd-v3",
+        "fruit-advertisement-confirmed-hd-v3",
+        "fruit-advertisement-detail-hd-v3",
+        "maxima-inn-fruit-detail-hd-v2",
+        "maxima-inn-fruit-hd-v2",
+        "maxima-joins-detail-hd-v2",
+        "maxima-joins-hd-v2"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    }
+  ],
+  "retiredIdsWithoutConsumers": [
+    "attack-contact-clip",
+    "attack-contact-poster",
+    "attack-gather",
+    "attack-gather-detail",
+    "attack-home-group-detail",
+    "attack-home-meals",
+    "attack-home-meals-detail",
+    "attack-objective-after",
+    "attack-objective-before",
+    "attack-objective-health-detail",
+    "attack-production-detail",
+    "attack-readiness-detail",
+    "attack-returning-warrior-detail",
+    "attack-staging-meals-detail",
+    "browser-file-detail",
+    "browser-load",
+    "browser-recording",
+    "browser-recording-detail",
+    "defense-after-contact",
+    "defense-after-detail",
+    "defense-contact-detail",
+    "defense-hospital-detail",
+    "defense-inn",
+    "defense-warrior-detail",
+    "food-first-stock-detail",
+    "fruit-advertise",
+    "fruit-advertise-detail",
+    "fruit-armor-after",
+    "fruit-armor-before",
+    "fruit-conversion",
+    "fruit-conversion-detail",
+    "fruit-meal",
+    "fruit-offer-clip",
+    "fruit-orchard",
+    "fruit-orchard-detail",
+    "fruit-stock",
+    "fruit-stock-detail",
+    "population-explorer-result",
+    "scout-clip-poster",
+    "scout-detail",
+    "scout-flag-clip",
+    "scout-result",
+    "scout-start",
+    "services-active",
+    "services-active-detail",
+    "services-foundation",
+    "services-healing",
+    "services-healing-detail",
+    "services-healing-result",
+    "services-stalled-school",
+    "training-school-detail",
+    "training-school-service",
+    "training-school-site",
+    "training-upgrade-detail",
+    "training-upgrade-locked",
+    "training-upgrade-result",
+    "training-upgrade-site",
+    "training-upgrade-site-detail",
+    "training-upgrade-unlocked",
+    "training-worker-after",
+    "training-worker-before"
+  ],
+  "nonArchivalV1Ids": 0,
+  "remainingChapters": 0,
+  "qualifiedEarlierIntroductionIds": 17,
+  "remaining": [],
+  "remainingFamilyCount": 0,
+  "remainingFamilies": [],
+  "fruitMotionReview": {
+    "decision": "Retire the earlier-baseline human offer episode from active current instruction, preserving its original immutable video, implicit poster, manifest records and prior source provenance.",
+    "originalObjects": [
+      {
+        "id": "fruit-offer-clip",
+        "kind": "video",
+        "path": "/guide-media/v1/fruit-and-conversion/fruit-offer-clip.mp4",
+        "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v1/fruit-and-conversion/fruit-offer-clip.mp4",
+        "sha256": "c5a8637ac0c021cdcc233161257cd4395c64cb25fcc482a04bfd3d912c877086",
+        "bytes": 1267401,
+        "poster": "fruit-conversion"
+      },
+      {
+        "id": "fruit-conversion",
+        "kind": "image",
+        "path": "/guide-media/v1/fruit-and-conversion/fruit-conversion.webp",
+        "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v1/fruit-and-conversion/fruit-conversion.webp",
+        "sha256": "3d8449dfc4e07fa0b581d2221f87ed2362c61d0ab77a404d19ba92a75eecf623",
+        "bytes": 146322,
+        "poster": null
+      }
+    ],
+    "reason": "The earlier-baseline footage has not been reproduced as a current applied-High individual fruit-meal, armor or conversion sequence. Continuing to display it as the refreshed current demonstration would misstate its capture qualification. The new Teams stills prove only food-advertisement permission and persistence; separate Maxima stock and joining notices do not replace the individual episode or establish its cause.",
+    "teachingPreserved": "Retain the practical same-warrior Food/fruit/armor before-and-after exercise and exact-native meal/routing/armor source context. The current text explicitly says no current same-unit pair was obtained, while actual permission and separate replay observations are labelled as such.",
+    "coverageLimit": "This retires a meaningful earlier motion example without claiming an equivalent current video. An individual current meal/armor pair and causal conversion path remain unobserved; no new capture is required for an outcome the guide does not claim.",
+    "integrityRule": "Never overwrite/relabel original objects. Remove current consumers of both the video and its implicit fruit-conversion poster only after a global consumer audit; retain their records/digests and earlier source history."
+  },
+  "completeSourceInventory": [
+    {
+      "chapter": "ai-cabino",
+      "sourceSha256": "319da6a9ff7e6ba6eb4915cdeaa76de713f9ee032aaf2b9863214a626419d0d8",
+      "directIds": [
+        "cabino-development-hd-v2",
+        "cabino-history-hd-v2",
+        "cabino-hospital-detail-hd-v2",
+        "cabino-hospital-hd-v2",
+        "cabino-inn-detail-hd-v2",
+        "cabino-inn-hd-v2",
+        "choosing-ai-roster-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "ai-castor",
+      "sourceSha256": "4d6f79c355e07e3eedc190e3b60581ca0d6d4af589ff48c20e6945c80a19aac1",
+      "directIds": [
+        "castor-history-hd-v2",
+        "castor-inn-detail-hd-v2",
+        "castor-inn-hd-v2",
+        "castor-population-hd-v2",
+        "castor-swarm-detail-hd-v2",
+        "castor-swarm-hd-v2",
+        "choosing-ai-roster-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "ai-cortex",
+      "sourceSha256": "94d057712f4bbd03749f84dc811cd3440d8fd76915dfc394eeeff2db89a92dec",
+      "directIds": [
+        "choosing-ai-roster-v3",
+        "econo-cortex-pressure-motion-hd-v2",
+        "econo-pressure-hd-v2"
+      ],
+      "implicitPosterIds": [
+        "econo-cortex-pressure-poster-hd-v2"
+      ]
+    },
+    {
+      "chapter": "ai-econo",
+      "sourceSha256": "fd9aefebdbf907a9ef4a4bdee70f32ae47ec7064f447e626ad8b6bd4b32c284e",
+      "directIds": [
+        "econo-cortex-pressure-motion-hd-v2",
+        "econo-history-hd-v2",
+        "econo-pressure-hd-v2",
+        "econo-profile-v3",
+        "econo-town-hd-v2"
+      ],
+      "implicitPosterIds": [
+        "econo-cortex-pressure-poster-hd-v2"
+      ]
+    },
+    {
+      "chapter": "ai-maxima",
+      "sourceSha256": "ebb14fee721170aa2bbc5d8c28e7bb8e821e6d32cfa109d9a16e25ea4ff5a715",
+      "directIds": [
+        "choosing-ai-roster-v3",
+        "maxima-development-hd-v2",
+        "maxima-inn-fruit-detail-hd-v2",
+        "maxima-inn-fruit-hd-v2",
+        "maxima-joins-detail-hd-v2",
+        "maxima-joins-hd-v2"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "ai-nicowar",
+      "sourceSha256": "54a3eea8c025438e0083e344d7b0c0461db848a35cd88f94017cf4a21225c068",
+      "directIds": [
+        "choosing-ai-roster-v3",
+        "nicowar-home-flag-detail-hd-v2",
+        "nicowar-home-flag-hd-v2",
+        "nicowar-offensive-flag-detail-hd-v2",
+        "nicowar-offensive-flag-hd-v2"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "ai-numbi",
+      "sourceSha256": "e31057c1f4bc035ec478f99aa361a9aafe2f904b27a30797ff6e92abc6ed2572",
+      "directIds": [
+        "choosing-ai-info-v3",
+        "numbi-history-hd-v2",
+        "numbi-opening-hd-v2",
+        "numbi-readiness-hd-v2",
+        "numbi-town-motion-hd-v2",
+        "numbi-warriors-detail-hd-v2"
+      ],
+      "implicitPosterIds": [
+        "numbi-town-motion-poster-hd-v2"
+      ]
+    },
+    {
+      "chapter": "ai-warrush",
+      "sourceSha256": "39141b4bdd899b96ee8bea2be21e77e8220db26c2e3c631ac9dfeeaf9469c4c3",
+      "directIds": [
+        "choosing-ai-roster-v3",
+        "warrush-guard-detail-hd-v2",
+        "warrush-guard-targets-hd-v2",
+        "warrush-town-hd-v2"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "browser-and-multiplayer",
+      "sourceSha256": "3c0394eb43e5696b118b2610f4ec01f915fbd51151f0c9da5eb196d322ffe4f2",
+      "directIds": [
+        "browser-duplicate-import-v3",
+        "browser-file-detail-mobile-v3",
+        "browser-game-menu-v3",
+        "browser-import-confirmed-v3",
+        "browser-loaded-game-v3",
+        "browser-main-v3",
+        "browser-online-hub-v3",
+        "browser-recording-detail-v3",
+        "browser-recordings-v3",
+        "browser-replay-save-dialog-v3",
+        "browser-save-dialog-v3",
+        "browser-selected-save-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "buildings-and-services",
+      "sourceSha256": "4b455c97e054f77e54f4081b50ca70ab34cb9beb28d3ac4b2caf12493b13c025",
+      "directIds": [
+        "services-hospital-completed-detail-v3",
+        "services-hospital-completed-v3",
+        "services-hospital-foundation-detail-v3",
+        "services-hospital-foundation-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-after-v3",
+        "services-patient-before-detail-v3",
+        "services-patient-before-v3",
+        "training-school-completed-detail-v3",
+        "training-school-completed-v3",
+        "training-school-construction-detail-v3",
+        "training-school-construction-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "choosing-an-ai",
+      "sourceSha256": "09c3afcbe91e0735758853eb0cfd8acce5e73bef09ced59acb74107111dd50e3",
+      "directIds": [
+        "choosing-ai-controller-detail-v3",
+        "choosing-ai-controller-v3",
+        "choosing-ai-info-v3",
+        "choosing-ai-map-v3",
+        "choosing-ai-players-v3",
+        "choosing-ai-roster-detail-v3",
+        "choosing-ai-roster-v3",
+        "choosing-ai-standard-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "controls-and-hud",
+      "sourceSha256": "81b1f732a5c5fc1e48e8b1770597402bb6f240ceaefe95e32911cd5012b70c29",
+      "directIds": [
+        "controls-history-v3",
+        "controls-inn-detail-v3",
+        "controls-inn-v3",
+        "controls-overlays-v3",
+        "controls-statistics-v3",
+        "controls-worker-detail-v3",
+        "controls-worker-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "defending-your-colony",
+      "sourceSha256": "c43bb0f9e027d52463d461cea24e3f576ccd18fe75d1076fabe2cc2a8bcfc1a4",
+      "directIds": [
+        "defense-guard-contact-clip-v3",
+        "jobs-guard-area-v3",
+        "jobs-guard-detail-v3",
+        "jobs-guard-removing-v3",
+        "jobs-guard-restored-v3"
+      ],
+      "implicitPosterIds": [
+        "defense-guard-contact-poster-v3"
+      ]
+    },
+    {
+      "chapter": "economy-and-expansion",
+      "sourceSha256": "ceeffd39a2b69b3f4ee227aacbeab37f5824161474d44056ec2d87b8b43da0b6",
+      "directIds": [
+        "food-first-stock-detail-v3",
+        "food-first-stock-v3",
+        "hauling-construction-clip-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-v3",
+        "hauling-delivered-detail-v3",
+        "hauling-delivered-v3",
+        "hauling-foundation-detail-v3",
+        "hauling-foundation-v3"
+      ],
+      "implicitPosterIds": [
+        "hauling-construction-poster-v3"
+      ]
+    },
+    {
+      "chapter": "exploration-and-movement",
+      "sourceSha256": "f7147d99596c676a22531546798d440a1234080047dd33532599cc102fefc2f2",
+      "directIds": [
+        "jobs-exploration-detail-v3",
+        "jobs-exploration-v3",
+        "scout-reveal-clip-v3"
+      ],
+      "implicitPosterIds": [
+        "scout-reveal-poster-v3"
+      ]
+    },
+    {
+      "chapter": "fruit-and-conversion",
+      "sourceSha256": "e796dab7ee4477d83e954865b318ded3ce878b6484c7b9af2cae9c9944c01d7d",
+      "directIds": [
+        "fruit-advertisement-before-hd-v3",
+        "fruit-advertisement-confirmed-hd-v3",
+        "fruit-advertisement-detail-hd-v3",
+        "maxima-inn-fruit-detail-hd-v2",
+        "maxima-inn-fruit-hd-v2",
+        "maxima-joins-detail-hd-v2",
+        "maxima-joins-hd-v2"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "getting-started",
+      "sourceSha256": "5134c345c335cc40d81c5571d33953339958631067fbbec27758bc870d433de9",
+      "directIds": [
+        "introduction-flag-detail-v3",
+        "introduction-scout-result-v3",
+        "introduction-scout-v3",
+        "pilot-exploration-clip",
+        "pilot-foundation",
+        "pilot-hospital",
+        "pilot-hospital-working",
+        "pilot-idle-detail",
+        "pilot-inn",
+        "pilot-menu",
+        "pilot-practice",
+        "pilot-production",
+        "pilot-production-detail",
+        "pilot-restored-detail",
+        "pilot-save",
+        "pilot-start",
+        "pilot-swarm",
+        "pilot-two-explorers",
+        "pilot-working-detail",
+        "tutorial-lessons-v3"
+      ],
+      "implicitPosterIds": [
+        "pilot-exploration-poster"
+      ]
+    },
+    {
+      "chapter": "jobs-and-flags",
+      "sourceSha256": "70024a748239a021c4df3a640db7c31ca8808726c09c854bf915a9ae9996cbd3",
+      "directIds": [
+        "jobs-exploration-detail-v3",
+        "jobs-exploration-v3",
+        "jobs-guard-area-v3",
+        "jobs-guard-detail-v3",
+        "jobs-guard-removing-v3",
+        "jobs-guard-restored-v3",
+        "jobs-war-detail-v3",
+        "jobs-war-request-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "organizing-an-attack",
+      "sourceSha256": "0cbbeba99fc9503996263defb17d5eb16e1b2637f3f9025576339d910de8e7db",
+      "directIds": [
+        "attack-counterattack-clip-v3",
+        "jobs-war-detail-v3",
+        "jobs-war-request-v3"
+      ],
+      "implicitPosterIds": [
+        "attack-counterattack-poster-v3"
+      ]
+    },
+    {
+      "chapter": "population-and-production",
+      "sourceSha256": "2fb4abd009571c04aed087d2ffb722a26b77fcb9cdf6ad720582214554b321ec",
+      "directIds": [
+        "population-explorer-count-v3",
+        "population-explorer-result-v3",
+        "population-panel-detail-v3",
+        "population-panel-v3",
+        "population-pending-birth-v3",
+        "population-stable-detail-v3",
+        "population-stable-total-v3",
+        "population-worker-count-v3",
+        "population-worker-result-v3",
+        "population-zero-weights-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "recovering-your-colony",
+      "sourceSha256": "6d513742c6b6c887a118173d22d82c5f6226c69ce48d504c175ec9f348974cef",
+      "directIds": [
+        "food-recovery-detail-v3",
+        "food-recovery-v3",
+        "food-stock-falling-v3",
+        "services-hospital-foundation-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-after-v3",
+        "services-patient-before-detail-v3",
+        "services-patient-before-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "reference-buildings",
+      "sourceSha256": "abc420dc24013f47484eab602277fa3da3f17c8f57f159052ec9ef21d6626b5c",
+      "directIds": [
+        "food-recovery-detail-v3",
+        "services-hospital-completed-detail-v3",
+        "training-school-completed-detail-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "reference-controls",
+      "sourceSha256": "6e17f1dd0b9c0d31d8a78c57e5277716e4f687ca443cad966919fe904dd980ab",
+      "directIds": [
+        "reference-settings-detail-v3",
+        "reference-settings-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "reference-resources",
+      "sourceSha256": "279637e710ac96aceb15ac254a38ce0e907b2ba71fbca35d7d08bc0467107b3a",
+      "directIds": [
+        "food-field-after-v3",
+        "food-field-before-v3",
+        "food-swarm-detail-v3",
+        "food-swarm-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "reference-units",
+      "sourceSha256": "ee65f0a2b8e803e3e7d57910d823156c20c6da32872c31166d842298ec1c2ab4",
+      "directIds": [
+        "population-explorer-result-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-before-detail-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "resources-and-hauling",
+      "sourceSha256": "f501e0cecfb8798b327482f958e4cfa1fbe01302eb8eddd7cc709e3667dee954",
+      "directIds": [
+        "hauling-construction-clip-v3",
+        "hauling-construction-detail-v3",
+        "hauling-construction-v3",
+        "hauling-delivered-detail-v3",
+        "hauling-delivered-v3",
+        "hauling-foundation-detail-v3",
+        "hauling-foundation-v3"
+      ],
+      "implicitPosterIds": [
+        "hauling-construction-poster-v3"
+      ]
+    },
+    {
+      "chapter": "sustainable-food",
+      "sourceSha256": "20ffba9eadceb9785a4f76ab673e1e9c19f627e88a4165a9581b44a07f952471",
+      "directIds": [
+        "food-consumption-refill-clip-v3",
+        "food-field-after-v3",
+        "food-field-before-v3",
+        "food-first-stock-detail-v3",
+        "food-first-stock-v3",
+        "food-hauling-restored-v3",
+        "food-recovery-detail-v3",
+        "food-recovery-v3",
+        "food-stock-falling-v3",
+        "food-swarm-detail-v3",
+        "food-swarm-v3"
+      ],
+      "implicitPosterIds": [
+        "food-consumption-refill-poster-v3"
+      ]
+    },
+    {
+      "chapter": "training-and-upgrades",
+      "sourceSha256": "68e9b8439e544826d5da5dba7cca346894fdf840c5c507002e20fd4fa31893a1",
+      "directIds": [
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3",
+        "upgrade-racetrack-before-detail-v3",
+        "upgrade-racetrack-before-v3",
+        "upgrade-racetrack-completed-detail-v3",
+        "upgrade-racetrack-completed-v3",
+        "upgrade-racetrack-construction-detail-v3",
+        "upgrade-racetrack-construction-v3",
+        "upgrade-racetrack-queued-detail-v3",
+        "upgrade-racetrack-queued-v3",
+        "upgrade-worker-after-detail-v3",
+        "upgrade-worker-after-v3",
+        "upgrade-worker-before-detail-v3",
+        "upgrade-worker-before-v3"
+      ],
+      "implicitPosterIds": []
+    },
+    {
+      "chapter": "victory-and-rules",
+      "sourceSha256": "190c9bb27ab417b9839e4a8332c37d67137667cb8fd8cb12407fc936cac9a10a",
+      "directIds": [
+        "choosing-ai-standard-v3",
+        "rules-all-v3",
+        "rules-blitz-v3",
+        "rules-conquest-v3",
+        "rules-presets-detail-v3",
+        "rules-sandbox-v3",
+        "rules-victory-detail-v3"
+      ],
+      "implicitPosterIds": []
+    }
+  ],
+  "activeGuideObjects": 167,
+  "activeEarlierIds": [
+    "pilot-inn",
+    "pilot-production-detail",
+    "pilot-foundation",
+    "pilot-menu",
+    "pilot-idle-detail",
+    "pilot-restored-detail",
+    "pilot-production",
+    "pilot-hospital",
+    "pilot-practice",
+    "pilot-start",
+    "pilot-exploration-clip",
+    "pilot-two-explorers",
+    "pilot-exploration-poster",
+    "pilot-working-detail",
+    "pilot-save",
+    "pilot-hospital-working",
+    "pilot-swarm"
+  ],
+  "currentArtworkEvidenceAudit": {
+    "activeCurrentObjects": 150,
+    "unqualifiedCurrentIds": [],
+    "method": "Every active non-v1 object ID and SHA was checked against registeredAssets in the reviewed applied-High family evidence, including the explicit High setup assets. The17 active v1 objects belong only to the qualified earlier Introduction reference."
+  },
+  "retiredCurrentCandidateIds": [
+    "browser-file-detail-v3"
+  ]
+}

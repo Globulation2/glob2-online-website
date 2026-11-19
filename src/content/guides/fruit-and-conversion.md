@@ -1,122 +1,122 @@
 ---
 title: "Fruit, happiness and conversion"
-description: "Keep orchards visible, supply fruit with meals, and use food advertisement without mistaking it for an automatic conversion effect."
+description: "Read fruit and meal capacity separately, advertise an inn through Teams, and distinguish a richer offer from a proven ownership change."
 locale: "en"
 tags: ["fruit", "conversion", "food"]
 order: 3
 group: "develop"
 prerequisites: ["sustainable-food", "exploration-and-movement"]
-reviewedAgainst: "c26a0a02aeef4993a7478c3651d6117b49dbc56c"
-sources: [{"title":"Fruit harvesting visibility","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/map/gradient/SeedCells.h"},{"title":"Meals and fruit variety","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/building/Misc.cpp"},{"title":"Food selection and conversion conditions","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/team/TeamRouting.cpp"},{"title":"Changing ownership","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/unit/UnitActivity.cpp"},{"title":"Fruit and armor","url":"https://github.com/Globulation2/glob2/blob/c26a0a02aeef4993a7478c3651d6117b49dbc56c/src/unit/UnitStats.cpp"}]
+sources:
+  - title: "Released native 0.11.6.1 food choice and travel limits"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/team/TeamRouting.cpp"
+  - title: "Released native 0.11.6.1 meal fruit and offer reserves"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/Misc.cpp"
+  - title: "Released native 0.11.6.1 ownership choice"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitActivity.cpp"
+  - title: "Released native 0.11.6.1 current harvesting visibility"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/MapResources.cpp"
+  - title: "Released native 0.11.6.1 fruit and effective armor"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitStats.cpp"
 ---
 
-Food keeps globs alive. Fruit adds variety to their meals and changes which inn they prefer when hungry. A richer meal can attract a rival's glob, but only when that glob can discover the offer and reach an available meal service.
+Food keeps globs alive. Fruit adds variety to meals and affects which usable inn a hungry glob prefers. A richer rival meal can attract a glob, but fruit stored somewhere on the map is not an automatic ownership change.
 
-Start with a healthy Standard practice colony against an AI on a map with accessible fruit. Keep ordinary food supplied before diverting workers to an orchard. The illustrated Fingerprint practice match is against Econo. The illustrated home inn has collected cherries beside the nearby pond while keeping ordinary food supplied. Its fruit reserve and four meal places are separate counts.
+This chapter uses **released native 0.11.6.1**: actual human-controlled Teams settings in a local match against Numbi, and separate observed **Maxima-versus-Cabino AI replay** states. All use SDL GPU with explicit High resolution checked after loading. The mechanics below are exact released-native source context; the public browser's exact source revision remains unverified. The human exercise is yours to perform, while the replay observations are identified separately.
 
-## Keep the orchard in view
+## Secure ordinary food before diverting hauling
 
-1. Find cherry, orange or prune trees near a safe hauling route. Different colors identify different kinds.
-2. Produce an explorer if needed. Use an exploration flag near the orchard and request a scout.
-3. Resume and watch the explorer reveal the trees. Keep vision there while workers collect fruit; nearby buildings and globs can also maintain it.
-4. Select the inn and read its separate Cherries, Oranges and Prunes counts.
+Begin with a supplied, healthy local Standard colony against an AI. Save a checkpoint before changing food visibility or establishing a forward service. Keep an existing inn working while you test a richer offer.
 
-:::media-group
+1. Inspect the inn's **Food**, **Inside** and **Working** together. Stored meals, occupied service places and attached/requested haulers are different readings.
+2. Find a reachable cherry, orange or prune source. Different kinds contribute variety; several cherries remain one kind.
+3. Keep workers available to gather ordinary food as well as fruit. A flying explorer can reveal a source that your current ground workers still cannot reach.
+4. Resume and look for actual stock changes. If fruit stays at zero, inspect current vision, remaining source stock, ground access and the workers attached to the inn.
 
-[[media:fruit-orchard]]
+The native harvesting rule requires **current team visibility** for fruit. Remembering an orchard through fog is insufficient. Keep a scout or another dependable source of vision near it, and preserve a real hauling route. A scouting request is not proof that an explorer has arrived or that any fruit has been delivered.
 
-[[media:fruit-orchard-detail]]
+Use [exploration and movement](/learn/exploration-and-movement/) to distinguish the request from arrival and ground access. If a corridor must be cleared, make a small useful opening and keep services accessible; do not remove the surrounding food merely to tidy the map.
 
-:::
-
-:::warning
-
-Fruit harvesting requires **current visibility**. Seeing trees once and leaving them in remembered fog is insufficient. Maintain an explorer near the source, or another dependable source of vision. A scout does not haul the fruit; workers still need access and time to bring it to the inn.
-
-:::
-
-The illustrated orchard is already within the colony's current vision. The exploration flag shows an optional request for additional scouts; it has **Here 0** and is not evidence that a scout has arrived.
-
-## Supply meals and fruit separately
-
-An inn needs ordinary food to serve a meal. Fruit cannot replace that food reserve. Preserve enough hauling for both instead of assuming a full cherry stock solves an empty Food count.
-
-Keep a reserve for the globs already inside. The offer counts a fruit kind only when that kind's available stock exceeds the current Inside count; one cherry beside four occupants is therefore insufficient to advertise that kind.
-
-Let workers make actual deliveries. If the stock stays at zero, check the source's current visibility, route, remaining fruit and the workers attached to the inn. A source beyond water can require a different route or trained ground units even though the flying scout reaches it easily. Dense resources can also block ground access. Open only the corridor you need, preserve the surrounding food, and use a hospital for globs injured by clearing.
+## Read the offer, not just a colorful stock
 
 :::media-group
 
-[[media:fruit-stock]]
+[[media:maxima-inn-fruit-hd-v2]]
 
-[[media:fruit-stock-detail]]
+[[media:maxima-inn-fruit-detail-hd-v2]]
 
 :::
 
-The meal's happiness counts **distinct fruit kinds**, rather than the number of cherries in storage. Three cherries are one kind; cherries, oranges and prunes offer three kinds. Each available kind can accompany a meal. Select a glob after it eats to inspect its fruit result.
+This is **Maxima's own inn** in a paused native AI-versus-AI replay at **5:35**. It shows **Food 5/10**, **Oranges 5/40**, **Inside 4/4** and **Working 1/1**; the other fruit kinds are zero. It is a stock-and-occupancy reading, not a newly observed human fruit-delivery sequence.
 
-In the selected worker panel, **Food 98% (1)** means the worker has almost a full nutrition reserve and one fruit kind recorded from its meal. The parentheses do not show carried cherries or a count of meals.
+In the native offer calculation, a fruit kind contributes only when its available stock **exceeds the current Inside count**. Read that relationship before treating a small reserve as an advertised variety. Here the pictured five oranges exceed four occupants, but the occupied service, ordinary food, permissions and reachable trip still matter. That comparison alone does not identify why any individual changed sides.
 
-[[media:fruit-meal]]
+Fruit cannot replace the inn's ordinary Food. The [current food exercise](/learn/sustainable-food/) separately shows a reserve falling and refilling after hauling is restored. An inn full of fruit but unable to serve a meal does not solve hunger.
 
-## Weigh the armor tradeoff
+## Advertise your inn through Teams
 
-Fruit is not a universal combat improvement. For relevant unit types, eaten fruit reduces effective armor through the fruit penalty. Select a warrior before and after its next meal and compare the armor line, keeping the same unit selected while it moves.
+Open **Teams** through the alliance icon beside the map. The following human-controlled native example has three local Numbi AI opponents.
 
-The illustrated Standard warrior first shows **Food 93% (0)** and **Armour 10 = 10 - 0 * 10**. After its cherry meal, the same selected warrior shows **Food 99% (1)** and **Armour 0 = 10 - 1 * 10**. One fruit kind has restored its nutrition but removed its effective armor in this configuration. This is a measured example, not a universal penalty for every class, training level or custom rule.
+[[media:fruit-advertisement-before-hd-v3]]
 
-[[media:fruit-armor-before]]
-
-[[media:fruit-armor-after]]
-
-Keep that tradeoff in mind before describing a happier army as a stronger army. Accessible varied home meals can resist a richer rival offer, while the armor result changes what happens when a unit next fights.
-
-## Advertise an inn to another colony
-
-Food advertisement allows another team's globs to consider your inns. Ordinary scouting of a rival's building does not replace this permission.
-
-Open the in-game Teams panel using the alliance icon beside the map. In this practice match, You and Econo already belong to separate teams. Enable **fV** beside Econo: the panel labels it “Show vision for Inn buildings (to steal units)”. Confirm with **Ok**, then resume. This shares the food offer; it does not give you control over the opponent's decisions.
+Find the intended opponent's row and enable **fV**. Its legend reads **“Show vision for Inn buildings (to steal units)”**. Choose **Ok**, then reopen Teams to confirm the saved setting for that row.
 
 :::media-group
 
-[[media:fruit-advertise]]
+[[media:fruit-advertisement-confirmed-hd-v3]]
 
-[[media:fruit-advertise-detail]]
+[[media:fruit-advertisement-detail-hd-v3]]
 
 :::
 
-## Understand the conversion decision
+The reopened panel has fV checked for **Lime Numbi**, while Cyan and Purple remain unchecked. This confirms the selected food-visibility permission. It does not demonstrate that a rival glob has chosen the meal, arrived or converted.
 
-A hungry glob compares usable meals. A reachable own inn offering equal or greater fruit variety keeps it with its colony. A richer rival offer can win the comparison only when food advertisement allows it, the rival service can feed and convert with adequate fruit reserves for its current occupants, and the trip is short enough for the glob's remaining nutrition.
+The neighboring controls have different purposes: **mV** concerns Markets and fruit exchange; **C** concerns chat recipients. Follow the actual labels rather than treating every checked box as part of an inn offer. Alliance and shared vision are fixed in this pictured match; food advertisement remains its own available control.
+
+## Understand when ownership can change
+
+A hungry eligible glob compares usable meals. In the released-native routing rule, a reachable own inn with equal or greater fruit variety keeps preference over the rival candidate. A rival offer must satisfy food visibility, service and conversion eligibility, fruit reserves and a travel limit based on remaining nutrition. Changing a permission does not bypass those conditions.
 
 :::checkpoint
 
-Conversion changes ownership when the glob chooses the rival feeding service, before it completes the meal. It is not a fruit aura around the tree or a reward for merely enabling the checkbox. Observe the ownership and conversion event rather than counting every visitor as a successful conversion.
+In the native implementation, ownership changes when the glob chooses the rival feeding service, **before completing the meal**. Inspect an actual ownership event; do not count every visitor, tree or checked fV box as a conversion.
 
 :::
-
-In the illustrated match the native message says a unit from Econo / Cyan's team has joined your team. The worker total changes from 13 to 14 and the conversion counter reads **+1/-0**. The worker HUD uses available/total: **8/14** means eight available workers out of fourteen total. The swarm's production weights were zero during that interval, so this population increase is a conversion, not a birth. This demonstrates one successful offer; it does not promise the same timing or result in every match.
 
 :::media-group
 
-[[media:fruit-conversion]]
+[[media:maxima-joins-hd-v2]]
 
-[[media:fruit-conversion-detail]]
+[[media:maxima-joins-detail-hd-v2]]
 
 :::
 
-[[media:fruit-offer-clip]]
+The separate Maxima-versus-Cabino replay shows the literal notice **“A unit from cabino's team has joined your team ×7”**. It establishes the displayed accumulated notice. It does not identify seven unique visitors, a particular meal, or an individual causal link to the later selected orange stock. The local Teams exercise above is a different match.
 
-Protect your own colony with accessible meals of adequate variety. Keeping a rich inn full but inaccessible or completely occupied can leave it unable to defend a hungry glob's food choice.
+In your own saved practice, keep ordinary meals usable, advertise one intended opponent, then observe actual events and ownership. Population alone can mix births, deaths and conversions. Inspect the unit and event context rather than attributing every increase to fruit. An unsuccessful offer can still teach you which prerequisite is missing.
 
-## Diagnose an unsuccessful offer
+## Compare fruit variety and armor on the same glob
 
-| Symptom | Check | Useful correction |
+The released-native meal code records distinct fruit kinds for the eating unit. An inn's stock is not that unit's eaten-fruit result. Select a glob and read its own Food and fruit indication after a meal; the fruit indication is neither carried stock nor a meal counter.
+
+Fruit is also **not a universal combat improvement**. The native effective-armor calculation subtracts fruit count times the relevant type's fruit penalty; the penalty differs by type and configuration. More variety can make an inn attractive while reducing effective armor for a relevant warrior. Check actual abilities and selected rules before planning a fight around it.
+
+For an individual comparison in your own local practice:
+
+1. Select one warrior before its next meal. Note its Food, recorded fruit and armor expression.
+2. Preserve the same selection while it travels and uses a supplied inn. Avoid introducing training or another change into the comparison.
+3. Inspect it again after the meal and compare the actual readings.
+4. Keep the result tied to that unit, training and rules rather than assuming every type has the same penalty.
+
+No current same-unit fruit/armor before-and-after pair was obtained for this refresh. These steps teach a source-qualified comparison to perform; the Maxima stock and join notice do not substitute for it.
+
+## Diagnose the missing outcome
+
+| Observation | Inspect next | Useful adjustment |
 | --- | --- | --- |
-| Orchard is known but fruit does not arrive | Current vision, source stock and ground route | Keep it visible and restore a real hauling path. |
-| Fruit is stored but globs do not eat | Ordinary Food and available Inside places | Restore the meal service first. |
-| Rival knows the location but ignores the inn | Food visibility to that team | Advertise food through the alliance panel. |
-| Advertising produces no ownership change | Hunger, own meal quality, travel and conversion rules | Wait for a meaningful food choice; do not promise an inevitable result. |
-| Home globs start changing sides | Competing advertised meals and usable own inns | Restore reachable own meals with equal or better variety. |
+| Known orchard yields no fruit | Current visibility, source stock and ground route | Restore both vision and a usable hauling path. |
+| Fruit arrives but meals fail | Ordinary Food and usable service places | Repair the meal supply first. |
+| Rival knows the area but ignores the inn | Its row's actual fV permission and eligible food choice | Confirm the intended row and inspect the other conditions. |
+| Advertising yields no ownership event | Hunger, own offers, service access and travel | Observe a real food choice; do not promise an inevitable result. |
+| Home globs change sides | Reachable own meals and fruit variety | Restore a usable own offer rather than merely filling an inaccessible inn. |
 
-Save before changing diplomacy or establishing a forward inn. Build on [Keep the colony fed](/learn/sustainable-food/) and [Exploration, terrain and movement](/learn/exploration-and-movement/) when the problem is supply or visibility rather than conversion itself.
+Keep the richer service supportable after the first visitor. Preserve home hauling and review both stocks and occupancy over time. A newly joined glob still needs meals, health and useful work; an attractive but failing inn adds another obligation to the colony.

@@ -1,123 +1,101 @@
 ---
 title: "Defend the colony, not just the frontline"
-description: "Protect food and training, concentrate warriors, and keep defensive buildings supplied."
+description: "Give available warriors useful ground, protect service routes, and inspect what remains after contact."
+locale: "en"
 group: "map"
 order: 2
 prerequisites: ["jobs-and-flags"]
 tags: ["strategy", "combat", "defense"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Defensive movement and guard areas"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitMovement.cpp"
-  - title: "Tower supply and firing"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/TypeSteps.cpp"
-  - title: "Defensive buildings"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/types/BuildingTypesDefence.cpp"
+  - title: "Current public browser Guard zones and flag tactics lesson, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: defensive movement and Guard areas"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMovement.cpp"
+  - title: "Released native 0.11.6.1 source context: defensive building supply"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/TypeSteps.cpp"
 ---
 
-A defense has to protect the systems that let the colony continue: food deliveries, production, training, and recovery. A line of towers is not enough when their ammunition runs out or the defenders cannot reach a meal.
+Protect the routes and services that let the colony continue. Warriors need meals and recovery, workers need access to materials, and a building is useful only while it can perform its job. A force still standing is not proof that those systems remain safe.
 
-## Decide what you are protecting
+The illustrated exercise is **Tutorial → Guard zones and flag tactics** in the current public browser. It supplies a prepared colony and warriors, a marked Guard destination and a small scripted practice attack. It demonstrates a local defensive task; it does not establish a winning army size or a defense against every opponent.
 
-Before building defenses, inspect the routes between food, inn, swarm, and other services. Look for an approach an opponent can use to interrupt several of those routes at once. Scout beyond the base rather than waiting for attackers to appear beside the inn.
+## Identify the approach you need to protect
 
-Keep these questions in view:
+Complete the lesson's initial [scouting task](/learn/exploration-and-movement/), then follow **Prepare a guard zone**. Before painting, inspect the routes between the inn, production and the exposed approach. Ask:
 
-- Where will the first attack enter?
-- Can defenders assemble there without blocking workers?
-- Can wounded or hungry units reach services afterward?
-- Is there another short approach across the map's wrapping edge?
+- Can available defenders reach the intended position?
+- Can workers still haul around it?
+- Can hungry or injured units return to usable services?
+- Is a different route or wrapping map seam exposing the same buildings?
 
-:::warning
+In your own match, scout beyond home and check current vision. Do not assume the opponent must approach from the direction the camera makes most obvious.
 
-Do not wall every visible boundary simply because it looks like an edge. The map wraps, and walls do not stop flying units.
+## Paint a compact Guard area
 
-:::
-
-## Produce defenders without losing the economy
-
-Use the swarm's Warrior production bar to add warriors to the future mix. Preserve enough Worker production to keep essential jobs staffed. An army that grows by abandoning food hauling creates its own emergency.
-
-Provide reachable training: warriors can use movement services and barracks for combat development. Allow them time away from assigned duties to train. A barracks foundation is not trained soldiers, and an upgraded service is not an instantaneous upgrade to every warrior.
-
-Check selected units when judging readiness. Numbers alone conceal differences in training, food, health, and position. Avoid committing new or injured warriors to the same task merely because they increase the total.
-
-## Give idle warriors useful ground
-
-Paint a compact **Guard area** around the approach you intend to defend. The default sequence is **A → G**; check add mode and brush size, then paint a small region. Right-click when finished.
-
-Guard areas give idle warriors defensive terrain. They do not replace explicit requests on a war flag, and they do not guarantee an even distribution across every patch you painted. An unnecessarily broad area can pull attention away from the narrow route that matters.
-
-Watch where warriors actually move. If they remain committed to a distant flag, reduce that request before expecting them to patrol near home. If your painted area lies behind an obstacle, correct the route instead of enlarging the area.
-
-## Keep towers supplied
-
-A defense tower needs construction first, then ammunition supply. Workers bring stone, and the tower turns its supply into shots. Select it and inspect the stone/ammunition readings and Working request.
-
-A useful tower location combines:
-
-1. A clear view of the approach you want it to cover.
-2. Reachable stone for its workers.
-3. A route that does not force haulers through the enemy advance.
-4. Supporting defenders and nearby recovery services.
-
-Watch its supply before, during, and after a fight. A completed tower with depleted ammunition cannot provide the same protection as a supplied one. Additional towers create additional hauling demand; do not order a ring of them while the colony already struggles to feed its workers.
-
-## Leave your own access open
-
-Walls constrain ground movement. Use them to shape a route, leaving gaps your workers and defenders can actually use. Before extending a barrier, test the trips to food, stone, training, and the protected building's exit.
-
-Do not promise yourself a gate or a flyer-proof barrier that the map does not provide. A closed ring can trap your own services and units. When adding a wall near a busy inn or swarm, inspect the exit and leave room for upgrades as well.
-
-## What a late defense costs
-
-In this practice raid, the enemy reaches the two inns before the defenders stop it. The selected inn still has **Food 6/10** and **Inside 2/4**. Food stock has not failed yet; the danger is losing the buildings and the route that serves it.
+1. In local practice, pause with **P**. Use **Show destination** to center the lesson's marked area.
+2. Press **A**, then **G** to select Guard painting.
+3. Check add mode and the brush before clicking. Paint a small patch at the prompted position; this recording uses four adjacent tiles.
+4. Resume and observe actual warriors reaching it. The task asks for two to arrive; painting alone does not satisfy that outcome.
+5. Follow the next prompt when the practice attack begins. Keep the position useful while the units handle real contact.
 
 :::media-group
 
-[[media:defense-inn]]
+[[media:jobs-guard-area-v3]]
 
-[[media:defense-contact-detail]]
+[[media:jobs-guard-detail-v3]]
 
 :::
 
-Pause a local practice raid and inspect three things before spending more workers:
+[[media:defense-guard-contact-clip-v3]]
 
-1. **The attack's location:** which food or training service can it remove next?
-2. **A defender's readiness:** select a warrior and read health, food, and training. Here the selected warrior has 245/250 HP, but only 29% food.
-3. **The route to recovery:** can the defenders reach an inn and hospital without crossing the attackers?
+The continuous excerpt shows cyan units approach and contact the red group near the painted tiles. The lesson progresses from preparing the area to repelling the attack. Inspect what the units actually do; a Guard region attracts suitable available warriors rather than selecting a squad or guaranteeing an evenly spaced line.
 
-[[media:defense-warrior-detail]]
+The later lesson advances to a counterattack task. That local progression is separate from full-match victory. Keep inspecting survivors and the route to meals instead of assuming every service is now safe indefinitely.
 
-After play resumes, the attackers destroy both inns and damage the swarm. The selected warrior's health falls to 65/250. A force still being present is not the same as food service still being available.
+## Release competing military requests
+
+If warriors stay at a remote War flag, inspect its requested count and minimum level before expecting them at home. Explicit assignments and unit needs affect which warriors can respond. A broad Guard patch is not a replacement for releasing an obsolete offensive request.
+
+Use the area controls to make small corrections. In the recorded lesson, **A → D** removes one of the four tiles and **A → A** restores it. Those edits are made while paused after lesson completion; they demonstrate changing the region, not a second tested defensive result.
 
 :::media-group
 
-[[media:defense-after-contact]]
+[[media:jobs-guard-removing-v3]]
 
-[[media:defense-after-detail]]
+[[media:jobs-guard-restored-v3]]
 
 :::
 
-The hospital remains occupied by two globs. That can preserve wounded units, but it cannot feed them. Rebuilding food service now competes with defending the surviving structures. The easier decision was to prepare the approach, supply, and trained defenders before the raid arrived.
+For your own approach, remove unnecessary Guard marks rather than spreading a defensive region across every visible edge. Watch actual gathering after resuming. Change one cause at a time so you can tell whether releasing a request or changing the region helped.
 
-[[media:defense-hospital-detail]]
+## Keep the force supportable
 
-## Respond to the first attack
+Warrior production adds future military units while competing with the rest of the colony's needs. Keep workers available for food and construction. Reduce optional future production when an existing force needs support; do not confuse the birth mix with the Swarm's separate hauling request.
 
-When an attack appears, inspect the affected area before adding a new distant job. Keep food hauling active and draw available defenders toward a reachable position. Reassess a war flag that is pulling the army away from home.
+Select individual warriors before relying on the count. HP, Food, combat abilities and location can differ. Raw warriors can be useful when a task accepts them, as the prepared low-minimum War flag shows; training and recovery improve later options but are not instant consequences of completing a barracks.
 
-Then watch the actual fight:
+Inns and Hospitals do different work. [Food supply](/learn/sustainable-food/) shows an actual small reserve drop and refill. [Recovery](/learn/recovering-your-colony/) shows a separate prepared injured worker regain HP after a Hospital is built. Neither demonstration proves that your own threatened colony has enough reachable service capacity; inspect and observe it.
 
-- Are defenders arriving together or separately?
-- Are towers firing and being resupplied?
-- Can damaged units reach healing?
-- Is another enemy group reaching the food route behind the fight?
+## Treat towers and walls as continuing commitments
 
-After the attackers leave, release unnecessary combat requests and let units recover and train. Repair damaged structures where useful, then reassess the defensive layout. A successful fight can still leave a colony vulnerable if it consumed the army's food and health.
+In the native 0.11.6.1 model, defensive towers need construction and ammunition supply. Inspect their actual stone/ammunition readings and worker request before expecting sustained fire. A finished tower's HP does not tell you how many shots it can still support.
 
-## Learn from one defended route
+Choose a location whose workers can reach supply without traveling through the enemy advance. Additional towers add labor demand; a ring of empty or unreachable towers can leave the food problem unresolved. Check the current building's panel and scenario rules rather than applying a stock value from another map.
 
-Use a local practice save to inspect one approach repeatedly. First observe where an attack arrives; then change one defense decision, such as guard placement or tower supply, and compare the result. Keep the opponent, map, and rules consistent enough that the difference means something.
+Walls alter ground access. Leave routes for workers, defenders and service exits, including space for intended upgrades. Test the trips you need before extending a barrier. Do not assume a wall stops flying units or that a flat map boundary closes the approach. No tower or wall construction is pictured in this Guard lesson; use them as decisions to test in your own practice.
 
-If the colony survives the fight but loses its food supply, start with [food recovery](/learn/recovering-your-colony/) before building a larger army. Once you can defend a supplied force, learn to organize an attack.
+## Respond to contact, then inspect the cost
+
+When an alert appears, inspect the affected area before creating another distant job. Preserve essential hauling and guide available defenders toward a reachable position. During the fight, check arrivals, supply and damage across the whole approach.
+
+| Observation | Check next | Useful adjustment |
+| --- | --- | --- |
+| Few warriors respond to Guard terrain | Existing flag commitments and unit needs | Release an obsolete request before painting more. |
+| Warriors gather away from services | Actual ground route and meal access | Choose a nearer useful position. |
+| A tower stops helping | Ammunition, material access and workers | Restore its supply route if the position remains viable. |
+| Defenders remain alive but an inn is lost | Remaining food service and available builders | Repair the supply system before replacing the whole force. |
+| One approach holds while another fails | Fresh vision and exposed services | Reassess the whole colony, not just the first fight. |
+
+After contact, reduce unnecessary military requests and allow service time. Save a functioning local checkpoint and repeat one change—Guard placement, released demand or tower supply—while keeping the opponent, map and rules comparable. Judge the result by usable colony capacity as well as the visible fight.
+
+If supply has failed, use [colony recovery](/learn/recovering-your-colony/). When a defended approach works, practice [organizing a supplied attack](/learn/organizing-an-attack/).

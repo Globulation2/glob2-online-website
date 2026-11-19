@@ -1,144 +1,95 @@
 ---
 title: "Organize and supply an attack"
-description: "Choose an objective, gather eligible warriors, and keep the force able to eat and recover."
+description: "Choose a reachable objective, compare requests with arrivals, and end an obsolete commitment before repeating it."
+locale: "en"
 group: "map"
 order: 3
 prerequisites: ["defending-your-colony", "jobs-and-flags", "training-and-upgrades"]
 tags: ["combat", "strategy", "logistics"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "War flag controls and eligibility"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/hud/input/GameGUIInputMenuClickBuilding.cpp"
-  - title: "Warrior movement and attacks"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitMovement.cpp"
-  - title: "Unit needs during work"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitActivity.cpp"
-  - title: "Unit target lines"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/render/GameRenderUnits.cpp"
+  - title: "Current public browser Guard zones and flag tactics lesson, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: warrior movement and attacks"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMovement.cpp"
+  - title: "Released native 0.11.6.1 source context: flag qualification"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/building/Misc.cpp"
+  - title: "Released native 0.11.6.1 source context: service access"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/team/TeamRouting.cpp"
 ---
 
-Choose an attack you can sustain. A war flag requests warriors around a destination; the force still has to reach it, fight, eat, and recover. Start with one useful objective, then end the order when its purpose is complete.
+An attack is a commitment of eligible units around a destination. It still depends on travel, meals, health and actual contact. Choose one useful objective, watch what the force does, and release the request when that purpose is over.
 
-## Practice the complete loop
+The pictured exercise is the final task in **Tutorial → Guard zones and flag tactics**. The prepared colony first scouts and defends a Guard region, then the prompt asks for a focused counterattack on the enemy Swarm. It supplies the practice force; it is separate from building and training an army in an ordinary match.
 
-Use a local **Custom game** with two colonies on Standard rules. Set your opponent to the public **Econo** profile for this exercise. It does not produce warriors, but its hostile explorers and towers can still threaten your units. Keep your own starting save and another save before commitment.
+## Prepare the economy before adding an offensive request
 
-The illustrated match uses a 128 × 128 Fingerprint map. Its red colony grows to eleven workers and seven warriors, with two inns, a school, barracks, and hospital. Those numbers describe this practice force; use readiness and supply to choose a force for your own map.
+For your own local practice, choose a two-colony Standard match through [the opponent chooser](/learn/choosing-an-ai/), then save an opening you can revisit. Do not copy the tutorial's headcount as a universal force requirement.
 
-:::checkpoint
+1. Keep an inn reachable and supplied. Inspect Food, Inside and Working together, then observe replenishment.
+2. Produce a military mix the colony can support while preserving workers for meals and construction. Birth weights affect future roles, not existing workers.
+3. Provide useful training and time to use it. Inspect actual warriors' abilities rather than treating a barracks foundation as trained soldiers.
+4. Check HP, Food and position for the intended force. A useful raw warrior and a qualified trained warrior are different options; the flag's minimum decides eligibility for that request.
+5. Leave functioning support and some defense at home. Scout the objective and a route your present ground units can use.
 
-Your goal is to gather eligible warriors, reach an exposed enemy food service, observe the result, and return the force to home services. Destroying one structure is enough to learn the loop; you do not need to finish the whole match.
+Reduce unnecessary production and construction demand when supporting an existing force. Lowering the Swarm's hauling request releases a job request; stored food can remain, so inspect the actual birth controls and population as well. [Population and production](/learn/population-and-production/) demonstrates those separate controls and bounded outcomes.
 
-:::
+## Read the prepared counterattack task
 
-## Build a force you can feed
+After the scouting and Guard-defense tasks advance, choose **Show destination**. The lesson asks you to place a War flag over the enemy Swarm, request three warriors and use radius four or smaller.
 
-1. **Keep meals working.** Select your inn and inspect Food, Inside, and Working. Maintain wheat deliveries while producing the army. Add another reachable inn if one cannot serve the growing colony.
-2. **Provide combat training.** Build barracks with **B → B**. Allow warriors time away from other requests to train there. A hospital (**B → H**) provides healing; it does not replace an inn.
-3. **Produce warriors.** Select the swarm and increase the Warrior production weight. Keep enough workers for food and construction. These weights choose future births, rather than ordering existing globs to change role.
-4. **Release growth when ready.** Once the practice force exists, reduce the swarm's Working request if you want to stop feeding production. Free those workers for food delivery and other useful work.
-5. **Inspect actual units.** Select a warrior and read health, food, and combat training. Building barracks alone is not evidence that every warrior has trained.
+1. Pause in local practice. Press **F**, then **W** and place the flag at the marked objective.
+2. Right-click to leave placement and select the flag.
+3. Inspect its actual default request; do not assume it starts at your desired value. Reduce it to **three** for this task.
+4. Check **Range 4** and the displayed minimum level. This recorded flag accepts displayed **minimum level 1**.
+5. Resume and compare **Working**, **On the way** and **Here** while the units travel and act.
 
-[[media:attack-production-detail]]
+A minimum is an eligibility filter, not a button that trains the warriors. Raising it can deliberately leave a request unfilled until suitable units exist. Lower it only when the available units are appropriate for the job, not merely to make the bar fill.
 
-In this colony, a selected warrior has **250/250 HP**, **87% food**, and displayed attack training at level 2. That is a better readiness check than counting seven warriors and assuming all are equally prepared.
+## Watch the commitment turn into contact
 
-[[media:attack-readiness-detail]]
+[[media:attack-counterattack-clip-v3]]
 
-The nearby inn has **Food 8/10**, four occupants, and two attached workers. The army is being gathered beside functioning services, so units can eat before leaving.
-
-[[media:attack-staging-meals-detail]]
-
-Movement matters too. Warriors without swimming training need a ground route. A racetrack can improve walking, and a swimming pool can teach swimming, but users need time to attend those services. Scout a route the current force can actually use.
-
-## Gather before committing
-
-Open flags with **F → W**, then place a war flag at a safe gathering point near your services.
-
-1. Right-click to stop placement, then select the flag.
-2. Set a Working request that your army can support. Inspect the actual request rather than assuming every new flag starts with the same value.
-3. Check the minimum-level filter. Start with a filter your existing warriors satisfy.
-4. Choose a small enough radius to keep this gathering point useful.
-5. Resume and compare **On the way**, **Here**, and **Working**.
-
-In the example, the flag requests six warriors. Five are already here; the sixth request is still unfilled. Meals, healing, training, and other assignments can delay a glob. **Working 5/6** does not mean six warriors have assembled.
+The continuous excerpt shows red warriors at the cyan practice Swarm; that structure disappears and the actual lesson reports completion. The goal progression demonstrates the prepared counterattack, not a universal attack size, a full-match victory or a controlled comparison with another plan.
 
 :::media-group
 
-[[media:attack-gather]]
+[[media:jobs-war-request-v3]]
 
-[[media:attack-gather-detail]]
-
-:::
-
-Leave some labor and defenses at home. An army assembled during collapsing food delivery can spend the march returning for meals instead of fighting.
-
-## Select a reachable objective
-
-Scout the target area and name the intended change: remove an exposed inn, stop a dangerous tower, interrupt production, or clear a foothold near your base. Inspect the approach and opposing services before moving the order.
-
-Here, an Econo inn is exposed beside its swarm. Selecting the inn confirms **200/200 HP** before contact. The approach is ground the warriors can use; reaching it with a flying scout alone would not establish that.
-
-:::media-group
-
-[[media:attack-objective-before]]
-
-[[media:attack-objective-health-detail]]
+[[media:jobs-war-detail-v3]]
 
 :::
 
-Previously seen buildings can become outdated information. Keep enough current vision to check the real target, rather than planning only around remembered silhouettes.
+At the later paused inspection, the flag has **Working 3/3**, **Here 3**, **On the way 0**, **Range 4**, high priority and minimum level 1. A full request is not automatically arrival; these separate readings tell you that all three are here at this checkpoint.
 
-## Send the force and watch the result
+The lesson also warns that Guard regions and War flags compete for warriors. If a useful offensive request remains unfilled, inspect the actual army, other assignments, eligibility and needs. Do not add several new flags to solve one unexplained shortage.
 
-Move the gathering flag toward the objective. You can drag a visible flag. For a distant destination, another option is to remove the gathering flag, move the camera with the minimap, and place a new war flag near the objective. If you request destruction with **D** while paused, resume briefly and confirm the old flag disappears before committing the new request. Remove obsolete requests so they do not hold your intended attackers elsewhere.
+## Choose and update the objective in your own match
 
-Select the target flag, check its Working request again, and let the force travel. In this example the request reaches **6/6**, with warriors still on the way. A full attachment count is not the same as arrival.
+Scout a reachable purpose: remove an exposed food service, interrupt a dangerous tower or production site, or clear a useful foothold. Refresh vision before committing. An explorer's flying route does not establish that ground warriors can follow it.
 
-**T** toggles straight lines to unit targets. They help show which order a glob follows; they do not trace the walkable route through terrain. The clip uses those lines while the warriors close on the target.
+For a more demanding operation, gather eligible units near functioning home services before moving the commitment toward the objective. Inspect actual arrivals and individual readiness. Use the current flag controls and remove obsolete requests; the tutorial above demonstrates placement and arrivals, not a separate tested flag-drag technique.
 
-[[media:attack-contact-clip]]
+A War flag organizes activity around a destination rather than issuing a precise order to damage only one selected building. Watch what is actually engaged. A useful target can disappear while another dangerous service or force remains nearby. Reassess rather than assuming the original plan still applies.
 
-The warriors destroy the exposed inn and the adjacent swarm. A war flag organizes an area of activity, rather than giving a direct command to attack only one selected structure. Watch what the force actually engages, and reassess when the useful objective is gone.
+If units arrive separately into strong resistance, shorten the operation or choose a safer assembly point. Check access, meals, health, abilities and enemy support before increasing the request. A distant inn only helps after it is constructed, supplied and safely reachable; do not create more labor demand than the home colony can support.
 
-[[media:attack-objective-after]]
+## End the order and let survivors recover
 
-If units arrive one at a time into strong resistance, pull the destination back toward a safer gathering area. Recheck food, health, training, and the route before increasing the request. Towers, opposing upgrades, fruit bonuses, terrain, and support change a fight; this result does not establish a universal army size.
+When the objective is gone or no longer worth the cost, reduce or remove the obsolete War flag through its controls. Confirm the request changes after resuming. Check whether survivors still have another assignment or are engaged in contact.
 
-## Bring the force back to services
+Inspect the route home and their actual Food and HP. A return instruction does not promise instant escape from a dangerous fight. Let units reach meals, healing and training before committing them again; a healthy-looking total can conceal hungry or injured individuals.
 
-After success, remove or reduce the attack request. In the example, the attack flag is removed and a home gathering flag draws survivors back beside the two inns. At the first checkpoint, three are here against a request of six. The colony still has seven warriors, but that counter does not establish that every warrior is home.
+This is a follow-up exercise for your own match. The recorded lesson ends with the three warriors at the target flag; it does not demonstrate their withdrawal or a later service visit. Use the current [food refill](/learn/sustainable-food/) and [Hospital recovery](/learn/recovering-your-colony/) exercises to learn those separate service readings, then verify them for your own returning force.
 
-[[media:attack-home-group-detail]]
+## Diagnose before repeating
 
-The home request is then removed to release the returning group for services. Recheck distant survivors rather than assuming they immediately stop every fight.
-
-Do not assume a successful force is ready to fight again. A returning warrior here has **242/250 HP** and only **30% food**. It needs service time even though all seven warriors remain in the colony.
-
-[[media:attack-returning-warrior-detail]]
-
-The home inn continues serving meals: its stock reaches **10/10**, with four occupants. **Working 0/2** at this moment is consistent with a full store; it does not itself show a delivery failure. Keep workers available as stock is used.
-
-:::media-group
-
-[[media:attack-home-meals]]
-
-[[media:attack-home-meals-detail]]
-
-:::
-
-A withdrawal still works through autonomous jobs and needs. It does not promise that every unit escapes immediately from a dangerous fight.
-
-## Diagnose the attack before repeating it
-
-| Symptom | Check first | Useful correction |
+| Observation | Check first | Useful correction |
 | --- | --- | --- |
-| Target flag stays understaffed | Old flag requests, minimum level, and unit needs | Release an obsolete assignment or relax an unnecessarily strict filter |
-| Working fills but Here remains low | Travel distance, ground route, and service trips | Wait for arrival or move the destination onto a usable approach |
-| Warriors repeatedly leave for food | Inn access, stock, and the length of the return trip | Shorten the operation or establish supplied forward service before committing |
-| Units arrive separately and lose | Gathering point, opposing support, and readiness | Withdraw and regroup instead of continually adding replacements |
-| The objective is gone but the force stays out | Remaining flag requests | Remove the obsolete order and allow meals, healing, and training |
+| The target request stays unfilled | Eligibility, obsolete requests and unit needs | Release unnecessary commitments or choose a suitable filter. |
+| Working fills while Here stays low | Travel, ground route and service trips | Wait for real arrivals or choose a usable destination. |
+| Units leave repeatedly for meals | Supply access and operation length | Shorten the commitment or prepare viable support. |
+| Arrivals are staggered and lost | Gathering, readiness and opposing support | Regroup instead of adding replacements to the same failure. |
+| The objective is gone but units stay out | Remaining assignments and contact | End the obsolete request and inspect actual survivors. |
+| Home services fail during the march | Diverted labor and exposed approaches | Repair the economy before funding another attack. |
 
-A remote inn only helps after someone constructs it, supplies it, and can reach it safely. Before placing one, identify the builders, materials, wheat, and service route. Avoid expanding the attack's labor demands faster than the home economy can support.
-
-After a failed attack, use [colony recovery](/learn/recovering-your-colony/) to restore essential services. Read [victory conditions](/learn/victory-and-rules/) before choosing a target intended to end the match.
+Repeat one change from your local opening or pre-commitment checkpoint and compare actual arrivals, losses and usable services afterward. A destroyed structure is a local result. Read [victory conditions](/learn/victory-and-rules/) before treating it as the end of the match, and use [colony recovery](/learn/recovering-your-colony/) when the operation leaves essential supply failing.

@@ -526,10 +526,11 @@
       "alt": "Inn panel crop showing Food 3/10, Working 2/2 and Inside 0/4.",
       "kind": "image",
       "retiredFrom": [
+        "reference-buildings",
         "sustainable-food"
       ],
       "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
-      "retirementStatus": "Removed from this consumer only; remains active in reference-buildings."
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "food-swarm",
@@ -718,10 +719,11 @@
       "alt": "Selected swarm with Explorer-only weight, top explorer total one, and a flying explorer beyond the lake at right.",
       "kind": "image",
       "retiredFrom": [
-        "population-and-production"
+        "population-and-production",
+        "reference-units"
       ],
       "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
-      "retirementStatus": "Removed from this consumer only; remains active in reference-units."
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "population-explorer-count",
@@ -784,7 +786,12 @@
       "height": 900,
       "caption": "A school foundation needs both wood and algae before it can train anyone.",
       "alt": "Selected school construction site near inn, swarm and wheat.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-stalled-school",
@@ -798,10 +805,12 @@
       "alt": "School construction panel showing full wood requirement, no algae and distance-related warning.",
       "kind": "image",
       "retiredFrom": [
+        "buildings-and-services",
+        "reference-buildings",
         "reference-resources"
       ],
       "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
-      "retirementStatus": "Removed from this consumer only; remains active in reference-buildings, buildings-and-services."
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-active",
@@ -813,7 +822,12 @@
       "height": 900,
       "caption": "The hospital is completed, with two healing places available and no patients inside yet.",
       "alt": "Selected finished hospital beside an unfinished school and supplied inn, Inside 0/2.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-active-detail",
@@ -825,7 +839,12 @@
       "height": 129,
       "caption": "A basic finished hospital shows patients in Inside; it does not need a food-hauling request.",
       "alt": "Hospital panel with HP 260/260, Inside 0/2 and armor 5.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-healing",
@@ -837,7 +856,12 @@
       "height": 900,
       "caption": "After clearing work, two globs are using the hospital. The inn remains a separate meal service.",
       "alt": "Selected hospital Inside 2/2 near clearing flag and inn; surrounding tree patch has been cleared.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-healing-detail",
@@ -849,7 +873,13 @@
       "height": 129,
       "caption": "Both healing places are occupied: Inside 2/2.",
       "alt": "Hospital panel crop showing Inside 2/2 and service progress.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services",
+        "reference-buildings"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "services-healing-result",
@@ -861,7 +891,12 @@
       "height": 129,
       "caption": "After releasing the clearing job and letting services run, the hospital is empty again.",
       "alt": "Hospital panel showing Inside 0/2 after the healing observation interval.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "buildings-and-services"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-school-site",
@@ -873,7 +908,12 @@
       "height": 900,
       "caption": "The school needs seven wood and two algae. Both kinds are arriving at this reachable shoreline site.",
       "alt": "School construction site near two inns, with Wood 3/7 and Algae 1/2.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-school-service",
@@ -885,7 +925,12 @@
       "height": 900,
       "caption": "The completed school has three globs inside its four service places.",
       "alt": "Finished school beside supplied inns, selected panel HP 360/360 and Inside 3/4.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-school-detail",
@@ -897,7 +942,12 @@
       "height": 129,
       "caption": "Inside 3/4 records service occupancy, rather than construction labor.",
       "alt": "School service panel showing three occupied training places.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-worker-before",
@@ -909,7 +959,12 @@
       "height": 230,
       "caption": "An ordinary worker has Build (1): 8 before school training.",
       "alt": "Worker ability panel showing Walk (1): 16 and Build (1): 8.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-worker-after",
@@ -921,7 +976,13 @@
       "height": 230,
       "caption": "A worker that has completed training now shows Build (2): 12.",
       "alt": "Trained worker ability panel showing Walk (1): 16 and Build (2): 12.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "reference-units",
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-locked",
@@ -933,7 +994,12 @@
       "height": 681,
       "caption": "Before any worker qualified for the next tier, this healthy inn had no Upgrade action.",
       "alt": "Level-one inn panel with Food 10/10 and Destroy button, without an Upgrade button.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-unlocked",
@@ -945,7 +1011,12 @@
       "height": 681,
       "caption": "After school training, the inn offers Upgrade. Keep the other supplied inn operating before using it.",
       "alt": "Level-one inn with Food 9/10 and newly available Upgrade button.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-site",
@@ -957,7 +1028,12 @@
       "height": 900,
       "caption": "The inn is now a level-two construction site. Two workers are attached and three of eight wood have arrived.",
       "alt": "Selected upgraded inn site above a separate finished inn and school; Working 2/2, Wood 3/8.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-site-detail",
@@ -969,7 +1045,12 @@
       "height": 201,
       "caption": "Requesting two workers produced Working 2/2 here; the remaining requirement is five wood.",
       "alt": "Level-two inn construction panel with HP 314/500, Working 2/2 and Wood 3/8.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-result",
@@ -981,7 +1062,12 @@
       "height": 900,
       "caption": "The upgraded inn is complete and already stocked with fourteen food. The backup inn stayed separate throughout construction.",
       "alt": "Completed level-two inn, school and separate level-one inn around the swarm.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "training-upgrade-detail",
@@ -993,7 +1079,12 @@
       "height": 263,
       "caption": "The finished inn has seven meal places and capacity for thirty food. Read its new Working request after completion.",
       "alt": "Inn Level 2 panel with HP 500/500, Inside 0/7, Working 3/3 and Food 14/30.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "training-and-upgrades"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "scout-start",
@@ -1005,7 +1096,12 @@
       "height": 900,
       "caption": "An exploration flag asks scouts to inspect the chosen region; the blue circle shows its work radius.",
       "alt": "Exploration flag east of the colony with a large blue radius; two explorers visible around base.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "exploration-and-movement"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "scout-result",
@@ -1017,7 +1113,12 @@
       "height": 900,
       "caption": "After play resumes, both explorers are attached to the flag and more ground around its destination is visible.",
       "alt": "Selected exploration flag with Working 2/2 and Here 2; two explorers inside the radius and nearby resources revealed.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "exploration-and-movement"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "scout-detail",
@@ -1029,7 +1130,12 @@
       "height": 265,
       "caption": "Detail: this flag accepts any explorer, requests two, and uses Range 10.",
       "alt": "Exploration flag panel with Working 2/2, Here 2, Range 10 and any explorer selected.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "exploration-and-movement"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "scout-clip-poster",
@@ -1041,7 +1147,12 @@
       "height": 900,
       "caption": "Watch the scouts move into their assigned region.",
       "alt": "Exploration flag radius beside the colony, before the scouts move.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "exploration-and-movement"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "scout-flag-clip",
@@ -1054,7 +1165,12 @@
       "caption": "The explorers travel through the flag radius and reveal nearby terrain. This 10-second clip has no audio.",
       "alt": "Two explorers fly toward the exploration flag while its selected panel reports their attachment.",
       "kind": "video",
-      "poster": "scout-clip-poster"
+      "poster": "scout-clip-poster",
+      "retiredFrom": [
+        "exploration-and-movement"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "reference-settings",
@@ -1126,7 +1242,12 @@
       "height": 900,
       "caption": "The first raid is already inside the food corridor. The selected inn still has food and two globs inside.",
       "alt": "Cyan attackers among red defenders beside two inns; selected inn shows Food 6/10 and Inside 2/4.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-contact-detail",
@@ -1138,7 +1259,12 @@
       "height": 290,
       "caption": "The attack overlaps the two inns and their working approach.",
       "alt": "Cropped battle area showing cyan attackers, red warriors, a war flag and two inns.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-warrior-detail",
@@ -1150,7 +1276,12 @@
       "height": 270,
       "caption": "Check readiness beyond the unit count: this warrior has 245/250 HP but only 29%food.",
       "alt": "Selected red warrior panel showing HP 245/250, Food 29%, Walklevel 1 and attack traininglevel 2.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-after-contact",
@@ -1162,7 +1293,12 @@
       "height": 900,
       "caption": "After the first exchange, both inns are gone and the selected warrior has 65/250 HP. The swarm is under attack.",
       "alt": "Cyan attackers at the former inn sites, red survivors, selected warriorHP 65/250 and swarm under attack alert.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-after-detail",
@@ -1174,7 +1310,12 @@
       "height": 353,
       "caption": "Losing the inns turns a fight into a food emergency for the remaining colony.",
       "alt": "Battle detail with cyan attackers at the former inn locations and beside the remaining swarm.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "defense-hospital-detail",
@@ -1186,7 +1327,12 @@
       "height": 125,
       "caption": "The surviving hospital has two occupants. Healing capacity does not replace the lost inns.",
       "alt": "Selected hospital panel showing 260/260 HP, Inside 2/2 and Armour 5.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "defending-your-colony"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "rules-standard",
@@ -1263,7 +1409,12 @@
       "height": 270,
       "caption": "Use the swarm’s production weights to add warriors while maintaining the workers that supply it.",
       "alt": "Swarm panel showing Working and Food, with Worker, Explorer, and Warrior production controls.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-readiness-detail",
@@ -1275,7 +1426,12 @@
       "height": 280,
       "caption": "Inspect a real warrior before committing: 250/250 HP, 87% food, and displayed attack training at level 2.",
       "alt": "Warrior panel showing full health, 87% food, Walk level 1, attack speed level 2, and attack strength 14.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-staging-meals-detail",
@@ -1287,7 +1443,12 @@
       "height": 245,
       "caption": "The nearby inn is serving four globs, with Food 8/10 and Working 2/2.",
       "alt": "Inn panel showing 200/200 HP, Inside 4/4, Working 2/2, and Food 8/10.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-gather",
@@ -1299,7 +1460,12 @@
       "height": 900,
       "caption": "Five warriors have gathered beside home services against a request of six.",
       "alt": "Red warriors around a selected war flag beside the school, swarm, inns, barracks, and hospital; flag shows Here 5 and Working 5/6.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-gather-detail",
@@ -1311,7 +1477,12 @@
       "height": 295,
       "caption": "Read Here and Working separately: five are here, and five of the six requests are filled.",
       "alt": "War flag panel with On the way 0, Here 5, Working 5/6, Range 4, and minimum level 1 selected.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-objective-before",
@@ -1323,7 +1494,12 @@
       "height": 390,
       "caption": "The exposed cyan inn stands beside its swarm before contact. Choose a useful objective and inspect its current state.",
       "alt": "Battle-area crop showing a selected cyan inn on the left, adjacent cyan swarm, red war flag above, and a red glob nearby.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-objective-health-detail",
@@ -1335,7 +1511,12 @@
       "height": 95,
       "caption": "Selecting the enemy inn confirms its current health: 200/200 HP.",
       "alt": "Enemy Inn panel labelled Econo / 2 - Cyan, Level 1, HP 200/200.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-objective-after",
@@ -1347,7 +1528,12 @@
       "height": 390,
       "caption": "After contact, both the inn and its adjacent swarm are gone. Warriors remain near the attack flag.",
       "alt": "Same battle-area crop after contact: the cyan inn and swarm have disappeared, with red warriors near the flag and cyan survivors nearby.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-home-group-detail",
@@ -1359,7 +1545,12 @@
       "height": 295,
       "caption": "Three warriors are back at the home gathering point. Here 3 and Working 3/6 do not mean the whole seven-warrior colony is assembled.",
       "alt": "Home war flag panel showing On the way 0, Here 3, Working 3/6, Range 4, and minimum level 1.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-returning-warrior-detail",
@@ -1371,7 +1562,12 @@
       "height": 280,
       "caption": "A returning survivor has 242/250 HP and only 30% food. Successful attackers still need time at services.",
       "alt": "Returned warrior panel showing 242/250 HP, Food 30%, Walk level 1, attack training level 2 and an attack strength bonus of +5.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-home-meals",
@@ -1383,7 +1579,12 @@
       "height": 900,
       "caption": "Back at home, all seven warriors remain. The selected inn is serving four globs with a full food store.",
       "alt": "Red colony after the attack with seven warriors in the top counter; selected inn shows Inside 4/4 and Food 10/10.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-home-meals-detail",
@@ -1395,7 +1596,12 @@
       "height": 245,
       "caption": "Inside 4/4 and Food 10/10 show meals continuing after the force returns. A full store can leave Working at 0/2.",
       "alt": "Inn detail after the attack showing Inside 4/4, Working 0/2, Food 10/10, and Oranges 5/40.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-contact-poster",
@@ -1407,7 +1613,12 @@
       "height": 900,
       "caption": "The warriors approach the exposed inn; white lines connect globs to their assigned targets.",
       "alt": "Real gameplay before contact with red warriors east of the cyan inn and swarm and white target lines to the war flag.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "attack-contact-clip",
@@ -1420,7 +1631,12 @@
       "caption": "Fifteen seconds of actual contact at normal game speed: warriors reach the inn and remove it and the adjacent swarm. White lines show unit targets.",
       "alt": "Actual gameplay of red warriors moving into Econo’s cyan colony, attacking the exposed inn and adjacent swarm, and leaving both sites empty.",
       "kind": "video",
-      "poster": "attack-contact-poster"
+      "poster": "attack-contact-poster",
+      "retiredFrom": [
+        "organizing-an-attack"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "browser-load",
@@ -1432,7 +1648,12 @@
       "height": 900,
       "caption": "Select a compatible imported save in Load game, then use Ok to play or Export file to keep a backup.",
       "alt": "Choose a game dialog with Handbook pilot explorers selected and Import, Export file, Replays, Delete, Ok and Cancel buttons.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "browser-and-multiplayer"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "browser-file-detail",
@@ -1444,7 +1665,12 @@
       "height": 80,
       "caption": "Detail: Import brings a file into this browser profile; Export file downloads a backup.",
       "alt": "Load game buttons Replays, Import, Export file and Delete.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "browser-and-multiplayer"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "browser-recording",
@@ -1456,7 +1682,12 @@
       "height": 900,
       "caption": "Settings → Recording provides Start recording, Recordings, and the hotkey shortcut.",
       "alt": "Recording settings page with Start recording, Recordings and Change the hotkey buttons.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "browser-and-multiplayer"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "browser-recording-detail",
@@ -1468,7 +1699,12 @@
       "height": 84,
       "caption": "Detail: start a recording and open finished recordings from the dedicated controls.",
       "alt": "Start recording and Recordings buttons from the Recording settings page.",
-      "kind": "image"
+      "kind": "image",
+      "retiredFrom": [
+        "browser-and-multiplayer"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-orchard",
@@ -1480,7 +1716,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The orchard beside the pond remains visible while the colony supplies its inn. The exploration flag is an additional request, with no scout present yet.",
-      "alt": "Colony inn, wheat around a pond, visible fruit trees and an exploration flag."
+      "alt": "Colony inn, wheat around a pond, visible fruit trees and an exploration flag.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-orchard-detail",
@@ -1492,7 +1733,12 @@
       "height": 328,
       "kind": "image",
       "caption": "Keep the fruit source currently visible and preserve a ground hauling route.",
-      "alt": "Detail of bright visible fruit trees south of the pond."
+      "alt": "Detail of bright visible fruit trees south of the pond.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-stock",
@@ -1504,7 +1750,12 @@
       "height": 900,
       "kind": "image",
       "caption": "The supplied inn shows Food 7/10 and Cherries 28/40, with all four meal places occupied.",
-      "alt": "Selected inn beside wheat and orchard with its resource and service panel."
+      "alt": "Selected inn beside wheat and orchard with its resource and service panel.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-stock-detail",
@@ -1516,7 +1767,12 @@
       "height": 260,
       "kind": "image",
       "caption": "Food, fruit reserves and Inside are separate counts: Food 7/10, Cherries 28/40 and Inside 4/4.",
-      "alt": "Inn panel showing Food 7/10, Cherries 28/40, Oranges and Prunes zero, Inside 4/4."
+      "alt": "Inn panel showing Food 7/10, Cherries 28/40, Oranges and Prunes zero, Inside 4/4.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-meal",
@@ -1528,7 +1784,12 @@
       "height": 235,
       "kind": "image",
       "caption": "Food 98% (1) shows one fruit kind from a meal, alongside the selected worker’s nutrition.",
-      "alt": "Worker panel with HP 200/200 and Food 98% (1)."
+      "alt": "Worker panel with HP 200/200 and Food 98% (1).",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-advertise",
@@ -1540,7 +1801,12 @@
       "height": 900,
       "kind": "image",
       "caption": "Enable food visibility to the other team, then confirm Ok. This advertises your inns.",
-      "alt": "Teams panel with fV enabled for Econo."
+      "alt": "Teams panel with fV enabled for Econo.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-advertise-detail",
@@ -1552,7 +1818,12 @@
       "height": 18,
       "kind": "image",
       "caption": "fV is enabled beside Econo; the label describes showing inn vision to steal units.",
-      "alt": "Teams panel explanation: fV shows vision for Inn buildings to steal units."
+      "alt": "Teams panel explanation: fV shows vision for Inn buildings to steal units.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-conversion",
@@ -1564,7 +1835,18 @@
       "height": 900,
       "kind": "image",
       "caption": "The native message reports a unit joining from Econo; workers rise from 13 to 14 and conversions show +1/-0.",
-      "alt": "Native conversion message above the colony and +1/-0 conversion HUD."
+      "alt": "Native conversion message above the colony and +1/-0 conversion HUD.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "The earlier-baseline footage has not been reproduced as a current applied-High individual fruit-meal, armor or conversion sequence. Continuing to display it as the refreshed current demonstration would misstate its capture qualification. The new Teams stills prove only food-advertisement permission and persistence; separate Maxima stock and joining notices do not replace the individual episode or establish its cause.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release.",
+      "retirementReview": {
+        "decision": "Retire the earlier-baseline human offer episode from active current instruction, preserving its original immutable video, implicit poster, manifest records and prior source provenance.",
+        "teachingPreserved": "Retain the practical same-warrior Food/fruit/armor before-and-after exercise and exact-native meal/routing/armor source context. The current text explicitly says no current same-unit pair was obtained, while actual permission and separate replay observations are labelled as such.",
+        "coverageLimit": "This retires a meaningful earlier motion example without claiming an equivalent current video. An individual current meal/armor pair and causal conversion path remain unobserved; no new capture is required for an outcome the guide does not claim.",
+        "review": "Independent author and capture/mechanics reviews; coordinator explicitly accepted this bounded retirement."
+      }
     },
     {
       "id": "fruit-conversion-detail",
@@ -1577,7 +1859,12 @@
       "kind": "image",
       "caption": "The worker HUD reads 8/14: eight available workers out of fourteen total. The +1/-0 counter records one arrival and no departures. Both enlarged crops come from the same frame; the full scene above shows the joining message.",
       "alt": "Worker HUD shows 8 available out of 14 total; conversion counter +1/-0.",
-      "processing": "Two unchanged same-frame HUD crops enlarged3x and placed side by side"
+      "processing": "Two unchanged same-frame HUD crops enlarged3x and placed side by side",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-armor-before",
@@ -1589,7 +1876,12 @@
       "height": 267,
       "kind": "image",
       "caption": "Before the meal, the selected Standard warrior has no fruit recorded and effective armor 10.",
-      "alt": "Warrior panel Food93%(0), Armour10=10−0×10, HP250/250."
+      "alt": "Warrior panel Food93%(0), Armour10=10−0×10, HP250/250.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-armor-after",
@@ -1601,7 +1893,12 @@
       "height": 267,
       "kind": "image",
       "caption": "After its cherry meal, the same selected warrior has one fruit kind and effective armor 0.",
-      "alt": "Same warrior panel Food99%(1), Armour0=10−1×10, HP250/250."
+      "alt": "Same warrior panel Food99%(1), Armour0=10−1×10, HP250/250.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "Earlier episode removed from this consumer after independent review. Current explicit-context observations and actionable exercises retain useful teaching; old scenes/outcomes are not relabelled as current.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release."
     },
     {
       "id": "fruit-offer-clip",
@@ -1614,7 +1911,18 @@
       "kind": "video",
       "poster": "fruit-conversion",
       "caption": "After food was advertised, the native joining message appears while the colony continues operating. The written counts above establish the ownership change.",
-      "alt": "Silent actual gameplay with a native Econo unit-joining message and conversion HUD."
+      "alt": "Silent actual gameplay with a native Econo unit-joining message and conversion HUD.",
+      "retiredFrom": [
+        "fruit-and-conversion"
+      ],
+      "retirementReason": "The earlier-baseline footage has not been reproduced as a current applied-High individual fruit-meal, armor or conversion sequence. Continuing to display it as the refreshed current demonstration would misstate its capture qualification. The new Teams stills prove only food-advertisement permission and persistence; separate Maxima stock and joining notices do not replace the individual episode or establish its cause.",
+      "retirementStatus": "No active consumers in this source-preparation snapshot; original bytes and provenance retained. Publication follows reviewed release.",
+      "retirementReview": {
+        "decision": "Retire the earlier-baseline human offer episode from active current instruction, preserving its original immutable video, implicit poster, manifest records and prior source provenance.",
+        "teachingPreserved": "Retain the practical same-warrior Food/fruit/armor before-and-after exercise and exact-native meal/routing/armor source context. The current text explicitly says no current same-unit pair was obtained, while actual permission and separate replay observations are labelled as such.",
+        "coverageLimit": "This retires a meaningful earlier motion example without claiming an equivalent current video. An individual current meal/armor pair and causal conversion path remain unobserved; no new capture is required for an outcome the guide does not claim.",
+        "review": "Independent author and capture/mechanics reviews; coordinator explicitly accepted this bounded retirement."
+      }
     },
     {
       "id": "expansion-old-food-detail",
@@ -5808,6 +6116,561 @@
       "path": "/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
       "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/buildings-and-services/services-patient-after-detail-v3.webp",
       "presentation": "detail"
+    },
+    {
+      "id": "training-worker-before-v3",
+      "kind": "image",
+      "sha256": "059374063e0e94932adf819a09ebf4b9493910ec91abca8ff5e0fdd153ccf67e",
+      "bytes": 203454,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before resuming, the selected worker shows Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Selected worker before training, with its Build level and value visible.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-v3.webp"
+    },
+    {
+      "id": "training-worker-before-detail-v3",
+      "kind": "image",
+      "sha256": "91b2cce8bad0c6b46ce783273430528168382cd125f9484fd2ff961d56e44f72",
+      "bytes": 5480,
+      "width": 192,
+      "height": 260,
+      "caption": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "alt": "Worker sidebar before training: Build (1): 8, HP 200/200 and Food 98%.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-before-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-worker-after-v3",
+      "kind": "image",
+      "sha256": "d864a3f5cd2d339c7e9f7c64122a366033a3fd39f9a906358f3b07c236e24fd0",
+      "bytes": 217788,
+      "width": 1440,
+      "height": 900,
+      "caption": "After normal simulation, the same continuously selected worker shows Build (2): 12, HP 200/200 and Food 51%; the School lesson is complete.",
+      "alt": "The same selected worker after its Build ability improves, with the lesson completion prompt visible.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-v3.webp"
+    },
+    {
+      "id": "training-worker-after-detail-v3",
+      "kind": "image",
+      "sha256": "6bae10cf3277a0326a5dfc5b266049c8734618554ab4ded6530d61008ac576fd",
+      "bytes": 5486,
+      "width": 192,
+      "height": 260,
+      "caption": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "alt": "Same selected worker sidebar after training: Build (2): 12, HP 200/200 and Food 51%.",
+      "path": "/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-worker-after-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-foundation-v3",
+      "kind": "image",
+      "sha256": "6a2d83da36581ced7cd39f2e3339eb80f219a42e7d0b575d064fc3c165505438",
+      "bytes": 214546,
+      "width": 1440,
+      "height": 900,
+      "caption": "The paused School foundation shows HP 1/360, Wood 0/7, Algae 0/2 and Working 0/5.",
+      "alt": "Selected School foundation in the prepared Schools lesson; five builders are requested and none is attached.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-v3.webp"
+    },
+    {
+      "id": "training-school-foundation-detail-v3",
+      "kind": "image",
+      "sha256": "5892ca24d950f3b44c52b9620b6c9549fe7c5d2bae45498be85fc6833236223a",
+      "bytes": 6134,
+      "width": 192,
+      "height": 300,
+      "caption": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "alt": "School foundation sidebar: HP 1/360, Working 0/5, Wood 0/7 and Algae 0/2.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-foundation-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-construction-v3",
+      "kind": "image",
+      "sha256": "440766c95ec97a07441bbd2c94e967f04b9926ca96338d6676d78eb3dd2e34d1",
+      "bytes": 205892,
+      "width": 1440,
+      "height": 900,
+      "caption": "At the later paused inspection, construction has reached HP 81/360 and Wood 2/7, with Algae 0/2 and Working 5/5.",
+      "alt": "Selected School construction site with five attached builders and partially delivered materials.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-v3.webp"
+    },
+    {
+      "id": "training-school-construction-detail-v3",
+      "kind": "image",
+      "sha256": "948089a5cdb07e5bf86bbda2b6eb1866d4f3183778b13c63a13499064b067dd8",
+      "bytes": 6220,
+      "width": 192,
+      "height": 300,
+      "caption": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "alt": "School construction sidebar: HP 81/360, Working 5/5, Wood 2/7 and Algae 0/2.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-construction-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "training-school-completed-v3",
+      "kind": "image",
+      "sha256": "a00b77558336e81891d6adc1f1498cdb1e9763f47cbd44c1c9473d338a7ccfa8",
+      "bytes": 217120,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed paused School has HP 360/360 and Inside 1/4; an Upgrade control is visible.",
+      "alt": "Completed School selected after the lesson succeeds, with one of four places occupied and an Upgrade control.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-v3.webp"
+    },
+    {
+      "id": "training-school-completed-detail-v3",
+      "kind": "image",
+      "sha256": "472eb57f2b57895a9be898968c77c63f41c37ac03a4c0ebfb4e5343df7a819b0",
+      "bytes": 3702,
+      "width": 192,
+      "height": 300,
+      "caption": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "alt": "Completed School sidebar: HP 360/360, Inside 1/4 and Armour 3.",
+      "path": "/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/training-school-completed-detail-v3.webp",
+      "presentation": "detail"
+    },
+    {
+      "id": "scout-reveal-clip-v3",
+      "kind": "video",
+      "sha256": "ab05faef3afcfaac5f9bec625ce5ddb484b79cc692131270e2ad652978fd8b39",
+      "bytes": 3058255,
+      "width": 1440,
+      "height": 900,
+      "caption": "Twenty-six continuous seconds show an explorer revealing the enemy Swarm and the lesson advancing to Guard preparation.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "poster": "scout-reveal-poster-v3",
+      "durationSeconds": 26,
+      "path": "/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-clip-v3.mp4"
+    },
+    {
+      "id": "scout-reveal-poster-v3",
+      "kind": "image",
+      "sha256": "1aee93744e95c5e5f8899c928eaed04fa73d1dd9845bd408473f481cf6e66f0f",
+      "bytes": 107344,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the scout reveal excerpt.",
+      "alt": "Current browser prepared scouting lesson with the Exploration flag and its actual arrival readings visible.",
+      "path": "/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/exploration-and-movement/scout-reveal-poster-v3.webp"
+    },
+    {
+      "id": "defense-guard-contact-clip-v3",
+      "kind": "video",
+      "sha256": "a272b7d75069877b2f584e2301be98befe519afa2cc6c5573afc401c897e3060",
+      "bytes": 6282789,
+      "width": 1440,
+      "height": 900,
+      "caption": "Thirty-five continuous seconds show the prepared Guard group, cyan attackers approaching and contact near the painted tiles; the lesson progresses through the defensive task.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "poster": "defense-guard-contact-poster-v3",
+      "durationSeconds": 35,
+      "path": "/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-clip-v3.mp4"
+    },
+    {
+      "id": "defense-guard-contact-poster-v3",
+      "kind": "image",
+      "sha256": "468c934ad916f898283e693ff788267446b3207d4aa4cab3b9849b94767071a0",
+      "bytes": 178490,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the defense guard contact excerpt.",
+      "alt": "Current browser Guard lesson with a genuine small practice attack and the painted defensive position visible.",
+      "path": "/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/defending-your-colony/defense-guard-contact-poster-v3.webp"
+    },
+    {
+      "id": "attack-counterattack-clip-v3",
+      "kind": "video",
+      "sha256": "e6e4327eaade7e34ebbb40bf72bf2eac4ce2e4fed2bb4a8a7406dc33dcc5034f",
+      "bytes": 4287264,
+      "width": 1440,
+      "height": 900,
+      "caption": "Twenty-nine continuous seconds show warriors at the cyan practice Swarm, its disappearance and actual lesson completion.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "poster": "attack-counterattack-poster-v3",
+      "durationSeconds": 29,
+      "path": "/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-clip-v3.mp4"
+    },
+    {
+      "id": "attack-counterattack-poster-v3",
+      "kind": "image",
+      "sha256": "367d7751a0951bd75e151609dca9d7491628fb762b73c9e06d66b91297ae2557",
+      "bytes": 153478,
+      "width": 1440,
+      "height": 900,
+      "caption": "Exact opening frame of the attack counterattack excerpt.",
+      "alt": "Current browser prepared counterattack with the War flag request and actual lesson progression visible.",
+      "path": "/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/organizing-an-attack/attack-counterattack-poster-v3.webp"
+    },
+    {
+      "id": "fruit-advertisement-before-hd-v3",
+      "kind": "image",
+      "sha256": "93dfaf0f42e61eeae84c4848f7133a1fe152be9017eac1ae54728087edf0175e",
+      "bytes": 81272,
+      "width": 1600,
+      "height": 896,
+      "caption": "Before editing, the local human-controlled match has fV unchecked for the three Numbi colonies.",
+      "alt": "Native Teams panel with fV unchecked for Lime, Cyan and Purple Numbi colonies.",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-before-hd-v3.webp"
+    },
+    {
+      "id": "fruit-advertisement-confirmed-hd-v3",
+      "kind": "image",
+      "sha256": "0b8a76f946aecdd8ae9ef696427981c9411493d649eb5076f55cbf0d232e271f",
+      "bytes": 79762,
+      "width": 1600,
+      "height": 896,
+      "caption": "After enabling fV for Lime Numbi, choosing Ok and reopening Teams, its fV remains checked.",
+      "alt": "Reopened native Teams panel with fV checked for Lime Numbi; Cyan and Purple remain unchecked.",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-confirmed-hd-v3.webp"
+    },
+    {
+      "id": "fruit-advertisement-detail-hd-v3",
+      "kind": "image",
+      "sha256": "11295bb30866e6ec55589e5ccc3876ae3802c43d38981ca9b78c0bc91173125d",
+      "bytes": 52870,
+      "width": 1282,
+      "height": 771,
+      "caption": "Actual Teams detail: fV for Lime is checked; the legend labels it “Show vision for Inn buildings (to steal units)”.",
+      "alt": "Teams dialog showing Lime fV checked and the separate fV, mV and chat legends.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/fruit-and-conversion/fruit-advertisement-detail-hd-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-before-v3",
+      "kind": "image",
+      "sha256": "01895c793e2c16c1f4eba3335c1bead0d0bc3877b0c26e2dcd1b03e9ceec916d",
+      "bytes": 220744,
+      "width": 1440,
+      "height": 900,
+      "caption": "Before Upgrade, the paused level 1 Racetrack shows HP 675/675 and Inside 2/2.",
+      "alt": "Before Upgrade, the paused level1 Racetrack shows HP675/675 and Inside2/2.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-before-detail-v3",
+      "kind": "image",
+      "sha256": "969cdb400a4d4053cc0942afb1214e44a164b33a536ed8570bfccfa9fc2cd2eb",
+      "bytes": 3966,
+      "width": 192,
+      "height": 300,
+      "caption": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "alt": "Level 1 Racetrack sidebar: HP 675/675, Inside 2/2 and Armour 5.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-v3",
+      "kind": "image",
+      "sha256": "6a6e5e4dd9108b318c5caf53b5680afe9805319a8508a8412f16200ddeaf2965",
+      "bytes": 220182,
+      "width": 1440,
+      "height": 900,
+      "caption": "After choosing Upgrade at the same pause, the level 1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "alt": "After choosing Upgrade at the same pause, the level1 Racetrack says Inside: Still one; Cancel upgrade is visible.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-queued-detail-v3",
+      "kind": "image",
+      "sha256": "2639db65895cd52293f41f6cb9d850c2abf25166976e09475524f11cd455475f",
+      "bytes": 4104,
+      "width": 192,
+      "height": 300,
+      "caption": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "alt": "Queued Racetrack sidebar: level 1, HP 675/675 and Inside: Still one.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-queued-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-v3",
+      "kind": "image",
+      "sha256": "f05701a36a350b4d7a7b8e91093b6639b75866c0b2ec73bac38c95b0ba557b15",
+      "bytes": 236210,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 2000, the level 2 site shows HP 961/1000,Wood 8/10,Stone 5/5 and Working 2/7.",
+      "alt": "At pausedtick2000, the level2 site shows HP961/1000,Wood8/10,Stone5/5 and Working2/7.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-construction-detail-v3",
+      "kind": "image",
+      "sha256": "5b043a2053608567d23eafd93d62b6f778decfd9a978234bbc6910e7083c38d0",
+      "bytes": 6776,
+      "width": 192,
+      "height": 300,
+      "caption": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "alt": "Level 2 Racetrack construction: HP 961/1000, Working 2/7, Wood 8/10 and Stone 5/5.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-construction-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-v3",
+      "kind": "image",
+      "sha256": "d9889dd9edbe86f3a3066c09debd0d8049b8d5ec34e743b3ca24828cfcd24186",
+      "bytes": 231506,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 2000, the selected worker shows Walk (1): 16,HP 200/200 and Food 75%.",
+      "alt": "At pausedtick2000, the selected worker shows Walk(1):16,HP200/200 and Food75%.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-before-detail-v3",
+      "kind": "image",
+      "sha256": "29bccddd20524d8c36f47df7f61392ac2cfbd4117444b6011df3caf44031e34b",
+      "bytes": 5518,
+      "width": 192,
+      "height": 260,
+      "caption": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "alt": "Selected worker before training: Walk (1): 16, HP 200/200 and Food 75%.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-before-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-v3",
+      "kind": "image",
+      "sha256": "20c2363bcdf6e84e2ca0bb101044bcc97097f8c841bce919aa40f3a68b799efb",
+      "bytes": 230344,
+      "width": 1440,
+      "height": 900,
+      "caption": "At paused tick 3849, the same continuously selected worker shows Walk (3): 26,HP 200/200 and Food 56%; the lesson is complete.",
+      "alt": "At pausedtick3849, the same continuously selected worker shows Walk(3):26,HP200/200 and Food56%; the lesson is complete.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-v3.webp"
+    },
+    {
+      "id": "upgrade-worker-after-detail-v3",
+      "kind": "image",
+      "sha256": "803cffe34a71098ec0503f86d266c2f0f027158940d31d62ed1278008a3a1945",
+      "bytes": 5492,
+      "width": 192,
+      "height": 260,
+      "caption": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "alt": "Same selected worker after the interval: Walk (3): 26, HP 200/200 and Food 56%.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-worker-after-detail-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-v3",
+      "kind": "image",
+      "sha256": "310b0fcf6663280191c3f34bbf15a08461d395b8f683ad06551b07e544b99314",
+      "bytes": 230376,
+      "width": 1440,
+      "height": 900,
+      "caption": "The completed level 2 Racetrack at paused tick 3849 has HP 1000/1000 and Inside 4/4.",
+      "alt": "The completed level2 Racetrack at pausedtick3849 has HP1000/1000 and Inside4/4.",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-v3.webp"
+    },
+    {
+      "id": "upgrade-racetrack-completed-detail-v3",
+      "kind": "image",
+      "sha256": "ccdfda99fbcac17c9de1adc987350cea08f9b5c03368ed6fcf6f0aa9925c3f99",
+      "bytes": 4048,
+      "width": 192,
+      "height": 300,
+      "caption": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "alt": "Completed level 2 Racetrack: HP 1000/1000, Inside 4/4 and Armour 10.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/training-and-upgrades/upgrade-racetrack-completed-detail-v3.webp"
+    },
+    {
+      "id": "browser-main-v3",
+      "kind": "image",
+      "sha256": "4f2e24c149855bec1e400ae862c176d8c3075a7481386d1ca4165f2d2894c23b",
+      "bytes": 418310,
+      "width": 1440,
+      "height": 900,
+      "caption": "The current main menu offers Load game, Tutorial and Play online.",
+      "alt": "Browser 0.11.6.0 main menu with Load game and Play online.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-main-v3.webp"
+    },
+    {
+      "id": "browser-game-menu-v3",
+      "kind": "image",
+      "sha256": "10a923556d2060906a36e89e3631dbba6efe358577fcb5e313662c4dcb1b79a3",
+      "bytes": 127268,
+      "width": 1440,
+      "height": 900,
+      "caption": "The local game menu offers Save game and Load game.",
+      "alt": "Paused upgraded practice game with the actual Save game and Load game menu.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-game-menu-v3.webp"
+    },
+    {
+      "id": "browser-save-dialog-v3",
+      "kind": "image",
+      "sha256": "8a4751dd0089217d735b01fa28666850351740f19b537227371d1e1d286a48dd",
+      "bytes": 82800,
+      "width": 1440,
+      "height": 900,
+      "caption": "The actual Save game dialog before confirmation.",
+      "alt": "Current browser Save game dialog for the prepared Upgrading buildings scene.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-selected-save-v3",
+      "kind": "image",
+      "sha256": "415cf2ce2788e37349c8d9ee754148d0c7a99dbfb7d2a1c770449079502d0659",
+      "bytes": 271306,
+      "width": 1440,
+      "height": 900,
+      "caption": "Choose game shows the selected original Upgrading buildings save and Import/Export file controls.",
+      "alt": "Selected local save in the actual Choose game panel.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-selected-save-v3.webp"
+    },
+    {
+      "id": "browser-file-detail-v3",
+      "kind": "image",
+      "sha256": "d8cdc27086e0a89f70310f208aa02f9e490873f25965fbfd3e48ac3817a1cffb",
+      "bytes": 15118,
+      "width": 984,
+      "height": 504,
+      "caption": "Detail of Choose game with the selected save and Import/Export file controls.",
+      "alt": "Genuine Choose game dialog detail with local save and file controls.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-v3.webp",
+      "retiredFrom": [
+        "browser-and-multiplayer"
+      ],
+      "retirementReason": "The wide chooser crop made its control labels too small on mobile. A new genuine left-pane crop retains the same actual selected filename and Import/Export controls at readable size; the full scene retains preview context. Original immutable object and provenance preserved.",
+      "retirementStatus": "No active source consumers after the reviewed mobile crop replacement."
+    },
+    {
+      "id": "browser-import-confirmed-v3",
+      "kind": "image",
+      "sha256": "08ee444715429ac9ad2c99db453de6607039e219d29b7b590ae498540e995efa",
+      "bytes": 266838,
+      "width": 1440,
+      "height": 900,
+      "caption": "After importing the exported file, Choose game lists 1-Upgrading buildings alongside the original save.",
+      "alt": "Actual imported copy listed in the browser game chooser.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-import-confirmed-v3.webp"
+    },
+    {
+      "id": "browser-duplicate-import-v3",
+      "kind": "image",
+      "sha256": "6adc7a6376ed6498d86bfb95ea1948d49192a48aa00b5969b5a40290e303bc41",
+      "bytes": 251676,
+      "width": 1440,
+      "height": 900,
+      "caption": "Importing the same file again creates 1-Upgrading buildings (1); this copy is selected before its byte-identical re-export.",
+      "alt": "Chooser with two numbered imported copies and the original save preserved.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-duplicate-import-v3.webp"
+    },
+    {
+      "id": "browser-loaded-game-v3",
+      "kind": "image",
+      "sha256": "e7e9b59a789f0d52215b3b806720347ab4718dc0c213270cbc641f24fdac7032",
+      "bytes": 225272,
+      "width": 1440,
+      "height": 900,
+      "caption": "After loading the imported copy and pausing, the selected Racetrack is level 2 with HP 1000/1000; the completed lesson prompt remains.",
+      "alt": "Actual game entered from the imported copy, then paused with the upgraded Racetrack selected.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-loaded-game-v3.webp"
+    },
+    {
+      "id": "browser-replay-save-dialog-v3",
+      "kind": "image",
+      "sha256": "966cb380526c201eadee04cf8ce91f7e08899c6811700f95382e52eb4dba2e17",
+      "bytes": 36892,
+      "width": 1440,
+      "height": 900,
+      "caption": "The named Save Replay dialog before Ok; subsequent confirmation returned to results.",
+      "alt": "Actual Save Replay dialog with handbook entered as the filename; no replay list or playback shown.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-replay-save-dialog-v3.webp"
+    },
+    {
+      "id": "browser-recordings-v3",
+      "kind": "image",
+      "sha256": "1c39e15c26f2d5de111c4ffdaf6bf9b62dee807e3a7aa25e9199b444bdd06035",
+      "bytes": 332684,
+      "width": 1440,
+      "height": 900,
+      "caption": "The finalized recording offers Export video, Export metadata and Export events.",
+      "alt": "Actual Recordings panel with the completed MP4 and separate export controls.",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recordings-v3.webp"
+    },
+    {
+      "id": "browser-recording-detail-v3",
+      "kind": "image",
+      "sha256": "feab3a8dea7188bfd72ec86c0c5e2c59f66e82d5b71eff4fd09ed48f68e28921",
+      "bytes": 8384,
+      "width": 664,
+      "height": 504,
+      "caption": "Detail of the finalized recording and its three export controls.",
+      "alt": "Genuine Recordings dialog detail with Export video, Export metadata and Export events.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-recording-detail-v3.webp"
+    },
+    {
+      "id": "browser-online-hub-v3",
+      "kind": "image",
+      "sha256": "5290cbb40b3cd9fd249c1e8c6c305bedf32283340364d704fc33aa946b8867ac",
+      "bytes": 34582,
+      "width": 1080,
+      "height": 510,
+      "caption": "Current Online hub controls for quick match and room creation/joining; no match or room was joined.",
+      "alt": "Cropped current Online hub body showing Ranked/Casual, Find match, Create room and Join by code controls.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-online-hub-v3.webp"
+    },
+    {
+      "id": "browser-file-detail-mobile-v3",
+      "kind": "image",
+      "sha256": "4e51b552d9b369a7485c46ed21fce0a4ec3574bd9fb3863ba52b7e06e34defce",
+      "bytes": 4812,
+      "width": 304,
+      "height": 404,
+      "caption": "File-list detail: Upgrading buildings is selected; Replays, Import, Export file and Delete are visible.",
+      "alt": "Genuine left-pane crop of Choose a game, with the selected local save and file controls readable.",
+      "presentation": "detail",
+      "path": "/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp",
+      "url": "https://storage.googleapis.com/glob2-website-public/guide-media/v3/browser-and-multiplayer/browser-file-detail-mobile-v3.webp"
     }
   ]
 }

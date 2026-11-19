@@ -160,7 +160,11 @@ export async function captureCurrentGuide({ scenario, output, baselinePath = def
     await closeGraphics();
     await page.waitForTimeout(3000);
     await note('ready');
-    await scenario({ page, context, state, note, control, click, key, screenshot, waitTicks, output: directory, baseline });
+    const downloadedFiles = async () => {
+      await Promise.all(pending);
+      return record.downloads.map(file => ({ ...file }));
+    };
+    await scenario({ page, context, state, note, control, click, key, screenshot, waitTicks, downloadedFiles, output: directory, baseline });
     await Promise.all(pending);
     if (record.presentationLogs.some(item => item.seconds >= appliedReloadAt && /stepped_down=1/.test(item.message))) throw Error('Artwork stepped down after explicit quality qualification');
     if (record.errors.length) throw Error('Capture recorded errors');
