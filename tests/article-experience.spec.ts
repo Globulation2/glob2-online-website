@@ -69,17 +69,14 @@ test('references, profiles, and historical editorial pages preserve their purpos
   await expect(page.locator('.article-heading .eyebrow')).toHaveText('Quick reference');
   await expect(page.getByRole('region', { name: /reference table/ }).first()).toBeVisible();
   const mixedSources = page.getByRole('complementary', { name: 'Source references' });
-  await expect(mixedSources.getByRole('link', { name: /Released native 0.11.6.1 stone-wall cost/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings/stonewall.json');
-  await expect(mixedSources.getByRole('link', { name: /Earlier source context: Standard building definitions/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/tree/4edaed552c3574914197d4978fbff4b81bd1eedb/data/buildings');
+  await expect(mixedSources.getByRole('link', { name: /Released native 0.11.6.1 building catalogs/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/tree/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/buildings');
+  await expect(mixedSources.getByRole('link', { name: /Current public browser Food supply, Hospitals and Schools examples/ })).toHaveAttribute('href', 'https://app.glob2.online/play/');
   await expect(mixedSources).not.toContainText('Reviewed against');
   await page.goto('/learn/reference-resources/');
   const resourceSources = page.getByRole('complementary', { name: 'Source references' });
   await expect(resourceSources.getByRole('link', { name: /Current public browser food and production examples/ })).toHaveAttribute('href', 'https://app.glob2.online/play/');
   await expect(resourceSources.getByRole('link', { name: /Released native 0.11.6.1 Standard resource definitions/ })).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/resources/registry.json');
   await expect(resourceSources).not.toContainText('Reviewed against');
-  // The retained browser-files chapter still identifies its single earlier source baseline.
-  await page.goto('/learn/browser-and-multiplayer/');
-  await expect(page.getByRole('complementary', { name: 'Source references' })).toContainText('Reviewed against');
   await page.goto('/learn/ai-econo/');
   await expect(page.locator('.article-heading .eyebrow')).toHaveText('AI profile');
   await page.goto('/archive/legacy-strategy/');

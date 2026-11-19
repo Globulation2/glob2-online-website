@@ -1,107 +1,89 @@
 ---
 title: "Exploration, terrain, water, and movement"
-description: "Reveal useful land, choose reachable destinations, and understand why units take their own routes."
+description: "Give scouts a useful destination, distinguish arrival from a request, and check ground access before committing a colony."
+locale: "en"
 group: "map"
 order: 1
 prerequisites: ["getting-started", "jobs-and-flags"]
 tags: ["exploration", "terrain", "movement"]
-reviewedAgainst: "4edaed552c3574914197d4978fbff4b81bd1eedb"
 sources:
-  - title: "Unit movement and visibility"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/UnitMovement.cpp"
-  - title: "Movement abilities"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/unit/types/Race.cpp"
-  - title: "Exploration flag types"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/building/types/BuildingTypesFlags.cpp"
-  - title: "Fruit harvesting and current visibility"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/map/gradient/SeedCells.h"
-  - title: "Unit target lines"
-    url: "https://github.com/Globulation2/glob2/blob/4edaed552c3574914197d4978fbff4b81bd1eedb/src/render/GameRenderUnits.cpp"
+  - title: "Current public browser Guard zones and flag tactics lesson, observed 18 November 2026"
+    url: "https://app.glob2.online/play/"
+  - title: "Released native 0.11.6.1 source context: unit movement and visibility"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/unit/UnitMovement.cpp"
+  - title: "Released native 0.11.6.1 source context: movement abilities"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/content/data/units/registry.json"
+  - title: "Released native 0.11.6.1 source context: ground and air terrain constraints"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/pathfind/MapAStarDomain.h"
+  - title: "Released native 0.11.6.1 source context: fruit visibility and access"
+    url: "https://github.com/Globulation2/glob2/blob/1b60514218218c89516b6c6f26f2fcefc9c8f974/src/map/MapResources.cpp"
 ---
 
-A destination has to make sense for the unit trying to reach it. An explorer can fly over terrain that stops an untrained ground unit; a worker may take a longer route to eat or gather the material its job needs. Use exploration to understand those constraints before committing buildings or an army.
+Explore to answer a question: where is the next supply, which route reaches it, and what could interrupt that route? A scout's arrival provides information. It does not build a road, establish a ground hauling route or supply the colony left behind.
 
-## Discover supplies before expanding
+For the illustrated exercise, open **Tutorial → Guard zones and flag tactics**. Scroll the lesson catalogue if needed. It begins with a prepared colony and units; you are not expected to reproduce those starting conditions in a custom match. Follow the visible first task to scout the enemy base. Acknowledge a briefing if it appears.
 
-Black terrain is undiscovered. Workers reveal land along their trips, but explorers are the more flexible way to inspect a wider region. Produce an explorer at the swarm while keeping the inn and swarm supplied, then restore the production mix you need.
+## Direct the explorer toward a useful destination
 
-As terrain is revealed, look for three practical things:
+1. Pause with **P** in local practice and choose **Show destination** in the lesson prompt. This centers the intended location; it does not order a unit there.
+2. Press **F**, then **E** to choose an Exploration flag. Place it at the marked destination.
+3. Right-click to leave placement, then select the flag.
+4. Read its request and range. In this capture the default request is two and range ten; reduce them to **one explorer** and **range four**.
+5. Resume and watch actual travel and revealed terrain. Do not treat the requested count as an arrival.
 
-1. **Food and materials:** where could the next inn or useful construction go?
-2. **Routes:** can ground units get there without a long detour?
-3. **Threats:** which approaches connect an opponent to your working colony?
+[[media:scout-reveal-clip-v3]]
 
-Do not place a remote service simply because the ground beside it is clear. Workers still need to build and supply it, and users need a workable trip back to meals and healing.
-
-## Send an explorer toward a question
-
-Use an **Exploration flag** to direct exploration toward a location you want to inspect. The default sequence is **F → E**.
-
-1. Produce at least one explorer.
-2. Place an exploration flag toward the region of interest.
-3. Right-click to stop placement, then select the flag.
-4. Inspect its Working request and radius. Request a unit you have, with a level filter it can satisfy.
-5. Resume and watch where the explorer goes and what land becomes visible.
-6. Move the flag to the next useful region, or remove the request when it is no longer needed.
-
-:::note
-
-A flag asks autonomous units to work around a destination. It does not prevent them from handling their own food and medical needs. If an explorer returns home, inspect those needs before assuming the flag failed.
-
-:::
-
-[[media:scout-start]]
-
-[[media:scout-flag-clip]]
+The continuous excerpt shows the explorer revealing the enemy Swarm and the first task advancing to **Prepare a guard zone**. The explorer is available in this prepared lesson; [population and production](/learn/population-and-production/) covers producing explorers in a different prepared practice colony.
 
 :::media-group
 
-[[media:scout-result]]
+[[media:jobs-exploration-v3]]
 
-[[media:scout-detail]]
+[[media:jobs-exploration-detail-v3]]
 
 :::
 
-## Distinguish discovery from current vision
+At the later paused inspection, the selected flag shows **Working 1/1**, **Here 1** and **On the way 0**, with **Range 4**. Compare all three readings. A future flag can request one explorer while nobody is attached, or have an attached explorer still traveling.
 
-Discovering terrain tells you about the map. Current vision tells you what is happening in an area your colony can observe now. Do not assume a previously revealed region still provides a live view of enemy movement after your scouts leave.
+## Spend exploration on decisions
 
-Fruit harvesting needs **current visibility**, too. Discovering an orchard once does not permanently make its fruit accessible. Keep the fruit patch in view if a service depends on it; when fruit deliveries stop after a scout leaves, check vision alongside the route and available workers.
+Use the new information before adding another commitment:
 
-The minimap helps compare the discovered layout with your current camera position. Use it to inspect another region, then press **Home** to return to base. Those are camera actions, not scouting orders.
+- Find food and construction materials, then inspect how workers could reach them.
+- Look for an approach that connects an opponent to your inn or production.
+- Check the space around a proposed building and its service routes.
+- Revisit a military objective before committing a force to it.
 
-A custom **Reveal terrain** rule changes terrain discovery. It is not permission to assume every enemy unit remains visible everywhere. Read that match's rule summary before using the fog as evidence of an opponent's position.
+A flag gives autonomous units a task around a destination. Food, healing and competing work still matter. If a scout does not remain where expected, inspect its needs, actual total and the flag's readings before increasing the request. A scout-under-attack notice is a reason to inspect the location, not proof that a ground army has already reached home.
 
-## Match routes to abilities
+Move or remove an obsolete request through the actual flag controls available in your game. If you create another destination, check that the previous request is not retaining the explorer you wanted to send. Do not assume placing several flags creates more scouts.
 
-Ground units need usable ground routes. Water can separate a destination from workers or warriors that have not learned to swim. A swimming pool provides swimming training; inspect the selected glob's abilities before assuming it can cross.
+## Separate discovered terrain from current vision
 
-Training also requires a usable service and time away from other duties. Building a swimming pool does not instantly give every unit the ability. Release suitable units from nonessential work and allow them to train before relying on a water crossing.
+Black undiscovered terrain hides the layout. A revealed region can still contain remembered information after your units leave. A familiar enemy building silhouette does not establish its current occupants, food, health or defenders.
 
-Explorers fly and can inspect terrain beyond a ground route. That information is useful, but an explorer reaching the far bank does not prove your builders or army can follow. Explorers also have combat abilities; do not treat every contact between opposing flyers as harmless scouting.
+The native 0.11.6.1 fruit rules also require current team visibility for harvesting. Remembering an orchard is not enough. When a fruit store stays empty, check current vision, remaining fruit, a ground route and attached workers. An explorer contributes vision; workers must still make the delivery.
 
-## Remember the map wraps
+Use the minimap to inspect another region and **Home** to recenter in the current default controls. Those change the camera, not a scout's assignment. A **Reveal terrain** match option concerns discovery; inspect the actual rules rather than assuming every enemy unit remains visible everywhere.
 
-The map joins opposite edges. A route that looks far apart in a flat view can be short across that seam, and an opponent can approach from across it. Consider both sides of a boundary when placing defense or judging distance.
+## Check the route for the unit that will use it
 
-Where the graphics renderer supports it, the torus view (**G** by default) helps inspect that relationship. Software rendering may leave the ordinary map view active. Use the minimap and camera movement to inspect approaches in either mode, and return to the normal map view for precise placement. A camera seam is not a protective wall.
+Explorers fly, while workers and warriors have ground movement and ability constraints. The native movement model includes separate ground and air restrictions; flying is not a promise to ignore every map-specific barrier. Inspect the actual terrain and scenario rules.
 
-## Diagnose a unit taking an unexpected route
+Water is a useful example: an explorer reaching another bank does not establish that your present workers or warriors can cross. A swimming pool provides training, but a finished building does not instantly give every glob swimming ability. Select the intended unit, inspect its abilities and allow access and time for training before planning around a crossing. This scouting sequence does not demonstrate a swimming lesson.
 
-Select the unit and inspect its activity and needs. **T** toggles lines to unit targets; those straight lines help identify destinations, but do not trace the navigable route. Check:
+A usable route must continue to food and other services, not merely end at the target. Buildings, walls, resource deposits and painted ground restrictions can change access. Keep room around busy service entries, and inspect the trip after altering the terrain.
 
-- The destination and its eligible unit role.
-- Water and other terrain the unit can actually cross.
-- Forbidden areas you painted, when diagnosing a ground unit; flying explorers can cross them.
-- Buildings or resource patches constraining access.
-- The food or healing trip the unit is taking instead of its assigned work.
+## Diagnose unexpected movement
 
-Change one cause at a time. Erase a misplaced forbidden patch before adding more units to the same unreachable job. Move a flag onto a reachable route rather than spreading requests across an obstacle.
+| Observation | Inspect next | Small correction |
+| --- | --- | --- |
+| Requested scout never arrives | Actual explorer total, eligibility and competing flags | Release an obsolete request or choose an eligible unit. |
+| Scout returns toward home | Food, HP and service access | Let it meet its needs before asking for a longer assignment. |
+| A flyer reaches a site but workers do not | Ground route, terrain and movement ability | Choose reachable construction ground or prepare the needed ability. |
+| Fruit remains at zero | Current source visibility and hauling access | Restore both vision and a usable delivery route. |
+| A previously safe approach changes | Fresh vision and alerts | Scout again before repeating the old commitment. |
 
-Optional terrain families and experiments may add different effects to a particular map. Read their descriptions when they are present; do not assume unusual terrain behaves like ordinary grass, sand, or water.
+In the native controls, target lines help identify destinations rather than drawing the navigable route. Likewise, a wrapping map seam can make an approach shorter than it appears in a flat view. Use the actual map settings, minimap and camera to inspect both sides; the camera edge is not a defensive wall. Check your current controls before relying on a renderer-specific alternate view.
 
-## Make exploration pay for itself
-
-Before a large attack or expansion, answer a concrete question with your scouts: where is the food, where is the crossing, where can a supplied force assemble? Record the answer in your plan, then avoid leaving every explorer committed to an obsolete destination.
-
-Once you can read routes, use that information to [defend the colony](/learn/defending-your-colony/) or organize a supplied attack.
+Once the route answers your question, use the information to [defend the colony](/learn/defending-your-colony/) or [organize an attack](/learn/organizing-an-attack/). Keep some attention on home while studying the newly revealed area.

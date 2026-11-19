@@ -1,0 +1,237 @@
+{
+  "sourceBaseline": "449835af60648fc53058d10aecd7a5c39d3f9638",
+  "scope": [
+    "buildings-and-services",
+    "exploration-and-movement",
+    "defending-your-colony",
+    "organizing-an-attack",
+    "reference-buildings",
+    "reference-units"
+  ],
+  "qualification": "Source-preparation snapshot overlays only these six source-complete article paths on the frozen PR66 source head. Training/upgrades, browser files and fruit remain unfinished and retain their earlier source in this snapshot. No claim of production publication.",
+  "chapters": [
+    {
+      "chapter": "buildings-and-services",
+      "oldIdsRemovedFromConsumer": [
+        "services-active",
+        "services-active-detail",
+        "services-foundation",
+        "services-healing",
+        "services-healing-detail",
+        "services-healing-result",
+        "services-stalled-school"
+      ],
+      "newIds": [
+        "services-hospital-completed-detail-v3",
+        "services-hospital-completed-v3",
+        "services-hospital-foundation-detail-v3",
+        "services-hospital-foundation-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-after-v3",
+        "services-patient-before-detail-v3",
+        "services-patient-before-v3",
+        "training-school-completed-detail-v3",
+        "training-school-completed-v3",
+        "training-school-construction-detail-v3",
+        "training-school-construction-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "exploration-and-movement",
+      "oldIdsRemovedFromConsumer": [
+        "scout-clip-poster",
+        "scout-detail",
+        "scout-flag-clip",
+        "scout-result",
+        "scout-start"
+      ],
+      "newIds": [
+        "jobs-exploration-detail-v3",
+        "jobs-exploration-v3",
+        "scout-reveal-clip-v3",
+        "scout-reveal-poster-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "defending-your-colony",
+      "oldIdsRemovedFromConsumer": [
+        "defense-after-contact",
+        "defense-after-detail",
+        "defense-contact-detail",
+        "defense-hospital-detail",
+        "defense-inn",
+        "defense-warrior-detail"
+      ],
+      "newIds": [
+        "defense-guard-contact-clip-v3",
+        "defense-guard-contact-poster-v3",
+        "jobs-guard-area-v3",
+        "jobs-guard-detail-v3",
+        "jobs-guard-removing-v3",
+        "jobs-guard-restored-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "organizing-an-attack",
+      "oldIdsRemovedFromConsumer": [
+        "attack-contact-clip",
+        "attack-contact-poster",
+        "attack-gather",
+        "attack-gather-detail",
+        "attack-home-group-detail",
+        "attack-home-meals",
+        "attack-home-meals-detail",
+        "attack-objective-after",
+        "attack-objective-before",
+        "attack-objective-health-detail",
+        "attack-production-detail",
+        "attack-readiness-detail",
+        "attack-returning-warrior-detail",
+        "attack-staging-meals-detail"
+      ],
+      "newIds": [
+        "attack-counterattack-clip-v3",
+        "attack-counterattack-poster-v3",
+        "jobs-war-detail-v3",
+        "jobs-war-request-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "reference-buildings",
+      "oldIdsRemovedFromConsumer": [
+        "food-first-stock-detail",
+        "services-healing-detail",
+        "services-stalled-school"
+      ],
+      "newIds": [
+        "food-recovery-detail-v3",
+        "services-hospital-completed-detail-v3",
+        "training-school-completed-detail-v3",
+        "training-school-foundation-detail-v3",
+        "training-school-foundation-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {}
+    },
+    {
+      "chapter": "reference-units",
+      "oldIdsRemovedFromConsumer": [
+        "population-explorer-result",
+        "training-worker-after"
+      ],
+      "newIds": [
+        "population-explorer-result-v3",
+        "services-patient-after-detail-v3",
+        "services-patient-before-detail-v3",
+        "training-worker-after-detail-v3",
+        "training-worker-before-detail-v3"
+      ],
+      "oldAssetsStillServingOtherChapters": {
+        "training-worker-after": [
+          "training-and-upgrades"
+        ]
+      }
+    }
+  ],
+  "retiredIdsWithoutConsumers": [
+    "attack-contact-clip",
+    "attack-contact-poster",
+    "attack-gather",
+    "attack-gather-detail",
+    "attack-home-group-detail",
+    "attack-home-meals",
+    "attack-home-meals-detail",
+    "attack-objective-after",
+    "attack-objective-before",
+    "attack-objective-health-detail",
+    "attack-production-detail",
+    "attack-readiness-detail",
+    "attack-returning-warrior-detail",
+    "attack-staging-meals-detail",
+    "defense-after-contact",
+    "defense-after-detail",
+    "defense-contact-detail",
+    "defense-hospital-detail",
+    "defense-inn",
+    "defense-warrior-detail",
+    "food-first-stock-detail",
+    "population-explorer-result",
+    "scout-clip-poster",
+    "scout-detail",
+    "scout-flag-clip",
+    "scout-result",
+    "scout-start",
+    "services-active",
+    "services-active-detail",
+    "services-foundation",
+    "services-healing",
+    "services-healing-detail",
+    "services-healing-result",
+    "services-stalled-school"
+  ],
+  "nonArchivalV1Ids": 27,
+  "remainingChapters": 3,
+  "qualifiedEarlierIntroductionIds": 17,
+  "remaining": [
+    {
+      "chapter": "browser-and-multiplayer",
+      "sourceSha256": "b823dd6877494599716b98668799a0132572937bac9109af29a9a515eff1fbe5",
+      "activeV1Ids": [
+        "browser-file-detail",
+        "browser-load",
+        "browser-recording",
+        "browser-recording-detail"
+      ]
+    },
+    {
+      "chapter": "fruit-and-conversion",
+      "sourceSha256": "4f2c9dc1d8c23a99fd32dcac8ca587b8e77a8e71f3b606d65a488f13baf34577",
+      "activeV1Ids": [
+        "fruit-advertise",
+        "fruit-advertise-detail",
+        "fruit-armor-after",
+        "fruit-armor-before",
+        "fruit-conversion",
+        "fruit-conversion-detail",
+        "fruit-meal",
+        "fruit-offer-clip",
+        "fruit-orchard",
+        "fruit-orchard-detail",
+        "fruit-stock",
+        "fruit-stock-detail"
+      ]
+    },
+    {
+      "chapter": "training-and-upgrades",
+      "sourceSha256": "180f7b5f9dcd956ee7612741f136733a3f0049f25008b6e52faddece78c24850",
+      "activeV1Ids": [
+        "training-school-detail",
+        "training-school-service",
+        "training-school-site",
+        "training-upgrade-detail",
+        "training-upgrade-locked",
+        "training-upgrade-result",
+        "training-upgrade-site",
+        "training-upgrade-site-detail",
+        "training-upgrade-unlocked",
+        "training-worker-after",
+        "training-worker-before"
+      ]
+    }
+  ],
+  "remainingFamilies": [
+    "browser-and-multiplayer",
+    "fruit-and-conversion",
+    "training-and-upgrades"
+  ],
+  "remainingFamilyCount": 3
+}

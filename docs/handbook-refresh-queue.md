@@ -40,3 +40,9 @@ Remaining AI4, sustainable food, population, recovery, expansion and resource re
 Candidate consumer reconciliation is61 older non-archival IDs across9 remaining chapters, plus17 qualified earlier Introduction references. The81 retired IDs have no consumers in that explicit nine-path snapshot. Building/unit references, actual upgrades, browser files/network behavior and other remaining lessons stay in the queue; a visible Upgrade button is not an upgrade outcome.
 
 The preceding six-page second batch is independently verified live ata63a2e2 (72 asset reads,20 desktop/mobile states, deployed detail-cue and keyboard checks). Live remaining coverage is142 older IDs /18 chapters /15 families; the next nine-page candidate stays separate.
+
+## Final nine-page unit: source preparation
+
+Buildings/services, the three route/combat guides and the two remaining references now have independently reviewed matching source and registered current evidence. School10 and Guard motion/posters6 were reviewed before immutable upload and freshly public byte/hash verified. Their actual teaching covers same-worker training, local scout/defense/counterattack and native-qualified catalog facts. Six source articles are prepared; rendered review, full-unit CI and production acceptance remain pending.
+
+The three unfinished source chapters are training/upgrades, browser/files and fruit/conversion. An actual qualified upgrade, browser export/import/load and other file/online flows, and bounded fruit/advertisement observations remain specific capture work. Candidate counts are27 older non-archival IDs /3 chapters /3 original media families, plus17 qualified earlier Introduction references. The final publication scope stays nine chapters; a preparation commit does not imply final acceptance.
