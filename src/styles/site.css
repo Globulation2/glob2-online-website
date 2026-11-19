@@ -36,7 +36,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
 }
 
 .site-header { position: relative; z-index: 5; padding: var(--sp-3) 0; }
-.site-header .wrap { display: flex; align-items: center; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); }
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -85,9 +85,9 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
 .nav a.nav-download { background: var(--accent); color: var(--accent-ink); box-shadow: 0 1px 0 var(--accent-edge); }
 .nav a.nav-download:hover { background: var(--accent-hover); }
 .site-footer a.btn.primary { color: var(--accent-ink); }
-.header-end { margin-left: auto; display: flex; align-items: center; gap: var(--sp-2); }
+.header-end { display: flex; align-items: center; gap: var(--sp-2); }
 .header-play { box-shadow: none; }
-/* Returning players' way into the app: quieter than Play, on the same surface as the nav. */
+/* Returning players retain a quieter sign-in action beside settings. */
 .header-signin {
   display: inline-flex;
   align-items: center;
@@ -104,6 +104,48 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   white-space: nowrap;
 }
 .header-signin:hover { background: var(--surface-3); }
+
+/* One masthead surface, with the same reading and focus order at every size. */
+.site-header .wrap { width:calc(100% - 24px); display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:8px 16px; padding:12px 16px; background:color-mix(in srgb,var(--surface) 96%,transparent); border:1px solid var(--line); border-radius:var(--r-lg); backdrop-filter:blur(8px); }
+.site-header .brand { justify-self:start; padding:0; background:none; backdrop-filter:none; }
+.site-header .header-play { white-space:normal; text-align:center; }
+.header-menu { grid-column:1 / -1; min-width:0; }
+.header-menu > summary { display:flex; min-height:44px; align-items:center; justify-content:space-between; gap:16px; font-size:var(--text-sm); font-weight:700; cursor:pointer; list-style:none; }
+.header-menu > summary::-webkit-details-marker { display:none; }
+.header-menu[open] > summary > span { transform:rotate(45deg); }
+@media(min-width:760px) { .header-menu[data-enhanced] > summary { display:none; } }
+.header-content { display:flex; align-items:center; justify-content:space-between; gap:12px; border-top:1px solid var(--line); padding-top:8px; }
+.site-header .nav { width:auto; padding:0; gap:2px; background:none; border-radius:0; backdrop-filter:none; }
+.site-header .nav a { padding-inline:12px; }
+.site-header .header-end { margin:0; width:auto; flex-wrap:nowrap; gap:4px; }
+.site-header .header-signin, .site-header .language-picker summary { background:none; backdrop-filter:none; }
+@media(min-width:1400px) {
+  .site-header .wrap { display:flex; flex-wrap:wrap; gap:12px; }
+  .site-header .brand-online { display:none; }
+  .header-menu { flex:1 0 max-content; max-width:100%; }
+  .header-content { padding:0; border:0; gap:8px; flex-wrap:wrap; }
+  .site-header .nav a { padding-inline:9px; }
+}
+@media(max-width:1100px) and (min-width:760px) {
+  .header-content { align-items:flex-start; flex-wrap:wrap; }
+  .site-header .header-end { margin-inline-start:auto; }
+}
+@media(max-width:759px) {
+  .site-header .wrap { gap:8px; padding:10px 12px; }
+  .site-header .brand-online { display:none; }
+  .site-header .brand .wordmark { height:16px; }
+  .site-header .brand img { width:30px; height:30px; }
+  .site-header .header-play { max-width:130px; padding-inline:10px; font-size:var(--text-sm); }
+  .header-menu > summary { display:flex; min-height:44px; align-items:center; justify-content:space-between; font-size:var(--text-sm); font-weight:700; cursor:pointer; border-top:1px solid var(--line); padding-top:8px; list-style:none; }
+  .header-menu > summary::-webkit-details-marker { display:none; }
+  .header-menu[open] > summary > span { transform:rotate(45deg); }
+  .header-content { display:block; padding-top:8px; border:0; }
+  .site-header .nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .site-header .nav a { justify-content:flex-start; text-align:start; }
+  .site-header .header-end { margin-top:8px; padding-top:8px; border-top:1px solid var(--line); flex-wrap:wrap; }
+  .language-options { inset-inline-start:0; inset-inline-end:auto; }
+}
+
 
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3); margin: var(--sp-5) 0 var(--sp-4); }
 .text-link {
@@ -280,11 +322,6 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 
 /* --------------------------------------------------------- narrower screens */
 
-/* The nav takes its own row before it would push Sign in and Play under the brand. */
-@media (max-width: 980px) {
-  .site-header .wrap { gap: var(--sp-2) var(--sp-3); }
-  .nav { order: 3; width: 100%; }
-}
 @media (max-width: 980px) {
   .three-grid { grid-template-columns: 1fr; }
   .site-footer .wrap { grid-template-columns: repeat(2,minmax(0,1fr)); }
@@ -292,28 +329,12 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 }
 @media (max-width: 700px) {
   .two-grid, .split-section { grid-template-columns: 1fr; }
-  .nav a { padding: 0 12px; flex: 1 1 auto; justify-content: center; }
   .page-shell { padding-left: calc(var(--gutter) + var(--sp-3)); padding-right: calc(var(--gutter) + var(--sp-3)); }
   .page-shell::before { inset: 0 calc(var(--gutter) - 12px); border-radius: var(--r-md); }
   .callout { padding: var(--sp-5); }
   .card, .feature, .rankings { padding: var(--sp-4); }
   .btn { white-space: normal; text-align: center; }
   .badge { white-space: normal; }
-}
-@media (max-width: 480px) {
-  .nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .brand .wordmark { height: 18px; }
-  .header-play { padding: 0 var(--sp-3); }
-  .header-signin { padding: 0 var(--sp-2); }
-}
-@media (max-width: 520px) { .brand-online { display: none; } }
-/* Small phones: the brand, Sign in and Play share one row above the nav. */
-@media (max-width: 400px) {
-  .site-header .wrap { column-gap: var(--sp-2); }
-  .brand { padding: 4px 10px 4px 4px; gap: 6px; }
-  .brand img { width: 30px; height: 30px; }
-  .brand .wordmark { height: 16px; }
-  .header-end { gap: 6px; }
 }
 /* Pagefind's Clear button is 40 px wide; keep it a full touch target. */
 .pagefind-ui .pagefind-ui__search-clear { min-width: var(--target); }
@@ -363,25 +384,13 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 .language-options { position: absolute; inset-inline-end: 0; top: calc(100% + 8px); z-index: 20; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 4px; padding: var(--sp-3); width: min(34rem,calc(100vw - 32px)); max-height: 60vh; overflow-y: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--shadow-lg); }
 .language-options a { display: flex; align-items: center; min-height: var(--target); padding: var(--sp-2); overflow-wrap: anywhere; }
 .language-options a[aria-current] { background: var(--surface-3); font-weight: 800; }
-.header-end { margin-left: 0; margin-inline-start: auto; flex-wrap: wrap; }
+
 .nav a { white-space: normal; text-align: center; }
 :root:not([lang='en']) body:has(.home) .site-header { position: relative; background: var(--grass-deep); }
 :root:not([lang='en']) .home .hero-copy { padding-top: var(--sp-7); }
 :root[dir='rtl'] .home .hero-colony::after { transform: scaleX(-1); }
 :root[dir='rtl'] .hero-colony > video, :root[dir='rtl'] .hero-colony { direction: ltr; }
 .home h1, .home h2, .path, .site-footer a { overflow-wrap: anywhere; }
-@media (max-width:700px) { .header-end { width:100%; margin-inline-start:0; } .language-options { inset-inline-start:0; inset-inline-end:auto; } }
+
 :root[dir='rtl'] .home .hero-online, :root[dir='rtl'] .brand-online, :root[dir='rtl'] .home .facts li, :root[dir='rtl'] h1, :root[dir='rtl'] h2, :root[dir='rtl'] h3, :root[dir='rtl'] .eyebrow { letter-spacing: normal; }
 code[dir='ltr'], pre[dir='ltr'] { direction: ltr; unicode-bidi: isolate; text-align: left; }
-
-/* Keep navigation on a deliberate row instead of orphaning utility controls.
-   The content width is capped, so even wide viewports need the same layout. */
-.site-header .wrap {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--sp-2) var(--sp-4);}
-.site-header .brand {justify-self:start;}
-.site-header .nav {grid-column:1 / -1;grid-row:2;order:initial;width:auto;justify-content:center;justify-self:center;}
-.site-header .header-end {grid-column:2;grid-row:1;margin:0;width:auto;flex-wrap:nowrap;}
-@media(max-width:700px) {
-  .site-header .wrap {grid-template-columns:minmax(0,1fr);}
-  .site-header .header-end {grid-column:1;grid-row:2;justify-content:flex-start;flex-wrap:wrap;}
-  .site-header .nav {grid-row:3;justify-self:stretch;}
-}

@@ -1,7 +1,9 @@
-/* Home page. The hero owns the colony; the header floats over it. */
+/* Home page. Only the compact wide masthead floats over the hero. */
 
 body:has(.home) .world-band { display: none; }
 body:has(.home) .site-header { position: absolute; inset: 0 0 auto; z-index: 5; }
+body:has(.home) .site-header:has(.header-menu:not([data-enhanced])) { position:relative; background:var(--grass-deep); }
+body:has(.header-menu:not([data-enhanced])) .home .hero-copy { padding-top:var(--sp-6); }
 body:has(.home) .site-footer { margin-top: 0; }
 
 .home { --hero-ink: #fbf3d8; --scrim-rgb: 9, 28, 13; }
@@ -103,8 +105,11 @@ body:has(.home) .site-footer { margin-top: 0; }
   .home > .paths { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) { .home .hero-logo .wordmark { height: 38px; } }
-@media (max-width: 700px) {
+@media (max-width: 1399px) {
   body:has(.home) .site-header { position: relative; background: var(--grass-deep); padding-bottom: var(--sp-3); }
+  .home .hero-copy { padding-top: var(--sp-6); }
+}
+@media (max-width: 700px) {
   .home > .hero { min-height: 0; }
   .home .hero-copy { padding: var(--sp-6) var(--gutter) 72px; }
   .home > .paths { grid-template-columns: 1fr; }

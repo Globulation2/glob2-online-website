@@ -127,21 +127,87 @@ test('community invitations use the verified permanent server invite',async({pag
  expect(await invites.count()).toBeGreaterThan(0);
  for(const invite of await invites.all()) await expect(invite).toHaveAttribute('href','https://discord.gg/rQn3Br6AFA');
 });
-for(const width of [360,768,980,1024,1280,1470,1920]) test(`header uses deliberate rows without overlap at ${width}`,async({page})=>{
+for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a masthead surface and keeps its mobile entry compact at ${width}`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.goto('/search/');
  await page.evaluate(()=>document.fonts.ready);
- const boxes=await page.locator('.site-header').evaluate(header=>['.brand','.nav','.header-end'].map(selector=>{const r=header.querySelector(selector)!.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom};}));
- const [brand,nav,utilities]=boxes;
- expect(nav.y).toBeGreaterThanOrEqual(Math.max(brand.bottom,utilities.bottom));
- if(width>700){expect(Math.abs(brand.y-utilities.y)).toBeLessThan(8);expect(utilities.x).toBeGreaterThanOrEqual(brand.right);}
+ const geometry=await page.locator('.site-header').evaluate(header=>{
+  const box=(selector:string)=>{const r=header.querySelector(selector)!.getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,height:r.height};};
+  return {frame:box('.wrap'),brand:box('.brand'),cta:box('.header-play'),menu:box('.header-menu'),nav:box('.nav'),utilities:box('.header-end')};
+ });
+ const {frame,brand,cta,menu,nav,utilities}=geometry;
+ expect(Math.abs((brand.y+brand.bottom)/2-(cta.y+cta.bottom)/2)).toBeLessThan(2);
+ expect(cta.x).toBeGreaterThanOrEqual(brand.right);
+ if(width<760){
+  expect(menu.y).toBeGreaterThanOrEqual(Math.max(brand.bottom,cta.bottom));
+  expect(frame.height).toBeLessThan(150);
+  await expect(page.locator('.header-menu')).not.toHaveAttribute('open','');
+  await expect(page.locator('.site-header .nav')).toBeHidden();
+  await page.locator('.header-menu>summary').click();
+  await expect(page.locator('.site-header .nav')).toBeVisible();
+ }else{
+  await expect(page.locator('.site-header .nav')).toBeVisible();
+  expect(Math.min(nav.x,utilities.x)).toBeGreaterThanOrEqual(frame.x);
+  expect(Math.max(nav.right,utilities.right)).toBeLessThanOrEqual(frame.right);
+  if(width>=1400){expect(Math.abs(nav.y-brand.y)).toBeLessThan(4);expect(Math.abs(utilities.y-brand.y)).toBeLessThan(4);}
+ }
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('header keyboard order follows its visible utility and navigation rows',async({page,browserName})=>{
- await page.goto('/search/');
- // macOS WebKit follows the system preference that uses Option-Tab for links.
+test('header keyboard order follows the visible brand, action, navigation and settings',async({page,browserName})=>{
+ await page.setViewportSize({width:1470,height:900});await page.goto('/search/');
  const forward=browserName==='webkit'&&process.platform==='darwin'?'Alt+Tab':'Tab';
- for(const selector of ['.skip-link','.site-header .brand','.language-picker summary','.theme-toggle','.header-signin','.header-play','.site-header .nav a:first-child']){
-  await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();
+ const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-signin'];
+ for(const selector of order){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
+ await page.setViewportSize({width:360,height:900});await page.goto('/search/');
+ for(const selector of ['.skip-link','.site-header .brand','.header-play','.header-menu>summary']){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
+ await page.keyboard.press('Enter');await page.keyboard.press(forward);await expect(page.locator('.site-header .nav a:first-child')).toBeFocused();
+ await page.setViewportSize({width:760,height:900});await expect(page.locator('.header-menu')).toHaveAttribute('open','');
+ await page.locator('.site-header .nav a:first-child').focus();
+ await page.setViewportSize({width:759,height:900});await expect(page.locator('.header-menu')).not.toHaveAttribute('open','');
+ await expect(page.locator('.header-menu>summary')).toBeFocused();
+ await page.setViewportSize({width:760,height:900});await expect(page.locator('.header-menu')).toHaveAttribute('open','');
+ await expect(page.locator('.site-header .nav a:first-child')).toBeFocused();
+ await page.locator('.header-play').focus();
+ await page.setViewportSize({width:759,height:900});await expect(page.locator('.header-play')).toBeFocused();
+ await page.locator('.header-menu>summary').focus();await page.locator('main h1').click();
+ await page.setViewportSize({width:760,height:900});await expect(page.locator('.site-header .nav a:first-child')).not.toBeFocused();
+});
+
+test('header native disclosure preserves navigation without JavaScript',async({browser,baseURL})=>{
+ const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();
+ for(const width of [360,1470]){
+  await page.setViewportSize({width,height:900});await page.goto(baseURL!+'/');
+  await expect(page.locator('.header-play')).toBeVisible();await expect(page.locator('.site-header .nav')).toBeHidden();
+  const summary=page.locator('.header-menu>summary');await expect(summary).toBeVisible();
+  await summary.focus();await page.keyboard.press('Enter');await expect(page.locator('.site-header .nav a').first()).toBeVisible();await expect(summary).toBeFocused();
+  const header=await page.locator('.site-header').boundingBox(),logo=await page.locator('.hero-logo').boundingBox();
+  expect(logo!.y).toBeGreaterThanOrEqual(header!.y+header!.height);
+  await page.keyboard.press('Enter');await expect(page.locator('.site-header .nav')).toBeHidden();await expect(summary).toBeFocused();
+ }
+ await context.close();
+});
+
+test('localized header keeps its action and language choices reachable at narrow and wide sizes',async({page})=>{
+ for(const locale of ['de','ar'])for(const width of [320,1470]){
+  await page.setViewportSize({width,height:900});await page.goto(`/${locale}/`);
+  const boxes=await page.locator('.site-header').evaluate(header=>['.brand','.header-play'].map(selector=>{const r=header.querySelector(selector)!.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom};}));
+  expect(boxes[0].right<=boxes[1].left||boxes[1].right<=boxes[0].left).toBe(true);
+  expect(Math.abs(boxes[0].top-boxes[1].top)).toBeLessThan(8);
+  if(width<760)await page.locator('.header-menu>summary').click();
+  await page.locator('.language-picker>summary').click();
+  const panel=await page.locator('.language-options').boundingBox();
+  expect(panel!.x).toBeGreaterThanOrEqual(0);expect(panel!.x+panel!.width).toBeLessThanOrEqual(width);
+  expect(await page.locator('.site-header').evaluate(header=>[...header.querySelectorAll('a,button,summary')].filter(el=>el.getClientRects().length&&!el.closest('.language-options')).every(el=>el.getBoundingClientRect().height>=44))).toBe(true);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ }
+});
+
+test('the two-row home masthead stays above the hero instead of covering its logo',async({page})=>{
+ for(const width of [740,760,1024,1280]){
+  await page.setViewportSize({width,height:900});await page.goto('/');
+  if(width<760)await page.locator('.header-menu>summary').click();
+  const header=await page.locator('.site-header').boundingBox(),logo=await page.locator('.hero-logo').boundingBox();
+  expect(logo!.y).toBeGreaterThanOrEqual(header!.y+header!.height);
+  await expect(page.locator('.hero-logo')).toBeVisible();
  }
 });

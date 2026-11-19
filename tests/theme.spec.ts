@@ -8,6 +8,7 @@ for (const preference of ['light', 'dark']) {
     await expect(page.locator('html')).toHaveAttribute('data-theme', preference);
     const background = await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim());
     await page.setViewportSize({ width: 360, height: 800 });
+    await page.locator('.header-menu > summary').click();
     await expect(page.locator('.theme-toggle svg')).toBeVisible();
     const scrim = await page.locator('.hero-colony').evaluate(el => getComputedStyle(el, '::after').backgroundImage);
     // Engines serialize computed gradients differently (rgb vs color(srgb)).
@@ -19,6 +20,7 @@ for (const preference of ['light', 'dark']) {
     await expect(page.locator('html')).toHaveAttribute('data-theme', preference);
     await expect(page.locator('.colony-motion')).toBeHidden();
     await page.goto('/game/');
+    await page.locator('.header-menu > summary').click();
     expect(await page.locator('html').evaluate(el => getComputedStyle(el).getPropertyValue('--bg').trim())).toBe(background);
     await expect(page.locator('.theme-toggle svg')).toBeVisible();
   });
