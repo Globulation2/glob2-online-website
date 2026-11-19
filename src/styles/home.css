@@ -6,30 +6,41 @@ body:has(.home) .site-header:has(.header-menu:not([data-enhanced])) { position:r
 body:has(.header-menu:not([data-enhanced])) .home .hero-copy { padding-top:var(--sp-6); }
 body:has(.home) .site-footer { margin-top: 0; }
 
-.home { --hero-ink: #fbf3d8; --scrim-rgb: 9, 28, 13; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .home { --scrim-rgb: 20, 10, 34; } }
-:root[data-theme='dark'] .home { --scrim-rgb: 20, 10, 34; }
+.home { --hero-ink: #fbf3d8; --sea-rgb: 30, 24, 112; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .home { --sea-rgb: 22, 14, 74; } }
+:root[data-theme='dark'] .home { --sea-rgb: 22, 14, 74; }
 .home > section, .home > ul { margin-left: auto; margin-right: auto; }
 
-/* ---- hero */
+/* ---- hero
+   The colony's own sea and beach stay bright on the left; the copy sits on a
+   sea-glass panel over the colony's eastern fields. The panel stays on the right
+   in RTL too, because the recorded scene does not mirror. */
 .home > .hero {
   position: relative; isolation: isolate; max-width: none; margin: 0; padding: 0;
   min-height: min(86vh, 760px); display: flex; align-items: center;
-  color: var(--hero-ink); background: var(--grass-deep);
+  color: var(--hero-ink); background: rgb(var(--sea-rgb));
 }
-.home .hero-colony { inset: 0; border-radius: 0; background-position: 68% 55%; }
+.home .hero-colony { inset: 0; border-radius: 0; background-position: 0% 0%; }
+.home .hero-colony > video { object-position: 0% 0%; }
 .home .hero-colony::after {
-  background:
-    linear-gradient(90deg, rgba(var(--scrim-rgb), 0.94) 0%, rgba(var(--scrim-rgb), 0.86) 40%, rgba(var(--scrim-rgb), 0.42) 62%, rgba(var(--scrim-rgb), 0) 85%),
-    linear-gradient(180deg, rgba(var(--scrim-rgb), 0.55) 0%, rgba(var(--scrim-rgb), 0) 22%, rgba(var(--scrim-rgb), 0) 78%, rgba(var(--scrim-rgb), 0.45) 100%);
+  background: linear-gradient(270deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
 }
-.home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: 128px var(--gutter) 112px; }
-.home .hero-copy > * { max-width: 36rem; }
+.home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: 112px var(--gutter) 104px; }
+.home .hero-panel {
+  width: min(100%, 31rem); margin-left: auto; padding: var(--sp-6) var(--sp-6) var(--sp-5);
+  background: linear-gradient(165deg, rgba(var(--sea-rgb), 0.8), rgba(var(--sea-rgb), 0.9));
+  border: 1px solid rgba(255, 248, 225, 0.22); border-radius: var(--r-lg);
+  box-shadow: 0 28px 60px -24px rgba(6, 4, 36, 0.7), inset 0 1px 0 rgba(255, 248, 225, 0.12);
+  backdrop-filter: blur(6px);
+}
+/* The site's light-theme focus brown disappears on the sea panel. */
+.home .hero :focus-visible { outline-color: #ffd678; }
+.home .hero-panel > :last-child { margin-bottom: 0; }
 .home .hero .eyebrow { color: var(--accent); letter-spacing: 0.16em; }
-.home .hero h1 { color: #fff8e1; font-size: clamp(2.6rem, 1.5rem + 3.6vw, 4.4rem); line-height: 1.04; max-width: 14ch; text-shadow: 0 2px 24px rgba(5, 18, 8, 0.5); }
+.home .hero h1 { color: #fff8e1; font-size: clamp(2.3rem, 1.5rem + 2vw, 3.3rem); line-height: 1.04; text-shadow: 0 2px 18px rgba(6, 4, 36, 0.45); }
 .home .hero h1 { margin-bottom: var(--sp-4); }
-.home .hero-description { color: var(--hero-ink); font-size: clamp(1.1rem, 1rem + 0.35vw, 1.3rem); }
-.home .hero-note { color: rgba(251, 243, 216, 0.82); font-size: var(--text-sm); font-weight: 650; }
+.home .hero-description { color: var(--hero-ink); font-size: clamp(1.05rem, 1rem + 0.25vw, 1.2rem); }
+.home .hero-note { color: rgba(251, 243, 216, 0.86); font-size: var(--text-sm); font-weight: 650; }
 .home .btn.ghost { background: rgba(255, 248, 225, 0.1); color: #fff8e1; border: 1px solid rgba(255, 248, 225, 0.55); backdrop-filter: blur(6px); box-shadow: none; }
 .home .btn.ghost:hover { background: rgba(255, 248, 225, 0.2); }
 .home .btn.primary.big { box-shadow: 0 10px 30px -8px rgba(227, 192, 119, 0.65), 0 1px 0 var(--accent-edge); }
@@ -38,11 +49,12 @@ body:has(.home) .site-footer { margin-top: 0; }
   content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 24px; z-index: 1;
   background: radial-gradient(circle at 18px 0, transparent 17px, var(--bg) 18px) 0 0 / 36px 24px repeat-x;
 }
-.home .colony-motion { right: var(--gutter); bottom: 40px; background: rgba(var(--scrim-rgb), 0.6); color: var(--hero-ink); border-color: rgba(255, 248, 225, 0.4); }
+/* Align with the panel's right edge, which follows the content column. */
+.home .colony-motion { right: calc(max(0px, (100% - var(--content)) / 2 - var(--gutter)) + var(--gutter)); bottom: 40px; background: rgba(var(--sea-rgb), 0.72); color: var(--hero-ink); border-color: rgba(255, 248, 225, 0.4); }
 
 /* Hero logo: the game's wordmark at title scale. */
 .home .hero-logo { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--sp-1) var(--sp-3); margin: 0 0 var(--sp-4); }
-.home .hero-logo .wordmark { height: clamp(48px, 4vw + 28px, 92px); --wm-ink: #fff8e1; --wm-two: var(--accent); filter: drop-shadow(0 3px 18px rgba(5, 18, 8, 0.55)); }
+.home .hero-logo .wordmark { width: 100%; max-width: 26rem; height: auto; --wm-ink: #fff8e1; --wm-two: var(--accent); filter: drop-shadow(0 3px 18px rgba(5, 18, 8, 0.55)); }
 .home .hero-online { font-weight: 800; font-size: var(--text-sm); letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); padding-bottom: 0.4em; }
 
 /* ---- at a glance */
@@ -98,20 +110,32 @@ body:has(.home) .site-footer { margin-top: 0; }
 @media (max-width: 980px) {
   .home .shots { grid-template-columns: 1fr; }
   .home .game-window.lead-shot { grid-row: auto; }
-  .home .hero-colony::after { background: linear-gradient(180deg, rgba(var(--scrim-rgb), 0.55), rgba(var(--scrim-rgb), 0.82) 70%); }
+  /* Narrow screens: the beach plays as a band above the copy. */
+  .home > .hero { display: block; min-height: 0; }
+  .home .hero-colony { position: relative; inset: auto; z-index: 0; aspect-ratio: 4 / 3; max-height: 62vh; width: 100%; }
+  .home .hero-colony::after { background: linear-gradient(180deg, rgba(var(--sea-rgb), 0) 70%, rgb(var(--sea-rgb)) 100%); }
+  .home .hero-copy { position: relative; padding-bottom: 72px; }
+  /* The copy's top padding is sp-6 here in every header state; overlap the band by 56px. */
+  .home .hero-panel { width: 100%; max-width: 40rem; margin: calc(-56px - var(--sp-6)) auto 0; backdrop-filter: none; background: rgba(var(--sea-rgb), 0.94); }
+  .home .colony-motion { top: 12px; bottom: auto; }
   .home .decisions { grid-template-columns: 1fr; gap: var(--sp-7); }
   .home .decisions li { padding-top: var(--sp-5); }
   .home .decisions img { margin-top: -52px; }
   .home > .paths { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 480px) { .home .hero-logo .wordmark { height: 38px; } }
+@media (max-width: 480px) { .home .hero-logo .wordmark { max-width: 16rem; } }
 @media (max-width: 1399px) {
   body:has(.home) .site-header { position: relative; background: var(--grass-deep); padding-bottom: var(--sp-3); }
   .home .hero-copy { padding-top: var(--sp-6); }
+  .home .hero-panel { padding-top: var(--sp-5); }
+  .home .hero-logo { margin-bottom: var(--sp-3); }
 }
 @media (max-width: 700px) {
   .home > .hero { min-height: 0; }
   .home .hero-copy { padding: var(--sp-6) var(--gutter) 72px; }
+  .home .hero-panel { padding: var(--sp-5) var(--sp-4) var(--sp-4); }
+  /* A shorter band keeps the panel's actions on a phone's first screen. */
+  .home .hero-colony { aspect-ratio: 16 / 9; }
   .home > .paths { grid-template-columns: 1fr; }
   .home .game-window a, .home .game-window.lead-shot a { border-width: 4px; border-radius: var(--r-md); }
 }
