@@ -7,6 +7,7 @@ export const handbookGroups = [
   {id:'match',title:'Understand the match',description:'Prepare your game and keep your progress.'},
   {id:'improve',title:'Improve your play',description:'Recognize trouble and make better decisions.'},
   {id:'ai',title:'Face the AIs',description:'Understand the opponents you can practice against.'},
+  {id:'automate',title:'Automate and extend',description:'Command with Hive Mind, write JavaScript AIs, and connect AI agents through MCP.'},
   {id:'reference',title:'Quick reference',description:'Look up buildings, units, resources, and controls.'},
 ] as const;
 export type HandbookGroup = typeof handbookGroups[number]['id'];
