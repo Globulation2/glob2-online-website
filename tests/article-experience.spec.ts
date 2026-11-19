@@ -6,6 +6,7 @@ const firstColony = '/learn/getting-started/';
 const viewer = (page: import('@playwright/test').Page) => page.getByRole('dialog', { name: 'Article media viewer' });
 
 for (const scheme of ['light', 'dark'] as const) test(`article navigation and content reflow (${scheme})`, async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('glob2-theme-v2', 'system'));
   await page.emulateMedia({ colorScheme: scheme, reducedMotion: 'reduce' });
   for (const width of [360, 768, 1024, 1440, 1920]) {
     await page.setViewportSize({ width, height: 900 });

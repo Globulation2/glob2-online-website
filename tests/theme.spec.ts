@@ -26,11 +26,11 @@ for (const preference of ['light', 'dark']) {
   });
 }
 
-test('theme control cycles system, light, dark with keyboard and refreshes local preference on return', async ({ page }) => {
+test('theme control starts light and cycles dark, system, light with keyboard and refreshes local preference on return', async ({ page }) => {
   await page.goto('/');
   const toggle = page.locator('.theme-toggle');
   await toggle.focus();
-  for (const value of ['light', 'dark', 'system']) {
+  for (const value of ['dark', 'system', 'light']) {
     await page.keyboard.press('Enter');
     expect(await page.evaluate(() => localStorage.getItem('glob2-theme-v2'))).toBe(value);
   }

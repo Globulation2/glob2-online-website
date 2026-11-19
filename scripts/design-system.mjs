@@ -62,9 +62,9 @@ export function stageDesignAssets(publicDir, metadata, brand = true) {
  if (brand) for(const file of files) copyFileSync(join(install,'assets',file),join(publicDir,'brand',file));
  // Versioned aliases prevent returning clients reusing an earlier release scene.
  const releaseScene = [
-  ['colony-loop.mp4','colony-loop-v0.11.6.1-hd.mp4','1e0ab7025d8cc6cfd88f643c461c84e6253c6abe1ada0f7647e89303def33650'],
-  ['colony-1600.webp','colony-1600-v0.11.6.1-hd.webp','3c9a8de8a13d961ab3c93f5ab97647ef3afb53491fd4089980e0eddebd29187f'],
-  ['colony-960.webp','colony-960-v0.11.6.1-hd.webp','ed731e001a9c5c4fb5118699a57b649250434fa68cc5bcca55667e7bcb80a92a'],
+  ['colony-loop.mp4','colony-loop-2026-11-19.mp4','36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d'],
+  ['colony-1600.webp','colony-1600-2026-11-19.webp','7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb'],
+  ['colony-960.webp','colony-960-2026-11-19.webp','eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0'],
  ];
  if(brand) for(const [source,target,expectedHash] of releaseScene) {
   const file=join(install,'assets',source);

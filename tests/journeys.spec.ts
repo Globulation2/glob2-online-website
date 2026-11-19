@@ -2,6 +2,8 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 const routes=['/','/game/','/learn/','/community/','/competition/','/news/','/downloads/','/history/','/archive/','/search/','/privacy/','/terms/'];
 for(const scheme of ['light','dark'] as const) for(const route of routes) test(`usable and accessible ${route} (${scheme})`,async({page},testInfo)=>{
+ // The site starts light; an explicit System choice lets the device scheme drive both themes.
+ await page.addInitScript(()=>localStorage.setItem('glob2-theme-v2','system'));
  await page.emulateMedia({colorScheme:scheme});
  await page.goto(route);
  if(route==='/search/') await expect(page.locator('#site-search')).toBeVisible();
@@ -81,7 +83,13 @@ for(const scenario of ['fresh','stale','empty','invalid','unavailable','unsafe']
  else if(scenario==='empty')await expect(page.locator('.ranking-status')).toContainText('No public player');
  else {await expect(page.locator('.ranking-table')).toBeVisible();await expect(page.locator('tbody')).toContainText(scenario==='unsafe'?'<img src=x onerror=alert(1)>':'Player');expect(await page.locator('tbody img').count()).toBe(0);if(scenario==='stale')await expect(page.locator('.ranking-status')).toContainText('15 minutes');}
 });
-test('dark mode follows the system and keeps the game look',async({page})=>{
+test('without a saved choice the site starts light on a dark device',async({page})=>{
+ await page.emulateMedia({colorScheme:'dark'});await page.goto('/');
+ await expect(page.locator('html')).toHaveAttribute('data-theme','light');
+ expect(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor)).toBe('rgb(241, 241, 225)');
+});
+test('the System choice follows the device and keeps the game look',async({page})=>{
+ await page.addInitScript(()=>localStorage.setItem('glob2-theme-v2','system'));
  await page.emulateMedia({colorScheme:'dark'});await page.goto('/');
  const bg=await page.evaluate(()=>getComputedStyle(document.body).backgroundColor);
  expect(bg).toBe('rgb(27, 18, 41)');

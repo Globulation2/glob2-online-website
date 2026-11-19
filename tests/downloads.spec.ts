@@ -4,6 +4,7 @@ import experimentalRelease from '../src/data/experimental-release.json' with {ty
 import AxeBuilder from '@axe-core/playwright';
 for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 768, 1440]) {
   test(`download choices reflow and remain accessible ${colorScheme} ${width}`, async ({page}) => {
+    await page.addInitScript(() => localStorage.setItem('glob2-theme-v2', 'system'));
     await page.emulateMedia({colorScheme}); await page.setViewportSize({width, height: 900});
     const requests: string[] = []; page.on('request', request => requests.push(request.url()));
     await page.goto('/downloads/');

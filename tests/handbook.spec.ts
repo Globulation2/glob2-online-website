@@ -57,6 +57,7 @@ test('media failures preserve captions and article instructions', async ({ page 
   await expect(page.locator('nav[aria-label="On this page"]:visible')).toBeVisible();
 });
 test('handbook reflows on mobile, at text zoom, and without JavaScript', async ({ browser, page }) => {
+  await page.addInitScript(() => localStorage.setItem('glob2-theme-v2', 'system'));
   for (const scheme of ['light', 'dark'] as const) {
     await page.emulateMedia({ colorScheme: scheme, reducedMotion: 'reduce' });
     await page.setViewportSize({ width: 360, height: 800 });

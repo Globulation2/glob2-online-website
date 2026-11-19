@@ -24,7 +24,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   height: 300px;
   overflow: hidden;
   z-index: 0;
-  background: var(--grass) url('/brand/colony-960-v0.11.6.1-hd.webp') 50% 62% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-960-2026-11-19.webp') 50% 62% / cover no-repeat;
 }
 .world-band::after {
   content: '';
@@ -253,7 +253,7 @@ td:nth-child(2) { overflow-wrap: anywhere; }
   overflow: hidden;
   border-radius: var(--r-lg);
   box-shadow: none;
-  background: var(--grass) url('/brand/colony-1600-v0.11.6.1-hd.webp') 70% 60% / cover no-repeat;
+  background: var(--grass) url('/brand/colony-1600-2026-11-19.webp') 70% 60% / cover no-repeat;
 }
 .hero-colony::after {
   content: '';
@@ -344,7 +344,6 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 .hero-colony > video.playing { opacity: 1; }
 .hero-colony > video.still { opacity: 0; }
 .colony-motion { position: absolute; right: calc(var(--gutter) + 12px); bottom: 12px; z-index: 2; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-size: var(--text-sm); padding: 8px 12px; min-height: 44px; cursor: pointer; }
-@media (max-width: 700px) { .hero-colony > video { object-position: 75% 60%; } }
 @media (prefers-reduced-motion: reduce) { .hero-colony > video, .colony-motion { display: none; } }
 
 /* Static handbook navigation and media preserve the Colony palette. */
@@ -387,8 +386,8 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 
 .nav a { white-space: normal; text-align: center; }
 :root:not([lang='en']) body:has(.home) .site-header { position: relative; background: var(--grass-deep); }
-:root:not([lang='en']) .home .hero-copy { padding-top: var(--sp-7); }
-:root[dir='rtl'] .home .hero-colony::after { transform: scaleX(-1); }
+/* Below 981px the copy follows the video band, not the header. */
+@media (min-width: 981px) { :root:not([lang='en']) .home .hero-copy { padding-top: var(--sp-7); } }
 :root[dir='rtl'] .hero-colony > video, :root[dir='rtl'] .hero-colony { direction: ltr; }
 .home h1, .home h2, .path, .site-footer a { overflow-wrap: anywhere; }
 
