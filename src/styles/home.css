@@ -18,9 +18,8 @@ body:has(.home) .site-footer { margin-top: 0; }
 .home > section, .home > ul { margin-left: auto; margin-right: auto; }
 
 /* ---- hero
-   The colony's own sea and beach stay bright on the left; the copy sits on a
-   sea-glass panel over the colony's eastern fields. The panel stays on the right
-   in RTL too, because the recorded scene does not mirror. */
+   The copy sits on a sea-glass panel at the start of the line (left, or right in
+   RTL); the colony video plays bright around it. The recorded scene never mirrors. */
 .home > .hero {
   position: relative; isolation: isolate; max-width: none; margin: 0; padding: 0;
   min-height: min(86vh, 760px); display: flex; align-items: center; padding-top: var(--home-header-h);
@@ -28,12 +27,13 @@ body:has(.home) .site-footer { margin-top: 0; }
 }
 .home .hero-colony { inset: 0; border-radius: 0; background-position: 0% 0%; }
 .home .hero-colony > video { object-position: 0% 0%; }
+:root[dir='rtl'] .home .hero-colony::after { transform: scaleX(-1); }
 .home .hero-colony::after {
-  background: linear-gradient(270deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
+  background: linear-gradient(90deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
 }
 .home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: var(--sp-5) var(--gutter) 104px; }
 .home .hero-panel {
-  width: min(100%, 31rem); margin-left: auto; padding: var(--sp-6) var(--sp-6) var(--sp-5);
+  width: min(100%, 31rem); margin-inline-end: auto; padding: var(--sp-6) var(--sp-6) var(--sp-5);
   background: linear-gradient(165deg, rgba(var(--sea-rgb), 0.8), rgba(var(--sea-rgb), 0.9));
   border: 1px solid rgba(255, 248, 225, 0.22); border-radius: var(--r-lg);
   box-shadow: 0 28px 60px -24px rgba(6, 4, 36, 0.7), inset 0 1px 0 rgba(255, 248, 225, 0.12);
@@ -55,7 +55,7 @@ body:has(.home) .site-footer { margin-top: 0; }
   content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 24px; z-index: 1;
   background: radial-gradient(circle at 18px 0, transparent 17px, var(--bg) 18px) 0 0 / 36px 24px repeat-x;
 }
-/* Align with the panel's right edge, which follows the content column. */
+/* Keep the pause control on the content column's far edge, clear of the panel. */
 .home .colony-motion { right: calc(max(0px, (100% - var(--content)) / 2 - var(--gutter)) + var(--gutter)); bottom: 40px; background: rgba(var(--sea-rgb), 0.72); color: var(--hero-ink); border-color: rgba(255, 248, 225, 0.4); }
 
 /* Hero logo: the game's wordmark at title scale. */
