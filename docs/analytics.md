@@ -62,6 +62,9 @@ Data starts at deployment and consent; this cannot reconstruct prior traffic.
 
 ## Campaigns and reports
 
+Open the [Glob2 Analytics dashboard](https://analytics.google.com/analytics/web/#/a296778483p565351683/reports/intelligenthome)
+with an account that has access to the property.
+
 For a LinkedIn post, use e.g.
 `https://glob2.online/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=launch_v1&utm_content=colony_post`.
 For a paid promotion use `utm_medium=paid_social` and a distinct `utm_content`.
