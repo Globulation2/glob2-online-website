@@ -7,6 +7,7 @@ import '@glob2/design-system/css/brand.css';
 import '../styles/site.css';
 import {site} from '../data/site';
 import {getGameLabel} from '../data/storefronts';
+import Analytics from '../components/Analytics.astro';
 import {locales, localizedPath, marketingPage, translate, englishLabel, type Locale} from '../i18n';
 interface Props {title:string; description?:string; category?:string; noindex?:boolean; locale?:Locale}
 const {title,description:providedDescription,category,noindex=false,locale='en'}=Astro.props;
@@ -117,6 +118,7 @@ headerWide.addEventListener('change',()=>{
         <li><a href="/archive/">{english(t('footer.archive'))}</a></li>
         <li><a href="/privacy/">{english(t('footer.privacy'))}</a></li>
         <li><a href="/terms/">{english(t('footer.terms'))}</a></li>
+        <li><button type="button" id="analytics-settings" class="analytics-settings" lang="en">{english('Analytics settings')}</button></li>
       </ul>
     </nav>
     <nav aria-label={t('footer.playOnline')}>
@@ -141,6 +143,7 @@ headerWide.addEventListener('change',()=>{
     <p class="footer-note">{t('footer.note')}</p>
   </div>
 </footer>
+<Analytics/>
 <script>
 import { mountThemeToggle } from '@glob2/design-system';
 const button=document.querySelector<HTMLButtonElement>('#theme-toggle')!;
