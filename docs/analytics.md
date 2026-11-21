@@ -26,6 +26,12 @@ or expired choices require a new choice. With storage blocked, choices last only
 for the current page. Analytics only starts on the canonical production hostname;
 localhost, Firebase previews and `/design/` references never load the tag.
 
+Consent text and settings are currently English, matching the English-only legal
+policy. The panel declares English and left-to-right direction, including on RTL
+pages; localized footer links explicitly mark English. The existing 194-field
+reviewed marketing catalogs remain intact. Reviewed consent translations are
+future work; this does not claim fully localized analytics controls.
+
 Analytics cookies are host-only and have a 90-day lifetime. The tag sets
 `cookie_update: false` for the browser identifier. The tag denies advertising storage, advertising user data and advertising
 personalization; Google signals and ad-personalization signals are also disabled.
