@@ -64,7 +64,7 @@ The four main marketing pages have static localized routes matching the game lan
 
 ## Integrations and operations
 
-See [hosting and rollback](docs/hosting.md), [content maintenance](docs/content.md), and [player-rating snapshot contract](scripts/RANKINGS.md). Public pages use no account cookies or analytics, and do not initiate gameplay. The rankings widget requests a sanitized public snapshot; it never queries account persistence or uses authenticated APIs.
+See [hosting and rollback](docs/hosting.md), [content maintenance](docs/content.md), [optional website analytics](docs/analytics.md), and [player-rating snapshot contract](scripts/RANKINGS.md). Public pages use no account cookies and do not initiate gameplay. Optional GA4 website analytics starts only after consent. The rankings widget requests a sanitized public snapshot; it never queries account persistence or uses authenticated APIs.
 
 Code is GPL-3.0-or-later. Game media attribution is listed on `/credits/`; legacy source links retain their original authorship and do not imply transfer of rights.
 

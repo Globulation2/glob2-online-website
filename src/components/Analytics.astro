@@ -1,0 +1,22 @@
+---
+import { measurementId } from '../data/analytics';
+---
+<aside class="analytics-choice" id="analytics-choice" aria-labelledby="analytics-heading" data-pagefind-ignore hidden lang="en" dir="ltr">
+  <h2 id="analytics-heading">Help us understand website visits</h2>
+  <p>Optional analytics counts visits and clicks on play, download and store links. Google Analytics uses cookies only if you allow it. <a href="/privacy/#public-website-browsing">Privacy details</a></p>
+  <p id="analytics-status" role="status"></p>
+  <div class="analytics-actions">
+    <button type="button" class="btn" id="analytics-reject">Reject analytics</button>
+    <button type="button" class="btn" id="analytics-allow">Allow analytics</button>
+  </div>
+</aside>
+<script is:inline src="/analytics.js" data-measurement-id={measurementId} defer></script>
+<style>
+  .analytics-choice {position:fixed;z-index:50;inset:auto var(--sp-4) var(--sp-4) auto;max-width:36rem;max-height:calc(100dvh - 2 * var(--sp-4));overflow:auto;padding:var(--sp-5);border:2px solid var(--line);border-radius:var(--r-md);background:var(--bg);color:var(--ink);box-shadow:0 5px 24px #0003;}
+  .analytics-choice[hidden] {display:none;}
+  .analytics-choice h2 {font-size:1.15rem;margin:0 0 var(--sp-2);}
+  .analytics-choice p {font-size:var(--text-sm);margin:var(--sp-2) 0;}
+  .analytics-actions {display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);}
+  .analytics-actions .btn {flex:1;white-space:normal;}
+  @media(max-width:600px) {.analytics-choice {inset-inline:var(--sp-3);bottom:var(--sp-3);padding:var(--sp-4);}}
+</style>

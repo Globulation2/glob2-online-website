@@ -390,3 +390,5 @@ td:nth-child(2) { overflow-wrap: anywhere; }
 
 :root[dir='rtl'] .home .hero-online, :root[dir='rtl'] .brand-online, :root[dir='rtl'] .home .facts li, :root[dir='rtl'] h1, :root[dir='rtl'] h2, :root[dir='rtl'] h3, :root[dir='rtl'] .eyebrow { letter-spacing: normal; }
 code[dir='ltr'], pre[dir='ltr'] { direction: ltr; unicode-bidi: isolate; text-align: left; }
+/* Footer analytics settings has the same affordance as nearby text links. */
+.analytics-settings {border:0;background:transparent;color:inherit;padding:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font:inherit;min-height:44px;text-align:start;}

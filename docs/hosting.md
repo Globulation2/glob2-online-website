@@ -90,4 +90,4 @@ external `/theme.js` bootstrap remains compatible with the existing same-origin 
 The functional preference cookie on HTTPS production uses Domain=glob2.online (or
 Domain=glob2online.com on the former hostname during transition),
 Path=/, SameSite=Lax, Secure and a one-year lifetime; it is shared with the online app.
-No account or analytics integration is added. The privacy page documents the preference.
+The privacy page documents the preference. The separate [optional website analytics](analytics.md) integration is gated on consent and limited to the canonical website host. The CSP permits its Google tag and collection endpoints; permission in CSP alone does not load or activate analytics.
