@@ -170,7 +170,7 @@ for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a 
 test('header keyboard order follows the visible brand, action, navigation and settings',async({page,browserName})=>{
  await page.setViewportSize({width:1470,height:900});await page.goto('/search/');
  const forward=browserName==='webkit'&&process.platform==='darwin'?'Alt+Tab':'Tab';
- const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-signin'];
+ const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-github','.header-signin'];
  for(const selector of order){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
  await page.setViewportSize({width:360,height:900});await page.goto('/search/');
  for(const selector of ['.skip-link','.site-header .brand','.header-play','.header-menu>summary']){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
