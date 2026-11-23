@@ -110,3 +110,5 @@ Direct release files and installation instructions remain in a keyboard-accessib
 Existing reviewed locale catalogs and their independent review fingerprints are unchanged. English uses “Get the game”; other locales retain their reviewed Download label. New store explanatory prose uses the established explicit English marker until independently reviewed translations exist.
 
 The Discord invitation was replaced with the intended Globulation2 server's permanent `https://discord.gg/rQn3Br6AFA` invitation after native invite creation and unauthenticated Discord API verification on 18 November 2026. The previous invitation returned unknown/expired. The shared header deliberately keeps brand/utilities above navigation, with a separate utility row on narrow screens. Verify light/dark themes, long translations, keyboard focus and intermediate widths when editing it.
+
+The shared header links to the official YouTube channel beside GitHub. The Community page carries a labeled link to the same channel. Keep the destination in `src/data/site.ts`.

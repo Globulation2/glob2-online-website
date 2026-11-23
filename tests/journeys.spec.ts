@@ -135,11 +135,14 @@ test('new player can understand the game and reach a practical first session',as
  await expect(page.getByRole('link',{name:'Check releases',exact:false})).toHaveAttribute('href','https://github.com/Globulation2/glob2/releases');
 });
 
-test('community invitations use the verified permanent server invite',async({page})=>{
+test('community links point to the official Discord and YouTube',async({page})=>{
  await page.goto('/community/');
  const invites=page.locator('a[href^="https://discord.gg/"]');
  expect(await invites.count()).toBeGreaterThan(0);
  for(const invite of await invites.all()) await expect(invite).toHaveAttribute('href','https://discord.gg/rQn3Br6AFA');
+ const youtube='https://www.youtube.com/@Globulation2Online';
+ await expect(page.getByRole('main').getByRole('link',{name:'YouTube · Globulation 2 Online'})).toHaveAttribute('href',youtube);
+ await expect(page.locator('.header-github + .header-youtube')).toHaveAttribute('href',youtube);
 });
 for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a masthead surface and keeps its mobile entry compact at ${width}`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.goto('/search/');
@@ -170,7 +173,7 @@ for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a 
 test('header keyboard order follows the visible brand, action, navigation and settings',async({page,browserName})=>{
  await page.setViewportSize({width:1470,height:900});await page.goto('/search/');
  const forward=browserName==='webkit'&&process.platform==='darwin'?'Alt+Tab':'Tab';
- const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-github','.header-signin'];
+ const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-github','.header-youtube','.header-signin'];
  for(const selector of order){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
  await page.setViewportSize({width:360,height:900});await page.goto('/search/');
  for(const selector of ['.skip-link','.site-header .brand','.header-play','.header-menu>summary']){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
