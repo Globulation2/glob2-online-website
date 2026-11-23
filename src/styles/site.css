@@ -104,8 +104,8 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   white-space: nowrap;
 }
 .header-signin:hover { background: var(--surface-3); }
-/* Project repository mark, sized like the neighbouring theme toggle. */
-.header-github {
+/* Project links share the same target size as the theme toggle. */
+.header-github, .header-youtube {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ code { font-size: .92em; background: var(--surface-2); padding: 1px 6px; border-
   border-radius: var(--r-pill);
   color: var(--ink);
 }
-.header-github:hover { background: var(--surface-3); }
+.header-github:hover, .header-youtube:hover { background: var(--surface-3); }
 
 /* One masthead surface, with the same reading and focus order at every size. */
 .site-header .wrap { width:calc(100% - 24px); display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:8px 16px; padding:12px 16px; background:color-mix(in srgb,var(--surface) 96%,transparent); border:1px solid var(--line); border-radius:var(--r-lg); backdrop-filter:blur(8px); }
