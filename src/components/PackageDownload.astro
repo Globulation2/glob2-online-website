@@ -1,0 +1,70 @@
+---
+import { translate, type Locale } from '../i18n';
+import type { DownloadPackage } from '../data/downloads-schema';
+
+interface Props {
+  locale: Locale;
+  pkg: DownloadPackage;
+  version: string;
+  platformTitle: string;
+  primary?: boolean;
+  heading?: string;
+  description?: string;
+  action?: string;
+}
+
+const { locale, pkg, version, platformTitle, primary, heading, description, action } = Astro.props;
+const t = (key: Parameters<typeof translate>[1], params: Record<string, string | number> = {}) =>
+  translate(locale, key, params);
+const format = t(`format.${pkg.format.replace('.', '_')}` as Parameters<typeof translate>[1]);
+const architecture = pkg.platform === 'macos'
+  ? (pkg.architecture === 'arm64' ? 'Apple Silicon' : 'Intel')
+  : t(`architecture.${pkg.architecture}` as Parameters<typeof translate>[1]);
+const size = `${(pkg.sizeBytes / 1024 / 1024).toFixed(1)} MiB`;
+const requirements = t('downloads.requires', {os:'{os}'}).split('{os}');
+const dependencies = t('downloads.dependencies', {dependencies:'{dependencies}'}).split('{dependencies}');
+const setupSentence = t('downloads.flatpakSetupSentence', {setup:'{setup}'}).split('{setup}');
+---
+<h3 class:list={[heading && 'named-package']} lang={heading ? 'en' : undefined} dir={heading ? 'ltr' : undefined}>
+  {heading ?? `${format} · ${architecture}`}
+</h3>
+{description && <p class="package-description" lang="en" dir="ltr">{description}</p>}
+<p class="download-meta">
+  {heading ? <>{architecture} · <bdi dir="ltr">{size}</bdi></> : t('downloads.version', {version, size})}<br />
+  {requirements[0]}<bdi dir="ltr" lang="en">{pkg.minimumOs}</bdi>{requirements[1]}
+</p>
+<a class={primary ? 'btn primary' : 'text-link'} href={pkg.url} lang={action ? 'en' : undefined} dir={action ? 'ltr' : undefined}>
+  {action ?? t('downloads.package', {platform:platformTitle, format, architecture})} ↗
+</a>
+{pkg.dependencies?.length ? <p class="download-meta">{dependencies[0]}<bdi dir="ltr" lang="en">{pkg.dependencies.join(', ')}</bdi>{dependencies[1]}</p> : null}
+{pkg.format === 'flatpak' && <details class="download-help download-flatpak">
+  <summary>{t('downloads.flatpakTitle')}</summary>
+  <ol>
+    <li>{setupSentence.map((part, index) => <>{index > 0 && <a href="https://flatpak.org/setup/">{t('downloads.flatpakSetup')} ↗</a>}{part}</>)}</li>
+    <li>{t('downloads.flatpakTerminal')}
+      <pre><code dir="ltr">{`flatpak install --user ./${pkg.filename}\nflatpak run --user org.globulation2.Globulation2`}</code></pre>
+    </li>
+  </ol>
+  <p>{t('downloads.flatpakRuntime')}</p>
+  <p>{t('downloads.flatpakUpdate')}</p>
+</details>}
+<details class="download-checksum">
+  <summary aria-label={heading ? `SHA-256 · ${heading} · ${architecture}` : undefined}>SHA-256{!heading && ` · ${format} · ${architecture}`}</summary>
+  <code dir="ltr">{pkg.sha256}</code>
+</details>
+<style>
+  h3 {font-size:1.15rem;}
+  .named-package {margin:0;}
+  .package-description {margin:var(--sp-3) 0;}
+  :global([dir="rtl"]) .named-package,
+  :global([dir="rtl"]) .package-description {text-align:right;}
+  .download-meta {font-size:var(--text-sm);color:var(--ink-2);margin:var(--sp-3) 0;}
+  details {margin-top:var(--sp-3);}
+  summary {cursor:pointer;min-height:var(--target);padding:var(--sp-2) 0;text-decoration:underline;text-underline-offset:3px;}
+  .download-checksum code {display:block;overflow-wrap:anywhere;margin:var(--sp-2) 0;}
+  .download-flatpak ol {padding-inline-start:var(--sp-5);}
+  .download-flatpak li + li {margin-top:var(--sp-3);}
+  .download-flatpak p {margin:var(--sp-3) 0 0;}
+  .download-flatpak pre {white-space:pre-wrap;overflow-wrap:anywhere;margin:var(--sp-3) 0;}
+  .btn {white-space:normal;text-align:center;}
+</style>

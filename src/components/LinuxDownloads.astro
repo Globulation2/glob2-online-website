@@ -1,0 +1,88 @@
+---
+import { englishLabel, translate, type Locale } from '../i18n';
+import type { DownloadPackage } from '../data/downloads-schema';
+import PackageDownload from './PackageDownload.astro';
+
+interface Props {
+  locale: Locale;
+  packages: DownloadPackage[];
+  version: string;
+  releaseNotesUrl: string;
+  installationHelp: string;
+}
+const { locale, packages, version, releaseNotesUrl, installationHelp } = Astro.props;
+const english = (label: string) => englishLabel(locale, label);
+const packagingIssue = 'https://github.com/Globulation2/glob2/issues/1311';
+const presentation: Record<string, {heading: string; description: string; action: string}> = {
+  flatpak: {heading: 'Flatpak', description: 'Start here if your distribution supports Flatpak.', action: 'Download Flatpak'},
+  snap: {heading: 'Snap file', description: 'Install manually with snapd.', action: 'Download Snap'},
+  rpm: {heading: 'Fedora® RPM', description: 'Install with the Fedora Linux package manager.', action: 'Download Fedora RPM'},
+  'tar.gz': {heading: 'Portable Linux archive', description: 'Extract the archive and follow its installation guide.', action: 'Download Linux archive'},
+};
+const distros = [
+  {name: 'Arch Linux', logo: 'arch.png', url: 'https://archlinux.org/'},
+  {name: 'Debian', logo: 'debian.svg', url: 'https://www.debian.org/'},
+  {name: 'Fedora Linux', logo: 'fedora.png', url: 'https://fedoraproject.org/'},
+  {name: 'Gentoo', logo: 'gentoo.svg', url: 'https://www.gentoo.org/'},
+  {name: 'openSUSE', logo: 'opensuse.svg', url: 'https://www.opensuse.org/'},
+  {name: 'Ubuntu', logo: 'ubuntu.png', url: 'https://ubuntu.com/'},
+];
+const codeLiterals = ['sudo snap install --dangerous ./PACKAGE.snap', 'INSTALL.txt'];
+const installationParts = installationHelp.split(/(sudo snap install --dangerous \.\/PACKAGE\.snap|INSTALL\.txt)/);
+---
+<section id="linux" class="linux-downloads section-space" aria-labelledby="linux-heading">
+  <h2 id="linux-heading">Linux</h2>
+  <p class="release-line">
+    {translate(locale, 'downloads.release', {version})}
+    <span aria-hidden="true">·</span>
+    <a href={releaseNotesUrl}>{translate(locale, 'downloads.releaseNotes')} ↗</a>
+  </p>
+  {packages.length > 0 ? <>
+    <ul class="linux-package-grid">
+      {packages.map(pkg => <li class="card linux-package">
+        <PackageDownload {locale} {pkg} {version} platformTitle="Linux" primary={pkg.format === 'flatpak'}
+          heading={presentation[pkg.format]?.heading}
+          description={presentation[pkg.format]?.description}
+          action={presentation[pkg.format]?.action} />
+      </li>)}
+    </ul>
+    <details class="download-help">
+      <summary>{translate(locale, 'downloads.install', {platform:'Linux'})}</summary>
+      <p>{installationParts.map(part => codeLiterals.includes(part) ? <code dir="ltr">{part}</code> : part)}</p>
+    </details>
+  </> : <p>{translate(locale, 'downloads.unavailable', {platform:'Linux'})}</p>}
+  <div class="repository-status" lang="en" dir="ltr">
+    <h3>Distribution repositories</h3>
+    <p>Work is underway to bring current releases to these distribution repositories.</p>
+    <ul class="distro-list">
+      {distros.map(({name, logo, url}) => <li><a href={url}>{logo && <img src={`/images/distros/${logo}`} width="24" height="24" alt="" />}{name}</a></li>)}
+    </ul>
+    <div class="repository-links">
+      <a class="text-link" href={packagingIssue}>{english('Track distribution packaging')} ↗</a>
+      <a href="/licenses/linux-distribution-logos.txt">Logo credits</a>
+    </div>
+    <footer class="distro-attribution">
+      <p>Globulation 2 is an independent project. Fedora and the Fedora logo are registered trademarks of Red Hat, Inc., or its subsidiaries in the United States and other countries.</p>
+    </footer>
+  </div>
+</section>
+<style>
+  .linux-downloads h2 {margin:0;}
+  .release-line {display:flex;flex-wrap:wrap;gap:var(--sp-2);color:var(--ink-2);margin:var(--sp-2) 0 var(--sp-5);}
+  .linux-package-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:var(--sp-4);margin:0;padding:0;list-style:none;}
+  .linux-package {min-width:0;overflow-wrap:anywhere;}
+  .download-help {margin-top:var(--sp-3);}
+  .download-help summary {cursor:pointer;min-height:var(--target);padding:var(--sp-2) 0;text-decoration:underline;text-underline-offset:3px;}
+  .download-help p {margin:var(--sp-2) 0 0;overflow-wrap:anywhere;}
+  .repository-status {margin-top:var(--sp-5);border-top:1px solid var(--line);padding-top:var(--sp-5);}
+  .repository-status h3 {margin:0;}
+  :global([dir="rtl"]) .repository-status {text-align:right;}
+  :global([dir="rtl"]) .distro-list {justify-content:flex-end;}
+  .repository-status p {margin:var(--sp-2) 0 var(--sp-3);color:var(--ink-2);}
+  .distro-list {list-style:none;margin:0 0 var(--sp-3);padding:0;display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);}
+  .distro-list a {display:flex;align-items:center;gap:var(--sp-2);min-height:var(--target);}
+  .distro-list img {object-fit:contain;flex:none;}
+  .repository-links {display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);align-items:center;}
+  .repository-links a:last-child, .distro-attribution {font-size:var(--text-sm);}
+  :global([dir="rtl"]) .repository-links {justify-content:flex-end;}
+</style>

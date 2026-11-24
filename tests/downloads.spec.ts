@@ -1,6 +1,7 @@
 import {test, expect} from '@playwright/test';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
 import experimentalRelease from '../src/data/experimental-release.json' with {type: 'json'};
+import downloadChannels from '../src/data/download-channels.json' with {type: 'json'};
 import AxeBuilder from '@axe-core/playwright';
 for (const colorScheme of ['light', 'dark'] as const) for (const width of [360, 768, 1440]) {
   test(`download choices reflow and remain accessible ${colorScheme} ${width}`, async ({page}) => {
@@ -43,6 +44,24 @@ test('store releases lead the journey while browser and packages remain alternat
   for (const url of ['https://apps.microsoft.com/detail/9PH4FCRMX19F','https://apps.apple.com/us/app/globulation-2/id6817603328','https://snapcraft.io/globulation2']) await expect(page.locator(`.storefront-section a[href="${url}"]`)).toBeVisible();
   await expect(page.locator('.direct-downloads')).not.toHaveAttribute('open','');
   await expect(page.locator('a[href*="play.google.com"],a[href*="store.epicgames.com"]')).toHaveCount(0);
+});
+
+test('Linux release files and distribution projects are distinct and visible', async ({page}) => {
+  await page.goto('/downloads/');
+  const linux = page.getByRole('region', {name:'Linux', exact:true});
+  await expect(linux).toBeVisible();
+  await expect(page.locator('.direct-downloads')).not.toHaveAttribute('open','');
+  const release = releaseMetadata.manifest ?? experimentalRelease;
+  const withdrawn = new Set<string>(downloadChannels.withdrawnPackages);
+  const files = release.packages.filter(pkg => pkg.platform === 'linux' && !withdrawn.has(pkg.filename));
+  for (const pkg of files) await expect(linux.locator(`a[href="${pkg.url}"]`)).toBeVisible();
+  await expect(linux.getByRole('link', {name:'Track distribution packaging ↗'})).toHaveAttribute('href', 'https://github.com/Globulation2/glob2/issues/1311');
+  const logos = linux.locator('.distro-list img');
+  await expect(logos).toHaveCount(6);
+  for (const logo of await logos.all()) {
+    await expect(logo).toHaveAttribute('alt', '');
+    expect(await logo.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+  }
 });
 
 test('Android closed-test recruitment links to the signup form from home and downloads', async ({page}) => {
