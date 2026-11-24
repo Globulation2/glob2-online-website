@@ -52,6 +52,14 @@ Production and preview credentials must remain separate if hosted PR previews ar
 
 The publisher uses the existing public modern platform leaderboard, avoiding new private APIs or account-store access. Its GitHub schedule is nominally five minutes but best effort; delayed jobs are visible through the snapshot timestamp and stale state. Failures preserve the prior object. The dedicated bucket permits anonymous object reads and production-origin GET CORS, while write permission belongs to the feed identity. PR browser tests use intercepted fixtures for ratings tests rather than expanding production CORS for every preview origin.
 
+## Twitch stream link
+
+The Check Twitch stream workflow samples the official channel hourly through Twitch Helix. It writes a public status object at `gs://glob2-website-public/twitch/v1.json` using a generation precondition. Six weeks after the first offline observation, a successful offline check retires the link. A live observation resets the countdown. API errors leave the previous state intact, and an observation gap longer than 24 hours starts a fresh countdown so missing checks cannot establish inactivity. Polling can miss broadcasts that begin and end between checks.
+
+The `website-twitch` environment is limited to main. Set `TWITCH_CLIENT_SECRET` as an environment secret, and `TWITCH_CLIENT_ID`, `TWITCH_WIF_PROVIDER`, and `TWITCH_SERVICE_ACCOUNT` as environment variables. Use a dedicated Twitch app and a dedicated workload identity provider restricted to the exact scheduled or manually dispatched workflow, hosted runners, the environment, and the sole maintainer. Its service account needs read and write access to the one status object only.
+
+On the live site, browsers request the public status object without cookies or a referrer and remove both links from an already-published page once the feed reports retirement. Static builds omit both links entirely after retirement, including for visitors without JavaScript. Builds stop on an invalid or unavailable status response. A 404 means monitoring has never initialized. The workflow leaves a retired status in place even if the channel goes live again. Restoring the links requires the maintainer to reset the status object and publish a new website build.
+
 ## Domain cutover
 
 The canonical website is `glob2.online`, with valid TLS on both the apex and `www`; the application host is `app.glob2.online`. Keep the former website and its certificates working until the qualified website release is deployed and permanent redirects are verified. Website releases use the immutable preview/test/promotion process above.

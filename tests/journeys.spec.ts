@@ -135,7 +135,10 @@ test('new player can understand the game and reach a practical first session',as
  await expect(page.getByRole('link',{name:'Check releases',exact:false})).toHaveAttribute('href','https://github.com/Globulation2/glob2/releases');
 });
 
+const twitchStatusUrl='https://storage.googleapis.com/glob2-website-public/twitch/v1.json';
+
 test('community links point to the official Discord, YouTube, and Twitch',async({page})=>{
+ await page.route(twitchStatusUrl,route=>route.fulfill({json:{schemaVersion:1,retired:false}}));
  await page.goto('/community/');
  const invites=page.locator('a[href^="https://discord.gg/"]');
  expect(await invites.count()).toBeGreaterThan(0);
@@ -144,10 +147,34 @@ test('community links point to the official Discord, YouTube, and Twitch',async(
  await expect(page.getByRole('main').getByRole('link',{name:'YouTube · Globulation 2 Online'})).toHaveAttribute('href',youtube);
  await expect(page.locator('.header-github + .header-youtube')).toHaveAttribute('href',youtube);
  const twitch='https://www.twitch.tv/globulation2';
- await expect(page.getByRole('main').getByRole('link',{name:'Twitch · Claude Plays Glob'})).toHaveAttribute('href',twitch);
  const headerTwitch=page.locator('.header-youtube + .header-twitch').and(page.getByRole('link',{name:'Twitch · Globulation 2 Online'}));
- await expect(headerTwitch).toHaveAttribute('href',twitch);
- await expect(headerTwitch.locator('svg')).toBeVisible();
+ const communityTwitch=page.getByRole('main').getByRole('link',{name:'Twitch · Claude Plays Glob'});
+ if((await page.locator('html').getAttribute('data-twitch-retired'))===null){
+  await expect(headerTwitch).toHaveAttribute('href',twitch);
+  await expect(headerTwitch.locator('svg')).toBeVisible();
+  await expect(communityTwitch).toHaveAttribute('href',twitch);
+ }else{
+  await expect(page.locator(`a[href="${twitch}"]`)).toHaveCount(0);
+ }
+});
+
+test('a retired Twitch feed removes both links from an older build',async({page})=>{
+ let respond!:()=>void;
+ const retiredResponse=new Promise<void>(resolve=>{respond=resolve;});
+ await page.route(twitchStatusUrl,async route=>{
+  await retiredResponse;
+  await route.fulfill({json:{schemaVersion:1,retired:true}});
+ });
+ await page.goto('/community/');
+ const links=page.locator('a[href="https://www.twitch.tv/globulation2"]');
+ try{
+  const retired=(await page.locator('html').getAttribute('data-twitch-retired'))!==null;
+  await expect(links).toHaveCount(retired?0:2);
+ }finally{
+  respond();
+ }
+ await expect(links).toHaveCount(0);
+ await expect(page.getByRole('main').getByRole('link',{name:'YouTube · Globulation 2 Online'})).toBeVisible();
 });
 for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a masthead surface and keeps its mobile entry compact at ${width}`,async({page})=>{
  await page.setViewportSize({width,height:900});await page.goto('/search/');
@@ -176,9 +203,12 @@ for(const width of [320,360,768,980,1024,1280,1470,1920]) test(`header shares a 
 });
 
 test('header keyboard order follows the visible brand, action, navigation and settings',async({page,browserName})=>{
+ await page.route(twitchStatusUrl,route=>route.fulfill({json:{schemaVersion:1,retired:false}}));
  await page.setViewportSize({width:1470,height:900});await page.goto('/search/');
  const forward=browserName==='webkit'&&process.platform==='darwin'?'Alt+Tab':'Tab';
- const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-github','.header-youtube','.header-twitch','.header-signin'];
+ const order=['.skip-link','.site-header .brand','.header-play',...Array.from({length:6},(_,i)=>`.site-header .nav a:nth-child(${i+1})`),'.language-picker summary','.theme-toggle','.header-github','.header-youtube'];
+ if(await page.locator('.header-twitch').count()) order.push('.header-twitch');
+ order.push('.header-signin');
  for(const selector of order){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
  await page.setViewportSize({width:360,height:900});await page.goto('/search/');
  for(const selector of ['.skip-link','.site-header .brand','.header-play','.header-menu>summary']){await page.keyboard.press(forward);await expect(page.locator(selector)).toBeFocused();}
