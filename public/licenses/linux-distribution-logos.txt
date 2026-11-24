@@ -1,0 +1,37 @@
+Distribution marks identify the respective projects. They are owned by their
+respective trademark holders.
+
+Arch Linux
+https://archlinux.org/static/archlinux_common_style/favicon.png
+https://terms.archlinux.org/docs/trademark-policy/
+Arch Linux and the stylized Arch Linux logo are trademarks of Levente Polyák
+and Judd Vinet on behalf of Arch Linux.
+
+Debian open-use logo
+https://www.debian.org/logos/openlogo-nd.svg
+Copyright Software in the Public Interest, Inc.
+Creative Commons Attribution-ShareAlike 3.0 Unported
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Gentoo logo
+https://www.gentoo.org/assets/img/logo/gentoo-signet.svg
+https://www.gentoo.org/inside-gentoo/artwork/gentoo-logo.html
+Copyright Gentoo Foundation and Lennart Andre Rolland.
+Creative Commons Attribution-ShareAlike 2.5 Generic
+https://creativecommons.org/licenses/by-sa/2.5/
+
+openSUSE Geeko
+https://github.com/openSUSE/artwork/blob/master/logos/official/geeko-color.svg
+https://en.opensuse.org/openSUSE:Trademark_guidelines
+
+Fedora
+https://fedoraproject.org/favicon.ico
+https://docs.fedoraproject.org/en-US/legal/trademarks/
+Fedora and the Fedora logo are registered trademarks of Red Hat, Inc., or
+its subsidiaries in the United States and other countries.
+The website favicon was converted to PNG.
+
+Ubuntu Circle of Friends
+https://assets.ubuntu.com/v1/be7e4cc6-COF-favicon-32x32.png
+https://canonical.com/legal/intellectual-property-policy
+Ubuntu and its logo are trademarks of Canonical Ltd.
