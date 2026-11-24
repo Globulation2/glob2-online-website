@@ -1,0 +1,33 @@
+name: Check Twitch stream
+on:
+  schedule:
+    - cron: '13 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: website-twitch-status
+  cancel-in-progress: false
+jobs:
+  observe:
+    if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+    environment: website-twitch
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093
+        with:
+          workload_identity_provider: ${{ vars.TWITCH_WIF_PROVIDER }}
+          service_account: ${{ vars.TWITCH_SERVICE_ACCOUNT }}
+          project_id: bradley-personal-20261027
+      - uses: google-github-actions/setup-gcloud@aa5489c8933f4cc7a4f7d45035b3b1440c9c10db
+      - env:
+          TWITCH_CLIENT_ID: ${{ vars.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+        run: python3 scripts/publish-twitch-status.py

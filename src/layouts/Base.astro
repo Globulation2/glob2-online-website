@@ -6,6 +6,7 @@ import '@glob2/design-system/css/components.css';
 import '@glob2/design-system/css/brand.css';
 import '../styles/site.css';
 import {site} from '../data/site';
+import {omitTwitchLinks} from '../lib/twitch-build-status';
 import {getGameLabel} from '../data/storefronts';
 import Analytics from '../components/Analytics.astro';
 import {locales, localizedPath, marketingPage, translate, englishLabel, type Locale} from '../i18n';
@@ -22,7 +23,7 @@ const pageTitle=title===site.name?site.name:`${title} · ${site.name}`;
 const nav=[[t('ui.game'),localizedPath(locale,'game')],[english(t('ui.learn')),'/learn/'],[t('ui.community'),localizedPath(locale,'community')]];
 ---
 <!doctype html>
-<html lang={locale} dir={direction}>
+<html lang={locale} dir={direction} data-twitch-retired={omitTwitchLinks||undefined}>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -73,15 +74,27 @@ const nav=[[t('ui.game'),localizedPath(locale,'game')],[english(t('ui.learn')),'
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label={t('ui.themeInitial')} data-system={t('ui.themeSystem')} data-light={t('ui.themeLight')} data-dark={t('ui.themeDark')} data-change={t('ui.changeTheme')}>{t('ui.theme')}</button>
       <a class="header-github" href={site.sourceUrl} aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a>
       <a class="header-youtube" href={site.youtubeUrl} aria-label={`YouTube · ${site.name}`} title="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a>
-      <a class="header-twitch" href={site.twitchUrl} aria-label={`Twitch · ${site.name}`} title="Twitch">
+      {!omitTwitchLinks&&<a class="header-twitch" data-twitch-link href={site.twitchUrl} aria-label={`Twitch · ${site.name}`} title="Twitch">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
-      </a>
+      </a>}
       <a class="header-signin" href={site.loginUrl}>{t('ui.signin')}</a>
     </div>
       </div>
     </details>
   </div>
 </header>
+<script>
+import {twitchLinksRetired} from '../lib/twitch-status';
+
+const twitchLinks=document.querySelectorAll('[data-twitch-link]');
+if(twitchLinks.length){
+  void twitchLinksRetired().then(retired=>{
+    if(retired) twitchLinks.forEach(link=>link.remove());
+  }).catch(()=>{
+    // Leave the deployed state in place if the status feed is unavailable.
+  });
+}
+</script>
 <script>
 // The native disclosure starts compact without JavaScript. Enhancement opens
 // desktop navigation and preserves focus when crossing the narrow breakpoint.

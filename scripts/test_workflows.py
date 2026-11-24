@@ -11,7 +11,7 @@ STANDARD_CANCEL = ("${{ github.event_name == 'pull_request' || (github.event_nam
                    "startsWith(github.ref, 'refs/heads/') && "
                    "github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) }}")
 # Scheduled publishing, monitoring and manual operations: never cancelled in progress.
-OPERATIONS = {'monitor.yml', 'rankings.yml', 'releases.yml', 'rollback.yml', 'guide-media.yml'}
+OPERATIONS = {'monitor.yml', 'rankings.yml', 'releases.yml', 'rollback.yml', 'guide-media.yml', 'twitch.yml'}
 
 
 def block(text, key):
@@ -60,7 +60,7 @@ class WorkflowSecurityTest(unittest.TestCase):
         self.assertNotIn('id-token: write', block(text, 'permissions'))
 
     def test_authenticated_jobs_require_the_sole_operator(self):
-        for name in ['website.yml', 'rollback.yml', 'rankings.yml', 'guide-media.yml']:
+        for name in ['website.yml', 'rollback.yml', 'rankings.yml', 'guide-media.yml', 'twitch.yml']:
             text = (WORKFLOWS / name).read_text()
             with self.subTest(workflow=name):
                 self.assertIn("    if: github.triggering_actor == 'genixpro' && github.ref == 'refs/heads/main'", text)
