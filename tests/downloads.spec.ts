@@ -44,3 +44,12 @@ test('store releases lead the journey while browser and packages remain alternat
   await expect(page.locator('.direct-downloads')).not.toHaveAttribute('open','');
   await expect(page.locator('a[href*="play.google.com"],a[href*="store.epicgames.com"]')).toHaveCount(0);
 });
+
+test('Android closed-test recruitment links to the signup form from home and downloads', async ({page}) => {
+  const form = 'https://forms.gle/EK7fjtPZAryyHwhn6';
+  await page.goto('/');
+  await expect(page.locator(`section.android-testing a[href="${form}"]`)).toBeVisible();
+  await page.goto('/downloads/');
+  await expect(page.locator(`.storefront-section .android-testing a[href="${form}"]`)).toBeVisible();
+  await expect(page.locator(`.direct-downloads a[href="${form}"]`)).toHaveCount(1);
+});
