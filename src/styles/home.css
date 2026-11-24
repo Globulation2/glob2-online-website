@@ -100,6 +100,12 @@ body:has(.home) .site-footer { margin-top: 0; }
 .home .path-lead h2 { color: var(--on-grass); font-size: var(--text-2xl); flex: 1 1 100%; margin: 0; }
 .home .path-lead p { color: var(--on-grass-2); flex: 1 1 28rem; max-width: 46rem; margin: 0; }
 
+/* ---- Android closed-test recruitment */
+.home > .android-testing { box-sizing: border-box; width: calc(100% - 2 * var(--gutter)); max-width: var(--content); margin: var(--sp-5) auto 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-4) var(--sp-6); padding: var(--sp-5); background: var(--surface); border: 2px solid var(--grass-deep); border-radius: var(--r-lg); }
+.home .android-testing > div { flex: 1 1 28rem; }
+.home .android-testing h2 { font-size: var(--text-xl); margin: 0 0 var(--sp-2); }
+.home .android-testing p { color: var(--ink-2); margin: 0; max-width: 46rem; }
+
 /* ---- history + closing */
 .home > .history { max-width: 46rem; padding: var(--sp-8) var(--gutter) 0; text-align: center; }
 .home .history p { color: var(--ink-2); }

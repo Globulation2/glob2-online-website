@@ -63,3 +63,12 @@ test('Linux release files and distribution projects are distinct and visible', a
     expect(await logo.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   }
 });
+
+test('Android closed-test recruitment links to the signup form from home and downloads', async ({page}) => {
+  const form = 'https://forms.gle/EK7fjtPZAryyHwhn6';
+  await page.goto('/');
+  await expect(page.locator(`section.android-testing a[href="${form}"]`)).toBeVisible();
+  await page.goto('/downloads/');
+  await expect(page.locator(`.storefront-section .android-testing a[href="${form}"]`)).toBeVisible();
+  await expect(page.locator(`.direct-downloads a[href="${form}"]`)).toHaveCount(1);
+});

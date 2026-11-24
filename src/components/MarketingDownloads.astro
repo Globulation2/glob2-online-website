@@ -11,6 +11,7 @@ import PackageDownload from './PackageDownload.astro';
 import LinuxDownloads from './LinuxDownloads.astro';
 import { publishedReleaseMetadata, site } from '../data/site';
 import {storefronts} from '../data/storefronts';
+import {androidTesting} from '../data/android-testing';
 import { channelsSchema, experimentalReleaseSchema } from '../data/downloads-schema';
 import experimentalData from '../data/experimental-release.json';
 import { downloadPlatforms as basePlatforms } from '../data/downloads';
@@ -39,6 +40,10 @@ const installationParts = (text: string) => text.split(/(sudo snap install --dan
         <h3>{store.platform === 'ios' ? 'iPhone & iPad' : store.platform === 'windows' ? 'Windows' : 'Linux'}</h3>
         <a class="btn primary" href={store.url}>{store.name} ↗</a>
       </article>)}</div>
+      <aside class="card android-testing" aria-labelledby="android-testing-heading" lang="en">
+        <div><h3 id="android-testing-heading">{androidTesting.title}</h3><p>{androidTesting.description}</p></div>
+        <a class="btn primary" href={androidTesting.signupUrl}>{androidTesting.label} ↗</a>
+      </aside>
     </section>
     <LinuxDownloads locale={locale} packages={packagesFor(linux)} version={manifest.version}
       releaseNotesUrl={manifest.releaseNotesUrl} installationHelp={linux.help} />
@@ -60,6 +65,7 @@ const installationParts = (text: string) => text.split(/(sudo snap install --dan
           {packages.length ? <>
             <p>{platform.id === 'android' && !googlePlay ? t('downloads.apk') : platform.description}</p>
             {platform.id === 'android' && googlePlay && <a class="btn" href={googlePlay.url}>{t('downloads.googlePlay')} ↗</a>}
+            {platform.id === 'android' && !googlePlay && <p lang="en"><a class="text-link" href={androidTesting.signupUrl}>{androidTesting.shortLabel} ↗</a></p>}
             <ul class="download-packages">
               {packages.map((pkg, index) => <li>
                 <PackageDownload {locale} {pkg} version={manifest.version} platformTitle={platform.title} primary={index === 0} />
@@ -85,6 +91,10 @@ const installationParts = (text: string) => text.split(/(sudo snap install --dan
 <style>
   .storefront-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-4);}
   .storefront-card {min-width:0;}
+  .android-testing {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--sp-4) var(--sp-6);margin-top:var(--sp-5);border-color:var(--grass-deep);}
+  .android-testing > div {flex:1 1 28rem;}
+  .android-testing h3 {margin:0 0 var(--sp-2);}
+  .android-testing p {margin:0;color:var(--ink-2);}
   .storefront-card .btn {max-width:100%;white-space:normal;text-align:center;}
   .direct-downloads > summary {font-size:1.3rem;font-weight:700;}
   @media(max-width:700px) {.storefront-grid {grid-template-columns:1fr;}}
