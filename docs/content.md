@@ -111,4 +111,4 @@ Existing reviewed locale catalogs and their independent review fingerprints are 
 
 The Discord invitation was replaced with the intended Globulation2 server's permanent `https://discord.gg/rQn3Br6AFA` invitation after native invite creation and unauthenticated Discord API verification on 18 November 2026. The previous invitation returned unknown/expired. The shared header deliberately keeps brand/utilities above navigation, with a separate utility row on narrow screens. Verify light/dark themes, long translations, keyboard focus and intermediate widths when editing it.
 
-The shared header links to the official YouTube channel beside GitHub. The Community page carries a labeled link to the same channel. Keep the destination in `src/data/site.ts`.
+The shared header links to the official YouTube and Twitch channels beside GitHub. The Community page carries labeled links to both channels and identifies the Twitch stream as Claude Plays Glob. Keep the destinations in `src/data/site.ts`.

@@ -15,6 +15,7 @@ export const site = {
   mapsUrl: 'https://app.glob2.online/maps',
   sourceUrl: 'https://github.com/Globulation2/glob2',
   youtubeUrl: 'https://www.youtube.com/@Globulation2Online',
+  twitchUrl: 'https://www.twitch.tv/globulation2',
   discordUrl: 'https://discord.gg/rQn3Br6AFA',
 };
 
