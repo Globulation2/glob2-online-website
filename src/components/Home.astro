@@ -1,6 +1,7 @@
 ---
 import '../styles/home.css';
 import {site} from '../data/site';
+import {androidTesting} from '../data/android-testing';
 import {getGameLabel} from '../data/storefronts';
 import {currentGameplayShots,currentGalleryNote} from '../data/artwork';
 import { localizedMarketing, translate, localizedPath, englishLabel, type Locale } from '../i18n';
@@ -49,6 +50,7 @@ const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
   {home.playOptions.map(option=><article class="path"><h2>{option.title}</h2><p>{option.description}</p><a class="text-link" href={option.href==='/game/'?localizedPath(locale,'game'):option.href}>{option.label} →</a></article>)}
   <article class="path"><h2>{t('home.discordTitle')}</h2><p>{community.discordDescription}</p><a class="text-link" href={site.discordUrl}>{t('home.discordLink')} ↗</a></article>
 </section>
+<section class="android-testing" aria-labelledby="android-testing-title" lang="en"><div><h2 id="android-testing-title">{androidTesting.title}</h2><p>{androidTesting.description}</p></div><a class="btn primary" href={androidTesting.signupUrl}>{androidTesting.label} <span aria-hidden="true">↗</span></a></section>
 <section class="history" aria-labelledby="history-title"><h2 id="history-title">{home.background.title}</h2><p>{home.background.description}</p><a class="text-link" href={home.background.href}>{english(home.background.label)} →</a></section>
 <section class="closing" aria-labelledby="closing-title"><h2 id="closing-title">{home.closing.title}</h2><p>{home.firstSession.description}</p><div class="actions"><a class="btn primary big" href={localizedPath(locale,'downloads')}>{getGameLabel(locale,t('ui.download'))}</a><a class="btn secondary big" href={site.appUrl}>{home.closing.label} <span aria-hidden="true">↗</span></a></div></section>
 </div>
