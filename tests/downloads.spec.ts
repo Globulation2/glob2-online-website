@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {linuxDebDownloads, linuxDebReleaseUrl} from '../src/data/linux-deb-downloads';
+import {linuxDebDownloads, linuxDebReleaseUrls} from '../src/data/linux-deb-downloads';
 import {archDownload} from '../src/data/linux-arch-download';
 import {tumbleweedDownload} from '../src/data/linux-rpm-downloads';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
@@ -79,8 +79,9 @@ test('Android closed-test recruitment links to the signup form from home and dow
 test('manual Debian and Ubuntu downloads pair each game package with its matching data', async ({page}) => {
   await page.goto('/downloads/');
   const manual = page.getByRole('region', {name:'Manual .deb installation'});
-  await expect(manual).toContainText('0.11.7.0 for ARM64');
-  await expect(manual.getByRole('link', {name:/Package release notes/})).toHaveAttribute('href', linuxDebReleaseUrl);
+  await expect(manual).toContainText('Globulation 2 0.11.7.0');
+  await expect(manual.getByRole('link', {name:/ARM64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.arm64);
+  await expect(manual.getByRole('link', {name:/x86-64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.amd64);
   for (const {name, client, data} of linuxDebDownloads) {
     const card = manual.getByRole('listitem').filter({has:page.getByRole('heading', {name, exact:true})});
     await expect(card.getByRole('link', {name:`Download game .deb for ${name}`})).toHaveAttribute('href', client.url);
