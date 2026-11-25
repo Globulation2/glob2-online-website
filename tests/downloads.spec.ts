@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 import {linuxDebDownloads, linuxDebReleaseUrl} from '../src/data/linux-deb-downloads';
+import {archDownload} from '../src/data/linux-arch-download';
 import {tumbleweedDownload} from '../src/data/linux-rpm-downloads';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
 import experimentalRelease from '../src/data/experimental-release.json' with {type: 'json'};
@@ -99,4 +100,15 @@ test('manual Tumbleweed download identifies the verified x86-64 RPM and source',
   await expect(manual.locator('pre')).toHaveText(`sudo zypper install ./${tumbleweedDownload.filename}`);
   expect(tumbleweedDownload.sha256).toMatch(/^[0-9a-f]{64}$/);
   await expect(manual.locator('dd')).toHaveText(tumbleweedDownload.sha256);
+});
+
+test('offers the Arch Linux package with verification and installation instructions', async ({page}) => {
+  await page.goto('/downloads/');
+  const manual = page.getByRole('region', {name: 'Arch Linux package'});
+  await expect(manual).toContainText('Arch Linux on x86-64');
+  await expect(manual.getByRole('link', {name: /Download Arch package/})).toHaveAttribute('href', archDownload.url);
+  await expect(manual.getByRole('link', {name: /Arch release notes and source code/})).toHaveAttribute('href', archDownload.releaseUrl);
+  await manual.getByText('Install and verify', {exact: true}).click();
+  await expect(manual.locator('pre')).toHaveText(`sudo pacman -U ./${archDownload.filename}`);
+  await expect(manual.locator('dd')).toHaveText(archDownload.sha256);
 });

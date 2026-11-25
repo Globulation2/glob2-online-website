@@ -2,6 +2,7 @@
 import { englishLabel, translate, type Locale } from '../i18n';
 import type { DownloadPackage } from '../data/downloads-schema';
 import PackageDownload from './PackageDownload.astro';
+import { archDownload } from '../data/linux-arch-download';
 import { tumbleweedDownload } from '../data/linux-rpm-downloads';
 import { linuxDebDownloads, linuxDebReleaseUrl, linuxDebVersion } from '../data/linux-deb-downloads';
 
@@ -88,6 +89,20 @@ const installationParts = installationHelp.split(/(sudo snap install --dangerous
       <p>Follow the release notes to verify the package signature. To install, open a terminal in the download folder and run:</p>
       <pre><code>{`sudo zypper install ./${tumbleweedDownload.filename}`}</code></pre>
       <dl><dt>RPM SHA-256</dt><dd><code>{tumbleweedDownload.sha256}</code></dd></dl>
+    </details>
+  </section>
+  <section id="arch-package" class="manual-packages" lang="en" dir="ltr" aria-labelledby="arch-package-heading">
+    <h3 id="arch-package-heading">Arch Linux package</h3>
+    <p>Globulation 2 {archDownload.version} for Arch Linux on x86-64, packaged by the Globulation 2 project.</p>
+    <div class="manual-package-links">
+      <a class="btn primary" href={archDownload.url}>Download Arch package ↗</a>
+      <a class="text-link" href={archDownload.releaseUrl}>Arch release notes and source code ↗</a>
+    </div>
+    <details class="download-help">
+      <summary>Install and verify</summary>
+      <p>Verify the SHA-256 below before installing this unsigned package.</p>
+      <pre><code>{`sudo pacman -U ./${archDownload.filename}`}</code></pre>
+      <dl><dt>Package SHA-256</dt><dd><code>{archDownload.sha256}</code></dd></dl>
     </details>
   </section>
   <div class="repository-status" lang="en" dir="ltr">

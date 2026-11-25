@@ -36,8 +36,9 @@ target distro and ARM64 architecture, the tested game version, and the exact
 assets and checksums from a public packaging prerelease. Verify a fresh pair on
 the distro named on the card and provide its corresponding source before
 updating the references. The verified Tumbleweed RPM uses its own public
-packaging prerelease and signed OBS build. Repository availability is tracked
-separately.
+packaging prerelease and signed OBS build. The Arch Linux x86-64 package
+links to its public prerelease with the CI-tested package, checksum, and build
+recipe. Repository availability is tracked separately.
 
 ### Direct Flatpak downloads
 
