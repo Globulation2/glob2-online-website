@@ -4,7 +4,7 @@ import type { DownloadPackage } from '../data/downloads-schema';
 import PackageDownload from './PackageDownload.astro';
 import { archDownload } from '../data/linux-arch-download';
 import { tumbleweedDownload } from '../data/linux-rpm-downloads';
-import { linuxDebDownloads, linuxDebReleaseUrl, linuxDebVersion } from '../data/linux-deb-downloads';
+import { linuxDebDownloads, linuxDebReleaseUrls, linuxDebVersion } from '../data/linux-deb-downloads';
 
 interface Props {
   locale: Locale;
@@ -56,7 +56,7 @@ const installationParts = installationHelp.split(/(sudo snap install --dangerous
   </> : <p>{translate(locale, 'downloads.unavailable', {platform:'Linux'})}</p>}
   <section class="manual-packages" lang="en" dir="ltr" aria-labelledby="manual-debs-heading">
     <h3 id="manual-debs-heading">Manual .deb installation</h3>
-    <p>Globulation 2 {linuxDebVersion} for ARM64, packaged by the Globulation 2 project. Download both files for your distro.</p>
+    <p>Globulation 2 {linuxDebVersion} packaged by the Globulation 2 project. Download both files for your distro and architecture.</p>
     <ul class="linux-package-grid">
       {linuxDebDownloads.map(({name, logo, client, data}) => <li class="card linux-package">
         <h4><img src={`/images/distros/${logo}`} width="24" height="24" alt="" />{name}</h4>
@@ -75,7 +75,10 @@ const installationParts = installationHelp.split(/(sudo snap install --dangerous
         </details>
       </li>)}
     </ul>
-    <p><a class="text-link" href={linuxDebReleaseUrl}>Package release notes and source code ↗</a></p>
+    <p class="manual-package-links">
+      <a class="text-link" href={linuxDebReleaseUrls.arm64}>ARM64 release notes and source code ↗</a>
+      <a class="text-link" href={linuxDebReleaseUrls.amd64}>x86-64 release notes and source code ↗</a>
+    </p>
   </section>
   <section id="tumbleweed-rpm" class="manual-packages" lang="en" dir="ltr" aria-labelledby="manual-rpm-heading">
     <h3 id="manual-rpm-heading">Manual RPM installation</h3>

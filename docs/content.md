@@ -32,7 +32,7 @@ Game release execution and sensitive configuration belong only to `genixpro/glob
 
 The Linux section can show explicitly selected upstream .deb pairs separately
 from the current game release. `src/data/linux-deb-downloads.ts` names the
-target distro and ARM64 architecture, the tested game version, and the exact
+target distro and architecture, the tested game version, and the exact
 assets and checksums from a public packaging prerelease. Verify a fresh pair on
 the distro named on the card and provide its corresponding source before
 updating the references. The verified Tumbleweed RPM uses its own public
