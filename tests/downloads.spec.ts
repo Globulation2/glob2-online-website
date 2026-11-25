@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
 import {linuxDebDownloads, linuxDebReleaseUrl} from '../src/data/linux-deb-downloads';
+import {tumbleweedDownload} from '../src/data/linux-rpm-downloads';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
 import experimentalRelease from '../src/data/experimental-release.json' with {type: 'json'};
 import downloadChannels from '../src/data/download-channels.json' with {type: 'json'};
@@ -86,4 +87,16 @@ test('manual Debian and Ubuntu downloads pair each game package with its matchin
     await card.locator('summary').click();
     await expect(card.locator('pre')).toHaveText(`sudo apt install ./${data.name} ./${client.name}`);
   }
+});
+
+test('manual Tumbleweed download identifies the verified x86-64 RPM and source', async ({page}) => {
+  await page.goto('/downloads/');
+  const manual = page.getByRole('region', {name:'Manual RPM installation'});
+  await expect(manual).toContainText('0.11.7.0 for openSUSE Tumbleweed on x86-64');
+  await expect(manual.getByRole('link', {name:/Download Tumbleweed RPM/})).toHaveAttribute('href', tumbleweedDownload.url);
+  await expect(manual.getByRole('link', {name:/RPM release notes and source code/})).toHaveAttribute('href', tumbleweedDownload.releaseUrl);
+  await manual.locator('summary').click();
+  await expect(manual.locator('pre')).toHaveText(`sudo zypper install ./${tumbleweedDownload.filename}`);
+  expect(tumbleweedDownload.sha256).toMatch(/^[0-9a-f]{64}$/);
+  await expect(manual.locator('dd')).toHaveText(tumbleweedDownload.sha256);
 });

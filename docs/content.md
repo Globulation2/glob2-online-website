@@ -35,7 +35,9 @@ from the current game release. `src/data/linux-deb-downloads.ts` names the
 target distro and ARM64 architecture, the tested game version, and the exact
 assets and checksums from a public packaging prerelease. Verify a fresh pair on
 the distro named on the card and provide its corresponding source before
-updating the references. Repository availability is tracked separately.
+updating the references. The verified Tumbleweed RPM uses its own public
+packaging prerelease and signed OBS build. Repository availability is tracked
+separately.
 
 ### Direct Flatpak downloads
 
