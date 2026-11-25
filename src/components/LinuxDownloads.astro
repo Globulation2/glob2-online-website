@@ -2,6 +2,7 @@
 import { englishLabel, translate, type Locale } from '../i18n';
 import type { DownloadPackage } from '../data/downloads-schema';
 import PackageDownload from './PackageDownload.astro';
+import { linuxDebDownloads, linuxDebReleaseUrl, linuxDebVersion } from '../data/linux-deb-downloads';
 
 interface Props {
   locale: Locale;
@@ -51,6 +52,29 @@ const installationParts = installationHelp.split(/(sudo snap install --dangerous
       <p>{installationParts.map(part => codeLiterals.includes(part) ? <code dir="ltr">{part}</code> : part)}</p>
     </details>
   </> : <p>{translate(locale, 'downloads.unavailable', {platform:'Linux'})}</p>}
+  <section class="manual-debs" lang="en" dir="ltr" aria-labelledby="manual-debs-heading">
+    <h3 id="manual-debs-heading">Manual .deb installation</h3>
+    <p>Globulation 2 {linuxDebVersion} for ARM64, packaged by the Globulation 2 project. Download both files for your distro.</p>
+    <ul class="linux-package-grid">
+      {linuxDebDownloads.map(({name, logo, client, data}) => <li class="card linux-package">
+        <h4><img src={`/images/distros/${logo}`} width="24" height="24" alt="" />{name}</h4>
+        <div class="deb-links">
+          <a class="btn primary" href={client.url} aria-label={`Download game .deb for ${name}`}>Download game .deb ↗</a>
+          <a class="text-link" href={data.url} aria-label={`Download data .deb for ${name}`}>Download data .deb ↗</a>
+        </div>
+        <details class="download-help">
+          <summary>Install and verify</summary>
+          <p>Open a terminal in the folder with both downloads and run:</p>
+          <pre><code>{`sudo apt install ./${data.name} ./${client.name}`}</code></pre>
+          <dl>
+            <dt>Game SHA-256</dt><dd><code>{client.sha256}</code></dd>
+            <dt>Data SHA-256</dt><dd><code>{data.sha256}</code></dd>
+          </dl>
+        </details>
+      </li>)}
+    </ul>
+    <p><a class="text-link" href={linuxDebReleaseUrl}>Package release notes and source code ↗</a></p>
+  </section>
   <div class="repository-status" lang="en" dir="ltr">
     <h3>Distribution repositories</h3>
     <p>Work is underway to bring current releases to these distribution repositories.</p>
@@ -74,7 +98,16 @@ const installationParts = installationHelp.split(/(sudo snap install --dangerous
   .download-help {margin-top:var(--sp-3);}
   .download-help summary {cursor:pointer;min-height:var(--target);padding:var(--sp-2) 0;text-decoration:underline;text-underline-offset:3px;}
   .download-help p {margin:var(--sp-2) 0 0;overflow-wrap:anywhere;}
-  .repository-status {margin-top:var(--sp-5);border-top:1px solid var(--line);padding-top:var(--sp-5);}
+  .manual-debs h3, .manual-debs h4 {margin:0;}
+  .manual-debs h4 {display:flex;align-items:center;gap:var(--sp-2);}
+  .manual-debs h4 img {flex:none;object-fit:contain;}
+  .manual-debs p {margin:var(--sp-2) 0 var(--sp-4);}
+  .manual-debs ul + p {margin-top:var(--sp-3);}
+  .deb-links {display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2) var(--sp-4);margin-top:var(--sp-3);}
+  .deb-links .btn {white-space:normal;}
+  .manual-debs pre {white-space:pre-wrap;overflow-wrap:anywhere;}
+  .manual-debs dd {margin:0 0 var(--sp-2);overflow-wrap:anywhere;}
+  .manual-debs, .repository-status {margin-top:var(--sp-5);border-top:1px solid var(--line);padding-top:var(--sp-5);}
   .repository-status h3 {margin:0;}
   :global([dir="rtl"]) .repository-status {text-align:right;}
   :global([dir="rtl"]) .distro-list {justify-content:flex-end;}
