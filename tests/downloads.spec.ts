@@ -81,7 +81,8 @@ test('manual Debian and Ubuntu downloads pair each game package with its matchin
   const manual = page.getByRole('region', {name:'Manual .deb installation'});
   await expect(manual).toContainText('Globulation 2 0.11.7.0');
   await expect(manual.getByRole('link', {name:/ARM64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.arm64);
-  await expect(manual.getByRole('link', {name:/x86-64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.amd64);
+  await expect(manual.getByRole('link', {name:/Debian x86-64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.debianAmd64);
+  await expect(manual.getByRole('link', {name:/Ubuntu x86-64 release notes/})).toHaveAttribute('href', linuxDebReleaseUrls.ubuntuAmd64);
   for (const {name, client, data} of linuxDebDownloads) {
     const card = manual.getByRole('listitem').filter({has:page.getByRole('heading', {name, exact:true})});
     await expect(card.getByRole('link', {name:`Download game .deb for ${name}`})).toHaveAttribute('href', client.url);
