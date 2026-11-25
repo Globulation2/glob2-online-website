@@ -24,7 +24,7 @@ try {
    for (const width of [360, 768, 1440]) for (const colorScheme of ['light', 'dark']) {
     const page = await browser.newPage({viewport: {width, height: 1000}, colorScheme, javaScriptEnabled: false});
     await page.goto('http://127.0.0.1:4323/downloads/');
-    assert.equal(await page.locator('a[href*="/releases/download/"]').count(), 12);
+    assert.equal(await page.locator(`a[href*="/releases/download/${manifest.tag}/"]`).count(), 12);
     assert.equal(await page.locator('a[href^="https://play.google.com/"]').count(), 1);
     assert.equal(await page.locator('a[href^="https://apps.apple.com/"]').count(), 1);
     await page.locator('.direct-downloads > summary').click();
@@ -58,7 +58,7 @@ try {
  const withdrawalBrowser = await chromium.launch();
  try {
   const page = await withdrawalBrowser.newPage(); await page.goto('http://127.0.0.1:4323/downloads/');
-  assert.equal(await page.locator('a[href*="/releases/download/"]').count(), 11);
+  assert.equal(await page.locator(`a[href*="/releases/download/${manifest.tag}/"]`).count(), 11);
   assert.equal(await page.locator('a[href^="https://apps.apple.com/"]').count(), 0);
   assert.equal(await page.locator('a[href*="hl=en"]').count(), 1);
  } finally {await withdrawalBrowser.close();}

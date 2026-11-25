@@ -28,6 +28,15 @@ The Check download metadata workflow imports `downloads-manifest.json` from a qu
 
 Game release execution and sensitive configuration belong only to `genixpro/glob2-release`; the public downloads remain versioned assets in `Globulation2/glob2`. The qualified-release path requires every platform and both production mobile stores; experimental public builds use the separate path above. Empty qualified metadata is intentional before the first qualified release. Desktop/mobile alternatives and checksums work without JavaScript. Store links are validated public destinations, never guessed. `src/data/download-channels.json` holds reviewed, release-tag-bound store URL updates and package/store withdrawals separately from the immutable manifest. The importer does not overwrite this editorial file; changing releases requires resetting or re-reviewing its entries. Correct a withdrawn or broken download through reviewed metadata and restore a prior website version when needed; do not move game tags or replace published bytes.
 
+### Manual Linux packages
+
+The Linux section can show explicitly selected upstream .deb pairs separately
+from the current game release. `src/data/linux-deb-downloads.ts` names the
+target distro and ARM64 architecture, the tested game version, and the exact
+assets and checksums from a public packaging prerelease. Verify a fresh pair on
+the distro named on the card and provide its corresponding source before
+updating the references. Repository availability is tracked separately.
+
 ### Direct Flatpak downloads
 
 The marketing downloads page lists the qualified release's `.flatpak` bundle

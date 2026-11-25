@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test';
+import {linuxDebDownloads, linuxDebReleaseUrl} from '../src/data/linux-deb-downloads';
 import releaseMetadata from '../src/data/release-metadata.json' with {type: 'json'};
 import experimentalRelease from '../src/data/experimental-release.json' with {type: 'json'};
 import downloadChannels from '../src/data/download-channels.json' with {type: 'json'};
@@ -21,7 +22,7 @@ test('downloads present the selected release with public package links', async (
   await page.goto('/downloads/');
   await page.locator('.direct-downloads > summary').click();
   await expect(page.getByRole('heading', {name: `Release ${experimentalRelease.version}`, exact: true})).toBeVisible();
-  await expect(page.locator('a[href*="/releases/download/"]')).toHaveCount(experimentalRelease.packages.length + experimentalRelease.sources.length);
+  await expect(page.locator(`a[href*="/releases/download/${experimentalRelease.tag}/"]`)).toHaveCount(experimentalRelease.packages.length + experimentalRelease.sources.length);
   await expect(page.locator('main')).not.toContainText(/experimental|early testing|testing is still in progress/i);
   await expect(page.locator('main')).not.toContainText('same qualified release');
   for (const pkg of experimentalRelease.packages) await expect(page.locator(`a[href="${pkg.url}"]`)).toBeVisible();
@@ -71,4 +72,18 @@ test('Android closed-test recruitment links to the signup form from home and dow
   await page.goto('/downloads/');
   await expect(page.locator(`.storefront-section .android-testing a[href="${form}"]`)).toBeVisible();
   await expect(page.locator(`.direct-downloads a[href="${form}"]`)).toHaveCount(1);
+});
+
+test('manual Debian and Ubuntu downloads pair each game package with its matching data', async ({page}) => {
+  await page.goto('/downloads/');
+  const manual = page.getByRole('region', {name:'Manual .deb installation'});
+  await expect(manual).toContainText('0.11.7.0 for ARM64');
+  await expect(manual.getByRole('link', {name:/Package release notes/})).toHaveAttribute('href', linuxDebReleaseUrl);
+  for (const {name, client, data} of linuxDebDownloads) {
+    const card = manual.getByRole('listitem').filter({has:page.getByRole('heading', {name, exact:true})});
+    await expect(card.getByRole('link', {name:`Download game .deb for ${name}`})).toHaveAttribute('href', client.url);
+    await expect(card.getByRole('link', {name:`Download data .deb for ${name}`})).toHaveAttribute('href', data.url);
+    await card.locator('summary').click();
+    await expect(card.locator('pre')).toHaveText(`sudo apt install ./${data.name} ./${client.name}`);
+  }
 });
