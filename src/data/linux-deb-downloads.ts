@@ -2,6 +2,7 @@
 export const linuxDebReleaseTag = 'linux-debs-v0.11.7.0';
 export const linuxDebVersion = '0.11.7.0';
 const releases = 'https://github.com/Globulation2/glob2/releases';
+const dataDownloads = 'https://storage.googleapis.com/glob2-website-public/downloads';
 export const linuxDebReleaseUrl = `${releases}/tag/${linuxDebReleaseTag}`;
 
 export const linuxDebDownloads = [
@@ -27,6 +28,6 @@ export const linuxDebDownloads = [
     name,
     logo,
     client: { name: client, url: `${base}/${client}`, sha256: clientSha256 },
-    data: { name: data, url: `${base}/${data}`, sha256: dataSha256 },
+    data: { name: data, url: `${dataDownloads}/${linuxDebReleaseTag}/${data}`, sha256: dataSha256 },
   };
 });
