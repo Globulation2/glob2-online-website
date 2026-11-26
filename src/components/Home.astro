@@ -16,7 +16,7 @@ const facts=[t('home.fact.0'),t('home.fact.1'),t('home.fact.2')];
 <div class:list={['home',{'colony':concept==='colony'}]}>
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-colony" aria-hidden="true">
-    <video class="colony-video" data-src="/brand/colony-loop-2026-11-19b.mp4" poster="/brand/colony-1600-2026-11-19b.webp" muted loop playsinline preload="none" tabindex="-1"></video>
+    <video class="colony-video" poster="/hero/colony-2026-11-26.webp" muted loop playsinline preload="none" tabindex="-1"></video>
   </div>
   <button class="colony-motion" type="button" data-pause={t('home.pause')} data-resume={t('home.resume')} hidden>❚❚ {t('home.pause')}</button>
   <div class="hero-copy"><div class="hero-panel">
@@ -68,6 +68,22 @@ if (masthead && home) {
 document.querySelectorAll<HTMLVideoElement>('.colony-video').forEach(video => {
  const hero = video.closest<HTMLElement>('.hero')!;
  const button = hero.querySelector<HTMLButtonElement>('.colony-motion')!;
- mountColony(video, button, {pause:`❚❚ ${button.dataset.pause}`,resume:`▶ ${button.dataset.resume}`,container:hero,onPlaying:playing => video.classList.toggle('playing',playing)});
+ mountColony(video, button, {
+  pause: `❚❚ ${button.dataset.pause}`,
+  resume: `▶ ${button.dataset.resume}`,
+  container: hero,
+  onPlaying: playing => video.classList.toggle('playing', playing),
+  chooseSources: () => {
+   // Cover can upscale the video to fill either the width or the height.
+   const pixels = Math.max(video.clientWidth, video.clientHeight * 16 / 9) * window.devicePixelRatio;
+   const height = pixels > 1600 ? 1656 : 900;
+   return ['webm', 'mp4'].map(extension => {
+    const source = document.createElement('source');
+    source.src = `/hero/colony-${height}p-2026-11-26.${extension}`;
+    source.type = extension === 'webm' ? 'video/webm; codecs="vp9"' : 'video/mp4';
+    return source;
+   });
+  },
+ });
 });
 </script>

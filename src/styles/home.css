@@ -25,7 +25,7 @@ body:has(.home) .site-footer { margin-top: 0; }
   min-height: min(86vh, 760px); display: flex; align-items: center; padding-top: var(--home-header-h);
   color: var(--hero-ink); background: rgb(var(--sea-rgb));
 }
-.home .hero-colony { inset: 0; border-radius: 0; background-position: 0% 0%; }
+.home .hero-colony { inset: 0; border-radius: 0; background-image: url('/hero/colony-2026-11-26.webp'); background-position: 0% 0%; }
 .home .hero-colony > video { object-position: 0% 0%; }
 :root[dir='rtl'] .home .hero-colony::after { transform: scaleX(-1); }
 .home .hero-colony::after {
