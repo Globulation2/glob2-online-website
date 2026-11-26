@@ -1,9 +1,10 @@
 import { test, expect } from '@playwright/test';
 
-test('colony video supports byte ranges used by media playback', async ({ request }) => {
-  const url = '/brand/colony-loop-2026-11-19b.mp4';
+for (const extension of ['webm', 'mp4']) test(`colony ${extension} supports byte ranges used by media playback`, async ({ request }) => {
+  const url = `/hero/colony-1656p-2026-11-26.${extension}`;
   const head = await request.head(url);
   const size = Number(head.headers()['content-length']);
+  expect(head.headers()['content-type']).toBe(`video/${extension}`);
   expect(head.headers()['accept-ranges']).toBe('bytes');
   for (const [range, start, end] of [['bytes=0-31', 0, 31], ['bytes=-32', size - 32, size - 1]]) {
     const response = await request.get(url, { headers: { Range: String(range) } });
@@ -14,6 +15,37 @@ test('colony video supports byte ranges used by media playback', async ({ reques
   const invalid = await request.get(url, { headers: { Range: `bytes=${size}-` } });
   expect(invalid.status()).toBe(416);
   expect(invalid.headers()['content-range']).toBe(`bytes */${size}`);
+});
+
+const loopRequest = /\/hero\/colony-\d+p-2026-11-26\.(webm|mp4)$/;
+
+for (const { width, height, dpr, source } of [
+  { width: 880, height: 680, dpr: 1, source: 900 },
+  { width: 880, height: 680, dpr: 2, source: 1656 },
+  { width: 1920, height: 900, dpr: 1, source: 1656 },
+  { width: 390, height: 844, dpr: 3, source: 1656 },
+]) test(`colony chooses ${source}p at ${width}×${height} and ${dpr}× density`, async ({ browser, baseURL }) => {
+  const page = await browser.newPage({ baseURL, viewport: { width, height }, deviceScaleFactor: dpr });
+  try {
+    const requests = new Set<string>();
+    await page.route(loopRequest, route => {
+      requests.add(new URL(route.request().url()).pathname);
+      return route.continue();
+    });
+    await page.goto('/');
+    const video = page.locator('.colony-video');
+    await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.videoHeight)).toBe(source);
+    expect([...requests]).toEqual([`/hero/colony-${source}p-2026-11-26.webm`]);
+  } finally {
+    await page.close();
+  }
+});
+
+test('colony plays the H.264 version of the selected tier if VP9 fails', async ({ page }) => {
+  await page.route(/\/hero\/.*\.webm$/, route => route.abort());
+  await page.goto('/');
+  const video = page.locator('.colony-video');
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused ? '' : v.currentSrc)).toMatch(/\/hero\/colony-\d+p-2026-11-26\.mp4$/);
 });
 
 test('real colony video pauses and respects reduced motion', async ({ page }) => {
@@ -32,18 +64,21 @@ test('real colony video pauses and respects reduced motion', async ({ page }) =>
 });
 
 test('reduced motion never requests the video and failure retains a poster', async ({ page }) => {
-  const requests: string[] = [];
-  page.on('request', request => { if (request.url().endsWith('.mp4')) requests.push(request.url()); });
+  const requests = new Set<string>();
+  await page.route(loopRequest, route => {
+    requests.add(route.request().url());
+    return route.abort();
+  });
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/');
-  expect(await page.locator('.colony-video').getAttribute('src')).toBeNull();
-  expect(requests).toEqual([]);
-  await page.route('**/*.mp4', route => route.abort());
+  await expect(page.locator('.colony-video source')).toHaveCount(0);
+  expect(requests.size).toBe(0);
   await page.emulateMedia({ reducedMotion: 'no-preference' });
-  await expect.poll(() => requests.length).toBeGreaterThan(0);
-  await expect.poll(() => page.locator('.colony-video').evaluate((v: HTMLVideoElement) => v.error?.code ?? 0)).not.toBe(0);
+  await expect.poll(() => requests.size).toBe(2);
+  await expect.poll(() => page.locator('.colony-video').evaluate((v: HTMLVideoElement) => v.paused)).toBe(true);
   await expect(page.getByRole('button', { name: /Pause the globs/ })).toBeHidden();
   expect(await page.locator('.colony-video').evaluate(v => getComputedStyle(v).opacity)).toBe('0');
+  await expect(page.locator('.hero-colony')).toHaveCSS('background-image', /colony-2026-11-26\.webp/);
 });
 
 test('pause keeps the resume control when a pending play is cancelled', async ({ page }) => {
