@@ -2,7 +2,7 @@
 title: "Globulation 2 terms and conditions"
 description: "Terms for the public website and official online service."
 sourceUrl: "https://github.com/Globulation2/glob2/blob/master/docs/mobile/terms.md"
-sourceSha256: "5b2e19e695f6d8f16c0b29af787239680bdb5c78451736e28eacd5efd947467a"
+sourceSha256: "8e65c4784aabd35ec5f64500be8c266e1d493a864b2696c8a1c6e004406c6177"
 ---
 
 Last updated: 10 October 2026.
@@ -33,8 +33,11 @@ Online play creates an account, initially a guest account. Keep your sign-in
 credentials private. Do not use someone else's account without permission.
 Contact us if you believe your account has been compromised.
 
-The game has no minimum age. Parents and guardians should help children decide
-what to share in public names, profiles, uploads and chat. Where a child cannot
+The game has no minimum age. Chat, sharing content, choosing a display name and
+uploading a photo are only for players aged 13 or over; the game asks for your
+age range before you play with others, and an account marked under 13 keeps these
+off until a parent or guardian asks us to change it. Parents and guardians should
+help children decide what to share in public names, profiles, uploads and chat. Where a child cannot
 agree to service terms under applicable law, a parent or guardian must assist
 with the child's use of the online service.
 
