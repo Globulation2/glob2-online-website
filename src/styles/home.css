@@ -29,7 +29,9 @@ body:has(.home) .site-footer { margin-top: 0; }
 .home .hero-colony > video { object-position: 0% 0%; }
 :root[dir='rtl'] .home .hero-colony::after { transform: scaleX(-1); }
 .home .hero-colony::after {
-  background: linear-gradient(90deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
+  /* Match the game's Light menu theme veil over both video and poster. */
+  background-color: #f0f1df2a;
+  background-image: linear-gradient(90deg, rgba(var(--sea-rgb), 0.38) 0%, rgba(var(--sea-rgb), 0.12) 38%, rgba(var(--sea-rgb), 0) 55%);
 }
 .home .hero-copy { width: 100%; max-width: calc(var(--content) + 2 * var(--gutter)); margin: 0 auto; padding: var(--sp-5) var(--gutter) 104px; }
 .home .hero-panel {
@@ -126,7 +128,7 @@ body:has(.home) .site-footer { margin-top: 0; }
   /* The band also runs up behind the masthead, so it adds the masthead's height. */
   .home > .hero { display: block; min-height: 0; padding-top: 0; }
   .home .hero-colony { position: relative; inset: auto; z-index: 0; width: 100%; height: min(calc(100vw * 3 / 4), 62vh); box-sizing: content-box; padding-top: var(--home-header-h); }
-  .home .hero-colony::after { background: linear-gradient(180deg, rgba(var(--sea-rgb), 0) 70%, rgb(var(--sea-rgb)) 100%); }
+  .home .hero-colony::after { background-image: linear-gradient(180deg, rgba(var(--sea-rgb), 0) 70%, rgb(var(--sea-rgb)) 100%); }
   .home .hero-copy { position: relative; padding-bottom: 72px; }
   /* The copy's top padding is sp-6 here in every header state; overlap the band by 56px. */
   .home .hero-panel { width: 100%; max-width: 40rem; margin: calc(-56px - var(--sp-6)) auto 0; backdrop-filter: none; background: rgba(var(--sea-rgb), 0.94); }

@@ -8,6 +8,8 @@ The versioned files in `public/hero/` offer 1600 × 900 and 2940 × 1656 at the 
 
 Both resolutions were encoded directly from the same lossless 475-frame capture. The VP9 encodes use CRF 22 at 900p and CRF 15 at 1656p. The H.264 fallbacks use CRF 18 and 17, respectively. The published November 26 files came from source build `5e96273ff6` and remain available for cached pages.
 
+The website applies the game's Light menu theme veil (`#f0f1df2a`) over both the video and its poster, beneath the hero's sea-colored gradient.
+
 ## Marketing screenshots and earlier hero — 18 November 2026
 
 The homepage gallery, game explanation page and social preview use reviewed captures of the public native **0.11.6.1** release, source revision `1b60514218218c89516b6c6f26f2fcefc9c8f974`. Their package and binary digests, map/replay identity, recording treatment and crop provenance are preserved in [the capture manifest](website-media-v0.11.6.1.json). The previous October homepage observations below describe the superseded marketing images. Earlier browser tutorial and handbook media remains in current lessons with its original capture provenance; it awaits a separate capture and UI refresh and is not an archived handbook.
