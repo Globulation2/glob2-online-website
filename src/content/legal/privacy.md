@@ -2,7 +2,7 @@
 title: "Globulation 2 privacy policy"
 description: "Privacy for the website, game editions and official online service."
 sourceUrl: "https://github.com/Globulation2/glob2/blob/master/docs/mobile/privacy-policy.md"
-sourceSha256: "e56f0146dbedb34a55b6599717883083c2b4b8a3c8a37e55eb2307f6a72098a5"
+sourceSha256: "183d91ddbeb4eb738606b32807d39faa842f41fc498d1df3659a8f26a271babd"
 ---
 
 This policy covers the public website at [glob2.online](https://glob2.online/),
@@ -18,9 +18,10 @@ Boom Drive, Unit 346, Oakville, Ontario L6H 7X5, Canada ("we"). For privacy
 questions and requests, contact **bradley.allen.arsenault@gmail.com**
 or write to that address.
 
-Last updated: 24 November 2026. Chat and other social features became available
-only to players aged 13 or over, with the age range the game asks for or reads
-from Apple devices.
+Last updated: 27 November 2026. Players aged 13 or over can send us a problem
+report from the game's main menu, and a crash report after the game closes
+unexpectedly; see [Problem reports](#problem-reports) and
+[Crash reports](#crash-reports).
 
 ## Public website browsing
 
@@ -69,7 +70,8 @@ avoid posting private information in public repository issues.
 ## Game and online service summary
 
 - Single-player games, the campaign, the map editor and LAN games work without an
-  account and send nothing to us.
+  account and send nothing to us, unless you choose to send us a
+  [problem report](#problem-reports) or a [crash report](#crash-reports).
 - Opening online play creates an account. It starts as a guest account, without an
   e-mail address or a name; a guest gets a generated name such as `Guest-1234`.
 - We keep what online play needs: your account, how you sign in, your matches, ratings,
@@ -314,6 +316,9 @@ are only for players aged 13 or over. The game and the service are built to coll
 as little as possible from anyone, children included:
 
 - Single-player, the campaign, the map editor and LAN games send nothing to us.
+  Players under 13, or who have not said their age, cannot send problem or crash
+  reports and are never asked to; they can save one to a file and share it with a
+  parent's help.
 - Online play works as a guest, which needs no e-mail address, no real name, no
   birthday and no account details: the game makes up a name such as `Guest-1234`.
   An account with a username and password needs no e-mail address either. Signing
@@ -381,6 +386,78 @@ credentials, private studio prompts or generated source. Financial records
 retained for purchase reconciliation remain after account deletion, as
 described in [Optional purchases and AI features](#optional-purchases-and-ai-features). Uncertain or unavailable facts are labeled;
 we do not infer historical activity from last-seen timestamps.
+
+## Problem reports
+
+**Report a problem** on the main menu lets you tell us what went wrong. Nothing is
+sent unless you press **Send**, and only players aged 13 or over can send. A report
+holds:
+
+- what you typed under "What happened?" (up to 2,000 characters);
+- if you leave them ticked: the game's recent log (its last 200 lines of technical
+  messages, such as which screens you opened), your most recently saved game and
+  your most recent replay. Saves and replays hold the player names of that game;
+- always: the game's version and simulation revision, the platform and operating
+  system name, where you got the game (for example the App Store or our website),
+  the kind of device (phone, tablet or desktop and a performance tier), the time,
+  and a random install ID that the game makes up on first use and that tells us how
+  many installations a problem affects.
+
+A report is not linked to your online account, your name or your e-mail address,
+and we do not keep your IP address with it; we use the address only briefly, in
+memory, to stop floods of reports. Reports go to us at app.glob2.online and to no
+one else. The game shows a short report ID that you can quote when you contact us.
+If you are offline, the report waits on your device (at most five reports and
+10 MB) and is sent from the main menu later.
+
+We use reports only to find and fix problems. Only our administrators can read them.
+We delete the attached log, save and replay after 90 days and the rest of the
+report after two years. **Save to file** writes the same report to your device
+instead, for you to share yourself; it sends nothing. The F-Droid, Linux
+distribution, China and Fire tablet editions cannot send reports. To have a report
+deleted sooner, send us its ID.
+
+### Crash reports
+
+If the game closes unexpectedly, the next time it starts (or, in a web browser,
+the next time you open it) it asks **Send a crash report?** Nothing is sent unless you press **Send** or
+**Always send**; **Don't send** deletes it. **Always send** sends later crash
+reports without asking, and **Settings > Privacy** turns that off again. Only
+players aged 13 or over are asked; for anyone else the crash stays on the device,
+where **Report a problem > Save to file** can include it.
+
+A crash report holds the same "always" details as a problem report (version,
+platform, device kind, time and the random install ID) and:
+
+- the technical record of the crash: on Android, Windows and Linux a minidump
+  (the state of the game's threads and a small part of its memory when it
+  crashed, which can by chance hold text the game was showing), or on Android
+  the error of the app's Java code; on iOS and macOS the crash diagnostic the
+  system itself prepares for the app (MetricKit); in a web browser the error
+  message and the list of game functions that were running;
+- the game's recent log from the session that crashed, and, if a match was
+  running, its map seed and how far it had played.
+
+It never includes what you typed, your saved games or replays, your account,
+name or e-mail address, and like problem reports it is not linked to your online
+account, and we do not keep your IP address with it. The game captures crashes
+itself and sends them only to us at app.glob2.online; no third-party
+crash-reporting service is involved. We use crash reports only to find and fix
+crashes. We delete the minidump or diagnostic and the log after 90 days, and the
+rest (the readable stack trace and the details above) after two years. The
+F-Droid, Linux distribution, China and Fire tablet editions do not capture
+crashes.
+
+If you chose **Always send**, the game also sends a short report when something
+fails without crashing: a map or saved game that does not load, or an online
+match that fails. It holds the same "always" details, what failed and its
+message, and the recent log; at most five a day, kept like crash reports.
+
+If you chose **Always send**, the game also sends, about once a day, how many
+times it was started that day, with its version, platform, edition and the
+random install ID, so we can tell what share of sessions ends in a crash. These
+counts are never sent otherwise, are not linked to your account or IP address,
+and are deleted after two years. Turning **Always send** off stops them.
 
 ## Your rights
 

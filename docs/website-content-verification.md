@@ -1,10 +1,12 @@
 # Website content verification
 
-## Homepage hero — 26 November 2026
+## Homepage hero — 27 November 2026
 
-The homepage loop comes from the live main-menu colony drawn without menus by `MenuColonyHarness record-colony`. The game was built from `5e96273ff6` in the mobile capture checkout, with the High resolution artwork setting enabled and SDL GPU readback at 2940 × 1656. Simulation and presentation advance together at 25 fps. The loop plays source seconds 4–18, then eases through a one-second dissolve from seconds 18–19 into seconds 3–4. The 1600 × 900 poster comes from the first frame of the full-resolution MP4.
+The homepage loop comes from the live main-menu colony drawn without menus by `MenuColonyHarness record-colony`. The game was built from the 0.11.9.1 `master` commit `46ef8e22768ced23e0e7d63024753cf1984683a1` and captured on macOS with High resolution artwork, native status bars, and SDL GPU readback at 2940 × 1656. Simulation and presentation advance together at 25 fps. The loop plays source seconds 4–18, then eases through a one-second dissolve from seconds 18–19 into seconds 3–4. The 1600 × 900 WebP poster comes from source frame 100, the opening frame of the loop.
 
 The versioned files in `public/hero/` offer 1600 × 900 and 2940 × 1656 at the same framing and speed, with VP9 WebM first and H.264 MP4 as the fallback. The homepage chooses one resolution before playback by comparing the physical pixels required by the hero’s `cover` layout with the smaller encode. It keeps that resolution for the page visit. The shared colony helper defers both sources until playback is eligible and keeps the poster visible under reduced motion or when neither video can play.
+
+Both resolutions were encoded directly from the same lossless 475-frame capture. The VP9 encodes use CRF 22 at 900p and CRF 15 at 1656p. The H.264 fallbacks use CRF 18 and 17, respectively. The published November 26 files came from source build `5e96273ff6` and remain available for cached pages.
 
 ## Marketing screenshots and earlier hero — 18 November 2026
 
