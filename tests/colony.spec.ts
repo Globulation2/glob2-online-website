@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 for (const extension of ['webm', 'mp4']) test(`colony ${extension} supports byte ranges used by media playback`, async ({ request }) => {
-  const url = `/hero/colony-1656p-2026-11-26.${extension}`;
+  const url = `/hero/colony-1656p-2026-11-27.${extension}`;
   const head = await request.head(url);
   const size = Number(head.headers()['content-length']);
   expect(head.headers()['content-type']).toBe(`video/${extension}`);
@@ -17,7 +17,7 @@ for (const extension of ['webm', 'mp4']) test(`colony ${extension} supports byte
   expect(invalid.headers()['content-range']).toBe(`bytes */${size}`);
 });
 
-const loopRequest = /\/hero\/colony-\d+p-2026-11-26\.(webm|mp4)$/;
+const loopRequest = /\/hero\/colony-\d+p-2026-11-27\.(webm|mp4)$/;
 
 for (const { width, height, dpr, source } of [
   { width: 880, height: 680, dpr: 1, source: 900 },
@@ -35,7 +35,7 @@ for (const { width, height, dpr, source } of [
     await page.goto('/');
     const video = page.locator('.colony-video');
     await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.videoHeight)).toBe(source);
-    expect([...requests]).toEqual([`/hero/colony-${source}p-2026-11-26.webm`]);
+    expect([...requests]).toEqual([`/hero/colony-${source}p-2026-11-27.webm`]);
   } finally {
     await page.close();
   }
@@ -45,7 +45,7 @@ test('colony plays the H.264 version of the selected tier if VP9 fails', async (
   await page.route(/\/hero\/.*\.webm$/, route => route.abort());
   await page.goto('/');
   const video = page.locator('.colony-video');
-  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused ? '' : v.currentSrc)).toMatch(/\/hero\/colony-\d+p-2026-11-26\.mp4$/);
+  await expect.poll(() => video.evaluate((v: HTMLVideoElement) => v.paused ? '' : v.currentSrc)).toMatch(/\/hero\/colony-\d+p-2026-11-27\.mp4$/);
 });
 
 test('real colony video pauses and respects reduced motion', async ({ page }) => {
@@ -78,7 +78,7 @@ test('reduced motion never requests the video and failure retains a poster', asy
   await expect.poll(() => page.locator('.colony-video').evaluate((v: HTMLVideoElement) => v.paused)).toBe(true);
   await expect(page.getByRole('button', { name: /Pause the globs/ })).toBeHidden();
   expect(await page.locator('.colony-video').evaluate(v => getComputedStyle(v).opacity)).toBe('0');
-  await expect(page.locator('.hero-colony')).toHaveCSS('background-image', /colony-2026-11-26\.webp/);
+  await expect(page.locator('.hero-colony')).toHaveCSS('background-image', /colony-2026-11-27\.webp/);
 });
 
 test('pause keeps the resume control when a pending play is cancelled', async ({ page }) => {
